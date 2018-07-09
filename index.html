@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+
+
+
+    <title>Hello, world!</title>
+
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+        .hideme{
+            display:none;
+        }
+
+        .unhideme{
+            display:block;
+        }
+        .slideuptop {
+            -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @-webkit-keyframes slide-top {
+            0% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+            }
+            100% {
+                -webkit-transform: translateY(-100px);
+                        transform: translateY(-100px);
+            }
+        }
+        @keyframes slide-top {
+            0% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+            }
+            100% {
+                -webkit-transform: translateY(-100px);
+                        transform: translateY(-100px);
+            }
+        }
+    </style>
+
+  </head>
+  <body>
+
+
+
+    <h1>Hello, world!</h1>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+    </ul>
+
+    <div></div>
+
+    <div id="wscpop easing" class="hideme slideuptop">
+        <div class="content3">
+        <p>This is the about section.</p>
+        <p>It is currently still being worked on.</p>
+        </div>
+    </div>
+    <!--- <input type="button" onclick="unhide(this, 'wscpop') " value="unhide"> --->
+
+
+
+    <!--- bottom nav and FAB -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red"  onclick="unhide(this, 'wscpop') " value="unhide">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+    </div>
+    
+    <nav class="nav-extended footer">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a>A link</a></li>
+                <li><a>A second link</a></li>
+                <li><a>A third link</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Optional JavaScript -->
+
+    <script>
+        var easing = anime({
+        targets: '#easing .el',
+        translateX: 250,
+        easing: 'easeInOutQuart'
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+            hoverEnabled: false
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, options);
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems, options);
+        });
+    </script>
+    <script type="text/javascript">
+        function unhide(clickedButton, divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            if(item.className=='hideme'){
+                item.className = 'unhideme' ;
+                clickedButton.value = 'hide'
+            }else{
+                item.className = 'hideme';
+                clickedButton.value = 'unhide'
+            }
+        }}
+    </script>
+    
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  </body>
+</html>
