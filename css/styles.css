@@ -1,3 +1,27 @@
 html{
     font-family: 'Lato', sans-serif;
 }
+
+.nav-wrapper {
+    display: block;
+    transition: top 0.8s;
+}
+
+#wscgradient {
+    background-color: #914c35; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #bd9385, #9c5d49); /* Standard syntax (must be last) */
+}
+
+.roundtopleft {
+    border-top-left-radius:5%;
+    -moz-top-left-border-radius:5%;
+    -webkit-top-left-border-radius:5%;
+    -khtml-top-left-border-radius: 5%;
+}
+
+.roundtopright {
+    border-top-right-radius:25%;
+    -moz-top-right-border-radius:25%;
+    -webkit-top-right-border-radius:25%;
+    -khtml-top-right-border-radius: 25%;
+}

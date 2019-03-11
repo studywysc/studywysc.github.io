@@ -1,3 +1,52 @@
+<!-- 2019.03.11 mobile nav hide bottom header on scroll -->
+
+        <!-- Mobile -->
+        <div class="fixed-bottom d-lg-none" id="navbar">
+                <ul id="mobilemenu" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+                <nav class="nav-extended rounded-top z-depth-5 p-2" id="wscgradient">
+    
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href="#" class="active">About</a></li>
+                            <li class="tab"><a href="wscapp.html">WSC App</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-wrapper">
+                        <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},300);" class="brand-logo"><img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-pill" alt=""></a>
+                        <!--
+                        <a class="navbar-brand" href="#" onclick="jQuery('html,body').animate({scrollTop:0},300);" class="brand-logo">
+                            <img src="media/speqi-wsc 04.png" width="30" height="30" class="d-inline-block" alt="">
+                        </a>
+                        -->
+                    </div>
+    
+                    <!--
+                    <script>
+                        var prevScrollpos = window.pageYOffset;
+                        window.onscroll = function() {
+                        var currentScrollPos = window.pageYOffset;
+                            if (prevScrollpos > currentScrollPos) {
+                            document.getElementById("navbar").style.bottom = "0";
+                            } else {
+                            document.getElementById("navbar").style.bottom = "-60px";
+                            }
+                            prevScrollpos = currentScrollPos;
+                        }
+                    </script>
+                    -->
+    
+                </nav>
+            </div>
+
+
+
+
+
 <!-- 2019.03.11 fresh start -->
 
 <!doctype html>
