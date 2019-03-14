@@ -1,3 +1,22 @@
+<!-- 2019.03.12 desktop clicknav -->
+
+<div class="d-none d-lg-block fixed-top">
+    <a href="#!" onclick="openNav()" class="">
+        <img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;margin-top:1%;transform:translateX(-3%);left:3%;" class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+    </a>
+    <div id="mySidenav" class="w3sidenav">
+        <a href="javascript:void(0)" class="w3closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+
+
+
+
 <!-- 2019.03.11 mobile nav hide bottom header on scroll -->
 
         <!-- Mobile -->
@@ -42,6 +61,45 @@
     
                 </nav>
             </div>
+
+
+
+                <!-- Mobile -->
+                <div class="fixed-bottom d-lg-none" id="navbar">
+                        <ul id="mobilemenu" class="dropdown-content">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">three</a></li>
+                        </ul>
+                        <nav class="nav-extended rounded-top shadow-lg p-2" id="wscgradient">
+            
+                            <div class="nav-content">
+                                
+                                <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);"><img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;bottom:20px;" class="d-inline-block rounded-circle shadow" alt=""></a>
+            
+                                <ul class="tabs tabs-transparent">
+                                    <li class="tab"><a href="#" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="active">About</a></li>
+                                    <li class="tab"><a href="web.html">Web App</a></li>
+                                </ul>
+                                <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" href="#">Active</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>
+                                </ul>
+                            </div>
+            
+                        </nav>
+                    </div>
 
 
 

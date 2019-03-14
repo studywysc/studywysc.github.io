@@ -7,9 +7,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link type="text/javascript" href="js/script.js">
 
@@ -23,45 +23,91 @@
   <body>
 
         <!-- Desktop -->
-        <div class="nav-wrapper d-none d-lg-block">
-                <nav>
-                    <div class="nav-wrapper">
-                    <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},300);" class="brand-logo">Logo</a>
-                    <ul class="right">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
+
+        <div class="d-none d-lg-block fixed-top">
+            <div style="position:absolute;z-index:8;margin-top:1.25%;transform:translateX(-2%);left:2%;">
+                <a href="#!" onclick="openNav()" class="">
+                        <img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+                </a>
+                <!--
+                <div class="floating-scrollspy text-center" style="margin-top:20px;">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_map"> <span>#section_map</span> <i></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_contact"> <span>#section_contact</span> <i></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_team"> <span>#section_team</span> <i></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_testimonials"> <span>#section_testimonials</span> <i></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_invitation"> <span>#section_invitation</span> <i></i> </a>
+                        </li>
                     </ul>
-                    </div>
-                </nav>
+                </div>
+                -->
+            </div>
+            
+            <div id="wscdiscordshadow">
+
+            </div>
+            
+            <div class="menu-hover">
+                
+                <div class="side-menu">
+                        
+                        <nav class="nav flex-column bg-transparent text-white">
+                                <a class="nav-link active" href="#">Active</a>
+                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </nav>
+                
+                </div>
+            </div>
+
         </div>
 
         <!-- Mobile -->
-        <div class="fixed-bottom d-lg-none" id="navbar">
-            <ul id="mobilemenu" class="dropdown-content">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">three</a></li>
-            </ul>
-            <nav class="nav-extended rounded-top z-depth-5 p-2" id="wscgradient">
+        <div class="d-lg-none">
+            <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
 
                 <div class="nav-content">
-                    
-                    <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);"><img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;bottom:20px;margin-left:45%;margin-right:45%;text-align:center;" class="d-inline-block rounded-circle shadow" alt=""></a>
 
-                    <ul class="tabs tabs-transparent">
-                        <li class="tab"><a href="#" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="active">About</a></li>
-                        <li class="tab"><a href="web.html">Web App</a></li>
+                    <ul class="nav nav-justified">
+                            <li class="nav-item">
+                              <a class="nav-link active jello-horizontal" href="#" onclick="jQuery('html,body').animate({scrollTop:0},500);" id="navbarlinkactive">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link jello-horizontal" href="pwa.html" id="navbarlinks">Web App</a>
+                            </li>
                     </ul>
+                
+                    <div class="mx-auto text-center" style="position:inherit;display:block;">
+                        <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="mx-auto text-center">
+                            <img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;" class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+                        </a>
+                    </div>
+
                 </div>
 
             </nav>
         </div>
 
+
+
+
         <br><br>
 
+        <!-- notes: add menu-hover2 to hero image -->
+
+
         <div id="homecarousel" class="carousel carousel-fade" data-ride="carousel">
-            <div style="position:absolute;z-index:2;">
+            <div style="position:absolute;z-index:6;">
                 a
             </div>
             <div class="carousel-inner">
@@ -88,36 +134,65 @@
         </div>
 
 
-        <p><h1>1</h1>
-<br><br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-
-<h1>2</h1>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br>
-
-
-            <h1>3</h1>
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-item-1">Item 1</h4>
+            <p>...</p>
             
-<br><br><br><br><br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
+                <h1>1</h1>
+                <br><br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
 
-        </p>
+
+            <h4 id="list-item-2">Item 2</h4>
+            <p>...</p>
+            
+                <h1>2</h1>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+                <div class="container-2">
+                        <div class="btnfancy btn-two">
+                          <span>IDLE</span>
+                        </div>
+                      </div>
+
+            <h4 id="list-item-3">Item 3</h4>
+            <p>...</p>
+            
+                <h1>3</h1>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+
+            <h4 id="list-item-4">Item 4</h4>
+            <p>...</p>
+
+                <h1>4</h1>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+
+        </div>
+
+
+
+
 
 
     <!--Import jQuery before materialize.js-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -128,9 +203,58 @@
             var instances = M.Dropdown.init(elems, options);
         });
     </script>
+    <!-- <script>
+        /**
+         * Listen to scroll to change header opacity class
+         */
+        function checkScroll(){
+            var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+            if($(window).scrollTop() > startY){
+                $('.navbar').addClass("scrolled");
+            }else{
+                $('.navbar').removeClass("scrolled");
+            }
+        }
+
+        if($('.navbar').length > 0){
+            $(window).on("scroll load resize", function(){
+                checkScroll();
+            });
+        }
+    </script> -->
     <script>
         $('.carousel').carousel({
         interval: 2000
+        })
+    </script>
+    <script>
+        $(".menu-hover").on({
+            'mouseenter': function (e) {
+
+                e.stopPropagation();
+                            var $lefty = $(".side-menu");
+                            $lefty.animate({
+                            left: parseInt($lefty.css('left')) < -95 ?
+                            $lefty.css('left') == 0 :
+                                -496})
+                        }
+        });
+        $('.menu-hover').on({
+            'mouseleave': function(){
+                var $lefty = $(".side-menu");
+                    $lefty.animate({
+                    left: -496
+                })
+            }
+        })
+        $('.menu-hover2').on({
+            'mouseleave': function(){
+                var $lefty = $(".side-menu");
+                    $lefty.animate({
+                    left: -496
+                })
+            }
         })
     </script>
 </body>
