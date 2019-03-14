@@ -1,1 +1,1 @@
-# wscapp
+# WSC
