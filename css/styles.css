@@ -240,6 +240,7 @@ body, html {
     width: 256px;
     height: 64px;
     line-height: 64px;
+    cursor: pointer;
     transition: all 0.3s;
     span {
       transition: all 0.3s;
@@ -295,6 +296,14 @@ body, html {
   @keyframes rotateccw {
       from {transform: rotate(0deg);}
       to {transform: rotate(-360deg);}
+  }
+
+  #spinnybutton:link, #spinnybutton:visited {
+
+    transition: all 0.5s;
+  }
+
+  #spinnybutton:hover, #spinnybutton:active {
   }
 
 
