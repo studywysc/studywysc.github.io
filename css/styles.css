@@ -626,11 +626,12 @@ body, html {
 
   #parallax1 {
     z-index: 5; /* slide over group 2 */
-  }
-  #parallax1 .parallax__layer--base {
-    background: url("/media/T_1hsMH9CQY.jpg");
+    background-image: url("/media/T_1hsMH9CQY.jpg");
     background-position: center;
     filter: brightness(80%);
+  }
+  #parallax1 .parallax__layer--base {
+    /* background: rgb(123,210,102); */
   }
 
   #parallax2 {
