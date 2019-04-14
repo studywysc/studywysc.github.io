@@ -626,7 +626,7 @@ body, html {
 
   #parallax1 {
     z-index: 5; /* slide over group 2 */
-    background-image: url("/media/T_1hsMH9CQY.jpg");
+    background: url("/media/T_1hsMH9CQY.jpg");
     background-position: center;
     filter: brightness(80%);
   }
@@ -636,13 +636,18 @@ body, html {
 
   #parallax2 {
     z-index: 3; /* slide under groups 1 and 3 */
+    background: url("/media/photo-1481142889578-dda440dacfe1.jpg");
+    background-position: center;
+    filter: brightness(80%);
   }
   #parallax2 .parallax__layer--back {
-    background: rgb(123,210,102);
   }
 
   #parallax3 {
     z-index: 4; /* slide over group 2 and 4 */
+    background-image: url("/media/photo-1519608487953-e999c86e7455.jpg");
+    background-position: center;
+    filter: brightness(80%);
   }
   #parallax3 .parallax__layer--base {
     background: rgb(153,216,101);
