@@ -644,8 +644,6 @@ body, html {
       height: calc(100vh + 180px);
       position: absolute;
       top: 0;
-      background-image: url("/media/T_1hsMH9CQY.jpg");
-      background-position: center;
       color: #efefef;
       box-shadow: 0 0 60px rgba(0,0,0,0.9) inset;
 
