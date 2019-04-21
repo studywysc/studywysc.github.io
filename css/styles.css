@@ -652,9 +652,18 @@ body, html {
     .section02 {
       height: auto;
       position: relative;
-      background: #9c5d49;
       color: #efefef;
     }
+
+    .section021 {
+      background: #9c5d49;
+    }
+
+    .section022 {
+      background: #eeeeee;
+    }
+
+
 
 .shiftdownheader {
   top: calc(100vh + 180px);
@@ -741,7 +750,6 @@ body, html {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
 }
 
 
