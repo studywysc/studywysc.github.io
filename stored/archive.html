@@ -1,3 +1,372 @@
+<!-- 2019.04.21 switching home style -->
+
+    <!-- css -->
+        
+.parallaxkeith {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  
+    .parallax__group {
+      position: relative;
+      height: 500px; /* fallback for older browsers */
+      height: 100vh;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  
+    .parallax__content{
+      text-align: center;
+      position: absolute;
+      left: auto;
+      right: auto;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      /* color: #efefef; */
+    }
+  
+    .parallax__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .parallax__layer--fore {
+      -webkit-transform: translateZ(90px) scale(.7);
+      transform: translateZ(90px) scale(.7);
+      z-index: 1;
+    }
+  
+    .parallax__layer--base {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      z-index: 4;
+    }
+  
+    .parallax__layer--back {
+      -webkit-transform: translateZ(-300px) scale(2);
+      transform: translateZ(-300px) scale(2);
+      z-index: 3;
+    }
+  
+    .parallax__layer--deep {
+      -webkit-transform: translateZ(-600px) scale(3);
+      transform: translateZ(-600px) scale(3);
+      z-index: 2;
+    }
+  
+    #parallax1 {
+      z-index: 5; /* slide over group 2 */
+  /*    background: url("/media/T_1hsMH9CQY.jpg"); */
+      background-position: center;
+  /*    filter: brightness(80%); */
+    }
+    #parallax1 .parallax__layer--base {
+      /* background: rgb(123,210,102); */
+    }
+  
+    #parallax2 {
+      z-index: 3; /* slide under groups 1 and 3 */
+      background: url("/media/photo-1481142889578-dda440dacfe1.jpg");
+      background-position: center;
+      filter: brightness(80%);
+    }
+    #parallax2 .parallax__layer--back {
+    }
+  
+    #parallax3 {
+      z-index: 4; /* slide over group 2 and 4 */
+      background-image: url("/media/photo-1519608487953-e999c86e7455.jpg");
+      background-position: center;
+      filter: brightness(80%);
+    }
+    #parallax3 .parallax__layer--base {
+      background: rgb(153,216,101);
+    }
+  
+    #parallax4 {
+      z-index: 2; /* slide under group 3 and 5 */
+    }
+    #parallax4 .parallax__layer--deep {
+      background: rgb(184,223,101);
+    }
+  
+    #parallax5 {
+      z-index: 3; /* slide over group 4 and 6 */
+    }
+    #parallax5 .parallax__layer--base {
+      background: rgb(214,229,100);
+    }
+  
+    #parallax6 {
+      z-index: 2; /* slide under group 5 and 7 */
+    }
+    #parallax6 .parallax__layer--back {
+      background: rgb(245,235,100);
+    }
+  
+    #parallax7 {
+      z-index: 3; /* slide over group 7 */
+    }
+    #parallax7 .parallax__layer--base {
+      background: rgb(255,241,100);
+    }
+
+    
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link type="text/javascript" href="js/script.js">
+
+    <link rel="icon" type="image/png" href="media/wsc-sp-rounded.png">
+
+    <title>Wysc – Virtual Study Cafe&#769;</title>
+
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+
+        <!-- Desktop -->
+        
+        <nav class="d-none d-lg-block fixed-top navbar bg-transparent z-index-fixed">
+                <a class="navbar-brand align-middle" href="#">
+                    <img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-circle shadow" id="logohovershadow" style="z-index:9;" alt="">
+                </a>
+
+                <ul class="navbar-nav navbar-expand d-inline-block align-middle">
+                    <li class="nav-item active d-inline-block" style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">
+                            <h1>Wysc</h1>
+                    </li>
+                    <li class="nav-item active d-inline-block" style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-left:8px;">
+                            <h5>Virtual Study Cafe&#769;</h5>
+                    </li>
+                </ul>
+
+                <div class="d-inline-block align-middle" style="float:right;margin-right:1px;">
+                        <div class="container-2 align-middle text-center d-inline-block">
+                            <div style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-right:10px;margin-top:10%;">Already in our Discord?</div>
+                        </div>
+                        <div class="container-2 align-middle text-center d-inline-block">
+                                <div class="btnfancy btn-two">
+                                    <a href="pwa.html" style="color:rgba(255, 255, 255, 1);">Go to Wysc Home ></a>
+                                </div>
+                        </div>
+                </div>
+
+        
+        </nav>
+
+
+
+
+
+
+
+
+        <!-- Mobile -->
+        <div class="d-lg-none">
+            <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
+
+                <div class="nav-content text-center">
+
+                    <ul class="nav nav-justified">
+                            <li class="nav-item">
+                              <a class="nav-link active jello-horizontal" href="#" onclick="jQuery('html,body').animate({scrollTop:0},500);" id="navbarlinkactive">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link jello-horizontal" href="pwa.html" id="navbarlinks">Web App</a>
+                            </li>
+                    </ul>
+                
+                    <div class="mx-auto text-center" style="position:inherit;display:block;">
+                        <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="mx-auto text-center">
+                            <img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;" class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+        <!-- notes: add menu-hover2 to hero image -->
+
+
+        <div class="parallax"></div>
+            <div class="captionparallax fade-in-fwd" id="parallax1">
+            </div>                  
+
+        </div>
+
+        <div class="parallaxkeith">
+            <div id="parallax1" class="parallax__group">
+                <div class="parallax__layer parallax__layer--base parallax__content caption-parallax">
+
+                        <h1 class="text-shadow-drop-bottom align-center fade-in-fwd" style="letter-spacing:0.03em;margin-bottom:2.5%;margin-top:20%;">How do <div class="d-inline-block align-center rainbowtext" style="font-family:Gochi Hand;font-size:1.6em;margin-left:3px;margin-right:3px;">you</div> study?</h1>
+                
+                        <div class="container-2 align-middle text-center">
+                                <div class="btnfancylg btn-twolg" style="margin-left:auto;margin-right:auto;">
+                                    <a href="https://discord.gg/J8b87Ku" target="_blank" style="color:rgba(255, 255, 255, 1);">Join our Discord ></a>
+                                </div>
+                        </div>
+        
+                        <i class="material-icons md-light md-36" style="margin-top:12%;">arrow_drop_down_circle</i>
+                </div>
+            </div>
+            <div id="parallax2" class="parallax__group">
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                https://www.youtube.com/watch?v=BlEzOmxdBBw
+                </div>
+                <div class="parallax__layer parallax__layer--back">
+                <div class="title">Background Layer</div>
+                </div>
+            </div>
+            <div id="parallax3" class="parallax__group">
+                <div class="parallax__layer parallax__layer--fore">
+                <div class="title">Foreground Layer</div>
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                </div>
+            </div>
+            <div id="parallax4" class="parallax__group">
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                </div>
+                <div class="parallax__layer parallax__layer--back">
+                <div class="title">Background Layer</div>
+                </div>
+                <div class="parallax__layer parallax__layer--deep">
+                <div class="title">Deep Background Layer</div>
+                </div>
+            </div>
+            <div id="parallax5" class="parallax__group">
+                <div class="parallax__layer parallax__layer--fore">
+                <div class="title">Foreground Layer</div>
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                </div>
+            </div>
+            <div id="parallax6" class="parallax__group">
+                <div class="parallax__layer parallax__layer--back">
+                <div class="title">Background Layer</div>
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                </div>
+            </div>
+            <div id="parallax7" class="parallax__group">
+                <div class="parallax__layer parallax__layer--base">
+                <div class="title">Base Layer</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, options);
+        });
+    </script>
+    <!-- <script>
+        /**
+         * Listen to scroll to change header opacity class
+         */
+        function checkScroll(){
+            var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+            if($(window).scrollTop() > startY){
+                $('.navbar').addClass("scrolled");
+            }else{
+                $('.navbar').removeClass("scrolled");
+            }
+        }
+
+        if($('.navbar').length > 0){
+            $(window).on("scroll load resize", function(){
+                checkScroll();
+            });
+        }
+    </script> -->
+    <script>
+        $('.carousel').carousel({
+        interval: 2000
+        })
+    </script>
+    <script>
+        $(".menu-hover").on({
+            'mouseenter': function (e) {
+
+                e.stopPropagation();
+                            var $lefty = $(".side-menu");
+                            $lefty.animate({
+                            left: parseInt($lefty.css('left')) < -95 ?
+                            $lefty.css('left') == 0 :
+                                -496})
+                        }
+        });
+        $('.menu-hover').on({
+            'mouseleave': function(){
+                var $lefty = $(".side-menu");
+                    $lefty.animate({
+                    left: -496
+                })
+            }
+        })
+        $('.menu-hover2').on({
+            'mouseleave': function(){
+                var $lefty = $(".side-menu");
+                    $lefty.animate({
+                    left: -496
+                })
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
 <!-- 2019.03.16 nav dev -->
 
 <nav class="d-none d-lg-block fixed-top navbar bg-transparent">

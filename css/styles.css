@@ -565,124 +565,6 @@ body, html {
 
 
 
-.parallaxkeith {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-}
-
-  .parallax__group {
-    position: relative;
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  .parallax__content{
-    text-align: center;
-    position: absolute;
-    left: auto;
-    right: auto;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #efefef;
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
-
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-  }
-
-  #parallax1 {
-    z-index: 5; /* slide over group 2 */
-    background: url("/media/T_1hsMH9CQY.jpg");
-    background-position: center;
-    filter: brightness(80%);
-  }
-  #parallax1 .parallax__layer--base {
-    /* background: rgb(123,210,102); */
-  }
-
-  #parallax2 {
-    z-index: 3; /* slide under groups 1 and 3 */
-    background: url("/media/photo-1481142889578-dda440dacfe1.jpg");
-    background-position: center;
-    filter: brightness(80%);
-  }
-  #parallax2 .parallax__layer--back {
-  }
-
-  #parallax3 {
-    z-index: 4; /* slide over group 2 and 4 */
-    background-image: url("/media/photo-1519608487953-e999c86e7455.jpg");
-    background-position: center;
-    filter: brightness(80%);
-  }
-  #parallax3 .parallax__layer--base {
-    background: rgb(153,216,101);
-  }
-
-  #parallax4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #parallax4 .parallax__layer--deep {
-    background: rgb(184,223,101);
-  }
-
-  #parallax5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #parallax5 .parallax__layer--base {
-    background: rgb(214,229,100);
-  }
-
-  #parallax6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #parallax6 .parallax__layer--back {
-    background: rgb(245,235,100);
-  }
-
-  #parallax7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #parallax7 .parallax__layer--base {
-    background: rgb(255,241,100);
-  }
-
-
-
 .rainbowtext {
   /* background-image: repeating-linear-gradient(124deg, violet, indigo, blue, green, yellow, orange, red, violet); */
   background: linear-gradient(124deg, #ff2400, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #ff2400);
@@ -736,6 +618,51 @@ body, html {
     -webkit-top-right-border-radius:25%;
     -khtml-top-right-border-radius: 25%;
 }
+
+
+.sectionall {
+  background: #212121;
+  /* background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%); */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+    .svg {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+      color: transparent;
+    }
+
+    .sectionmargin {
+      margin: 5% 10%;
+    }
+
+    .section01 {
+      height: calc(100vh + 180px);
+      position: absolute;
+      top: 0;
+      background-image: url("/media/T_1hsMH9CQY.jpg");
+      background-position: center;
+      color: #efefef;
+      box-shadow: 0 0 60px rgba(0,0,0,0.9) inset;
+
+    }
+
+    .section02 {
+      height: auto;
+      position: relative;
+      background: #9c5d49;
+      color: #efefef;
+    }
+
+.shiftdownheader {
+  top: calc(100vh + 180px);
+  position: relative;
+}
+
 
 .side-menu {
     
@@ -809,6 +736,16 @@ body, html {
 	-webkit-animation: slide-in-blurred-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: slide-in-blurred-left 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
+
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 
 .tabtext {
     text-transform: uppercase;
