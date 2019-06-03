@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
+    <!-- register service worker -->
+    <script>
+      if ('serviceWorker' in navigator){
+        window.addEventListener('load', function() {
+           navigator.serviceWorker.register('./service-worker.js')
+        .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+       });
+     }
+    </script>
+
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +23,17 @@
     <meta property="og:image" content="/media/wsc-sp-rounded.png" />
     <meta property="og:site_name" content="Wysc" />
     <meta property="og:type" content="website" />
+
+    
+    <!-- start of Web Manifest -->
+       <link rel="manifest" href="./app.webmanifest">
+    <!-- end of Web Manifest -->
+    
+    
+    <!-- theme-color -->
+       <meta name="theme-color" content="#fff" />
+    <!-- end-theme-color -->
+    
 
     <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -255,7 +278,6 @@
     </div>
 
 
-
     <!--Import jQuery before materialize.js-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -285,6 +307,17 @@
             var instances = M.Dropdown.init(elems, options);
         });
     </script>
+    
+    <script type="module">
+      import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+    
+       if ('serviceWorker' in navigator) {
+         const wb = new Workbox('/service-worker.js');
+         /* add 'workbox page reload' for users here (optional) */
+         wb.register();
+         }
+    </script>
+    
 
 </body>
 </html>

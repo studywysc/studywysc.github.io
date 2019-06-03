@@ -645,7 +645,8 @@ body, html {
       position: absolute;
       top: 0;
       color: #efefef;
-      box-shadow: 0 0 60px rgba(0,0,0,0.9) inset;
+      -webkit-box-shadow:inset 0 -5px 60px rgba(0,0,0,0.9);
+      box-shadow: 0 -5px 60px rgba(0,0,0,0.9) inset;
 
     }
 
