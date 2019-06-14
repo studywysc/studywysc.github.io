@@ -2,6 +2,3 @@
 User-agent: *
 Allow: /
 Allow: /joinwsc/
-Disallow: /media/
-Disallow: /media/*
-Disallow: /media/disch.html
