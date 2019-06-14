@@ -90,6 +90,34 @@
             background-attachment: fixed;
             background-size: cover;
         }
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        @-webkit-keyframes fade-in-bottom {
+            0% {
+                -webkit-transform: translateY(50px);
+                        transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+            }
+            @keyframes fade-in-bottom {
+            0% {
+                -webkit-transform: translateY(50px);
+                        transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+            }
     </style>
 
 </head>
@@ -193,13 +221,13 @@
         </div>
         <div class="d-none d-lg-block" style="margin-top:35vh;"></div>
 
-        <h1 class="text-shadow-drop-bottom align-center fade-in-fwd" style="letter-spacing:0.03em;margin-bottom:2.5vh;">
+        <h1 class="text-shadow-drop-bottom align-center fade-in-bottom" style="letter-spacing:0.03em;margin-bottom:2.5vh;">
             How do <div class="d-inline-block align-center rainbowtext"
                 style="font-family:Gochi Hand;font-size:1.6em;margin-left:3px;margin-right:3px;">you</div> study?</h1>
 
         <div class="container-2 align-middle text-center">
             <a href="https://discord.gg/J8b87Ku" target="_blank" style="color:rgba(255, 255, 255, 1);">
-                <div class="btnfancylg btn-twolg" style="margin-left:auto;margin-right:auto;">
+                <div class="btnfancylg btn-twolg fade-in-bottom" style="margin-left:auto;margin-right:auto;">
                     Join our Discord >
                 </div>
             </a>
@@ -217,10 +245,10 @@
     <div class="shiftdownheader">
         <div class="sectionall section02 section021">
             <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
-                <h1>What is Wysc?</h1>
+                <h1 class="jseasein">What is Wysc?</h1>
             </div>
 
-            <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:1%;padding-bottom:12%;">
+            <div class="card-deck jseasein" style="padding-left:10%;padding-right:10%;padding-top:1%;padding-bottom:12%;">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
                         <i data-eva="people-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
@@ -246,8 +274,7 @@
                             style="margin:25px;"></i>
 
                         <h5 class="card-title">Musical</h5>
-                        <p class="card-text">Lofi feed, radio, and music sharing. Casual community with entertainment
-                            channels. Game bots and activities 🎮</p>
+                        <p class="card-text">Lofi, vaporwave, and more -- working, studying or chilling, fresh music is delivered by curated feeds to enjoy round the clock 🎧</p>
                     </div>
                 </div>
             </div>
@@ -259,24 +286,19 @@
                 <div class="d-lg-none" style="padding-top:15rem;"></div>
 
                 <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
-                    <div class="hoverscale jseasein"
-                        style="height:70vh;width:18rem;margin-left:auto;margin-right:auto;">
+                    <div class="hoverscale" style="height:70vh;width:18rem;margin-left:auto;margin-right:auto;">
                         <a href="https://discord.gg/J8b87Ku" target="_blank">
                             <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
                                     style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
                             </div>
                         </a>
                         <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                        <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html"
-                            style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
+                        <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
                     </div>
 
-                    <div class="align-self-start text-center hoverscale jseasein" style="margin:auto;width:35rem;">
-                        <div class="card bg-white text-dark rounded-lg shadow-lg border-0"
-                            style="margin:auto;padding:3.25rem;">
-                            <h4 class="card-title"
-                                style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a
-                                Community</h4>
+                    <div class="align-self-start text-center hoverscale" style="margin:auto;width:35rem;">
+                        <div class="card bg-white text-dark rounded-lg shadow-lg border-0" style="margin:auto;padding:3.25rem;">
+                            <h4 class="card-title" style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a Community</h4>
                             <p class="card-text" style="font-size:1.12rem;">Wysc reimagines the study experience by
                                 crafting channels built around being productive, without the stressful atmosphere of
                                 other study Discord servers</p>
@@ -289,33 +311,66 @@
 
                 
                 <div class="d-lg-none" style="padding-top:10vh;"></div>
-
-
-
-
+                <div class="d-none d-lg-block" style="padding-top:3vh;"></div>
+                
                 <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
-                    <div class="card m-4 bg-transparent border-0">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="..." class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="m-4">
+                                <div class="card mb-3 border-0 rounded-lg shadow-sm jseasein" style="background-color:rgba(175, 125, 109, 0.95);">
+                                    <div class="row no-gutters m-3 p-3">
+                                        <div class="col-md-3" style="display:flex;align-items:center;">
+                                            <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">trending_up</i>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                    <h5 class="card-title" style="color:#efefef;line-height:1.5em;">Popular and Growing</h5>
+                                                    <p class="card-text" style="color:#dedede;font-size:1.05em;">With over 350 members and growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-
-
+                
+                    <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
+                        <div class="m-4">
+                                <div class="card mb-3 border-0 rounded-lg shadow-sm jseasein" style="background-color:rgba(165, 109, 91, 0.98);">
+                                    <div class="row no-gutters m-3 p-3">
+                                        <div class="col-md-3" style="display:flex;align-items:center;">
+                                            <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">public</i>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                    <h5 class="card-title" style="color:#efefef;line-height:1.5em;">Global in Nature</h5>
+                                                    <p class="card-text" style="color:#dedede;font-size:1.05em;">While we're based in USA, our members span across countries and continents, from Sweden to Japan! Your nationality doesn't matter -- what does is your presence :)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
+                        <div class="m-4">
+                                <div class="card mb-3 border-0 rounded-lg shadow-sm jseasein" style="background-color:rgba(156, 93, 73, 1);">
+                                    <div class="row no-gutters m-3 p-3">
+                                        <div class="col-md-3" style="display:flex;align-items:center;">
+                                            <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">local_florist</i>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                    <h5 class="card-title" style="color:#efefef;line-height:1.5em;">Free. Forever.</h5>
+                                                    <p class="card-text" style="color:#dedede;font-size:1.05em;">A free service designed to last, from our channels to our bots. Our finances are rock-solid and all resources are open-source. We're in this with you for the long haul.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                
+                    <div class="d-none d-lg-block" style="padding-bottom:10vh;"></div>
 
 
             </div>
-
 
         </div>
 
@@ -323,16 +378,43 @@
     </div>
 
     <div class="shiftdownheader">
-        <div class="sectionall section02 section021">
-            <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
-                <!-- class="sticky" -->
-                <h1>Placeholder</h1>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>hello</p>><br><br>
-        </div>
-    </div>
+        <div class="sectionall section02 section021" style="background: linear-gradient(to bottom right, rgba(6, 34, 49, 1), rgba(8, 43, 62, 1) )">
+            <div class="mx-auto" style="max-width:1000px;text-align:center;">
+                <div class="d-none d-md-block" style="padding-top:12vh;"></div>
+                <h1 class="jseasein" style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Give Us A Try</h1>
+                
+                    <!-- desktop -->
+                    <div class="d-none d-md-block">
+                        <div style="padding-top:25px;"></div>
+                        <div class="jseasein" style="height:70vh;max-height:600px;width:85%;margin-left:auto;margin-right:auto;">
+                            <!--
+                            <a href="https://discord.gg/J8b87Ku" target="_blank">
+                                <div style="position:absolute;height:100%;width:100%;">
+                                </div>
+                            </a>
+                            <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
+                            <iframe class="rounded-lg shadow-lg mb-5" src="https://disweb.deploys.io/channels/319372945929666571/330845956876664842" style="border:none;width:100%;height:100%;overflow:hidden;"></iframe>
+                        </div>
+                    </div>
 
+                    <!-- mobile -->
+                    <div class="d-md-none">
+                        <div class="jseasein" style="height:70vh;max-height:600px;width:80%;margin-left:auto;margin-right:auto;">
+                            <a href="https://discord.gg/J8b87Ku" target="_blank">
+                                <div style="position:absolute;height:100%;width:100%;">
+                                </div>
+                            </a>
+                            <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
+                            <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
+                        </div>  
+                    </div>
+
+                    
+
+                <p style="padding-bottom:400px;">Production</p>
+
+            </div>
+        </div>
     </div>
 
 
@@ -386,7 +468,6 @@
             origin: 'bottom',
         });
     </script>
-
 
 </body>
 
