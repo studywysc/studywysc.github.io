@@ -1,47 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
+
+<head>
+
     <!-- register service worker -->
     <script>
-      if ('serviceWorker' in navigator){
-        window.addEventListener('load', function() {
-           navigator.serviceWorker.register('./service-worker.js')
-        .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
-       });
-     }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(function () { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+            });
+        }
     </script>
 
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
-    <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds." />
-    <meta name="keywords" content="wysc, study discord, discord server, study discord servers, study cafe, discord productive, discord productivity, discord homework" />
-    <meta name="robots" content="index, follow"/>
+    <meta name="description"
+        content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta property="og:description"
+        content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds." />
+    <meta name="keywords"
+        content="wysc, study discord, discord server, study discord servers, study cafe, discord productive, discord productivity, discord homework" />
+    <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Wysc – Virtual Study Cafe&#769;" />
     <meta property="og:image" content="/media/wsc-sp-rounded.png" />
     <meta property="og:site_name" content="Wysc" />
     <meta property="og:type" content="website" />
 
-    
+
     <!-- start of Web Manifest -->
-       <link rel="manifest" href="./app.webmanifest">
+    <link rel="manifest" href="./app.webmanifest">
     <!-- end of Web Manifest -->
-    
-    
+
+
     <!-- theme-color -->
-       <meta name="theme-color" content="#05679D" />
+    <meta name="theme-color" content="#05679D" />
     <!-- end-theme-color -->
-    
+
 
     <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script>
-        <script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-122660061-2');
@@ -50,7 +54,8 @@
 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
@@ -73,90 +78,100 @@
 
     <style>
         .headerbg {
-            background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url('media/T_1hsMH9CQY.jpg');
-            background-position:center;
-            background-attachment:fixed;
-            background-size:cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url('media/T_1hsMH9CQY.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
         }
+
         .headerbg.replace {
-            background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ), url('media/T_1hsMH9CQY_tiny.jpg');
-            background-position:center;
-            background-attachment:fixed;
-            background-size:cover;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url('media/T_1hsMH9CQY_tiny.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
         }
     </style>
 
-  </head>
-  <body style="overflow-x: hidden;">
+</head>
 
-        <!-- Desktop -->
-        
-        <nav class="d-none d-lg-block fixed-top navbar bg-transparent z-index-fixed">
-                <a class="navbar-brand align-middle" href="#">
-                    <img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-circle shadow" id="logohovershadow" style="z-index:9;" alt="">
-                </a>
+<body style="overflow-x: hidden;">
 
-                <ul class="navbar-nav navbar-expand d-inline-block align-middle">
-                    <li class="nav-item active d-inline-block" style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">
-                            <h1>Wysc</h1>
-                    </li>
-                    <li class="nav-item active d-inline-block" style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-left:8px;">
-                            <h5>Virtual Study Cafe&#769;</h5>
-                    </li>
-                </ul>
+    <!-- Desktop -->
 
-                <div class="d-inline-block align-middle" style="float:right;margin-right:1px;">
-                        <div class="container-2 align-middle text-center d-inline-block">
-                            <div style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-right:10px;margin-top:10%;">Already in our Discord?</div>
-                        </div>
-                        <div class="container-2 align-middle text-center d-inline-block">
-                                <div class="btnfancy btn-two">
-                                    <a href="pwa.html" style="color:rgba(255, 255, 255, 1);">Go to Wysc Home ></a>
-                                </div>
-                        </div>
+    <nav class="d-none d-lg-block fixed-top navbar bg-transparent z-index-fixed">
+        <a class="navbar-brand align-middle" href="#">
+            <img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-circle shadow"
+                id="logohovershadow" style="z-index:9;" alt="">
+        </a>
+
+        <ul class="navbar-nav navbar-expand d-inline-block align-middle">
+            <li class="nav-item active d-inline-block"
+                style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">
+                <h1>Wysc</h1>
+            </li>
+            <li class="nav-item active d-inline-block"
+                style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-left:8px;">
+                <h5>Virtual Study Cafe&#769;</h5>
+            </li>
+        </ul>
+
+        <div class="d-inline-block align-middle" style="float:right;margin-right:1px;">
+            <div class="container-2 align-middle text-center d-inline-block">
+                <div
+                    style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-right:10px;margin-top:10%;">
+                    Already in our Discord?</div>
+            </div>
+            <div class="container-2 align-middle text-center d-inline-block">
+                <div class="btnfancy btn-two">
+                    <a href="pwa.html" style="color:rgba(255, 255, 255, 1);">Go to Wysc Home ></a>
                 </div>
-
-        
-        </nav>
-
-
-
-
-
-
-
-
-        <!-- Mobile -->
-        <div class="d-lg-none">
-            <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
-
-                <div class="nav-content text-center">
-
-                    <ul class="nav nav-justified">
-                            <li class="nav-item">
-                              <a class="nav-link active jello-horizontal" href="#" onclick="jQuery('html,body').animate({scrollTop:0},500);" id="navbarlinkactive">About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link jello-horizontal" href="pwa.html" id="navbarlinks">Web App</a>
-                            </li>
-                    </ul>
-                
-                    <div class="mx-auto text-center" style="position:inherit;display:block;">
-                        <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="mx-auto text-center">
-                            <img src="media/speqi-wsc 04.png" width="70px" height="70px" style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;" class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
-                        </a>
-                    </div>
-
-                </div>
-
-            </nav>
+            </div>
         </div>
 
 
-        <!-- notes: add menu-hover2 to hero image -->
+    </nav>
 
 
-        <!--
+
+
+
+
+
+
+    <!-- Mobile -->
+    <div class="d-lg-none">
+        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
+
+            <div class="nav-content text-center">
+
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active jello-horizontal" href="#"
+                            onclick="jQuery('html,body').animate({scrollTop:0},500);" id="navbarlinkactive">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link jello-horizontal" href="pwa.html" id="navbarlinks">Web App</a>
+                    </li>
+                </ul>
+
+                <div class="mx-auto text-center" style="position:inherit;display:block;">
+                    <a href="#!" onclick="jQuery('html,body').animate({scrollTop:0},500);" class="mx-auto text-center">
+                        <img src="media/speqi-wsc 04.png" width="70px" height="70px"
+                            style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;"
+                            class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+
+    <!-- notes: add menu-hover2 to hero image -->
+
+
+    <!--
         <div class="parallax"></div>
             <div class="captionparallax fade-in-fwd" id="parallax1">
             </div>                  
@@ -164,176 +179,215 @@
         </div> -->
 
 
-        <div class="headerbg sectionall section01">
+    <div class="headerbg sectionall section01">
 
-            
-            <div class="d-lg-none d-inline-block align-middle mt-4 ml-4 mr-4" style="margin-bottom:15vh;">
-                    <img src="media/speqi-wsc 04.png" width="70px" height="70px" class="d-inline-block rounded-circle shadow-lg align-middle m-3" alt="">
 
-                    <li class="nav-item active d-inline-block align-middle" style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-left:8px;">
-                            <h4>Virtual Study Cafe&#769;</h4>
-                    </li>
-            </div>
-            <div class="d-none d-lg-block" style="margin-top:35vh;"></div>
+        <div class="d-lg-none d-inline-block align-middle mt-4 ml-4 mr-4" style="margin-bottom:15vh;">
+            <img src="media/speqi-wsc 04.png" width="70px" height="70px"
+                class="d-inline-block rounded-circle shadow-lg align-middle m-3" alt="">
 
-            <h1 class="text-shadow-drop-bottom align-center fade-in-fwd" style="letter-spacing:0.03em;margin-bottom:2.5vh;">How do <div class="d-inline-block align-center rainbowtext" style="font-family:Gochi Hand;font-size:1.6em;margin-left:3px;margin-right:3px;">you</div> study?</h1>
-    
-            <div class="container-2 align-middle text-center">
-                <a href="https://discord.gg/J8b87Ku" target="_blank" style="color:rgba(255, 255, 255, 1);"><div class="btnfancylg btn-twolg" style="margin-left:auto;margin-right:auto;">
-                        Join our Discord >
-                    </div></a>
-            </div>
+            <li class="nav-item active d-inline-block align-middle"
+                style="font-family:Tajawal;color:#efefef;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);margin-left:8px;">
+                <h4>Virtual Study Cafe&#769;</h4>
+            </li>
+        </div>
+        <div class="d-none d-lg-block" style="margin-top:35vh;"></div>
 
-            <i class="material-icons md-light md-36" style="margin-top:12%;">arrow_drop_down_circle</i>
+        <h1 class="text-shadow-drop-bottom align-center fade-in-fwd" style="letter-spacing:0.03em;margin-bottom:2.5vh;">
+            How do <div class="d-inline-block align-center rainbowtext"
+                style="font-family:Gochi Hand;font-size:1.6em;margin-left:3px;margin-right:3px;">you</div> study?</h1>
 
-            <svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
-                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#9c5d49" stroke-width="120" stroke-linecap="round"/>
-            </svg>
-
+        <div class="container-2 align-middle text-center">
+            <a href="https://discord.gg/J8b87Ku" target="_blank" style="color:rgba(255, 255, 255, 1);">
+                <div class="btnfancylg btn-twolg" style="margin-left:auto;margin-right:auto;">
+                    Join our Discord >
+                </div>
+            </a>
         </div>
 
-        <div class="shiftdownheader">
-            <div class="sectionall section02 section021">
-                <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
-                    <h1>What is Wysc?</h1>
-                </div>
+        <i class="material-icons md-light md-36" style="margin-top:12%;">arrow_drop_down_circle</i>
 
-                <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:1%;padding-bottom:12%;">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body">
-                                <i data-eva="people-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64" style="margin:25px;transform:scaleX(-1);"></i>
-    
-                            <h5 class="card-title">Friendly</h5>
-                            <p class="card-text">Come join us and chat, make some friends, and meet new people! We have a life too, and we <i>love</i> memes 😍</p>
-                        </div>
-                    </div>
-                    <div class="card bg-transparent border-0">
+        <svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
+            <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#9c5d49" stroke-width="120"
+                stroke-linecap="round" />
+        </svg>
+
+    </div>
+
+    <div class="shiftdownheader">
+        <div class="sectionall section02 section021">
+            <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
+                <h1>What is Wysc?</h1>
+            </div>
+
+            <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:1%;padding-bottom:12%;">
+                <div class="card bg-transparent border-0">
                     <div class="card-body">
-                        <i data-eva="file-text-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64" style="margin:25px;"></i>
+                        <i data-eva="people-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
+                            style="margin:25px;transform:scaleX(-1);"></i>
+
+                        <h5 class="card-title">Friendly</h5>
+                        <p class="card-text">Come join us and chat, make some friends, and meet new people! We have a
+                            life too, and we <i>love</i> memes 😍</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <i data-eva="file-text-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
+                            style="margin:25px;"></i>
                         <h5 class="card-title">Studious</h5>
-                        <p class="card-text">Ask for homework help, do group study sessions, vent about your latest essay, or just chat with like-minded students! 📚</p>
+                        <p class="card-text">Ask for homework help, do group study sessions, vent about your latest
+                            essay, or just chat with like-minded students! 📚</p>
                     </div>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <i data-eva="music-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
+                            style="margin:25px;"></i>
+
+                        <h5 class="card-title">Musical</h5>
+                        <p class="card-text">Lofi feed, radio, and music sharing. Casual community with entertainment
+                            channels. Game bots and activities 🎮</p>
                     </div>
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body">
-                                <i data-eva="music-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64" style="margin:25px;"></i>
-    
-                            <h5 class="card-title">Musical</h5>
-                            <p class="card-text">Lofi feed, radio, and music sharing. Casual community with entertainment channels. Game bots and activities 🎮</p>
+                </div>
+            </div>
+
+
+            <div class="sectionall section02 section022"
+                style="background-image: linear-gradient( rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;z-index:2;background-size:cover;overflow:hidden;">
+
+                <div class="d-lg-none" style="padding-top:15rem;"></div>
+
+                <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
+                    <div class="hoverscale jseasein"
+                        style="height:70vh;width:18rem;margin-left:auto;margin-right:auto;">
+                        <a href="https://discord.gg/J8b87Ku" target="_blank">
+                            <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
+                                    style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
+                            </div>
+                        </a>
+                        <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
+                        <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html"
+                            style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
+                    </div>
+
+                    <div class="align-self-start text-center hoverscale jseasein" style="margin:auto;width:35rem;">
+                        <div class="card bg-white text-dark rounded-lg shadow-lg border-0"
+                            style="margin:auto;padding:3.25rem;">
+                            <h4 class="card-title"
+                                style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a
+                                Community</h4>
+                            <p class="card-text" style="font-size:1.12rem;">Wysc reimagines the study experience by
+                                crafting channels built around being productive, without the stressful atmosphere of
+                                other study Discord servers</p>
+                        </div>
+                        <div class="d-lg-none" style="padding-bottom:10vh;"></div>
+
+                    </div>
+                </div>
+
+
+                
+                <div class="d-lg-none" style="padding-top:10vh;"></div>
+
+
+
+
+                <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
+                    <div class="card m-4 bg-transparent border-0">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="..." class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="sectionall section02 section022" style="background-image: linear-gradient( rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;z-index:2;background-size:cover;overflow:hidden;">
 
-                    <div class="d-lg-none" style="padding-top:15rem;"></div>
-
-                    <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
-                        <div class="hoverscale jseasein" style="height:70vh;width:18rem;margin-left:auto;margin-right:auto;">
-                            <a href="https://discord.gg/J8b87Ku" target="_blank"><div style="position:absolute;height:100%;width:18rem;"><i class="material-icons" style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i></div></a>
-                            <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                            <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
-                        </div>
-                
-                        <div class="align-self-start text-center hoverscale jseasein" style="margin:auto;width:35rem;">    
-                            <div class="card bg-white text-dark rounded-lg shadow-lg border-0" style="margin:auto;padding:3.25rem;">
-                                    <h4 class="card-title" style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a Community</h4>
-                                    <p class="card-text" style="font-size:1.12rem;">Wysc reimagines the study experience by crafting channels built around being productive, without the stressful atmosphere of other study Discord servers</p>
-                            </div>
-                            <div class="d-lg-none" style="padding-bottom:10vh;"></div>
-
-                        </div>
-                    </div>
-
-                    <div class="d-lg-none" style="padding-top:10vh;"></div>
-
-
-                    <!-- <div class="align-items-center" style="text-shadow: 2px 2px 16px #000000;">
-                        
-                    <div class="accordion border-0 bg-transparent" id="accordionExample" style="text-shadow: 4px 4px 16px #000000;width:70%;margin-left:auto;margin-right:auto;"> -->
-                        
-                    <div class="row" style="width:70%;margin-left:auto;margin-right:auto;margin-bottom:15vh;">
-                        <div class="col-4">
-                            <div class="list-group border-0" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-                            </div>
-                        </div>
-                        <div class="col-8 bg-light rounded-lg">
-                            <div class="tab-content" id="nav-tabContent" style="text-shadow: 4px 4px 16px #000000;">
-                                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                
 
             </div>
 
 
         </div>
 
-        <div class="shiftdownheader">
-                <div class="sectionall section02 section021">
-                    <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;"> <!-- class="sticky" -->
-                        <h1>Placeholder</h1>
-                    </div>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p>hello</p>><br><br>
-                </div>
+
+    </div>
+
+    <div class="shiftdownheader">
+        <div class="sectionall section02 section021">
+            <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
+                <!-- class="sticky" -->
+                <h1>Placeholder</h1>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>hello</p>><br><br>
         </div>
+    </div>
 
     </div>
 
 
     <!--Import jQuery before materialize.js-->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-            new Crate({
-              server: '319372945929666571',
-              channel: '319372945929666571',
-              shard: 'https://disweb.deploys.io'
-            })
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+            server: '319372945929666571',
+            channel: '319372945929666571',
+            shard: 'https://disweb.deploys.io'
+        })
+    </script>
 
     <script>
-            eva.replace()
+        eva.replace()
     </script>
     <script>
-            var titanic = new Titanic({
-              hover: true, // auto animated on hover (default true)
-              click: true  // auto animated on click/tap (default false)
-            });
+        var titanic = new Titanic({
+            hover: true, // auto animated on hover (default true)
+            click: true  // auto animated on click/tap (default false)
+        });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, options);
         });
     </script>
-    
+
     <script type="module">
-      import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
-    
-       if ('serviceWorker' in navigator) {
-         const wb = new Workbox('/service-worker.js');
-         /* add 'workbox page reload' for users here (optional) */
-         wb.register();
-         }
+        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+
+        if ('serviceWorker' in navigator) {
+            const wb = new Workbox('/service-worker.js');
+            /* add 'workbox page reload' for users here (optional) */
+            wb.register();
+        }
     </script>
-    
+    <script>
+        ScrollReveal().reveal('.jseasein', {
+            easing: 'ease-in',
+            distance: '25px',
+            origin: 'bottom',
+        });
+    </script>
+
 
 </body>
+
 </html>
