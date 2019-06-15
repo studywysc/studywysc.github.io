@@ -282,13 +282,12 @@ body, html {
       margin: 5% 10%;
     }
     .section01 {
-      height: calc(100vh + 180px);
+      height: calc(100vh + 200px);
       position: absolute;
       top: 0;
       color: #efefef;
       -webkit-box-shadow:inset 0 -5px 60px rgba(0,0,0,0.9);
       box-shadow: 0 -5px 60px rgba(0,0,0,0.9) inset;
-
     }
     .section02 {
       height: auto;
@@ -301,16 +300,15 @@ body, html {
     .section022 {
       background: #eeeeee;
     }
+    .shiftdownheader {
+      top: calc(100vh + 200px);
+      position: relative;
+    }
 
 
 .sectiontextcolor {
   color: #efefef;
   text-align:center;
-}
-
-.shiftdownheader {
-  top: calc(100vh + 180px);
-  position: relative;
 }
 
 .side-menu {
