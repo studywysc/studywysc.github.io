@@ -305,7 +305,7 @@ body, html {
   left: 0;
   bottom: -165px;
   width: 100%;
-  height: auto;
+  height: 100vh;
   color: transparent;
 }
 
