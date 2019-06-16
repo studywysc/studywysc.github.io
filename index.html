@@ -17,7 +17,7 @@
     <meta property="og:title" content="Wysc – Study Discord Cafe&#769;" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="media/wsc-sp-rounded.png" />
-    <meta property="og:url" content="https://gitnisyl.github.io/wysc/" />
+    <meta property="og:url" content="https://gitnisyl.github.io/wysc" />
     <meta property="og:site_name" content="Wysc" />
     <meta property="og:description"
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
@@ -29,13 +29,8 @@
     <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/progressive-image-1.3.0.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- import js -->
-    <script src="js/progressive-image.js"></script>
-    <script src="js/scrollreveal-4.0.5.js"></script>
-    <link type="text/javascript" href="js/script.js">
 
     <!-- PWA -->
     <script>
@@ -46,8 +41,26 @@
             });
         }
     </script>
-    <link rel="manifest" href="./app.webmanifest">
+    <link rel="manifest" href="app.webmanifest">
     <meta name="theme-color" content="#05679D" />
+    <script>
+        async function supportsWebp() {
+            if (!self.createImageBitmap) return false;
+            
+            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+            const blob = await fetch(webpData).then(r => r.blob());
+            return createImageBitmap(blob).then(() => true, () => false);
+        }
+
+        (async () => {
+            if(await supportsWebp()) {
+                console.log('Thanks for using a modern browser! You help make my life easier! :\')');
+            }
+            else {
+                document.getElementById("webpheader").style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg');";
+            }
+        })();
+    </script>
 
     <!-- Google -->
     <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
@@ -62,12 +75,11 @@
 
     <style>
         .headerbg {
-            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg');
             background-position: center;
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-            height: 100vh;
+            height:calc(100vh + 165px);
         }
         .headerbg.replace {
             background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('media/T_1hsMH9CQY_tiny.jpg');
@@ -141,7 +153,7 @@
 
 
 
-    <div class="headerbg sectiontextcolor" style="height:calc(100vh + 165px);">
+    <div class="headerbg sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.webp');">
         <div class="align-middle d-block text-center" style="display:flex;align-items:center;justify-content:center;">
             
             <div class="d-none d-md-block" style="padding-top:35vh;"></div>
@@ -161,7 +173,7 @@
 
             <div class="align-middle text-center">
                 <div style="width:256px;margin-left:auto;margin-right:auto;">
-                <a href="https://discord.gg/J8b87Ku" target="_blank" style="color:rgba(255, 255, 255, 1);">
+                <a href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener" style="color:rgba(255, 255, 255, 1);">
                     <div class="btnfancylg btn-one fade-in-bottom-a2" style="margin-left:auto;margin-right:auto;">
                         Join our Discord >
                     </div>
@@ -176,12 +188,12 @@
     
     <div>
             <svg id="svg" class="svgheader" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
-                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#9c5d49" stroke-width="120"
+                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#8C5340" stroke-width="120"
                     stroke-linecap="round" />
             </svg>
     </div>
 
-    <div class="text-center shadow-lg sectiontextcolor" style="background-color:#9c5d49;height:auto;">
+    <div class="text-center shadow-lg sectiontextcolor" style="background-color:#8C5340;height:auto;color:#fff;">
         <!-- <div class="sticky" style="background-color:#9c5d49;height:100px;padding-top:25px;z-index:1;">
             <h1 class="jseasein">A Study Discord Experience</h1>
         </div> -->
@@ -221,13 +233,13 @@
         <div class="d-lg-none" style="padding-top:15rem;"></div>
             <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
                 <div class="hoverscale" style="height:70vh;max-height:800px;width:18rem;margin-left:auto;margin-right:auto;">
-                    <a href="https://discord.gg/J8b87Ku" target="_blank">
+                    <a href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
                         <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
                                 style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
                         </div>
                     </a>
                     <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                    <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no"></iframe>
+                    <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no" title="discord channels list"></iframe>
                 </div>
 
                 <div class="align-self-start text-center hoverscale" style="margin:auto;width:35rem;">
@@ -312,21 +324,42 @@
 
             <h1 class="jseasein" style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Give Us A Try</h1>
             
-                <div>
-                    <div style="padding-top:25px;"></div>
-                    <div class="jseasein" style="height:70vh;max-height:600px;width:85%;margin-left:auto;margin-right:auto;">
-                        
-                        <!-- mobile overlay -->
-                        <a class="d-md-none" href="https://discord.gg/J8b87Ku" target="_blank">
-                            <div class="d-md-none rounded-lg" style="position:absolute;height:100%;width:100%;background-color:#efefef;opacity:0.2;">
-                            </div>
-                        </a>
-                        <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                        <iframe class="rounded-lg shadow-lg mb-5" src="https://disweb.deploys.io/channels/319372945929666571/330845956876664842" style="border:none;width:100%;height:100%;overflow:hidden;"></iframe>
-                    </div>
+            <div>
+                <div style="padding-top:25px;"></div>
+                <div class="jseasein" style="height:70vh;max-height:600px;width:85%;margin-left:auto;margin-right:auto;">
+                    
+                    <!-- mobile overlay -->
+                    <a class="d-md-none" href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
+                        <div class="d-md-none rounded-lg" style="position:absolute;height:100%;width:100%;">
+                        </div>
+                    </a>
+                    <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
+                    <iframe class="rounded-lg shadow-lg mb-5" src="https://disweb.deploys.io/channels/319372945929666571/330845956876664842" style="border:none;width:100%;height:100%;overflow:hidden;" title="discord widget"></iframe>
                 </div>
+                <div style="padding-bottom:25px;"></div>
+            </div>
                 
-
+            <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
+                <div class="align-self-start text-center hoverscale" style="margin:auto;width:35rem;">
+                    <div class="card bg-white text-dark rounded-lg shadow-lg border-0" style="margin:auto;padding:3.25rem;">
+                        <h4 class="card-title" style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a Community</h4>
+                        <p class="card-text" style="font-size:1.12rem;">Wysc reimagines the study experience by
+                            crafting channels built around being productive, without the stressful atmosphere of
+                            other study Discord servers</p>
+                    </div>
+                    <div class="d-lg-none" style="padding-bottom:10vh;"></div>
+                </div>
+                <div class="hoverscale" style="height:70vh;max-height:800px;width:18rem;margin-left:auto;margin-right:auto;">
+                    <a href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
+                        <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
+                                style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
+                        </div>
+                    </a>
+                    <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
+                    <iframe class="rounded-lg shadow-lg mb-5" src="media/disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no" title="discord channels list"></iframe>
+                </div>
+            </div>
+            
             <p style="padding-bottom:400px;">Production</p>
 
         </div>
@@ -336,14 +369,20 @@
 
 
 
+
     <!--Import jQuery before materialize.js-->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper-1.14.7.min.js"></script>
     <script src="js/bootstrap-4.3.1.min.js"></script>
+    
+    <!-- import js -->
+    <script src="js/progressive-image.js"></script>
+    <script src="js/scrollreveal-4.0.5.js"></script>
+    <link type="text/javascript" href="js/script.min.js">
     <!-- <script src="js/materialize.min.js"></script> -->
-    <script src="js/eva-1.1.1.min.js"></script>
-    <script src="js/titanic.min.js"></script>
-    <script src="js/bodymovin.min.js"></script>
+    <script src="js/eva-1.1.1.min.js"></script><!-- scrollreveal -->
+    <script src="js/titanic.min.js"></script><!-- titanic icons -->
+    <script src="js/bodymovin.min.js"></script><!-- titanic icons -->
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
         new Crate({
