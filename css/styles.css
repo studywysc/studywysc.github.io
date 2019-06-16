@@ -416,7 +416,7 @@ body, html {
 
 #wscgradient {
     background-color: #914c35; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #bd9385, #9c5d49); /* Standard syntax (must be last) */
+    background-image: linear-gradient(to bottom right, #976454, #A17365); /* Standard syntax (must be last) */
 }
 
 #wscdiscordshadow {
