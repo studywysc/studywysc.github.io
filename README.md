@@ -8,5 +8,5 @@ https://gitnisyl.github.io/wysc
 
 ---
 
-#### 2017-2019
+#### 2017-2019 (Work|Studying|Chilling)
 - https://gitnisyl.github.io/wysc/joinwsc
