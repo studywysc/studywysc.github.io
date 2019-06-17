@@ -44,26 +44,6 @@
     <link rel="manifest" href="app.webmanifest">
     <meta name="theme-color" content="#05679D" />
 
-    <!-- safari bugfixes -->
-    <script>
-        async function supportsWebp() {
-            if (!self.createImageBitmap) return false;
-            
-            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-            const blob = await fetch(webpData).then(r => r.blob());
-            return createImageBitmap(blob).then(() => true, () => false);
-        }
-
-        (async () => {
-            if(await supportsWebp()) {
-                console.log('Thanks for using a modern browser! You help make my life easier! :\')');
-            }
-            else {
-                document.getElementById("webpheader").style.background-image="linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg')";
-            }
-        })();
-    </script>
-
     <!-- Google -->
     <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script>
@@ -393,7 +373,7 @@
             shard: 'https://disweb.deploys.io'
         })
     </script> -->
-    <script>
+    <script> // safari fix - svg render
         export function setSvgHref(elem: JQuery, href: string) {
             elem.attr('href', href);
 
@@ -403,6 +383,24 @@
                 });
             }
         }
+    </script>
+    <script> // safari fix - webp
+        async function supportsWebp() {
+            if (!self.createImageBitmap) return false;
+            
+            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+            const blob = await fetch(webpData).then(r => r.blob());
+            return createImageBitmap(blob).then(() => true, () => false);
+        }
+
+        (async () => {
+            if(await supportsWebp()) {
+                console.log('Thanks for using a modern browser! You help make my life easier! :\')');
+            }
+            else {
+                document.getElementById("webpheader").style.background-image = "linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg')";
+            }
+        })();
     </script>
     <script>
         eva.replace()
