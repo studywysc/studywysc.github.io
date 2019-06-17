@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description"
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
     <meta name="keywords"
@@ -43,6 +43,8 @@
     </script>
     <link rel="manifest" href="app.webmanifest">
     <meta name="theme-color" content="#05679D" />
+
+    <!-- safari bugfixes -->
     <script>
         async function supportsWebp() {
             if (!self.createImageBitmap) return false;
@@ -57,7 +59,7 @@
                 console.log('Thanks for using a modern browser! You help make my life easier! :\')');
             }
             else {
-                document.getElementById("webpheader").style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg');";
+                document.getElementById("webpheader").style.background-image="linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/T_1hsMH9CQY.jpg')";
             }
         })();
     </script>
@@ -79,7 +81,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-            height:calc(100vh + 165px);
+            height: calc(100vh + 165px);
         }
         .headerbg.replace {
             background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('media/T_1hsMH9CQY_tiny.jpg');
@@ -230,8 +232,8 @@
     </div>
 
     <div class="sectiontextcolor" style="background-image: linear-gradient(to bottom right, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;">
-        <div class="d-lg-none" style="padding-top:15rem;display:inline-block;"></div>
-            <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:100vh;">
+            <div class="d-lg-none" style="padding-top:80px;display:inline-block;"></div>
+            <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:auto;min-height:100vh;">
                 <div class="hoverscale" style="height:70vh;max-height:800px;width:18rem;margin-left:auto;margin-right:auto;">
                     <a href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
                         <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
@@ -255,7 +257,7 @@
             </div>
 
 
-            <div class="d-lg-none" style="padding-top:5vh;display:inline-block;"></div>
+            <div class="d-lg-none" style="padding-top:80px;display:inline-block;"></div>
             <!--
             <div class="d-lg-none" style="padding-top:5vh;"></div>
             <div class="d-none d-lg-block" style="padding-top:2vh;"></div> -->
@@ -391,6 +393,17 @@
             shard: 'https://disweb.deploys.io'
         })
     </script> -->
+    <script>
+        export function setSvgHref(elem: JQuery, href: string) {
+            elem.attr('href', href);
+
+            if (isSafari()) {
+                elem.each(function() {
+                this.setAttributeNS('http://www.w3.org/1999/xlink', 'href', href);
+                });
+            }
+        }
+    </script>
     <script>
         eva.replace()
     </script>
