@@ -152,25 +152,6 @@
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('https://source.unsplash.com/random/?nature,water');height:100vh;overflow:hidden;">
 
         <div class="height100vh fadeaway" style="position:relative;">
-            
-            <!-- desktop topnav -->
-            <div class="d-none d-md-block" style="position:absolute;">
-                <nav class="navbar navbar-dark bg-transparent">
-                    <a class="navbar-brand hoverscale" href="index.html"
-                        style="cursor:pointer;">
-                        <img src="media/wsc-square-sm.png" width="70" height="70"
-                            class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="">
-                        <span class="d-inline-block align-middle fade-in-bottom-a1"
-                            style="font-family:'Gochi Hand';font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc<span
-                                class="fade-in-fwd-a1">.</span></span>
-                    </a>
-                    <div class="navbar-nav navbar-expand mr-auto align-bottom fade-in-bottom-a2">
-                        <span class="nav-item d-inline-block align-bottom fade-in-fwd"
-                            style="font-family:'Cookie';color:#e0e0e0;font-size:1.8em;letter-spacing:0.02em;margin-left:-10px;padding-top:0.2em;text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);">Virtual
-                            Study Cafe&#769;</span>
-                    </div>
-                </nav>
-            </div>
 
             <div class="fade-in-bottom-a1" style="position:absolute;width:100%;">
                 <div class="text-center centeritvertically">
@@ -193,8 +174,28 @@
                     </div>
                 </div>
             </div>
-            <div style="position:absolute;right:0;top:10px;max-width:60vh;width:35%;">
-                <div class="alert alert-success alert-dismissible fade-in-bottom-a4 fade show text-center p-4 m-2 shadow-lg border-0" role="alert" style="width=100%;">
+
+            <!-- desktop topnav -->
+            <div class="d-none d-md-block" style="position:absolute;">
+                <nav class="navbar navbar-dark bg-transparent">
+                    <a class="navbar-brand hoverscale" href="index.html"
+                        style="cursor:pointer;">
+                        <img src="media/wsc-square-sm.png" width="70" height="70"
+                            class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="">
+                        <span class="d-inline-block align-middle fade-in-bottom-a1"
+                            style="font-family:'Gochi Hand';font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc<span
+                                class="fade-in-fwd-a1">.</span></span>
+                    </a>
+                    <div class="navbar-nav navbar-expand mr-auto align-bottom fade-in-bottom-a2">
+                        <span class="nav-item d-inline-block align-bottom fade-in-fwd"
+                            style="font-family:'Cookie';color:#e0e0e0;font-size:1.8em;letter-spacing:0.02em;margin-left:-10px;padding-top:0.2em;text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);">Virtual
+                            Study Cafe&#769;</span>
+                    </div>
+                </nav>
+            </div>
+            
+            <div style="position:absolute;right:0;top:0px;max-width:60vh;width:30%;">
+                <div class="alert alert-success alert-dismissible fade-in-bottom-a4 fade show text-center p-4 m-3 shadow-lg border-0" role="alert" style="width=100%;">
                     <h4>Hello, Welcome to Wysc!</h4>
                     <text>Thanks for testing out Wysc's new Web App! We're still testing some stuff right now, but we hope you enjoy!</text>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -344,7 +345,7 @@
     </script> -->
     <script>
         $(window).scroll(function(){
-            $(".fadeaway").css("opacity", 1 - $(window).scrollTop() / 125);
+            $(".fadeaway").css("opacity", 1 - $(window).scrollTop() / 100);
         });
     </script>
     <!--

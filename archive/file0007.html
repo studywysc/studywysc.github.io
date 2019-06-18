@@ -3,6 +3,15 @@
 <head>
     <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
     <script src="../js/bootstrap-4.3.1.min.js"></script>
+    <style>
+        #myId {
+            color: orange;
+        }
+
+        input {
+            width: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,11 +40,15 @@
     <div class="tab-content">
         <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
         <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"><iframe width="560"
-            height="315" src="https://invidio.us/embed/N6hJUjZGXik?autoplay=1" frameborder="0"
-            allowfullscreen></iframe></div>
+                height="315" src="https://invidio.us/embed/N6hJUjZGXik?autoplay=1" frameborder="0"
+                allowfullscreen></iframe></div>
         <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
         <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
     </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
 
     <script>
         $(function () {
@@ -43,7 +56,73 @@
         })
     </script>
 
+    <div>Enter a YouTube URL:
+        <input id="myUrl" type="text" value="http://www.youtube.com/watch?v=zbYf5_S7oJo" />
+    </div>
+    <div>
+        <button id="myBtn">Go</button>
+    </div>
+    <div>
+        <pre id="myCode"></pre>
+    </div>
 
+    <div>This is an answer to <a target="_blank"
+            href="http://stackoverflow.com/questions/21607808/convert-a-youtube-video-url-to-embed-code/21607897#21607897">a
+            question on Stack Overflow</a>.</div>
+
+
+
+    <script>
+        function getId(url) {
+            var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            var match = url.match(regExp);
+
+            if (match && match[2].length == 11) {
+                return match[2];
+            } else {
+                return 'error';
+            }
+        }
+
+        var myId;
+
+        $('#myBtn').click(function () {
+            var myUrl = $('#myUrl').val();
+            myId = getId(myUrl);
+
+            $('#myId').html(myId);
+
+            $('#myCode').html('<iframe width="560" height="315" src="https://www.invidio.us/embed/' + myId + '?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        });
+
+        // from youtube official
+        // 2. This code loads the IFrame Player API code asynchronously.
+        //var tag = document.createElement('script');
+
+        //tag.src = "https://www.youtube.com/iframe_api";
+        //var firstScriptTag = document.getElementsByTagName('script')[0];
+        //firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        //var player;
+        //function onYouTubeIframeAPIReady() {
+        //    player = new YT.Player('player', {
+        //        height: '390',
+        //        width: '640',
+        //        videoId: myId,
+        //        events: {
+        //            'onReady': onPlayerReady,
+        //            'onStateChange': onPlayerStateChange
+        //        }
+        //    });
+        //}
+
+        // 4. The API will call this function when the video player is ready.
+        //function onPlayerReady(event) {
+        //    event.target.playVideo();
+        //}
+    </script>
 
     <!-- add this line for function to write into
         <p id="demo"></p>   
@@ -80,8 +159,7 @@
             }
         },500);
 
-    -->
-    <script src="../js/jquery-3.4.1.min.js"></script>
+    
 
     <script>
 
@@ -137,7 +215,7 @@
                 });
             }
         }
-    </script>
+    </script> -->
 
 
 </body>
