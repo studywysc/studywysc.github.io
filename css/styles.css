@@ -352,6 +352,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 .svgheader {
   position: absolute;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: auto;
   color: transparent;
