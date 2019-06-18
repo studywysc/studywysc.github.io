@@ -18,6 +18,13 @@ body, html {
 
 /* Animista moved to bottom */
 
+.appstyle {
+  font-family:'Lato';
+  font-size:8em;
+  color:#e6e6e6;
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 1)
+}
+
 /* buttonfancy */
 .btnfancy {
   position: relative;
@@ -97,6 +104,28 @@ body, html {
       to {transform: rotate(-360deg);}
   }
 
+.centeritvertically {
+  margin-top: 50vh;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.centeritvertically2 {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* input field https://codepen.io/Takumari85/pen/RaYwpJ */
+.effect-17:focus{outline: none;}
+.col-3{float: left; width: 27.33%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+.effect-17 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}
+.effect-17 ~ label{position: absolute; left: 0; width: 100%; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+.effect-17:focus ~ label, .has-content.effect-17 ~ label{top: -16px; font-size: 12px; color: #3399FF; transition: 0.3s;}
+
 .floating-scrollspy {
     display: block;
     position: relative; /*
@@ -132,6 +161,10 @@ body, html {
     opacity: 0.9;
   } 
 
+.height100vh {
+  height: 100vh;
+}
+
 .hoverscale {
   transform: scale(1);
   transition: transform 0.2s linear;
@@ -141,6 +174,22 @@ body, html {
   transform: scale(1.025);
   transition: transform 0.2s linear;
 }
+
+.img-hover-zoom { /* https://w3bits.com/css-image-hover-zoom/ */
+  /* height: 300px; Modify this according to your need */
+  overflow: hidden; /* Removing this will break the effects */
+}
+  /* Brightness-zoom Container */
+  .img-hover-zoom--brightness img:not(.svgee) {
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(45%);
+  }
+  /* The Transformation */
+  .img-hover-zoom--brightness:hover img:not(.svgee) {
+    filter: brightness(55%);
+    transform: scale(1.1);
+  }
 
 #logohovershadow {
     transition: box-shadow 300ms;
