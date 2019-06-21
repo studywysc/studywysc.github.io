@@ -11,12 +11,6 @@
     <title>Document</title>
     <script src="../js/hello.all.min.js"></script>
     <script src="../js/soundcloud.js"></script>
-</head>
-
-<body>
-    <p>regular content here</p>
-    <button onclick="hello('google').login()">google</button>
-
 
     <script>
         hello.on('auth.login', function (auth) {
@@ -36,9 +30,17 @@
     </script>
     <script>
         hello.init({
-            google: 141871346109-jvkuegk7n32p1hqj2sskpk0g1o10206h.apps.googleusercontent.com
+            google: '141871346109-jvkuegk7n32p1hqj2sskpk0g1o10206h.apps.googleusercontent.com'
         }, { redirect_uri: '../redirect.html' });
     </script>
+</head>
+
+<body>
+    <p>regular content here</p>
+    <button onclick="hello('google').login()">google</button>
+
+
+
 </body>
 
 </html>
