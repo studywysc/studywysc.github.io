@@ -7,6 +7,7 @@
 "name": "Wysc",
 "description": "Virtual Study Cafe&#769;",
 "lang": "en-US",
+"start_url": "start.html"
 "icons": [
   {
    "src": "images/icons/icon-72x72.png",

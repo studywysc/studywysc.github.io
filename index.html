@@ -7,7 +7,7 @@
     <meta name="description"
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
     <meta name="keywords"
-        content="wysc, study discord, study voice chat, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord server, vaporwave discord server, students discord" />
+        content="wysc, study discord, study voice chat, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#05679D" />
     <link rel="manifest" href="app.webmanifest">
@@ -24,13 +24,20 @@
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 
     <!-- import css -->
-    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link href="css/bootstrap-4.3.1.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/progressive-image-1.3.0.css">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    <link href="css/styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    <link href="css/progressive-image-1.3.0.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/progressive-image-1.3.0.css"></noscript>
+    <script src="js/cssrelpreload.js"></script> <!-- firefox rel-preload polyfill -->
 
     <style>
         .headerbg {
@@ -67,6 +74,9 @@
             animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
         }
         @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+        .sr { /* noscript Scrollreveal */
+            visibility: visible;
+        }
     </style>
 </head>
 
@@ -94,7 +104,7 @@
                             <a class="nav-link active jello-horizontal" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="navbarlinkactive">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled jello-horizontal" href="start.html" id="navbarlinks" style="text-decoration:line-through;">Web App</a>
+                            <a class="nav-link jello-horizontal" href="start.html" id="navbarlinks">Web App</a>
                         </li>
                     </ul>
     
@@ -102,7 +112,7 @@
                         <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mx-auto text-center">
                             <img src="media/wsc-square-sm.png" width="70px" height="70px"
                                 style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;"
-                                class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="">
+                                class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="logo image">
                         </a>
                     </div>
     
@@ -284,27 +294,35 @@
             <div class="d-none d-md-block" style="padding-top:10px;display:inline-block;"></div>
             <div style="padding-top:calc(10vh + 80px);display:inline-block;"></div>
 
-            <h1 class="jseasein" style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Give Us A Try</h1>
+            <h1 class="jseasein" style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Have Questions?</h1>
             
-            <div>
-                <div style="padding-top:25px;display:inline-block;"></div>
-                <div class="jseasein" style="height:70vh;max-height:600px;width:85%;margin-left:auto;margin-right:auto;">
-                    
-                    <!-- mobile overlay -->
-                    <a class="d-md-none" href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
-                        <div class="d-md-none rounded-lg" style="position:absolute;height:100%;width:100%;">
+            <div class="align-middle text-center hoverscale">
+                <div style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
+                    <a onclick="crate.toggle(true)" style="color:rgba(255, 255, 255, 1);cursor:pointer;">
+                        <div class="btnfancylg btn-one fade-in-bottom-a2" style="margin-left:auto;margin-right:auto;">
+                            Contact Support >
                         </div>
                     </a>
-                    <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                    <iframe class="rounded-lg shadow-lg mb-5" src="" data-src="https://disweb.deploys.io/channels/319372945929666571/330845956876664842" style="border:none;width:100%;height:100%;overflow:hidden;" title="discord widget"></iframe>
                 </div>
-                <div style="padding-bottom:25px;display:inline-block;"></div>
             </div>
             
-            <p style="padding-bottom:400px;">Production</p>
+            <div class="container text-center" style="padding-top:80px;padding-bottom:80px;">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-lg p-4">
+                        <img src="media/300x200_sanfrancisco.png" width="80%" height="auto" class="rounded-lg hoverscale" />
+                    </div>
+                    <div class="col align-self-center">
+                        <h3>Made with 💖</h3>
+                        <h6>from San Francisco, CA</h6>
+                        <span style="p-4 m-4"><br>A story of innovation, created from inspiration at the intersection of education and technology.</span>
+                    </div>
+                </div>
+            </div>
             
     
             <div style="color:#dedede;padding:20px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+
+            <div style="d-md-none" style="padding-bottom:100px;"></div>
 
         </div>
     </div>
@@ -423,6 +441,13 @@
         vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
         } } }
         window.onload = init;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+            server: '319372945929666571',
+            channel: '590703218049286163',
+            shard: 'https://disweb.deploys.io'
+        })
     </script>
     <!--
     <script>
