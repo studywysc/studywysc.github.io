@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="wysc, study discord, study voice chat, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord server, vaporwave discord server, students discord" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Wysc – Virtual Study Cafe&#769;</title>
+    <title>Wysc – Virtual Study Cafe</title>
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#05679D" />
     <link rel="manifest" href="app.webmanifest">
@@ -21,10 +21,11 @@
     <script>
         addToHomescreen();
     </script>
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-touch-fullscreen" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Wysc: Study Cafe" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Wysc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
     <link href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
@@ -38,7 +39,7 @@
     <link href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
     <!-- og: meta tags // title-type-img-url required -->
-    <meta property="og:title" content="Wysc – Study Discord Cafe&#769;" />
+    <meta property="og:title" content="Wysc – Study Discord Cafe" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="media/wsc-sp-rounded.png" />
     <meta property="og:url" content="https://gitnisyl.github.io/wysc" />
@@ -220,7 +221,7 @@
                     <div class="navbar-nav navbar-expand mr-auto align-bottom fade-in-bottom-a2">
                         <span class="nav-item d-inline-block align-bottom fade-in-fwd"
                             style="font-family:'Cookie';color:#e0e0e0;font-size:1.8em;letter-spacing:0.02em;margin-left:-10px;padding-top:0.2em;text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);">Virtual
-                            Study Cafe&#769;</span>
+                            Study Cafe</span>
                     </div>
                 </nav>
             </div>
@@ -253,7 +254,7 @@
                     <div class="navbar-nav navbar-expand mr-auto align-bottom fade-in-bottom-a2">
                         <span class="nav-item d-inline-block align-bottom fade-in-fwd"
                             style="font-family:'Cookie';color:#e0e0e0;font-size:1.8em;letter-spacing:0.02em;margin-left:-10px;padding-top:0.2em;text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);">Virtual
-                            Study Cafe&#769;</span>
+                            Study Cafe</span>
                     </div>
                     <div class="navbar-nav navbar-expand ml-auto align-bottom fade-in-bottom-a2">
                         <span class="nav-item d-inline-block align-bottom text-center">
@@ -302,6 +303,15 @@
             });
         }
     </script>
+    <script type="module">
+        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+
+        if ('serviceWorker' in navigator) {
+            const wb = new Workbox('/service-worker.js');
+            /* add 'workbox page reload' for users here (optional) */
+            wb.register();
+        }
+    </script>
 
     <!-- Google -->
     <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
@@ -323,16 +333,6 @@
     <script src="js/scrollreveal-4.0.5.js"></script>
     <link type="text/javascript" href="js/script.min.js">
     <script src="js/progressive-image.js"></script>
-
-    <script type="module">
-        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
-
-        if ('serviceWorker' in navigator) {
-            const wb = new Workbox('/service-worker.js');
-            /* add 'workbox page reload' for users here (optional) */
-            wb.register();
-        }
-    </script>
 
     <script>
         function createNode(element) {
@@ -358,23 +358,6 @@
                 console.log(error);
             });   
     </script>
-
-    <!--
-    <script>
-        var requestUrl = "https://ipapi.co/json/";
-        $.ajax({
-        url: requestUrl,
-        type: 'GET',
-        success: function(json)
-        {
-            document.getElementById('citycountry').innerHTML(json.city + ', ' + json.country);
-        },
-        error: function(err)
-        {
-            console.log("Request failed, error= " + err);
-        }
-        });
-    </script> -->
     <script>
         $(window).scroll(function(){
             $(".fadeaway").css("opacity", 1 - $(window).scrollTop() / 100);
@@ -389,10 +372,5 @@
         } } }
         window.onload = init;
     </script>
-    <!--
-    <script>
-        this.top.location !== this.location && (this.top.location = this.location);
-    </script> -->
 </body>
-
 </html>

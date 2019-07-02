@@ -1,3 +1,28 @@
+<!-- 0.190702 iframe busting // chrome gutted this functionality but cool to save -->
+    <script>
+        this.top.location !== this.location && (this.top.location = this.location);
+    </script>
+
+
+<!-- 0.190702 -->
+
+<script>
+    var requestUrl = "https://ipapi.co/json/";
+    $.ajax({
+    url: requestUrl,
+    type: 'GET',
+    success: function(json)
+    {
+        document.getElementById('citycountry').innerHTML(json.city + ', ' + json.country);
+    },
+    error: function(err)
+    {
+        console.log("Request failed, error= " + err);
+    }
+    });
+</script>
+
+
 
 <!-- 0.190617 -->
 
