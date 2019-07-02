@@ -15,11 +15,6 @@
     <link rel="manifest" href="app.webmanifest">
 
     <!-- apple is annoying -->
-    <link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css">
-    <script src="js/add-to-homescreen-master/src/addtohomescreen.js"></script>
-    <script>
-        addToHomescreen();
-    </script>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Wysc" />
@@ -47,7 +42,8 @@
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 
     <!-- import css -->
-    <link href="css/bootstrap-4.3.1.min.css" rel="stylesheet">
+    <link href="css/bootstrap-4.3.1.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/bootstrap-4.3.1.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400"></noscript>
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -58,24 +54,9 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
     <link href="css/styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
-    <link href="css/progressive-image-1.3.0.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="css/progressive-image-1.3.0.css"></noscript>
-    <script src="js/cssrelpreload.js"></script> <!-- firefox rel-preload polyfill -->
 
     <style>
-        .headerbg {
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: calc(100vh + 165px);
-        }
-        .headerbg.replace {
-            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('media/T_1hsMH9CQY_tiny.jpg');
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+        .headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}.sr{/*Scrollreveal visible for noscript*/visibility: visible;}
         .fade-in-bottom {
             -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -97,14 +78,9 @@
             animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
         }
         @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-        .sr { /* Scrollreveal visible for noscript */
-            visibility: visible;
-        }
     </style>
 </head>
-
 <body>
-
     <!-- desktop topnav -->
     <div class="d-none d-md-block">
         <nav class="navbar fixed-top navbar-dark bg-transparent">
@@ -117,7 +93,6 @@
             </div>
         </nav>
     </div>
-
     <!-- mobile bottomnav -->
     <div class="d-md-none">
         <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
@@ -130,7 +105,6 @@
                             <a class="nav-link jello-horizontal" href="start.html" id="navbarlinks">Web App</a>
                         </li>
                     </ul>
-    
                     <!-- spazzes around w/ disweb
                     <div class="mx-auto text-center" style="position:inherit;display:block;">
                         <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mx-auto text-center">
@@ -139,7 +113,6 @@
                                 class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="logo image">
                         </a>
                     </div> -->
-    
                 </div>
         </nav>
     </div>
@@ -193,7 +166,7 @@
         <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:5vh;padding-bottom:120px;">
             <div class="card bg-transparent border-0">
                 <div class="card-body">
-                    <i class="noselect" data-eva="people-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
+                    <i data-eva="people-outline" data-eva-fill="#efefef" data-eva-height="64" data-eva-width="64"
                         style="margin:25px;transform:scaleX(-1);"></i>
 
                     <h5 class="card-title">Community-oriented</h5>
@@ -225,7 +198,7 @@
             <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4" style="height:auto;min-height:100vh;">
                 <div class="hoverscale" style="height:70vh;max-height:800px;width:18rem;margin-left:auto;margin-right:auto;">
                     <a href="https://discord.gg/J8b87Ku" target="_blank" rel="noopener">
-                        <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons"
+                        <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons noselect"
                                 style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
                         </div>
                     </a>
@@ -313,7 +286,7 @@
             <div class="d-none d-md-block" style="padding-top:10px;display:inline-block;"></div>
             <div style="padding-top:calc(10vh + 80px);display:inline-block;"></div>
 
-            <h1 class="jseasein" style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Have Questions?</h1>
+            <h1 style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Have Questions?</h1>
             
             <div class="align-middle text-center hoverscale">
                 <div style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
@@ -379,6 +352,16 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper-1.14.7.min.js"></script>
     <script src="js/bootstrap-4.3.1.min.js"></script>
+
+    <!-- non-renderblocking css -->
+    <link href="css/progressive-image-1.3.0.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/progressive-image-1.3.0.css"></noscript>
+    <script src="js/cssrelpreload.js"></script> <!-- firefox rel-preload polyfill -->
+    <link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css">
+    <script src="js/add-to-homescreen-master/src/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen();
+    </script>
     
     <!-- import js -->
     <script src="js/progressive-image.js"></script>
@@ -455,6 +438,7 @@
             server: '319372945929666571',
             channel: '590703218049286163',
             shard: 'https://disweb.deploys.io',
+            notifications: false,
             defer: true,
         })
     </script>

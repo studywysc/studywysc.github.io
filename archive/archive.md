@@ -6,21 +6,29 @@
 
 <!-- 0.190702 -->
 
-<script>
-    var requestUrl = "https://ipapi.co/json/";
-    $.ajax({
-    url: requestUrl,
-    type: 'GET',
-    success: function(json)
-    {
-        document.getElementById('citycountry').innerHTML(json.city + ', ' + json.country);
-    },
-    error: function(err)
-    {
-        console.log("Request failed, error= " + err);
+    <script>
+        var requestUrl = "https://ipapi.co/json/";
+        $.ajax({
+        url: requestUrl,
+        type: 'GET',
+        success: function(json)
+        {
+            document.getElementById('citycountry').innerHTML(json.city + ', ' + json.country);
+        },
+        error: function(err)
+        {
+            console.log("Request failed, error= " + err);
+        }
+        });
+    </script>
+
+<!-- defunct progressiveimage header -->
+    .headerbg.replace {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('media/T_1hsMH9CQY_tiny.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
     }
-    });
-</script>
 
 
 
