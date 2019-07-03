@@ -42,8 +42,6 @@
         content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 
     <!-- import css -->
-    <link href="css/bootstrap-4.3.1.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="css/bootstrap-4.3.1.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400"></noscript>
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -54,6 +52,7 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
     <link href="css/styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
 
     <style>
         .headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}.sr{/*Scrollreveal visible for noscript*/visibility: visible;}
@@ -306,8 +305,7 @@
                     <div class="col align-self-center">
                         <h3>Made with 💖</h3>
                         <h6>from San Francisco, CA</h6>
-                        <br>
-                        <span style="p-4 m-4"><br>A story of innovation, crafted from inspiration at the intersection of education and technology.</span>
+                        <div class="p-4"><br>A story of innovation, crafted from inspiration at the intersection of education and technology.</div>
                     </div>
                 </div>
             </div>
@@ -372,6 +370,7 @@
     <script src="js/titanic.min.js"></script><!-- titanic icons -->
     <script src="js/bodymovin.min.js"></script><!-- titanic icons -->
 
+    <!-- 
     <script> // safari fix - svg render
         export function setSvgHref(elem: JQuery, href: string) {
             elem.attr('href', href);
@@ -382,7 +381,7 @@
                 });
             }
         }
-    </script>
+    </script> -->
     <script> // safari fix - webp
         async function supportsWebp() {
             if (!self.createImageBitmap) return false;

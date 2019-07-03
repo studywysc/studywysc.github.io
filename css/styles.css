@@ -1,6 +1,6 @@
 /* @import "compass/css3"; */
 
-$header-height: 4em;
+/* $header-height: 4em; */
 
 html{
     font-family: 'Lato', sans-serif;
@@ -11,7 +11,6 @@ body {
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    overscroll-behavior-y: none;
 }
 
 body, html {
@@ -40,10 +39,10 @@ body, html {
   box-shadow: 10px 10px 50px -25px rgba(0,0,0,0.75);
   transition: all 0.3s;
   margin-top: 15px; /* added myself */
-  span {
-    transition: all 0.3s;
-    tranform: scale(1, 1);
-  }
+}
+.btnfancy span {
+  transition: all 0.3s;
+  transform: scale(1, 1);
 }
 .btnfancy::before, .btnfancy::after {
   content: '';
@@ -83,10 +82,10 @@ body, html {
   /* cursor: pointer; added myself */
   box-shadow: 10px 10px 50px -25px rgba(0,0,0,0.75);
   transition: all 0.3s;
-  span {
-    transition: all 0.3s;
-    tranform: scale(1, 1);
-  }
+}
+.btnfancy span {
+  transition: all 0.3s;
+  transform: scale(1, 1);
 }
 .btnfancylg::before, .btnfancylg::after {
   content: '';
@@ -247,6 +246,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   color: transparent;
   background-size: 1800% 1800%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
 
