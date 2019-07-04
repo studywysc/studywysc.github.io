@@ -5,19 +5,63 @@
 html{
     font-family: 'Lato', sans-serif;
 }
-
 body {
-    background-color: #212121;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
-
 body, html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
 }
+.blogbody {
+  background-color:#fefefe;
+}
+.blogheaderbar {
+  margin-top:-100px;
+}
+.blogheader {
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:200px;
+  margin-bottom:50px;
+}
+.bloghheader {
+  background-position:center;
+  background-size:cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+.bloghtitle h1 {
+  font-size:1.68em;
+}
+.bloghdate h4 {
+  font-size:1.1em;
+}
+/* .bloghfooter div div {
+  
+} */
+.blogpbody {
+  width:70%;
+}
+.blogtext {
+  color:#121212;
+  font-size:1.2em;
+  line-height:1.68em;
+}
+
+/* Custom Convenience */
+
+.fontgochihand {
+  font-family:'Gochi Hand','Helvetica',sans-serif;
+}
+.padb40 {
+  padding-bottom:40px;
+}
+
+/* Transplanted */
 
 /* Animista moved to bottom */
 
@@ -163,6 +207,14 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .floating-scrollspy .nav-link:hover i{
     opacity: 0.9;
   } 
+
+/* .headerbg {
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:calc(100vh + 165px);
+} */
 
 .height100vh {
   height: 100vh;

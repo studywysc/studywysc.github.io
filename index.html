@@ -37,7 +37,7 @@
         <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
     <style>
-        .headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}.sr{/*Scrollreveal visible for noscript*/visibility: visible;}
+        body{background-color:#212121;}.headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}.sr{/*Scrollreveal visible for noscript*/visibility: visible;}
         .fade-in-bottom {
             -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -85,11 +85,22 @@
         <nav class="navbar fixed-top navbar-dark bg-transparent">
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
                 <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo">
-                <span class="d-inline-block align-middle fade-in-bottom-a1" style="font-family:'Gochi Hand';font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc<span class="fade-in-fwd-a1">.</span></span>
+                <span class="d-inline-block align-middle fade-in-bottom-a1 fontgochihand" style="font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc<span class="fade-in-fwd-a1">.</span></span>
             </a>
             <div class="navbar-nav navbar-expand mr-auto align-bottom fade-in-bottom-a2">
                 <span class="nav-item d-inline-block align-bottom fade-in-fwd" style="font-family:'Cookie','Trebuchet MS','San Francisco',serif;color:#e0e0e0;font-size:1.8em;letter-spacing:0.02em;margin-left:-10px;padding-top:0.2em;text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);">Virtual Study Cafe</span>
             </div>
+            <ul class="navbar-nav navbar-expand ml-auto fade-in-bottom-a2 align-middle">
+                <li class="nav-item active p-3">
+                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="start.html">Web App</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <!-- mobile bottomnav -->
@@ -134,14 +145,14 @@
                     <nav class="navbar navbar-dark bg-transparent">
                         <a class="navbar-brand hoverscale ml-auto mr-auto">
                             <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo image">
-                            <span class="d-inline-block align-middle fade-in-bottom" style="font-family:'Gochi Hand';font-size:3em;margin-left:25px;color:#c8c8c8;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
+                            <span class="d-inline-block align-middle fade-in-bottom fontgochihand" style="font-size:3em;margin-left:25px;color:#c8c8c8;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
                         </a>
                     </nav>
                     <div style="padding-bottom:15vh;"></div>
                 </div>
 
                 <div>
-                    <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1" style="font-family:Lato;font-weight:bold;letter-spacing:0.06rem;margin-bottom:2.5vh;"> How do <div class="d-inline-block align-center rainbowtext" style="font-family:Gochi Hand;font-size:1.6em;font-weight:normal;margin-left:3px;margin-right:3px;">you</div> study?</h1>
+                    <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1" style="font-family:Lato;font-weight:bold;letter-spacing:0.06rem;margin-bottom:2.5vh;"> How do <div class="fontgochihand d-inline-block align-center rainbowtext" style="font-size:1.6em;font-weight:normal;margin-left:3px;margin-right:3px;">you</div> study?</h1>
 
                     <div class="align-middle text-center">
                         <div style="width:256px;margin-left:auto;margin-right:auto;">
@@ -207,7 +218,7 @@
 
                 <div class="align-self-start text-center hoverscale" style="margin:auto;width:35rem;">
                     <div class="card bg-white text-dark rounded-lg shadow-lg border-0" style="margin:auto;padding:3.25rem;">
-                        <h4 class="card-title" style="font-family:'Gochi Hand';font-size:2rem;padding-bottom:0.5rem;">Engage With a Community</h4>
+                        <h4 class="card-title fontgochihand" style="font-size:2rem;padding-bottom:0.5rem;">Engage With a Community</h4>
                         <p class="card-text" style="font-size:1.12rem;">Wysc reimagines the study experience by
                             crafting channels built around being productive, without the stressful atmosphere of
                             other study Discord servers</p>
@@ -285,7 +296,7 @@
             <div class="d-none d-md-block" style="padding-top:10px;display:inline-block;"></div>
             <div style="padding-top:calc(10vh + 80px);display:inline-block;"></div>
 
-            <h1 style="font-family:Gochi Hand;font-size:4em;letter-spacing:0.01em;padding:15px;">Have Questions?</h1>
+            <h1 class="fontgochihand" style="font-size:4em;letter-spacing:0.01em;padding:15px;">Have Questions?</h1>
             
             <div class="align-middle text-center hoverscale">
                 <div style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
@@ -311,7 +322,7 @@
             </div>
             
             <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
-            <div class="text-center p-4" style="color:#aaa;font-family:'Gochi Hand';font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+            <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
 
         </div>
     </div>
