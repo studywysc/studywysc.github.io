@@ -15,9 +15,19 @@ body, html {
   padding: 0px;
   overflow-x: hidden; 
 }
+
 .blogbody {
   background-color:#fefefe;
 }
+
+.blogfade {
+  animation: blogfadein 0.68s;
+}
+@keyframes blogfadein {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
 .blogheaderbar {
   margin-top:-100px;
 }
@@ -547,3 +557,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 @-webkit-keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes slide-in-blurred-left{0%{-webkit-transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform:translateX(-1000px) scaleX(2.5) scaleY(.2);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-filter:blur(40px);filter:blur(40px);opacity:0}100%{-webkit-transform:translateX(0) scaleY(1) scaleX(1);transform:translateX(0) scaleY(1) scaleX(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 /*animation text-shadow-drop-bottom*/
 @-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}
+
+@media (max-width: 768px) { /* up to d-md */
+  .blogpbody {
+    width:85%;
+  }
+}

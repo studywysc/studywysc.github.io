@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="../css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <div id="importheaderstyle"></div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <div id="importheaderstyle"></div><script>$("#importheaderstyle").load('blogheaderstyle.html');</script>
 </head>
 <body class="blogbody">
-    <div id="importheader" style="position:absolute;width:100%;"></div>
-    <div class="text-center blogpbody mx-auto" style="padding-top:250px;">
+    <div id="importheader" style="position:absolute;width:100%;"></div><script>$("#importheader").load('blogheader.html');</script>
+    <div class="text-center blogpbody mx-auto blogfade" style="padding-top:250px;">
 
         <title>Wysc Blog Release &ndash;&nbsp;Wysc Blog</title>
         <h1 id="blogptitle">Wysc Blog Release</h1>
@@ -29,10 +30,6 @@
         
         </div>
     </div>
-    <div id="importfooter"></div>
-    <script src="../js/jquery-3.4.1.min.js"></script>
-    <script>$("#importheaderstyle").load('blogheaderstyle.html');</script>
-    <script>$("#importheader").load('blogheader.html');</script>
-    <script>$("#importfooter").load('blogfooter.html');</script>
+    <div id="importfooter"></div><script>$("#importfooter").load('blogfooter.html');</script>
 </body>
 </html>

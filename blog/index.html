@@ -42,8 +42,37 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
 </head>
 <body style="background-color:#212121;">
-    <!-- desktop topnav -->
+
+    <!-- mobile bottomnav -->
+    <div class="d-md-none">
+        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
+                <div class="nav-content text-center">
+                    <ul class="nav nav-justified">
+                        <li class="nav-item">
+                                <a class="nav-link jello-horizontal" href="../index.html" id="navbarlinks">About</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link active jello-horizontal" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="navbarlinkactive">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jello-horizontal" href="../start.html" id="navbarlinks">Web App</a>
+                        </li>
+                    </ul>
+                    <!-- spazzes around w/ disweb
+                    <div class="mx-auto text-center" style="position:inherit;display:block;">
+                        <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mx-auto text-center">
+                            <img src="media/wsc-square-sm.png" width="70px" height="70px"
+                                style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;"
+                                class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="logo image">
+                        </a>
+                    </div> -->
+                </div>
+        </nav>
+    </div>
+
     <div class="bloghheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../media/T_1hsMH9CQY.webp');">
+        
+        <!-- desktop topnav -->
         <div class="d-none d-md-block">
             <nav class="navbar fixed-top navbar-dark bg-transparent">
                 <a class="navbar-brand hoverscale" style="cursor:pointer;">
@@ -63,8 +92,7 @@
                 </ul>
             </nav>
         </div>
-
-        <div>
+        <div class="d-none d-md-block">
             <div style="padding-bottom:225px"></div>
             <div class="container blogheaderbar">
                 <div class="row justify-content-md-center align-items-center text-center">
@@ -80,8 +108,14 @@
                 </div>
             </div>
         </div>
+        <div class="d-none d-md-block" style="padding-bottom:25px;"></div>
 
-        <div style="padding-bottom:25px;"></div>
+        <!-- mobile topnav -->
+        <div class="d-md-none blogfade">
+            <h1 class="fontgochihand text-info hoverscale p-4" style="font-size:3em;">Wysc Blog</h1>
+        </div>
+
+
 
         <div class="text-center">
             <h2 class="p-4">Most Recent Post</h2>
