@@ -119,7 +119,7 @@
 
         <div class="text-center">
             <h2 class="p-4">Most Recent Post</h2>
-            <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0" style="width:60%;">
+            <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0 bloghcard">
                 <a href="19070401.html" class="text-decoration-none">
                     <div class="card-body text-dark border-0 p-4">
                         <div class="bloghtitle" id="19070401title"></div>
@@ -141,5 +141,23 @@
     <script>$("#importheader").load('blogheader.html');</script>
     <script>$("#importfooter").load('blogfooter.html');</script>
 
+    <script> // safari fix - webp
+        async function supportsWebp() {
+            if (!self.createImageBitmap) return false;
+            
+            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+            const blob = await fetch(webpData).then(r => r.blob());
+            return createImageBitmap(blob).then(() => true, () => false);
+        }
+    
+        (async () => {
+            if(await supportsWebp()) {
+                console.log('webp > jpg');
+            }
+            else {
+                document.getElementById("webpheader").style = "background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../media/T_1hsMH9CQY.jpg');";
+            }
+        })();
+    </script>
 </body>
 </html>

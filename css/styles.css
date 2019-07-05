@@ -38,6 +38,9 @@ body, html {
   height:200px;
   margin-bottom:50px;
 }
+.bloghcard {
+  width:60%;
+}
 .bloghheader {
   background-position:center;
   background-size:cover;
@@ -559,6 +562,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 @-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}
 
 @media (max-width: 768px) { /* up to d-md */
+  .bloghcard {
+    width:85%;
+  }
   .blogpbody {
     width:85%;
   }
