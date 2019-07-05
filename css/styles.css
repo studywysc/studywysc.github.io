@@ -64,6 +64,9 @@ body, html {
   font-size:1.2em;
   line-height:1.68em;
 }
+.startbody {
+  background-color:#212121;
+}
 
 /* Custom Convenience */
 
