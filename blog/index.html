@@ -20,6 +20,30 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand"></noscript>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    
+    <style>
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        .fade-in-bottom-a1 {
+            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;
+        }
+        .fade-in-bottom-a2 {
+            -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
+        }
+        .fade-in-bottom-a3 {
+            -webkit-animation: fade-in-bottom 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;
+        }
+        .fade-in-bottom-a4 {
+            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+            animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+        }
+        @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+    </style>
 
     <!-- apple is annoying -->
     <meta name="mobile-web-app-capable" content="yes" />
@@ -72,29 +96,28 @@
 
     <div class="bloghheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../media/T_1hsMH9CQY.webp');">
         
-        <!-- desktop topnav -->
         <div class="d-none d-md-block">
-            <nav class="navbar fixed-top navbar-dark bg-transparent">
-                <a class="navbar-brand hoverscale" style="cursor:pointer;">
-                    <img src="../media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
-                    <span class="d-inline-block align-middle" style="font-family:'Gochi Hand';font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
-                </a>
-                <ul class="navbar-nav navbar-expand ml-auto fade-in-bottom-a2 align-middle">
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item active p-3">
-                        <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
+                <nav class="navbar fixed-top navbar-dark bg-transparent">
+                    <a class="navbar-brand hoverscale" href="../index.html" style="cursor:pointer;">
+                        <img src="../media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo">
+                        <span class="d-inline-block align-middle fade-in-bottom-a1 fontgochihand" style="font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
+                    </a>
+                    <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                        <li class="nav-item  p-3">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                        <li class="nav-item active p-3">
+                                <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
+                            </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="../start.html">Web App</a>
                         </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="../start.html">Web App</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                    </ul>
+                </nav>
+            </div>
         <div class="d-none d-md-block">
             <div style="padding-bottom:225px"></div>
-            <div class="container blogheaderbar">
+            <div class="container blogheaderbar fade-in-bottom-a1">
                 <div class="row justify-content-md-center align-items-center text-center">
                     <div class="col col-md-2">
         
@@ -117,7 +140,7 @@
 
 
 
-        <div class="text-center">
+        <div class="text-center fade-in-bottom-a2">
             <h2 class="p-4">Most Recent Post</h2>
             <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0 bloghcard">
                 <a href="19070401.html" class="text-decoration-none">

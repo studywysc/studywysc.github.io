@@ -3,31 +3,31 @@
     {
       "title": "Discord",
       "isup": true,
-      "isupnotes": "offline",
+      "isupnotes": "Offline",
       "notes": "Temporarily down for upgrades"
     },
     {
       "title": "Wysc Website",
       "isup": true,
-      "isupnotes": "offline",
+      "isupnotes": "Offline",
       "notes": "completed"
     },
     {
       "title": "Blog",
-      "isup": true,
-      "isupnotes": "offline",
-      "notes": "beta"
+      "isup": false,
+      "isupnotes": "⚠",
+      "notes": "Work in progress - Partially complete"
     },
     {
       "title": "Docs",
       "isup": false,
-      "isupnotes": "offline",
-      "notes": "In development&ensp;&mdash;&ensp;coming soon"
+      "isupnotes": "⛔",
+      "notes": "Work in progress - Coming soon"
     },
     {
       "title": "Start",
       "isup": true,
-      "isupnotes": "offline",
+      "isupnotes": "Offline",
       "notes": "beta"
     }
   ]

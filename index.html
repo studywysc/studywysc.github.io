@@ -20,8 +20,7 @@
     <meta property="og:image" content="media/wsc-sp-rounded.png" />
     <meta property="og:url" content="https://gitnisyl.github.io/wysc" />
     <meta property="og:site_name" content="Wysc" />
-    <meta property="og:description"
-        content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 
     <!-- import css -->
     <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
@@ -416,68 +415,6 @@
     <script src="js/titanic.min.js"></script><!-- titanic icons -->
     <script src="js/bodymovin.min.js"></script><!-- titanic icons -->
 
-    <!-- 
-    <script> // safari fix - svg render
-        export function setSvgHref(elem: JQuery, href: string) {
-            elem.attr('href', href);
-
-            if (isSafari()) {
-                elem.each(function() {
-                this.setAttributeNS('http://www.w3.org/1999/xlink', 'href', href);
-                });
-            }
-        }
-    </script> -->
-    <script> // safari fix - webp
-        async function supportsWebp() {
-            if (!self.createImageBitmap) return false;
-            
-            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-            const blob = await fetch(webpData).then(r => r.blob());
-            return createImageBitmap(blob).then(() => true, () => false);
-        }
-
-        (async () => {
-            if(await supportsWebp()) {
-                console.log('webp > jpg');
-            }
-            else {
-                document.getElementById("webpheader").style = "background: url('media/T_1hsMH9CQY.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
-                document.getElementById("webpback01").style = "background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
-            }
-        })();
-    </script>
-    <script>
-        eva.replace()
-    </script>
-    <script>
-        var titanic = new Titanic({
-            hover: true, // auto animated on hover (default true)
-            click: true  // auto animated on click/tap (default false)
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.dropdown-trigger');
-            var instances = M.Dropdown.init(elems, options);
-        });
-    </script>
-    <script>
-        ScrollReveal().reveal('.jseasein', {
-            easing: 'ease-in',
-            distance: '25px',
-            origin: 'bottom',
-        });
-    </script>
-    <script> // lazy load iframes
-        function init() {
-        var vidDefer = document.getElementsByTagName('iframe');
-        for (var i=0; i<vidDefer.length; i++) {
-        if(vidDefer[i].getAttribute('data-src')) {
-        vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-        } } }
-        window.onload = init;
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
         new Crate({
             server: '319372945929666571',
@@ -492,18 +429,62 @@
         } else {
             crate.show();
         };
-        // window.addEventListener("resize", function() {
-        //     if (window.matchMedia("(min-width: 768px)").matches) {
-        //         crate.hide();
-        //     } else {
-        //         crate.show();
-        //     }
-        // });
+    </script>
+    <script>eva.replace()</script>
+    <script>
+        // safari fix - webp
+        async function supportsWebp() {
+            if (!self.createImageBitmap) return false;
+
+            const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+            const blob = await fetch(webpData).then(r => r.blob());
+            return createImageBitmap(blob).then(() => true, () => false);
+        }
+
+        (async () => {
+            if (await supportsWebp()) {
+                console.log('webp > jpg');
+            }
+            else {
+                document.getElementById("webpheader").style = "background: url('media/T_1hsMH9CQY.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
+                document.getElementById("webpback01").style = "background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
+            }
+        })();
     </script>
     <script>
-        $('#supportmodal').on('shown.bs.modal', function () {
-            $('#supportmodal').trigger('focus')
-        })
+        // titanic icons
+        var titanic = new Titanic({
+            hover: true, // auto animated on hover (default true)
+            click: true  // auto animated on click/tap (default false)
+        });
+    </script>
+    <script>
+        // bootstrap dropdown trigger
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, options);
+        });
+    </script>
+    <script>
+        // scrollreveal
+        ScrollReveal().reveal('.jseasein', {
+            easing: 'ease-in',
+            distance: '25px',
+            origin: 'bottom',
+        });
+    </script>
+    <script>
+        // lazy load iframes
+        function init() {
+            var vidDefer = document.getElementsByTagName('iframe');
+            for (var i = 0; i < vidDefer.length; i++) {
+                if (vidDefer[i].getAttribute('data-src')) {
+                    vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+        window.onload = init;
     </script>
 </body>
+
 </html>
