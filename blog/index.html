@@ -131,6 +131,23 @@
                     </div>
                 </a>
             </div>
+            <div class="container bloghcard pl-0 pr-0" style="margin-top:50px;">
+                <div class="row">
+                    <div class="col-12 col-md" style="margin-bottom:50px;">
+                        <h3 class="p-4">Status</h3>
+                        <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
+                            <div class="card-body text-dark border-0 p-4">
+                                <ul id="statuslist" class="list-group list-group-flush">
+                                </ul>
+                                <div class="text-black-50 pt-4" style="font-size:0.85em;">api coming soon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <h3 class="p-4">Maintenance Updates</h3>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -158,6 +175,35 @@
                 document.getElementById("webpheader").style = "background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../media/T_1hsMH9CQY.jpg');";
             }
         })();
+    </script>
+    <script> // fetch api
+        function createNode(element) {
+            return document.createElement(element);
+        }
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+        const ul = document.getElementById('statuslist');
+        const url = '../api/status.json';
+        fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) {
+            let statuslist = data.website;
+            return statuslist.map(function(status) {
+            let li = createNode('li');
+            if (status.isup == true){
+                li.className = 'list-group-item rounded';
+                li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-success">✅</text>`;
+            } else {
+                li.className = 'bg-warning list-group-item rounded';
+                li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupnotes}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
+            }
+            append(ul, li);
+            })
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
     </script>
 </body>
 </html>

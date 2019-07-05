@@ -1,0 +1,34 @@
+{
+  "website":[
+    {
+      "title": "Discord",
+      "isup": true,
+      "isupnotes": "offline",
+      "notes": "Temporarily down for upgrades"
+    },
+    {
+      "title": "Wysc Website",
+      "isup": true,
+      "isupnotes": "offline",
+      "notes": "completed"
+    },
+    {
+      "title": "Blog",
+      "isup": true,
+      "isupnotes": "offline",
+      "notes": "beta"
+    },
+    {
+      "title": "Docs",
+      "isup": false,
+      "isupnotes": "offline",
+      "notes": "In development&ensp;&mdash;&ensp;coming soon"
+    },
+    {
+      "title": "Start",
+      "isup": true,
+      "isupnotes": "offline",
+      "notes": "beta"
+    }
+  ]
+}
