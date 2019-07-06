@@ -56,6 +56,9 @@ body, html {
 .bloghwyscblogwords {
   text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);
 }
+.bloghlinks {
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+}
 /* .bloghfooter div div {
   
 } */

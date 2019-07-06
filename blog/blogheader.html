@@ -1,6 +1,6 @@
 <!-- desktop topnav -->
 <div class="d-none d-md-block">
-    <div class="blogheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom, rgba(254,254,254,0.45), rgba(254,254,254, 1)), url('../media/T_1hsMH9CQY.webp');">
+    <div class="blogheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom, rgba(254,254,254,0.5), rgba(254,254,254, 1)), url('../media/photo-1532607439080-44da70d00f9e.jpg');">
         <div class="d-none d-md-block">
             <nav class="navbar navbar-dark bg-transparent">
                 <a class="navbar-brand hoverscale" style="cursor:pointer;" href="../blog">
@@ -9,13 +9,13 @@
                 </a>
                 <ul class="navbar-nav navbar-expand ml-auto fade-in-bottom-a2 align-middle">
                     <li class="nav-item p-3">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link bloghlinks" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item active p-3">
-                        <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
+                        <a class="nav-link bloghlinks" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
                         </li>
                     <li class="nav-item p-3">
-                        <a class="nav-link" href="../start.html">Web App</a>
+                        <a class="nav-link bloghlinks" href="../start.html">Web App</a>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
 
 <!-- mobile topnav -->
 <div class="d-md-none">
-    <div class="blogheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom, rgba(254,254,254,0.45), rgba(254,254,254, 1)), url('../media/T_1hsMH9CQY.webp');height:100px;">
+    <div class="blogheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom, rgba(254,254,254,0.45), rgba(254,254,254, 1)), url('../media/photo-1532607439080-44da70d00f9e.jpg');height:100px;">
     </div>
     <div class="container blogheaderbar">
         <div class="row justify-content-md-center align-items-center text-center">
@@ -57,23 +57,3 @@
         </div>
     </div>
 </div>
-
-
-<script> // safari fix - webp
-    async function supportsWebp() {
-        if (!self.createImageBitmap) return false;
-        
-        const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-        const blob = await fetch(webpData).then(r => r.blob());
-        return createImageBitmap(blob).then(() => true, () => false);
-    }
-
-    (async () => {
-        if(await supportsWebp()) {
-            console.log('webp > jpg');
-        }
-        else {
-            document.getElementById("webpheader").style = "background-image: linear-gradient(to bottom, rgba(254,254,254,0.45), rgba(254,254,254, 1)), url('../media/T_1hsMH9CQY.jpg');";
-        }
-    })();
-</script>
