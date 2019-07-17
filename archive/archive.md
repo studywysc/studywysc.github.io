@@ -1,3 +1,57 @@
+<!-- 0.190716 put body css back in the css file -->
+    body{background-color:#212121;}.headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}
+
+
+            <!--
+            <div style="position:absolute;width:100%;height:100vh;">
+                <svg id="svg" class="svgheader" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" style="left:0;bottom:0;">
+                    !-- <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#8C5340" stroke-width="120"
+                    stroke-linecap="round" />
+                    <path d="M0,150 C150,150 350,0 500,0" />
+                        M-400,400 C400,340 1400,100 812,150
+                    --
+                    <path d="M-400,400 C400,400 600,200 1000,200" fill="none" stroke="#fafafa" stroke-width="250"
+                    stroke-linecap="round" />
+                </svg>
+            </div> -->
+
+
+             style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('https://ik.imagekit.io/gsyl/T_1hsMH9CQY_IJJOmdcBp.jpg');"
+
+             
+            <div id="particle-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
 <!-- 0.190702 iframe busting // chrome gutted this functionality but cool to save -->
     <script>
         this.top.location !== this.location && (this.top.location = this.location);

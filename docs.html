@@ -1,16 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wysc Docs</title>
-    <meta http-equiv="Refresh" content="0; url=docs/index.html" />
-    <script type="text/javascript">
-        window.location.replace('docs/index.html')
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="keywords" content="wysc, study discord, study voice chat, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Wysc – Virtual Study Cafe</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#05679D" />
+    <link rel="manifest" href="app.webmanifest">
+
+    <!-- og: meta tags // title-type-img-url required -->
+    <meta property="og:title" content="Wysc – Study Discord Cafe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="media/wsc-sp-rounded.png" />
+    <meta property="og:url" content="https://wysc.bookmark.com" />
+    <meta property="og:site_name" content="Wysc" />
+    <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+
+    <!-- import css -->
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand"></noscript>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    <link href="css/styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+    <style>
+        .sr{/*Scrollreveal visible for noscript*/visibility: visible;}
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        .fade-in-bottom-a1 {
+            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;
+        }
+        .fade-in-bottom-a2 {
+            -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
+        }
+        .fade-in-bottom-a3 {
+            -webkit-animation: fade-in-bottom 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;
+        }
+        .fade-in-bottom-a4 {
+            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+            animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+        }
+        @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+    </style>
+
+    <!-- apple is annoying -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wysc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
 </head>
-<body>
-    
+<body class="docsbody">
+    <!-- desktop topnav -->
+    <div class="d-none d-md-block">
+        <nav class="navbar fixed-top navbar-dark bg-transparent">
+            <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
+                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo">
+                <span class="d-inline-block align-middle fade-in-bottom-a1 fontgochihand" style="font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
+            </a>
+            <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <li class="nav-item active p-3">
+                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="start.html">Web App</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- mobile bottomnav -->
+    <div class="d-md-none">
+        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
+                <div class="nav-content text-center">
+                    <ul class="nav nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active jello-horizontal" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="navbarlinkactive">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jello-horizontal" href="blog" id="navbarlinks">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jello-horizontal" href="start.html" id="navbarlinks">Web App</a>
+                        </li>
+                    </ul>
+                    <!-- spazzes around w/ disweb
+                    <div class="mx-auto text-center" style="position:inherit;display:block;">
+                        <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mx-auto text-center">
+                            <img src="media/wsc-square-sm.png" width="70px" height="70px"
+                                style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;"
+                                class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="logo image">
+                        </a>
+                    </div> -->
+                </div>
+        </nav>
+    </div>
+
+    <div class="headerbg sectiontextcolor dhheader" id="webpheader"> <!-- /gsyl/tr:w-100,f-jpg,pr-true/ -->
+        <div style="position:relative;min-height:100vh;height:auto;width:100%;">
+            <div class="text-center" style="position:absolute;width:100%;z-index:4;">
+
+                <div class="d-none d-md-block" style="padding-top:10vh;"></div>
+
+                <div>
+                    <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1 fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1>
+                    <p class="fade-in-bottom-a1 p-4">Search feature coming soon!</p>
+                    <div class="align-middle text-center fade-in-bottom-a2 mx-auto" style="width:70%;">
+                        <div class="card-deck text-info noselect">
+                            <a href="" class="cursornone card hoverscale order-last order-sm-first">
+                                <div>
+                                    <div class="card-body p-4 docstopcards">
+                                        <i class="material-icons p-3 md-36">person_pin</i>
+                                        <h5 class="card-title">About Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="cursornone card hoverscale">
+                                <div>
+                                    <div class="card-body p-4 docstopcards">
+                                        <i class="material-icons p-3 md-36">contact_mail</i>
+                                        <h5 class="card-title">Contact Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="docs/home.html" class="cursornone card hoverscale order-first order-sm-last">
+                                <div>
+                                    <div class="card-body p-4 docstopcards">
+                                        <i class="material-icons p-3 md-36">format_list_bulleted</i>
+                                        <h5 class="card-title">Feature Help</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
 </body>
 </html>
