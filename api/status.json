@@ -3,13 +3,13 @@
     {
       "title": "Discord",
       "isup": true,
-      "isupnotes": "Offline",
+      "isupnotes": "",
       "notes": "Temporarily down for upgrades"
     },
     {
       "title": "Wysc Website",
       "isup": true,
-      "isupnotes": "Offline",
+      "isupnotes": "",
       "notes": "completed"
     },
     {
@@ -27,7 +27,7 @@
     {
       "title": "Start",
       "isup": true,
-      "isupnotes": "Offline",
+      "isupnotes": "",
       "notes": "beta"
     }
   ]
