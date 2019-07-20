@@ -1,3 +1,4 @@
+<script src="../js/bootstrap-4.3.1.min.js"></script>
 <div class="noselect">
     <!-- desktop topnav -->
     <div class="d-none d-md-block">
@@ -47,7 +48,7 @@
             </a>
         </li>
         <li class="nav-item align-middle p-2">
-            <a class="align-middle" href="menu.html">
+            <a class="align-middle" id="menumodaltog" data-toggle="modal" data-target="#menumodal">
                 <button type="button" class="btn btn-lg btn-outline-info">Menu</button>
             </a>
         </li>
@@ -58,5 +59,22 @@
         </li>
     </ul>
     
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="menumodal" tabindex="-1" role="dialog" aria-labelledby="menumodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header" data-dismiss="modal" aria-label="Close" style="cursor:pointer;">
+            <button type="button" class="close" style="padding-left:5%;padding-right:5%;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="importdocstoc2" style="width:100%;"></div><script>$("#importdocstoc2").load('docstoc.html');</script>
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
 

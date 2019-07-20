@@ -1,160 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
-    <meta name="keywords" content="wysc, study discord, study voice chat, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Wysc – Virtual Study Cafe</title>
+    <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#05679D" />
+    <meta name="theme-color" content="#9C5D49" />
     <link rel="manifest" href="app.webmanifest">
-
-    <!-- og: meta tags // title-type-img-url required -->
-    <meta property="og:title" content="Wysc – Study Discord Cafe" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="media/wsc-sp-rounded.png" />
-    <meta property="og:url" content="https://wysc.bookmark.com" />
-    <meta property="og:site_name" content="Wysc" />
-    <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
-
-    <!-- import css -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400"></noscript>
-    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand"></noscript>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
-    <link href="css/styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
-
-    <style>
-        .sr{/*Scrollreveal visible for noscript*/visibility: visible;}
-        .fade-in-bottom {
-            -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        }
-        .fade-in-bottom-a1 {
-            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
-            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;
-        }
-        .fade-in-bottom-a2 {
-            -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
-            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
-        }
-        .fade-in-bottom-a3 {
-            -webkit-animation: fade-in-bottom 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
-            animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;
-        }
-        .fade-in-bottom-a4 {
-            -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
-            animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
-        }
-        @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-    </style>
-
-    <!-- apple is annoying -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-touch-fullscreen" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Wysc" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
+    <title>Wysc – Virtual Study Cafe</title>
 </head>
 <body class="docsbody">
-    <!-- desktop topnav -->
-    <div class="d-none d-md-block">
-        <nav class="navbar fixed-top navbar-dark bg-transparent">
-            <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
-                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo">
-                <span class="d-inline-block align-middle fade-in-bottom-a1 fontgochihand" style="font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
-            </a>
-            <ul class="navbar-nav navbar-expand ml-auto align-middle">
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="index.html">Home</a>
+
+<!-- desktop topnav -->
+<div class="d-none d-md-block noselect">
+    <nav class="navbar fixed-top navbar-dark bg-transparent">
+        <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
+            <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+            <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+        </a>
+        <ul class="navbar-nav navbar-expand ml-auto align-middle">
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/wysc/">Home</a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/wysc/blog">Blog</a>
+            </li>
+            <li class="nav-item active p-3">
+                <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/wysc/start">Web App</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- mobile bottomnav -->
+<div class="d-md-none noselect">
+    <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
+        <div class="nav-content text-center">
+            <ul class="nav nav-justified">
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/">
+                        <i class="material-icons">home</i><br>
+                        <div>Home</div>
+                    </a>
                 </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="blog">Blog</a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/blog">
+                        <i class="material-icons">class</i><br>
+                        <div>Blog</div>
+                    </a>
                 </li>
-                <li class="nav-item active p-3">
-                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinkactive" href="" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                        <i class="material-icons">vertical_split</i><br>
+                        <div>Docs</div>
+                    </a>
                 </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="start.html">Web App</a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/start">
+                        <i class="material-icons">apps</i><br>
+                        <div>Apps</div>
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </div>
-    <!-- mobile bottomnav -->
-    <div class="d-md-none">
-        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2" id="wscgradient">
-                <div class="nav-content text-center">
-                    <ul class="nav nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link active jello-horizontal" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="navbarlinkactive">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link jello-horizontal" href="blog" id="navbarlinks">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link jello-horizontal" href="start.html" id="navbarlinks">Web App</a>
-                        </li>
-                    </ul>
-                    <!-- spazzes around w/ disweb
-                    <div class="mx-auto text-center" style="position:inherit;display:block;">
-                        <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mx-auto text-center">
-                            <img src="media/wsc-square-sm.png" width="70px" height="70px"
-                                style="position:absolute;z-index:3;bottom:20px;transform:translateX(-50%);left:50%;"
-                                class="d-inline-block rounded-circle shadow" id="logohovershadow" alt="logo image">
-                        </a>
-                    </div> -->
-                </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+</div>
 
-    <div class="headerbg sectiontextcolor dhheader" id="webpheader"> <!-- /gsyl/tr:w-100,f-jpg,pr-true/ -->
+    <!--
+    <div class="text-center sectiontextcolor dhheader2 parallaxbg" id="content" style="background-color:#04527d;color:#fff;">
         <div style="position:relative;min-height:100vh;height:auto;width:100%;">
-            <div class="text-center" style="position:absolute;width:100%;z-index:4;">
-
-                <div class="d-none d-md-block" style="padding-top:10vh;"></div>
-
+            <div class="text-center" style="position:absolute;min-height:100vh;height:auto;width:100%;z-index:4;">
+                <div class="d-md-none" style="padding-top:10vh;"></div>
                 <div>
                     <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1 fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1>
                     <p class="fade-in-bottom-a1 p-4">Search feature coming soon!</p>
                     <div class="align-middle text-center fade-in-bottom-a2 mx-auto" style="width:70%;">
                         <div class="card-deck text-info noselect">
-                            <a href="" class="cursornone card hoverscale order-last order-sm-first">
+                            <a href="" class="cursornone card dhcards hoverscale order-last order-sm-first">
                                 <div>
-                                    <div class="card-body p-4 docstopcards">
+                                    <div class="card-body p-4 dhcardcontent">
                                         <i class="material-icons p-3 md-36">person_pin</i>
                                         <h5 class="card-title">About Us</h5>
                                     </div>
                                 </div>
                             </a>
-                            <a href="" class="cursornone card hoverscale">
+                            <a href="" class="cursornone card dhcards hoverscale">
                                 <div>
-                                    <div class="card-body p-4 docstopcards">
+                                    <div class="card-body p-4 dhcardcontent">
                                         <i class="material-icons p-3 md-36">contact_mail</i>
                                         <h5 class="card-title">Contact Us</h5>
                                     </div>
                                 </div>
                             </a>
-                            <a href="docs/home.html" class="cursornone card hoverscale order-first order-sm-last">
+                            <a href="docs/home.html" class="cursornone card dhcards hoverscale order-first order-sm-last">
                                 <div>
-                                    <div class="card-body p-4 docstopcards">
+                                    <div class="card-body p-4 dhcardcontent">
                                         <i class="material-icons p-3 md-36">format_list_bulleted</i>
                                         <h5 class="card-title">Feature Help</h5>
                                     </div>
@@ -164,9 +114,190 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </div> -->
+
+    
+    <div class="parallaxbg sectiontextcolor dhheader" id="webpheader" style="height:auto;"> <!-- /gsyl/tr:w-100,f-jpg,pr-true/ -->
+        <div style="position:relative;min-height:100vh;height:auto;width:100%;">
+            <div class="text-center" style="position:absolute;width:100%;z-index:4;">
+
+                <div class="d-none d-md-block" style="padding-top:20vh;"></div>
+                <div class="d-md-none" style="padding-top:10vh;"></div>
+
+                <div>
+                    <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1 fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1>
+                    <p class="fade-in-bottom-a1 p-4">Search feature coming soon!</p>
+                    <div class="align-middle text-center fade-in-bottom-a2 mx-auto" style="width:70%;">
+                        <div class="card-deck text-info noselect">
+                            <a href="#about" class="cursornone card dhcards hoverscale order-last order-sm-first">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">person_pin</i>
+                                        <h5 class="card-title">About Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/wysc/docs/" class="cursornone card dhcards hoverscale">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">contact_mail</i>
+                                        <h5 class="card-title">Contact Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/wysc/docs/" class="cursornone card dhcards hoverscale order-first order-sm-last">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">format_list_bulleted</i>
+                                        <h5 class="card-title">Feature Help</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
+
+    <div class="text-center sectiontextcolor noselect" id="content" style="background-color:#04527d;height:auto;color:#fff;">
+        <div style="padding-top:100px;" id="about"></div>
+        <h1 class="fontgochihand" style="font-size:4em;letter-spacing:0.01em;padding:15px;">Meet the Team</h1>
+        <div class="container-fluid">
+            <div class="row dhwidth70 mx-auto">
+                <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+                    <div class="card-body">
+                    <!-- <div class="dhteamimg-teru dhteamimg mx-auto m-4 hoverscale"></div> -->
+                    <img src="https://cdn.discordapp.com/avatars/169659981988233216/20d77809b30d2fd996be257ec1de8e2f.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle m-4 hoverscale">
+                    <h5 class="card-title">teru</h5>
+                    <p class="card-text">Co-Founder, Wysc</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item dhteamicon">
+                                <a href="mailto:wyscofficial@icloud.com" class="cursornone">
+                                    <i class="material-icons">mail</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+                    <div class="card-body">
+                    <!-- <div class="dhteamimg-hend dhteamimg mx-auto m-4 hoverscale"></div> -->
+                    <img src="https://cdn.discordapp.com/avatars/321185906746720267/4a487292ba78fa6a589360dd718dcfef.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle m-4 hoverscale">
+                    <h5 class="card-title">Hendan</h5>
+                    <p class="card-text">Co-Founder, Wysc</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item dhteamicon">
+                                <a href="mailto:wyscofficial@icloud.com" class="cursornone">
+                                    <i class="material-icons">mail</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+                    <div class="card-body">
+                    <!-- <div class="dhteamimg-fred dhteamimg mx-auto m-4 hoverscale"></div> -->
+                    <img src="media/teamfred.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle m-4 hoverscale">
+                    <h5 class="card-title">Fred</h5>
+                    <p class="card-text">Public Relations</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item dhteamicon">
+                                <a href="mailto:wyscofficial@icloud.com" class="cursornone">
+                                    <i class="material-icons">mail</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+                    <div class="card-body">
+                    <!-- <div class="dhteamimg-mayo dhteamimg mx-auto m-4 hoverscale"></div> -->
+                    <img src="media/teammayo.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle m-4 hoverscale">
+                    <h5 class="card-title">Mayo</h5>
+                    <p class="card-text">Code Monkey</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item dhteamicon">
+                                <a href="/index.html" class="cursornone">
+                                    <i class="material-icons">business</i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item dhteamicon">
+                                <a href="mailto:wyscofficial@icloud.com" class="cursornone">
+                                    <i class="material-icons">mail</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p style="padding-top:1000px;">In Production</p>
+    </div>
+
+
+
+<!-- js -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper-1.14.7.min.js"></script>
+<script src="js/bootstrap-4.3.1.min.js"></script>
+<script src="js/cssrelpreload.js"></script>
+<link type="text/javascript" href="js/script.js">
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="Wysc – Virtual Study Cafe" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="media/wsc-sp-rounded.png" />
+<meta property="og:url" content="https://wysc.bookmark.com" />
+<meta property="og:site_name" content="Study Discord Server" />
+<meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+<!-- apple -->
+<script>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
+    document.getElementById("webpheader").style="background: url('media/T_1hsMH9CQY.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
+    document.getElementById("webpback01").style="background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
+}})();</script>
+<link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css"> 
+<script src="js/add-to-homescreen-master/src/addtohomescreen.js"></script> 
+<script>addToHomescreen();</script>
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Wysc" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+<!-- google -->
+<meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
+<!-- pwa -->
+<script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
+
+<!-- page js -->
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer> // widgetbot 0.190720
+    new Crate({
+        server: '319372945929666571',
+        channel: '590703218049286163',
+        shard: 'https://disweb.deploys.io',
+        location: ['bottom', 'right'],
+        notifications: false,
+        defer: true,
+    });
+    if (window.innerWidth < 768){
+        crate.setOptions({
+            location: [-90, 'right'],
+        })
+    } else {};
+</script>
 </body>
 </html>

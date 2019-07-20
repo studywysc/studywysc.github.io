@@ -20,7 +20,6 @@ export function setSvgHref(elem: JQuery, href: string) {
     }
 }
 */
-
 /* scrollspy
 $(document).ready(function(){
     // Initializing scrollspy
