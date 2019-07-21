@@ -102,13 +102,13 @@
                 <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="blog">Blog</a>
+                <a class="nav-link" href="/wysc/blog">Blog</a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="docs">Docs</a>
+                <a class="nav-link" href="/wysc/docs">Docs</a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="start">Web App</a>
+                <a class="nav-link" href="/wysc/start">Web App</a>
             </li>
         </ul>
     </nav>
@@ -125,19 +125,19 @@
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="blog">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/blog">
                         <i class="material-icons">class</i><br>
                         <div>Blog</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="docs">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/docs">
                         <i class="material-icons">vertical_split</i><br>
                         <div>Docs</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="start">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/start">
                         <i class="material-icons">apps</i><br>
                         <div>Apps</div>
                     </a>
