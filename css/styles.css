@@ -316,6 +316,8 @@ body, html {
 }
 .blogpwidth {
   width:70%;
+  margin-left:auto;
+  margin-right:auto;
 }
 .blogtext {
   color:#121212;
