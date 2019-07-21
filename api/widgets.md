@@ -161,14 +161,14 @@ function init(){var vidDefer=document.getElementsByTagName('iframe');for(var i=0
         server: '319372945929666571',
         channel: '590703218049286163',
         shard: 'https://disweb.deploys.io',
+        location: ['bottom', 'right'],
         notifications: false,
-        // location: [-100, 'right'],
         defer: true,
     });
     if (window.innerWidth < 768){
-        crate.hide();
-    } else {
-        crate.show();
-    };
+        crate.setOptions({
+            location: [-90, 'right'],
+        })
+    } else {};
 </script>
 ```

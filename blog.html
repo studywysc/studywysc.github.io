@@ -210,5 +210,20 @@
         console.log(error);
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
+    new Crate({
+        server: '319372945929666571',
+        channel: '590703218049286163',
+        shard: 'https://disweb.deploys.io',
+        location: ['bottom', 'right'],
+        notifications: false,
+        defer: true,
+    });
+    if (window.innerWidth < 768){
+        crate.setOptions({
+            location: [-90, 'right'],
+        })
+    } else {};
+</script>
 </body>
 </html>
