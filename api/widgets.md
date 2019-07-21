@@ -39,8 +39,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
     <title>Wysc – Virtual Study Cafe</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
 </head>
 <body>
     
@@ -48,25 +48,24 @@
 
 <!-- js -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper-1.14.7.min.js"></script>
-<script src="js/bootstrap-4.3.1.min.js"></script>
-<script src="js/cssrelpreload.js"></script>
+<script src="js/popper-1.14.7.min.js" defer></script>
+<script src="js/bootstrap-4.3.1.min.js" defer></script>
+<script src="js/cssrelpreload.js" async></script>
 <link type="text/javascript" href="js/script.js">
 <!-- og: meta tags // title-type-img-url required -->
-<meta property="og:title" content="Wysc – Virtual Study Cafe" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="media/wsc-sp-rounded.png" />
 <meta property="og:url" content="https://wysc.bookmark.com" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
-<script>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
+<script async>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
     document.getElementById("webpheader").style="background: url('media/T_1hsMH9CQY.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
     document.getElementById("webpback01").style="background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
 }})();</script>
 <link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css"> 
-<script src="js/add-to-homescreen-master/src/addtohomescreen.js"></script> 
-<script>addToHomescreen();</script>
+<script src="js/add-to-homescreen-master/src/addtohomescreen.js" defer></script> 
+<script defer>addToHomescreen();</script>
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Wysc" />
@@ -95,21 +94,21 @@
 <div class="d-none d-md-block noselect">
     <nav class="navbar fixed-top navbar-dark bg-transparent">
         <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
-            <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow homefade00" alt="logo">
-            <span class="d-inline-block align-middle homefade00 fontgochihand wlogo">Wysc.</span>
+            <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+            <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
         </a>
-        <ul class="navbar-nav navbar-expand ml-auto homefade00 align-middle">
+        <ul class="navbar-nav navbar-expand ml-auto align-middle">
             <li class="nav-item active p-3">
                 <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/blog">Blog</a>
+                <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/docs">Docs</a>
+                <a class="nav-link" href="docs">Docs</a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/start">Web App</a>
+                <a class="nav-link" href="start">Web App</a>
             </li>
         </ul>
     </nav>
@@ -126,19 +125,19 @@
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/blog">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="blog">
                         <i class="material-icons">class</i><br>
                         <div>Blog</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/docs">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="docs">
                         <i class="material-icons">vertical_split</i><br>
                         <div>Docs</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/start">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="start">
                         <i class="material-icons">apps</i><br>
                         <div>Apps</div>
                     </a>
@@ -151,13 +150,13 @@
 
 ### Iframe lazy load
 ```
-<script> // iframe lazy load 0.190720
+<script defer> // iframe lazy load 0.190720
 function init(){var vidDefer=document.getElementsByTagName('iframe');for(var i=0;i<vidDefer.length;i++){if(vidDefer[i].getAttribute('data-src')){vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));}}} window.onload=init;</script>
 ```
 
 ### Widgetbot
 ```
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer> // widgetbot 0.190720
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
     new Crate({
         server: '319372945929666571',
         channel: '590703218049286163',

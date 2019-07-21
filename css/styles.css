@@ -35,14 +35,14 @@ body, html {
 }
 .wnavmblinks {
   color: #bababa;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 300;
   font-size: 1em;
   transition: font-weight 100ms linear;
 }
   .wnavmblinkactive, .wnavmblinkactive:hover, .wnavmblinks:hover {
     color: #efefef;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 400;
     font-size: 1em;
     transition: font-weight 100ms linear;
@@ -161,6 +161,27 @@ body, html {
   animation: blogfadein 0.68s;
 }
   @keyframes blogfadein { from { opacity:0; } to { opacity:1; } }
+  
+  .blogfadeb00 {
+    -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .blogfadeb01 {
+      -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;
+  }
+  .blogfadeb02 {
+      -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
+  }
+  .blogfadeb03 {
+      -webkit-animation: fade-in-bottom 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;
+  }
+  .blogfadeb04 {
+      -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+      animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+  }
 .blogheaderbar {
   margin-top:-100px;
 }
@@ -399,6 +420,11 @@ body, html {
     user-select: none; Non-prefixed version, currently supported by Chrome and Opera
   } */
 }
+  .yesselect { /* chrome/webkit  only */
+    -webkit-user-select: text;
+    -webkit-tap-highlight-color: default;
+    -webkit-touch-callout: default;
+  }
 .padb40 {
   padding-bottom:40px;
 }

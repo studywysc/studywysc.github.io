@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
     <title>Wysc – Virtual Study Cafe</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
 </head>
 <body class="homebody">
 
@@ -35,13 +36,13 @@
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/blog">Blog</a>
+                    <a class="nav-link" href="blog">Blog</a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/docs">Docs</a>
+                    <a class="nav-link" href="docs">Docs</a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/start">Web App</a>
+                    <a class="nav-link" href="start">Web App</a>
                 </li>
             </ul>
         </nav>
@@ -58,19 +59,19 @@
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/blog">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="blog">
                             <i class="material-icons">class</i><br>
                             <div>Blog</div>
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/docs">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="docs">
                             <i class="material-icons">vertical_split</i><br>
                             <div>Docs</div>
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/start">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="start">
                             <i class="material-icons">apps</i><br>
                             <div>Apps</div>
                         </a>
@@ -120,7 +121,9 @@
         </div>
     </div>
 
-    <div class="text-center sectiontextcolor" id="content" style="background-color:#8C5340;height:auto;color:#fff;">
+    <div style="margin-top:-170px" id="content"></div>
+    <div style="margin-bottom:170px"></div>
+    <div class="text-center sectiontextcolor" style="background-color:#8C5340;height:auto;color:#fff;">
         <div class="d-md-none" style="padding-top:5vh;display:inline-block;"></div>
         <h1 style="padding-top:30px;padding-left:10%;padding-right:10%;">A Study Discord Experience</h1>
         <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:5vh;">
@@ -146,9 +149,9 @@
                 </div>
             </div>
         </div>
-        <div class="align-middle text-center">
+        <div class="align-middle text-center noselect">
             <div style="width:256px;margin-left:auto;margin-right:auto;padding-top:40px;padding-bottom:100px;">
-                <a href="/wysc/docs" style="color:rgba(255, 255, 255, 1);">
+                <a href="docs" style="color:rgba(255, 255, 255, 1);">
                     <div class="btnfancy btn-one" style="margin-left:auto;margin-right:auto;">
                         Learn More >
                     </div>
@@ -190,7 +193,7 @@
         
         <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
             <div class="m-4">
-                    <div class="card mb-3 border-0 rounded-lg jseasein" style="background-color:rgba(82, 106, 119, 1);"><!--0.96-->
+                    <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(82, 106, 119, 1);"><!--0.96-->
                         <div class="row no-gutters m-3 p-3">
                             <div class="col-md-3 noselect" style="display:flex;align-items:center;">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">trending_up</i>
@@ -208,7 +211,7 @@
     
         <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
             <div class="m-4">
-                    <div class="card mb-3 border-0 rounded-lg shadow-sm jseasein" style="background-color:rgba(57, 85, 100, 1);"><!--0.98-->
+                    <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(57, 85, 100, 1);"><!--0.98-->
                         <div class="row no-gutters m-3 p-3">
                             <div class="col-md-3 noselect" style="display:flex;align-items:center;">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">public</i>
@@ -226,7 +229,7 @@
         
         <div style="max-width: 800px;margin-left:auto;margin-right:auto;">
             <div class="m-4">
-                    <div class="card mb-3 border-0 rounded-lg shadow-lg jseasein" style="background-color:rgba(32, 64, 81, 1);">
+                    <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(32, 64, 81, 1);">
                         <div class="row no-gutters m-3 p-3">
                             <div class="col-md-3 noselect" style="display:flex;align-items:center;">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">local_florist</i>
@@ -252,7 +255,7 @@
 
             <h1 class="fontgochihand" style="font-size:4em;letter-spacing:0.01em;padding:15px;">We're on a quest. This is just the start.</h1>
             <div class="d-none d-md-block" style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
-                <a style="color:rgba(255, 255, 255, 1);" href="/wysc/docs">
+                <a style="color:rgba(255, 255, 255, 1);" href="docs">
                     <div class="btnfancylg btnfancyshadow btn-one fade-in-bottom-a2" style="margin-left:auto;margin-right:auto;">
                         Learn More >
                     </div>
@@ -289,8 +292,8 @@
                     </div>
                     <div class="col align-self-center">
                         <h3>Made with 💖</h3>
-                        <h6>from San Francisco, CA</h6>
-                        <div class="p-4"><br>A story of innovation, crafted from inspiration at the intersection of education and technology.</div>
+                        <h6>from San Francisco, CA</h6><br>
+                        <div class="p-4 yesselect">A story of innovation, crafted from inspiration at the intersection of education and technology.</div>
                     </div>
                 </div>
             </div>
@@ -327,25 +330,24 @@
 
 <!-- js -->
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper-1.14.7.min.js"></script>
-<script src="js/bootstrap-4.3.1.min.js"></script>
-<script src="js/cssrelpreload.js"></script>
+<script src="js/popper-1.14.7.min.js" defer></script>
+<script src="js/bootstrap-4.3.1.min.js" defer></script>
+<script src="js/cssrelpreload.js" async></script>
 <link type="text/javascript" href="js/script.js">
 <!-- og: meta tags // title-type-img-url required -->
-<meta property="og:title" content="Wysc – Virtual Study Cafe" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="media/wsc-sp-rounded.png" />
 <meta property="og:url" content="https://wysc.bookmark.com" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
-<script>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
+<script async>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
     document.getElementById("webpheader").style="background: url('media/T_1hsMH9CQY.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
     document.getElementById("webpback01").style="background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
 }})();</script>
 <link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css"> 
-<script src="js/add-to-homescreen-master/src/addtohomescreen.js"></script> 
-<script>addToHomescreen();</script>
+<script src="js/add-to-homescreen-master/src/addtohomescreen.js" defer></script> 
+<script defer>addToHomescreen();</script>
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Wysc" />
@@ -368,9 +370,9 @@
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
 <!-- page js -->
-<script> // iframe lazy load 0.190720
+<script defer> // iframe lazy load 0.190720
         function init(){var vidDefer=document.getElementsByTagName('iframe');for(var i=0;i<vidDefer.length;i++){if(vidDefer[i].getAttribute('data-src')){vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));}}} window.onload=init;</script>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer> // widgetbot 0.190720
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
     new Crate({
         server: '319372945929666571',
         channel: '590703218049286163',
@@ -385,7 +387,7 @@
         crate.show();
     };
 </script>
-<script> // bootstrap dropdown trigger
+<script defer> // bootstrap dropdown trigger
     document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems, options);
