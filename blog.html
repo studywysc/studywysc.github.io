@@ -77,48 +77,17 @@
         </nav>
     </div>
 
-    <div class="bloghheader sectiontextcolor" id="webpheader" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('media/photo-1532607439080-44da70d00f9e.jpg');">
-        <div class="d-none d-md-block">
-            <div style="padding-bottom:225px"></div>
-            <div class="container blogheaderbar blogfadeb01">
-                <div class="row justify-content-md-center align-items-center text-center">
-                    <div class="col col-md-2">
-        
-                    </div>
-                    <div class="col col-md-6">
-                        <h1 class="fontgochihand text-info hoverscale bloghwyscblogwords" style="font-size:4.5em;">Wysc Blog</h1>
-                    </div>
-                    <div class="col col-md-2">
-                        
-                    </div>
+    <div class="bloghheader position-fixed width100" id="webpheader"></div>
+    <div class="bloghheader2 position-fixed width100"></div>
+    <div class="container-fluid sectiontextcolor bloghcontentpad">
+        <div class="row">
+            <div class="col-12 col-md-5 noselect">
+                <div class="blogfadeb00">
+                    <h1 class="fontgochihand hoverscale bloghwyscblogwords" style="font-size:4.5em;">Wysc Blog</h1>
                 </div>
-            </div>
-        </div>
-        <div class="d-none d-md-block" style="padding-bottom:25px;"></div>
-
-        <!-- mobile topnav -->
-        <div class="d-md-none blogfade">
-            <h1 class="fontgochihand text-info hoverscale p-4 bloghwyscblogwords" style="font-size:3em;">Wysc Blog</h1>
-        </div>
-
-        <div class="text-center blogfadeb02">
-            <h2 class="p-4">Most Recent Post</h2>
-            <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0 bloghcard">
-                <a href="blog/19070401.html" class="text-decoration-none">
-                    <div class="card-body text-dark border-0 p-4">
-                        <div class="bloghtitle" id="19070401title"></div>
-                        <div class="bloghdate text-muted" id="19070401date"></div>
-                        <div id="19070401text"></div>
-                        <script>$("#19070401title").hide().load('blog/19070401.html #blogptitle').fadeIn('400');</script>
-                        <script>$("#19070401date").hide().load('blog/19070401.html #blogpdate').fadeIn('400');</script>
-                        <script>$("#19070401text").hide().load('blog/19070401.html #blogptext').fadeIn('400');</script>
-                    </div>
-                </a>
-            </div>
-            <div class="container pl-0 pr-0" style="margin-top:50px;width:60%;">
-                <div class="row">
-                    <div class="col-12 col-md" style="margin-bottom:50px;">
-                        <h3 class="p-4">Status</h3>
+                <div class="bloghcard mx-auto">
+                    <h3 class="p-4 blogfadeb02">Status</h3>
+                    <div class="blogfadeb03">
                         <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
                             <div class="card-body text-dark border-0 p-4">
                                 <ul id="statuslist" class="list-group list-group-flush">
@@ -127,17 +96,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md">
-                        <h3 class="p-4">Maintenance Updates</h3>
-                    </div>
                 </div>
+                <div style="padding-bottom:60px;"></div>
             </div>
-
+            <div class="col-12 col-md-7">
+                <div class="card bloghpostcontainer blogfadeb00">
+                    <ul class="list-group list-group-flush bloghpostlist">
+                        <li class="list-group-item">
+                            <a href="blog/19070401.html" class="text-decoration-none">
+                                <span class="badge badge-info m-2">New</span>
+                                <div class="bloghtitle" id="19070401title"></div>
+                                <div class="bloghdate" id="19070401date"></div>
+                                <div class="bloghtext" id="19070401text"></div>
+                                <script>$("#19070401title").hide().load('blog/19070401.html #blogptitle').fadeIn('0.8s');</script>
+                                <script>$("#19070401date").hide().load('blog/19070401.html #blogpdate').fadeIn('0.8s');</script>
+                                <script>$("#19070401text").hide().load('blog/19070401.html #blogptext').fadeIn('0.8s');</script>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="padding-bottom:60px;"></div>
+            </div>
         </div>
-
-        <div style="padding-bottom:80px;"></div>
-        <div class="bloghfooter" id="importfooter"></div>
     </div>
+
 
 
 <!-- js -->
@@ -193,7 +175,7 @@
     fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {
-        let statuslist = data.website;
+        let statuslist = data.wysc;
         return statuslist.map(function(status) {
         let li = createNode('li');
         if (status.isup == true){

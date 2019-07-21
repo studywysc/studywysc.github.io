@@ -42,29 +42,8 @@
 </head>
 <body class="startbody">
 
-    <!-- desktop topnav -->
-    <div class="d-none d-md-block noselect">
-        <nav class="navbar navbar-dark bg-transparent" style="margin-bottom:-115px;">
-            <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
-                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
-                <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
-            </a>
-            <ul class="navbar-nav navbar-expand ml-auto align-middle">
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/">Home</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/blog">Blog</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/docs">Docs</a>
-                </li>
-                <li class="nav-item active p-3">
-                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Web App<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <!-- desktop nav positioned lower down -->
+
     <!-- mobile bottomnav -->
     <div class="d-md-none noselect">
         <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
@@ -125,14 +104,38 @@
                 </div>
             </div>
             
-            <div style="position:absolute;right:0;top:100px;max-width:60vh;width:30%;">
-                <div class="alert alert-success alert-dismissible startfadeb04 fade show text-center p-4 m-3 shadow-lg border-0" role="alert" style="width:100%;">
+            <div style="position:absolute;right:0;top:100px;max-width:60vh;width:30%;padding-right:10px;">
+                <div class="alert alert-success alert-dismissible startfadeb04 fade show text-center p-4 shadow-lg border-0" role="alert" style="width:100%;">
                     <h4>Hello, Welcome to Wysc!</h4>
                     <text>Thanks for testing out Wysc's new Web App! The app is still in early beta right now, but we hope you enjoy!</text>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+            </div>
+
+            <!-- desktop topnav -->
+            <div class="d-none d-md-block noselect">
+                <nav class="navbar navbar-dark bg-transparent">
+                    <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
+                        <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+                        <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+                    </a>
+                    <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="/wysc/">Home</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="/wysc/blog">Blog</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="/wysc/docs">Docs</a>
+                        </li>
+                        <li class="nav-item active p-3">
+                            <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Web App<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
 

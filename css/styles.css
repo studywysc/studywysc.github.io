@@ -155,7 +155,7 @@ body, html {
   color: transparent;
 }
 .blogbody {
-  background-color:#fefefe;
+  background-color:#704529; /* fefefe */
 }
 .blogfade {
   animation: blogfadein 0.68s;
@@ -166,21 +166,98 @@ body, html {
     animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   .blogfadeb01 {
-      -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
       animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;
   }
   .blogfadeb02 {
-      -webkit-animation: fade-in-bottom 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
-      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.24s both;
   }
   .blogfadeb03 {
-      -webkit-animation: fade-in-bottom 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
-      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;
   }
   .blogfadeb04 {
-      -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
-      animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
+      animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.48s both;
   }
+  .blogfadeb10 { /* used in blog posts // jk */
+      -webkit-animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+.bloghheader {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 100px;
+  }
+  .bloghheader:before {
+    animation: dh-fade-slide-down 1.5s cubic-bezier(0.2,0.5,0.4,0.8) forwards;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('../media/photo-1532607439080-44da70d00f9e.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: -1;
+  }
+  .bloghheader:after {
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: 0%;
+    position: absolute;
+      right: 0%;
+      top: 100vh;
+    transform-origin: 0 0;
+    z-index: 0;
+  }
+  @keyframes dh-fade-slide-down { 0% { opacity: 0; transform: translateY(-4rem); } 100% { opacity: 1; transform: none; } }
+.bloghheader2 {
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    margin-top: 40vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 100px;
+  }
+  .bloghheader2:before {
+    animation: dh-fade-slide-up 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    background: #704529;
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: -1;
+  }
+  .bloghheader2:after {
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: 0%;
+    position: absolute;
+      right: 0%;
+      top: 100vh;
+    transform-origin: 0 0;
+    z-index: 0;
+  }
+  @keyframes dh-fade-slide-up { 0% { opacity: 0; transform: translateY(4rem); } 100% { opacity: 1; transform: none; } }
 .blogheaderbar {
   margin-top:-100px;
 }
@@ -192,21 +269,41 @@ body, html {
   margin-bottom:50px;
 }
 .bloghcard {
-  width:60%;
+  width:75%;
 }
-.bloghheader {
-  background-position:center;
-  background-size:cover;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
+.bloghcontentpad { /* below d-md is 50px */
+  margin-top: 120px;
 }
-.bloghtitle h1 {
-  font-size:1.68em;
+.bloghpostcontainer {
+  width:95%;
+  margin-left:0px;
+  margin-right:auto;
+  min-height: calc(100vh - 200px);
+  /*background: #bf7c50 !important;*/
 }
+.bloghpostlist {
+  margin-top:25px;
+  margin-bottom:25px;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+}
+  .bloghtitle h1 {
+    font-size:1.68em;
+    color: #313131;
+  }
+  .bloghdate {
+    color: #818181;
+  }
+  .bloghtext {
+    color: #414141;
+  }
 .bloghdate h4 {
   font-size:1.1em;
 }
 .bloghwyscblogwords {
+  padding-top: 25px;
+  color: #e4c7b4;
   text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);
 }
 .bloghlinks {
@@ -215,6 +312,9 @@ body, html {
 /* .bloghfooter div div {
 } */
 .blogpbody {
+  background: #fefefe;
+}
+.blogpwidth {
   width:70%;
 }
 .blogtext {
@@ -419,7 +519,7 @@ body, html {
   transform: scale(1.025);
   transition: transform 0.2s linear;
 }
-.height100vh {
+.height100vh, .height100 {
   height: 100vh;
 }
 .maligny {
@@ -671,6 +771,12 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .bloghcard {
     width:85%;
+  }
+  .bloghcontentpad {
+    margin-top: 50px;
+  }
+  .bloghpostcontainer {
+    margin-left:auto;
   }
   .blogpbody {
     width:85%;

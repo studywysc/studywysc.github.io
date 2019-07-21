@@ -15,6 +15,7 @@
 ```
 #9C5D49 red-light
 #05679D blue-light
+#704529 blog
 ```
 
 

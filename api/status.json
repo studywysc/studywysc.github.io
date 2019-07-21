@@ -1,17 +1,19 @@
 {
-  "website":[
+  "wysc":[
     {
-      "title": "Discord",
+      "title": "Wysc Discord",
       "isup": true,
       "isupnotes": "",
       "notes": "Temporarily down for upgrades"
     },
     {
       "title": "Wysc Website",
-      "isup": true,
-      "isupnotes": "",
-      "notes": "completed"
-    },
+      "isup": false,
+      "isupnotes": "🛠",
+      "notes": "Blog, Docs, and Start under construction"
+    }
+  ],
+  "archived":[
     {
       "title": "Blog",
       "isup": false,
