@@ -778,7 +778,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .bloghpostcontainer {
     margin-left:auto;
   }
-  .blogpbody {
+  .blogpwidth {
     width:85%;
   }
   .dhcards .card-body {
