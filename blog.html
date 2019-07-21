@@ -22,7 +22,7 @@
     
     <!-- desktop topnav -->
     <div class="d-none d-md-block noselect">
-        <nav class="navbar fixed-top navbar-dark bg-transparent">
+        <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
                 <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
                 <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
@@ -82,12 +82,12 @@
     <div class="container-fluid sectiontextcolor bloghcontentpad">
         <div class="row">
             <div class="col-12 col-md-5 noselect">
-                <div class="blogfadeb00">
-                    <h1 class="fontgochihand hoverscale bloghwyscblogwords" style="font-size:4.5em;">Wysc Blog</h1>
+                <div class="blogfadeb01">
+                    <h1 class="fontgochihand hoverscale bloghwyscblogwords text-shadow-drop-bottom">Wysc Blog</h1>
                 </div>
                 <div class="bloghcard mx-auto">
-                    <h3 class="p-4 blogfadeb02">Status</h3>
-                    <div class="blogfadeb03">
+                    <h3 class="p-4 blogfadeb03">Status</h3>
+                    <div class="blogfadeb04">
                         <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
                             <div class="card-body text-dark border-0 p-4">
                                 <ul id="statuslist" class="list-group list-group-flush">
@@ -100,7 +100,7 @@
                 <div style="padding-bottom:60px;"></div>
             </div>
             <div class="col-12 col-md-7">
-                <div class="card bloghpostcontainer blogfadeb00">
+                <div class="card bloghpostcontainer blogfadeb04">
                     <ul class="list-group list-group-flush bloghpostlist">
                         <li class="list-group-item">
                             <a href="blog/19070401.html" class="text-decoration-none">
@@ -116,6 +116,12 @@
                     </ul>
                 </div>
                 <div style="padding-bottom:60px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
             </div>
         </div>
     </div>
@@ -134,10 +140,7 @@
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
-<script async>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{
-    document.getElementById("webpheader").style="background: url('media/photo-1532607439080-44da70d00f9e.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
-    document.getElementById("webpback01").style="background: url('media/daan-evers-1480187-unsplash.jpg');background-position:center;background-attachment:fixed;background-size:cover;overflow:hidden;";
-}})();</script>
+<!-- removed webp fallback, no webp's -->
 <link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css"> 
 <script src="js/add-to-homescreen-master/src/addtohomescreen.js" defer></script> 
 <script defer>addToHomescreen();</script>
