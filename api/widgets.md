@@ -119,7 +119,7 @@
         <div class="nav-content text-center">
             <ul class="nav nav-justified">
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinkactive" href="" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                    <a class="nav-link pulsate-fwd wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
                         <i class="material-icons">home</i><br>
                         <div>Home</div>
                     </a>

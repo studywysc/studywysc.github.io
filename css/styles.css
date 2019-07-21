@@ -41,7 +41,7 @@ body, html {
   transition: font-weight 100ms linear;
 }
   .wnavmblinkactive, .wnavmblinkactive:hover, .wnavmblinks:hover {
-    color: #efefef;
+    color: #efefef !important;
     /*text-transform: uppercase;*/
     font-weight: 400;
     font-size: 1em;
@@ -161,7 +161,6 @@ body, html {
   animation: blogfadein 0.68s;
 }
   @keyframes blogfadein { from { opacity:0; } to { opacity:1; } }
-  
   .blogfadeb00 {
     -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -338,6 +337,26 @@ body, html {
 .startbody {
   background-color:#212121;
 }
+.startfadeb00 {
+  -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  .startfadeb01 {
+    -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+    animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+  }
+  .startfadeb02 {
+    -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+    animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+  }
+  .startfadeb03 {
+    -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+    animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+  }
+  .startfadeb04 {
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
+  }
 .sr{/*Scrollreveal visible for noscript*/
   visibility: visible;
 }
