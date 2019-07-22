@@ -151,14 +151,22 @@ body, html {
       animation: rainbow 18s ease infinite;
   }
   @-webkit-keyframes rainbow{0%{background-position:0 82%}50%{background-position:100% 19%}100%{background-position:0 82%}}@-moz-keyframes rainbow{0%{background-position:0 82%}50%{background-position:100% 19%}100%{background-position:0 82%}}@-o-keyframes rainbow{0%{background-position:0 82%}50%{background-position:100% 19%}100%{background-position:0 82%}}@keyframes rainbow{0%{background-position:0 82%}50%{background-position:100% 19%}100%{background-position:0 82%}}
-.homesvg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  color: transparent;
+.homepadengage {
+  padding-top:80px;
+  display:inline-block;
 }
+.homesvgdiv {
+  width:100%;
+  height: calc(100vh + 82.5px);
+}
+  .homesvg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: transparent;
+  }
 .blogbody {
   background-color:#704529; /* fefefe */
 }
@@ -840,8 +848,23 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
 }
 
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) and (stroke-color:transparent) { /*safari only*/
-    
-  } 
+/* safari only */
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  .safarionly {
+    color: #fff;
+  }
+} }
+
+/* IE only */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .rainbowtext {
+    background: transparent;
+    color: inherit;
+  }
+  .homepadengage2 {
+    padding-top:80px;
+  }
+  .homesvgdiv {
+    height: 175vh;
+  }
 }
