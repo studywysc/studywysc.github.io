@@ -563,7 +563,9 @@ body, html {
 .noselect { /* chrome/webkit  only */
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  -webkit-touch-callout: none; /* safari mobile only */
+  -moz-user-select: auto; /* Firefox */
+  -ms-user-select: auto; /* Internet Explorer/Edge */
   /* .noselect {
     -webkit-touch-callout: none; iOS Safari
     -webkit-user-select: none; Safari
