@@ -1,3 +1,34 @@
+<!-- 0.190721 safari tweaks -->
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) { /*safari only*/
+    .homefadeb00 {
+      animation: fade-in-bottom 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.25s both;
+      /*animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
+    }
+      .homefadeb01 {
+        animation: fade-in-bottom 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+        /*animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.12s both;*/
+      }
+      .homefadeb02 {
+        animation: fade-in-bottom 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.75s both;
+        /*animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.36s both;*/
+      }
+      .homefadeb03 {
+        animation: fade-in-bottom 1.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+        /*animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.60s both;*/
+      }
+      .homefadeb04 {
+        animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;
+        /*animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 14s both;*/
+      }
+      .homefade00 {
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        /*animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
+      }
+  } 
+}
+
 <!-- 0.190716 put body css back in the css file -->
     body{background-color:#212121;}.headerbg{background-position:center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;height:calc(100vh + 165px);}
 
