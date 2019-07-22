@@ -114,6 +114,11 @@ body, html {
     transform-origin: 0 0;
     z-index: 0;
   }
+  .homeheaderjpg:before { /*webp fallback*/
+    animation: dh-fade-slide-down 0.9s ease-in forwards;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+    background-size:cover;
+  }
   @keyframes dh-fade-slide-down { 0% { opacity: 0; } 100% { opacity: 1; transform: none; } }
 .homehwidth {
   width:100%;
@@ -833,4 +838,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .dhwidth70 {
     width:95%;
   }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) { /*safari only*/
+    
+  } 
 }
