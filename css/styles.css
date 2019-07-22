@@ -55,6 +55,13 @@ body, html {
 .homebody {
   background-color:#092636;
 }
+.homeengageback {
+  background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('../media/daan-evers-1480187-unsplash.webp');
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
+  overflow:hidden;
+}
 .homefadeb00 {
   -webkit-animation: fade-in-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -855,12 +862,25 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
 } }
 
-/* IE only */
+/* IE 10+ only */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .parallaxbg {
+    background-attachment: inherit;
+  }
   .rainbowtext {
     background: transparent;
     color: inherit;
   }
+  .homeengageback {
+    background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('../media/daan-evers-1480187-unsplash.jpg');
+    background-attachment:inherit;
+  }
+  .homeheaderjpg {
+    background: url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+  }
+    .homeheaderjpg:before {
+      background: url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+    }
   .homepadengage2 {
     padding-top:80px;
   }
