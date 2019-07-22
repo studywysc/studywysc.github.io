@@ -585,7 +585,7 @@ body, html {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none; /* safari mobile only */
   -moz-user-select: auto; /* Firefox */
-  -ms-user-select: auto; /* Internet Explorer/Edge */
+  -ms-user-select: none; /* Internet Explorer/Edge */
   /* .noselect {
     -webkit-touch-callout: none; iOS Safari
     -webkit-user-select: none; Safari
