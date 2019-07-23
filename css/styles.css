@@ -488,6 +488,33 @@ body, html {
   max-height:100vh;
   overflow:scroll;
 }
+.startaplink {
+  margin-bottom:0.1rem;
+}
+.startappframe {
+  width:100%;
+  height:calc(100vh - 115px);
+}
+  .startappframespacing {
+    padding-left: 1rem !important; /*p-4*/
+    padding-right: 0.5rem !important; /*p-2*/
+  }
+.startapppills {
+  width:80%;
+  max-width:50px;
+}
+.startappscreen {
+  margin-top: 115px;
+  height:calc(100vh - 115px);
+  width:100%;
+}
+.startappslist {
+  min-height: 65px;
+}
+  .startappslist2 {
+    max-height: 100vh;
+    overflow: scroll;
+  }
 .startbody {
   background-color:#212121;
 }
@@ -511,9 +538,30 @@ body, html {
     -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
     animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
   }
+.startheader {
+  background: linear-gradient(to left, rgba(31, 31, 31, 0.5), rgba(255,255,255,0)), url('https://source.unsplash.com/daily/?nature,water/1600x900') no-repeat center;
+  height:100vh;
+  width:100%;
+  overflow:hidden;
+}
+.startm0p0 {
+  margin:0 !important;
+  padding:0 !important;
+}
 .sr{/*Scrollreveal visible for noscript*/
   visibility: visible;
 }
+
+
+/* other css override */
+
+.nav-pills a {
+  color: #ddd !important;
+}
+.nav-pills .active {
+  background-color: #aaa !important;
+}
+
 
 /* Custom Convenience */
 
@@ -846,6 +894,34 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .docspbody {
     padding-top:200px;
+  }
+.startaplink {
+  margin-bottom:0;
+}
+.startappframe {
+  height: calc(100vh - 140px);
+}
+  .startappframespacing {
+    padding-left: 0rem !important; /*p-4*/
+    padding-right: 0rem !important; /*p-2*/
+  }
+.startappscreen {
+  margin-top: 0px;
+  height:calc(100vh - 145px); /* 80px bottomnav + 65px startappslist */
+}
+  .startappslist {
+    background: linear-gradient(to bottom, rgba(156,93,73, 1), rgba(156,93,73,1));
+    /*animation: fade-in 1.5s cubic-bezier(0.2,0.5,0.4,0.8) 0.5s both;*/
+  }
+    .startappslist2 {
+      padding-top:5px;
+      max-height:65px;
+    }
+  .startapppills {
+    top:50%;
+  }
+  .startappsmdisc {
+    animation: fade-in-bottom 1.6s cubic-bezier(0.2,0.5,0.4,0.8) both;
   }
 }
 

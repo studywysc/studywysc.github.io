@@ -1,3 +1,9 @@
+<!-- 0.190722 -->
+
+    start.html
+    <!-- replace with this when app switching comes
+    <div class="col-2 col-md-1"> d-none d-md-block -->
+
 <!-- 0.190721 safari tweaks -->
 
 @media not all and (min-resolution:.001dpcm) { 
