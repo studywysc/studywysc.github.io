@@ -516,7 +516,7 @@ body, html {
     overflow: scroll;
   }
 .startbody {
-  background-color:#212121;
+  background-color:rgb(156,93, 73);
 }
 .startfadeb00 {
   -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
