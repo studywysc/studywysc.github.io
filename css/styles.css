@@ -503,6 +503,9 @@ body, html {
   width:80%;
   max-width:50px;
 }
+  .startapppillshome {
+    background: url('../media/svg/baseline-apps-24px_white.svg') no-repeat center;
+  }
 .startappscreen {
   margin-top: 115px;
   height:calc(100vh - 115px);
@@ -513,7 +516,7 @@ body, html {
 }
   .startappslist2 {
     max-height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 .startbody {
   background-color:#212121;
@@ -628,6 +631,14 @@ body, html {
   margin-top:auto;
   margin-bottom:auto;
 }
+.marginsauto {
+  margin:auto;
+}
+  .marginsauto2 {
+    left:50%;
+    top:50%;
+    transform: translatex(-50%), translateY(-50%);    
+  }
 .noselect { /* chrome/webkit  only */
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -901,6 +912,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 .startappframe {
   height: calc(100vh - 140px);
 }
+  #startappframeround {
+    border-radius:0px !important;
+  }
   .startappframespacing {
     padding-left: 0rem !important; /*p-4*/
     padding-right: 0rem !important; /*p-2*/

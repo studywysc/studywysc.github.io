@@ -88,14 +88,20 @@
                             
                             <div class="col-12 col-md-1 order-md-last startappslist startm0p0">
                                 <div class="nav nav-pills startappslist2">
-                                    <a href="#apphome" class="nav-link startaplink active" data-toggle="pill">
-                                        <img src="media/speqi-wsc 04.png" alt="home" class="startapppills shadow-lg border-light rounded-circle">
+                                    <a href="#apphome" class="nav-link startaplink active startapppillshome" data-toggle="pill">
+                                        <img src="media/speqi/speqi-square-logo.png" alt="home" class="startapppills shadow-lg border-light rounded-circle" style="visibility:hidden;">
                                     </a>
                                     <a href="#appcuckoo" class="nav-link startaplink" data-toggle="pill">
-                                        <img src="media/logos/appcuckoo.png" alt="home" class="startapppills shadow-lg border-light rounded-circle">
+                                        <img src="media/logos/appcuckoo.png" alt="Cuckoo" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <a href="#appdesmos" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/logos/appdesmos.jpg" alt="Desmos" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <a href="#appmathway" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/logos/appmathway.png" alt="Mathway" class="startapppills shadow-lg border-light rounded-circle">
                                     </a>
                                     <a href="#appmusic" class="nav-link startaplink" data-toggle="pill">
-                                        <img src="media/speqi/speqi-square-logo.png" alt="home" class="startapppills shadow-lg border-light rounded-circle">
+                                        <img src="media/speqi/speqi-square-logo.png" alt="Speqi" class="startapppills shadow-lg border-light rounded-circle">
                                     </a>
                                 </div>
                             </div>
@@ -112,15 +118,25 @@
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
+                                            <div class="alert alert-info alert-dismissible startfadeb01 fade show text-center p-4 shadow-lg border-0 mx-auto" role="alert" style="width:90%;">
+                                                <h4>Third-Party Mini-Apps</h4>
+                                                <text>Wysc was not endorsed by any third-party services to provide mini-apps for our service. We use only public access points in our mini-app creation process, and will have a Credits page up in the near future to link back to sources in full. Reach out to us <a href="/wysc/docs">at our Docs page</a> for inquiries.</text>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="tab-pane" id="appcuckoo">
-                                            <iframe class="startappframe rounded-lg" src="https://cuckoo.team/" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="startappframe rounded-lg" id="startappframeround" src="https://cuckoo.team/wysc" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="appdesmos">
+                                            <iframe class="startappframe rounded-lg" id="startappframeround" src="https://www.desmos.com/calculator/" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="appmathway">
+                                            <iframe class="startappframe rounded-lg" id="startappframeround" src="https://www.mathway.com/ProblemWidget.aspx?subject=Precalculus" frameborder="0"></iframe>
                                         </div>
                                         <div class="tab-pane" id="appmusic">
-                                            <iframe class="startappframe rounded-lg" src="https://disweb.deploys.io/channels/319372945929666571/466088384377520148" frameborder="0"></iframe>
-                                        </div>
-                                        <div class="tab-pane" id="appfour">
-                                            4 content
+                                            <iframe class="startappframe rounded-lg" id="startappframeround" src="https://disweb.deploys.io/channels/319372945929666571/466088384377520148" frameborder="0"></iframe>
                                         </div>
 
                                     </div>
@@ -180,5 +196,23 @@
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
 <!-- pwa -->
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
+
+<!-- page js -->
+<link type="text/css" href="js\OverlayScrollbars-master\css\OverlayScrollbars.css" rel="stylesheet"/>
+<script type="text/javascript" src="js\OverlayScrollbars-master\js\OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        className       : "os-theme-dark",
+        resize          : "both",
+        sizeAutoCapable : true,
+        paddingAbsolute : true,
+        scrollbars : {
+            clickScrolling : true
+        }
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll('body'), { });
+});
+</script>
 </body>
 </html>
