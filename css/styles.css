@@ -516,7 +516,8 @@ body, html {
 }
   .startappslist2 {
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 .startbody {
   background-color:rgb(156,93, 73);
