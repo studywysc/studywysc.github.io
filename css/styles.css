@@ -491,6 +491,10 @@ body, html {
 .startaplink {
   margin-bottom:0.1rem;
 }
+.startappdiv {
+  overflow-y:auto;
+  overflow-x:hidden;
+}
 .startappframe {
   width:100%;
   height:calc(100vh - 115px);
@@ -522,6 +526,51 @@ body, html {
 .startbody {
   background-color:rgb(156,93, 73);
 }
+.startdiscordwindow {
+  height: calc(100vh - 115px);
+}
+  .startdiscordchat {
+    height: calc(100vh - 115px);
+  }
+  .startdiscordchatframe {
+    border:none;
+    width:100%;
+    height:calc(100vh - 115px);
+    overflow:hidden;
+  }
+  .startdiscordclick {
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    max-width:300px;
+    width:40%;
+    cursor:pointer;
+  }
+  .startdiscordco { /*chat overlaying*/
+    position:absolute;
+    top:0;
+    right:0;
+    width:95px;
+    height:45px;
+    padding:5px;
+    background: #313337;
+    border-radius:0.5rem;
+  }
+  .startdiscordcoz { /*chat overlaying z-index*/
+    z-index:40;
+  }
+  .startdiscordcop { /*chat overlaying padding*/
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-top:5px;
+  }
+  .startdiscordhidden {
+    display:none;
+  }
+  .startdiscordshow {
+    display:block;
+  }
 .startfadeb00 {
   -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in-bottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -575,7 +624,7 @@ body, html {
   transform: translateY(-50%);
 }
 .centeritvertically2 {
-  top: 50%;
+  top:50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -916,9 +965,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   #startappframeround {
     border-radius:0px !important;
   }
-  .startappframespacing {
+  #startappframespacing {
     padding-left: 0rem !important; /*p-4*/
-    padding-right: 0rem !important; /*p-2*/
+    /* padding-right: 0rem !important; p-2*/
   }
 .startappscreen {
   margin-top: 0px;

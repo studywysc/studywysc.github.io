@@ -4,6 +4,31 @@
     <!-- replace with this when app switching comes
     <div class="col-2 col-md-1"> d-none d-md-block -->
 
+```    
+<script>
+    function discordhidetrigger() {
+        var element = document.getElementById("startdiscordtrigger");
+        element.classList.toggle("startdiscordshow");
+        element.classList.toggle("startdiscordhidden");
+        element.animate([
+            // keyframes
+            { opacity: 1 }, 
+            { opacity: 0 },
+            ], { 
+            // timing options
+            duration: 400,
+        });
+    }
+</script>
+
+            document.getElementById('weatherapi').element.classList.add("list-group","list-group-flush")
+
+    function fancythelist() {
+        document.getElementById('weatherapi').element.classList.add("list-group","list-group-flush");
+    }
+    window.onload = fancythelist();
+```
+
 <!-- 0.190721 safari tweaks -->
 
 @media not all and (min-resolution:.001dpcm) { 
