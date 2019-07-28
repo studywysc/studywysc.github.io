@@ -568,6 +568,7 @@ body, html {
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior: contain;
   }
 .startbody {
   background-color:rgb(156,93, 73);
