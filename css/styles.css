@@ -488,6 +488,20 @@ body, html {
   max-height:100vh;
   overflow:scroll;
 }
+.docuchanli dd li {
+  list-style: none;
+  padding-left:1.75em;
+  padding-top:0.5em;
+  padding-bottom:0.25em;
+}
+.docuchanbadge dd span, .docuchanbadge dt h6 span {
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; /* safari mobile only */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  margin-right:0.85em;
+}
 .docucreditlogos {
   max-width:64px;
   width:20%;

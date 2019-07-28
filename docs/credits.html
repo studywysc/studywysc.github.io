@@ -11,7 +11,7 @@
     <div id="importdocsstyle"></div><script>$("#importdocsstyle").load('docsstyle.html');</script>
 </head>
 <body class="docustyle">
-    <div id="importdocsheader" style="position:absolute;width:100%;"></div><script>$("#importdocsheader").hide().load('docsheader.html').fadeIn('400');</script>
+    <div id="importdocsheader" style="position:absolute;width:100%;"><noscript><a href="/wysc/docs/">&#9666; Back</a> / <a href="/wysc/">Wysc Home</a></noscript></div><script>$("#importdocsheader").hide().load('docsheader.html').fadeIn('400');</script>
     <div class="docspbody">
         <div class="container-fluid">
             <div class="row">
@@ -24,16 +24,18 @@
                     <p><strong>Unless otherwise indicated, Wysc was not paid to sponsor, feature, and/or incorporate any of the following services in Wysc.</strong> Wysc has made use of the following resources solely at our own discretion and need for third-party services to meet our needs in order to provide the best possible experience we can for our end users.</p>
                     <p>[Work in progress]</p>
 
-                    <div class="col-12 col-md-6 docutoc pt-4 pb-4">
+                    <div class="col-12 col-md-6 docutoc pt-4 pb-4"> <!--0.190727-->
                         <div class="card rounded-lg shadow-sm">
                             <div class="card-body">
-                                <ol class="docutdn pt-2">
-                                    <li><a href="#wysc-infrastructure">Wysc Infrastructure</a></li>
-                                    <li><a href="#wysc-discord-server">Wysc Discord Server</a></li>
+                                <ol class="docutdn mt-2 mb-2">
+                                    <li><a href="#infrastructure">Infrastructure</a></li>
+                                    <li><a href="#apis">APIs</a></li>
+                                    <li><a href="#discord-server">Discord Server</a></li>
                                         <ol>
                                             <li><a href="#non-critical-functionality">Non-Critical Functionality</a></li>
                                         </ol>
-                                    <li><a href="#wysc-start">Wysc Start</a></li>
+                                    <li><a href="#start-web-app">Start/Web App</a></li>
+                                    <li><a href="#website">Website</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -41,7 +43,7 @@
                     
                     <div class="container">
                         <div class="row">
-                            <h2>Wysc Infrastructure</h2>
+                            <h2>Infrastructure</h2>
                         </div>
                         <div class="row pt-3">
                             <div class="col-12 col-md-6">
@@ -49,16 +51,7 @@
                                     <img src="../media/logos/creditsbookmark.png" class="mr-4 p-2 docucreditlogos" alt="Bookmark">
                                     <div class="media-body">
                                         <h5 class="mt-0"><a href="https://bookmark.com/" target="_blank" rel="noopener" class="text-decoration-none">Bookmark</a></h5>
-                                        <p>Free subdomain, Website hosting</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="media pt-2">
-                                    <img src="../media/logos/creditsbootstrap.svg" class="mr-4 p-2 docucreditlogos" alt="Bootstrap">
-                                    <div class="media-body">
-                                        <h5 class="mt-0"><a href="https://getbootstrap.com/" target="_blank" rel="noopener" class="text-decoration-none">Bootstrap</a></h5>
-                                        <p>HTML framework</p>
+                                        <p>Subdomain, Website hosting</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,10 +75,24 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="media pt-2">
-                                    <img src="../media/logos/creditsifttt.png" class="mr-4 p-2 docucreditlogos" alt="IFTTT">
+                                    <img src="../media/logos/creditswordpress.png" class="mr-4 p-2 docucreditlogos" alt="Github">
                                     <div class="media-body">
-                                        <h5 class="mt-0"><a href="https://ifttt.com/" target="_blank" rel="noopener" class="text-decoration-none">IFTTT</a></h5>
-                                        <p>Live automated content feeds</p>
+                                        <h5 class="mt-0"><a href="https://wordpress.com/" target="_blank" rel="noopener" class="text-decoration-none">Wordpress</a></h5>
+                                        <p>Wysc Events</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2>APIs</h2>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-6">
+                                <div class="media pt-2">
+                                    <img src="https://avatars3.githubusercontent.com/u/29310830" class="mr-4 p-2 docucreditlogos" alt="dhooks">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><a href="https://github.com/kyb3r/dhooks" target="_blank" rel="noopener" class="text-decoration-none">dhooks</a></h5>
+                                        <p>Python-based webhook API</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +101,7 @@
                                     <img src="../media/logos/creditsapilayer.svg" class="mr-4 p-2 docucreditlogos" alt="ipapi/apilayer">
                                     <div class="media-body">
                                         <h5 class="mt-0"><a href="https://ipapi.com/" target="_blank" rel="noopener" class="text-decoration-none">ipapi/apilayer</a></h5>
-                                        <p>Latlong API for IP</p>
+                                        <p>IP API for Latlong</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,18 +114,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <div class="media pt-2">
-                                    <img src="../media/logos/creditswordpress.png" class="mr-4 p-2 docucreditlogos" alt="Github">
-                                    <div class="media-body">
-                                        <h5 class="mt-0"><a href="https://wordpress.com/" target="_blank" rel="noopener" class="text-decoration-none">Wordpress</a></h5>
-                                        <p>Wysc Events</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="row">
-                            <h2>Wysc Discord Server</h2>
+                            <h2>Discord Server</h2>
                         </div>
                         <div class="row pt-3">
                             <div class="col-12 col-md-6">
@@ -145,6 +143,15 @@
                                     <div class="media-body">
                                         <h5 class="mt-0"><a href="https://groovy.bot/" target="_blank" rel="noopener" class="text-decoration-none">Groovy</a></h5>
                                         <p>Music streaming</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="media pt-2">
+                                    <img src="../media/logos/creditsifttt.png" class="mr-4 p-2 docucreditlogos" alt="IFTTT">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><a href="https://ifttt.com/" target="_blank" rel="noopener" class="text-decoration-none">IFTTT</a></h5>
+                                        <p>Live automated content feeds</p>
                                     </div>
                                 </div>
                             </div>
@@ -195,11 +202,11 @@
                                     <li><a href="https://www.pokecord.com/" target="_blank" rel="noopener" class="text-decoration-none">Pokecord</a> - Pokemon in Discord</li>
                                     <li><a href="https://statbot.net/" target="_blank" rel="noopener" class="text-decoration-none">Statbot</a> - Server statistics</li>
                                 </ul>
-                                <p>Not all bots in our Discord are listed. This list excludes bots that we are considering removing from our service or have not been actively in use. To see the full list of all the bots Wysc currently uses, please <a href="/wysc/" target="_blank">join our Discord</a>.</p>
+                                <p>Not all bots in our Discord may be listed. This list may exclude bots that we are considering removing from our service, have not been actively in use, or have been recently added. To see the full list of all the bots Wysc currently uses, please <a href="/wysc/" target="_blank">join our Discord</a>.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <h2>Wysc Start</h2>
+                            <h2>Start/Web App</h2>
                         </div>
                         <div class="row pt-3">
                             <div class="col-12 col-md-6">
@@ -226,6 +233,29 @@
                                     <div class="media-body">
                                         <h5 class="mt-0"><a href="https://www.mathway.com/" target="_blank" rel="noopener" class="text-decoration-none">Mathway</a></h5>
                                         <p>Advanced solution calculator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2>Website</h2>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-6">
+                                <div class="media pt-2">
+                                    <img src="../media/logos/creditsbootstrap.svg" class="mr-4 p-2 docucreditlogos" alt="Bootstrap">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><a href="https://getbootstrap.com/" target="_blank" rel="noopener" class="text-decoration-none">Bootstrap</a></h5>
+                                        <p>HTML framework</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="media pt-2">
+                                    <img src="../media/logos/creditsgan.svg" class="mr-4 p-2 docucreditlogos" alt="Bookmark">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><a href="https://www.google.com/analytics" target="_blank" rel="noopener" class="text-decoration-none">Google Analytics</a></h5>
+                                        <p>Traffic and search console</p>
                                     </div>
                                 </div>
                             </div>

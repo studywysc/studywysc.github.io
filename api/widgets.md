@@ -6,6 +6,8 @@
     - [Template](#template)
     - [Iframe lazy load](#iframe-lazy-load)
     - [Widgetbot](#widgetbot)
+- [Docs](#docs)
+    - [Page table of contents](#page-table-of-contents)
 
 
 <br><br>
@@ -175,4 +177,27 @@ function init(){var vidDefer=document.getElementsByTagName('iframe');for(var i=0
         })
     } else {};
 </script>
+```
+
+<br><br>
+## Docs
+
+### Page table of contents
+```
+<div class="col-12 col-md-6 docutoc pt-4 pb-4"> <!--0.190727-->
+    <div class="card rounded-lg shadow-sm">
+        <div class="card-body">
+            <ol class="docutdn mt-2 mb-2">
+                <li><a href="#infrastructure">Infrastructure</a></li>
+                <li><a href="#apis">APIs</a></li>
+                <li><a href="#discord-server">Discord Server</a></li>
+                    <ol>
+                        <li><a href="#non-critical-functionality">Non-Critical Functionality</a></li>
+                    </ol>
+                <li><a href="#start-web-app">Start/Web App</a></li>
+                <li><a href="#website">Website</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
 ```
