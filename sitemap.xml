@@ -8,14 +8,83 @@
 
 <url>
   <loc>https://gitnisyl.github.io/wysc/</loc>
-  <lastmod>2019-06-12T11:34:39+00:00</lastmod>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://gitnisyl.github.io/wysc/joinwsc/</loc>
-  <lastmod>2019-06-12T11:34:39+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://gitnisyl.github.io/wysc/blog</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/start</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/blog/19072601.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/blog/19070401.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/home</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/index.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/docstoc</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/joinwsc/</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/home.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/channels.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/serverranks.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/serversecurity.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gitnisyl.github.io/wysc/docs/credits.html</loc>
+  <lastmod>2019-07-28T07:04:33+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
 
 </urlset>
