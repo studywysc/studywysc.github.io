@@ -7,16 +7,16 @@
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
-    <link rel="manifest" href="app.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link rel="manifest" href="https://gitnisyl.github.io/wysc/app.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="https://gitnisyl.github.io/wysc/favicon.ico">
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <title>Wysc Blog – Wysc</title>
-    <meta property="og:title" content="Wysc Blog – Wysc" />
+    <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
+    <title> {{ page.title }} &ndash;&nbsp;Wysc Blog</title>
+    <meta property="og:title" content=" {{ page.title }} " />
 </head>
 <body class="blogbody">
     
@@ -24,21 +24,21 @@
     <div class="d-none d-md-block noselect">
         <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
-                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+                <img src="https://gitnisyl.github.io/wysc/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
                 <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
             </a>
             <ul class="navbar-nav navbar-expand ml-auto align-middle">
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/">Home</a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/">Home</a>
                 </li>
                 <li class="nav-item active p-3">
-                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/blog" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/docs">Docs</a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/docs">Docs</a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/wysc/start">Web App</a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/start">Web App</a>
                 </li>
             </ul>
         </nav>
@@ -49,25 +49,25 @@
             <div class="nav-content text-center">
                 <ul class="nav nav-justified">
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/">
                             <i class="material-icons">home</i><br>
                             <div>Home</div>
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                        <a class="nav-link pulsate-fwd wnavmblinkactive" href="https://gitnisyl.github.io/wysc/blog">
                             <i class="material-icons">class</i><br>
                             <div>Blog</div>
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/docs">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/docs">
                             <i class="material-icons">vertical_split</i><br>
                             <div>Docs</div>
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/start">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/start">
                             <i class="material-icons">apps</i><br>
                             <div>Apps</div>
                         </a>
@@ -81,31 +81,14 @@
     <div class="bloghheader2 position-fixed width100"></div>
     <div class="container-fluid sectiontextcolor bloghcontentpad">
         <div class="row">
-            <div class="col-12 col-md-5 noselect">
-                <div class="blogfadeb01">
-                    <h1 class="fontgochihand hoverscale bloghwyscblogwords text-shadow-drop-bottom">Wysc Blog</h1>
+          <div class="col">
+              <div class="card blogpwidth">
+                <div class="blogjpostcontainer">    
+                  {{ content }}
                 </div>
-                <div class="bloghcard mx-auto">
-                    <h3 class="p-4 blogfadeb02">Status</h3>
-                    <div class="blogfadeb03">
-                        <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
-                            <div class="card-body text-dark border-0 p-4">
-                                <ul id="statuslist" class="list-group list-group-flush">
-                                </ul>
-                                <div class="text-black-50 pt-4" style="font-size:0.85em;">api coming soon</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="padding-bottom:60px;"></div>
-            </div>
-            <div class="col-12 col-md-7">
-                <div class="card bloghpostcontainer blogfadeb04">
-                    <ul id="blogpostlist" class="list-group list-group-flush bloghpostlist">
-                    </ul>
-                </div>
-                <div style="padding-bottom:60px;"></div>
-            </div>
+              </div>
+              <div style="padding-bottom:60px;"></div>
+          </div>
         </div>
         <div class="row">
             <div class="col">
@@ -118,10 +101,6 @@
 
 
 <!-- js -->
-<script src="js/popper-1.14.7.min.js" defer></script>
-<script src="js/bootstrap-4.3.1.min.js" defer></script>
-<script src="js/cssrelpreload.js" async></script>
-<link type="text/javascript" href="js/script.js">
 <!-- og: meta tags // title-type-img-url required -->
 <meta property="og:type" content="website" />
 <meta property="og:image" content="media/wsc-sp-rounded.png" />
@@ -130,9 +109,6 @@
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
 <!-- removed webp fallback, no webp's -->
-<link rel="stylesheet" type="text/css" href="js/add-to-homescreen-master/style/addtohomescreen.css"> 
-<script src="js/add-to-homescreen-master/src/addtohomescreen.js" defer></script> 
-<script defer>addToHomescreen();</script>
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-touch-fullscreen" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Wysc" />
@@ -155,64 +131,6 @@
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
 <!-- page js -->
-<script> // fetch api status
-    function createNode(element) {
-        return document.createElement(element);
-    }
-    function append(parent, el) {
-        return parent.appendChild(el);
-    }
-    const ul = document.getElementById('statuslist');
-    const url = 'api/status.json';
-    fetch(url)
-    .then((resp) => resp.json())
-    .then(function(data) {
-        let statuslist = data.wysc;
-        return statuslist.map(function(status) {
-        let li = createNode('li');
-        if (status.isup == true){
-            li.className = 'list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-success">✅</text>`;
-        } else {
-            li.className = 'bg-warning list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupnotes}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
-        }
-        append(ul, li);
-        })
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
-</script>
-<script> // fetch api blog posts
-    function createNode(element) {
-        return document.createElement(element);
-    }
-    function append(parent, el) {
-        return parent.appendChild(el);
-    }
-    const ul = document.getElementById('blogpostlist');
-    const url = 'blog/_site/feed.xml';
-    fetch(url)
-    .then((resp) => resp.xml())
-    .then(function(data) {
-        let statuslist = data.wysc;
-        return statuslist.map(function(status) {
-        let li = createNode('li');
-        if (status.isup == true){
-            li.className = 'list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-success">✅</text>`;
-        } else {
-            li.className = 'bg-warning list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupnotes}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
-        }
-        append(ul, li);
-        })
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
     new Crate({
         server: '319372945929666571',

@@ -194,11 +194,11 @@ body, html {
       animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.25s both;
   }
   .blogfadeb03 {
-      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
       animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.375s both;
   }
   .blogfadeb04 {
-      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
+      -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
       animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
   }
   .blogfadeb10 { /* used in blog posts // jk */
@@ -340,7 +340,8 @@ body, html {
   background: #fefefe;
 }
 .blogpwidth {
-  width:70%;
+  width:92%;
+  max-width:850px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -992,9 +993,6 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .bloghpostcontainer {
     margin-left:auto;
-  }
-  .blogpwidth {
-    width:85%;
   }
   .dhcards .card-body {
     padding: 2vh !important;
