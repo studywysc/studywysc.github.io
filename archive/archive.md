@@ -1,3 +1,44 @@
+<!-- 0.190801 -->
+
+    <script> // fetch api blog posts
+        function createNode(element) {
+            return document.createElement(element);
+        }
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+        const ul = document.getElementById('blogpostsapi');
+        const url = 'blog/feed.json';
+        fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) {
+            let entrylist = data.feed.entry;
+            let entrytitlepre = entrylist.title;
+            let entrytitle = entrytitlepre._;
+            let entrysummpre = entrylist.summary;
+            let entrysumm = entrysummpre._;
+            return entrylist.map(function(entries) {
+            let li = createNode('li');
+                li.className = 'list-group-item rounded';
+                li.innerHTML = `<b>${entries.entrytitle}:</b>&emsp;<text class="text-success">✅</text>`;
+            append(ul, li);
+            })
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+    </script>
+<!--
+    $.get('https://gitnisyl.github.io/wysc/blog/feed.xml', function (data) {
+    $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+        var el = $(this);
+        let li = document.getElementById('blogpostslist').createNode('li');
+            li.className = 'list-group-item rounded';
+            li.innerHTML = el.find("title").text();
+    });
+});
+-->
+
 <!-- 0.190722 -->
 
     start.html

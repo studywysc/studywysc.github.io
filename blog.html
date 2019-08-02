@@ -95,13 +95,38 @@
                                 <div class="text-black-50 pt-4" style="font-size:0.85em;">api coming soon</div>
                             </div>
                         </div>
+                        <br>
+                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="blog/feed.rss" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed (beta)</a></div>
+
                     </div>
                 </div>
                 <div style="padding-bottom:60px;"></div>
             </div>
             <div class="col-12 col-md-7">
-                <div class="card bloghpostcontainer blogfadeb04">
-                    <ul id="blogpostlist" class="list-group list-group-flush bloghpostlist">
+                <div class="card bloghpostcontainer blogfadeb03">
+                    
+                    <ul class="list-group list-group-flush bloghpostlist">
+                        <li class="list-group-item p-4">
+                            <a href="blog/jekyll/update/2019/07/26/wysc-events.html" class="text-decoration-none">
+                                <span class="badge badge-info m-2">New</span>
+                                <div class="bloghtitle" id="190726title"></div>
+                                <div class="bloghdate" id="190726date"></div>
+                                <div class="bloghtext" id="190726text"></div>
+                                <script>$("#190726title").hide().load('blog/jekyll/update/2019/07/26/wysc-events.html #blogptitle').fadeIn('0.8s');</script>
+                                <script>$("#190726date").hide().load('blog/jekyll/update/2019/07/26/wysc-events.html #blogpdate').fadeIn('0.8s');</script>
+                                <script>$("#190726text").hide().load('blog/jekyll/update/2019/07/26/wysc-events.html #blogptext').fadeIn('0.8s');</script>
+                            </a>
+                        </li>
+                        <li class="list-group-item p-4">
+                            <a href="blog/jekyll/update/2019/07/04/wysc-blog-release.html" class="text-decoration-none">
+                                <div class="bloghtitle" id="19070401title"></div>
+                                <div class="bloghdate" id="19070401date"></div>
+                                <div class="bloghtext" id="19070401text"></div>
+                                <script>$("#19070401title").hide().load('blog/jekyll/update/2019/07/04/wysc-blog-release.html #blogptitle').fadeIn('0.8s');</script>
+                                <script>$("#19070401date").hide().load('blog/jekyll/update/2019/07/04/wysc-blog-release.html #blogpdate').fadeIn('0.8s');</script>
+                                <script>$("#19070401text").hide().load('blog/jekyll/update/2019/07/04/wysc-blog-release.html #blogptext').fadeIn('0.8s');</script>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div style="padding-bottom:60px;"></div>
@@ -166,35 +191,6 @@
     const url = 'api/status.json';
     fetch(url)
     .then((resp) => resp.json())
-    .then(function(data) {
-        let statuslist = data.wysc;
-        return statuslist.map(function(status) {
-        let li = createNode('li');
-        if (status.isup == true){
-            li.className = 'list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-success">✅</text>`;
-        } else {
-            li.className = 'bg-warning list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupnotes}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
-        }
-        append(ul, li);
-        })
-    })
-    .catch(function(error) {
-        console.log(error);
-    });
-</script>
-<script> // fetch api blog posts
-    function createNode(element) {
-        return document.createElement(element);
-    }
-    function append(parent, el) {
-        return parent.appendChild(el);
-    }
-    const ul = document.getElementById('blogpostlist');
-    const url = 'blog/_site/feed.xml';
-    fetch(url)
-    .then((resp) => resp.xml())
     .then(function(data) {
         let statuslist = data.wysc;
         return statuslist.map(function(status) {
