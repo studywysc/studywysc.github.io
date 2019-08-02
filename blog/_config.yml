@@ -17,7 +17,7 @@ title: Study Discord Cafe
 email: 
 description: Wysc
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://gitnisyl.github.io/wysc/blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gitnisyl.github.io/wysc/blog/_site" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
