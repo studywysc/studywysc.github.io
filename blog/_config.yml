@@ -27,7 +27,7 @@ theme: minima
 plugins:
   - jekyll-feed
 feed:
-  path: /update/feed.xml
+  path: /update/rss.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
