@@ -1,15 +1,9 @@
 ---
 layout: post
 title:  "Launch of Wysc Events"
-<<<<<<< HEAD
 summary: "We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ..."
 date:   2019-07-26 00:00:00 -0700
 categories: update
-=======
-summary: "We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of the Wysc Events ..."
-date:   2019-07-26 18:05:19 -0700
-categories: jekyll update
->>>>>>> parent of d05f941... 0.190802 01
 ---
 We’re really excited.
 
