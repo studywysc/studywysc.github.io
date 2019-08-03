@@ -3,7 +3,7 @@ layout: post
 title:  "Launch of Wysc Events"
 summary: "We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ..."
 date:   2019-07-26 00:00:00 -0700
-categories:
+categories: jekyll updates
 ---
 We’re really excited.
 
