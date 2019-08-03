@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#9C5D49" />
+    <link rel="manifest" href="https://gitnisyl.github.io/wysc/app.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="https://gitnisyl.github.io/wysc/favicon.ico">
+<<<<<<< HEAD:blog/404.html:blog/404.html
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+=======
     <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/styles.css">
+>>>>>>> parent of d05f941... 0.190802 01:blog/update/2019/07/04/wysc-blog-release.html:blog/update/2019/07/04/wysc-blog-release.html
     <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
-    <title> Launch of Wysc Events &ndash;&nbsp;Wysc Blog</title>
-    <meta property="og:title" content="Launch of Wysc Events &ndash;&nbsp;Wysc Blog" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#9C5D49" />
-    <link rel="manifest" href="https://gitnisyl.github.io/wysc/app.webmanifest">
+    <title>  &ndash;&nbsp;Wysc Blog</title>
+    <meta property="og:title" content="  " />
 </head>
 <body class="blogbody">
     
@@ -84,6 +88,20 @@
           <div class="col">
               <div class="card blogpwidth">
                 <div class="blogjpostcontainer">    
+<<<<<<< HEAD:blog/404.html:blog/404.html
+                  <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+=======
                   <style>
     a {
         text-decoration: none !important;
@@ -119,72 +137,16 @@
     .bloghheader2:before {
         animation: none !important;
     }
+>>>>>>> parent of d05f941... 0.190802 01:blog/update/2019/07/04/wysc-blog-release.html:blog/update/2019/07/04/wysc-blog-release.html
 </style>
-<a href="https://gitnisyl.github.io/wysc/blog">
-    <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding">&#9666; Back</button>
-</a>
-<h1 class="blogjtitle" id="blogptitle">Launch of Wysc Events</h1>
-<h4 id="blogpdate">26 Jul 2019</h4>
-<div style="padding-top:3em;"></div>
-<div style="display:none">
-    <p id="blogptext">We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ...</p>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
 </div>
 
-<div class="blogjpbody">
-    <p>We’re really excited.</p>
-
-<p>People are social creatures. We seek connectivity with others and find joy in hanging out together.</p>
-
-<p>With the launch of the Wysc Events homepage, users who are inspired to create a group event will be able to create their own event pages with Wysc, expanding their ability to reach new users through the networks we’ve built into the system — including automatic notifications to Wysc and abilities such as scheduling posts, RSS feeds, and emails through WordPress. So you can focus more on hosting an event, not trying to tell people that it exists in the first place.</p>
-
-<p>To qualify for applying, events must have been independently held at least three times consistently and consecutively in #group-events in order to show demand. Once accepted, hosts will be able to start posting directly to the website.</p>
-
-<p>Please bear with us as we continue to improve upon this system as it rolls out to the public.</p>
-
-<p>We look forward to seeing the diverse number of ideas and events that are generated, and to hosting a forum for the users, by the users!</p>
-
-<p>Thanks,<br />
-Wysc Staff ☕</p>
-
-
-    <br><br>
-    <!-- AddToAny BEGIN -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-        <a class="a2a_button_copy_link"></a>
-        <a class="a2a_button_email"></a>
-        <a class="a2a_button_facebook"></a>
-        <a class="a2a_button_twitter"></a>
-        <a class="a2a_button_line"></a>
-        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-    </div>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
-    <!-- AddToAny END -->
-    <br><br>
-    <div style="text-align:center;">
-        <button type="button" class="btn btn-lg btn-outline-info" onclick="crate.toggle(true)">Comments ></button>
-    </div>
-    <br>
-</div>
-
-<!--
-<div class="blogpwidth">
-    <p>We’re really excited.</p>
-
-<p>People are social creatures. We seek connectivity with others and find joy in hanging out together.</p>
-
-<p>With the launch of the Wysc Events homepage, users who are inspired to create a group event will be able to create their own event pages with Wysc, expanding their ability to reach new users through the networks we’ve built into the system — including automatic notifications to Wysc and abilities such as scheduling posts, RSS feeds, and emails through WordPress. So you can focus more on hosting an event, not trying to tell people that it exists in the first place.</p>
-
-<p>To qualify for applying, events must have been independently held at least three times consistently and consecutively in #group-events in order to show demand. Once accepted, hosts will be able to start posting directly to the website.</p>
-
-<p>Please bear with us as we continue to improve upon this system as it rolls out to the public.</p>
-
-<p>We look forward to seeing the diverse number of ideas and events that are generated, and to hosting a forum for the users, by the users!</p>
-
-<p>Thanks,<br />
-Wysc Staff ☕</p>
-
-</div>
--->
                 </div>
               </div>
               <div style="padding-bottom:60px;"></div>
@@ -206,7 +168,7 @@ Wysc Staff ☕</p>
 <meta property="og:image" content="media/wsc-sp-rounded.png" />
 <meta property="og:url" content="https://wysc.bookmark.com" />
 <meta property="og:site_name" content="Study Discord Server" />
-<meta property="og:description" content="We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ...">
+<meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
 <!-- removed webp fallback, no webp's -->
 <meta name="mobile-web-app-capable" content="yes" />

@@ -2,8 +2,13 @@
 layout: post
 title:  "Misbehaving Users"
 summary: "Wysc highly values the openness and freedom of its users to participate in a free forum of information exchange in a casual environment ..."
+<<<<<<< HEAD
 date:   2019-06-29 00:00:00 -0700
 categories: update
+=======
+date:   2019-06-29 18:05:19 -0700
+categories: jekyll update
+>>>>>>> parent of d05f941... 0.190802 01
 ---
 Wysc highly values the openness and freedom of its users to participate in a free forum of information exchange in a casual environment. In fact, what sets us apart exclusively from other study servers is our much more relaxed approach at moderation in comparison to the more heavy-handed tactics other study servers resort to when users misbehave.
 

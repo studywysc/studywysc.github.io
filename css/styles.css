@@ -336,21 +336,12 @@ body, html {
 }
 /* .bloghfooter div div {
 } */
-
-.blogjpostcontainer {
-  padding:4.65em;
-  /*
-  padding-left:4em;
-  padding-top:4em;
-  padding-bottom:4em;
-  padding-right:4em;*/
-}
 .blogpbody {
   background: #fefefe;
 }
 .blogpwidth {
-  width:80%;
-  max-width:950px;
+  width:92%;
+  max-width:850px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -1002,12 +993,6 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .bloghpostcontainer {
     margin-left:auto;
-  }
-  .blogpwidth {
-    width:95%;
-  }
-  .blogjpostcontainer {
-    padding:2.5em;
   }
   .dhcards .card-body {
     padding: 2vh !important;

@@ -9,18 +9,14 @@
     <meta name="theme-color" content="#9C5D49" />
     <link rel="manifest" href="https://gitnisyl.github.io/wysc/app.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="https://gitnisyl.github.io/wysc/favicon.ico">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/styles.css">
-=======
-    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
->>>>>>> parent of d05f941... 0.190802 01
+    <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/blog/stylesheets/stylesheet.css">
     <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
-    <title> About &ndash;&nbsp;Wysc Blog</title>
-    <meta property="og:title" content=" About " />
+    <title> Welcome to Jekyll! &ndash;&nbsp;Wysc Blog</title>
+    <meta property="og:title" content=" Welcome to Jekyll! " />
 </head>
 <body class="blogbody">
     
@@ -88,18 +84,101 @@
           <div class="col">
               <div class="card blogpwidth">
                 <div class="blogjpostcontainer">    
-                  <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+                  <style>
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1.2em;
+        line-height:1.58em;
+        margin-bottom:2em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Lato', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    .blogjtitle {
+        font-family: 'Lato', sans-serif;
+        font-weight:600;
+        color:#333;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+</style>
+<a href="https://gitnisyl.github.io/wysc/blog">
+    <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding">&#9666; Back</button>
+</a>
+<h1 class="blogjtitle" id="blogptitle">Welcome to Jekyll!</h1>
+<h4 id="blogpdate">01 Aug 2019</h4>
+<div style="padding-top:3em;"></div>
+<div style="display:none">
+    <p id="blogptext"></p>
+</div>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<div class="blogjpbody">
+    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
 
+    <br><br>
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_button_copy_link"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_line"></a>
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
+    <br><br>
+    <div style="text-align:center;">
+        <button type="button" class="btn btn-lg btn-outline-info" onclick="crate.toggle(true)">Comments ></button>
+    </div>
+    <br>
+</div>
+
+<!--
+<div class="blogpwidth">
+    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+</div>
+-->
                 </div>
               </div>
               <div style="padding-bottom:60px;"></div>

@@ -27,7 +27,11 @@ theme: minima
 plugins:
   - jekyll-feed
 feed:
+<<<<<<< HEAD
   path: /update/rss.xml
+=======
+  path: rss.xml
+>>>>>>> parent of d05f941... 0.190802 01
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
