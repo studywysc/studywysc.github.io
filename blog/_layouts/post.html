@@ -44,6 +44,13 @@ layout: default
     <p id="blogptext">{{ page.summary }}</p>
 </div>
 
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="{{ page.title }} &ndash;&nbsp;Wysc Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://gitnisyl.github.io/wysc/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="{{ page.summary }}">
+
 <div class="blogjpbody">
     {{ content }}
 
