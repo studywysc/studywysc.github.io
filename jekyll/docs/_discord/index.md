@@ -12,6 +12,6 @@ display:none;
 
 <ul>
 {% for page in site.discord %}
-<li id="{{ page.title }}"><a href="https://gitnisyl.github.io/wysc/docs/{{ page.title }}/{{ page.url }}">{{ page.title }}</a></li>
+<li id="{{ page.title }}"><a href="https://gitnisyl.github.io/wysc/docs{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
