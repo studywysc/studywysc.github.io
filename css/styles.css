@@ -648,19 +648,12 @@ body, html {
   max-height:100vh;
   overflow:scroll;
 }
-.docuchanli dt h6:before {
-  height:116px;
-  margin-top:-116px !important;
-  display: block;
-  content:'';
-  background:transparent;
+.docuchanli dd li {
+  list-style: none;
+  padding-left:1.75em;
+  padding-top:0.5em;
+  padding-bottom:0.25em;
 }
-  .docuchanli dd li {
-    list-style: none;
-    padding-left:1.75em;
-    padding-top:0.5em;
-    padding-bottom:0.25em;
-  }
 .docuchanbadge dd span, .docuchanbadge dt h6 span {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;

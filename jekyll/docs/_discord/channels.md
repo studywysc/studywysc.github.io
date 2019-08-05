@@ -6,6 +6,13 @@ summary: "A list of Wysc's current channels and their descriptions are listed be
 toc: true
 ---
 
+<style>
+.docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+height:0px !important;
+margin-top:0px !important;
+}
+</style>
+
 ## Labels
 This legend clarifies the labels and definitions used in the channel list below.
 
