@@ -482,6 +482,157 @@ body, html {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+.docsjbody {
+  background-color:#0C3247; /*0C3247 061923*/
+  overflow:hidden;
+}
+.docsjbct {
+  text-transform:capitalize;
+  color:#111 !important;
+}
+  .docsjbct:hover, .breadcrumb-item span {
+    color:#999;
+  }
+.docsjcards {
+  max-height: 50px;
+  overflow: hidden;
+}
+.docsjcontainer {
+  height:calc(100vh - 116px);
+  margin-top:116px;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+  .docsjc2 {
+    height:calc(100vh - 116px);
+    overflow:hidden;
+  }
+  .docsjc3 {
+    height:calc(100vh - 116px);
+    overflow-x:hidden;
+    overflow-y:auto;
+    border-radius: 0.25em 0 0 0 !important;
+    background-color: #04527d !important;
+    color: #eee;
+  }
+  .docsjcside {
+    height:calc(100vh - 116px);
+    overflow-x:hidden;
+    overflow-y:auto;
+  }
+  .docsjcstyle {
+    padding-left:4em;
+    color: rgba(255,255,255,0.58);
+  }
+    .docsjcstyle h1, .docsjcstyle h2, .docsjcstyle h3, .docsjcstyle h4, .docsjcstyle h5, .docsjcstyle h6 {
+      color: rgba(255,255,255,1);
+      padding-top:1.5em;
+      padding-bottom:0.5em;
+    }
+  .docsjtocstyle {
+    padding:2em;
+  }
+    .docsjtocstyle ul {
+      list-style:none;
+    }
+.docsjheader {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+  .docsjheader:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('https://images.unsplash.com/photo-1472162167628-0875e2780d0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: -1;
+  }
+  .docsjheader:after {
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: 0%;
+    position: absolute;
+      right: 0%;
+      top: 100vh;
+    transform-origin: 0 0;
+    z-index: 0;
+  }
+  @keyframes dh-fade-slide-down { 0% { opacity: 0; transform: translateY(-4rem); } 100% { opacity: 1; transform: none; } }
+.docsjheader2 {
+  align-items: center;
+  display: flex;
+  height: 60vh;
+  margin-top: 40vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+  .docsjheader2:before {
+    background: #061923;
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: -1;
+  }
+  .docsjheader2:after {
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: 0%;
+    position: absolute;
+      right: 0%;
+      top: 100vh;
+    transform-origin: 0 0;
+    z-index: 0;
+  }
+  @keyframes dh-fade-slide-up { 0% { opacity: 0; transform: translateY(4rem); } 100% { opacity: 1; transform: none; } }
+.docsjheadings {
+  text-align:left;
+}
+  .docsjheadings h1, .docsjheadings h2, .docsjheadings h3, .docsjheadings h4, .docsjheadings h5, .docsjheadings h6, .docsjtitle {
+    font-family: 'Lato', sans-serif;
+    color:#333;
+    text-align:left;
+    padding-bottom:0.5em;
+  }
+    .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+      height:116px;
+      margin-top:-58px; /* 116 / 2 */
+      display: block;
+      content:'';
+      background:transparent;
+    }
+    .docsjtitle {
+      padding-top:0.5em;
+      margin-bottom:-0.25em;
+    }
+  .docsjtitle {
+    font-weight:600;
+    text-align:center;
+  }
+.docsjnavbg {
+  background-color:#061923; /*061923 04527d*/
+}
 .docspbody {
   padding-top:250px;
 }
@@ -497,12 +648,19 @@ body, html {
   max-height:100vh;
   overflow:scroll;
 }
-.docuchanli dd li {
-  list-style: none;
-  padding-left:1.75em;
-  padding-top:0.5em;
-  padding-bottom:0.25em;
+.docuchanli dt h6:before {
+  height:116px;
+  margin-top:-116px !important;
+  display: block;
+  content:'';
+  background:transparent;
 }
+  .docuchanli dd li {
+    list-style: none;
+    padding-left:1.75em;
+    padding-top:0.5em;
+    padding-bottom:0.25em;
+  }
 .docuchanbadge dd span, .docuchanbadge dt h6 span {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -522,18 +680,24 @@ body, html {
 }
 .docutdn {
   line-height:1.75em;
-	/*list-style: none;
-  list-style-position:outside;*/
 }
+  .docutdn ul {
+    list-style: none;
+  }
+  .docutdn > ul {
+    margin-left:0px;
+    padding-left:0px;
+  }
   .docutdn li a {
     text-decoration:none;
   }
   .docutdn ol {
     list-style: lower-alpha;
   }
-/*.docutoc {
+/*
+.docutoc {
   padding-top:60px;
-  padding-bottom:60px;
+  margin-bottom:2em; commented out bc of 2em pad above headings 
 }*/
 .docuwyscdocswords {
   color:inherit;
@@ -1019,8 +1183,19 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     max-height:5rem;
     overflow:hidden;
   }
+  .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+    height:1.5em;
+    margin-top:0px;
+  }
   .docspbody {
     padding-top:200px;
+  }
+  .docuchanli dd {
+    padding-bottom:1.5em;
+  }
+  .docutdn ul {
+    margin-left:-0.5em;
+    padding-left:-0.5em;
   }
   .startaplink {
     margin-bottom:0;
