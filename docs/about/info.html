@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#9C5D49" />
+    <link rel="manifest" href="https://gitnisyl.github.io/wysc/app.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="https://gitnisyl.github.io/wysc/favicon.ico">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://gitnisyl.github.io/wysc/css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
+    <title>Info &ndash;&nbsp;Wysc Docs</title>
+</head>
+<body class="docsjbody">
+    
+    <!-- desktop topnav -->
+    <div class="d-none d-md-block noselect">
+        <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
+            <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
+                <img src="https://gitnisyl.github.io/wysc/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+                <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+            </a>
+            <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/">Home</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/blog">Blog</a>
+                </li>
+                <li class="nav-item active p-3">
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/docs">Docs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/start">Web App</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- mobile bottomnav -->
+    <div class="d-md-none noselect">
+        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
+            <div class="nav-content text-center">
+                <ul class="nav nav-justified">
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/">
+                            <i class="material-icons">home</i><br>
+                            <div>Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/blog">
+                            <i class="material-icons">class</i><br>
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinkactive" href="https://gitnisyl.github.io/wysc/docs">
+                            <i class="material-icons">vertical_split</i><br>
+                            <div>Docs</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/start">
+                            <i class="material-icons">apps</i><br>
+                            <div>Apps</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="docsjheader position-fixed width100" id="webpheader"></div>
+    <div class="docsjheader2 position-fixed width100"></div>
+    <div class="container-fluid sectiontextcolor bloghcontentpad">
+        <div class="row">
+          <div class="col">
+              <div class="card blogpwidth">
+                <div class="blogjpostcontainer">    
+                  <style>
+    .sectiontextcolor {
+        color:#111 !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1em;
+        line-height:1.58em;
+        margin-bottom:1.58em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Lato', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    dl h1:before, dl h2:before, dl h3:before, dl h4:before, dl h5:before, dl h6:before {
+        height:0px !important;
+        margin-top:0px !important;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+    .bloghheader:before, .bloghheader2:before {
+        animation: none;
+    }
+</style>
+
+<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="../">
+            <span property="name" class="docsjbct">Docs</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="../about">
+            <span property="name" class="docsjbct">about</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Info</span>
+         <meta property="position" content="2" />
+      </li>
+      
+
+   </ol>
+</nav>
+
+
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+   /* nav.breadcrumbs.bootstrap {
+      / from Twitter Bootstrap 4 /
+      / If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap /
+      / Additions: image integration /
+   } */
+
+   nav.breadcrumbs.bootstrap ol {
+      margin-left: 0
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      list-style: none;
+      background-color: #f1f2ed;
+      border-radius: 0.25rem;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb::after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item {
+      float: left;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #818a91;
+      content: "/";
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: underline;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: none;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+      color: #818a91;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon {
+      display: inline-block;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+      height: 0.8rem;
+      width: 0.8rem;
+   }
+</style>
+
+<h1 class="docsjtitle">Info</h1>
+
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="Info &ndash;&nbsp;Wysc Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://gitnisyl.github.io/wysc/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="[Work in progress]">
+
+<div class="docsjheadings">
+
+    <div class="pt-4 pb-4">
+        [Work in progress]
+    </div>
+
+    <div class="col-12 col-md-6 docutoc pt-4 pb-4">
+        <div class="card rounded-lg shadow-sm">
+            <div class="card-body">
+                <ol class="docutdn mt-2 mb-2">
+                    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#meet-the-team">Meet the Team</a></li>
+<li class="toc-entry toc-h2"><a href="#our-mission">Our Mission</a></li>
+<li class="toc-entry toc-h2"><a href="#our-values">Our Values</a></li>
+<li class="toc-entry toc-h2"><a href="#our-finances">Our Finances</a></li>
+</ul>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+.card-title, .card-text {
+text-align:center!important;
+}
+.card-title .anchorjs-link {
+display:none;
+}
+.docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+height:0!important;
+margin-top:0!important;
+}
+.dhmissionstatement p {
+color:#999!important;
+}
+.strongheads ul li {
+padding-top:1.75em;
+}
+.strongheads ul li strong {
+font-family:"Gochi Hand";
+font-size:2em;
+padding-left:0.5em;
+}
+.strongheads ul li p {
+padding-left:0.5em;
+}
+</style>
+
+<h2 id="meet-the-team">Meet the Team</h2>
+
+<p>Wysc’s staff and contributions are what brought the server into existence and continued maintenance!</p>
+
+<div class="container-fluid text-center">
+<div class="row">
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="https://cdn.discordapp.com/avatars/169659981988233216/20d77809b30d2fd996be257ec1de8e2f.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">teru</h5>
+<p class="card-text">Co-Founder, Admin</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="https://cdn.discordapp.com/avatars/321185906746720267/4a487292ba78fa6a589360dd718dcfef.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Hendan</h5>
+<p class="card-text">Co-Founder, Finances</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="../../../media/teamfred.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Fred</h5>
+<p class="card-text">Public Relations</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="../../../media/teammayo.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Mayo</h5>
+<p class="card-text">Code Monkey</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="/index.html" class="cursornone">
+<i class="material-icons">business</i>
+</a>
+</li>
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<h2 id="our-mission">Our Mission</h2>
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&amp;display=swap" rel="stylesheet" />
+
+<blockquote class="blockquote text-left dhmissionstatement">
+<p class="mb-0 yesselect">Through our <em><b>strong suite of study services</b></em>, we aim to provide a <em><b>casual, welcoming environment</b></em> for students -- no matter their residence or destination -- by crafting <em><b>innovative experiences</b></em> at the intersection of education and technology.</p>
+<footer class="blockquote-footer text-right"><cite title="Source Title">Mission Statement,</cite> Last Updated 21 July 2019</footer>
+</blockquote>
+
+<h2 id="our-values">Our Values</h2>
+
+<p>This is our promise to you that we are committed to the products we create and are proud to maintain strong core guiding principles as we continue on our path forwards.</p>
+
+<div class="strongheads">
+  <ul>
+    <li><strong>User-Driven</strong><br />
+The participants of an area define its culture, not its ruler. What we seek to do is create a casual, welcoming study space with a curated selection of study amenities and social areas to enhance the group experience. What you choose to do should be in your hands – whether that be studying, chilling, or socializing.</li>
+    <li><strong>Reliable</strong><br />
+We’re in this for the long haul. We aren’t backing out of our game. The products we create are intended to last far into the future, powered by you the user and no one else. Whether you’ve been a long-time member of Wysc or a new user joining five years later, we want to still be here to welcome you. We don’t plan on selling out to a company or exiting the industry anytime soon.</li>
+    <li><strong>Sustainable</strong><br />
+A study server providing a full suite of tutoring services might sound great… until it isn’t. Tutors like to be paid, higher-achieving students are often busy with their own exams, and no one can stay awake 24 hours a day, every day, forever. Our core focus isn’t on providing a revolutionary new service with unparalleled homework support (we aren’t rich with venture capitalist funds, after all). Rather, our focus is to be a platform where you can express and improve yourself through opportunities we help to provide. There may not be anyone to feed you answers with a spoon, but you’ll find it’s equally as rewarding to strive for the answer yourself, surrounded by like-minded peers in a productive environment.</li>
+  </ul>
+</div>
+
+<p><br /></p>
+
+<h2 id="our-finances">Our Finances</h2>
+
+<p>The following summarize our operating budget. As part of our <a href="#our-values">Sustainability Initiative</a>, we have committed to a zero-dollar budget and profit model that allows us to sustainably maintain our product moving forward without resorting to exploitative measures in order to balance our operating expenses. <a href="credits">See how we do it at our Credits page.</a></p>
+
+<h3 id="income-statement">Income Statement</h3>
+
+<p>Wysc Services<br />
+Income Statement<br />
+For Year Ending 20XX</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2017  </th>
+      <th>2018  </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sales  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cost of Goods Sold  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gross Profit  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Operating Expenses  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Selling Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Administrative Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Total Operating Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Income Before Taxes  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Interest Expense  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Net Income After Taxes  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Totals  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="balance-sheet">Balance Sheet</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2017  </th>
+      <th>2018  </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Assets –  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Total Assets  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Liabilities –  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Current Liabilities  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Long-Term Liabilities  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Stockholders’ Equity  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Total Liabilities and SE  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>[Work in progress]</p>
+
+
+</div>
+
+<!--
+<div class="blogpwidth">
+    <style>
+.card-title, .card-text {
+text-align:center!important;
+}
+.card-title .anchorjs-link {
+display:none;
+}
+.docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+height:0!important;
+margin-top:0!important;
+}
+.dhmissionstatement p {
+color:#999!important;
+}
+.strongheads ul li {
+padding-top:1.75em;
+}
+.strongheads ul li strong {
+font-family:"Gochi Hand";
+font-size:2em;
+padding-left:0.5em;
+}
+.strongheads ul li p {
+padding-left:0.5em;
+}
+</style>
+
+<h2 id="meet-the-team">Meet the Team</h2>
+
+<p>Wysc’s staff and contributions are what brought the server into existence and continued maintenance!</p>
+
+<div class="container-fluid text-center">
+<div class="row">
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="https://cdn.discordapp.com/avatars/169659981988233216/20d77809b30d2fd996be257ec1de8e2f.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">teru</h5>
+<p class="card-text">Co-Founder, Admin</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="https://cdn.discordapp.com/avatars/321185906746720267/4a487292ba78fa6a589360dd718dcfef.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Hendan</h5>
+<p class="card-text">Co-Founder, Finances</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="../../../media/teamfred.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Fred</h5>
+<p class="card-text">Public Relations</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
+<div class="card-body">
+<img src="../../../media/teammayo.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale" />
+<h5 class="card-title">Mayo</h5>
+<p class="card-text">Code Monkey</p>
+<ul class="list-inline">
+<li class="list-inline-item dhteamicon">
+<a href="/index.html" class="cursornone">
+<i class="material-icons">business</i>
+</a>
+</li>
+<li class="list-inline-item dhteamicon">
+<a href="mailto:wyscofficial@icloud.com" class="cursornone">
+<i class="material-icons">mail</i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<h2 id="our-mission">Our Mission</h2>
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&amp;display=swap" rel="stylesheet" />
+
+<blockquote class="blockquote text-left dhmissionstatement">
+<p class="mb-0 yesselect">Through our <em><b>strong suite of study services</b></em>, we aim to provide a <em><b>casual, welcoming environment</b></em> for students -- no matter their residence or destination -- by crafting <em><b>innovative experiences</b></em> at the intersection of education and technology.</p>
+<footer class="blockquote-footer text-right"><cite title="Source Title">Mission Statement,</cite> Last Updated 21 July 2019</footer>
+</blockquote>
+
+<h2 id="our-values">Our Values</h2>
+
+<p>This is our promise to you that we are committed to the products we create and are proud to maintain strong core guiding principles as we continue on our path forwards.</p>
+
+<div class="strongheads">
+  <ul>
+    <li><strong>User-Driven</strong><br />
+The participants of an area define its culture, not its ruler. What we seek to do is create a casual, welcoming study space with a curated selection of study amenities and social areas to enhance the group experience. What you choose to do should be in your hands – whether that be studying, chilling, or socializing.</li>
+    <li><strong>Reliable</strong><br />
+We’re in this for the long haul. We aren’t backing out of our game. The products we create are intended to last far into the future, powered by you the user and no one else. Whether you’ve been a long-time member of Wysc or a new user joining five years later, we want to still be here to welcome you. We don’t plan on selling out to a company or exiting the industry anytime soon.</li>
+    <li><strong>Sustainable</strong><br />
+A study server providing a full suite of tutoring services might sound great… until it isn’t. Tutors like to be paid, higher-achieving students are often busy with their own exams, and no one can stay awake 24 hours a day, every day, forever. Our core focus isn’t on providing a revolutionary new service with unparalleled homework support (we aren’t rich with venture capitalist funds, after all). Rather, our focus is to be a platform where you can express and improve yourself through opportunities we help to provide. There may not be anyone to feed you answers with a spoon, but you’ll find it’s equally as rewarding to strive for the answer yourself, surrounded by like-minded peers in a productive environment.</li>
+  </ul>
+</div>
+
+<p><br /></p>
+
+<h2 id="our-finances">Our Finances</h2>
+
+<p>The following summarize our operating budget. As part of our <a href="#our-values">Sustainability Initiative</a>, we have committed to a zero-dollar budget and profit model that allows us to sustainably maintain our product moving forward without resorting to exploitative measures in order to balance our operating expenses. <a href="credits">See how we do it at our Credits page.</a></p>
+
+<h3 id="income-statement">Income Statement</h3>
+
+<p>Wysc Services<br />
+Income Statement<br />
+For Year Ending 20XX</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2017  </th>
+      <th>2018  </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sales  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cost of Goods Sold  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gross Profit  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Operating Expenses  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Selling Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Administrative Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> Total Operating Expenses  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Income Before Taxes  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Interest Expense  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Net Income After Taxes  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Totals  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="balance-sheet">Balance Sheet</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2017  </th>
+      <th>2018  </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Assets –  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Total Assets  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Liabilities –  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Current Liabilities  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Long-Term Liabilities  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Stockholders’ Equity  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Total Liabilities and SE  </td>
+      <td>$0</td>
+      <td>$0</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>[Work in progress]</p>
+
+</div>
+-->
+                </div>
+              </div>
+              <div style="padding-bottom:60px;"></div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- js -->
+<!-- apple -->
+<!-- removed webp fallback, no webp's -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Wysc" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+<!-- google -->
+<meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
+<!-- pwa -->
+<script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
+
+<!-- page js -->
+<script src="https://gitnisyl.github.io/wysc/js/anchorjs-4.2.0/anchor.min.js"></script>
+<script>
+    $(function() {
+        anchors.options.visible = 'hover'; 
+        anchors.add('.post-content > h1, h2, h3, h4, h5, h6');
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
+    new Crate({
+        server: '319372945929666571',
+        channel: '590703218049286163',
+        shard: 'https://disweb.deploys.io',
+        location: ['bottom', 'right'],
+        notifications: false,
+        defer: true,
+    });
+    if (window.innerWidth < 768){
+        crate.setOptions({
+            location: [-90, 'right'],
+        })
+    } else {};
+</script>
+</body>
+</html>

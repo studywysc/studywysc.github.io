@@ -416,7 +416,6 @@ body, html {
   background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('../media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
 }
 .dhmissionstatement {
-  color:#ccc;
   padding-top:40px;
   padding-bottom:40px;
   font-size: 2rem !important;
@@ -425,7 +424,7 @@ body, html {
   font-family: 'Crimson Text', 'Times New Roman', Times, serif !important;
 }
   .dhmissionstatement em {
-    color:#fafafa;
+    color:#ff2400;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -615,13 +614,20 @@ body, html {
     text-align:left;
     padding-bottom:0.5em;
   }
-    .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+    .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
       height:116px;
       margin-top:-58px; /* 116 / 2 */
       display: block;
       content:'';
       background:transparent;
     }
+      .docsjheadings h3:before {
+        height:116px;
+        margin-top:-87px; /* 116 * 3/4 */
+        display: block;
+        content:'';
+        background:transparent;
+      }
     .docsjtitle {
       padding-top:0.5em;
       margin-bottom:-0.25em;
@@ -1171,6 +1177,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .dhcardcontent i{
     padding: 1vh !important;
+  }
+  .dhmissionstatement p {
+    line-height:1.5em;
+    text-align:center !important;
   }
   .docsheaderbg {
     max-height:5rem;

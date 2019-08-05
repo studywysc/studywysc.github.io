@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Credits"
-category: discord
+category: about
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible. The list may not be fully comprehensive. If you are a creator and have found that your work exists within Wysc but is not appropriately credited, please reach out to us at our Docs page and we will update the listing!"
 toc: true
-redirect_from: /wysc/docs/credits
+redirect_from: ../credits
+redirect_from: ../discord/credits
 ---
 
 <style>
@@ -12,9 +13,12 @@ redirect_from: /wysc/docs/credits
 height:0px !important;
 margin-top:0px !important;
 }
+.docsjheadings h4, .docsjheadings h5, .docsjheadings h6 {
+padding-bottom:0px !important;
+}
 </style>
 
-## Advisory
+## Summary
 
 <strong>Unless otherwise indicated, Wysc was not paid to sponsor, feature, and/or incorporate any of the following services in Wysc.</strong> Wysc has made use of the following resources solely at our own discretion and need for third-party services to meet our needs in order to provide the best possible experience we can for our end users.
 

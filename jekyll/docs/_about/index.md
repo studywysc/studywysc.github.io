@@ -1,6 +1,6 @@
 ---
 layout: maincat
-title:  "Discord"
+title:  "About"
 redirect_from: ../{{ page.title }}
 ---
 
@@ -11,7 +11,7 @@ display:none;
 </style>
 
 <ul>
-{% for page in site.discord %}
+{% for page in site.about %}
 <li id="{{ page.title }}"><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
