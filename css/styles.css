@@ -372,7 +372,7 @@ body, html {
 .dhheader { /* slidedownheader */
   align-items: center;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   height: auto;
   justify-content: center;
   position: relative;
@@ -396,14 +396,14 @@ body, html {
   .dhheader:after {
     background: #04527d;
     content: "";
-    height: 150px;
-    left: -5%;
+    height: 0px; /*150px*/
+    left: 0%; /*-5%*/
     position: absolute;
-      right: -5%;
+      right: 0%; /*-5%*/
       /*top: calc(100vh + 125px);*/
-      bottom: -125px;
+      bottom: 0px; /*-125px*/
     transform-origin: 0 0;
-    transform: rotateZ(-4deg);
+    transform: 0; /*rotateZ(-4deg);*/
     z-index: 0;
   }
   @keyframes dh-fade-slide-down { 0% { opacity: 0; transform: translateY(-4rem); } 100% { opacity: 1; transform: none; } }
@@ -636,6 +636,10 @@ body, html {
     font-weight:600;
     text-align:center;
   }
+.docsjhos { /*help options strong*/
+  margin-top:1em;
+  margin-bottom:0.5em;
+}
 .docsjnavbg {
   background-color:#061923; /*061923 04527d*/
 }
@@ -1163,7 +1167,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     margin-top: 50px;
   }
   .blogpwidth {
-    width:95%;
+    width:98.5%;
   }
   .blogjpostcontainer {
     padding:2.5em;
