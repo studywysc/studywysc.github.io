@@ -614,14 +614,14 @@ body, html {
     text-align:left;
     padding-bottom:0.5em;
   }
-    .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
+    .docsjheadings h1:before, .docsjheadings h2:before {
       height:116px;
       margin-top:-58px; /* 116 / 2 */
       display: block;
       content:'';
       background:transparent;
     }
-      .docsjheadings h3:before {
+      .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
         height:116px;
         margin-top:-87px; /* 116 * 3/4 */
         display: block;
@@ -831,6 +831,9 @@ body, html {
 
 /* other css override */
 
+.kbd {
+  background-color:#313131 !important;
+}
 .nav-pills a {
   color: #ddd !important;
 }
