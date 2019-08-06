@@ -37,7 +37,7 @@ padding-left:0.5em;
 
 Wysc's staff and contributions are what brought the server into existence and continued maintenance!
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center noselect">
 <div class="row">
 <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
 <div class="card-body">
@@ -57,7 +57,7 @@ Wysc's staff and contributions are what brought the server into existence and co
 <div class="card-body">
 <img src="https://cdn.discordapp.com/avatars/321185906746720267/4a487292ba78fa6a589360dd718dcfef.png?size=128" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale">
 <h5 class="card-title">Hendan</h5>
-<p class="card-text">Co-Founder, Finances</p>
+<p class="card-text">Co-Founder, Legal/Operations</p>
 <ul class="list-inline">
 <li class="list-inline-item dhteamicon">
 <a href="mailto:wyscofficial@icloud.com" class="cursornone">
@@ -69,7 +69,7 @@ Wysc's staff and contributions are what brought the server into existence and co
 </div>
 <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
 <div class="card-body">
-<img src="../../../media/teamfred.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale">
+<img src="../../media/teamfred.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale">
 <h5 class="card-title">Fred</h5>
 <p class="card-text">Public Relations</p>
 <ul class="list-inline">
@@ -83,7 +83,7 @@ Wysc's staff and contributions are what brought the server into existence and co
 </div>
 <div class="col-6 col-sm-4 col-md-3 card bg-transparent border-0">
 <div class="card-body">
-<img src="../../../media/teammayo.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale">
+<img src="../../media/teammayo.jpg" alt="profile img" width="65%" max-width="128px" class="rounded-circle mt-4 mb-4 hoverscale">
 <h5 class="card-title">Mayo</h5>
 <p class="card-text">Code Monkey</p>
 <ul class="list-inline">
@@ -116,12 +116,12 @@ Wysc's staff and contributions are what brought the server into existence and co
 This is our promise to you that we are committed to the products we create and are proud to maintain strong core guiding principles as we continue on our path forwards.
 
 <div class="strongheads" markdown="1">
-- <strong>User-Driven</strong>  
-The participants of an area define its culture, not its ruler. What we seek to do is create a casual, welcoming study space with a curated selection of study amenities and social areas to enhance the group experience. What you choose to do should be in your hands -- whether that be studying, chilling, or socializing.
-- <strong>Reliable</strong>  
-We're in this for the long haul. We aren't backing out of our game. The products we create are intended to last far into the future, powered by you the user and no one else. Whether you've been a long-time member of Wysc or a new user joining five years later, we want to still be here to welcome you. We don't plan on selling out to a company or exiting the industry anytime soon.
 - <strong>Sustainable</strong>  
-A study server providing a full suite of tutoring services might sound great... until it isn't. Tutors like to be paid, higher-achieving students are often busy with their own exams, and no one can stay awake 24 hours a day, every day, forever. Our core focus isn't on providing a revolutionary new service with unparalleled homework support (we aren't rich with venture capitalist funds, after all). Rather, our focus is to be a platform where you can express and improve yourself through opportunities we help to provide. There may not be anyone to feed you answers with a spoon, but you'll find it's equally as rewarding to strive for the answer yourself, surrounded by like-minded peers in a productive environment.
+We're in this for the long haul. We aren't backing out of our game. The products we create are intended to last far into the future, powered by you the user and no one else. Whether you've been a long-time member of Wysc or a new user joining five years later, we want to still be here to welcome you. We don't plan on selling out to a company or exiting the industry anytime soon.
+- <strong>Reliable</strong>  
+The participants of an area define its culture, not its ruler. What we seek to do is create a casual, welcoming study space with a curated selection of study amenities and social areas to enhance the group experience. What you choose to do should be in your hands -- whether that be studying, chilling, or socializing.
+- <strong>User-Driven</strong>  
+A study server providing a full suite of tutoring services might sound great... until it isn't. Tutors like to be paid, higher-achieving students are often busy with their own exams, and no one can stay awake 24 hours a day, every day, forever. Our core focus isn't on providing a revolutionary new service with unparalleled homework support (we aren't rich with venture capitalist funds, after all). Rather, our focus is to be a platform where you can express and improve yourself through opportunities we help to provide. There may not be anyone to feed you answers with a spoon, but you'll find it can be equally as rewarding to strive for the answer yourself, surrounded by like-minded peers in a productive environment.
 </div>
 
 <br />

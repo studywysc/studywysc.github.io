@@ -1182,6 +1182,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     line-height:1.5em;
     text-align:center !important;
   }
+    .dhmissionstatement footer {
+      line-height:1.5em;
+      text-align:center !important;
+    }
   .docsheaderbg {
     max-height:5rem;
     overflow:hidden;
