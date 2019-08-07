@@ -132,7 +132,7 @@ toc: true
 <tbody>
 <tr>
 <th scope="row"><kbd>.crime</kbd></th>
-<td>Free in-game money... sometimes. <em>(Exploit: If you get assigned community service, only do <kbd>.work</kbd> after 61 minutes to earn money back at your regular job rate)</em></td>
+<td>Free in-game money... sometimes.</td>
 </tr>
 <tr>
 <th scope="row"><kbd>.steal</kbd></th>

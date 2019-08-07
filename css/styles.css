@@ -382,7 +382,7 @@ body, html {
 }
   .dhheader:before {
     animation: dh-fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('https://images.unsplash.com/photo-1472162167628-0875e2780d0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat bottom;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('../media/ben-white-eeiAnugy2Hs-unsplash.jpg') no-repeat bottom;
     background-size: cover;
     background-attachment: fixed;
     content: "";
@@ -410,7 +410,7 @@ body, html {
 .dhheader2 {
   min-height:100vh;
   height:auto;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('https://images.unsplash.com/photo-1472162167628-0875e2780d0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80') no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('../media/ben-white-eeiAnugy2Hs-unsplash.jpg') no-repeat bottom;
 }
 .dhmadeinsf {
   background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('../media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
