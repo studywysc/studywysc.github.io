@@ -4,7 +4,7 @@ title:  "Server Ranks"
 category: discord
 summary: "Wysc relies on an activity-based ranking system to automatically expand user permissions. This system helps reward participation in our community as a way for us to say thank you."
 toc: true
-redirect_from: ../serverranks
+redirect_from: ../serverranks.html
 ---
 
 ## Seed
