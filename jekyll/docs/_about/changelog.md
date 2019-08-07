@@ -12,6 +12,8 @@ toc: true
 - Added Docs/About/About Us
 - Added Docs/About/Contact
 - Added Docs/Discord/Bots
+- Added /invite
+- Improved Docs dhheader
 
 Focus: Docs
 
