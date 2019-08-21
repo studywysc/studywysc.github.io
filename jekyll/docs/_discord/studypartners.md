@@ -14,8 +14,7 @@ To participate in the channel, simply fill out the provided template and send th
 
 ## Template
 
-```
-**Name:** 
+```**Name:** 
 **Country/Region:** 
 **Current Education Level:** 
 

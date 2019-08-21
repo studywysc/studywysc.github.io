@@ -10,7 +10,7 @@ toc: true
 
 All of Wysc follows a four-word mantra:
 
-<blockquote>Don't be a dick.</blockquote>
+<p style="font-size:36px">Don't be a dick.</p>
 
 You don't have to like everyone in the server. You don't have to be active in the server. You don't have to participate in the server.
 
@@ -20,4 +20,4 @@ You can enjoy a heated argument in [#bots-spam](https://discordapp.com/channels/
 
 However, if you only join to troll, or to promote your product then leave, or to cause a hassle for others, that's breaching Wysc culture. If you're harassing others, discriminating against other users, or otherwise impeding others' ability to enjoy Wysc as what Wysc has to offer, you're breaching Wysc culture. "It's just a prank bro" is not an excuse.
 
-Wysc has no specific rules. We strive to be an open platform that hosts free exchange of information and interaction between students. However, there is still a limit well mentioned by philosopher Karl Popper: ["Unlimited tolerance must lead to the disappearance of tolerance. If we extend unlimited tolerance even to those who are intolerant, if we are not prepared to defend a tolerant society against the onslaught of the intolerant, then the tolerant will be destroyed, and tolerance with them."](https://en.wikipedia.org/wiki/Paradox_of_tolerance).
+Wysc has no specific rules. We strive to be an open platform that hosts free exchange of information and interaction between students. However, there is still a limit well mentioned by philosopher Karl Popper: ["Unlimited tolerance must lead to the disappearance of tolerance. If we extend unlimited tolerance even to those who are intolerant, if we are not prepared to defend a tolerant society against the onslaught of the intolerant, then the tolerant will be destroyed, and tolerance with them."](https://en.wikipedia.org/wiki/Paradox_of_tolerance)
