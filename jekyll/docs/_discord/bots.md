@@ -50,7 +50,7 @@ toc: true
 <tbody>
 <tr>
 <th scope="row"><kbd>.careerpath</kbd></th>
-<td>Find career paths that let you earn more money. As of this documentation's writing, the highest paid is the Medical path.</td>
+<td>Find career paths that let you earn more money. As of this documentation's writing, the highest paid is the Physician path.</td>
 </tr>
 <tr>
 <th scope="row"><kbd>.courses</kbd> <kbd>.education</kbd></th>
