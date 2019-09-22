@@ -6,6 +6,13 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.190922
+
+- Updated Wysc Start wallpaper
+- Minor SEO improvements
+
+Known Bugs: Docs, broken links
+
 ## 0.190806
 
 - Added Changelog
