@@ -815,7 +815,7 @@ body, html {
     animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.4s both;
   }
 .startheader {
-  background: linear-gradient(to left, rgba(31, 31, 31, 0.5), rgba(255,255,255,0)), url('https://source.unsplash.com/daily/?nature,water/1600x900') no-repeat center;
+  background: linear-gradient(to left, rgba(31, 31, 31, 0.5), rgba(255,255,255,0)), url('https://source.unsplash.com/featured/daily/?mountains,skyline') no-repeat center;
   height:100vh;
   width:100%;
   overflow:hidden;
