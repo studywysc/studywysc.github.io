@@ -31,6 +31,98 @@
     });
 </script>
 
+
+
+    <!--
+    <div class="text-center sectiontextcolor dhheader2 parallaxbg" id="content" style="background-color:#04527d;color:#fff;">
+        <div style="position:relative;min-height:100vh;height:auto;width:100%;">
+            <div class="text-center" style="position:absolute;min-height:100vh;height:auto;width:100%;z-index:4;">
+                <div class="d-md-none" style="padding-top:10vh;"></div>
+                <div>
+                    <h1 class="text-shadow-drop-bottom align-center fade-in-bottom-a1 fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1>
+                    <p class="fade-in-bottom-a1 p-4">Search feature coming soon!</p>
+                    <div class="align-middle text-center fade-in-bottom-a2 mx-auto" style="width:70%;">
+                        <div class="card-deck text-info noselect">
+                            <a href="" class="cursornone card dhcards hoverscale order-last order-sm-first">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent">
+                                        <i class="material-icons p-3 md-36">person_pin</i>
+                                        <h5 class="card-title">About Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="cursornone card dhcards hoverscale">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent">
+                                        <i class="material-icons p-3 md-36">contact_mail</i>
+                                        <h5 class="card-title">Contact Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="docs/home.html" class="cursornone card dhcards hoverscale order-first order-sm-last">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent">
+                                        <i class="material-icons p-3 md-36">format_list_bulleted</i>
+                                        <h5 class="card-title">Feature Help</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="parallaxbg sectiontextcolor dhheader"> <-- /gsyl/tr:w-100,f-jpg,pr-true/ --
+        <div style="position:relative;min-height:100vh;height:auto;width:100%;">
+            <div class="text-center" style="position:absolute;width:100%;z-index:4;">
+
+                <div class="d-none d-md-block" style="padding-top:20vh;"></div>
+                <div class="d-md-none" style="padding-top:10vh;"></div>
+
+                <div>
+                    <div class="blogfadeb00"><h1 class="text-shadow-drop-bottom align-center fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1></div>
+                    <div class="d-none d-md-block" style="padding-bottom:1.25em;"></div>
+                    <div class="align-middle text-center blogfadeb02 mx-auto" style="width:70%;">
+                        <div class="card-deck text-info noselect">
+                            <a href="docs/about/us" class="cursornone card dhcards hoverscale">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">person_pin</i>
+                                        <h5 class="card-title">About/Contact Us</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="docs/about" class="cursornone card dhcards hoverscale">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">home_work</i>
+                                        <h5 class="card-title">Wysc Info</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="docs/discord" class="cursornone card dhcards hoverscale">
+                                <div>
+                                    <div class="card-body p-4 dhcardcontent docstopcards">
+                                        <i class="material-icons p-3 md-36">format_list_bulleted</i>
+                                        <h5 class="card-title">Discord Help</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-md-none" style="padding-bottom:100px;"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
 <!-- 0.190801 -->
 
     <script> // fetch api blog posts

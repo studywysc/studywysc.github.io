@@ -6,20 +6,7 @@ summary: "Reach out to Wysc for any inquiries you need! Select the subject matte
 toc: true
 ---
 
-
-## Bug Reports
-
-For website errors, bugs in our services, or anything not appearing correctly, please reach out to us so we can fix it! Our preferred methods of contact for these types of issues are:
-
-<div class="card m-2" markdown="1">
-<div class="card-body">
-<strong>Option 1</strong>
-<p>Submit information about the bug to Wysc Staff with the button below.</p>
-<p><button type="button" class="btn btn-outline-info" onclick="crate.toggle(true)">Live Support&ensp;&#9656;</button></p>
-</div>
-</div>
-
-## General Inquiries
+## General Inquiries/Bug Reports
 
 Looking for help with a Wysc feature? Want more information about a role? Reach out to us through the following:
 
@@ -28,7 +15,7 @@ Looking for help with a Wysc feature? Want more information about a role? Reach 
 <strong>Option 1</strong>
 <p>Reach out to our Live Support with the button below.</p>
 <p><button type="button" class="btn btn-outline-info" onclick="crate.toggle(true)">Live Support&ensp;&#9656;</button></p>
-<p>Responses typically take around 1-2 hours for a Staff response, but a community member may provide a quicker response.</p>
+<p>Responses typically occur within 24 hours for a Staff response. Community members are encouraged to respond when they can. Please allow up to 7 days for any unanswered inquiries.</p>
 </div>
 </div>
 
@@ -36,12 +23,14 @@ Looking for help with a Wysc feature? Want more information about a role? Reach 
 <div class="card-body">
 <strong>Option 2</strong>
 <p>Message us in the <kbd>#support</kbd> channel in our Discord chat.</p>
-<p>Responses typically take around 1-2 hours for a Staff response, but a community member may provide a quicker response.</p>
+<p>Responses typically occur within 24 hours for a Staff response. Community members are encouraged to respond when they can. Please allow up to 7 days for any unanswered inquiries.</p>
 </div>
 </div>
 
 ## Official Inquiries
 
 For business-level inquiries, legal requests, and other administrative-level contact, reach us by email below.
+
+If you are a developer who would like to reach out to us regarding our use of your creation, feel free to reach out to us in #support or by email below!
 
 <a href="mailto:wyscofficial@icloud.com" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-info">Email Wysc Staff&ensp;&#9656;</button></a>
