@@ -358,10 +358,10 @@ body, html {
   font-size:1.2em;
   line-height:1.68em;
 }
-.dhcards {
+/*.dhcards {
   min-height: 20vh;
-  /*overflow: hidden;*/
-}
+  overflow: hidden;
+}*/
 .dhcardcontent {
   display: flex;
   flex-direction: column;
@@ -1178,6 +1178,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .bloghpostcontainer {
     margin-left:auto;
   }
+  
   .dhcards .card-body {
     padding: 2vh !important;
     transform: scale(0.8);
