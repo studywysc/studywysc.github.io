@@ -5,9 +5,9 @@ category: discord
 summary: "Features/FAQ landing page for Wysc Library features."
 toc: true
 redirect_from:
-  - studypartners
-  - reflections
-  - karma
+  - discord/studypartners
+  - discord/reflections
+  - discord/karma
 ---
 
 ## Summary
