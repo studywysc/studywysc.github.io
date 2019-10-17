@@ -8,9 +8,9 @@
     },
     {
       "title": "Wysc Website",
-      "isup": false,
-      "isupnotes": "🛠",
-      "notes": "Blog, Docs, and Start under construction"
+      "isup": true,
+      "isupnotes": "⚠",
+      "notes": "Some info under Docs may be outdated"
     }
   ],
   "archived":[

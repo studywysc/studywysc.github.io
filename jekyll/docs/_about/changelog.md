@@ -6,6 +6,12 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191016
+
+- Updated Wysc Blog
+- Updated Wysc Docs
+- Overhauled all blog posts to Medium
+
 ## 0.190922
 
 - Updated Wysc Start wallpaper

@@ -1,3 +1,36 @@
+<!-- 0.191016 -->
+
+
+<script> // fetch api status
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    const ul = document.getElementById('dstatus');
+    const url = 'https://srhpyqt94yxb.statuspage.io/api/v2/status.json';
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        let dapi = data;
+        return dapi.map(function(d) {
+        let li = createNode('li');
+        if (d.status.indicator == "none"){
+            li.className = 'list-group-item rounded';
+            li.innerHTML = `<b>Discord:</b>&emsp;<text class="text-success">✅</text>`;
+        } else {
+            li.className = 'bg-warning list-group-item rounded';
+            li.innerHTML = `<b>Discord:</b>&emsp;<text class="text-danger">⚠</text><br><div class="text-danger pt-1" style="font-size:0.9em">${d.status.description}</div>`;
+        }
+        append(ul, li);
+        })
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+</script>
+
 <!-- 0.190801 -->
 
     <script> // fetch api blog posts

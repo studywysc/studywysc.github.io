@@ -92,11 +92,12 @@
                             <div class="card-body text-dark border-0 p-4">
                                 <ul id="statuslist" class="list-group list-group-flush">
                                 </ul>
-                                <div class="text-black-50 pt-4" style="font-size:0.85em;">api coming soon</div>
+                                <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="docs/about/api">read api documentation</a></div>
                             </div>
                         </div>
                         <br>
-                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="blog/updates/feed.xml" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed (beta)</a></div>
+                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/feed/wysc" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed</a></div>
+                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/wysc" target="_blank" rel="noopener" style="color:#bbb;">Visit our Medium</a></div>
 
                     </div>
                 </div>
@@ -104,39 +105,45 @@
             </div>
             <div class="col-12 col-md-7">
                 <div class="card bloghpostcontainer blogfadeb01">
-                    
-                    <ul class="list-group list-group-flush bloghpostlist pb-4">
-                        <li class="list-group-item p-4">
-                            <a href="blog/updates/2019/07/26/wysc-events.html" class="text-decoration-none">
-                                <span class="badge badge-info m-2">New</span>
-                                <div class="bloghtitle" id="190726title"></div>
-                                <div class="bloghdate" id="190726date"></div>
-                                <div class="bloghtext" id="190726text"></div>
-                                <script>$("#190726title").hide().load('blog/updates/2019/07/26/wysc-events.html #blogptitle').fadeIn('0.8s');</script>
-                                <script>$("#190726date").hide().load('blog/updates/2019/07/26/wysc-events.html #blogpdate').fadeIn('0.8s');</script>
-                                <script>$("#190726text").hide().load('blog/updates/2019/07/26/wysc-events.html #blogptext').fadeIn('0.8s');</script>
-                            </a>
-                        </li>
-                        <li class="list-group-item p-4">
-                            <a href="blog/updates/2019/07/04/wysc-blog-release.html" class="text-decoration-none">
-                                <div class="bloghtitle" id="190704title"></div>
-                                <div class="bloghdate" id="190704date"></div>
-                                <div class="bloghtext" id="190704text"></div>
-                                <script>$("#190704title").hide().load('blog/updates/2019/07/04/wysc-blog-release.html #blogptitle').fadeIn('0.8s');</script>
-                                <script>$("#190704date").hide().load('blog/updates/2019/07/04/wysc-blog-release.html #blogpdate').fadeIn('0.8s');</script>
-                                <script>$("#190704text").hide().load('blog/updates/2019/07/04/wysc-blog-release.html #blogptext').fadeIn('0.8s');</script>
-                            </a>
-                        </li>
-                        <li class="list-group-item p-4">
-                            <a href="blog/updates/2019/06/29/misbehaving-users.html" class="text-decoration-none">
-                                <div class="bloghtitle" id="190629title"></div>
-                                <div class="bloghdate" id="190629date"></div>
-                                <div class="bloghtext" id="190629text"></div>
-                                <script>$("#190629title").hide().load('blog/updates/2019/06/29/misbehaving-users.html #blogptitle').fadeIn('0.8s');</script>
-                                <script>$("#190629date").hide().load('blog/updates/2019/06/29/misbehaving-users.html #blogpdate').fadeIn('0.8s');</script>
-                                <script>$("#190629text").hide().load('blog/updates/2019/06/29/misbehaving-users.html #blogptext').fadeIn('0.8s');</script>
-                            </a>
-                        </li>
+                    <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
+                        <script>
+                            fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/wysc')
+                               .then((res) => res.json())
+                               .then((data) => {
+                                  // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
+                                  const res = data.items //This is an array with the content. No feed, no info about author etc..
+                                  const posts = res.filter(item => item.categories.length > 0) // That's the main trick* !
+                            
+                                  // Functions to create a short text out of whole blog's content
+                                  function toText(node) {
+                                     let tag = document.createElement('div')
+                                     tag.innerHTML = node
+                                     node = tag.innerText
+                                     return node
+                                  }
+                                  function shortenText(text,startingPoint ,maxLength) {
+                                     return text.length > maxLength?
+                                     text.slice(startingPoint, maxLength):
+                                     text
+                                  }
+                            
+                                  // Put things in right spots of markup
+                                  let output = '';
+                                  posts.forEach((item) => {
+                                     output += `
+                                    <li class="list-group-item p-4">
+                                        <a href="${item.link}" class="text-decoration-none">
+                                            <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">${item.title}</h1></div>
+                                            <div class="bloghdate"><h4 id="blogpdate">${shortenText(item.pubDate,0 ,10)}</h4></div>
+                                            <div class="bloghtext"><p id="blogptext">${shortenText(toText(item.content),0, 140)+ '...'}</p></div>
+                                        </a>
+                                    </li>`
+                            
+                                  })
+                                  document.querySelector('.wyscposts').innerHTML = output
+                            })
+                        </script>
+
                     </ul>
                 </div>
                 <div style="padding-bottom:60px;"></div>
@@ -190,6 +197,7 @@
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
 <!-- page js -->
+
 <script> // fetch api status
     function createNode(element) {
         return document.createElement(element);
