@@ -8,9 +8,14 @@ toc: true
 
 ## 0.191016
 
+- Added Wysc API
+- Added Medium blog for Wysc
 - Updated Wysc Blog
 - Updated Wysc Docs
-- Overhauled all blog posts to Medium
+- Updated Docs/About/About Us
+- Updated Docs/About/Contact Us
+- Updated Docs/Discord/Bots
+- Updated Docs/Discord/Wysc Library
 
 ## 0.190922
 

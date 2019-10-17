@@ -7,6 +7,7 @@ toc: true
 redirect_from:
   - studypartners
   - reflections
+  - karma
 ---
 
 ## Summary
@@ -27,6 +28,15 @@ All humanities, language, arts, social sciences, media, and related subjects
 #sciences
 ```
 All mathematics, sciences, physics, health, technology, engineering, and related subjects
+
+## Karma/Contributor Role
+
+**@username ++**
+
+If someone was helpful to you after they helped answer a question, please award them a Karma point!
+
+Users who have been especially helpful will be awarded the exclusive "Contributor" role 🎉
+
 
 ## Study Partners
 

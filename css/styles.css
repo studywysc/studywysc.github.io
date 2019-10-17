@@ -359,8 +359,8 @@ body, html {
   line-height:1.68em;
 }
 .dhcards {
-  max-height: 20vh;
-  overflow: hidden;
+  min-height: 20vh;
+  /*overflow: hidden;*/
 }
 .dhcardcontent {
   display: flex;
