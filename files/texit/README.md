@@ -1,6 +1,0 @@
----
-description: Additional files
----
-
-# TeXit
-
