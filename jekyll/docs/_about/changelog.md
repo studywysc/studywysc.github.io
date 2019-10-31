@@ -14,6 +14,7 @@ toc: true
 - Updated Docs/About/About Us
 - Updated Docs/About/Credits
 - Updated Docs/Discord/Bots
+- Updated Docs/Discord/Server Ranks
 - Fixed Disweb domain error bug
 
 
