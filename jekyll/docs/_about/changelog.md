@@ -6,6 +6,17 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191031
+
+- Minor improvements and bug fixes
+- Wysc Start/Web App is now known as Wysc Dashboard
+- Added Gitbook docs for Wysc
+- Updated Docs/About/About Us
+- Updated Docs/About/Credits
+- Updated Docs/Discord/Bots
+- Fixed Disweb domain error bug
+
+
 ## 0.191016
 
 - Added Wysc API

@@ -54,8 +54,17 @@ Wysc provides this page solely for visual purposes. Content on this page may not
 <div class="media pt-2">
 <img src="https://cdn.discordapp.com/avatars/543225764036870167/0459349547dc5b988b0ad1cd8583a05f.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="DisWeb">
 <div class="media-body">
-<h5 class="mt-0"><a href="https://deploys.io/" target="_blank" rel="noopener" class="text-decoration-none">DisWeb/Deploys.io</a></h5>
+<h5 class="mt-0"><a href="https://dashflo.net/" target="_blank" rel="noopener" class="text-decoration-none">DisWeb/Dashflo.net</a></h5>
 <p>Discord chat widget</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="media pt-2">
+<img src="../../media/logos/creditsgitbook.png" class="mr-4 p-2 docucreditlogos" alt="Gitbook">
+<div class="media-body">
+<h5 class="mt-0"><a href="https://gitbook.com" target="_blank" rel="noopener" class="text-decoration-none">Gitbook</a></h5>
+<p>Documentation</p>
 </div>
 </div>
 </div>
@@ -65,6 +74,15 @@ Wysc provides this page solely for visual purposes. Content on this page may not
 <div class="media-body">
 <h5 class="mt-0"><a href="https://github.com/" target="_blank" rel="noopener" class="text-decoration-none">Github</a></h5>
 <p>Source hosting, Website hosting</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="media pt-2">
+<img src="../../media/logos/creditsmedium.png" class="mr-4 p-2 docucreditlogos" alt="Medium">
+<div class="media-body">
+<h5 class="mt-0"><a href="https://medium.com" target="_blank" rel="noopener" class="text-decoration-none">Medium</a></h5>
+<p>Blog</p>
 </div>
 </div>
 </div>
@@ -161,15 +179,14 @@ Wysc provides this page solely for visual purposes. Content on this page may not
 <div class="col">
 <h5>Non-Critical Functionality</h5>
 <ul>
-<li><a href="https://top.gg/bot/479393422705426432" target="_blank" rel="noopener" class="text-decoration-none">Auto Voice Channels</a> - Dynamic voice channels</li>
 <li><a href="https://ayana.io/" target="_blank" rel="noopener" class="text-decoration-none">Ayana</a> - Entertainment</li>
 <li><a href="https://discordbots.org/bot/421245481859940363" target="_blank" rel="noopener" class="text-decoration-none">CoreBot</a> - WSC simulator</li>
 <li><a href="https://github.com/EmoteCollector/EmoteCollector" target="_blank" rel="noopener" class="text-decoration-none">Emote Collector</a> - Emotes for non-Nitro users</li>
-<li><a href="https://github.com/1Computer1/hoshi" target="_blank" rel="noopener" class="text-decoration-none">Hoshi</a> - Starboard</li>
 <li><a href="https://karmabot.vlexar.pw/" target="_blank" rel="noopener" class="text-decoration-none">KarmaBot</a> - Upvote/thanking functionality</li>
 <li><a href="http://kunalsdatabase.com/kdbot/" target="_blank" rel="noopener" class="text-decoration-none">KDBot</a> - TTS bot</li>
 <li><a href="https://www.pokecord.com/" target="_blank" rel="noopener" class="text-decoration-none">Pokecord</a> - Pokemon in Discord</li>
 <li><a href="https://rythmbot.co/" target="_blank" rel="noopener" class="text-decoration-none">Rythm</a> - Music streaming</li>
+<li><a href="https://docs.smoogle.gg/" target="_blank" rel="noopener" class="text-decoration-none">Smoogle Translate</a> - Language translation</li>
 <li><a href="https://statbot.net/" target="_blank" rel="noopener" class="text-decoration-none">Statbot</a> - Server statistics</li>
 </ul>
 </div>
@@ -192,7 +209,7 @@ Wysc provides this page solely for visual purposes. Content on this page may not
 </div>
 </div>
 
-## Start/Web App
+## Dashboard
 
 <div class="container-fluid">
 <div class="row pt-3">
