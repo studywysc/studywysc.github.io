@@ -11,6 +11,7 @@ toc: true
 - Minor improvements and bug fixes
 - Wysc Start/Web App is now known as Wysc Dashboard
 - Added Gitbook docs for Wysc
+- Added Docs/About/Brand Guidelines
 - Updated Docs/About/About Us
 - Updated Docs/About/Credits
 - Updated Docs/Discord/Bots
