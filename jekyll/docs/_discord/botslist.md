@@ -4,7 +4,8 @@ title:  "Bots"
 category: discord
 summary: "Wysc's central repository for all bot commands and functionality."
 redirect_from:
-  - discord/botdocs
+  - botlist
+  - discord/bots/botlist
 ---
 
 <style>
@@ -16,31 +17,18 @@ redirect_from:
 </style>
 <ul class="nav justify-content-center nav-pills mt-4 mb-4">
   <li class="nav-item">
-    <a class="nav-link active">Home</a>
+    <a class="nav-link" href="bots">Home</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="botsstart">Quick Start Guide</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="botslist">Bot List</a>
+    <a class="nav-link active">Bot List</a>
   </li>
 </ul>
 
-## Cafe Bots
-
-Get started now with Wysc's basic bot commands. Our prefix is `,`
-
-- [Quick Start Guide](https://gdocs.gitbook.io/wysc/start)
-
 <br />
-See more commands for Cafe Bot below:
 
-- [Cafe Bot TA](https://gdocs.gitbook.io/wysc/cafe/tatsumaki)
-- [Cafe Bot TE](https://gdocs.gitbook.io/wysc/cafe/texit)
-- [Cafe Bot GM](https://gdocs.gitbook.io/wysc/cafe/groovy)
+<button type="button" onclick="history.back();">Back</button>
 
-<br />
-See more bot commands for commonly used bots:
-
-- [Cafe Emotes](https://gdocs.gitbook.io/wysc/bots/emotes)
-- [Cafe Simulator](https://gdocs.gitbook.io/wysc/bots/corebot)
+<div class="d-none d-md-block" style="overflow-y:hidden;"><iframe src="https://gdocs.gitbook.io/wysc/bot-list" frameborder="0" scrolling="auto" width="100%" height="4000px" style="margin-top:-80px;"></iframe><br><a href="#content">Scroll back up ^</a></div>
