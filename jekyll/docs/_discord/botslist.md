@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bots"
+title:  "Bots - Bots List"
 category: discord
 summary: "Wysc's central repository for all bot commands and functionality."
 redirect_from:

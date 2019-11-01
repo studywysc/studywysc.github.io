@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bots"
+title:  "Bots - Quick Start Guide"
 category: discord
 summary: "These are the essential commands you need to know to fully start participating in Wysc. To see the full list of bot commands, please see Bot List."
 redirect_from:
