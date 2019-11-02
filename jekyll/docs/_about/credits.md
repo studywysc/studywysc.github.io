@@ -167,6 +167,15 @@ Wysc provides this page solely for visual purposes. Content on this page may not
 </div>
 <div class="col-12 col-md-6">
 <div class="media pt-2">
+<img src="https://yagpdb.xyz/static/img/avatar.png" class="mr-4 p-2 docucreditlogos rounded-circle" alt="YAGPDB">
+<div class="media-body">
+<h5 class="mt-0"><a href="https://yagpdb.xyz/" target="_blank" rel="noopener" class="text-decoration-none">YAGPDB</a></h5>
+<p>Server automation, Assistant</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="media pt-2">
 <img src="https://cdn.discordapp.com/avatars/280497242714931202/e55629e4030c7fe3d88630fe61751820.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Yui">
 <div class="media-body">
 <h5 class="mt-0"><a href="https://discordyui.net/" target="_blank" rel="noopener" class="text-decoration-none">Yui</a></h5>
