@@ -1,0 +1,59 @@
+frame.html initial template
+
+---
+layout: default
+---
+<style>
+    .sectiontextcolor {
+        color:#111 !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1em;
+        line-height:1.58em;
+        margin-bottom:1.58em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Lato', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    dl h1:before, dl h2:before, dl h3:before, dl h4:before, dl h5:before, dl h6:before {
+        height:0px !important;
+        margin-top:0px !important;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+    .bloghheader:before, .bloghheader2:before {
+        animation: none;
+    }
+</style>
+
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="{{ page.title }} &ndash;&nbsp;Wysc Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://gitnisyl.github.io/wysc/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="{{ page.summary }}">
+
+<div class="docsjheadings" style="height:100%;">
+
+    <iframe src="{{ page.iframeurl }}" style="height:100%;" width="100%" frameborder="0"></iframe>
+
+</div>
+
+<!--
+<div class="blogpwidth">
+    {{ content }}
+</div>
+-->

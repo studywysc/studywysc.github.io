@@ -51,6 +51,8 @@ permalink: /:title.html
 collections:
   about:
     output: true
+  bots:
+    output: true
   discord:
     output: true
   website:
