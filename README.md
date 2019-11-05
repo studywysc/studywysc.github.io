@@ -24,13 +24,13 @@ While Wysc is open source, our intentions are for users to use our assets to ins
 
 ### Contributions to Wysc:
 
-All users are welcome to contribute any code revisions they deem appropriate through a pull request. Wysc Staff will review the pull requests and, if approved, will also qualify your username to be listed on our Credits page.
+All users are welcome to contribute any code revisions they deem appropriate through a pull request. Wysc Staff will review the pull requests and, if approved, will also qualify your username to be listed [on our Credits page](https://gitnisyl.github.io/wysc/docs/about/credits).
 
  
 
 ### Credits:
 
-We do not believe in theft of other works. Using our open source code to contribute to your own works is okay, but wholesale theft for personal profit crosses a line at Wysc. As a result, we'd like to be friendly patrons of the open source community as well and \(attempt to\) list all resources we have come to rely on [in our credits page](https://gitnisyl.github.io/wysc/docs/about/credits). Are we missing something? [Let us know and we'll be glad to add you on our list](https://gitnisyl.github.io/wysc/docs/about/contact#official-inquiries)!
+We do not believe in theft of other works. Using our open source code to contribute to your own works is okay, but wholesale theft for personal profit crosses a line at Wysc. As a result, we'd like to be friendly patrons of the open source community as well and \(attempt to\) list all resources we have come to rely on [in our credits page](https://gitnisyl.github.io/wysc/docs/about/credits). Are we missing something? [Let us know and we'll be glad to add you on our list!](https://gitnisyl.github.io/wysc/docs/about/contact#official-inquiries)
 
  
 
