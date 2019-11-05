@@ -6,6 +6,13 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191105
+
+- Minor improvements and bug fixes
+- Updated Docs
+- Fixed consistency with clicking the Wysc logo on all pages
+- Fixed Bots link error bug
+
 ## 0.191031
 
 - Minor improvements and bug fixes

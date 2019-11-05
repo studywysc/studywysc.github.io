@@ -22,22 +22,22 @@
 <!-- desktop topnav -->
 <div class="d-none d-md-block noselect">
     <nav class="navbar fixed-top navbar-dark bg-transparent">
-        <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
+        <a class="navbar-brand hoverscale" href="index.html">
             <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
             <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
         </a>
         <ul class="navbar-nav navbar-expand ml-auto align-middle">
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/blog">Blog</a>
+                <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item active p-3">
                 <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item p-3">
-                <a class="nav-link" href="/wysc/dash">Dashboard</a>
+                <a class="nav-link" href="dash">Dashboard</a>
             </li>
         </ul>
     </nav>
@@ -86,33 +86,49 @@
                 <div>
                     <div class="blogfadeb00"><h1 class="text-shadow-drop-bottom align-center fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1></div>
                     <div class="d-none d-md-block" style="padding-bottom:1.5em;"></div>
-                    <div class="align-middle text-center blogfadeb02 mx-auto" style="width:70%;">
-                        <div class="card-deck text-info noselect">
-                            <a href="docs/about/1" class="cursornone card dhcards hoverscale">
-                                <div>
-                                    <div class="card-body p-4 dhcardcontent docstopcards">
-                                        <i class="material-icons p-3 md-36">person_pin</i>
-                                        <h5 class="card-title">About/Contact Us</h5>
-                                    </div>
+                    <div class="text-center blogfadeb02 mx-auto docshcell text-info noselect" style="width:80%;">
+                        <a href="docs/about" class="cursornone card dhcards hoverscale">
+                            <div>
+                                <div class="card-body p-4 dhcardcontent docstopcards">
+                                    <i class="material-icons p-3 md-36">home_work</i>
+                                    <h5 class="card-title">About Wysc</h5>
                                 </div>
-                            </a>
-                            <a href="docs/about" class="cursornone card dhcards hoverscale">
-                                <div>
-                                    <div class="card-body p-4 dhcardcontent docstopcards">
-                                        <i class="material-icons p-3 md-36">home_work</i>
-                                        <h5 class="card-title">Wysc Info</h5>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="docs/discord" class="cursornone card dhcards hoverscale">
+                            <div>
+                                <div class="card-body p-4 dhcardcontent docstopcards">
+                                    <i class="material-icons p-3 md-36">format_list_bulleted</i>
+                                    <h5 class="card-title">How to Use Wysc</h5>
                                 </div>
-                            </a>
-                            <a href="docs/discord" class="cursornone card dhcards hoverscale">
-                                <div>
-                                    <div class="card-body p-4 dhcardcontent docstopcards">
-                                        <i class="material-icons p-3 md-36">format_list_bulleted</i>
-                                        <h5 class="card-title">Discord Help</h5>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="docs/bots" class="cursornone card dhcards hoverscale">
+                            <div>
+                                <div class="card-body p-4 dhcardcontent docstopcards">
+                                    <i class="material-icons p-3 md-36">bubble_chart</i>
+                                    <h5 class="card-title">Bot Commands</h5>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="blogfadeb03 p-2" style="margin-top:10vh;">Popular Articles</h4>
+                    <div class="text-center blogfadeb04 mx-auto docshcell text-light noselect" style="width:80%;">
+                        <a href="docs/about/1" class="cursornone card bg-dark dhcardsmini hoverscale">
+                            <div class="card-body p-4">
+                                <h5 class="card-title">About Us/Staff</h5>
+                            </div>
+                        </a>
+                        <a href="docs/about/credits" class="cursornone card bg-dark dhcardsmini hoverscale">
+                            <div class="card-body p-4">
+                                <h5 class="card-title">Credits</h5>
+                            </div>
+                        </a>
+                        <a href="docs/discord/server-ranks" class="cursornone card bg-dark dhcardsmini hoverscale">
+                            <div class="card-body p-4">
+                                <h5 class="card-title">Server Ranks</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <!--
@@ -131,7 +147,7 @@
                         </div>
                     </div> -->
 
-                    <div style="padding-bottom:100px;"></div>
+                    <div style="padding-bottom:80px;"></div>
             
                     <div class="blogfadeb04">
                         <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>

@@ -358,10 +358,21 @@ body, html {
   font-size:1.2em;
   line-height:1.68em;
 }
-/*.dhcards {
-  min-height: 20vh;
-  overflow: hidden;
-}*/
+.dhcards {
+  /*min-height: 20vh;
+  overflow: hidden;*/
+  width:30%;
+  margin:15px;
+}
+.dhcardsmini {
+  width:20%;
+  margin:15px;
+}
+.dhcardsmini div h5 {
+  width:100%;
+  margin:0;
+  margin-bottom:0 !important;
+}
 .dhcardcontent {
   display: flex;
   flex-direction: column;
@@ -480,6 +491,13 @@ body, html {
   padding-right: 1.25em; /* need mirror bc mobile topnav is centered */
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.docshcell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 .docsjbody {
   background-color:#0C3247; /*0C3247 061923*/
@@ -1179,6 +1197,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     margin-left:auto;
   }
   
+  .dhcards, .dhcardsmini {
+    width:100%;
+    margin:5px;
+  }
   .dhcards .card-body {
     padding: 2vh !important;
     transform: scale(0.8);
