@@ -18,7 +18,11 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 ### Archived Websites:
 
-#### **2017-2019 \(Work\|Studying\|Chilling\)**
+#### **Gitbook**
+
+* [https://gdocs.gitbook.io/wysc](https://gdocs.gitbook.io/wysc)
+
+#### **Work\|Studying\|Chilling**
 
 * [https://gitnisyl.github.io/wysc/joinwsc](https://gitnisyl.github.io/wysc/joinwsc)
 
