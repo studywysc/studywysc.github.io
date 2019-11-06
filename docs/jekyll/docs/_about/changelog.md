@@ -9,6 +9,7 @@ toc: true
 ## 0.191105
 
 - Minor improvements and bug fixes
+- Added custom 404 page
 - Updated Docs
 - Fixed consistency with clicking the Wysc logo on all pages
 - Fixed Bots link error bug
