@@ -368,7 +368,7 @@ body, html {
   width:20%;
   margin:15px;
 }
-.dhcardsmini div h5 {
+.dhcardsmini div h5, .dhcardsmini div h6 {
   width:100%;
   margin:0;
   margin-bottom:0 !important;
