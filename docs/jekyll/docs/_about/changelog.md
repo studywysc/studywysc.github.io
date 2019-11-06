@@ -10,7 +10,11 @@ toc: true
 
 - Minor improvements and bug fixes
 - Added custom 404 page
+- Added breadcrumbs to Docs
 - Updated Docs
+- Updated Github Repo with Gitbook
+- Updated Github Repo with CC license
+- Updated Github Repo with more contributor information
 - Fixed consistency with clicking the Wysc logo on all pages
 - Fixed Bots link error bug
 
