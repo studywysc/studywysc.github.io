@@ -20,7 +20,7 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-While Wysc is open source, our intentions are for users to use our assets to inspire your own creations. Any work created using the resources here that may cause confusion for users between your product and Wysc's will be considered a breach of copyright. [Read more &gt;](https://gitnisyl.github.io/wysc/docs/about/brand)
+While Wysc is open source, our intentions are for users to use our assets to inspire your own creations. Any work created using the resources here that may cause confusion for users between your product and Wysc's, and does not properly attribute, will be considered a breach of copyright. [Read more &gt;](https://gitnisyl.github.io/wysc/docs/about/brand)
 
  
 
