@@ -7,7 +7,7 @@
             <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
                <!-- <span class="icon" property="name">{% include nav-breadcrumb-icon.svg %}</span> -->
                <span property="name">Docs</span>
-               <meta property="position" content="{{ crumb.position }}" />
+               <meta property="position" content="1" />
             </a>
          </li>
          {% continue %} 
@@ -16,14 +16,14 @@
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <a property="item" typeof="WebPage" href="https://gitnisyl.github.io/wysc/docs">
             <span property="name" class="docsjbct">Docs</span>
-            <meta property="position" content="1" />
          </a>
+            <meta property="position" content="1" />
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <a property="item" typeof="WebPage" href="https://gitnisyl.github.io/wysc/docs/{{ page.category }}">
             <span property="name" class="docsjbct">{{ page.category }}</span>
-            <meta property="position" content="2" />
          </a>
+            <meta property="position" content="2" />
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <span property="name">{{ crumb.title }}</span>
