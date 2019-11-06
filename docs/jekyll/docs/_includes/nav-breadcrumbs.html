@@ -16,18 +16,18 @@
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <a property="item" typeof="WebPage" href="https://gitnisyl.github.io/wysc/docs">
             <span property="name" class="docsjbct">Docs</span>
-            <meta property="position" content="{{ crumb.position }}" />
+            <meta property="position" content="1" />
          </a>
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="../{{ page.category }}">
+         <a property="item" typeof="WebPage" href="https://gitnisyl.github.io/wysc/docs/{{ page.category }}">
             <span property="name" class="docsjbct">{{ page.category }}</span>
-            <meta property="position" content="{{ crumb.position }}" />
+            <meta property="position" content="2" />
          </a>
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <span property="name">{{ crumb.title }}</span>
-         <meta property="position" content="{{ crumb.position }}" />
+         <meta property="position" content="3" />
       </li>
       {% continue %} {% endif %}
       {% endfor %}
