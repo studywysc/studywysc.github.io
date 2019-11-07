@@ -109,7 +109,7 @@
                         {% for post in site.posts limit: 1 %}
                             <li class="list-group-item p-4">
                                 <div class="p-2"><span class="badge badge-info">New</span></div>
-                                <a href="{{ post.url }}" class="text-decoration-none">
+                                <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
                                     <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                     <div class="bloghdate">
                                         <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
@@ -121,7 +121,7 @@
                         {% endfor %}
                         {% for post in site.posts offset: 1 limit: 3 %}
                             <li class="list-group-item p-4">
-                                <a href="{{ post.url }}" class="text-decoration-none">
+                                <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
                                     <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                     <div class="bloghdate">
                                         <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
