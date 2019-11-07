@@ -143,7 +143,7 @@
                         <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
                             {% for post in site.posts offset: 4 %}
                                 <li class="list-group-item p-4">
-                                    <a href="{{ post.url }}" class="text-decoration-none">
+                                    <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
                                         <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                         <div class="bloghdate">
                                             <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
