@@ -18,4 +18,4 @@ New server and website features will be rolled out incrementally throughout June
 More information is listed at our new website, https://wysc.bookmark.com/.
 
 Thank you,   
-- Wysc Staff
+\- Wysc Staff
