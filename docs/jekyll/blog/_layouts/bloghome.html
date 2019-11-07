@@ -106,65 +106,31 @@
             <div class="col-12 col-md-7">
                 <div class="card bloghpostcontainer blogfadeb01">
                     <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
-                        
+                        {% for post in site.posts limit: 1 %}
                             <li class="list-group-item p-4">
                                 <div class="p-2"><span class="badge badge-info">New</span></div>
-                                <a href="/2019/wysc-events.html" class="text-decoration-none">
-                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">Launch of Wysc Events</h1></div>
+                                <a href="{{ post.url }}" class="text-decoration-none">
+                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                     <div class="bloghdate">
-                                        <h4 id="blogpdate"><time datetime="2019-07-26">26 July 2019</time>
+                                        <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                         </h4>
                                     </div>
-                                    <div class="bloghtext"><p id="blogptext">We’re really excited.
-
-People are social creatures. We seek connectivity with others and find joy in hanging out together.
-
-With the launch of
-
-</p></div>
+                                    <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
                                 </a>
                             </li>
-                        
-                        
+                        {% endfor %}
+                        {% for post in site.posts offset: 1 limit: 3 %}
                             <li class="list-group-item p-4">
-                                <a href="/2019/wysc-blog-release.html" class="text-decoration-none">
-                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">Wysc Blog Release</h1></div>
+                                <a href="{{ post.url }}" class="text-decoration-none">
+                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                     <div class="bloghdate">
-                                        <h4 id="blogpdate"><time datetime="2019-07-04">04 July 2019</time>
+                                        <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                         </h4>
                                     </div>
-                                    <div class="bloghtext"><p id="blogptext">Wysc is proud to announce significant progress in expanding our website’s ability to be a central information hub for the Wysc experience!
-
-</p></div>
+                                    <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
                                 </a>
                             </li>
-                        
-                            <li class="list-group-item p-4">
-                                <a href="/2019/misbehaving-users.html" class="text-decoration-none">
-                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">Misbehaving Users</h1></div>
-                                    <div class="bloghdate">
-                                        <h4 id="blogpdate"><time datetime="2019-06-29">29 June 2019</time>
-                                        </h4>
-                                    </div>
-                                    <div class="bloghtext"><p id="blogptext">Wysc highly values the openness and freedom of its users to participate in a free forum of information exchange in a casual environment. In fact
-
-</p></div>
-                                </a>
-                            </li>
-                        
-                            <li class="list-group-item p-4">
-                                <a href="/2019/june-2019-wysc-server-revamp.html" class="text-decoration-none">
-                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">June 2019 Wysc Server Revamp</h1></div>
-                                    <div class="bloghdate">
-                                        <h4 id="blogpdate"><time datetime="2019-06-18">18 June 2019</time>
-                                        </h4>
-                                    </div>
-                                    <div class="bloghtext"><p id="blogptext">As students across the world arrive at a lull in their studies, Wysc is proud to begin a series of renovations to the server that fundamentally change
-
-</p></div>
-                                </a>
-                            </li>
-                        
+                        {% endfor %}
                     </ul>
 
                     <div>
@@ -175,113 +141,18 @@ With the launch of
 
                     <div class="collapse" id="collapseExample">
                         <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
-                            
+                            {% for post in site.posts offset: 4 %}
                                 <li class="list-group-item p-4">
-                                    <a href="/2019/0319-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
+                                    <a href="{{ post.url }}" class="text-decoration-none">
+                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                         <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2019-03-19">19 March 2019</time>
+                                            <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                             </h4>
                                         </div>
-                                        <div class="bloghtext"><p id="blogptext">Hey everyone!
-
-</p></div>
+                                        <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
                                     </a>
                                 </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0713-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-07-13">13 July 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">Hey yall, nothing important or anything, but here are some statistics on WSC’s activity for the past 30 days!
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0615-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-06-15">15 June 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">Lots of new channels added for the June 2018 WSC Update!
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0512-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-05-12">12 May 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">Changed WSC’s logo to Blurple! (temporary change) Official blurb below:
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0209-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-02-09">09 February 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">Hi @everyone,
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0106-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-01-06">06 January 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">Just another flyer on the announcement board:
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2018/0101-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2018-01-01">01 January 2018</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">@everyone  | UPDATE 2018.01.01 
----
-
-</p></div>
-                                    </a>
-                                </li>
-                            
-                                <li class="list-group-item p-4">
-                                    <a href="/2017/1005-update.html" class="text-decoration-none">
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">WSC update</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="2017-10-05">05 October 2017</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">@everyone  | UPDATE 2017.10.05 
----
-
-</p></div>
-                                    </a>
-                                </li>
-                            
+                            {% endfor %}
                         </ul>
                     </div>
 

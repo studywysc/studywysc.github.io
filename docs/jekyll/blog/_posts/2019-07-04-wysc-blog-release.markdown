@@ -3,8 +3,9 @@ layout: post
 title:  "Wysc Blog Release"
 summary: "Wysc is proud to announce significant progress in expanding our website's ability to be a central information hub for the Wysc experience!"
 date:   2019-07-04 00:00:00 -0700
+excerpt_separator: <!--more-->
 ---
-Wysc is proud to announce significant progress in expanding our website's ability to be a central information hub for the Wysc experience!
+Wysc is proud to announce significant progress in expanding our website's ability to be a central information hub for the Wysc experience!<!--more-->
 
 With the release of the Wysc Blog, new information will be easily accessible in the event of a service being unavailable or to convey important announcements and updates regarding our service.
 
