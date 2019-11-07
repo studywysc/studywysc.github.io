@@ -119,7 +119,7 @@
                                 </a>
                             </li>
                         {% endfor %}
-                        {% for post in site.posts offset: 1 limit: 3 %}
+                        {% for post in site.posts offset: 1 limit: 2 %}
                             <li class="list-group-item p-4">
                                 <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
                                     <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
@@ -134,14 +134,14 @@
                     </ul>
 
                     <div>
-                        <a class="btn btn-secondary p-2 m-4" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-light p-2 m-4" data-toggle="collapse" href="#loadmore" role="button" aria-expanded="false" aria-controls="loadmore">
                             Load more posts
                         </a>
                     </div>
 
-                    <div class="collapse" id="collapseExample">
+                    <div class="collapse" id="loadmore">
                         <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
-                            {% for post in site.posts offset: 4 %}
+                            {% for post in site.posts offset: 3 %}
                                 <li class="list-group-item p-4">
                                     <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
                                         <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
