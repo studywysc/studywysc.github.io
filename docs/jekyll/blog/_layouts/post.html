@@ -59,7 +59,7 @@ layout: default
 <h4 id="blogpdate">{{ page.date | date_to_string }}</h4>
 <div style="padding-top:3em;"></div>
 <div style="display:none">
-    <p id="blogptext">{{ page.summary }}</p>
+    <p id="blogptext">{{ page.excerpt }}</p>
 </div>
 
 <!-- og: meta tags // title-type-img-url required -->
@@ -67,7 +67,7 @@ layout: default
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://gitnisyl.github.io/wysc/media/wsc-sp-rounded.png" />
 <meta property="og:site_name" content="Wysc Blog" />
-<meta property="og:description" content="{{ page.summary }}">
+<meta property="og:description" content="{{ page.excerpt }}">
 
 <div class="blogjpbody">
     {{ content }}
