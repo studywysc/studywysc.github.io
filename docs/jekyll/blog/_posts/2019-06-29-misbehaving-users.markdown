@@ -3,7 +3,6 @@ layout: post
 title:  "Misbehaving Users"
 summary: "Wysc highly values the openness and freedom of its users to participate in a free forum of information exchange in a casual environment ..."
 date:   2019-06-29 00:00:00 -0700
-categories: jekyll updates
 ---
 Wysc highly values the openness and freedom of its users to participate in a free forum of information exchange in a casual environment. In fact, what sets us apart exclusively from other study servers is our much more relaxed approach at moderation in comparison to the more heavy-handed tactics other study servers resort to when users misbehave.
 
@@ -14,4 +13,4 @@ In response to this situation, Wysc Staff has opened up quarantine permissions f
 We hope this approach will help balance usability with moderation, and thank you for continuing to be a part of Wysc during our time of evolution.
 
 Regards,<br>
-Wysc Staff ☕
+Wysc Staff ☕ 

@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
-    <title>{{ page.title }} &ndash;&nbsp;Wysc Blog</title>
-    <meta property="og:title" content="{{ page.title }}" />
-
+    <title> &ndash;&nbsp;Wysc Blog</title>
 </head>
 <body class="blogbody">
     
@@ -33,13 +31,13 @@
                     <a class="nav-link" href="https://gitnisyl.github.io/wysc/">Home</a>
                 </li>
                 <li class="nav-item active p-3">
-                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/blog">Blog<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/blog" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item p-3">
                     <a class="nav-link" href="https://gitnisyl.github.io/wysc/docs">Docs</a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/dash">Dashboard</a>
+                    <a class="nav-link" href="https://gitnisyl.github.io/wysc/start">Web App</a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +66,7 @@
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/dash">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="https://gitnisyl.github.io/wysc/start">
                             <i class="material-icons">apps</i><br>
                             <div>Apps</div>
                         </a>
@@ -85,7 +83,64 @@
           <div class="col">
               <div class="card blogpwidth">
                 <div class="blogjpostcontainer">    
-                  {{ content }}
+                  <div class="home"><style>
+    .sectiontextcolor {
+      color:#111 !important;
+    }
+    .post-list {
+      text-align:left !important;
+      list-style:none !important;
+      padding-bottom:1em !important;
+    }
+      .post-list li {
+        padding-bottom:1em !important;
+      }
+    .post-list-heading {
+      padding-top:1em !important;
+      padding-bottom:0.5em !important;
+    }
+    .rss-subscribe {
+      display:none !important;
+    }
+</style>
+
+
+<a href="https://gitnisyl.github.io/wysc/blog">
+  <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding">&#9666; Back</button>
+</a>
+
+<!--
+<div id="home">
+    <h1>Blog Posts</h1>
+    <ul class="posts">
+      
+        <li><span>26 Jul 2019</span> &raquo; <a href="/jekyll/updates/2019/07/26/wysc-events.html">Launch of Wysc Events</a></li>
+      
+        <li><span>04 Jul 2019</span> &raquo; <a href="/jekyll/updates/2019/07/04/wysc-blog-release.html">Wysc Blog Release</a></li>
+      
+        <li><span>29 Jun 2019</span> &raquo; <a href="/jekyll/updates/2019/06/29/misbehaving-users.html">Misbehaving Users</a></li>
+      
+    </ul>
+</div> --><h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Jul 26, 2019</span>
+        <h3>
+          <a class="post-link" href="/jekyll/updates/2019/07/26/wysc-events.html">
+            Launch of Wysc Events
+          </a>
+        </h3></li><li><span class="post-meta">Jul 4, 2019</span>
+        <h3>
+          <a class="post-link" href="/jekyll/updates/2019/07/04/wysc-blog-release.html">
+            Wysc Blog Release
+          </a>
+        </h3></li><li><span class="post-meta">Jun 29, 2019</span>
+        <h3>
+          <a class="post-link" href="/jekyll/updates/2019/06/29/misbehaving-users.html">
+            Misbehaving Users
+          </a>
+        </h3></li></ul>
+
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+
                 </div>
               </div>
               <div style="padding-bottom:60px;"></div>
@@ -99,12 +154,7 @@
         </div>
     </div>
 
-<!-- og: meta tags // title-type-img-url required -->
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/wysc/media/wsc-sp-rounded.png" />
-<meta property="og:url" content="{{ page.url }}" />
-<meta property="og:site_name" content="Wysc Blog" />
-<meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+
 
 <!-- js -->
 <!-- apple -->
@@ -114,17 +164,17 @@
 <meta name="apple-mobile-web-app-title" content="Wysc" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<link rel="apple-touch-icon" sizes="180x180" href="/wysc/images/icons/ios-180x180.png" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/wysc/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/ios-180x180.png" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
 <!-- google -->
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
 <!-- pwa -->
@@ -135,7 +185,7 @@
     new Crate({
         server: '319372945929666571',
         channel: '590703218049286163',
-        shard: 'https://disweb.dashflo.net',
+        shard: 'https://disweb.deploys.io',
         location: ['bottom', 'right'],
         notifications: false,
         defer: true,

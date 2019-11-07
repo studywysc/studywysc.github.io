@@ -27,7 +27,11 @@ theme: minima
 plugins:
   - jekyll-feed
 feed:
-  path: /jekyll/updates/feed.xml
+  path: feed.xml
+permalink: /:year/:title:output_ext
+
+destination: ../../blog/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

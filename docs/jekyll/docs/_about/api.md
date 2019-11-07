@@ -39,12 +39,10 @@ The JSON is formatted as follows:
 ## Wysc Blog RSS Feed
 
 ```
-https://medium.com/feed/wysc
+https://gitnisyl.github.io/wysc/blog/feed.xml
 ```
 
-Wysc has migrated from its in-house Jekyll RSS feed to Medium's publishing platform for easier sharing, public access, and feed processing features.
-
-Our legacy blog posts can still be accessed from <a href="../../blog/legacy">the Wysc Blog Legacy repository</a>.
+Wysc's RSS feed for blog posts is generated using Jekyll. With our custom blog infrastructure built on top of an open-source alternative, Wysc does not include any bloatware on our blog system and strives for ease of conveying information and page load performance above all else.
 
 ## Creating a Wysc Start Module
 

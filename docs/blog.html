@@ -96,8 +96,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/feed/wysc" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed</a></div>
-                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/wysc" target="_blank" rel="noopener" style="color:#bbb;">Visit our Medium</a></div>
+                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="blog/feed.xml" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed</a></div>
+                        <!-- <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/wysc" target="_blank" rel="noopener" style="color:#bbb;">Visit our Medium</a></div> -->
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                 <div class="card bloghpostcontainer blogfadeb01">
                     <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
                         <script>
-                            fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/wysc')
+                            fetch('https://api.rss2json.com/v1/api.json?rss_url=https://gitnisyl.github.io/wysc/blog/feed.xml')
                                .then((res) => res.json())
                                .then((data) => {
                                   // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
@@ -132,7 +132,7 @@
                                   posts.forEach((item) => {
                                      output += `
                                     <li class="list-group-item p-4">
-                                        <a href="${item.link}" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                                        <a href="${item.link}" class="text-decoration-none">
                                             <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">${item.title}</h1></div>
                                             <div class="bloghdate"><h4 id="blogpdate">${shortenText(item.pubDate,0 ,10)}</h4></div>
                                             <div class="bloghtext"><p id="blogptext">${shortenText(toText(item.content),0, 140)+ '...'}</p></div>

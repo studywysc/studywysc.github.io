@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="https://gitnisyl.github.io/wysc/js/jquery-3.4.1.min.js"></script>
-    <title>{{ page.title }} &ndash;&nbsp;Wysc Blog</title>
-    <meta property="og:title" content="{{ page.title }}" />
+    <title>Launch of Wysc Events &ndash;&nbsp;Wysc Blog</title>
+    <meta property="og:title" content="Launch of Wysc Events" />
 
 </head>
 <body class="blogbody">
@@ -85,7 +85,111 @@
           <div class="col">
               <div class="card blogpwidth">
                 <div class="blogjpostcontainer">    
-                  {{ content }}
+                  <style>
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1.2em;
+        line-height:1.58em;
+        margin-bottom:2em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Lato', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    .blogjtitle {
+        font-family: 'Lato', sans-serif;
+        font-weight:600;
+        color:#333;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+    .bloghheader:before, .bloghheader2:before {
+        animation: none;
+    }
+</style>
+<a href="https://gitnisyl.github.io/wysc/blog">
+    <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding">&#9666; Back</button>
+</a>
+<h1 class="blogjtitle" id="blogptitle">Launch of Wysc Events</h1>
+<h4 id="blogpdate">26 Jul 2019</h4>
+<div style="padding-top:3em;"></div>
+<div style="display:none">
+    <p id="blogptext">We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ...</p>
+</div>
+
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="Launch of Wysc Events &ndash;&nbsp;Wysc Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://gitnisyl.github.io/wysc/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="We’re really excited. People are social creatures. We seek connectivity with others and find joy in hanging out together. With the launch of ...">
+
+<div class="blogjpbody">
+    <p>We’re really excited.</p>
+
+<p>People are social creatures. We seek connectivity with others and find joy in hanging out together.</p>
+
+<p>With the launch of the Wysc Events homepage, users who are inspired to create a group event will be able to create their own event pages with Wysc, expanding their ability to reach new users through the networks we’ve built into the system — including automatic notifications to Wysc and abilities such as scheduling posts, RSS feeds, and emails through WordPress. So you can focus more on hosting an event, not trying to tell people that it exists in the first place.</p>
+
+<p>To qualify for applying, events must have been independently held at least three times consistently and consecutively in #group-events in order to show demand. Once accepted, hosts will be able to start posting directly to the website.</p>
+
+<p>Please bear with us as we continue to improve upon this system as it rolls out to the public.</p>
+
+<p>We look forward to seeing the diverse number of ideas and events that are generated, and to hosting a forum for the users, by the users!</p>
+
+<p>Thanks,<br />
+Wysc Staff ☕</p>
+
+
+    <br><br>
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_button_copy_link"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_line"></a>
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
+    <br><br>
+    <div style="text-align:center;">
+        <button type="button" class="btn btn-lg btn-outline-info" onclick="crate.toggle(true)">Comments ></button>
+    </div>
+    <br>
+</div>
+
+<!--
+<div class="blogpwidth">
+    <p>We’re really excited.</p>
+
+<p>People are social creatures. We seek connectivity with others and find joy in hanging out together.</p>
+
+<p>With the launch of the Wysc Events homepage, users who are inspired to create a group event will be able to create their own event pages with Wysc, expanding their ability to reach new users through the networks we’ve built into the system — including automatic notifications to Wysc and abilities such as scheduling posts, RSS feeds, and emails through WordPress. So you can focus more on hosting an event, not trying to tell people that it exists in the first place.</p>
+
+<p>To qualify for applying, events must have been independently held at least three times consistently and consecutively in #group-events in order to show demand. Once accepted, hosts will be able to start posting directly to the website.</p>
+
+<p>Please bear with us as we continue to improve upon this system as it rolls out to the public.</p>
+
+<p>We look forward to seeing the diverse number of ideas and events that are generated, and to hosting a forum for the users, by the users!</p>
+
+<p>Thanks,<br />
+Wysc Staff ☕</p>
+
+</div>
+-->
                 </div>
               </div>
               <div style="padding-bottom:60px;"></div>
@@ -102,7 +206,7 @@
 <!-- og: meta tags // title-type-img-url required -->
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/wysc/media/wsc-sp-rounded.png" />
-<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:url" content="/2019/wysc-events.html" />
 <meta property="og:site_name" content="Wysc Blog" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 
