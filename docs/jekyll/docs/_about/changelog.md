@@ -12,6 +12,8 @@ toc: true
 - Major improvements to Wysc Blog
 - Added custom 404 page
 - Added breadcrumbs to Docs
+- Added Docs/Discord/Bots/Emotes
+- Added Docs/Discord/Bots/Simulator
 - Updated Blog
 - Updated Docs
 - Updated Github Repo with Gitbook
