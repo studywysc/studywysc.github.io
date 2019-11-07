@@ -9,6 +9,7 @@ toc: true
 ## 0.191105
 
 - Minor improvements and bug fixes
+- Major improvements to Wysc Blog
 - Added custom 404 page
 - Added breadcrumbs to Docs
 - Updated Blog
@@ -17,6 +18,7 @@ toc: true
 - Updated Github Repo with CC license
 - Updated Github Repo with more contributor information
 - Reverted Medium blog due to migration issues
+- Backported all old blog posts back to 2018
 - Fixed consistency with clicking the Wysc logo on all pages
 - Fixed Bots link error bug
 
