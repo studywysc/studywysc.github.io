@@ -6,6 +6,12 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191110
+
+- Moved domains to wysc.us.to
+- Updated sitemap file
+- Fixed broken style links
+
 ## 0.191105
 
 - Minor improvements and bug fixes
