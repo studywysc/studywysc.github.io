@@ -6,9 +6,9 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
-## 0.191110
+## 0.191112
 
-- Moved domains to wysc.us.to
+- Moved domains to wysc.netlify.com
 - Updated sitemap file
 - Fixed broken style links
 
