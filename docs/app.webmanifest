@@ -49,6 +49,6 @@
    "type": "image/png"
   }
 ],
-"start_url": "/wysc/start.html",
-"scope": "/wysc/"
+"start_url": "/start.html",
+"scope": "/"
 }
