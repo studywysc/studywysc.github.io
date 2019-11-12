@@ -12,6 +12,6 @@ display:none;
 
 <ul>
 {% for page in site.about %}
-<li id="{{ page.title }}"><a href="https://gitnisyl.github.io/wysc/docs{{ page.url }}">{{ page.title }}</a></li>
+<li id="{{ page.title }}"><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
