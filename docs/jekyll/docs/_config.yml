@@ -16,8 +16,8 @@
 title: Wysc Docs
 email: 
 description: For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience as the premier edu-social cafe based Discord server.
-baseurl: "/wysc/docs" # the subpath of your site, e.g. /blog
-url: "https://gitnisyl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/docs" # the subpath of your site, e.g. /blog
+url: "https://wysc.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
