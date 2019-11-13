@@ -17,6 +17,7 @@ For students striving to be better, Wysc is the study Discord server that delive
 [https://wysc.us.to](https://wysc.us.to/)
 
 Working on fixing Github Pages, domains, and everything sometime soon... Big thank you to [JS.ORG](https://js.org)!
+
  
 
 ### Open Source License:
