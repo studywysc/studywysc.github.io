@@ -3,6 +3,13 @@
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
   <link rel="canonical" href="/blog/index.html">
+  <script>
+    if(document.location.href.indexOf('wysc.js.org') > -1) { 
+        // indexOf will return the position of the first occurence of this string in the url
+        // or -1 it it's not there.
+        document.location.href = 'https://wysc.netlify.com/blog/index.html';
+    }
+  </script>
   <script>location="/blog/index.html"</script>
   <meta http-equiv="refresh" content="0; url=/blog/index.html">
   <meta name="robots" content="noindex">
