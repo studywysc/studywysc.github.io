@@ -8,6 +8,13 @@
     <link rel="canonical" href="https://wysc.netlify.com/dash" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
+    <script>
+        if(document.location.href.indexOf('wysc.js.org') > -1) { 
+            // indexOf will return the position of the first occurence of this string in the url
+            // or -1 it it's not there.
+            document.location.href = 'https://wysc.netlify.com/dash';
+        }
+    </script>
     <link rel="manifest" href="app.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
@@ -320,13 +327,6 @@
             // timing options
             duration: 400,
         });
-    }
-</script>
-<script>
-    if(document.location.href.indexOf('wysc.js.org') > -1) { 
-        // indexOf will return the position of the first occurence of this string in the url
-        // or -1 it it's not there.
-        document.location.href = 'https://wysc.netlify.com/dash';
     }
 </script>
 </body>

@@ -9,6 +9,13 @@
     <link rel="canonical" href="https://wysc.netlify.com/" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
+    <script>
+        if(document.location.href.indexOf('wysc.js.org') > -1) { 
+            // indexOf will return the position of the first occurence of this string in the url
+            // or -1 it it's not there.
+            document.location.href = 'https://wysc.netlify.com/';
+        }
+    </script>
     <link rel="manifest" href="app.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>.homebody{background-color:#092636;}</style>
@@ -378,13 +385,6 @@
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems, options);
     });
-</script>
-<script>
-    if(document.location.href.indexOf('wysc.js.org') > -1) { 
-        // indexOf will return the position of the first occurence of this string in the url
-        // or -1 it it's not there.
-        document.location.href = 'https://wysc.netlify.com/';
-    }
 </script>
 </body>
 </html>
