@@ -208,7 +208,7 @@
 <!-- page js -->
 <script>
     // parse search term from url using regex
-    var wzsearch = window.location.href.match(/s\\?(.*?)(&|$)/)[1];
+    var wzsearch = window.location.href.match(/docs\\?(.*?)(&|$)/)[1];
     
     // wysc zendesk api search using search term
     fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
