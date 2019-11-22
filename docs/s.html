@@ -1,0 +1,15 @@
+<script>
+    // replace file0026 with the page name
+    var wzsearch = window.location.href.match(/s.html#(.*?)(&|$)/)[1];
+    
+    fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
+    .then((resp) => resp.json())
+    .then(data => {
+        let wzresults = data.results;
+            wzr1 = wzresults[0];
+        window.location.replace(wzr1.html_url);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+</script>
