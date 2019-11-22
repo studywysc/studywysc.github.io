@@ -1,6 +1,6 @@
 <script>
     // replace file0026 with the page name
-    var wzsearch = window.location.href.match(/s.html#(.*?)(&|$)/)[1];
+    var wzsearch = window.location.href.match(/s#(.*?)(&|$)/)[1];
     
     fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
     .then((resp) => resp.json())
