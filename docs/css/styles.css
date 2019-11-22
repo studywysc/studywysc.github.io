@@ -1304,6 +1304,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
       background: url('/media/T_1hsMH9CQY.jpg') no-repeat center;
     }
   .homepadengage2 {
+    min-height:0vh !important;
     padding-top:80px;
     padding-bottom:80px;
   }
