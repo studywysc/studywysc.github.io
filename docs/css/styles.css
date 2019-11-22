@@ -56,7 +56,7 @@ body, html {
   background-color:#092636;
 }
 .homeengageback {
-  background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('../media/daan-evers-1480187-unsplash.webp');
+  background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('/media/daan-evers-1480187-unsplash.webp');
   background-position:center;
   background-attachment:fixed;
   background-size:cover;
@@ -99,7 +99,7 @@ body, html {
   }
   .homeheader:before {
     animation: dh-fade-slide-down 1.5s cubic-bezier(0.2,0.5,0.4,0.8) forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('../media/T_1hsMH9CQY_compress02.webp') no-repeat center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('/media/T_1hsMH9CQY_compress02.webp') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     content: "";
@@ -123,7 +123,7 @@ body, html {
   }
   .homeheaderjpg:before { /*webp fallback*/
     animation: dh-fade-slide-down 0.9s ease-in forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('/media/T_1hsMH9CQY.jpg') no-repeat center;
     background-size:cover;
   }
   @keyframes dh-fade-slide-down { 0% { opacity: 0; } 100% { opacity: 1; transform: none; } }
@@ -161,6 +161,10 @@ body, html {
 .homepadengage {
   padding-top:80px;
   display:inline-block;
+}
+.homepadengage3 {
+  height:auto;
+  min-height:100vh;
 }
 .homesvgdiv {
   width:100%;
@@ -218,7 +222,7 @@ body, html {
   }
   .bloghheader:before {
     animation: dh-fade-slide-down 1.5s cubic-bezier(0.2,0.5,0.4,0.8) forwards;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('../media/photo-1532607439080-44da70d00f9e.jpg') no-repeat center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('/media/photo-1532607439080-44da70d00f9e.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     content: "";
@@ -393,7 +397,7 @@ body, html {
 }
   .dhheader:before {
     animation: dh-fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('../media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat bottom;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat bottom;
     background-size: cover;
     background-attachment: fixed;
     content: "";
@@ -421,10 +425,10 @@ body, html {
 .dhheader2 {
   min-height:100vh;
   height:auto;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('../media/ben-white-eeiAnugy2Hs-unsplash.jpg') no-repeat bottom;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('/media/ben-white-eeiAnugy2Hs-unsplash.jpg') no-repeat bottom;
 }
 .dhmadeinsf {
-  background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('../media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
+  background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('/media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
 }
 .dhmissionstatement {
   padding-top:40px;
@@ -462,10 +466,10 @@ body, html {
     background: url('https://cdn.discordapp.com/avatars/321185906746720267/4a487292ba78fa6a589360dd718dcfef.png?size=128') 50% 50% no-repeat; /* 50% 50% centers image in div */
   }
   .dhteamimg-mayo {
-    background: url('../media/teammayo.jpg') 50% 50% no-repeat; /* 50% 50% centers image in div */
+    background: url('/media/teammayo.jpg') 50% 50% no-repeat; /* 50% 50% centers image in div */
   }
   .dhteamimg-fred {
-    background: url('../media/teamfred.jpg') 50% 50% no-repeat; /* 50% 50% centers image in div */
+    background: url('/media/teamfred.jpg') 50% 50% no-repeat; /* 50% 50% centers image in div */
   }
 .dhteamicon {
   color: #ccc;
@@ -748,7 +752,7 @@ body, html {
   max-width:50px;
 }
   .startapppillshome {
-    background: url('../media/svg/baseline-apps-24px_white.svg') no-repeat center;
+    background: url('/media/svg/baseline-apps-24px_white.svg') no-repeat center;
   }
 .startappscreen {
   margin-top: 115px;
@@ -1290,17 +1294,18 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     color: inherit;
   }
   .homeengageback {
-    background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('../media/daan-evers-1480187-unsplash.jpg');
+    background-image: linear-gradient(to bottom, rgba(11, 89, 135, 0.2), rgba(11, 89, 135, 0.3) ), url('/media/daan-evers-1480187-unsplash.jpg');
     background-attachment:inherit;
   }
   .homeheaderjpg {
-    background: url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+    background: url('/media/T_1hsMH9CQY.jpg') no-repeat center;
   }
     .homeheaderjpg:before {
-      background: url('../media/T_1hsMH9CQY.jpg') no-repeat center;
+      background: url('/media/T_1hsMH9CQY.jpg') no-repeat center;
     }
   .homepadengage2 {
     padding-top:80px;
+    padding-bottom:80px;
   }
   .homesvgdiv {
     height: 180vh;
