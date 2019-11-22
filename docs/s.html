@@ -1,15 +1,20 @@
 <script>
     // replace file0026 with the page name
-    var wzsearch = window.location.href.match(/s#(.*?)(&|$)/)[1];
+    // parse search term from url using regex
+    var wzsearch = window.location.href.match(/s\\?(.*?)(&|$)/)[1];
     
+    // wysc zendesk api search using search term
     fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
     .then((resp) => resp.json())
     .then(data => {
+        // pick up html_url from the results, then redirect browser there
         let wzresults = data.results;
             wzr1 = wzresults[0];
         window.location.replace(wzr1.html_url);
     })
+    // log error bc fetch api fails silently
     .catch(function(error) {
         console.log(error);
     });
 </script>
+
