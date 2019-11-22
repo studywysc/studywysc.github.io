@@ -9,12 +9,30 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
     <script>
+        // parse search term from url using regex
+        var wzsearch = window.location.href.match(/docs\\?(.*?)(&|$)/)[1];
+        
+        // wysc zendesk api search using search term
+        fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
+        .then((resp) => resp.json())
+        .then(data => {
+            // pick up html_url from the results, then redirect browser there
+            let wzresults = data.results;
+                wzr1 = wzresults[0];
+            window.location.replace(wzr1.html_url);
+        })
+        // log error bc fetch api fails silently
+        .catch(function(error) {
+            console.log(error);
+        });
+    </script>
+    <script>
         if(document.location.href.indexOf('wysc.js.org') > -1) { 
             // indexOf will return the position of the first occurence of this string in the url
             // or -1 it it's not there.
             document.location.href = 'https://wysc.netlify.com/docs';
         }
-    </script>
+    </script>    
     <link rel="manifest" href="app.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
@@ -206,24 +224,6 @@
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
 <!-- page js -->
-<script>
-    // parse search term from url using regex
-    var wzsearch = window.location.href.match(/docs\\?(.*?)(&|$)/)[1];
-    
-    // wysc zendesk api search using search term
-    fetch("https://wysc.zendesk.com/api/v2/help_center/articles/search.json?query="+wzsearch)
-    .then((resp) => resp.json())
-    .then(data => {
-        // pick up html_url from the results, then redirect browser there
-        let wzresults = data.results;
-            wzr1 = wzresults[0];
-        window.location.replace(wzr1.html_url);
-    })
-    // log error bc fetch api fails silently
-    .catch(function(error) {
-        console.log(error);
-    });
-</script>    
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
     new Crate({
