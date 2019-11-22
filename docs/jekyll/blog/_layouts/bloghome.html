@@ -92,8 +92,10 @@
                         <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
                             <div class="card-body text-dark border-0 p-4">
                                 <ul id="statuslist" class="list-group list-group-flush">
+                                    <p style="padding-top:1em;">Status not loading?</p>
+                                    <p><a href="/api/status.json" target="_blank">Open Wysc Status in a new window</a></p>
                                 </ul>
-                                <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="/docs/about/api">read api documentation</a></div>
+                                <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="/docs?status%20api">read api documentation</a></div>
                             </div>
                         </div>
                         <br>
@@ -116,7 +118,7 @@
                                         <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                         </h4>
                                     </div>
-                                    <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
+                                    <div class="bloghtext"><p id="blogptext">{{ post.content | markdownify | strip_html | truncatewords: 22 }}</p></div>
                                 </a>
                             </li>
                         {% endfor %}
@@ -128,7 +130,7 @@
                                         <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                         </h4>
                                     </div>
-                                    <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
+                                    <div class="bloghtext"><p id="blogptext">{{ post.content | markdownify | strip_html | truncatewords: 22 }}</p></div>
                                 </a>
                             </li>
                         {% endfor %}
@@ -139,8 +141,14 @@
                             Load more posts
                         </a>
                     </div>
-
-                    <div class="collapse" id="loadmore">
+                </div>
+                <div style="padding-bottom:60px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="collapse" id="loadmore">
+                    <div class="card blogpwidth">
                         <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
                             {% for post in site.posts offset: 3 %}
                                 <li class="list-group-item p-4">
@@ -150,15 +158,14 @@
                                             <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
                                             </h4>
                                         </div>
-                                        <div class="bloghtext"><p id="blogptext">{{ post.excerpt | strip_html }}</p></div>
+                                        <div class="bloghtext"><p id="blogptext">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p></div>
                                     </a>
                                 </li>
                             {% endfor %}
                         </ul>
                     </div>
-
+                    <div class="margin-bottom:10px;"></div>
                 </div>
-                <div style="padding-bottom:60px;"></div>
             </div>
         </div>
         <div class="row">
@@ -180,34 +187,14 @@
 <meta property="og:url" content="https://wysc.netlify.com" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
-<!-- apple -->
-<!-- removed webp fallback, no webp's -->
-<link rel="stylesheet" type="text/css" href="/js/add-to-homescreen-master/style/addtohomescreen.css"> 
-<script src="/js/add-to-homescreen-master/src/addtohomescreen.js" defer></script> 
-<script defer>addToHomescreen();</script>
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="apple-touch-fullscreen" content="yes" />
-<meta name="apple-mobile-web-app-title" content="Wysc" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/ios-180x180.png" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
 <!-- google -->
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
 <!-- pwa -->
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
 <!-- page js -->
-
+<script src="/js/promisepolyfill.min.js"></script>
+<script src="/js/fetch.umd.js"></script>
 <script> // fetch api status
     function createNode(element) {
         return document.createElement(element);
@@ -216,11 +203,12 @@
         return parent.appendChild(el);
     }
     const ul = document.getElementById('statuslist');
-    const url = '../api/status.json';
+    const url = '/api/status.json';
     fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {
         let statuslist = data.wysc;
+        document.getElementById("statuslist").innerHTML = "";
         return statuslist.map(function(status) {
         let li = createNode('li');
         if (status.isup == true){
@@ -252,5 +240,26 @@
         })
     } else {};
 </script>
+<!-- apple -->
+<!-- removed webp fallback, no webp's -->
+<link rel="stylesheet" type="text/css" href="/js/add-to-homescreen-master/style/addtohomescreen.css"> 
+<script src="/js/add-to-homescreen-master/src/addtohomescreen.js"></script> 
+<script defer>addToHomescreen();</script>
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Wysc" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/ios-180x180.png" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
 </body>
 </html>

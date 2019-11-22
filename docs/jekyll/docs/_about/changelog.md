@@ -6,6 +6,15 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191122
+
+- Minor improvements and bug fixes
+- Added Zendesk Search integration
+- Updated Wysc Blog Status documentation
+- Updated Wysc Docs Zendesk knowledge base
+- Fixed no javascript fallbacks
+- Fixed IE11 compatibility
+
 ## 0.191112
 
 - Moved domains to wysc.netlify.com
