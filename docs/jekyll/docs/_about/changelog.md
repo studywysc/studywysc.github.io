@@ -6,6 +6,10 @@ summary: "Version Releases for the Wysc Website"
 toc: true
 ---
 
+## 0.191124
+
+- Major Wysc Docs overhaul (beta)
+
 ## 0.191122
 
 - Minor improvements and bug fixes

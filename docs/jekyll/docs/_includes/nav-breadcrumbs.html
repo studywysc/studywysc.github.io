@@ -20,13 +20,13 @@
             <meta property="position" content="1" />
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}">
-            <span property="name" class="docsjbct">{{ page.category }}</span>
+         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}/{{ page.collection }}">
+            <span property="name" class="docsjbct">{{ page.collection }}</span>
          </a>
             <meta property="position" content="2" />
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">{{ crumb.title }}</span>
+         <span property="name">{{ page.category }}</span>
          <meta property="position" content="3" />
       </li>
       {% continue %} {% endif %}

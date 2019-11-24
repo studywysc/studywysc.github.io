@@ -315,7 +315,7 @@
             li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-success">✅</text>`;
         } else {
             li.className = 'bg-warning list-group-item rounded';
-            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupnotes}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
+            li.innerHTML = `<b>${status.title}:</b>&emsp;<text class="text-danger">${status.isupemoji}</text><br><div class="text-danger pt-1" style="font-size:0.9em">${status.notes}</div>`;
         }
         append(ul, li);
         })

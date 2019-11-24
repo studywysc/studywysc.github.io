@@ -3,14 +3,21 @@
     {
       "title": "Wysc Discord",
       "isup": true,
-      "isupnotes": "",
-      "notes": ""
+      "isupemoji": "",
+      "howsevere": "low",
+      "notes": "",
+      "noteslong": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "readmore": "https://wysc.netlify.com/blog",
+      "isupnotes":"This api has been deprecated, please use isupemoji."
     },
     {
       "title": "Wysc Website",
-      "isup": true,
-      "isupnotes": "",
-      "notes": ""
+      "isup": false,
+      "isupemoji": "⚠",
+      "howsevere": "high",
+      "notes":"Due to an issue with Zendesk, we have lost all Wysc documentation and are now working to rebuild it.",
+      "readmore": "https://wysc.netlify.com/blog",
+      "isupnotes":"This api has been deprecated, please use isupemoji."
     }
   ]
 }

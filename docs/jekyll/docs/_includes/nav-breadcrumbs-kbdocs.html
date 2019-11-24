@@ -1,0 +1,49 @@
+<nav class="bg-transparent docstextlight bccss">
+   <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+      {% for crumb in breadcrumbs %} 
+         {% if forloop.first and site.breadcrumbs.root.image %}
+         <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
+            <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
+               <!-- <span class="icon" property="name">{% include nav-breadcrumb-icon.svg %}</span> -->
+               <span property="name">Docs</span>
+               <meta property="position" content="1" />
+            </a>
+         </li>
+         {% continue %} 
+      {% endif %} 
+      {% if forloop.last %}
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}">
+            <span property="name">Docs</span>
+         </a>
+            <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}/{{ page.collection }}">
+            <span property="name">{{ page.collection | capitalize }}</span>
+         </a>
+            <meta property="position" content="2" />
+      </li>
+      <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+         <span property="name">{{ page.category | capitalize }}</span>
+         <meta property="position" content="3" />
+      </li>
+      {% continue %} {% endif %}
+      {% endfor %}
+
+   </ol>
+</nav>
+
+<style>
+.bccss ol {
+   margin:0 !important;
+   padding:0 !important;
+}
+.bccss ol li {
+   display: inline-block;
+}
+.bccss a {
+   text-decoration: none;
+}
+</style>
