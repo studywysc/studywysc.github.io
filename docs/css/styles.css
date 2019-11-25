@@ -811,6 +811,8 @@ body, html {
   /*padding-top:250px;*/
   color: #dedede;
   padding-bottom:200px;
+  width: calc(100% - 165px);
+  max-width: 900px;
 }
   .docspbody a:hover {
     text-decoration: none;
@@ -1416,6 +1418,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     }
   .docspbody {
     padding-bottom:100px;
+    width: 100%;
   }
   .docuchanli dd {
     padding-bottom:1.5em;
