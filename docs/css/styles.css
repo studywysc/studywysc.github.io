@@ -522,10 +522,10 @@ body, html {
       color: #a76f5d;
       text-decoration: none;
     }
-    .docstextwysclight2, .anchorjs-link {
+    .docstextwysclight2, .anchorjs-link, .docsjbcmain a {
       color: #bd9385;
     }
-      a.docstextwysclight2:hover, .anchorjs-link:hover {
+      a.docstextwysclight2:hover, .anchorjs-link:hover, .docsjbcmain a:hover {
         color: #c8a59a;
         text-decoration: none;
       }
@@ -565,8 +565,11 @@ body, html {
   flex-wrap: wrap;
 }
   .docsjbcontent p {
-    line-height: 160%;
+    line-height: 175%;
   }
+    .docsjbcontent p, .docsjbcontent h2, .docsjbcontent h3, .docsjbcontent a {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","Lato",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+    }
   .docsjbccoll {
     width:100%;
   }

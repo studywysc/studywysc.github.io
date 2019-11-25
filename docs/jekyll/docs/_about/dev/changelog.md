@@ -1,7 +1,7 @@
 ---
 layout: kbdocs
 title:  "Changelog"
-category: about
+category: "Developers/API"
 summary: "Version Releases for the Wysc Website"
 redirect_from:
   - changelog

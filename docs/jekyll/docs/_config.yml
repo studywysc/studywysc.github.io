@@ -45,6 +45,10 @@ permalink: /:title.html
 #   - vendor/gems/
 #   - vendor/ruby/
 
+algolia:
+  index_name: Wysc
+  application_id: 'HRA929IBAN'
+
 # Collections
 collections:
   about:
