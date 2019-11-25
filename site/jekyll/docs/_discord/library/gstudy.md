@@ -11,7 +11,7 @@ redirect_from:
 
 Group Study is one of Wysc's primary features.
 
-Uniting students from across borders, timezones, and subjects, Wysc's Group Study services help creates a warm, comfortable environment for everyone to study together.
+Uniting students from across borders, timezones, and subjects, Wysc's Group Study services help create a warm, comfortable environment for everyone to study together.
 
 ### What is Pomodoro?
 
