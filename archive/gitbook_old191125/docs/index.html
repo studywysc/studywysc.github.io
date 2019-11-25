@@ -9,25 +9,31 @@
     <link rel="canonical" href="https://wysc.netlify.com/" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
+    <script>
+        if(document.location.href.indexOf('wysc.js.org') > -1) { 
+            // indexOf will return the position of the first occurence of this string in the url
+            // or -1 it it's not there.
+            document.location.href = 'https://wysc.netlify.com/';
+        }
+    </script>
     <link rel="manifest" href="app.webmanifest">
     <script async src="/js/pwacompat-2.0.10.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>.homebody{background-color:#092636;}</style>
     <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <div hidden><img src="media/T_1hsMH9CQY_compress02.webp" alt="preloading header image"></div>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
     <title>Wysc – A Study Discord Experience | University, College, High School Students</title>
     <meta property="og:title" content="Wysc – Virtual Study Cafe" />
 </head>
 <body class="homebody">
 
     <!-- desktop topnav -->
-    <div class="d-none d-md-block noselect wnavglobal">
+    <div class="d-none d-md-block noselect">
         <nav class="navbar fixed-top navbar-dark bg-transparent">
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
                 <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow homefadeb00" alt="logo">
@@ -41,7 +47,7 @@
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="blog/index.html">Blog</a>
+                    <a class="nav-link" href="blog">Blog</a>
                 </li>
                 <li class="nav-item p-3">
                     <a class="nav-link" href="docs">Docs</a>
@@ -53,7 +59,7 @@
         </nav>
     </div>
     <!-- mobile bottomnav -->
-    <div class="d-md-none noselect wnavglobal">
+    <div class="d-md-none noselect">
         <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
             <div class="nav-content text-center">
                 <ul class="nav nav-justified">
@@ -64,7 +70,7 @@
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="blog/index.html">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="blog/">
                             <i class="material-icons">class</i><br>
                             <div>Blog</div>
                         </a>
@@ -106,7 +112,7 @@
                 <div class="align-middle text-center">
                     <div style="width:256px;margin-left:auto;margin-right:auto;">
                         <a href="invite" style="color:rgba(255, 255, 255, 1);">
-                            <div class="btnfancylg btnfancyshadow btn-one homefadeb02 homeinvitebtn" style="margin-left:auto;margin-right:auto;">
+                            <div class="btnfancylg btnfancyshadow btn-one homefadeb02" style="margin-left:auto;margin-right:auto;">
                                 Join our Discord >
                             </div>
                         </a>
