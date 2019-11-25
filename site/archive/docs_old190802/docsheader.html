@@ -1,0 +1,79 @@
+<script src="../js/bootstrap-4.3.1.min.js"></script>
+<div class="noselect">
+    <!-- desktop topnav -->
+    <div class="d-none d-md-block">
+        <nav class="navbar navbar-dark docsheaderbg">
+            <a class="navbar-brand hoverscale" href="../index.html">
+                <img src="../media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow fade-in-bottom" alt="logo">
+                <span class="d-inline-block align-middle fontgochihand" style="font-size:3em;margin-left:25px;color:#e6e6e6;text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);">Wysc.</span>
+            </a>
+            <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="../blog">Blog</a>
+                </li>
+                <li class="nav-item active p-3">
+                    <a class="nav-link" href="../docs">Docs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="../start.html">Web App</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="d-none d-md-block">
+        <ul class="nav docsheaderbg">
+            <li class="nav-item docsheadertext align-middle maligny" style="padding-right:0px;">
+                <a class="align-middle" href="../docs.html">
+                    <button type="button" class="btn btn-lg btn-outline-info" onclick="window.history.back()">&#9666; About</button>
+                </a>
+            </li>
+            <li class="nav-item docsheadertext align-middle maligny"><a href="/wysc/docs/home" class="docuwyscdocswords">Wysc Docs</a></li>
+        </ul>
+    </div>
+
+    <!-- mobile topnav -->
+    <ul class="nav d-md-none justify-content-center docsheaderbg">
+        <li class="nav-item docsheadertext align-middle">
+            Wysc Docs
+        </li>
+    </ul>
+    <ul class="nav d-md-none justify-content-center docsheaderbg pb-3">
+        <li class="nav-item align-middle p-2">
+            <a class="align-middle">
+                <button type="button" class="btn btn-lg btn-outline-info" onclick="window.history.back()">&#9666; Back</button>
+            </a>
+        </li>
+        <li class="nav-item align-middle p-2">
+            <a class="align-middle" id="menumodaltog" data-toggle="modal" data-target="#menumodal">
+                <button type="button" class="btn btn-lg btn-outline-info">Menu</button>
+            </a>
+        </li>
+        <li class="nav-item align-middle p-2">
+            <a class="align-middle" href="home.html">
+                <button type="button" class="btn btn-lg btn-outline-info">Docs Home</button>
+            </a>
+        </li>
+    </ul>
+    
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="menumodal" tabindex="-1" role="dialog" aria-labelledby="menumodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header" data-dismiss="modal" aria-label="Close" style="cursor:pointer;">
+            <button type="button" class="close" style="padding-left:5%;padding-right:5%;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="importdocstoc2" style="width:100%;"></div><script>$("#importdocstoc2").load('docstoc.html');</script>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

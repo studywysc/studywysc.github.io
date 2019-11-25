@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="weatherapi"></div>
+
+    <script>
+        function createNode(element) {
+            return document.createElement(element);
+        }
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+        $.get('https://ipapi.co/latlong/', function(response){
+            var latlong = response.split(',');
+            console.log(latlong);
+            const ul = document.getElementById('weatherapi');
+            const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latlong[0] + '&lon=' + latlong[1] + '&appid=05ae95ab25295f165d7e0c720bc161f3';
+            fetch(url)
+            .then((resp) => resp.json())
+            .then(function(data) {
+                let corew = data.weather;
+                return corew.map(function(temp) {
+                let corem = data.main;
+                let li = createNode('li'),
+                    h3 = createNode('h3'),
+                    p = createNode('p');
+                h3.innerHTML = `${Math.round(corem.temp - 273.15)}&#176;C`;
+                p.innerHTML = temp.main;
+                append(li, h3);
+                append(li, p);
+                append(ul, li);
+                })
+            })
+            .catch(function(error) {
+                console.log(error);
+            });   
+        });
+    </script>
+    
+</body>
+</html>

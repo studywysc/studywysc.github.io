@@ -1,0 +1,46 @@
+<!--
+    hello.js test
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/hello.all.min.js"></script>
+    <script src="../js/soundcloud.js"></script>
+
+    <script>
+        hello.on('auth.login', function (auth) {
+
+            // Call user information, for the given network
+            hello(auth.network).api('me').then(function (r) {
+                // Inject it into the container
+                var label = document.getElementById('profile_' + auth.network);
+                if (!label) {
+                    label = document.createElement('div');
+                    label.id = 'profile_' + auth.network;
+                    document.getElementById('profile').appendChild(label);
+                }
+                label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
+            });
+        });
+    </script>
+    <script>
+        hello.init({
+            google: '141871346109-jvkuegk7n32p1hqj2sskpk0g1o10206h.apps.googleusercontent.com'
+        }, { redirect_uri: '../redirect.html' });
+    </script>
+</head>
+
+<body>
+    <p>regular content here</p>
+    <button onclick="hello('google').login()">google</button>
+
+
+
+</body>
+
+</html>
