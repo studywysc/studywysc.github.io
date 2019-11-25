@@ -14,6 +14,7 @@ redirect_from:
 - Major improvements to Progressive Web App code
 - Updated fonts
 - Preparing backend for Algolia
+- Preparing backend for Staging site
 
 ### 0.191122
 
