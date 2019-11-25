@@ -509,8 +509,8 @@ body .wnavglobal {
   align-content: flex-start;
 }
 .docsjbody {
-  background-color:#082331; /*0C3247 061923 04141c*/
-  color: #e6eaec;
+  background-color:#001f1f; /*0C3247 061923 04141c 082331*/
+  color: #e6eaec; /*e6eaec*/
   font-family: "Lato";
   /*overflow:hidden;*/
 }
@@ -813,7 +813,7 @@ body .wnavglobal {
 }
 .docspbody {
   /*padding-top:250px;*/
-  color: #dedede;
+  color: #95ffff;
   padding-bottom:200px;
   width: calc(100% - 165px);
   max-width: 900px;
@@ -824,7 +824,7 @@ body .wnavglobal {
   .docspbody h3 {
     margin-top: 2em;
     margin-bottom: 1em;
-    color: #efefef;
+    color: #e4ffff;
   }
   .docspbody pre {
       background: #414141;
