@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="/js/jquery-3.4.1.min.js"></script>
-    <title>About &ndash;&nbsp;Wysc Docs</title>
+    <script src="/js/anchorjs-4.2.0/anchor.min.js"></script>
+    <script>
+        $(function() {
+            anchors.options = {
+                visible: 'hover',
+                icon: '#'
+            };
+            anchors.add('.docsjbccoll .row .card .card-body h5');
+        });
+    </script>
+    <title>Discord &ndash;&nbsp;Wysc Docs</title>
 </head>
 <body class="docsjbody">
     
@@ -48,7 +58,7 @@
             <div class="nav-content text-center">
                 <ul class="nav nav-justified">
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/wysc/">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="/index">
                             <i class="material-icons">home</i><br>
                             <div>Home</div>
                         </a>
@@ -76,228 +86,137 @@
         </nav>
     </div>
 
-    <div class="docsjheader position-fixed width100" id="webpheader"></div>
-    <div class="docsjheader2 position-fixed width100"></div>
-    <div class="container-fluid sectiontextcolor bloghcontentpad">
-        <div class="row">
-          <div class="col">
-              <div class="card blogpwidth">
-                <div class="blogjpostcontainer">    
-                  <style>
-    a {
-        text-decoration: none !important;
-    }
-    p {
-        font-size:1em;
-        line-height:1.58em;
-        margin-bottom:2em;
-        color:#111 !important;
-        text-align: left;
-    }
-    h4 {
-        font-family: 'Lato', sans-serif;
-        margin-top:0.58em;
-        color:#b7aaa3 !important;
-    }
-    .docsjheadings ul li {
-        padding-top:0.75em;
-        padding-bottom:0em;
-    }
-        .docsjheadings ul {
-            list-style:none;
-            padding-top:1em;
-        }
-    code {
-        color:#bcbcbc !important;
-        margin-left:0.4em;
-        margin-right:0.4em;
-    }
-    .blogjbtnpadding {
-        margin-bottom:2.5em;
-    }
-    .bloghheader:before, .bloghheader2:before {
-        animation: none;
-    }
-</style>
-
-<nav class="breadcrumbs bootstrap hidden-sm-down">
-    <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
- 
-        
-           
-       
-        
-           
-       
-       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-          <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
-             <span property="name" class="docsjbct">Docs</span>
-         </a>
-             <meta property="position" content="1" />
-       </li>
-       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-          <span property="name">About</span>
-          <meta property="position" content="2" />
-       </li>
-       
- 
-    </ol>
- </nav>
- 
- 
- 
- <!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
- <style>
-    /* nav.breadcrumbs.bootstrap { */
-       /* from Twitter Bootstrap 4 */
-       /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
-       /* Additions: image integration */
-    /* } */
- 
-    nav.breadcrumbs.bootstrap ol {
-       margin-left: 0
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb {
-       font-size: 1rem;
-       padding: 0.75rem 1rem;
-       margin-bottom: 1rem;
-       list-style: none;
-       background-color: #f1f2ed;
-       border-radius: 0.25rem;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb::after {
-       content: "";
-       display: table;
-       clear: both;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb-item {
-       float: left;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
-       display: inline-block;
-       padding-right: 0.5rem;
-       padding-left: 0.5rem;
-       color: #818a91;
-       content: "/";
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-       text-decoration: underline;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-       text-decoration: none;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb-item-active {
-       color: #818a91;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb .icon {
-       display: inline-block;
-    }
- 
-    nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
-       height: 0.8rem;
-       width: 0.8rem;
-    }
- </style>
-
-<h1 class="docsjtitle">About</h1>
-
-<!-- og: meta tags // title-type-img-url required -->
-<meta property="og:title" content="About &ndash;&nbsp;Wysc Docs" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/media/wsc-sp-rounded.png" />
-<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
-<meta property="og:description" content="">
-
-<div class="docsjheadings">
-    
-    <style>
-#About {
-display:none;
-}
-</style>
-
-<ul>
-
-<li id="About Us"><a href="https://wysc.netlify.com/docs/about/1">About Us</a></li>
-
-<li id="APIs"><a href="https://wysc.netlify.com/docs/about/api">APIs</a></li>
-
-<li id="Brand Guidelines"><a href="https://wysc.netlify.com/docs/about/brand">Brand Guidelines</a></li>
-
-<li id="Brand Guidelines"><a href="https://wysc.netlify.com/docs/about/brand/1">Brand Guidelines</a></li>
-
-<li id="Credits"><a href="https://wysc.netlify.com/docs/about/brand/credits">Credits</a></li>
-
-<li id="Changelog"><a href="https://wysc.netlify.com/docs/about/changelog">Changelog</a></li>
-
-<li id="Contact Us"><a href="https://wysc.netlify.com/docs/about/contact">Contact Us</a></li>
-
-<li id="Credits"><a href="https://wysc.netlify.com/docs/about/credits2">Credits</a></li>
-
-<li id="About"><a href="https://wysc.netlify.com/docs/about/index">About</a></li>
-
-<li id="Staff Recruitment"><a href="https://wysc.netlify.com/docs/about/staffrecruit">Staff Recruitment</a></li>
-
-</ul>
-
-
-</div>
-
-<!--
-<div class="blogpwidth">
-    <style>
-#About {
-display:none;
-}
-</style>
-
-<ul>
-
-<li id="About Us"><a href="https://wysc.netlify.com/docs/about/1">About Us</a></li>
-
-<li id="APIs"><a href="https://wysc.netlify.com/docs/about/api">APIs</a></li>
-
-<li id="Brand Guidelines"><a href="https://wysc.netlify.com/docs/about/brand">Brand Guidelines</a></li>
-
-<li id="Brand Guidelines"><a href="https://wysc.netlify.com/docs/about/brand/1">Brand Guidelines</a></li>
-
-<li id="Credits"><a href="https://wysc.netlify.com/docs/about/brand/credits">Credits</a></li>
-
-<li id="Changelog"><a href="https://wysc.netlify.com/docs/about/changelog">Changelog</a></li>
-
-<li id="Contact Us"><a href="https://wysc.netlify.com/docs/about/contact">Contact Us</a></li>
-
-<li id="Credits"><a href="https://wysc.netlify.com/docs/about/credits2">Credits</a></li>
-
-<li id="About"><a href="https://wysc.netlify.com/docs/about/index">About</a></li>
-
-<li id="Staff Recruitment"><a href="https://wysc.netlify.com/docs/about/staffrecruit">Staff Recruitment</a></li>
-
-</ul>
-
-</div>
--->
-                </div>
-              </div>
-              <div style="padding-bottom:60px;"></div>
-          </div>
+    <div class="docsjheadimg">
+        <div>
+            <h1>Discord</h1>
         </div>
-        <div class="row">
-            <div class="col">
-                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
-                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+    </div>
+    
+    <div id="statusapi">
+    </div>
+    <div class="docsjheadsearch">
+        <div class="docsjhs1 docstextgray">
+            <em>Search coming soon!</em>
+        </div>
+        <div class="docsjhs2 noselect">
+            <nav class="bg-transparent docstextlight bccss">
+   <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+       
+          
+      
+         
+            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+               <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
+                  <span property="name">Docs</span>
+               </a>
+                  <meta property="position" content="1" />
+            </li>
+            <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+               <span property="name">About</span>
+               <meta property="position" content="2" />
+            </li>
+         
+      
+
+   </ol>
+</nav>
+
+<style>
+.bccss ol {
+   margin:0 !important;
+   padding:0 !important;
+}
+.bccss ol li {
+   display: inline-block;
+}
+.bccss a {
+   text-decoration: none;
+}
+</style>
+        </div>
+    </div>
+    <div class="docsjbcontent">
+        <div class="docsjbccoll">
+
+            <div class="p-4"></div>
+            <div class="row mx-auto justify-content-center">
+                
+                
+                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 pb-2">Content Policy</h5>
+                            <p class="card-text">Wysc&#39;s server culture is a bit different from everyone else&#39;s. Learn more about how our server regulates conduct here.</p>
+                            <ul class="list-group list-group-flush p-2">
+
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 pb-2">Social 🥂</h5>
+                            <p class="card-text"></p>
+                            <ul class="list-group list-group-flush p-2">
+
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 pb-2">Wysc Library 📚</h5>
+                            <p class="card-text">Wysc Library is the center of Wysc, where students come together to ask questions, study together, and share resources!</p>
+                            <ul class="list-group list-group-flush p-2">
+
+                                
+                                
+                                    <a href="/docs/discord/library/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Channels: Wysc Library 📚</a>
+                                
+                                    <a href="/docs/discord/library/gstudy" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Group Study</a>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 pb-2">Wysc Cafe ☕</h5>
+                            <p class="card-text"></p>
+                            <ul class="list-group list-group-flush p-2">
+
+                                
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                
+
             </div>
+            <div class="p-4"></div>
+
         </div>
     </div>
 
+    
+    <div class="text-center">
+        <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+        <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+        <div style="color:#aaa;padding-bottom:30px;">
+            <a href="https://discord.me/wysc" target="_blank" rel="noopener" style="color:#aaa;">Discord.me</a> | <a href="https://disboard.org/server/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">Disboard</a> | <a href="https://discordlisting.me/servers/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">DiscordListing</a> | <a href="https://discordservers.com/server/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">DiscordServers</a>
+        </div>
+    </div>
 
 
 <!-- js -->
@@ -323,15 +242,14 @@ display:none;
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
 <!-- pwa -->
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
-
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="Discord &ndash;&nbsp;Wysc Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="
+">
 <!-- page js -->
-<script src="/js/anchorjs-4.2.0/anchor.min.js"></script>
-<script>
-    $(function() {
-        anchors.options.visible = 'hover'; 
-        anchors.add('.post-content > h1, h2, h3, h4, h5, h6');
-    });
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
     new Crate({
         server: '319372945929666571',
@@ -346,6 +264,37 @@ display:none;
             location: [-90, 'right'],
         })
     } else {};
+</script>
+<script> // fetch api status
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    const statusapi = document.getElementById('statusapi');
+    const url = '/api/status.json';
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        let statusapi2 = data.wysc;
+        return statusapi2.map(function(status) {
+        let div = createNode('div');
+        if (status.isup == false){
+            if (status.howsevere == 'high'){
+                div.className = 'docsjheadsearch bg-danger';
+                div.innerHTML = `<div class="docsjhnotice"><b>${status.title} Issue:</b> ${status.notes} <a href="${status.readmore}" class="text-warning">Read more</a></div>`;
+            } else if (status.howsevere == 'medium'){
+                div.className = 'docsjheadsearch bg-info';
+                div.innerHTML = `<div class="docsjhnotice"><b>${status.title} Issue:</b> ${status.notes} <a href="${status.readmore}" class="text-warning">Read more</a></div>`;
+            } else {}
+        } else {}
+        append(statusapi, div);
+        })
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
 </script>
 </body>
 </html>

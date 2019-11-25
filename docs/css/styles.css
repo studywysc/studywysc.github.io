@@ -511,9 +511,50 @@ body, html {
   .docstextlight, .docstextlight a {
     color: #e6eaec;
   }
-  .docstextlight a:hover {
-    color: #ced6da;
+    .docstextlight a:hover, a.docstextlight:hover {
+      color: #ced6da;
+      text-decoration: none;
+    }
+  .docstextwysclight {
+    color: #b28171;
   }
+    a.docstextwysclight:hover {
+      color: #a76f5d;
+      text-decoration: none;
+    }
+    .docstextwysclight2, .anchorjs-link {
+      color: #bd9385;
+    }
+      a.docstextwysclight2:hover, .anchorjs-link:hover {
+        color: #c8a59a;
+        text-decoration: none;
+      }
+    .docstextwysclight3 {
+      color: #d3b7ae;
+    }
+      a.docstextwysclight3:hover {
+        color: #e9dbd6;
+        text-decoration: none;
+      }
+    .docstextwysclight4 {
+      color: #d3b7ae;
+    }
+      a.docstextwysclight4:hover {
+        color: #d3b7ae;
+        text-decoration: none;
+      }
+  .docstextwyscdark {
+    color: #82442f;
+  }
+    .docstextwyscdarkbg {
+      background-color: #743d2a !important;
+    }
+  .docstextwyscbluelight {
+    color: #0C3247;
+  }
+    .docstextwyscbluelightbg {
+      background-color: #0C3247 !important;
+    }
   .docstextgray {
     color: #9dadb5; /*https://www.color-hex.com/color/0c3247*/
   }
@@ -523,6 +564,15 @@ body, html {
   align-content: flex-start;
   flex-wrap: wrap;
 }
+  .docsjbcontent p {
+    line-height: 160%;
+  }
+  .docsjbccoll {
+    width:100%;
+  }
+    .docsjbccoll .row {
+      width:70%;
+    }
   .docsjbcsidebar, .docsjhs1 {
     width:30%;
     padding:2em;
@@ -1351,6 +1401,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
     height:1.5em;
     margin-top:0px;
+  }
+  .docsjbccoll .row {
+    width:95%;
   }
   .docsjbcsidebar, .docsjbcmain, .docsjhs1, .docsjhs2 {
     width:100%;

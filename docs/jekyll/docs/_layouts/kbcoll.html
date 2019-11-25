@@ -22,7 +22,7 @@
                 visible: 'hover',
                 icon: '#'
             };
-            anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
+            anchors.add('.docsjbccoll .row .card .card-body h5');
         });
     </script>
     <title>{{ page.title }} &ndash;&nbsp;Wysc Docs</title>
@@ -99,40 +99,34 @@
             <em>Search coming soon!</em>
         </div>
         <div class="docsjhs2 noselect">
-            {% include nav-breadcrumbs-kbdocs.html %}
+            {% include nav-breadcrumbs-kbcoll.html %}
         </div>
     </div>
     <div class="docsjbcontent">
-        <div class="docsjbcsidebar">
-            <h2 class="d-none d-md-block capitalizeall">{{ page.category | capitalize }}</h2>
-            
-            {% assign items = site.documents | where:"category",page.category %}
-            
-            <ul class="nav flex-column nav-pills p-4" aria-orientation="vertical">
-                {% for article in items %}
-                    <li class="nav-item">
-                        <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
-                    </li>
+        <div class="docsjbccoll">
+
+            <div class="p-4"></div>
+            <div class="row mx-auto justify-content-center">
+                
+                {% for item in page.cat %}
+                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 pb-2">{{ item[1] }}</h5>
+                            <p class="card-text">{{ item[2] }}</p>
+                            <ul class="list-group list-group-flush p-2">
+
+                                {% assign item2 = site.documents | where:"category",item[1] %}
+                                {% for article in item2 %}
+                                    <a href="{{ article.url | relative_url }}" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">{{ article.title }}</a>
+                                {% endfor %}
+
+                            </ul>
+                        </div>
+                    </div>
                 {% endfor %}
-            </ul>
 
-        </div>
-
-        <div class="docsjbcmain">
-            <h2 class="d-md-none pb-2">{{ page.title }}</h2> <!-- add d-md-none after testing how it looks -->
-
-            <div class="docsjlastupdated">
-                <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
-                <div class="pl-2 pr-2">
-                    <p class="docstextgray pt-2">Wysc Staff</p>
-                    <p class="docstextgray pb-2">Last updated {% if page.last_updated %}{{ page.last_updated }}{% else %}a long while ago...{% endif %}</p>
-                </div>
             </div>
-
-            <div class="docspbody">
-                {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
-                {{ content }}
-            </div>
+            <div class="p-4"></div>
 
         </div>
     </div>
