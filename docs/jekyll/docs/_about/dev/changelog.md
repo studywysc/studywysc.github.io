@@ -10,7 +10,9 @@ redirect_from:
 
 ### 0.191124
 
-- Major Wysc Docs overhaul (beta)
+- Major improvements in new Wysc Docs redesign (beta)
+- Major improvements to Progressive Web App code
+- Preparing backend for Algolia
 
 ### 0.191122
 

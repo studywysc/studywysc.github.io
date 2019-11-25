@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
     <link rel="manifest" href="/app.webmanifest">
+    <script async src="/js/pwacompat-2.0.10.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
@@ -41,7 +42,7 @@
                     <a class="nav-link" href="/index">Home</a>
                 </li>
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/blog/index.html">Blog</a>
                 </li>
                 <li class="nav-item active p-3">
                     <a class="nav-link" href="/docs">Docs<span class="sr-only">(current)</span></a>
@@ -64,7 +65,7 @@
                         </a>
                     </li>
                     <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/blog/">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="/blog/index.html">
                             <i class="material-icons">class</i><br>
                             <div>Blog</div>
                         </a>
@@ -220,23 +221,6 @@
 
 <!-- js -->
 <!-- apple -->
-<!-- removed webp fallback, no webp's -->
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="apple-touch-fullscreen" content="yes" />
-<meta name="apple-mobile-web-app-title" content="Wysc" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/ios-180x180.png" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
-<link rel="apple-touch-startup-image" href="/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
 <!-- google -->
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
 <!-- pwa -->

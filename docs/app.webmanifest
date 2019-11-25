@@ -1,11 +1,11 @@
 {
-"background_color": "#9C5D49",
-"display": "standalone",
-"orientation":"portrait",
-"theme_color": "#082B3E",
 "short_name": "Wysc",
 "name": "Wysc",
+"theme_color": "#082B3E",
+"background_color": "#9C5D49",
+"display": "standalone",
 "description": "Virtual Study Cafe&#769;",
+"orientation":"portrait",
 "lang": "en-US",
 "icons": [
   {
@@ -49,6 +49,6 @@
    "type": "image/png"
   }
 ],
-"start_url": "https://wysc.netlify.com/dash.html",
-"scope": "https://wysc.netlify.com/"
+"start_url": "/dash?source=pwa",
+"scope": "/"
 }
