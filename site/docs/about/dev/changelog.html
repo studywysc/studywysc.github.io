@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/anchorjs-4.2.0/anchor.min.js"></script>
@@ -31,63 +32,63 @@
 <body class="docsjbody">
     
     <!-- desktop topnav -->
-    <div class="d-none d-md-block noselect">
-        <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
-            <a class="navbar-brand hoverscale" href="/docs">
-                <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
-                <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
-            </a>
-            <ul class="navbar-nav navbar-expand ml-auto align-middle">
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/index">Home</a>
+<div class="d-none d-md-block noselect wnavglobal darkmode-ignore">
+    <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
+        <a class="navbar-brand hoverscale" href="/docs">
+            <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+            <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+        </a>
+        <ul class="navbar-nav navbar-expand ml-auto align-middle">
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/index">Home</a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/blog/index.html">Blog</a>
+            </li>
+            <li class="nav-item active p-3">
+                <a class="nav-link" href="/docs">Docs<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/dash">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- mobile bottomnav -->
+<div class="d-md-none noselect wnavglobal darkmode-ignore">
+    <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
+        <div class="nav-content text-center">
+            <ul class="nav nav-justified">
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/index">
+                        <i class="material-icons">home</i><br>
+                        <div>Home</div>
+                    </a>
                 </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/blog/index.html">Blog</a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/blog/index.html">
+                        <i class="material-icons">class</i><br>
+                        <div>Blog</div>
+                    </a>
                 </li>
-                <li class="nav-item active p-3">
-                    <a class="nav-link" href="/docs">Docs<span class="sr-only">(current)</span></a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinkactive" href="/docs">
+                        <i class="material-icons">vertical_split</i><br>
+                        <div>Docs</div>
+                    </a>
                 </li>
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="/dash">Dashboard</a>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/dash">
+                        <i class="material-icons">apps</i><br>
+                        <div>Apps</div>
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </div>
-    <!-- mobile bottomnav -->
-    <div class="d-md-none noselect">
-        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
-            <div class="nav-content text-center">
-                <ul class="nav nav-justified">
-                    <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/index">
-                            <i class="material-icons">home</i><br>
-                            <div>Home</div>
-                        </a>
-                    </li>
-                    <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/blog/index.html">
-                            <i class="material-icons">class</i><br>
-                            <div>Blog</div>
-                        </a>
-                    </li>
-                    <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinkactive" href="/docs">
-                            <i class="material-icons">vertical_split</i><br>
-                            <div>Docs</div>
-                        </a>
-                    </li>
-                    <li class="nav-item align-middle">
-                        <a class="nav-link pulsate-fwd wnavmblinks" href="/dash">
-                            <i class="material-icons">apps</i><br>
-                            <div>Apps</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+</div>
 
-    <div class="docsjheadimg">
+    <div class="docsjheadimg darkmode-ignore">
         <div>
             <h1>Changelog</h1>
         </div>
@@ -182,6 +183,7 @@
 <ul>
   <li>Major improvements in new Wysc Docs redesign (beta)</li>
   <li>Major improvements to Progressive Web App code</li>
+  <li>Updated fonts</li>
   <li>Preparing backend for Algolia</li>
 </ul>
 

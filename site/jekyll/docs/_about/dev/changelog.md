@@ -12,7 +12,7 @@ redirect_from:
 
 - Major improvements in new Wysc Docs redesign (beta)
 - Major improvements to Progressive Web App code
-- Updated font to Source Sans Pro (previously Lato)
+- Updated fonts
 - Preparing backend for Algolia
 
 ### 0.191122
