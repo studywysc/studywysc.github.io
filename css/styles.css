@@ -747,11 +747,14 @@ body .wnavglobal {
 .docsjheadsearch {
   height: auto;
   min-height: 80px;
-  background: #0C3247;
+  background-color: #0C3247;
   display: flex;
   align-items: center;
   flex-wrap:wrap;
 }
+  .docsjheadsearch-light {
+    background-color: transparent !important;
+  }
 
 .docsjheadings {
   text-align:left;
@@ -813,7 +816,7 @@ body .wnavglobal {
 }
 .docspbody {
   /*padding-top:250px;*/
-  color: #95ffff;
+  /*color: #95ffff;*/
   padding-bottom:200px;
   width: calc(100% - 165px);
   max-width: 900px;
@@ -1410,6 +1413,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .docsjheadings h1:before, .docsjheadings h2:before, .docsjheadings h3:before, .docsjheadings h4:before, .docsjheadings h5:before, .docsjheadings h6:before {
     height:1.5em;
     margin-top:0px;
+  }
+  .docsjheadsearch {
+    background-color: #0C3247;
   }
   .docsjbccoll .row {
     width:95%;
