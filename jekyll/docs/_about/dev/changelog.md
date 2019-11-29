@@ -8,6 +8,10 @@ redirect_from:
   - about/changelog
 ---
 
+### 0.191129
+
+- Preparing backend for Github collaborative edits
+
 ### 0.191124
 
 - Major improvements in new Wysc Docs redesign (beta)
