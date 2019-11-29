@@ -88,7 +88,7 @@
     </nav>
 </div>
 
-    <div class="docsjheadimg darkmode-ignore">
+    <div class="docsjheadimg">
         <div>
             <h1>Group Study</h1>
         </div>
@@ -96,12 +96,12 @@
     
     <div id="statusapi">
     </div>
-    <div class="docsjheadsearch">
+    <div id="wthemeheadsearch" class="docsjheadsearch">
         <div class="docsjhs1 docstextgray">
             <em>Search coming soon!</em>
         </div>
         <div class="docsjhs2 noselect">
-            <nav class="bg-transparent docstextlight bccss">
+            <nav id="wthemebccss" class="docstextlight bccss">
    <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
        
@@ -135,6 +135,16 @@
 </nav>
 
 <style>
+.bccss {
+   /*background-color: #0C3247;*/
+   max-width: 900px;
+}
+.bccss-light {
+   margin: -1em;
+   padding: 1em;
+   border-radius: 0.25em;
+   width: calc(100% - 165px);
+}
 .bccss ol {
    margin:0 !important;
    padding:0 !important;
@@ -144,6 +154,14 @@
 }
 .bccss a {
    text-decoration: none;
+}
+@media (max-width: 768px) { /* up to d-md */
+   .bccss-light {
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+   }
 }
 </style>
         </div>
