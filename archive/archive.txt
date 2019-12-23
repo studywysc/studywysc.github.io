@@ -1,3 +1,18 @@
+<!-- 0.191223 -->
+
+{% for item in page.headerlinks %}
+    {% if item[0] == page.headername %}
+        <li class="nav-item active p-3">
+            <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">{{ item[0] }}<span class="sr-only">(current)</span></a>
+        </li>
+    {% else %}
+        <li class="nav-item p-3">
+            <a class="nav-link" href="{{ item[1] | prepend: site.baseurl }}">{{ item[0] }}</a>
+        </li>
+    {% endif %}
+{% endfor %}
+
+
 <!-- 0.191016 -->
 
 
