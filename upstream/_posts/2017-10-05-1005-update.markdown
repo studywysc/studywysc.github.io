@@ -1,0 +1,42 @@
+---
+layout: wyscblog-post
+headername: Blog-sub
+title:  "WSC update"
+date:   2017-10-05 23:14:00 -0700
+---
+**@everyone  \| UPDATE 2017.10.05**   
+\-\-\-
+
+```
+# Added
+- #music in chilling category
+
+# Updated
+- removed category tags from studying channels
+- editted names of studying channels
+- seperated #sciences and #mathematics  
+- merged civics and econ with #social-sciences 
+- moved #infrastructure (old: arch-transit) to work category
+```
+
+Thank you for your continued support.
+
+<br />
+
+---
+
+*updated 2017-10-05*
+
+In the above update, there is a spelling mistake.   
+```
+editted ×   
+edited  ○
+```
+
+We apologize for the inconvenience.
+
+<br />
+
+---
+
+[ WSC Staff ]

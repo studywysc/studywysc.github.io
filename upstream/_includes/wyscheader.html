@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<meta name="keywords" content="school discord, study discord, education discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+
+{% if page.supercanonical %}
+    <link rel="canonical" href="{{ page.supercanonical }}" />
+{% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url | relative_url }}" />
+{% endif %}
+
+{% if page.superdescription %}
+    <meta name="description" content="{{ page.superdescription }}">
+{% else %}
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+{% endif %}
+
+{% if page.supertheme %}
+    <meta name="theme-color" content="{{ page.supertheme }}" />
+{% else %}
+    <meta name="theme-color" content="#9C5D49" />
+{% endif %}
+
+{% if page.supertitle %}
+    <title>{{ page.supertitle }}</title>
+    <meta property="og:title" content="{{ page.supertitle }}" />
+{% elsif page.headername %}
+    <title>Wysc {{ page.headername }} – Wysc</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+{% else %}
+    <title>{{ page.title }} – Wysc</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+{% endif %}
+
+<meta name="robots" content="index, follow" />
+<link rel="manifest" href="/app.webmanifest">
+<script async src="/js/pwacompat-2.0.10.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/media/wsc-square-sm.png">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+<script async src="/js/jquery-3.4.1.min.js"></script>
+<meta name="google-site-verification" content="O4q2l-bGuTif0jDA-x810IS7gYxau6pncI-XPQdJHT8" />

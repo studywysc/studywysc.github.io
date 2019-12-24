@@ -36,7 +36,7 @@ plugins:
   - jekyll-toc
 feed:
   path: /blog/feed.xml
-permalink: /d/:title.html
+permalink: /blog/:year/:title:output_ext
 
 algolia:
   index_name: Wysc

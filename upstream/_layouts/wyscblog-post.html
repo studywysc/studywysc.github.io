@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ page.title }} &ndash;&nbsp;Wysc Blog</title>
+    {% include wyscheader.html %}
+
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+        p {
+            font-size:1.2em;
+            line-height:1.58em;
+            margin-bottom:2em;
+            color:#111 !important;
+            text-align: left;
+        }
+        h4 {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Source Sans Pro","Helvetica Neue",Roboto,sans-serif,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+            margin-top:0.58em;
+            color:#b7aaa3 !important;
+        }
+        code {
+            color:#bcbcbc !important;
+        }
+        .blogjtitle {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Source Sans Pro","Helvetica Neue",Roboto,sans-serif,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+            font-weight:600;
+            color:#333;
+        }
+        .blogjbtnpadding {
+            margin-bottom:2.5em;
+        }
+        .bloghheader:before, .bloghheader2:before {
+            animation: none;
+        }
+        .blogjpbody {
+            color: #525252;
+            text-align: left;
+        }
+        .blogjpbody ul {
+            margin-bottom:2.1em;
+        }
+        .blogjpbody ul li {
+            font-size:1.1em;
+            line-height:1.58em;
+            text-align: left;
+        }
+        div.highlight pre {
+            background-color: #383838;
+            padding: 2em;
+            border-radius:15px;
+            margin-bottom: 2em;
+        }
+    </style>
+
+</head>
+<body class="blogbody">
+
+    {% include wyscnav.html %}
+
+    <div class="bloghheader position-fixed width100" id="webpheader"></div>
+    <div class="bloghheader2 position-fixed width100"></div>
+    <div class="container-fluid sectiontextcolor bloghcontentpad">
+        <div class="row">
+          <div class="col">
+              <div class="card blogpwidth">
+                <div class="blogjpostcontainer">    
+                    
+                    <a href="/blog">
+                        <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding blogfadeb10">&#9666; Back</button>
+                    </a>
+                    <h1 class="blogjtitle blogfadeb11" id="blogptitle">{{ page.title }}</h1>
+                    <h4 class="blogfadeb11" id="blogpdate">{{ page.date | date_to_string }}</h4>
+                    <div style="padding-top:3em;"></div>
+
+                    <div class="blogjpbody">
+                        <div class="blogjpbcontent blogfadeb12">
+                            {{ content }}
+                        </div>
+                    
+                        <br><br>
+                        <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style blogfadeb13">
+                            <a class="a2a_button_copy_link"></a>
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_reddit"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_line"></a>
+                            <a class="a2a_button_email"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <!-- AddToAny END -->
+                        <br><br>
+                    
+                        <div class="blogfadeb13" style="text-align:center;">
+                            <button type="button" class="btn btn-lg btn-outline-info" onclick="crate.toggle(true)">Comments ></button>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+              <div style="padding-bottom:60px;"></div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+            </div>
+        </div>
+    </div>
+
+{% include wyscfooter.html %}
+
+</body>
+</html>

@@ -7,6 +7,9 @@
                 <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow homefadeb00" alt="logo">
                 <span class="d-inline-block align-middle homefadeb01 fontgochihand wlogo">Wysc<span class="fade-in-fwd-a1">.</span></span>
             </a>
+            <div class="navbar-nav navbar-expand mr-auto align-bottom homefadeb02">
+                <span class="nav-item d-inline-block align-bottom fade-in-fwd wlogosub">Virtual Study Cafe</span>
+            </div>
         {% else %}
             <a class="navbar-brand hoverscale" href="/index">
                 <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
@@ -14,9 +17,6 @@
             </a>
         {% endif %}
 
-        <div class="navbar-nav navbar-expand mr-auto align-bottom homefadeb02">
-            <span class="nav-item d-inline-block align-bottom fade-in-fwd wlogosub">Virtual Study Cafe</span>
-        </div>
         <ul class="navbar-nav navbar-expand ml-auto homefade00 align-middle">
 
             {% if page.headername == 'Home' %}
@@ -25,7 +25,7 @@
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.baseurl }}/index">Home</a>
+                    <a class="nav-link" href="{{ site.url }}/index">Home</a>
                 </li>
             {% endif %}
 
@@ -33,33 +33,37 @@
                 <li class="nav-item active p-3">
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
                 </li>
+            {% elsif page.headername == 'Blog-sub' %}
+                <li class="nav-item active p-3">
+                    <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
+                </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+                    <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
                 </li>
             {% endif %}
             
             {% if page.headername == 'Docs' %}
                 <li class="nav-item active p-3">
-                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
                 </li>
             {% elsif page.headername == 'Docs-sub' %}
                 <li class="nav-item active p-3">
-                    <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+                    <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+                    <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
                 </li>
             {% endif %}
             
             {% if page.headername == 'Dashboard' %}
                 <li class="nav-item active p-3">
-                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.baseurl }}/dash">Dashboard</a>
+                    <a class="nav-link" href="{{ site.url }}/dash">Dashboard</a>
                 </li>
             {% endif %}
             
@@ -72,25 +76,25 @@
         <div class="nav-content text-center">
             <ul class="nav nav-justified">
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="index"{% endif %}>
+                    <a class="nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/index"{% endif %}>
                         <i class="material-icons">home</i><br>
                         <div>Home</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Blog' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="blog"{% endif %}>
+                    <a class="nav-link pulsate-fwd {% if page.headername == 'Blog' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/blog"{% endif %}>
                         <i class="material-icons">class</i><br>
                         <div>Blog</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Docs' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="docs"{% endif %}>
+                    <a class="nav-link pulsate-fwd {% if page.headername == 'Docs' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/docs"{% endif %}>
                         <i class="material-icons">vertical_split</i><br>
                         <div>Docs</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Dashboard' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="dash"{% endif %}>
+                    <a class="nav-link pulsate-fwd {% if page.headername == 'Dashboard' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/dash"{% endif %}>
                         <i class="material-icons">apps</i><br>
                         <div>Apps</div>
                     </a>

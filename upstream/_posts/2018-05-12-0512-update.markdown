@@ -1,0 +1,35 @@
+---
+layout: wyscblog-post
+headername: Blog-sub
+title:  "WSC update"
+date:   2018-05-12 14:08:00 -0700
+---
+Changed WSC's logo to Blurple! (temporary change) Official blurb below:
+
+We're taking part in a community event called Project Blurple! To celebrate Discord's 3rd anniversary, our server and many others are making our logos blurple! The aim of the event is to get as many servers and users as possible to switch to a blurple themed logo! You can join in too and get you and your servers involved by heading over to [https://discord.gg/qEmKyCf](https://discord.gg/qEmKyCf)!
+
+<div style="margin-bottom:2em;">
+    <h5>You've been invited to join a server</h5>
+    <div>
+        <img src="https://cdn.discordapp.com/icons/412754940885467146/5766a662d858b24ee743385b672306af.png?size=256" width="64px" alt="Project Blurple">
+        <div class="flex-1xMQg5 flex-1O1GKY vertical-V37hAW flex-1O1GKY directionColumn-35P_nr justifyCenter-3D2jYp alignStretch-DpGPf3 noWrap-3jynv6 guildInfo-1STtYi"
+            style="flex: 1 1 auto;">
+            <div class="guildName-2hvnt_ marginBottom4-2qk4Hy medium-zmzTW- weightSemiBold-1WYsXZ">Project Blurple</div>
+            <div class="guildDetail-1nRKNE small-29zrCQ weightSemiBold-1WYsXZ">
+                <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6"
+                    style="flex: 0 1 auto;"><i class="statusOnline-8PnF5L status-2L8Zc7"></i><span
+                        class="onlineCount-w6_WmG">4,798 Online</span> <i
+                        class="statusOffline-37RKt7 status-2L8Zc7"></i><span>29,407 Members</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+![Project Blurple](https://media.discordapp.net/attachments/358786581785608202/444969860502650890/unknown.png)
+
+![Project Blurple giveaway](https://media.discordapp.net/attachments/358786581785608202/445135538593333258/unknown.png)
+
+(giveaways are in the Project Blurple server, invite link above)
+HAPPY BDAYY DISCORDD!! 🍰🎂😊
+
+[ WSC Staff ]
