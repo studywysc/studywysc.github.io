@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <meta charset="utf-8">
-  <title>Redirecting&hellip;</title>
-  <link rel="canonical" href="/index">
-  <script>location="/index"</script>
-  <meta http-equiv="refresh" content="0; url=/index">
-  <meta name="robots" content="noindex">
-  <h1>Redirecting&hellip;</h1>
-  <a href="/index">Click here if you are not redirected.</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Wysc</title>
+</head>
+<body>
+    <script>
+        var urlend = window.location.href.match(/wysc\.js\.org\/(.*?)(&|$)/)[1];
+        window.location.replace("https://wysc.netlify.com/"+urlend)
+    </script>
+</body>
 </html>
