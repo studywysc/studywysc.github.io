@@ -13,7 +13,9 @@
 <meta property="og:description" content="
     {% if page.headername == 'Blog' %}
         {{ post.content | markdownify | strip_html | truncatewords: 22 }}
-    {% elsif page.headername == 'Docs-sub' %}
+    {% elsif page.layout == 'wyscblog-post' %}
+        {{ post.content | markdownify | strip_html | truncatewords: 22 }}
+    {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' %}
         {% if page.summary %}
             {{ page.summary }}
         {% else %}

@@ -33,7 +33,7 @@
                 <li class="nav-item active p-3">
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
                 </li>
-            {% elsif page.headername == 'Blog-sub' %}
+            {% elsif page.layout == 'wyscblog-post' %}
                 <li class="nav-item active p-3">
                     <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
                 </li>
@@ -47,7 +47,7 @@
                 <li class="nav-item active p-3">
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
                 </li>
-            {% elsif page.headername == 'Docs-sub' %}
+            {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' %}
                 <li class="nav-item active p-3">
                     <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
                 </li>

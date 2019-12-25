@@ -22,7 +22,7 @@ title: Wysc
 email: wyscofficial@icloud.com
 description: For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience as the premier edu-social cafe based Discord server.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wysc.js.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wysc.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wyscofficial
 github_username:  gitnisyl
 
@@ -44,10 +44,16 @@ algolia:
 
 # Collections
 collections:
+  about:
+    output: true
+    permalink: /docs/:collection/:path
   api:
     output: true
   css:
     output: true
+  discord:
+    output: true
+    permalink: /docs/:collection/:path
   joinwsc:
     output: true
   js:
@@ -55,7 +61,7 @@ collections:
   media:
     output: true
 
-destination: ../docs
+destination: ../site
 
 breadcrumbs:
   root:

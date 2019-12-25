@@ -14,13 +14,13 @@
       {% endif %} 
       {% if forloop.last %}
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}">
+         <a property="item" typeof="WebPage" href="{{ site.url }}/docs">
             <span property="name">Docs</span>
          </a>
             <meta property="position" content="1" />
       </li>
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="{{ site.url }}{{ site.baseurl }}/{{ page.collection }}">
+         <a property="item" typeof="WebPage" href="{{ site.url }}/docs/{{ page.collection }}">
             <span property="name">{{ page.collection | capitalize }}</span>
          </a>
             <meta property="position" content="2" />
