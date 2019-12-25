@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <link rel="canonical" href="https://wysc.js.org/dash" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#9C5D49" />
+    <link rel="manifest" href="app.webmanifest">
+    <script async src="/js/pwacompat-2.0.10.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="media/wsc-square-sm.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <title>Wysc Dashboard – Wysc</title>
+    <meta property="og:title" content="Wysc Dashboard | Wysc" />
+</head>
+<body class="startbody">
+
+    <!-- desktop topnav -->
+    <div class="d-none d-md-block noselect wnavglobal">
+        <nav class="navbar fixed-top navbar-dark bg-transparent">
+            <a class="navbar-brand hoverscale" href="index.html">
+                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+                <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+            </a>
+            <ul class="navbar-nav navbar-expand ml-auto align-middle">
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="index">Home</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="docs">Docs</a>
+                </li>
+                <li class="nav-item active p-3">
+                    <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Dashboard<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- mobile bottomnav -->
+    <div class="d-md-none noselect wnavglobal">
+        <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
+            <div class="nav-content text-center">
+                <ul class="nav nav-justified">
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="index">
+                            <i class="material-icons">home</i><br>
+                            <div>Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="blog/">
+                            <i class="material-icons">class</i><br>
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinks" href="docs">
+                            <i class="material-icons">vertical_split</i><br>
+                            <div>Docs</div>
+                        </a>
+                    </li>
+                    <li class="nav-item align-middle">
+                        <a class="nav-link pulsate-fwd wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                                <i class="material-icons">apps</i><br>
+                            <div>Apps</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="parallaxbg sectiontextcolor startheader noselect">
+            <div class="text-center text-light startappscreen">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-7 d-none d-md-block startm0p0 startdiscordwindow">
+                                <div class="startfadeb02">
+                                    <div class="text-left p-4 position-fixed">
+                                        <ul class="list-class list-class-flush" id="weatherapi"></ul>
+                                    </div>
+                                </div>
+                                <div class="startfadeb02 startdiscordclick">
+                                    <div class="card bg-transparent text-white img-hover-zoom img-hover-zoom--brightness rounded-lg shadow-lg m-4">
+                                        <img class="startopenwd" src="media/wysc_dwpreview.png" alt="discord">
+                                        <div class="card-img-overlay" onclick="discordshowtrigger()">
+                                            <div class="startfadeb02" style="margin-top:15%;">
+                                                <img src="media/Discord-Logo-White.svg" class="svgee" width="48px" alt="discord logo">
+                                                <p class="card-text">Open Wysc Discord</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="startdiscordtrigger" class="startdiscordhidden">
+                                    <div class="startdiscordchat position-relative">
+                                        <div class="position-absolute startdiscordchatframe">
+                                            <iframe class="rounded-top startdiscordchatframe" src="https://disweb.dashflo.net/channels/319372945929666571/359293120178946049" scrolling="no" title="discord embed">Your browser has iframe disabled. <a href="index.html">Go back to our homepage</a> to browse our Discord!</iframe>
+                                            <div class="position-absolute startdiscordco">
+                                                <button type="button" class="close" aria-label="Close" onclick="discordhidetrigger()">
+                                                    <div aria-hidden="true" class="text-light startdiscordcop">&times;</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-md-1 order-md-last startappslist startm0p0">
+                                <div class="nav nav-pills startappslist2">
+                                    <a href="#apphome" class="nav-link startaplink active startapppillshome" data-toggle="pill">
+                                        <img src="media/speqi/speqi-square-logo.png" alt="home" class="startapppills shadow-lg border-light rounded-circle" style="visibility:hidden;">
+                                    </a>
+                                    <a href="#appcuckoo" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/logos/appcuckoo.png" alt="Cuckoo" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <a href="#appdesmos" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/logos/appdesmos.jpg" alt="Desmos" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <a href="#appmathway" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/logos/appmathway.png" alt="Mathway" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <a href="#appwevents" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/speqi/speqi-square-logo.png" alt="Wysc Events" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a>
+                                    <!-- <a href="#appwmusic" class="nav-link startaplink" data-toggle="pill">
+                                        <img src="media/speqi/speqi-square-logo.png" alt="Wysc Music/Speqi" class="startapppills shadow-lg border-light rounded-circle">
+                                    </a> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md text-center startm0p0">
+                                <div id="startappframespacing">
+                                    <div class="tab-content startm0p0">
+                                        <div class="tab-pane active" id="apphome">
+                                            <div class="startappframe startappdiv">
+                                                <div class="d-md-none" style="margin-top:20px;"></div>
+                                                <div class="alert alert-success alert-dismissible startfadeb00 fade show text-center p-4 shadow-sm border-0 mx-auto" role="alert" style="width:90%;">
+                                                    <h4>Hello, Welcome to Wysc!</h4>
+                                                    <text>Thanks for testing out Wysc's new Dashboard! The app is still in early beta right now, but we hope you enjoy!</text>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="alert alert-info alert-dismissible startfadeb01 fade show text-center p-4 shadow-sm border-0 mx-auto" role="alert" style="width:90%;">
+                                                    <h4>Third-Party Mini-Apps</h4>
+                                                    <text>Wysc was not endorsed by any third-party services to provide mini-apps for our service. We use only public access points in our mini-app creation process, and <a href="docs/about/credits">list all third-party services we use</a> to make Wysc possible. Reach out to us <a href="docs/about/contact#official-inquiries">at our Contact page</a> for developer inquiries.</text>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="appcuckoo">
+                                            <iframe class="startappframe rounded-top" id="startappframeround" src="https://cuckoo.team/wysc" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="appdesmos">
+                                            <iframe class="startappframe rounded-top" id="startappframeround" src="https://www.desmos.com/calculator/" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="appmathway">
+                                            <iframe class="startappframe rounded-top" id="startappframeround" src="https://www.mathway.com/ProblemWidget.aspx?subject=Precalculus" frameborder="0"></iframe>
+                                        </div>
+                                        <div class="tab-pane" id="appwevents">
+                                            <div class="position-relative">
+                                                <div class="position-absolute width100">
+                                                    <iframe class="startappframe rounded-top" id="startappframeround" src="https://wyscevents.wordpress.com/blog-feed/" frameborder="0" sandbox></iframe>
+                                                </div>
+                                                <div class="position-absolute width100">
+                                                    <div class="rounded-top" id="startappframeround" style="width:100%;min-height:50px;background:#fff;">
+                                                        <h3 class="pt-3 pb-1" style="color:#4a4a4a;">Wysc Events</h3>
+                                                        <button type="button" class="btn btn-info mb-2" onclick="window.history.back();">&lt; Back</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="tab-pane" id="appwmusic">
+                                            <iframe class="startappframe rounded-top" id="startappframeround" src="https://disweb.dashflo.net/channels/319372945929666571/466088384377520148" frameborder="0"></iframe>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="d-md-none">
+                                    <div>
+                                        <iframe class="rounded-bottom startappsmdisc" src="https://titanembeds.com/embed/319372945929666571?defaultchannel=319372945929666571&fixedsidenav=true&scrollbartheme=inset-dark&lockscrollbar=true&theme=FireWyvern&userscalable=false" style="border:none;width:100%;height:calc(100vh - 75px);overflow:hidden;" scrolling="no" title="discord embed">Your browser has iframe disabled. <a href="index.html">Go back to our homepage</a> to browse our Discord!</iframe>
+                                    </div>
+                                </div> -->
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+        
+        <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+        <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+    </div>
+
+    
+
+<!-- js -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper-1.14.7.min.js" defer></script>
+<script src="js/bootstrap-4.3.1.min.js" defer></script>
+<script src="js/cssrelpreload.js" async></script>
+<link type="text/javascript" href="js/script.js">
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:type" content="website" />
+<meta property="og:image" content="media/wsc-sp-rounded.png" />
+<meta property="og:url" content="https://wysc.js.org" />
+<meta property="og:site_name" content="Study Discord Server" />
+<meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+<!-- no webp -->
+<!-- google -->
+<meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
+<!-- pwa -->
+<script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
+
+<!-- page js -->
+<script>
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    $.get('https://ipapi.co/latlong/', function(response){
+        var latlong = response.split(',');
+        console.log(latlong);
+        const ul = document.getElementById('weatherapi');
+        const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latlong[0] + '&lon=' + latlong[1] + '&appid=05ae95ab25295f165d7e0c720bc161f3';
+        fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) {
+            let corew = data.weather;
+            return corew.map(function(temp) {
+            let corem = data.main;
+            let li = createNode('li'),
+                h3 = createNode('h3'),
+                p = createNode('p');
+                pc = createNode('p');
+            pc.innerHTML = data.name;
+            h3.innerHTML = `${Math.round(corem.temp - 273.15)}&#176;C`;
+            p.innerHTML = temp.main;
+            append(li, pc);
+            append(li, h3);
+            append(li, p);
+            append(ul, li);
+            })
+        })
+        .catch(function(error) {
+            console.log(error);
+        });   
+    });
+</script>
+<link type="text/css" href="js\OverlayScrollbars-master\css\OverlayScrollbars.css" rel="stylesheet"/>
+<script type="text/javascript" src="js\OverlayScrollbars-master\js\OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        className       : "os-theme-dark",
+        resize          : "both",
+        sizeAutoCapable : true,
+        paddingAbsolute : true,
+        scrollbars : {
+            clickScrolling : true
+        }
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll('body'), { });
+});
+</script>
+<script>
+    function discordshowtrigger() {
+        var element = document.getElementById("startdiscordtrigger");
+        element.classList.toggle("startdiscordhidden");
+        element.classList.toggle("startdiscordshow");
+        element.animate([
+            // keyframes
+            { opacity: 0 }, 
+            { opacity: 1 },
+            ], { 
+            // timing options
+            duration: 400,
+        });
+    }
+    function discordhidetrigger() {
+        var element = document.getElementById("startdiscordtrigger");
+        element.classList.toggle("startdiscordshow");
+        element.classList.toggle("startdiscordhidden");
+        element.animate([
+            // keyframes
+            { opacity: 1 }, 
+            { opacity: 0 },
+            ], { 
+            // timing options
+            duration: 400,
+        });
+    }
+</script>
+<!-- apple -->
+</body>
+</html>

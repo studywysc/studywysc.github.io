@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://wysc.js.org/</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/dash</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/joinwsc/</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/blog/index.html</loc>
+  <lastmod>2019-08-07T09:01:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/index.html</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/blog/2019/wysc-events.html</loc>
+  <lastmod>2019-08-07T09:01:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/blog/2019/wysc-blog-release.html</loc>
+  <lastmod>2019-08-07T09:01:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/blog/2019/misbehaving-users.html</loc>
+  <lastmod>2019-08-07T09:01:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/about/</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/discord/</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/bots/</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/about/1</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/about/credits</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/discord/server-ranks</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/about/contact</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/discord/culture</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/discord/channels</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.js.org/docs/discord/server-security</loc>
+  <lastmod>2019-11-09T09:23:51+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

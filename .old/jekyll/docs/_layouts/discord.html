@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<style>
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1.2em;
+        line-height:1.58em;
+        margin-bottom:2em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    .docsjtitle {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight:600;
+        color:#333;
+        text-align:left;
+        padding-bottom:0.5em;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+    .bloghheader:before, .bloghheader2:before {
+        animation: none;
+    }
+</style>
+<a href="/blog/">
+    <button type="button" class="btn btn-lg btn-outline-dark blogjbtnpadding">&#9666; Back</button>
+</a>
+<h1 class="docsjtitle">{{ page.title }}</h1>
+
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="{{ page.title }} &ndash;&nbsp;Wysc Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="{{ page.summary }}">
+
+<div>
+    {{ content }}
+
+    <br><br>
+    <script src="/js/anchorjs-4.2.0/anchor.js"></script>
+</div>
+
+<!--
+<div class="blogpwidth">
+    {{ content }}
+</div>
+-->

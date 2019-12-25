@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include wyscheader.html %}
+</head>
+<body class="startbody">
+
+    {% include wyscnav.html %}
+
+    <div class="parallaxbg sectiontextcolor startheader noselect">
+    <div class="text-center text-light startappscreen">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7 d-none d-md-block startm0p0 startdiscordwindow">
+                        <div class="startfadeb02">
+                            <div class="text-left p-4 position-fixed">
+                                <ul class="list-class list-class-flush" id="weatherapi"></ul>
+                            </div>
+                        </div>
+                        <div class="startfadeb02 startdiscordclick">
+                            <div class="card bg-transparent text-white img-hover-zoom img-hover-zoom--brightness rounded-lg shadow-lg m-4">
+                                <img class="startopenwd" src="media/wysc_dwpreview.png" alt="discord">
+                                <div class="card-img-overlay" onclick="discordshowtrigger()">
+                                    <div class="startfadeb02" style="margin-top:15%;">
+                                        <img src="media/Discord-Logo-White.svg" class="svgee" width="48px" alt="discord logo">
+                                        <p class="card-text">Open Wysc Discord</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="startdiscordtrigger" class="startdiscordhidden">
+                            <div class="startdiscordchat position-relative">
+                                <div class="position-absolute startdiscordchatframe">
+                                    <iframe class="rounded-top startdiscordchatframe" src="https://disweb.dashflo.net/channels/319372945929666571/359293120178946049" scrolling="no" title="discord embed">Your browser has iframe disabled. <a href="index.html">Go back to our homepage</a> to browse our Discord!</iframe>
+                                    <div class="position-absolute startdiscordco">
+                                        <button type="button" class="close" aria-label="Close" onclick="discordhidetrigger()">
+                                            <div aria-hidden="true" class="text-light startdiscordcop">&times;</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-1 order-md-last startappslist startm0p0">
+                        <div class="nav nav-pills startappslist2">
+                            <a href="#apphome" class="nav-link startaplink active startapppillshome" data-toggle="pill">
+                                <img src="media/speqi/speqi-square-logo.png" alt="home" class="startapppills shadow-lg border-light rounded-circle" style="visibility:hidden;">
+                            </a>
+                            <a href="#appcuckoo" class="nav-link startaplink" data-toggle="pill">
+                                <img src="media/logos/appcuckoo.png" alt="Cuckoo" class="startapppills shadow-lg border-light rounded-circle">
+                            </a>
+                            <a href="#appdesmos" class="nav-link startaplink" data-toggle="pill">
+                                <img src="media/logos/appdesmos.jpg" alt="Desmos" class="startapppills shadow-lg border-light rounded-circle">
+                            </a>
+                            <a href="#appmathway" class="nav-link startaplink" data-toggle="pill">
+                                <img src="media/logos/appmathway.png" alt="Mathway" class="startapppills shadow-lg border-light rounded-circle">
+                            </a>
+                            <a href="#appwevents" class="nav-link startaplink" data-toggle="pill">
+                                <img src="media/speqi/speqi-square-logo.png" alt="Wysc Events" class="startapppills shadow-lg border-light rounded-circle">
+                            </a>
+                            <!-- <a href="#appwmusic" class="nav-link startaplink" data-toggle="pill">
+                                <img src="media/speqi/speqi-square-logo.png" alt="Wysc Music/Speqi" class="startapppills shadow-lg border-light rounded-circle">
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md text-center startm0p0">
+                        <div id="startappframespacing">
+                            <div class="tab-content startm0p0">
+                                <div class="tab-pane active" id="apphome">
+                                    <div class="startappframe startappdiv">
+                                        <div class="d-md-none" style="margin-top:20px;"></div>
+                                        {% for item in page.notices %}
+                                            <div class="alert {{ item[0] }} alert-dismissible startfadeb00 fade show text-center p-4 shadow-sm border-0 mx-auto" role="alert" style="width:90%;">
+                                                <h4>{{ item[1] }}</h4>
+                                                <text>{{ item[2] }}</text>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="appcuckoo">
+                                    <iframe class="startappframe rounded-top" id="startappframeround" src="https://cuckoo.team/wysc" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="tab-pane" id="appdesmos">
+                                    <iframe class="startappframe rounded-top" id="startappframeround" src="https://www.desmos.com/calculator/" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="tab-pane" id="appmathway">
+                                    <iframe class="startappframe rounded-top" id="startappframeround" src="https://www.mathway.com/ProblemWidget.aspx?subject=Precalculus" frameborder="0"></iframe>
+                                </div>
+                                <div class="tab-pane" id="appwevents">
+                                    <div class="position-relative">
+                                        <div class="position-absolute width100">
+                                            <iframe class="startappframe rounded-top" id="startappframeround" src="https://wyscevents.wordpress.com/blog-feed/" frameborder="0" sandbox></iframe>
+                                        </div>
+                                        <div class="position-absolute width100">
+                                            <div class="rounded-top" id="startappframeround" style="width:100%;min-height:50px;background:#fff;">
+                                                <h3 class="pt-3 pb-1" style="color:#4a4a4a;">Wysc Events</h3>
+                                                <button type="button" class="btn btn-info mb-2" onclick="window.history.back();">&lt; Back</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="tab-pane" id="appwmusic">
+                                    <iframe class="startappframe rounded-top" id="startappframeround" src="https://disweb.dashflo.net/channels/319372945929666571/466088384377520148" frameborder="0"></iframe>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        <!--
+                        <div class="d-md-none">
+                            <div>
+                                <iframe class="rounded-bottom startappsmdisc" src="https://titanembeds.com/embed/319372945929666571?defaultchannel=319372945929666571&fixedsidenav=true&scrollbartheme=inset-dark&lockscrollbar=true&theme=FireWyvern&userscalable=false" style="border:none;width:100%;height:calc(100vh - 75px);overflow:hidden;" scrolling="no" title="discord embed">Your browser has iframe disabled. <a href="index.html">Go back to our homepage</a> to browse our Discord!</iframe>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+        <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+    </div>
+
+{% include wyscfooter.html %}
+
+<!-- page js -->
+<script>
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    $.get('https://ipapi.co/latlong/', function(response){
+        var latlong = response.split(',');
+        console.log(latlong);
+        const ul = document.getElementById('weatherapi');
+        const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latlong[0] + '&lon=' + latlong[1] + '&appid=05ae95ab25295f165d7e0c720bc161f3';
+        fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) {
+            let corew = data.weather;
+            return corew.map(function(temp) {
+            let corem = data.main;
+            let li = createNode('li'),
+                h3 = createNode('h3'),
+                p = createNode('p');
+                pc = createNode('p');
+            pc.innerHTML = data.name;
+            h3.innerHTML = `${Math.round(corem.temp - 273.15)}&#176;C`;
+            p.innerHTML = temp.main;
+            append(li, pc);
+            append(li, h3);
+            append(li, p);
+            append(ul, li);
+            })
+        })
+        .catch(function(error) {
+            console.log(error);
+        });   
+    });
+</script>
+<!-- <link type="text/css" href="js\OverlayScrollbars-master\css\OverlayScrollbars.css" rel="stylesheet"/>
+<script type="text/javascript" src="js\OverlayScrollbars-master\js\OverlayScrollbars.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        className       : "os-theme-dark",
+        resize          : "both",
+        sizeAutoCapable : true,
+        paddingAbsolute : true,
+        scrollbars : {
+            clickScrolling : true
+        }
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll('body'), { });
+});
+</script> -->
+<script>
+    function discordshowtrigger() {
+        var element = document.getElementById("startdiscordtrigger");
+        element.classList.toggle("startdiscordhidden");
+        element.classList.toggle("startdiscordshow");
+        element.animate([
+            // keyframes
+            { opacity: 0 }, 
+            { opacity: 1 },
+            ], { 
+            // timing options
+            duration: 400,
+        });
+    }
+    function discordhidetrigger() {
+        var element = document.getElementById("startdiscordtrigger");
+        element.classList.toggle("startdiscordshow");
+        element.classList.toggle("startdiscordhidden");
+        element.animate([
+            // keyframes
+            { opacity: 1 }, 
+            { opacity: 0 },
+            ], { 
+            // timing options
+            duration: 400,
+        });
+    }
+</script>
+</body>
+</html>

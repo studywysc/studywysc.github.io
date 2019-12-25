@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<style>
+    a {
+        text-decoration: none !important;
+    }
+    p {
+        font-size:1em;
+        line-height:1.58em;
+        margin-bottom:2em;
+        color:#111 !important;
+        text-align: left;
+    }
+    h4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top:0.58em;
+        color:#b7aaa3 !important;
+    }
+    .docsjheadings ul li {
+        padding-top:0.75em;
+        padding-bottom:0em;
+    }
+        .docsjheadings ul {
+            list-style:none;
+            padding-top:1em;
+        }
+    code {
+        color:#bcbcbc !important;
+        margin-left:0.4em;
+        margin-right:0.4em;
+    }
+    .blogjbtnpadding {
+        margin-bottom:2.5em;
+    }
+    .bloghheader:before, .bloghheader2:before {
+        animation: none;
+    }
+</style>
+
+{% include nav-breadcrumbs-maincat.html %}
+
+<h1 class="docsjtitle">{{ page.title }}</h1>
+
+<!-- og: meta tags // title-type-img-url required -->
+<meta property="og:title" content="{{ page.title }} &ndash;&nbsp;Wysc Docs" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/media/wsc-sp-rounded.png" />
+<meta property="og:site_name" content="Wysc - Virtual Study Cafe" />
+<meta property="og:description" content="{{ page.summary }}">
+
+<div class="docsjheadings">
+    
+    {{ content }}
+
+</div>
+
+<!--
+<div class="blogpwidth">
+    {{ content }}
+</div>
+-->

@@ -1,0 +1,31 @@
+<script> // fetch api status
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    const statusapi = document.getElementById('statusapi');
+    const url = '/api/status.json';
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        let statusapi2 = data.wysc;
+        return statusapi2.map(function(status) {
+        let div = createNode('div');
+        if (status.isup == false){
+            if (status.howsevere == 'high'){
+                div.className = 'docsjheadsearch bg-danger';
+                div.innerHTML = `<div class="docsjhnotice"><b>${status.title} Issue:</b> ${status.notes} <a href="${status.readmore}" class="text-warning">Read more</a></div>`;
+            } else if (status.howsevere == 'medium'){
+                div.className = 'docsjheadsearch bg-info';
+                div.innerHTML = `<div class="docsjhnotice"><b>${status.title} Issue:</b> ${status.notes} <a href="${status.readmore}" class="text-warning">Read more</a></div>`;
+            } else {}
+        } else {}
+        append(statusapi, div);
+        })
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+</script>
