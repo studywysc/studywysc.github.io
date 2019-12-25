@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Wysc Docs
+email: 
+description: For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience as the premier edu-social cafe based Discord server.
+baseurl: "/docs" # the subpath of your site, e.g. /blog
+url: "https://wysc.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-toc
+feed:
+  path: /assets/feed.xml
+permalink: /:title.html
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+algolia:
+  index_name: Wysc
+  application_id: 'HRA929IBAN'
+
+# Collections
+collections:
+  about:
+    output: true
+  discord:
+    output: true
+
+destination: ../../docs/
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+
+toc:
+  max_level: 2

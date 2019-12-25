@@ -1,0 +1,56 @@
+<!-- desktop topnav -->
+<div class="d-none d-md-block noselect wnavglobal">
+    <nav class="navbar fixed-top bg-transparent navbar-dark"><!-- bloghnav -->
+        <a class="navbar-brand hoverscale" href="/index.html">
+            <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+            <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+        </a>
+        <ul class="navbar-nav navbar-expand ml-auto align-middle">
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item active p-3">
+                <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Blog<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/docs">Docs</a>
+            </li>
+            <li class="nav-item p-3">
+                <a class="nav-link" href="/dash">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- mobile bottomnav -->
+<div class="d-md-none noselect wnavglobal">
+    <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
+        <div class="nav-content text-center">
+            <ul class="nav nav-justified">
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/index">
+                        <i class="material-icons">home</i><br>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                        <i class="material-icons">class</i><br>
+                        <div>Blog</div>
+                    </a>
+                </li>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/docs">
+                        <i class="material-icons">vertical_split</i><br>
+                        <div>Docs</div>
+                    </a>
+                </li>
+                <li class="nav-item align-middle">
+                    <a class="nav-link pulsate-fwd wnavmblinks" href="/dash">
+                        <i class="material-icons">apps</i><br>
+                        <div>Apps</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

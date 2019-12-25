@@ -1,4 +1,0 @@
-# Rule 1
-User-agent: *
-Allow: /
-Allow: /joinwsc/
