@@ -5,7 +5,7 @@ category: "Developers/API"
 summary: "Version Releases for the Wysc Website"
 redirect_from:
   - changelog
-  - about/changelog
+  - docs/about/changelog
 ---
 
 ### 0.191225

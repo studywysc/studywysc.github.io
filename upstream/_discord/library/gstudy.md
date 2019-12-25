@@ -4,8 +4,8 @@ title:  "Group Study"
 category: "Wysc Library 📚"
 last_updated: 23 Nov 2019
 redirect_from:
-  - discord/library/groupstudy
-  - discord/library/pomodoro
+  - docs/discord/library/groupstudy
+  - docs/discord/library/pomodoro
   - pomodoro
 ---
 
