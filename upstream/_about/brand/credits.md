@@ -1,371 +1,308 @@
 ---
-layout: kbdocs
+layout: kbcredits
+superlayout: kbdocs
 title:  "Credits"
 category: "Brand & Licenses"
-last_updated: 24 Nov 2019
+last_updated: 25 Dec 2019
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible. The list may not be fully comprehensive. If you are a creator and have found that your work exists within Wysc but is not appropriately credited, please reach out to us at our Docs page and we will update the listing!"
 redirect_from:
   - credits
   - docs/about/credits
   - docs/discord/credits
+
+
+creditslist:
+  - cat: Essential
+    catobj:
+      - coname: Discord
+        coline: Chat and voice platform, user network
+        coimg: /media/logos/creditsdiscord.png
+        courl: https://discordapp.com/
+
+      - coname: Github
+        coline: Source hosting, Website hosting
+        coimg: /media/logos/creditsgithub.png
+        courl: https://github.com/
+        bglight: true
+        rounded: true
+
+      - coname: Netlify
+        coline: Website deployment, security, and hosting
+        coimg: /media/logos/creditsnetlify.png
+        courl: https://github.com/
+
+  - cat: Discord Server
+    catobj:
+      - coname: DisWeb/Dashflo
+        coline: Discord chat widget
+        coimg: https://cdn.discordapp.com/avatars/543225764036870167/0459349547dc5b988b0ad1cd8583a05f.png?size=256
+        courl: https://dashflo.net/
+        rounded: circle
+
+      - coname: Dyno
+        coline: Server security, admin management
+        coimg: https://cdn.discordapp.com/avatars/155149108183695360/3ac2fbefebd4de9ffeefcb0f2cb15ecd.png?size=256
+        courl: https://dyno.gg/
+        rounded: circle
+
+      - coname: Groovy
+        coline: Music streaming
+        coimg: https://groovy.bot/img/logos/rounded.svg
+        courl: https://groovy.bot/
+        rounded: circle
+
+      - coname: IFTTT
+        coline: Server automation
+        coimg: /media/logos/creditsifttt.png
+        courl: https://ifttt.com/
+
+      - coname: Nadeko
+        coline: Server security, admin management
+        coimg: https://nadeko.bot/static/media/nadeko-top.ad6cc06a.png
+        courl: https://nadeko.bot/
+        rounded: circle
+
+      - coname: Paradøx/TeXit
+        coline: Time, LaTeX, WolframAlpha, general functions
+        coimg: /media/logos/discordparadox.png
+        courl: https://top.gg/bot/510789298321096704
+        rounded: circle
+
+      - coname: PomodoroBot
+        coline: Pomodoro timer functions
+        coimg: https://raw.githubusercontent.com/VicenteRD/PomodoroBot/master/icon.jpg
+        courl: https://github.com/VicenteRD/PomodoroBot
+        rounded: circle
+
+      - coname: Tatsumaki
+        coline: Server ranking
+        coimg: https://cdn.discordapp.com/avatars/172002275412279296/f5f65755f67ae1dc88d9bb271d0f5bef.png?size=256
+        courl: https://tatsumaki.xyz/
+        rounded: circle
+
+      - coname: Watora
+        coline: Music streaming, Radio
+        coimg: https://watora.xyz/images/avatar.png
+        courl: https://watora.xyz/
+        rounded: circle
+
+      - coname: YAGPDB
+        coline: Server automation, Assistant
+        coimg: https://yagpdb.xyz/static/img/avatar.png
+        courl: https://yagpdb.xyz/
+        rounded: circle
+
+      - coname: Yui
+        coline: Reaction roles
+        coimg: /media/logos/discordyui.png
+        courl: https://discordyui.net/
+        rounded: circle
+
+    catobjsm:
+      - costitle: Non-Critical Functionality
+        coslist:
+          - cosname: Ayana
+            cosline: Entertainment
+            cosurl: https://ayana.io/
+
+          - cosname: CoreBot
+            cosline: WSC simulator
+            cosurl: https://discordbots.org/bot/421245481859940363
+
+          - cosname: Emote Collector
+            cosline: Emotes for non-Nitro users
+            cosurl: https://github.com/EmoteCollector/EmoteCollector
+
+          - cosname: KarmaBot
+            cosline: Upvote/thanking functionality
+            cosurl: https://karmabot.vlexar.pw/
+
+          - cosname: KDBot
+            cosline: TTS bot
+            cosurl: http://kunalsdatabase.com/kdbot/
+
+          - cosname: Pokecord
+            cosline: Pokemon in Discord
+            cosurl: https://www.pokecord.com/
+
+          - cosname: Rythm
+            cosline: Music streaming
+            cosurl: https://rythmbot.co/
+
+          - cosname: Smoogle Translate
+            cosline: Language translation
+            cosurl: https://docs.smoogle.gg/
+
+          - cosname: Statbot
+            cosline: Server statistics
+            cosurl: https://statbot.net/
+
+      - costitle: Promotional Services
+        coslist:
+          - cosname: Disboard
+            cosurl: https://disboard.org
+
+          - cosname: Discord.me
+            cosurl: https://discord.me
+
+          - cosname: DiscordServers
+            cosurl: https://discordservers.com
+
+          - cosname: DiscordListing
+            cosurl: https://discordlisting.me
+
+          - cosname: Discord Server List
+            cosurl: https://discordsl.com
+
+          - cosname: Dyno Servers
+            cosurl: https://dyno.gg
+
+          - cosname: r/discordchannels
+            cosurl: https://reddit.com/r/discordchannels
+
+          - cosname: r/discordservers
+            cosurl: https://reddit.com/r/discordservers
+
+          - cosname: r/Wysc
+            cosurl: https://reddit.com/r/wysc
+
+          - cosname: Top.gg Servers
+            cosurl: https://top.gg/servers
+
+          - cosname: Twitter
+            cosurl: https://twitter.com/wyscofficial
+
+      - costitle: Development
+        coslist:
+          - cosname: dhooks
+            cosurl: https://github.com/kyb3r/dhooks
+
+          - cosname: Nightingale REST API Client
+            cosurl: https://www.microsoft.com/en-us/p/nightingale-rest-api-client/9n2t6f9f5zdn
+
+  - cat: Dashboard
+    catobjsm:
+      - costitle: App Modules by Wysc Staff
+        coslist:
+          - cosname: Cuckoo
+            cosline: Group pomodoro/productivity timer
+            cosurl: https://cuckoo.team/
+
+          - cosname: Desmos
+            cosline: Graphing calculator
+            cosurl: https://www.desmos.com/
+            
+          - cosname: Mathway
+            cosline: Advanced solution calculator
+            cosurl: https://www.mathway.com
+            
+          - cosname: Wordpress
+            cosline: Wysc Events
+            cosurl: https://www.wordpress.com
+
+  - cat: Website
+    catobj:
+      - coname: Bootstrap
+        coline: HTML framework
+        coimg: /media/logos/creditsbootstrap.svg
+        courl: https://getbootstrap.com/
+
+      - coname: Jekyll
+        coline: Ruby framework
+        coimg: /media/logos/creditsjekyll.png
+        courl: https://jekyllrb.com/
+
+      - coname: jQuery
+        coline: JS framework
+        coimg: /media/logos/creditsjquery.svg
+        courl: https://jquery.com/
+
+      - coname: Unsplash
+        coline: Images
+        coimg: /media/logos/creditsunsplash.png
+        courl: https://unsplash.com
+        bglight: true
+        rounded: true
+
+      - coname: Vue.js
+        coline: JS framework
+        coimg: /media/logos/creditsvue.png
+        courl: https://vuejs.org
+
+    catobjsm:
+      - costitle: Assets
+        coslist:
+          - cosname: add-to-homescreen
+            cosurl: https://github.com/cubiq/add-to-homescreen
+
+          - cosname: AnchorJS
+            cosurl: https://github.com/bryanbraun/anchorjs
+            
+          - cosname: LoadCSS
+            cosurl: https://github.com/filamentgroup/loadCSS
+
+          - cosname: PWACompat
+            cosurl: https://github.com/GoogleChromeLabs/pwacompat
+            
+      - costitle: Media
+        coslist:
+          - cosname: Font - Cookie
+            cosline: Copyright (c) 2011 by Ania Kruk
+            cosurl: https://fonts.google.com/specimen/Cookie
+
+          - cosname: Font - Gochi Hand
+            cosline: Copyright (c) 2011, Huerta Tipografica
+            cosurl: https://fonts.google.com/specimen/Gochi%20Hand
+
+          - cosname: Font - Lato
+            cosline: Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic
+            cosurl: https://fonts.google.com/specimen/Lato
+
+          - cosname: Font - Source Sans Pro
+            cosline: Copyright 2010, 2012, 2014 Adobe Systems Incorporated
+            cosurl: https://fonts.google.com/specimen/Source%20Sans%20Pro
+
+          - cosname: Icons - Material Design Icons
+            cosurl: https://github.com/google/material-design-icons
+
+      - costitle: Services
+        coslist:
+          - cosname: Animista
+            cosurl: https://animista.net/
+
+          - cosname: Bookmark
+            cosurl: https://bookmark.com/
+
+          - cosname: FreeDNS
+            cosurl: https://freedns.afraid.org
+
+          - cosname: Gitbook
+            cosurl: https://gitbook.com/
+
+          - cosname: Google Analytics
+            cosurl: https://www.google.com/analytics
+
+          - cosname: ipapi/apilayer
+            cosurl: https://ipapi.com/
+
+          - cosname: Medium
+            cosurl: https://medium.com/
+            
+          - cosname: OpenWeatherMap
+            cosurl: https://openweathermap.org/
+
+          - cosname: splash-screens
+            cosurl: https://appsco.pe/developer/splash-screens
+
+          - cosname: Zapier
+            cosurl: https://zapier.com/
+
 ---
 
 ### Summary
 
-**Unless otherwise indicated, Wysc was not paid to sponsor, feature, and/or incorporate any of the following services in Wysc.** Wysc has made use of the following resources solely at our own discretion and need for third-party services to meet our needs in order to provide the best possible experience we can for our end users.
+**Any services featured is not an indication of the service's endorsement of Wysc.** Wysc is simply providing attribution for services being used, whether by license terms or otherwise. Unless otherwise indicated, Wysc has not accepted any monetary payments to sponsor, feature, and/or incorporate any of the services below in Wysc.
 
-Not all services and/or bots in our Discord may be listed. This list may exclude those that are no longer actively referenced to in our service, have been removed, or have been recently added. To see the full list of all the bots Wysc currently uses, please <a href="/wysc/" target="_blank">join our Discord</a>.
+This attribution page may be incomplete. This page may exclude services that are no longer actively maintained by Wysc, no longer contribute to Wysc operations, or were recently adapted by Wysc. To see the full list of all Discord bots Wysc currently uses, please <a href="/invite" target="_blank">join our Discord</a>.
 
-Wysc provides this page solely for visual purposes. Content on this page may not be fully complete or up to date. Wysc is under no obligation to maintain this page.
-
-**If you are a creator and have found that your work exists within Wysc but has not been appropriately credited, please [reach out to us](contact#official-inquiries) and we will be happy to update the listing!**
-
-### Infrastructure
-
-<div class="container-fluid">
-<div class="row pt-3">
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsbookmark.png" class="mr-4 p-2 docucreditlogos" alt="Bookmark">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://bookmark.com/" target="_blank" rel="noopener" class="text-decoration-none">Bookmark</a></h5>
-<p>Subdomain, Website hosting</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsdiscord.png" class="mr-4 p-2 docucreditlogos" alt="Discord">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://discordapp.com/" target="_blank" rel="noopener" class="text-decoration-none">Discord</a></h5>
-<p>Chat and voice platform, user network</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://cdn.discordapp.com/avatars/543225764036870167/0459349547dc5b988b0ad1cd8583a05f.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="DisWeb">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://dashflo.net/" target="_blank" rel="noopener" class="text-decoration-none">DisWeb/Dashflo.net</a></h5>
-<p>Discord chat widget</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsgitbook.png" class="mr-4 p-2 docucreditlogos" alt="Gitbook">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://gitbook.com" target="_blank" rel="noopener" class="text-decoration-none">Gitbook</a></h5>
-<p>Documentation</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsgithub.png" class="mr-4 p-2 docucreditlogos" alt="Github">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://github.com/" target="_blank" rel="noopener" class="text-decoration-none">Github</a></h5>
-<p>Source hosting, Website hosting</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsmedium.png" class="mr-4 p-2 docucreditlogos" alt="Medium">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://medium.com" target="_blank" rel="noopener" class="text-decoration-none">Medium</a></h5>
-<p>Blog</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsunsplash.png" class="mr-4 p-2 docucreditlogos" alt="Unsplash">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://unsplash.com" target="_blank" rel="noopener" class="text-decoration-none">Unsplash</a></h5>
-<p>Images</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-### Discord Server
-
-<div class="container-fluid">
-<div class="row pt-3">
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://cdn.discordapp.com/avatars/155149108183695360/3ac2fbefebd4de9ffeefcb0f2cb15ecd.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Dyno">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://dyno.gg/" target="_blank" rel="noopener" class="text-decoration-none">Dyno</a></h5>
-<p>Server security, admin management</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://cdn.discordapp.com/avatars/234395307759108106/0dfb020939547e42b866567913f45b7a.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Groovy">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://groovy.bot/" target="_blank" rel="noopener" class="text-decoration-none">Groovy</a></h5>
-<p>Music streaming</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsifttt.png" class="mr-4 p-2 docucreditlogos" alt="IFTTT">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://ifttt.com/" target="_blank" rel="noopener" class="text-decoration-none">IFTTT</a></h5>
-<p>Server automation</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://nadeko.bot/static/media/nadeko-top.ad6cc06a.png" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Nadeko">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://nadeko.bot/" target="_blank" rel="noopener" class="text-decoration-none">Nadeko</a></h5>
-<p>Server security, admin management</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://cdn.discordapp.com/avatars/172002275412279296/f5f65755f67ae1dc88d9bb271d0f5bef.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Tatsumaki">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://tatsumaki.xyz/" target="_blank" rel="noopener" class="text-decoration-none">Tatsumaki</a></h5>
-<p>Server ranking, general functions</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://images.discordapp.net/avatars/510789298321096704/f250cb1254053fd8dc670562dc636356.png?size=512" class="mr-4 p-2 docucreditlogos rounded-circle" alt="TeXit">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://top.gg/bot/510789298321096704" target="_blank" rel="noopener" class="text-decoration-none">TeXit</a></h5>
-<p>LaTeX support, WolframAlpha</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://watora.xyz/images/avatar.png" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Watora">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://watora.xyz/" target="_blank" rel="noopener" class="text-decoration-none">Watora</a></h5>
-<p>Music streaming, Radio</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://yagpdb.xyz/static/img/avatar.png" class="mr-4 p-2 docucreditlogos rounded-circle" alt="YAGPDB">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://yagpdb.xyz/" target="_blank" rel="noopener" class="text-decoration-none">YAGPDB</a></h5>
-<p>Server automation, Assistant</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://cdn.discordapp.com/avatars/280497242714931202/e55629e4030c7fe3d88630fe61751820.png?size=256" class="mr-4 p-2 docucreditlogos rounded-circle" alt="Yui">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://discordyui.net/" target="_blank" rel="noopener" class="text-decoration-none">Yui</a></h5>
-<p>Music streaming, Reaction roles</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditszapier.png" class="mr-4 p-2 docucreditlogos" alt="Zapier">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://zapier.com/" target="_blank" rel="noopener" class="text-decoration-none">Zapier</a></h5>
-<p>Server automation</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row pt-3">
-<div class="col">
-<h5>Non-Critical Functionality</h5>
-<ul>
-<li><a href="https://ayana.io/" target="_blank" rel="noopener" class="text-decoration-none">Ayana</a> - Entertainment</li>
-<li><a href="https://discordbots.org/bot/421245481859940363" target="_blank" rel="noopener" class="text-decoration-none">CoreBot</a> - WSC simulator</li>
-<li><a href="https://github.com/EmoteCollector/EmoteCollector" target="_blank" rel="noopener" class="text-decoration-none">Emote Collector</a> - Emotes for non-Nitro users</li>
-<li><a href="https://karmabot.vlexar.pw/" target="_blank" rel="noopener" class="text-decoration-none">KarmaBot</a> - Upvote/thanking functionality</li>
-<li><a href="http://kunalsdatabase.com/kdbot/" target="_blank" rel="noopener" class="text-decoration-none">KDBot</a> - TTS bot</li>
-<li><a href="https://www.pokecord.com/" target="_blank" rel="noopener" class="text-decoration-none">Pokecord</a> - Pokemon in Discord</li>
-<li><a href="https://rythmbot.co/" target="_blank" rel="noopener" class="text-decoration-none">Rythm</a> - Music streaming</li>
-<li><a href="https://docs.smoogle.gg/" target="_blank" rel="noopener" class="text-decoration-none">Smoogle Translate</a> - Language translation</li>
-<li><a href="https://statbot.net/" target="_blank" rel="noopener" class="text-decoration-none">Statbot</a> - Server statistics</li>
-</ul>
-</div>
-</div>
-<div class="row pt-3">
-<div class="col">
-<h5>Promotional Services</h5>
-<ul>
-<li><a href="https://disboard.org" target="_blank" rel="noopener" class="text-decoration-none">Disboard</a></li>
-<li><a href="https://discord.me" target="_blank" rel="noopener" class="text-decoration-none">Discord.me</a></li>
-<li><a href="https://discordservers.com" target="_blank" rel="noopener" class="text-decoration-none">DiscordServers</a></li>
-<li><a href="https://discordlisting.me" target="_blank" rel="noopener" class="text-decoration-none">DiscordListing</a></li>
-<li><a href="https://discordsl.com" target="_blank" rel="noopener" class="text-decoration-none">Discord Server List</a></li>
-<li><a href="https://dyno.gg" target="_blank" rel="noopener" class="text-decoration-none">Dyno Servers</a></li>
-<li><a href="https://reddit.com/r/discordchannels" target="_blank" rel="noopener" class="text-decoration-none">r/discordchannels</a></li>
-<li><a href="https://reddit.com/r/discordservers" target="_blank" rel="noopener" class="text-decoration-none">r/discordservers</a></li>
-<li><a href="https://top.gg/servers" target="_blank" rel="noopener" class="text-decoration-none">Top.gg Servers</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-### Dashboard
-
-<div class="container-fluid">
-<div class="row pt-3">
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://avatars3.githubusercontent.com/u/29310830" class="mr-4 p-2 docucreditlogos" alt="dhooks">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://github.com/kyb3r/dhooks" target="_blank" rel="noopener" class="text-decoration-none">dhooks</a></h5>
-<p>Python-based webhook API</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsapilayer.svg" class="mr-4 p-2 docucreditlogos" alt="ipapi/apilayer">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://ipapi.com/" target="_blank" rel="noopener" class="text-decoration-none">ipapi/apilayer</a></h5>
-<p>IP API for Latlong</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsowm.png" class="mr-4 p-2 docucreditlogos" alt="OpenWeatherMap">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://openweathermap.org/" target="_blank" rel="noopener" class="text-decoration-none">OpenWeatherMap</a></h5>
-<p>Weather API</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row pt-3">
-<div class="col">
-<h5>Unofficial Modules by Wysc Staff</h5>
-<ul>
-<li><a href="https://cuckoo.team/" target="_blank" rel="noopener" class="text-decoration-none">Cuckoo</a> - Group pomodoro/productivity timer</li>
-<li><a href="https://www.desmos.com/" target="_blank" rel="noopener" class="text-decoration-none">Desmos</a> - Graphing calculator</li>
-<li><a href="https://www.mathway.com" target="_blank" rel="noopener" class="text-decoration-none">Mathway</a> - Advanced solution calculator</li>
-<li><a href="https://www.wordpress.com" target="_blank" rel="noopener" class="text-decoration-none">Wordpress</a> - Wysc Events</li>
-</ul>
-</div>
-</div>
-</div>
-
-### Website
-
-<div class="container-fluid">
-<div class="row pt-3">
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://avatars3.githubusercontent.com/u/427614" class="mr-4 p-2 docucreditlogos" alt="add-to-homescreen">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://github.com/cubiq/add-to-homescreen" target="_blank" rel="noopener" class="text-decoration-none">add-to-homescreen</a></h5>
-<p>iOS Add-to-homescreen callout</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://avatars3.githubusercontent.com/u/1256329" class="mr-4 p-2 docucreditlogos" alt="AnchorJS">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://github.com/bryanbraun/anchorjs" target="_blank" rel="noopener" class="text-decoration-none">AnchorJS</a></h5>
-<p>Deep anchor links</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://pbs.twimg.com/profile_images/826500514875572227/uzIuCBWS_400x400.jpg" class="mr-4 p-2 docucreditlogos" alt="Animista">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://animista.net" target="_blank" rel="noopener" class="text-decoration-none">Animista</a></h5>
-<p>CSS animations</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsbootstrap.svg" class="mr-4 p-2 docucreditlogos" alt="Bootstrap">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://getbootstrap.com/" target="_blank" rel="noopener" class="text-decoration-none">Bootstrap</a></h5>
-<p>HTML framework</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsgan.svg" class="mr-4 p-2 docucreditlogos" alt="Google Analytics">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://www.google.com/analytics" target="_blank" rel="noopener" class="text-decoration-none">Google Analytics</a></h5>
-<p>Traffic and search console</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://pbs.twimg.com/profile_images/742732476213268480/ZWREQYdH_400x400.jpg" class="mr-4 p-2 docucreditlogos" alt="Material Icons">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://fonts.google.com/" target="_blank" rel="noopener" class="text-decoration-none">Google Fonts</a></h5>
-<p>Font pack</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsjekyll.png" class="mr-4 p-2 docucreditlogos" alt="Jekyll">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://jekyllrb.com/" target="_blank" rel="noopener" class="text-decoration-none">Jekyll</a></h5>
-<p>Ruby framework</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsjquery.png" class="mr-4 p-2 docucreditlogos" alt="jQuery">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://jquery.com/" target="_blank" rel="noopener" class="text-decoration-none">jQuery</a></h5>
-<p>JS framework</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://avatars0.githubusercontent.com/u/30614?s=200&v=4" class="mr-4 p-2 docucreditlogos" alt="LoadCSS">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://github.com/filamentgroup/loadCSS" target="_blank" rel="noopener" class="text-decoration-none">LoadCSS</a></h5>
-<p>Asynchronous CSS loading</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="/media/logos/creditsmatico.svg" class="mr-4 p-2 docucreditlogos" alt="Material Icons">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://material.io/resources/icons/" target="_blank" rel="noopener" class="text-decoration-none">Material Icons</a></h5>
-<p>Icon pack</p>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6">
-<div class="media pt-2">
-<img src="https://pbs.twimg.com/profile_images/987433710768107520/18BZrur4_400x400.jpg" class="mr-4 p-2 docucreditlogos" alt="Appscope">
-<div class="media-body">
-<h5 class="mt-0"><a href="https://appsco.pe/developer/splash-screens" target="_blank" rel="noopener" class="text-decoration-none">splash-screens</a></h5>
-<p>iOS splash screens generator</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+**If you are a creator and have found that your work exists within Wysc but has not been added below, please [reach out to us](/docs/about/contact/1#official-inquiries) and we will be happy to update the listing!**

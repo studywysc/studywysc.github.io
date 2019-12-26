@@ -47,7 +47,7 @@
                 <li class="nav-item active p-3">
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Docs<span class="sr-only">(current)</span></a>
                 </li>
-            {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' %}
+            {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
                 <li class="nav-item active p-3">
                     <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
                 </li>
@@ -98,7 +98,7 @@
                     <a class="nav-link pulsate-fwd 
                         {% if page.headername == 'Docs' %}
                             wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-                        {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' %}
+                        {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
                             wnavmblinkactive" href="/docs"
                         {% else %}
                             wnavmblinks" href="/docs"
