@@ -4,9 +4,21 @@
     {% include wyscheader.html %}
 
     <div hidden><img src="/media/T_1hsMH9CQY_compress02.webp" alt="preloading header image"></div>
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
-
+    <style>
+        /* cookie-regular - latin */
+        @font-face {
+            font-family: 'Cookie';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/cookie-v11-latin-regular.eot'); /* IE9 Compat Modes */
+            src: local('Cookie-Regular'),
+                url('/fonts/cookie-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('/fonts/cookie-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('/fonts/cookie-v11-latin-regular.svg#Cookie') format('svg'); /* Legacy iOS */
+        }
+    </style>
 </head>
 <body class="homebody">
 
