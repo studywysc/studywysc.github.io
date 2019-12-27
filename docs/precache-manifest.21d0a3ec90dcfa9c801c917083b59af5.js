@@ -4,6 +4,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/404.html"
   },
   {
+    "revision": "eb985546a5188ece37fc220cba15484e",
+    "url": "/CNAME"
+  },
+  {
     "revision": "e68f2f8f75f5113a9713",
     "url": "/css/app.d9e62618.css"
   },
@@ -12,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wsc-square-sm.15b460a9.png"
   },
   {
-    "revision": "bc4ba920287fa1389445a1519b725064",
+    "revision": "3da7ae6012c68c44664eba3a87dedd5d",
     "url": "/index.html"
   },
   {
