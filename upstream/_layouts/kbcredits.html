@@ -12,7 +12,7 @@ layout: kbdocs
                 {% for itemobj in item.catobj %}
                     <div class="col-12 col-md-6">
                         <div class="media pt-2">
-                            <img src="{{ itemobj.coimg }}" class="mr-4 p-2 docucreditlogos{% if itemobj.rounded == 'circle' %} rounded-circle{% elsif itemobj.rounded == true %} rounded{% endif %}{% if itemobj.bglight == true %} bg-light{% endif %}" alt="{{ itemobj.coname }} logo">
+                            {% if itemobj.coimg %}<img src="{{ itemobj.coimg }}" class="mr-4 p-2 docucreditlogos{% if itemobj.rounded == 'circle' %} rounded-circle{% elsif itemobj.rounded == true %} rounded{% endif %}{% if itemobj.bglight == true %} bg-light{% endif %}" alt="{{ itemobj.coname }} logo">{% endif %}
                             <div class="media-body">
                                 <h5 class="mt-0"><a href="{{ itemobj.courl }}" target="_blank" rel="noopener"
                                         class="text-decoration-none">{{ itemobj.coname }}</a></h5>
