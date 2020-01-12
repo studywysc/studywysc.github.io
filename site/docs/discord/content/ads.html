@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="description" content="Advertising is a restricted category on Wysc. General Content Policy regulations still apply. Seed users All Seed users may post their own...">
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
@@ -24,10 +24,10 @@
                 visible: 'hover',
                 icon: '#'
             };
-            anchors.add('.docsjbccoll .row .card .card-body h5');
+            anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
         });
     </script>
-    <title>About Wysc &ndash;&nbsp;Wysc Docs</title>
+    <title>Advertising &ndash;&nbsp;Wysc Docs</title>
 </head>
 <body class="docsjbody">
     
@@ -113,18 +113,18 @@
 
     <div class="docsjheadimg">
         <div>
-            <h1>About Wysc</h1>
+            <h1>Advertising</h1>
         </div>
     </div>
     
     <div id="statusapi">
     </div>
-    <div class="docsjheadsearch">
+    <div id="wthemeheadsearch" class="docsjheadsearch">
         <div class="docsjhs1 docstextgray">
             <em>Search coming soon!</em>
         </div>
         <div class="docsjhs2 noselect">
-            <nav class="bg-transparent docstextlight bccss">
+            <nav id="wthemebccss" class="docstextlight bccss">
    <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
        
@@ -133,24 +133,38 @@
        
           
       
-         
-            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-               <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
-                  <span property="name">Docs</span>
-               </a>
-                  <meta property="position" content="1" />
-            </li>
-            <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
-               <span property="name">About</span>
-               <meta property="position" content="2" />
-            </li>
-         
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
+            <span property="name">Docs</span>
+         </a>
+            <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs/discord">
+            <span property="name">Discord</span>
+         </a>
+            <meta property="position" content="2" />
+      </li>
+      <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+         <span property="name">Content Policy</span>
+         <meta property="position" content="3" />
+      </li>
       
 
    </ol>
 </nav>
 
 <style>
+.bccss {
+   /*background-color: #0C3247;*/
+   max-width: 900px;
+}
+.bccss-light {
+   margin: -1em;
+   padding: 1em;
+   border-radius: 0.25em;
+   width: calc(100% - 165px);
+}
 .bccss ol {
    margin:0 !important;
    padding:0 !important;
@@ -161,55 +175,83 @@
 .bccss a {
    text-decoration: none;
 }
+@media (max-width: 768px) { /* up to d-md */
+   .bccss-light {
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+   }
+}
 </style>
         </div>
     </div>
     <div class="docsjbcontent">
-        <div class="docsjbccoll">
-
-            <div class="p-4"></div>
-            <div class="row mx-auto justify-content-center">
+        <div class="docsjbcsidebar">
+            <h2 class="d-none d-md-block">Content Policy</h2>
+            
+            
+            
+            <ul class="nav flex-column nav-pills p-4 blogfadeb00" aria-orientation="vertical">
                 
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/discord/content/1">Rules and Culture</a>
+                    </li>
                 
-                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
-                        <div class="card-body">
-                            <h5 class="card-title pt-2 pb-2">Brand & Licenses</h5>
-                            <p class="card-text">Wysc maintains a strong brand identity and integrity. Find out how we approach design challenges and brand meaning.</p>
-                            <ul class="list-group list-group-flush p-2">
-
-                                
-                                
-                                    <a href="/docs/about/brand/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Brand Guidelines</a>
-                                
-                                    <a href="/docs/about/brand/contributors" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Contributors</a>
-                                
-                                    <a href="/docs/about/brand/credits" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Credits</a>
-                                
-
-                            </ul>
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/discord/content/2">Prohibited Activities</a>
+                    </li>
                 
-                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
-                        <div class="card-body">
-                            <h5 class="card-title pt-2 pb-2">Developers/API</h5>
-                            <p class="card-text">Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!</p>
-                            <ul class="list-group list-group-flush p-2">
-
-                                
-                                
-                                    <a href="/docs/about/dev/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Introduction</a>
-                                
-                                    <a href="/docs/about/dev/changelog" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Changelog</a>
-                                
-
-                            </ul>
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="docsjcatlist" href="/docs/discord/content/ads">Advertising</a>
+                    </li>
                 
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/discord/content/data">Data Collection</a>
+                    </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="docsjbcmain">
+            <h2 class="d-md-none pb-2">Advertising</h2> <!-- add d-md-none after testing how it looks -->
+
+            <div class="docsjlastupdated blogfadeb00">
+                <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
+                <div class="pl-2 pr-2">
+                    <p class="docstextgray pt-2">Wysc Staff</p>
+                    <p class="docstextgray pb-2">Last updated 12 Jan 2020</p>
+                </div>
+            </div>
+
+            <div class="docspbody blogfadeb01">
+                
+                <p>Advertising is a restricted category on Wysc. General <a href="1">Content Policy</a> regulations still apply.</p>
+
+<h3 id="seed-users">Seed users</h3>
+
+<p>All Seed users may post their own content in Wysc Cafe channels within channel guidelines, within reasonable rate limits.</p>
+
+<p>All Seed users are <strong>forbidden</strong> from engaging in any promotional behavior with other Wysc users <strong>in all other circumstances</strong>.</p>
+
+<p>This includes, but is not limited to: promoting servers, social media accounts, music profiles, and other affiliated services outside of their respective Wysc Cafe channels, if relevant; direct messaging Wysc users; and collecting data regarding users made available through Wysc, public or otherwise.</p>
+
+<h3 id="sprout-users">Sprout users</h3>
+
+<p>All Sprout users are permitted to engage in promotional behavior within channel guidelines, <strong>with the exception of #lounge</strong>, within reasonable rate limits.</p>
+
+<p>For example, within reasonable rate limits, an owner of a studyblr account may promote their blog in #study-center; an owner of a meme account may promote their social media in #wysc-irl; and an owner of a bujo store may promote their shop in #reflections.</p>
+
+<h3 id="sapling-and-above-users">Sapling and above users</h3>
+
+<p>All Sapling and above users are permitted to engage in promotional behavior, within reasonable rate limits.</p>
+
+<h3 id="questions">Questions?</h3>
+
+<p>Your messages may be deleted and your account may be subject to administrative action should they violate the policies above. Reach out to us in #support with any questions!</p>
 
             </div>
-            <div class="p-4"></div>
 
         </div>
     </div>
@@ -219,6 +261,7 @@
         <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
         <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
     </div>
+
 
 <!-- js -->
 <!-- jquery in wyscheader -->
@@ -235,8 +278,7 @@
 <meta property="og:description" content="
     
         
-            
-
+            Advertising is a restricted category on Wysc. General Content Policy regulations still apply. Seed users All Seed users may post their own...
         
     
 ">

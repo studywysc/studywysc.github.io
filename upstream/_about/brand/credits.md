@@ -3,7 +3,7 @@ layout: kbcredits
 superlayout: kbdocs
 title:  "Credits"
 category: "Brand & Licenses"
-last_updated: 25 Dec 2019
+last_updated: 12 Jan 2020
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible. The list may not be fully comprehensive. If you are a creator and have found that your work exists within Wysc but is not appropriately credited, please reach out to us at our Docs page and we will update the listing!"
 redirect_from:
   - credits
@@ -30,6 +30,12 @@ creditslist:
         coline: Website deployment, security, and hosting
         coimg: /media/logos/creditsnetlify.png
         courl: https://github.com/
+
+      - coname: Puerøsøla
+        coline: Bot hosting
+        coimg: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
+        courl: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
+        rounded: circle
 
   - cat: Discord Server
     catobj:
@@ -72,6 +78,12 @@ creditslist:
         coline: Pomodoro timer functions
         coimg: https://raw.githubusercontent.com/VicenteRD/PomodoroBot/master/icon.jpg
         courl: https://github.com/VicenteRD/PomodoroBot
+        rounded: circle
+
+      - coname: Red Discord Bot
+        coline: Administrative
+        coimg: /media/logos/discordred.png
+        courl: https://github.com/Cog-Creators/Red-DiscordBot
         rounded: circle
 
       - coname: Tatsumaki
@@ -179,6 +191,9 @@ creditslist:
 
           - cosname: Nightingale REST API Client
             cosurl: https://www.microsoft.com/en-us/p/nightingale-rest-api-client/9n2t6f9f5zdn
+
+          - cosname: Toggl
+            cosurl: https://toggl.com/
 
   - cat: Dashboard
     catobjsm:
