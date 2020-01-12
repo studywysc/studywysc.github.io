@@ -29,20 +29,29 @@
 <script async src="/js/pwacompat-2.0.10.min.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/media/wsc-square-sm.png">
+<link rel="stylesheet" href="/css/fonts.css"> <!-- fontsdefer.css in wyscfooter -->
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
 <script async src="/js/jquery-3.4.1.min.js"></script>
 <meta name="google-site-verification" content="O4q2l-bGuTif0jDA-x810IS7gYxau6pncI-XPQdJHT8" />
 
 
     <div hidden><img src="/media/T_1hsMH9CQY_compress02.webp" alt="preloading header image"></div>
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
-
+    <style>
+        /* cookie-regular - latin */
+        @font-face {
+            font-family: 'Cookie';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/cookie-v11-latin-regular.eot'); /* IE9 Compat Modes */
+            src: local('Cookie-Regular'),
+                url('/fonts/cookie-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('/fonts/cookie-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('/fonts/cookie-v11-latin-regular.svg#Cookie') format('svg'); /* Legacy iOS */
+        }
+    </style>
 </head>
 <body class="homebody">
 
@@ -101,14 +110,20 @@
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/blog">
+                    <a class="nav-link pulsate-fwd 
+                        
+                            wnavmblinks" href="/blog"
+                        >
                         <i class="material-icons">class</i><br>
                         <div>Blog</div>
                     </a>
                 </li>
                 <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/docs">
-                        <i class="material-icons">vertical_split</i><br>
+                    <a class="nav-link pulsate-fwd 
+                        
+                            wnavmblinks" href="/docs"
+                        >
+                        <i class="material-icons">question_answer</i><br>
                         <div>Docs</div>
                     </a>
                 </li>
@@ -303,9 +318,9 @@
 
             <h1 class="fontgochihand" style="font-size:4em;letter-spacing:0.01em;padding:15px;">We're on a quest. This is just the start.</h1>
             <div style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
-                <a style="color:rgba(255, 255, 255, 1);" href="docs">
+                <a style="color:rgba(255, 255, 255, 1);" href="invite">
                     <div class="btnfancylg btnfancyshadow btn-one fade-in-bottom-a2" style="margin-left:auto;margin-right:auto;">
-                        Learn More >
+                        Join our Discord >
                     </div>
                 </a>
             </div>
@@ -376,21 +391,23 @@
 ">
 
 <!-- disweb -->
+
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
-new Crate({
-    server: '319372945929666571',
-    channel: '590703218049286163',
-    shard: 'https://disweb.dashflo.net',
-    location: ['bottom', 'right'],
-    notifications: false,
-    defer: true,
-});
-if (window.innerWidth < 768){
-    crate.setOptions({
-        location: [-90, 'right'],
-    })
-} else {};
+    new Crate({
+        server: '319372945929666571',
+        channel: '590703218049286163',
+        shard: 'https://disweb.dashflo.net',
+        location: ['bottom', 'right'],
+        notifications: false,
+        defer: true,
+    });
+    if (window.innerWidth < 768){
+        crate.setOptions({
+            location: [-90, 'right'],
+        })
+    } else {};
 </script>
+
 
 <!-- google -->
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
@@ -398,6 +415,7 @@ if (window.innerWidth < 768){
 <!-- pwa -->
 <script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
+<link rel="stylesheet" href="/css/fontsdefer.css">
 
 <!-- fallbacks -->
 <script defer>async function supportsWebp(){if(!self.createImageBitmap)return false;const webpData='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';const blob=await fetch(webpData).then(r=>r.blob());return createImageBitmap(blob).then(()=>true,()=>false);} (async()=>{if(await supportsWebp()){console.log('webp > jpg');} else{

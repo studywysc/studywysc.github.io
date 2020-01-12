@@ -1,0 +1,49 @@
+---
+layout: kbdocs
+---
+
+{{ content }}
+
+{% for item in page.creditslist %}
+    <h3>{{ item.cat }}</h3>
+    <div class="container-fluid">
+        {% if item.catobj %}
+            <div class="row pt-3">
+                {% for itemobj in item.catobj %}
+                    <div class="col-12 col-md-6">
+                        <div class="media pt-2">
+                            <img src="{{ itemobj.coimg }}" class="mr-4 p-2 docucreditlogos{% if itemobj.rounded == 'circle' %} rounded-circle{% elsif itemobj.rounded == true %} rounded{% endif %}{% if itemobj.bglight == true %} bg-light{% endif %}" alt="{{ itemobj.coname }} logo">
+                            <div class="media-body">
+                                <h5 class="mt-0"><a href="{{ itemobj.courl }}" target="_blank" rel="noopener"
+                                        class="text-decoration-none">{{ itemobj.coname }}</a></h5>
+                                <p>{{ itemobj.coline }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if item.catobjsm %}
+            {% for itemobjsm in item.catobjsm %}
+                <div class="row pt-3">
+                    <div class="col">
+                        <h5>{{ itemobjsm.costitle }}</h5>
+                        {% if itemobjsm.coslist %}
+                            <ul>
+                                {% for itemcos in itemobjsm.coslist %}
+                                <li>{% if itemcos.cosurl %}
+                                        <a href="{{ itemcos.cosurl }}" target="_blank" rel="noopener"
+                                        class="text-decoration-none">{{ itemcos.cosname }}</a>
+                                    {% else %}
+                                        {{ itemcos.cosname }}
+                                    {% endif %}
+                                    {% if itemcos.cosline %} - {{ itemcos.cosline }}{% endif %}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endfor %}

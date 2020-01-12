@@ -4,9 +4,21 @@
     {% include wyscheader.html %}
 
     <div hidden><img src="/media/T_1hsMH9CQY_compress02.webp" alt="preloading header image"></div>
-    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&display=swap"></noscript>
-
+    <style>
+        /* cookie-regular - latin */
+        @font-face {
+            font-family: 'Cookie';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/cookie-v11-latin-regular.eot'); /* IE9 Compat Modes */
+            src: local('Cookie-Regular'),
+                url('/fonts/cookie-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('/fonts/cookie-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+                url('/fonts/cookie-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('/fonts/cookie-v11-latin-regular.svg#Cookie') format('svg'); /* Legacy iOS */
+        }
+    </style>
 </head>
 <body class="homebody">
 
@@ -185,9 +197,9 @@
 
             <h1 class="fontgochihand" style="font-size:4em;letter-spacing:0.01em;padding:15px;">We're on a quest. This is just the start.</h1>
             <div style="width:256px;margin-left:auto;margin-right:auto;margin-top:50px;margin-bottom:50px;">
-                <a style="color:rgba(255, 255, 255, 1);" href="docs">
+                <a style="color:rgba(255, 255, 255, 1);" href="invite">
                     <div class="btnfancylg btnfancyshadow btn-one fade-in-bottom-a2" style="margin-left:auto;margin-right:auto;">
-                        Learn More >
+                        Join our Discord >
                     </div>
                 </a>
             </div>
