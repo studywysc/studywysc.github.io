@@ -12,11 +12,9 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 [https://wysc.netlify.com](https://wysc.netlify.com/)
 
-[https://wysc.js.org](https://wysc.js.org/)
+[https://wysc.us.to](https://wysc.us.to/) - Short URL
 
-[https://wysc.us.to](https://wysc.us.to/)
-
-Working on fixing Github Pages, domains, and everything sometime soon... Big thank you to [JS.ORG](https://js.org)!
+[https://wysc.js.org](https://wysc.js.org/) - Showcase (Big thank you to [JS.ORG](https://js.org)!)
 
  
 
@@ -24,13 +22,13 @@ Working on fixing Github Pages, domains, and everything sometime soon... Big tha
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-While Wysc is open source, our intentions are for users to use our assets to inspire your own creations. Any work created using the resources here that may cause confusion for users between your product and Wysc's, and does not properly attribute, will be considered a breach of copyright. [Read more &gt;](https://gitnisyl.github.io/wysc/docs/about/brand)
+While Wysc is open source, our intentions are for users to use our assets to inspire your own creations. Any work created using the resources here that may cause confusion for users between your product and Wysc's, and does not properly attribute, will be considered a breach of copyright. [Read more &gt;](https://wysc.netlify.com/docs/about/brand/1)
 
  
 
 ### Contributions to Wysc:
 
-All users are welcome to contribute any code revisions they deem appropriate through a pull request. Wysc Staff will review the pull requests and, if approved, will also qualify your username to be listed [on our Credits page](https://gitnisyl.github.io/wysc/docs/about/credits).
+All users are welcome to contribute any code revisions they deem appropriate through a pull request. Wysc Staff will review the pull requests and, if approved, will also qualify your username to be listed [on our Contributors page](https://wysc.netlify.com/contributors).
 
  
 
@@ -43,5 +41,5 @@ We do not believe in theft of other works. Using our open source code to contrib
 ### More Wysc Resources:
 
 * [Gitbook](https://gdocs.gitbook.io/wysc)
-* [Work\|Studying\|Chilling](https://gitnisyl.github.io/wysc/joinwsc)
+* [Work\|Studying\|Chilling](https://wysc.netlify.com/joinwsc)
 
