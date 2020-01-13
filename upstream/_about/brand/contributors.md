@@ -14,11 +14,13 @@ creditslist:
     catobj:
       - coname: Georgedf
       - coname: Brian Walker
+      - coname: teru
       - coname: Trevish
       - coname: Conatum
       - coname: Puerøsøla
       - coname: Paco
       - coname: shimutan
+      - coname: Mayo
 
 ---
 
