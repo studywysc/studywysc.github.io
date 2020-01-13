@@ -27,6 +27,9 @@
 {% elsif page.headername %}
     <title>Wysc {{ page.headername }} – Wysc</title>
     <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+{% elsif page.layout == kbdocs or page.superlayout == kbdocs %}
+    <title>{{ page.title }} – Wysc Docs</title>
+    <meta property="og:title" content="{{ page.title }} – Wysc Docs" />
 {% else %}
     <title>{{ page.title }} – Wysc</title>
     <meta property="og:title" content="Wysc – Virtual Study Cafe" />
