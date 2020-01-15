@@ -31,6 +31,12 @@ creditslist:
         coimg: /media/logos/creditsnetlify.png
         courl: https://github.com/
 
+      - coname: Puerøsøla
+        coline: Bot hosting
+        coimg: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
+        courl: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
+        rounded: circle
+
   - cat: Discord Server
     catobj:
       - coname: DisWeb/Dashflo

@@ -403,48 +403,77 @@ body .wnavglobal {
   justify-content: center;
   transform: scale(1);
 }
-.dhheader { /* slidedownheader */
-  align-items: center;
-  display: flex;
-  min-height: 100vh;
-  height: auto;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  transform-style: preserve-3d;
-  perspective: 100px;
+.dhcatcontent {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
-  .dhheader:before {
-    animation: dh-fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    z-index: -1;
+.dhcatcoll {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+  .dhcatcoll > a {
+    text-decoration: none !important;
+    color: #176088;
+    transition: 0.2s;
   }
-  .dhheader:after {
-    background: #04527d;
-    content: "";
-    height: 0px; /*150px*/
-    left: 0%; /*-5%*/
-    position: absolute;
-      right: 0%; /*-5%*/
-      /*top: calc(100vh + 125px);*/
-      bottom: 0px; /*-125px*/
-    transform-origin: 0 0;
-    transform: 0; /*rotateZ(-4deg);*/
-    z-index: 0;
+  .dhcatcoll > a:hover {
+    color: #914C35;
   }
-  @keyframes dh-fade-slide-down { 0% { opacity: 0; transform: translateY(-4rem); } 100% { opacity: 1; transform: none; } }
+.dhcatcollcard {
+  display: flex;
+  align-items: flex-start;
+  background: #eee;
+  border-radius: 0.25em;
+  padding: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+  .dhcatcollcard h5 {
+    padding-bottom: 0em !important; /*override bootstrap*/
+  }
+.dhcatcollcard2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 .dhheader2 {
-  min-height:100vh;
-  height:auto;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,.3)), url('/media/ben-white-eeiAnugy2Hs-unsplash.jpg') no-repeat bottom;
+  align-items: center;
+  min-height: 450px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat center, linear-gradient(285deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%,rgba(126, 126, 126, 0.04) 25%, rgba(126, 126, 126, 0.04) 50%,rgba(80, 80, 80, 0.04) 50%, rgba(80, 80, 80, 0.04) 75%,rgba(117, 117, 117, 0.04) 75%, rgba(117, 117, 117, 0.04) 100%),linear-gradient(333deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 25%,rgba(154, 154, 154, 0.04) 25%, rgba(154, 154, 154, 0.04) 50%,rgba(218, 218, 218, 0.04) 50%, rgba(218, 218, 218, 0.04) 75%,rgba(91, 91, 91, 0.04) 75%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.04) 0%, rgba(14, 14, 14, 0.04) 25%,rgba(216, 216, 216, 0.04) 25%, rgba(216, 216, 216, 0.04) 50%,rgba(44, 44, 44, 0.04) 50%, rgba(44, 44, 44, 0.04) 75%,rgba(111, 111, 111, 0.04) 75%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(251deg, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 25%,rgba(107, 107, 107, 0.04) 25%, rgba(107, 107, 107, 0.04) 50%,rgba(167, 167, 167, 0.04) 50%, rgba(167, 167, 167, 0.04) 75%,rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%),linear-gradient(63deg, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 25%,rgba(16, 16, 16, 0.04) 25%, rgba(16, 16, 16, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 75%,rgba(159, 159, 159, 0.04) 75%, rgba(159, 159, 159, 0.04) 100%),linear-gradient(90deg, rgb(44, 69, 142),rgb(133, 17, 234));
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: visible;
+}
+@-webkit-keyframes dhfade-in { 0% { opacity: 0; } 100% { opacity: 1; } } @keyframes dhfade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+.dhheader2 > div {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+.dhheader3 {
+  width: 100%;
+  z-index: 4;
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  overflow: visible;
 }
 .dhmadeinsf {
   background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('/media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
@@ -575,6 +604,13 @@ body .wnavglobal {
     .docstextwyscbluelightbg {
       background-color: #0C3247 !important;
     }
+  .docstextwyscbluelight2 {
+    color: #176088;
+  }
+    .docstextwyscbluelight2bg {
+      background-color: #176088 !important;
+    }
+    
   .docstextgray {
     color: #9dadb5; /*https://www.color-hex.com/color/0c3247*/
   }
@@ -1394,6 +1430,12 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .dhcardcontent i{
     padding: 1vh !important;
+  }
+  .dhcatcollcard {
+    width: 100%;
+  }
+  .dhheader2 {
+    min-height: 200px;
   }
   .dhmissionstatement p {
     line-height:1.5em;
