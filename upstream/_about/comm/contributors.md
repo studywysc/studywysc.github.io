@@ -2,7 +2,7 @@
 layout: kbcredits
 superlayout: kbdocs
 title:  "Contributors"
-category: "Brand & Attributions"
+category: "Community"
 last_updated: 12 Jan 2020
 summary: "This page contains a list of notable users whose contributions have helped make the Wysc experience you know and love possible. The list may not be fully comprehensive."
 redirect_from:
