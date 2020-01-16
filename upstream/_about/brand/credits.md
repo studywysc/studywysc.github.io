@@ -217,6 +217,11 @@ creditslist:
 
   - cat: Website
     catobj:
+      - coname: Algolia
+        coline: Search
+        coimg: /media/logos/creditsalgolia.png
+        courl: https://algolia.com
+
       - coname: Bootstrap
         coline: HTML framework
         coimg: /media/logos/creditsbootstrap.svg
