@@ -257,6 +257,9 @@ creditslist:
 
           - cosname: AnchorJS
             cosurl: https://github.com/bryanbraun/anchorjs
+
+          - cosname: dark-mode-switch
+            cosurl: https://github.com/coliff/dark-mode-switch
             
           - cosname: LoadCSS
             cosurl: https://github.com/filamentgroup/loadCSS
@@ -296,6 +299,9 @@ creditslist:
           - cosname: FreeDNS
             cosurl: https://freedns.afraid.org
 
+          - cosname: Get Waves
+            cosurl: https://getwaves.io/
+
           - cosname: Gitbook
             cosurl: https://gitbook.com/
 
@@ -313,6 +319,9 @@ creditslist:
 
           - cosname: splash-screens
             cosurl: https://appsco.pe/developer/splash-screens
+            
+          - cosname: WebAIM&colon; Contrast Checker
+            cosurl: https://webaim.org/resources/contrastchecker/
 
           - cosname: Zapier
             cosurl: https://zapier.com/
