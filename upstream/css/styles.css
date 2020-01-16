@@ -432,6 +432,8 @@ body .wnavglobal {
   padding: 1.5em;
   margin-top: 1em;
   margin-bottom: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
   .dhcatcollcard h5 {
     padding-bottom: 0em !important; /*override bootstrap*/
@@ -442,6 +444,36 @@ body .wnavglobal {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+.dhcatcollsect {
+  width: calc(100%/3);
+  max-width: 600px;
+}
+.dhcatfreqask {
+  padding-bottom: 3em;
+}
+  .dhcatfreqask > h2 {
+    font-family: 'Gochi Hand';
+    font-size: 3em;
+    text-align: center;
+    padding-top: 2em;
+    color: #eee;
+  }
+  .dhcatfacoll {
+    text-align: center;
+    padding-top: 1.5em;
+  }
+    .dhcatfacoll > a {
+      color: #ccc;
+      font-size: 1.4em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .dhcatfacoll > a:hover {
+      text-decoration: none;
+      color: #8598a3;
+    }
+/* .dhgradienttrans {
+} */
 .dhheader2 {
   align-items: center;
   min-height: 450px;
@@ -449,7 +481,7 @@ body .wnavglobal {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  align-content: center;
+  align-content: flex-start;
   padding-top: 4em;
   padding-bottom: 4em;
   animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
@@ -474,6 +506,16 @@ body .wnavglobal {
   align-items: flex-start;
   align-content: center;
   overflow: visible;
+}
+.dhleadbanner {
+  height: 400px;
+  background: url('/media/robson-hatsukami-morgan-sV28sEjKOjg-unsplash.jpg');
+  /* -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  background-size: cover;
+  background-attachment: fixed;
 }
 .dhmadeinsf {
   background: linear-gradient(to bottom right, rgba(6, 34, 49, 0.2), rgba(8, 43, 62, 0.8)), url('/media/joseph-barrientos-Ji_G7Bu1MoM-unsplash.jpg');
@@ -552,9 +594,10 @@ body .wnavglobal {
   align-content: flex-start;
 }
 .docsjbody {
-  background-color:#001f1f; /*0C3247 061923 04141c 082331*/
-  color: #e6eaec; /*e6eaec*/
+  background-color:#212427; /*0C3247 061923 04141c 082331 001f1f*/
+  color: #e9ecef; /*e6eaec*/
   font-family: "Lato";
+  transition: background-color 0.2s;
   /*overflow:hidden;*/
 }
   .docstextlight, .docstextlight a {
@@ -573,6 +616,7 @@ body .wnavglobal {
     }
     .docstextwysclight2, .anchorjs-link, .docsjbcmain a {
       color: #bd9385;
+      transition: color 0.2s;
     }
       a.docstextwysclight2:hover, .anchorjs-link:hover, .docsjbcmain a:hover {
         color: #c8a59a;
@@ -638,9 +682,16 @@ body .wnavglobal {
     .docsjbcsidebar h2 {
       font-size:1.5rem !important;
     }
-  .docsjbcmain, .docsjhs2 {
+  .docsjbcmain {
     width:70%;
     padding:2em;
+  }
+  .docsjhs2 {
+    width:60%;
+    padding:2em;
+  }
+  .docsjhs3 {
+    width:10%;
   }
   .docsjhnotice {
     width:100%;
@@ -775,12 +826,13 @@ body .wnavglobal {
 
 .docsjheadimg {
   height:225px;
-  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat center;
+  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat center, linear-gradient(285deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%,rgba(126, 126, 126, 0.04) 25%, rgba(126, 126, 126, 0.04) 50%,rgba(80, 80, 80, 0.04) 50%, rgba(80, 80, 80, 0.04) 75%,rgba(117, 117, 117, 0.04) 75%, rgba(117, 117, 117, 0.04) 100%),linear-gradient(333deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 25%,rgba(154, 154, 154, 0.04) 25%, rgba(154, 154, 154, 0.04) 50%,rgba(218, 218, 218, 0.04) 50%, rgba(218, 218, 218, 0.04) 75%,rgba(91, 91, 91, 0.04) 75%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.04) 0%, rgba(14, 14, 14, 0.04) 25%,rgba(216, 216, 216, 0.04) 25%, rgba(216, 216, 216, 0.04) 50%,rgba(44, 44, 44, 0.04) 50%, rgba(44, 44, 44, 0.04) 75%,rgba(111, 111, 111, 0.04) 75%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(251deg, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 25%,rgba(107, 107, 107, 0.04) 25%, rgba(107, 107, 107, 0.04) 50%,rgba(167, 167, 167, 0.04) 50%, rgba(167, 167, 167, 0.04) 75%,rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%),linear-gradient(63deg, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 25%,rgba(16, 16, 16, 0.04) 25%, rgba(16, 16, 16, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 75%,rgba(159, 159, 159, 0.04) 75%, rgba(159, 159, 159, 0.04) 100%),linear-gradient(90deg, rgb(44, 69, 142),rgb(133, 17, 234));
   background-size:cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-end;
+  animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
   .docsjheadimg div {
     width: 100%;
@@ -1433,6 +1485,12 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .dhcatcollcard {
     width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .dhcatcollsect {
+    width: 100%;
+    max-width: 100%;
   }
   .dhheader2 {
     min-height: 200px;

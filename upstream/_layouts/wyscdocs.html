@@ -8,7 +8,7 @@
     {% include wyscnav.html %}
 
     <div class="dhheader2">
-        <div class="d-none d-md-block" style="padding-top:40px;"></div>
+        <div class="d-none d-md-block" style="padding-top:100px;"></div>
         <div class="blogfadeb00 sectiontextcolor">
             <h1 style="padding-bottom:20px;font-family:'Gochi Hand';font-size:3.5em;">How can we help?</h1>
         </div>
@@ -30,11 +30,11 @@
         </div>
     </div>
 
-    <div class="dhcatcontent">
+    <div class="dhcatcontent blogfadeb01">
         {% if page.maincats %}
             <div class="dhcatcoll">
                 {% for item in page.maincats %}
-                    <a href="docs/{{ item.catslug }}" class="col-md-4">
+                    <a href="docs/{{ item.catslug }}" class="dhcatcollsect">
                         <div class="dhcatcollcard shadow hoverscale">
                             <div>
                                 <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
@@ -52,6 +52,30 @@
                 {% endfor %}
             </div>
         {% endif %}
+
+        <div class="dhcatfreqask">
+            <h2>Frequently Asked Questions</h2>
+
+            {% if page.freqask %}
+                <div class="dhcatfacoll list-group list-group-flush">
+                    {% for item in page.freqask %}
+                        <a href="docs/{{ item.faslug }}" class="list-group-item bg-transparent border-0">
+                            {{ item.fatitle }}
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+    </div>
+
+    <div class="dhleadbanner">
+        <div class="dhgradienttrans">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0C3247" fill-opacity="1" d="M0,192L30,202.7C60,213,120,235,180,208C240,181,300,107,360,112C420,117,480,203,540,224C600,245,660,203,720,165.3C780,128,840,96,900,80C960,64,1020,64,1080,96C1140,128,1200,192,1260,192C1320,192,1380,128,1410,96L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+            </svg>
+        </div>
+
     </div>
 
 

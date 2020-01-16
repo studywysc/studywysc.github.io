@@ -48,6 +48,12 @@
         <div class="docsjhs2 noselect">
             {% include nav-breadcrumbs-kbdocs.html %}
         </div>
+        <div class="docsjhs3">
+            <!-- <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">Light Mode</label>
+            </div> -->
+        </div>
     </div>
     <div class="docsjbcontent">
         <div class="docsjbcsidebar">
@@ -55,7 +61,7 @@
             
             {% assign items = site.documents | where:"category",page.category %}
             
-            <ul class="nav flex-column nav-pills p-4 blogfadeb00" aria-orientation="vertical">
+            <ul class="nav flex-column nav-pills p-4" aria-orientation="vertical">
                 {% for article in items %}
                     <li class="nav-item">
                         <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
@@ -68,7 +74,7 @@
         <div class="docsjbcmain">
             <h2 class="d-md-none pb-2">{{ page.title }}</h2> <!-- add d-md-none after testing how it looks -->
 
-            <div class="docsjlastupdated blogfadeb00">
+            <div class="docsjlastupdated">
                 <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
                 <div class="pl-2 pr-2">
                     <p class="docstextgray pt-2">Wysc Staff</p>
@@ -76,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="docspbody blogfadeb01">
+            <div class="docspbody">
                 {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
                 {{ content }}
             </div>
@@ -89,6 +95,9 @@
         <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
         <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
     </div>
+
+    <script src="/js/dark-mode-switch-1.0.0/dark-mode-switch.min.js"></script>
+    <link rel="stylesheet" href="/js/dark-mode-switch-1.0.0/dark-mode.css">
 
 
 {% include wyscfooter.html %}
