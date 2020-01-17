@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="description" content="Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product! As we continue to improve...">
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
@@ -24,10 +24,10 @@
                 visible: 'hover',
                 icon: '#'
             };
-            anchors.add('.docsjbccoll .row .card .card-body h5');
+            anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
         });
     </script>
-    <title>Developer Hub &ndash;&nbsp;Wysc Docs</title>
+    <title>Introduction &ndash;&nbsp;Wysc Docs</title>
 </head>
 <body class="docsjbody">
     
@@ -113,18 +113,18 @@
 
     <div class="docsjheadimg">
         <div>
-            <h1>Developer Hub</h1>
+            <h1>Introduction</h1>
         </div>
     </div>
     
     <div id="statusapi">
     </div>
-    <div class="docsjheadsearch">
+    <div id="wthemeheadsearch" class="docsjheadsearch">
         <div class="docsjhs1 docstextgray">
             <em>Search coming soon!</em>
         </div>
         <div class="docsjhs2 noselect">
-            <nav class="bg-transparent docstextlight bccss">
+            <nav id="wthemebccss" class="docstextlight bccss">
    <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
        
@@ -133,24 +133,38 @@
        
           
       
-         
-            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-               <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
-                  <span property="name">Docs</span>
-               </a>
-                  <meta property="position" content="1" />
-            </li>
-            <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
-               <span property="name">Dev</span>
-               <meta property="position" content="2" />
-            </li>
-         
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
+            <span property="name">Docs</span>
+         </a>
+            <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs/dev">
+            <span property="name">Dev</span>
+         </a>
+            <meta property="position" content="2" />
+      </li>
+      <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+         <span property="name">APIs</span>
+         <meta property="position" content="3" />
+      </li>
       
 
    </ol>
 </nav>
 
 <style>
+.bccss {
+   /*background-color: #0C3247;*/
+   max-width: 900px;
+}
+.bccss-light {
+   margin: -1em;
+   padding: 1em;
+   border-radius: 0.25em;
+   width: calc(100% - 165px);
+}
 .bccss ol {
    margin:0 !important;
    padding:0 !important;
@@ -160,6 +174,14 @@
 }
 .bccss a {
    text-decoration: none;
+}
+@media (max-width: 768px) { /* up to d-md */
+   .bccss-light {
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+   }
 }
 </style>
         </div>
@@ -171,49 +193,59 @@
         </div>
     </div>
     <div class="docsjbcontent">
-        <div class="docsjbccoll">
-
-            <div class="p-4"></div>
-            <div class="row mx-auto justify-content-center">
+        <div class="docsjbcsidebar">
+            <h2 class="d-none d-md-block">APIs</h2>
+            
+            
+            
+            <ul class="nav flex-column nav-pills p-4" aria-orientation="vertical">
                 
+                    <li class="nav-item">
+                        <a class="nav-link active" id="docsjcatlist" href="/docs/dev/api/1">Introduction</a>
+                    </li>
                 
-                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
-                        <div class="card-body">
-                            <h5 class="card-title pt-2 pb-2">Info</h5>
-                            <p class="card-text">Tune into Developer Mode and dive behind the scenes of what&rsquo;s changed in Wysc.</p>
-                            <ul class="list-group list-group-flush p-2">
-
-                                
-                                
-                                    <a href="/docs/dev/info/changelog" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Changelog</a>
-                                
-
-                            </ul>
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/api/blog">Blog/Status API</a>
+                    </li>
                 
-                    <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
-                        <div class="card-body">
-                            <h5 class="card-title pt-2 pb-2">APIs</h5>
-                            <p class="card-text">Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!</p>
-                            <ul class="list-group list-group-flush p-2">
-
-                                
-                                
-                                    <a href="/docs/dev/api/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Introduction</a>
-                                
-                                    <a href="/docs/dev/api/blog" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Blog/Status API</a>
-                                
-                                    <a href="/docs/dev/api/docs" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Docs API</a>
-                                
-
-                            </ul>
-                        </div>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/api/docs">Docs API</a>
+                    </li>
                 
+            </ul>
+
+        </div>
+
+        <div class="docsjbcmain">
+            <h2 class="d-md-none pb-2">Introduction</h2> <!-- add d-md-none after testing how it looks -->
+
+            <div class="docsjlastupdated">
+                <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
+                <div class="pl-2 pr-2">
+                    <p class="docstextgray pt-2">Wysc Staff</p>
+                    <p class="docstextgray pb-2">Last updated 24 Nov 2019</p>
+                </div>
+            </div>
+
+            <div class="docspbody">
+                
+                <p>Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!</p>
+
+<p>As we continue to improve the Wysc website experience, these APIs will slowly be released to the public.</p>
+
+<h3 id="blog-apis">Blog APIs</h3>
+
+<p>The Wysc Blog APIs include a blog feed and other interfaces that make pulling in data about recent Blog updates quick and easy.</p>
+
+<h3 id="docs-apis">Docs APIs</h3>
+
+<p>The Wysc Docs APIs include a series of interfaces that help make discovering information across our knowledge base easier.</p>
+
+<h3 id="status-apis">Status APIs</h3>
+
+<p>These APIs help inform you of how Wysc is doing, whether anything is down for maintenance, or if there is important information that should be disseminnated.</p>
 
             </div>
-            <div class="p-4"></div>
 
         </div>
     </div>
@@ -223,6 +255,10 @@
         <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
         <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
     </div>
+
+    <script src="/js/dark-mode-switch-1.0.0/dark-mode-switch.min.js"></script>
+    <link rel="stylesheet" href="/js/dark-mode-switch-1.0.0/dark-mode.css">
+
 
 <!-- js -->
 <!-- jquery in wyscheader -->
@@ -239,8 +275,7 @@
 <meta property="og:description" content="
     
         
-            
-
+            Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product! As we continue to improve...
         
     
 ">

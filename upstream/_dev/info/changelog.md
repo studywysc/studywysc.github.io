@@ -1,13 +1,24 @@
 ---
 layout: kbdocs
 title:  "Changelog"
-category: "APIs"
+category: "Info"
 summary: "Version Releases for the Wysc Website"
 redirect_from:
   - changelog
   - docs/about/changelog
   - docs/about/dev/changelog
 ---
+
+### 0.200120
+
+- Major improvements in new Wysc Docs redesign
+  - New Wysc Docs homepage
+  - Massively expanded available documentation and subject breadth
+  - Light Mode (beta)
+- Major improvements in data accessibility
+  - Added Privacy Policy
+- Major improvements to site infrastructure
+  - Easier to maintain
 
 ### 0.191225
 

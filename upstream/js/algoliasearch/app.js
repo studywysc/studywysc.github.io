@@ -16,7 +16,7 @@ autocomplete(
       displayKey: 'title',
       templates: {
         suggestion({_highlightResult}) {
-          return `<span>${_highlightResult.title.value}</span>`;
+          return `<a href="${_highlightResult.url.value}"><b>${_highlightResult.title.value}</b><br><span>${_highlightResult.content.value}</span></a>`;
         },
         empty: '<div class="aa-empty">No matching docs</div>',
       },

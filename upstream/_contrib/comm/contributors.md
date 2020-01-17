@@ -22,6 +22,10 @@ creditslist:
       - coname: shimutan
       - coname: Mayo
 
+  - cat: Github Contributor
+    catobj:
+      - coname: Coming soon!
+
 ---
 
 If you have a role shown below but are not credited, please reach out to us at our Docs page and we will update the listing!
