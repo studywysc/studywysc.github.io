@@ -2,7 +2,7 @@
 layout: kbcredits
 superlayout: kbdocs
 title:  "Credits"
-category: "Legal"
+category: "Organization"
 last_updated: 12 Jan 2020
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible. The list may not be fully comprehensive. If you are a creator and have found that your work exists within Wysc but is not appropriately credited, please reach out to us at our Docs page and we will update the listing!"
 redirect_from:
@@ -112,7 +112,7 @@ creditslist:
         rounded: circle
 
     catobjsm:
-      - costitle: Non-Critical Functionality
+      - costitle: Extended Functionality
         coslist:
           - cosname: Ayana
             cosline: Entertainment
@@ -149,6 +149,11 @@ creditslist:
           - cosname: Statbot
             cosline: Server statistics
             cosurl: https://statbot.net/
+
+      - costitle: Data Processors
+        coslist:
+          - cosname: Google Drive Suite
+            cosurl: https://drive.google.com
 
       - costitle: Promotional Services
         coslist:
@@ -187,9 +192,6 @@ creditslist:
 
       - costitle: Development
         coslist:
-          - cosname: dhooks
-            cosurl: https://github.com/kyb3r/dhooks
-
           - cosname: Nightingale REST API Client
             cosurl: https://www.microsoft.com/en-us/p/nightingale-rest-api-client/9n2t6f9f5zdn
 
@@ -211,10 +213,6 @@ creditslist:
           - cosname: Mathway
             cosline: Advanced solution calculator
             cosurl: https://www.mathway.com
-            
-          - cosname: Wordpress
-            cosline: Wysc Events
-            cosurl: https://www.wordpress.com
 
   - cat: Website
     catobj:
@@ -253,9 +251,6 @@ creditslist:
     catobjsm:
       - costitle: Assets
         coslist:
-          - cosname: add-to-homescreen
-            cosurl: https://github.com/cubiq/add-to-homescreen
-
           - cosname: AnchorJS
             cosurl: https://github.com/bryanbraun/anchorjs
 
@@ -294,9 +289,6 @@ creditslist:
           - cosname: Animista
             cosurl: https://animista.net/
 
-          - cosname: Bookmark
-            cosurl: https://bookmark.com/
-
           - cosname: FreeDNS
             cosurl: https://freedns.afraid.org
 
@@ -317,15 +309,30 @@ creditslist:
             
           - cosname: OpenWeatherMap
             cosurl: https://openweathermap.org/
-
-          - cosname: splash-screens
-            cosurl: https://appsco.pe/developer/splash-screens
             
           - cosname: WebAIM&colon; Contrast Checker
             cosurl: https://webaim.org/resources/contrastchecker/
 
           - cosname: Zapier
             cosurl: https://zapier.com/
+
+  - cat: Other
+    catobjsm:
+      - costitle: Legacy
+        coslist:
+          - cosname: add-to-homescreen
+            cosurl: https://github.com/cubiq/add-to-homescreen
+          - cosname: Bookmark
+            cosurl: https://bookmark.com/
+          - cosname: dhooks
+            cosurl: https://github.com/kyb3r/dhooks
+          - cosname: splash-screens
+            cosurl: https://appsco.pe/developer/splash-screens
+          - cosname: Weebly
+            cosurl: https://weebly.com/
+          - cosname: Wordpress
+            cosurl: https://www.wordpress.com
+
 
 ---
 
@@ -335,4 +342,4 @@ creditslist:
 
 This attribution page may be incomplete. This page may exclude services that are no longer actively maintained by Wysc, no longer contribute to Wysc operations, or were recently adapted by Wysc. To see the full list of all Discord bots Wysc currently uses, please <a href="/invite" target="_blank">join our Discord</a>.
 
-**If you are a creator and have found that your work exists within Wysc but has not been added below, please [reach out to us](/docs/about/contact/1#official-inquiries) and we will be happy to update the listing!**
+**If you are a creator and have found that your work exists within Wysc but has not been added below, please [reach out to us](contact#official-inquiries) and we will be happy to update the listing!**
