@@ -25,10 +25,18 @@ While Wysc is open source, our intentions are for users to use our assets to ins
 
 ### Wysc on Discord
 
-While Wysc is mostly open-source and always like seeing others create amazing new experiences with our offerings, all Wysc property where appropriate is copyrighted and All Rights Reserved. Whether we will decide to prosecute for any abuse, misuse, or theft of our property is up to the sole discretion of Wysc, and precedent stances on prosecution is not a reliable indication of approval for behavior. [Reach out to us anytime for any inquiries regarding use of our property!](contact)
+Wysc's server design, channel/category organization, and unique channel features are **open for others to replicate, as long as there is substantial remixing of features.**
+
+We are always happy to see other servers incorporating our ideas! For example, we have pioneered a cafe experience through channels such as #studygram, automated mixed-use content feeds, and liberal use of colored embeds. But all these features are available for the public to use as well! We encourage users to [check out our Credits page](credits) to see how we do it and create their own server using the very tools that have helped make our server possible.
+
+However, **we do not tolerate a significantly replicated user experience** without prior arrangements. This includes (but is not limited to) copying many or all aspects of our server without a different target audience, using phrasing that is similar to our promotional material without noticeable variation, or providing an experience that may cause confusion between Wysc and your creation.
+
+**If you would like to heavily replicate Wysc**, but for a different target audience or with a significant feature, we'd love to partner with you to provide enhanced support and integration that can benefit both you and Wysc! [Reach out to us on our Contact page](contact) or send us a message in #support to make it happen.
+
+**If you have an idea to improve Wysc**, come join us in Contributor Hub! [See Contributor Hub for more details.](../../contrib)
 
 
 ### Wysc Everywhere Else
 
-All Wysc property where appropriate is copyrighted and All Rights Reserved. If you have any questions about Wysc property you'd like to use, [reach out to us anytime!](contact)
+While Wysc is mostly open-source and always like seeing others create amazing new experiences with our offerings, all Wysc property where appropriate is copyrighted and All Rights Reserved. Whether we will decide to prosecute for any abuse, misuse, or theft of our property is up to the sole discretion of Wysc, and precedent stances on prosecution is not a reliable indication of approval for behavior. [Reach out to us anytime for any inquiries regarding use of our property!](contact)
 

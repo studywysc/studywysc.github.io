@@ -35,7 +35,7 @@ freqask:
   - faslug: time
     fatitle: How do I set my @☕ Café Bot ᵀᴱ time?
     
-  - faslug: docs/bots
+  - faslug: bots
     fatitle: How do I find bot commands?
     
   - faslug: partner

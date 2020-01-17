@@ -1,6 +1,5 @@
-const client = algoliasearch('Q71HM8430Y', '7f42b7cbd41474bf777414c24302d4a4');
-const players = client.initIndex('players');
-const teams = client.initIndex('teams');
+const client = algoliasearch('HRA929IBAN', '47962dcf70705d6573033e09f6d70ebe');
+const players = client.initIndex('Wysc');
 
 autocomplete(
   '#aa-search-input',
@@ -14,14 +13,12 @@ autocomplete(
   [
     {
       source: autocomplete.sources.hits(players, {hitsPerPage: 7}),
-      displayKey: 'name',
-      name: 'player',
+      displayKey: 'title',
       templates: {
-        header: '<div class="aa-suggestions-category">Players</div>',
         suggestion({_highlightResult}) {
-          return `<span>${_highlightResult.name.value}</span><span>${_highlightResult.team.value}</span>`;
+          return `<span>${_highlightResult.title.value}</span>`;
         },
-        empty: '<div class="aa-empty">No matching players</div>',
+        empty: '<div class="aa-empty">No matching docs</div>',
       },
     }
   ]
