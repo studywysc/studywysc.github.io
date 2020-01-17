@@ -34,12 +34,11 @@ All users are welcome to contribute any code revisions they deem appropriate thr
 
 ### Credits:
 
-We do not believe in theft of other works. Using our open source code to contribute to your own works is okay, but wholesale theft for personal profit crosses a line at Wysc. As a result, we'd like to be friendly patrons of the open source community as well and \(attempt to\) list all resources we have come to rely on [in our credits page](https://gitnisyl.github.io/wysc/docs/about/credits). Are we missing something? [Let us know and we'll be glad to add you on our list!](https://gitnisyl.github.io/wysc/docs/about/contact#official-inquiries)
+We do not believe in theft of other works. Using our open source code to contribute to your own works is okay, but wholesale theft for personal profit crosses a line at Wysc. As a result, we'd like to be friendly patrons of the open source community as well and \(attempt to\) list all resources we have come to rely on [in our credits page](https://wysc.netlify.com/credits). Are we missing something? [Let us know and we'll be glad to add you on our list!](https://wysc.netlify.com/contact#official-inquiries)
 
  
 
 ### More Wysc Resources:
 
-* [Gitbook](https://gdocs.gitbook.io/wysc)
 * [Work\|Studying\|Chilling](https://wysc.netlify.com/joinwsc)
 
