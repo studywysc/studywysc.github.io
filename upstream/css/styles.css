@@ -542,7 +542,8 @@ body .wnavglobal {
   overflow: visible;
 }
 .dhleadbanner {
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   background: url('/media/robson-hatsukami-morgan-sV28sEjKOjg-unsplash.jpg');
   /* -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);

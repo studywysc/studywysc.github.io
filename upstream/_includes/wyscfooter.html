@@ -9,6 +9,9 @@
 {% if page.supertitle %}
     <title>{{ page.supertitle }}</title>
     <meta property="og:title" content="{{ page.supertitle }}" />
+{% elsif page.headername == 'Blog-sub' or page.layout == 'wyscblog-post' %} <!-- blog posts have Blog-sub headername -->
+    <title>{{ page.title }} &ndash;&nbsp;Wysc Blog</title>
+    <meta property="og:title" content="{{ page.title }} – Wysc Blog" />
 {% elsif page.headername %}
     <title>Wysc {{ page.headername }} – Wysc</title>
     <meta property="og:title" content="Wysc – Virtual Study Cafe" />
@@ -25,7 +28,7 @@
 <meta property="og:url" content="https://wysc.us.to" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="
-    {% if page.headername == 'Blog' or page.layout == 'wyscblog-post' %}
+    {% if page.headername == 'Blog-sub' or page.layout == 'wyscblog-post' %}
         {{ page.content | markdownify | strip_html | truncatewords: 20 }}
     {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
         {% if page.summary %}
