@@ -21,7 +21,7 @@ redirect_from:
 Here's a human-readable summary (that is not legally binding):
 - Your data and information are subject to [Discord's Privacy Policy](https://discordapp.com/privacy) and what they choose to make public through their [Developer documentation](https://discordapp.com/developers/docs/intro)
 - Wysc may use third party processors to process some or all of your personal information, [most of which will be listed here](credits)
-- Wysc strives to ensure encryption, with most data being processed and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
+- Wysc strives to ensure encryption, with most data being stored, processed, and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
 - We operate out of the United States
 - [Contact us](../org/contact) for any questions!
 

@@ -30,9 +30,14 @@
 </head>
 <body class="docsjbody">
     
-    <!-- desktop topnav -->
+    <!-- accessibility menu -->
+
+<!-- <a class="wariamenu" href="#content">Skip to Main Content</a>
+<span class="wariamenu">We're working on expanding accessible options. Thanks for your patience!</span> -->
+
+<!-- desktop topnav -->
 <div class="d-none d-md-block noselect wnavglobal">
-    <nav class="navbar fixed-top navbar-dark bg-transparent">
+    <nav class="navbar fixed-top navbar-dark bg-transparent" role="navigation">
 
         
             <a class="navbar-brand hoverscale" href="/index">
@@ -112,7 +117,7 @@
 
     <div class="docsjheadimg">
         <div>
-            <h1>Blog/Status API</h1>
+            <h1>Blog API</h1>
         </div>
     </div>
     
@@ -204,11 +209,15 @@
                     </li>
                 
                     <li class="nav-item">
-                        <a class="nav-link active" id="docsjcatlist" href="/docs/dev/api/blog">Blog/Status API</a>
+                        <a class="nav-link active" id="docsjcatlist" href="/docs/dev/api/blog">Blog API</a>
                     </li>
                 
                     <li class="nav-item">
                         <a class="nav-link" id="docsjcatlist" href="/docs/dev/api/docs">Docs API</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/api/status">Status API</a>
                     </li>
                 
             </ul>
@@ -216,7 +225,7 @@
         </div>
 
         <div class="docsjbcmain">
-            <h2 class="d-md-none pb-2">Blog/Status API</h2> <!-- add d-md-none after testing how it looks -->
+            <h2 class="d-md-none pb-2">Blog API</h2> <!-- add d-md-none after testing how it looks -->
 
             <div class="docsjlastupdated">
                 <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
@@ -228,41 +237,7 @@
 
             <div class="docspbody">
                 <p>The Wysc Blog API series provides API access to the data that populates Wysc Blog.</p>
-                <h3 id="status-api">Status API</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://wysc.netlify.com/api/status.json
-</code></pre></div></div>
-
-<p>Wysc independently hosts a status page at <a href="/blog">Wysc Blog</a> for the convenience of users to see whether any of our services are under maintenance.</p>
-
-<p>We plan to eventually incorporate a Discord status API as well to show to users whether Discord may be experiencing issues, independent of Wysc.</p>
-
-<p><br />
-Sample code:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-  "wysc":[
-    {
-      "title": "Wysc Discord",
-      "isup": boolean,
-      "isupemoji": "Alert emoji",
-      "howsevere": "low // medium // high",
-      "notes": "Notes for when Wysc Discord is not operating normally"
-      "readmore": "Link to webpage with more info"
-    },
-    {
-      "title": "Wysc Website",
-      "isup": boolean,
-      "isupemoji": "Alert emoji",
-      "howsevere": "low // medium // high",
-      "notes": "Notes for when Wysc Discord is not operating normally"
-      "readmore": "Link to webpage with more info"
-    }
-  ]
-}
-</code></pre></div></div>
-<p><br /></p>
-
-<h3 id="rss-feed">RSS Feed</h3>
+                <h3 id="rss-feed">RSS Feed</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://wysc.netlify.com/blog/feed.xml
 </code></pre></div></div>
@@ -295,8 +270,8 @@ Sample code:</p>
 
 <!-- og: meta tags // title-type-img-url required -->
 
-    <title>Blog/Status API &ndash;&nbsp;Wysc Docs</title>
-    <meta property="og:title" content="Blog/Status API – Wysc Docs" />
+    <title>Blog API &ndash;&nbsp;Wysc Docs</title>
+    <meta property="og:title" content="Blog API – Wysc Docs" />
 
 
 <meta property="og:type" content="website" />
