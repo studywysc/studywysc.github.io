@@ -25,15 +25,13 @@
 <meta property="og:url" content="https://wysc.us.to" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="
-    {% if page.headername == 'Blog' %}
-        {{ post.content | markdownify | strip_html | truncatewords: 22 }}
-    {% elsif page.layout == 'wyscblog-post' %}
-        {{ post.content | markdownify | strip_html | truncatewords: 22 }}
+    {% if page.headername == 'Blog' or page.layout == 'wyscblog-post' %}
+        {{ page.content | markdownify | strip_html | truncatewords: 20 }}
     {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
         {% if page.summary %}
             {{ page.summary }}
         {% else %}
-            {{ page.content | markdownify | strip_html | truncatewords: 22 }}
+            {{ page.content | markdownify | strip_html | truncatewords: 20 }}
         {% endif %}
     {% else %}
         For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.
