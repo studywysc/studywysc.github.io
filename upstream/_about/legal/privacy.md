@@ -1,13 +1,14 @@
 ---
 layout: kbdocs
 title:  "Privacy Policy"
-category: "Organization"
+category: "Legal"
 last_updated: 17 Jan 2020
 summary: "The privacy of your data — and it is your data, not ours! — is at your perusal. Here's how we'll try to protect your data from the wild Internet west."
 redirect_from:
   - privacy-policy
   - privacy
   - cookies
+  - docs/about/org/privacy
 ---
 
 <br>
@@ -19,10 +20,10 @@ redirect_from:
 
 Here's a human-readable summary (that is not legally binding):
 - Your data and information are subject to [Discord's Privacy Policy](https://discordapp.com/privacy) and what they choose to make public through their [Developer documentation](https://discordapp.com/developers/docs/intro)
-- Wysc may use [third party processors](credits) to process some or all of your personal information
+- Wysc may use third party processors to process some or all of your personal information, [most of which will be listed here](credits)
 - Wysc strives to ensure encryption, with most data being processed and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
 - We operate out of the United States
-- [Contact us](contact) for any questions!
+- [Contact us](../org/contact) for any questions!
 
 <br>
 
@@ -36,7 +37,7 @@ When you sign up for Wysc, you agree to entering a public space where [all infor
 
 When you use Wysc Docs, there may be an option for you to toggle Light Mode. Toggling Light Mode places a cookie in your browser that allows us to remember your theme choice. This information is not collected or personally identifiable, and happens locally.
 
-The only times we’ll ever share your info is:
+The only times we’ll ever actively share your info is:
 
 - To provide products or services you've requested, with your permission.
 - To process information that will generate statistics.
@@ -46,12 +47,12 @@ The only times we’ll ever share your info is:
 
 ### Your Rights With Respect to Your Information
 
-You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Most GDPR rights may be exercised through Wysc Discord. If you have questions about exercising these rights or need assistance, please contact us at [wyscofficial@icloud.com](mailto:wyscofficial@icloud.com). We reserve the right to limit the number of times you may exercise your rights should the requests become burdensome and/or laborious in nature to satisfy.
+You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Most GDPR rights may be exercised through Wysc Discord. If you have questions about exercising these rights or need assistance, please contact us at [wyscofficial@icloud.com](../org/contact). We reserve the right to batch-process your requests to exercise your rights should they become burdensome and/or laborious in nature to satisfy.
 
 
 ### Processors we use
 
-As part of the services we provide, we may use certain third party processors to process some or all of your personal information. For identification of processors, please see our [Credits page](credits). Our Credits page is a work in progress and may be missing some processors. [Contact us](contact) if you notice us using a processor that isn't listed here!
+As part of the services we provide, we may use certain third party processors to process some or all of your personal information. For identification of processors, please see our [Credits page](credits). Our Credits page is a work in progress and may be missing some processors. [Contact us](../org/contact) if you notice us using a processor that isn't listed here!
 
 
 ### Law enforcement
@@ -65,7 +66,7 @@ All Wysc Discord data is encrypted subject to [Discord's](https://discordapp.com
 
 All Wysc Website data is encrypted subject to [Github](https://github.com/security) and [Netlify's](https://www.netlify.com/security/) security practices when transmitted to your browser.
 
-We strive to use only services that offer [SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to store and deliver content. If you discover a service we use that runs on an unencrypted connection, [please report it to us here](contact).
+We strive to use only services that offer [SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to store and deliver content. If you discover a service we use that runs on an unencrypted connection, [please report it to us here](../org/contact).
 
 
 ### Deleted data
@@ -80,9 +81,9 @@ This Site is operated in the United States. If you are located in the European U
 
 ### Changes & questions
 
-Wysc may update this policy at any time in order to more accurately reflect the activities we engage in. We'll provide a courtesy notice regarding significant changes that may require action on your part by posting to our Blog and/or an announcement in Wysc Discord. You can access, change or delete your personal information at any time either through Discord or by contacting [our support team][contact].
+Wysc may update this policy at any time in order to more accurately reflect the activities we engage in. We'll provide a courtesy notice regarding significant changes that may require action on your part by posting to our Blog and/or an announcement in Wysc Discord. You can access, change or delete your personal information at any time either through Discord or by contacting [our support team](../org/contact).
 
-Questions about this privacy policy? Please [get in touch][contact] and we’ll be happy to answer them!
+Questions about this privacy policy? Please [get in touch](../org/contact) and we’ll be happy to answer them!
 
 <br>
 
