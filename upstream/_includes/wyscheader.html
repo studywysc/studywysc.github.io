@@ -21,20 +21,6 @@
     <meta name="theme-color" content="#9C5D49" />
 {% endif %}
 
-{% if page.supertitle %}
-    <title>{{ page.supertitle }}</title>
-    <meta property="og:title" content="{{ page.supertitle }}" />
-{% elsif page.headername %}
-    <title>Wysc {{ page.headername }} – Wysc</title>
-    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
-{% elsif page.layout == kbdocs or page.superlayout == kbdocs %}
-    <title>{{ page.title }} – Wysc Docs</title>
-    <meta property="og:title" content="{{ page.title }} – Wysc Docs" />
-{% else %}
-    <title>{{ page.title }} – Wysc</title>
-    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
-{% endif %}
-
 <meta name="robots" content="index, follow" />
 <link rel="manifest" href="/app.webmanifest">
 <script async src="/js/pwacompat-2.0.10.min.js"></script>
