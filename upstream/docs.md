@@ -13,20 +13,20 @@ maincats:
     cattitle: Wysc Features
     catdesc: See what our Discord can do and how to use it!
 
-  - catslug: bots
-    caticon: bubble_chart
-    cattitle: Bot Commands
-    catdesc: Bot functionality you can use in Wysc
+  # - catslug: bots
+  #   caticon: bubble_chart
+  #   cattitle: Bot Commands
+  #   catdesc: Bot functionality you can use in Wysc
 
-  - catslug: dev
-    caticon: bubble_chart
-    cattitle: Developers
-    catdesc: Wysc APIs, Changelog, and Github 🔧
+  # - catslug: dev
+  #   caticon: bubble_chart
+  #   cattitle: Developers
+  #   catdesc: Wysc APIs, Changelog, and Github 🔧
 
-  - catslug: contrib
-    caticon: bubble_chart
-    cattitle: Contributor Hub
-    catdesc: Explore Wysc's path into the future! 💌
+  # - catslug: contrib
+  #   caticon: bubble_chart
+  #   cattitle: Contributor Hub
+  #   catdesc: Explore Wysc's path into the future! 💌
 
 freqask:
   - faslug: ranks
