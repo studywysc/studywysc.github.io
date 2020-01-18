@@ -1594,9 +1594,12 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     height:1.5em;
     margin-top:0px;
   }
-  /* .docsjheadsearch {
-    background-color: #244659; / 0C3247 /
-  } */
+  .docsjheadsearch {
+    /* background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat top;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: #244659; /* 0C3247 */
+  }
   .docsjbccoll .row {
     width:95%;
   }
