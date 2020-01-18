@@ -27,13 +27,17 @@
             anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
         });
     </script>
-    <title>Group Study &ndash;&nbsp;Wysc Docs</title>
 </head>
 <body class="docsjbody">
     
-    <!-- desktop topnav -->
+    <!-- accessibility menu -->
+
+<!-- <a class="wariamenu" href="#content">Skip to Main Content</a>
+<span class="wariamenu">We're working on expanding accessible options. Thanks for your patience!</span> -->
+
+<!-- desktop topnav -->
 <div class="d-none d-md-block noselect wnavglobal">
-    <nav class="navbar fixed-top navbar-dark bg-transparent">
+    <nav class="navbar fixed-top navbar-dark bg-transparent" role="navigation">
 
         
             <a class="navbar-brand hoverscale" href="/index">
@@ -188,6 +192,12 @@
 }
 </style>
         </div>
+        <div class="docsjhs3">
+            <!-- <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">Light Mode</label>
+            </div> -->
+        </div>
     </div>
     <div class="docsjbcontent">
         <div class="docsjbcsidebar">
@@ -195,7 +205,7 @@
             
             
             
-            <ul class="nav flex-column nav-pills p-4 blogfadeb00" aria-orientation="vertical">
+            <ul class="nav flex-column nav-pills p-4" aria-orientation="vertical">
                 
                     <li class="nav-item">
                         <a class="nav-link" id="docsjcatlist" href="/docs/discord/library/1">Channels: Wysc Library 📚</a>
@@ -212,7 +222,7 @@
         <div class="docsjbcmain">
             <h2 class="d-md-none pb-2">Group Study</h2> <!-- add d-md-none after testing how it looks -->
 
-            <div class="docsjlastupdated blogfadeb00">
+            <div class="docsjlastupdated">
                 <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
                 <div class="pl-2 pr-2">
                     <p class="docstextgray pt-2">Wysc Staff</p>
@@ -220,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="docspbody blogfadeb01">
+            <div class="docspbody">
                 
                 <p>Group Study is one of Wysc’s primary features.</p>
 
@@ -282,6 +292,9 @@
         <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
     </div>
 
+    <script src="/js/dark-mode-switch-1.0.0/dark-mode-switch.min.js"></script>
+    <link rel="stylesheet" href="/js/dark-mode-switch-1.0.0/dark-mode.css">
+
 
 <!-- js -->
 <!-- jquery in wyscheader -->
@@ -291,9 +304,14 @@
 <link type="text/javascript" href="/js/script.js">
 
 <!-- og: meta tags // title-type-img-url required -->
+
+    <title>Group Study &ndash;&nbsp;Wysc Docs</title>
+    <meta property="og:title" content="Group Study – Wysc Docs" />
+
+
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/media/wsc-sp-rounded.png" />
-<meta property="og:url" content="https://wysc.js.org" />
+<meta property="og:url" content="https://wysc.us.to" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="
     

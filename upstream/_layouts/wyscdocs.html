@@ -7,90 +7,64 @@
 
     {% include wyscnav.html %}
 
-    <div class="parallaxbg sectiontextcolor dhheader"> <!-- /gsyl/tr:w-100,f-jpg,pr-true/ -->
-        <div class="text-center" style="width:100%;z-index:4;min-height:100vh;">
-
-            <div class="d-none d-md-block" style="padding-top:20vh;"></div>
-            <div class="d-md-none" style="padding-top:10vh;"></div>
-
-            <div>
-                <div class="blogfadeb00"><h1 class="text-shadow-drop-bottom align-center fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Find What You Need</h1></div>
-                <div class="d-none d-md-block" style="padding-bottom:1.5em;"></div>
-                <div class="text-center blogfadeb02 mx-auto docshcell text-info noselect" style="width:80%;">
-                    <a href="docs/about" class="cursornone card dhcards hoverscale">
-                        <div>
-                            <div class="card-body p-4 dhcardcontent docstopcards">
-                                <i class="material-icons p-3 md-36">favorite</i>
-                                <h5 class="card-title">About Wysc</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="docs/discord" class="cursornone card dhcards hoverscale">
-                        <div>
-                            <div class="card-body p-4 dhcardcontent docstopcards">
-                                <i class="material-icons p-3 md-36">format_list_bulleted</i>
-                                <h5 class="card-title">How to Use Wysc</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://gdocs.gitbook.io/wysc/start" target="blank" rel="noopener" class="cursornone card dhcards hoverscale">
-                        <div>
-                            <div class="card-body p-4 dhcardcontent docstopcards">
-                                <i class="material-icons p-3 md-36">bubble_chart</i>
-                                <h5 class="card-title">Bot Commands</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <h4 class="blogfadeb03 p-2" style="margin-top:10vh;">Popular Articles</h4>
-                <div class="text-center blogfadeb04 mx-auto docshcell text-light noselect" style="width:80%;">
-                    <a href="docs/about/1" class="cursornone card bg-dark dhcardsmini hoverscale">
-                        <div class="card-body p-4">
-                            <h5 class="card-title">About Us/Staff</h5>
-                        </div>
-                    </a>
-                    <a href="docs/about/credits" class="cursornone card bg-dark dhcardsmini hoverscale">
-                        <div class="card-body p-4">
-                            <h5 class="card-title">Credits</h5>
-                        </div>
-                    </a>
-                    <a href="docs/discord/server-ranks" class="cursornone card bg-dark dhcardsmini hoverscale">
-                        <div class="card-body p-4">
-                            <h5 class="card-title">Server Ranks</h5>
-                        </div>
-                    </a>
-                </div>
-
-                <!--
-                <div class="blogfadeb03" style="padding-top:100px;">
-                    <h1 class="text-shadow-drop-bottom align-center fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Popular Articles</h1>
-                </div>
-                <div class="blogfadeb04 mx-auto" style="width:50%;">
-                    <div class="card">
-                        <div class="card-body text-dark">
-                            <p style="margin-top:1em;"><a href="discord/wysclibrary">Discord - Wysc Library</a></p>
-                            <p><a href="discord/culture">Discord - Culture</a></p>
-                            <p><a href="discord/bots">Discord - Bots</a></p>
-                            <p><a href="discord/server-ranks">Discord - Server Ranks</a></p>
-                            <p><a href="about/credits">Wysc Info - Credits</a></p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div style="padding-bottom:80px;"></div>
-        
-                <div class="blogfadeb04">
-                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
-                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
-                </div>
-
-            </div>
+    <div class="dhheader2">
+        <div class="d-none d-md-block" style="padding-top:100px;"></div>
+        <div class="blogfadeb00 sectiontextcolor">
+            <h1 style="padding-bottom:20px;font-family:'Gochi Hand';font-size:3.5em;">How can we help?</h1>
+        </div>
+        <div class="blogfadeb00">
+            <link href="/js/algoliasearch/app.css" rel=stylesheet />
         </div>
     </div>
 
-{% include wyscfooter.html %}
+    <div class="dhcatcontent blogfadeb01">
+        {% if page.maincats %}
+            <div class="dhcatcoll">
+                {% for item in page.maincats %}
+                    <a href="docs/{{ item.catslug }}" class="dhcatcollsect">
+                        <div class="dhcatcollcard shadow hoverscale">
+                            <div>
+                                <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                            </div>
+                            <div class="dhcatcollcard2">
+                                <div>
+                                    <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
+                                </div>
+                                <div>
+                                    <p class="card-text">{{ item.catdesc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
 
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&display=swap" rel="stylesheet">
+        
+    </div>
+
+
+
+            <!-- <div class="p-4"></div>
+            <div class="row mx-auto justify-content-center">
+                
+                {% for item in page.maincats %}
+                    <a href="docs/{{ item.catslug }}" class="list-group-item col-md-4 docstextwysclight2 bg-transparent" style="border:0;">
+                        <div class="card mb-0 bg-light shadow blogfadeb00">
+                            <div class="card-body p-4 text-center">
+                                <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                                <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
+                                <p class="card-text">{{ item.catdesc }}</p>
+                            </div>
+                        </div>    
+                    </a>
+                {% endfor %}
+
+            </div>
+            <div class="p-4"></div> -->
+    <!-- <div style="height:600px;background:#414141;">p</div> -->
+
+{% include wyscfooter.html %}
 
 </body>
 </html>

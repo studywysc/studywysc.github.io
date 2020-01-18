@@ -6,16 +6,30 @@
 <link type="text/javascript" href="/js/script.js">
 
 <!-- og: meta tags // title-type-img-url required -->
+{% if page.supertitle %}
+    <title>{{ page.supertitle }}</title>
+    <meta property="og:title" content="{{ page.supertitle }}" />
+{% elsif page.headername %}
+    <title>Wysc {{ page.headername }} – Wysc</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+{% elsif page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
+    <title>{{ page.title }} &ndash;&nbsp;Wysc Docs</title>
+    <meta property="og:title" content="{{ page.title }} – Wysc Docs" />
+{% else %}
+    <title>{{ page.title }} – Wysc</title>
+    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+{% endif %}
+
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/media/wsc-sp-rounded.png" />
-<meta property="og:url" content="https://wysc.js.org" />
+<meta property="og:url" content="https://wysc.us.to" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="
     {% if page.headername == 'Blog' %}
         {{ post.content | markdownify | strip_html | truncatewords: 22 }}
     {% elsif page.layout == 'wyscblog-post' %}
         {{ post.content | markdownify | strip_html | truncatewords: 22 }}
-    {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' %}
+    {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
         {% if page.summary %}
             {{ page.summary }}
         {% else %}

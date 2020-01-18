@@ -36,7 +36,7 @@ bodytext: >
 bodycard01icon: trending_up
 bodycard01title: Popular and Growing
 bodycard01text: >
-    With hundreds of members and growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.
+    Hitting over one thousand members and still growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.
 
 bodycard02icon: public
 bodycard02title: Global in Nature
@@ -46,6 +46,6 @@ bodycard02text: >
 bodycard03icon: local_florist
 bodycard03title: Free. Forever.
 bodycard03text: >
-    A free service designed to last, from our channels to our bots. Our finances are rock-solid and all resources are open-source. We're in this with you for the long haul. <a href="docs?brand">Read more</a>
+    A free service designed to last, from our channels to our bots. Our finances are rock-solid and Wysc is powered by open-source technology. <a href="credits">We're in this with you for the long haul.</a>
 
 ---

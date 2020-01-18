@@ -19,11 +19,6 @@
     <meta name="theme-color" content="#9C5D49" />
 
 
-
-    <title>Wysc – A Study Discord Experience | University, College, High School Students</title>
-    <meta property="og:title" content="Wysc – A Study Discord Experience | University, College, High School Students" />
-
-
 <meta name="robots" content="index, follow" />
 <link rel="manifest" href="/app.webmanifest">
 <script async src="/js/pwacompat-2.0.10.min.js"></script>
@@ -55,9 +50,14 @@
 </head>
 <body class="homebody">
 
-    <!-- desktop topnav -->
+    <!-- accessibility menu -->
+
+<!-- <a class="wariamenu" href="#content">Skip to Main Content</a>
+<span class="wariamenu">We're working on expanding accessible options. Thanks for your patience!</span> -->
+
+<!-- desktop topnav -->
 <div class="d-none d-md-block noselect wnavglobal">
-    <nav class="navbar fixed-top navbar-dark bg-transparent">
+    <nav class="navbar fixed-top navbar-dark bg-transparent" role="navigation">
 
         
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
@@ -164,7 +164,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#content" class="cursordefault cursornone">
+                <a href="#content" class="cursordefault cursornone" aria-hidden="true">
                     <i class="material-icons md-light md-36 homefadeb03 noselect" style="margin-top:10vh;">arrow_drop_down_circle</i>
                 </a>
                 <div class="d-md-none" style="padding-top:20vh;"></div>
@@ -186,7 +186,7 @@
         <div class="card-deck" style="padding-left:10%;padding-right:10%;padding-top:5vh;">
             <div class="card bg-transparent border-0">
                 <div class="card-body">
-                    <i class="material-icons p-4 noselect" style="font-size:4em;">people_outline</i>
+                    <i class="material-icons p-4 noselect" style="font-size:4em;" aria-hidden="true">people_outline</i>
                     <h5 class="card-title">Community-oriented</h5>
                     <p class="card-text">Drop by anytime and chat, make some friends, or meet new people! Casual and free, we're always open to discussions, voice chats, and memes 😍
 </p>
@@ -194,7 +194,7 @@
             </div>
             <div class="card bg-transparent border-0">
                 <div class="card-body">
-                    <i class="material-icons p-4 noselect" style="font-size:4em;">import_contacts</i>
+                    <i class="material-icons p-4 noselect" style="font-size:4em;" aria-hidden="true">import_contacts</i>
                     <h5 class="card-title">Study-focused</h5>
                     <p class="card-text">Ask for homework help, do group study sessions, or just chat with like-minded students! Find companionship as comrades in school and higher education 📚
 </p>
@@ -202,7 +202,7 @@
             </div>
             <div class="card bg-transparent border-0">
                 <div class="card-body">
-                    <i class="material-icons p-4 noselect" style="font-size:4em;">music_note</i>
+                    <i class="material-icons p-4 noselect" style="font-size:4em;" aria-hidden="true">music_note</i>
                     <h5 class="card-title">Musical</h5>
                     <p class="card-text">Lofi, vaporwave, and more -- working, studying or chilling in Discord has never been easier with fresh music delivered by curated feeds daily 🎧
 </p>
@@ -225,13 +225,13 @@
         <!--<div class="homepadengage2"></div>-->
         <div class="d-flex flex-wrap-reverse align-items-center flex-fill ml-4 mr-4 homepadengage3">
             <div class="hoverscale noselect" style="height:70vh;max-height:800px;width:18rem;margin-left:auto;margin-right:auto;">
-                <a href="invite">
+                <a href="invite" aria-hidden="true">
                     <div style="position:absolute;height:100%;width:18rem;"><i class="material-icons noselect"
                             style="position:absolute;top:-2rem;right:-1rem;color:#dedede;font-size:72px;transform: rotate(-10deg);">group_add</i>
                     </div>
                 </a>
                 <!-- <div style="position:absolute;height:100%;width:100%;" onclick="crate.toggle()"></div> -->
-                <iframe class="rounded-lg shadow-lg mb-5" src="" data-src="/api/w-disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no" title="discord channels list"></iframe>
+                <iframe class="rounded-lg shadow-lg mb-5" src="" data-src="/api/w-disch.html" style="border:none;width:100%;height:100%;overflow:hidden;" scrolling="no" title="discord channels list" aria-hidden="true"></iframe>
             </div>
 
             <div class="align-self-start text-center hoverscale" style="margin:auto;width:35rem;">
@@ -255,13 +255,13 @@
             <div class="m-4">
                     <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(82, 106, 119, 1);"><!--0.96-->
                         <div class="row no-gutters m-3 p-3">
-                            <div class="col-md-3 noselect" style="display:flex;align-items:center;">
+                            <div class="col-md-3 noselect" style="display:flex;align-items:center;" aria-hidden="true">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">trending_up</i>
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
                                         <h5 class="card-title noselect" style="color:#efefef;line-height:1.5em;">Popular and Growing</h5>
-                                        <p class="card-text" style="color:#dedede;font-size:1.05em;">With hundreds of members and growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.
+                                        <p class="card-text" style="color:#dedede;font-size:1.05em;">Hitting over one thousand members and still growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.
 </p>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
             <div class="m-4">
                     <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(57, 85, 100, 1);"><!--0.98-->
                         <div class="row no-gutters m-3 p-3">
-                            <div class="col-md-3 noselect" style="display:flex;align-items:center;">
+                            <div class="col-md-3 noselect" style="display:flex;align-items:center;" aria-hidden="true">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">public</i>
                             </div>
                             <div class="col-md-9">
@@ -293,14 +293,23 @@
             <div class="m-4">
                     <div class="card mb-3 border-0 rounded-lg hoverscale" style="background-color:rgba(32, 64, 81, 1);">
                         <div class="row no-gutters m-3 p-3">
-                            <div class="col-md-3 noselect" style="display:flex;align-items:center;">
+                            <div class="col-md-3 noselect" style="display:flex;align-items:center;" aria-hidden="true">
                                 <i class="material-icons" style="font-size: 4em;color:#dedede;margin-left:auto;margin-right:auto;">local_florist</i>
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
                                         <h5 class="card-title noselect" style="color:#efefef;line-height:1.5em;">Free. Forever.</h5>
-                                        <p class="card-text" style="color:#dedede;font-size:1.05em;">A free service designed to last, from our channels to our bots. Our finances are rock-solid and all resources are open-source. We're in this with you for the long haul. <a href="docs?brand">Read more</a>
+                                        <p class="card-text wwhomelink" style="color:#dedede;font-size:1.05em;">A free service designed to last, from our channels to our bots. Our finances are rock-solid and Wysc is powered by open-source technology. <a href="credits">We're in this with you for the long haul.</a>
 </p>
+                                        <style>
+                                            .wwhomelink > a {
+                                                color: #17a2b8;
+                                                transition: color 0.2s;
+                                            }
+                                            .wwhomelink > a:hover {
+                                                color: #adb5bd;
+                                            }
+                                        </style>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +374,7 @@
             <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
             <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
 
-            <div style="color:#aaa;padding-bottom:30px;">
+            <div style="color:#aaa;padding-bottom:30px;" aria-hidden="true">
                 <a href="https://discord.me/wysc" target="_blank" rel="noopener" style="color:#aaa;">Discord.me</a> | <a href="https://disboard.org/server/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">Disboard</a> | <a href="https://discordlisting.me/servers/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">DiscordListing</a> | <a href="https://discordservers.com/server/319372945929666571" target="_blank" rel="noopener" style="color:#aaa;">DiscordServers</a>
             </div>
 
@@ -380,9 +389,14 @@
 <link type="text/javascript" href="/js/script.js">
 
 <!-- og: meta tags // title-type-img-url required -->
+
+    <title>Wysc – A Study Discord Experience | University, College, High School Students</title>
+    <meta property="og:title" content="Wysc – A Study Discord Experience | University, College, High School Students" />
+
+
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/media/wsc-sp-rounded.png" />
-<meta property="og:url" content="https://wysc.js.org" />
+<meta property="og:url" content="https://wysc.us.to" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="
     

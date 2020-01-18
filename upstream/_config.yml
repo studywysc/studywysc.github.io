@@ -49,8 +49,17 @@ collections:
     permalink: /docs/:collection/:path
   api:
     output: true
+  bots:
+    output: true
+    permalink: /docs/:collection/:path
+  contrib:
+    output: true
+    permalink: /docs/:collection/:path
   css:
     output: true
+  dev:
+    output: true
+    permalink: /docs/:collection/:path
   discord:
     output: true
     permalink: /docs/:collection/:path

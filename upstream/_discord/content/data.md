@@ -56,7 +56,7 @@ Fill in this form correctly in Discord to confirm you will follow GDPR standards
 
 All Sapling and above users are free to engage in data collection (including surveys) within reasonable limits.
 
-Other types of data collection may require special arrangements with Wysc Staff in #support.
+Other types of data collection may require special arrangements with Wysc Staff, who are reachable in #support.
 
 
 ### Questions?
