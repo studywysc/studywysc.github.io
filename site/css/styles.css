@@ -1580,6 +1580,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 @-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}
 
 @media (max-width: 767px) { /* up to d-md */
+  .wmpt-2 { /* mobile only series */
+    padding-top: 0.5rem !important;
+  }
   .homehcenter {
     top:0%;
     transform:translateY(0%);
@@ -1619,6 +1622,21 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   .dhcatcollsect {
     width: 100%;
     max-width: 100%;
+  }
+  .dhcontribs {
+    justify-content: center;
+  }
+  .dhcontribset > h2 {
+    font-size: 3em;
+  }
+  .dhcontribset > div > span {
+    font-size: 1.35em;
+  }
+  .dhcontribwidth {
+    width: 100%;
+  }
+  .dhcstaffset {
+    margin-top: 2em;
   }
   .dhheader2 {
     min-height: 200px;
