@@ -6,12 +6,12 @@ maincats:
   - catslug: about
     caticon: favorite
     cattitle: About Wysc
-    catdesc: Who are we, What do we do, and Contact Us
+    catdesc: Who we are, What we do, and How to contact us
 
   - catslug: discord
     caticon: format_list_bulleted
     cattitle: Wysc Features
-    catdesc: See what our Discord can do and how to use it!
+    catdesc: See what our Discord can do and how to participate!
 
   - catslug: bots
     caticon: bubble_chart
@@ -19,14 +19,14 @@ maincats:
     catdesc: Bot functionality you can use in Wysc
 
   - catslug: dev
-    caticon: bubble_chart
+    caticon: build
     cattitle: Developers
-    catdesc: Wysc APIs, Changelog, and Github 🔧
+    catdesc: Wysc APIs, Changelog, and Github
 
   - catslug: contrib
-    caticon: bubble_chart
+    caticon: drafts
     cattitle: Contributor Hub
-    catdesc: Explore Wysc's path into the future! 💌
+    catdesc: Explore Wysc's path into the future!
 
 freqask:
   - faslug: ranks
