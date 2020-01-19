@@ -13,10 +13,10 @@ maincats:
     cattitle: Wysc Discord
     catdesc: See what our Discord can do and how to participate!
 
-  - catslug: bots
-    caticon: bubble_chart
-    cattitle: Bot Commands
-    catdesc: Bot functionality you can use in Wysc
+  # - catslug: bots
+  #   caticon: bubble_chart
+  #   cattitle: Bot Commands
+  #   catdesc: Bot functionality you can use in Wysc
 
   - catslug: dev
     caticon: build
