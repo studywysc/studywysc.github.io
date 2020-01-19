@@ -222,6 +222,14 @@ body .wnavglobal {
     -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
+  .docscatb00 { /* kbdocs cat sidebar to allow disable on mobile */
+    -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .docscatb01 { /* kbdocs main content to animate on mobile */
+    -webkit-animation: none;
+    animation: none;
+  }
   .blogfadeb01 {
       -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
       animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.125s both;
@@ -498,8 +506,72 @@ body .wnavglobal {
       text-decoration: none;
       color: #8598a3;
     }
-/* .dhgradienttrans {
-} */
+.dhcontribs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+  .dhcontribs .dhcontribcell { /* attempt at increasing specificity */
+    margin: 1em 1em !important; /* override bootstrap coll margin + padding */
+    padding: 0 !important;
+  }
+  .dhwobble {
+      -webkit-animation: dhwobblekf 4s infinite  alternate;
+      animation: dhwobblekf 4s infinite  alternate;
+  }
+  @-webkit-keyframes dhwobblekf {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+  }
+  @keyframes dhwobblekf {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+  }
+.dhcontribcell > img {
+  max-width:150px;
+  height:auto;
+  width:100%;
+  padding:5%;
+}
+.dhcontribset {
+  margin-bottom:4em;
+}
+  .dhcontribset > h2 {
+    font-size:4em;
+    color: #f8f9fa;
+    font-family:'Gochi Hand';
+  }
+  .dhcontribset > div > span {
+    font-size:1.75em;
+    color:#dee2e6;
+    line-height:1.75em;
+  }
+.dhcontribwidth {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.dhcstaffset {
+  width:80%;
+  height:auto;
+  max-height:200px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  margin-bottom:2em;
+}
+  .dhcstaffset > div {
+    width:30%;
+    max-width:165px;
+  }
+  .dhcstafficon {
+    height:auto;
+    width:100%;
+    padding:10%;
+  }
 .dhheader2 {
   align-items: center;
   min-height: 450px;
@@ -534,8 +606,10 @@ body .wnavglobal {
   overflow: visible;
 }
 .dhleadbanner {
-  height: 400px;
-  background: url('/media/robson-hatsukami-morgan-sV28sEjKOjg-unsplash.jpg');
+  min-height: 400px;
+  height: auto;
+  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat center, linear-gradient(285deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%,rgba(126, 126, 126, 0.04) 25%, rgba(126, 126, 126, 0.04) 50%,rgba(80, 80, 80, 0.04) 50%, rgba(80, 80, 80, 0.04) 75%,rgba(117, 117, 117, 0.04) 75%, rgba(117, 117, 117, 0.04) 100%),linear-gradient(333deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 25%,rgba(154, 154, 154, 0.04) 25%, rgba(154, 154, 154, 0.04) 50%,rgba(218, 218, 218, 0.04) 50%, rgba(218, 218, 218, 0.04) 75%,rgba(91, 91, 91, 0.04) 75%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.04) 0%, rgba(14, 14, 14, 0.04) 25%,rgba(216, 216, 216, 0.04) 25%, rgba(216, 216, 216, 0.04) 50%,rgba(44, 44, 44, 0.04) 50%, rgba(44, 44, 44, 0.04) 75%,rgba(111, 111, 111, 0.04) 75%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(251deg, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 25%,rgba(107, 107, 107, 0.04) 25%, rgba(107, 107, 107, 0.04) 50%,rgba(167, 167, 167, 0.04) 50%, rgba(167, 167, 167, 0.04) 75%,rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%),linear-gradient(63deg, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 25%,rgba(16, 16, 16, 0.04) 25%, rgba(16, 16, 16, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 75%,rgba(159, 159, 159, 0.04) 75%, rgba(159, 159, 159, 0.04) 100%),linear-gradient(90deg, rgb(44, 69, 142),rgb(133, 17, 234));
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(12, 50, 71, 0.1)), url('/media/robson-hatsukami-morgan-sV28sEjKOjg-unsplash.jpg'); */
   /* -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -600,6 +674,34 @@ body .wnavglobal {
 .docsbody {
   background-color:#0c3247;
 }
+.docscbody {
+  /* background: linear-gradient(148deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 35%,rgba(113, 113, 113,0.04) 35%, rgba(113, 113, 113,0.04) 42%,rgba(210, 210, 210,0.04) 42%, rgba(210, 210, 210,0.04) 100%),linear-gradient(70deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 25%,rgba(113, 113, 113,0.04) 25%, rgba(113, 113, 113,0.04) 30%,rgba(210, 210, 210,0.04) 30%, rgba(210, 210, 210,0.04) 100%),linear-gradient(65deg, rgba(15, 15, 15,0.04) 0%, rgba(15, 15, 15,0.04) 13%,rgba(113, 113, 113,0.04) 13%, rgba(113, 113, 113,0.04) 27%,rgba(210, 210, 210,0.04) 27%, rgba(210, 210, 210,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
+  /* background: linear-gradient(285deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%,rgba(126, 126, 126, 0.04) 25%, rgba(126, 126, 126, 0.04) 50%,rgba(80, 80, 80, 0.04) 50%, rgba(80, 80, 80, 0.04) 75%,rgba(117, 117, 117, 0.04) 75%, rgba(117, 117, 117, 0.04) 100%),linear-gradient(333deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 25%,rgba(154, 154, 154, 0.04) 25%, rgba(154, 154, 154, 0.04) 50%,rgba(218, 218, 218, 0.04) 50%, rgba(218, 218, 218, 0.04) 75%,rgba(91, 91, 91, 0.04) 75%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.04) 0%, rgba(14, 14, 14, 0.04) 25%,rgba(216, 216, 216, 0.04) 25%, rgba(216, 216, 216, 0.04) 50%,rgba(44, 44, 44, 0.04) 50%, rgba(44, 44, 44, 0.04) 75%,rgba(111, 111, 111, 0.04) 75%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(251deg, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 25%,rgba(107, 107, 107, 0.04) 25%, rgba(107, 107, 107, 0.04) 50%,rgba(167, 167, 167, 0.04) 50%, rgba(167, 167, 167, 0.04) 75%,rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%),linear-gradient(63deg, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 25%,rgba(16, 16, 16, 0.04) 25%, rgba(16, 16, 16, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 75%,rgba(159, 159, 159, 0.04) 75%, rgba(159, 159, 159, 0.04) 100%),linear-gradient(90deg, rgb(44, 69, 142),rgb(133, 17, 234)); */
+  background-color:#0C3247; /* 0C3247 061923 04141c 082331 001f1f 212427 */
+  color: #e9ecef; /*e6eaec*/
+  font-family: "Lato";
+  transition: background-color 0.2s;
+}
+.docscsectitem {
+  border-left: 0.25em solid;
+  /* border-bottom: 0.25em solid; */
+  border-color: rgb(156,93,73);
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  padding-left: 2em !important; /* override bootstrap col padding */
+  padding-right: 4em !important; /* override bootstrap col padding */
+  margin-bottom: 3em;
+}
+  .docscsectitem > h5 {
+    font-size: 2em;
+  }
+  .docscsectitem > p {
+    color: #dee2e6;
+    font-size: 1.05em;
+  }
+  .docscsectitem > ul > a {
+    font-size: 1.5em;
+  }
 .docsheaderbg {
   background: #05679D;
 }
@@ -620,7 +722,7 @@ body .wnavglobal {
   align-content: flex-start;
 }
 .docsjbody {
-  background-color:#212427; /*0C3247 061923 04141c 082331 001f1f*/
+  background-color:#212529; /*0C3247 061923 04141c 082331 001f1f 212427*/
   color: #e9ecef; /*e6eaec*/
   font-family: "Lato";
   transition: background-color 0.2s;
@@ -698,7 +800,7 @@ body .wnavglobal {
     width:100%;
   }
     .docsjbccoll .row {
-      width:70%;
+      width:80%;
     }
   .docsjbcsidebar, .docsjhs1 {
     width:30%;
@@ -852,13 +954,13 @@ body .wnavglobal {
 
 .docsjheadimg {
   height:225px;
-  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat center, linear-gradient(285deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 25%,rgba(126, 126, 126, 0.04) 25%, rgba(126, 126, 126, 0.04) 50%,rgba(80, 80, 80, 0.04) 50%, rgba(80, 80, 80, 0.04) 75%,rgba(117, 117, 117, 0.04) 75%, rgba(117, 117, 117, 0.04) 100%),linear-gradient(333deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 25%,rgba(154, 154, 154, 0.04) 25%, rgba(154, 154, 154, 0.04) 50%,rgba(218, 218, 218, 0.04) 50%, rgba(218, 218, 218, 0.04) 75%,rgba(91, 91, 91, 0.04) 75%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.04) 0%, rgba(14, 14, 14, 0.04) 25%,rgba(216, 216, 216, 0.04) 25%, rgba(216, 216, 216, 0.04) 50%,rgba(44, 44, 44, 0.04) 50%, rgba(44, 44, 44, 0.04) 75%,rgba(111, 111, 111, 0.04) 75%, rgba(111, 111, 111, 0.04) 100%),linear-gradient(251deg, rgba(27, 27, 27, 0.04) 0%, rgba(27, 27, 27, 0.04) 25%,rgba(107, 107, 107, 0.04) 25%, rgba(107, 107, 107, 0.04) 50%,rgba(167, 167, 167, 0.04) 50%, rgba(167, 167, 167, 0.04) 75%,rgba(34, 34, 34, 0.04) 75%, rgba(34, 34, 34, 0.04) 100%),linear-gradient(63deg, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 25%,rgba(16, 16, 16, 0.04) 25%, rgba(16, 16, 16, 0.04) 50%,rgba(190, 190, 190, 0.04) 50%, rgba(190, 190, 190, 0.04) 75%,rgba(159, 159, 159, 0.04) 75%, rgba(159, 159, 159, 0.04) 100%),linear-gradient(90deg, rgb(44, 69, 142),rgb(133, 17, 234));
+  background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat top, #0c3247;
   background-size:cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-end;
-  animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
+  /* animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards; */
 }
   .docsjheadimg div {
     width: 100%;
@@ -1477,7 +1579,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 /*animation text-shadow-drop-bottom*/
 @-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}
 
-@media (max-width: 768px) { /* up to d-md */
+@media (max-width: 767px) { /* up to d-md */
+  .wmpt-2 { /* mobile only series */
+    padding-top: 0.5rem !important;
+  }
   .homehcenter {
     top:0%;
     transform:translateY(0%);
@@ -1518,6 +1623,21 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     width: 100%;
     max-width: 100%;
   }
+  .dhcontribs {
+    justify-content: center;
+  }
+  .dhcontribset > h2 {
+    font-size: 3em;
+  }
+  .dhcontribset > div > span {
+    font-size: 1.35em;
+  }
+  .dhcontribwidth {
+    width: 100%;
+  }
+  .dhcstaffset {
+    margin-top: 2em;
+  }
   .dhheader2 {
     min-height: 200px;
   }
@@ -1528,6 +1648,23 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     .dhmissionstatement footer {
       line-height:1.5em;
       text-align:center !important;
+    }
+  .docscatb00 { /* kbdocs cat sidebar to allow disable on mobile */
+    -webkit-animation: none;
+    animation: none;
+  }
+  .docscatb01 { /* kbdocs main content to animate on mobile */
+    -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .docscbody {
+    background-color:#212529; /* 0C3247 061923 04141c 082331 001f1f 212427 212529*/
+  }
+  .docscsectitem {
+    margin-left: 1em;
+  }
+    .docscsectitem > ul > a {
+      font-size: 1.25em;
     }
   .docsheaderbg {
     max-height:5rem;
@@ -1540,9 +1677,9 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     height:1.5em;
     margin-top:0px;
   }
-  .docsjheadsearch {
-    background-color: #0C3247;
-  }
+  /* .docsjheadsearch {
+    background-color: #244659; / 0C3247 /
+  } */
   .docsjbccoll .row {
     width:95%;
   }
@@ -1609,7 +1746,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
 } }
 
-/* IE 10+ only */
+/* Internet Explorer IE 10+ only */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .parallaxbg {
     background-attachment: inherit;
@@ -1635,6 +1772,13 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .homesvgdiv {
     height: 180vh;
+  }
+  .dhcatcollcard2 {
+    max-width: 70%;
+    overflow: hidden;
+  }
+  .dhgradienttrans {
+    background-color: #0C3247;
   }
   .startdiscordclick {
     display:none;

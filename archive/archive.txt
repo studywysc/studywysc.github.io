@@ -1,3 +1,17 @@
+<!-- 0.200118 -->
+
+{% if page.contribs %}
+    <div class="dhcontribs dhcontribwidth">
+        {% assign cudelay = 0 %}
+        {% for cu in page.contribs %}
+            <div class="col-lg-1 col-2 dhcontribcell">
+                <img class="rounded-circle dhwobble" src="{{ cu.curl }}" style="animation-delay: {% assign cudelay = cudelay | plus: 0.5 %}{{ cudelay }}s" alt="{{ cu.cuser }} avatar">
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+
 <!-- 0.191223 -->
 
 {% for item in page.headerlinks %}
