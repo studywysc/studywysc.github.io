@@ -506,8 +506,6 @@ body .wnavglobal {
       text-decoration: none;
       color: #8598a3;
     }
-/* .dhgradienttrans {
-} */
 .dhheader2 {
   align-items: center;
   min-height: 450px;
@@ -1663,7 +1661,7 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
 } }
 
-/* IE 10+ only */
+/* Internet Explorer IE 10+ only */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .parallaxbg {
     background-attachment: inherit;
@@ -1689,6 +1687,13 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
   }
   .homesvgdiv {
     height: 180vh;
+  }
+  .dhcatcollcard2 {
+    max-width: 70%;
+    overflow: hidden;
+  }
+  .dhgradienttrans {
+    background-color: #0C3247;
   }
   .startdiscordclick {
     display:none;
