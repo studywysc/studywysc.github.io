@@ -76,50 +76,41 @@
             </svg>
         </div>
 
-        <div style="width:100%;height:600px;position:relative;">
-            <style>
-                .blobblewobble45 {
-                    -webkit-animation: wwaction 4.5s infinite  alternate;
-                    animation: wwaction 4.5s infinite  alternate;
-                }
-                .blobblewobble5 {
-                    -webkit-animation: wwaction 5s infinite  alternate;
-                    animation: wwaction 5s infinite  alternate;
-                }
-                @-webkit-keyframes wwaction {
-                    0% { transform: translateY(0); }
-                    100% { transform: translateY(-10px); }
-                }
-                @keyframes wwaction {
-                    0% { transform: translateY(0); }
-                    100% { transform: translateY(-10px); }
-                }
-            </style>
-            <img class="blobblewobble5 rounded-circle hoverscale" src="/media/teamlp.png" style="top:50px;left:30%;width:20%;height:auto;position:absolute;">
-            <img class="blobblewobble45 rounded-circle hoverscale" src="/media/teamhn.png" style="top:200px;left:20%;width:15%;height:auto;position:absolute;">
+        <div class="dhcstaffset">
+            <div>
+                <img class="dhcstafficon rounded-circle dhwobble" src="/media/teamlp.png">
+            </div>
+            <div>
+                <img class="dhcstafficon rounded-circle dhwobble" src="/media/teamhn.png" style="animation-delay:1s;">
+            </div>
         </div>
 
-    </div>
-
-
-            <!-- <div class="p-4"></div>
-            <div class="row mx-auto justify-content-center">
-                
-                {% for item in page.maincats %}
-                    <a href="docs/{{ item.catslug }}" class="list-group-item col-md-4 docstextwysclight2 bg-transparent" style="border:0;">
-                        <div class="card mb-0 bg-light shadow blogfadeb00">
-                            <div class="card-body p-4 text-center">
-                                <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
-                                <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
-                                <p class="card-text">{{ item.catdesc }}</p>
-                            </div>
-                        </div>    
-                    </a>
-                {% endfor %}
-
+        <div class="docscsectitem dhcontribwidth dhcontribset">
+            <h2 class="pb-2">A symphony, by you.</h2>
+            <div class="pb-2">
+                <span>Wysc isn't a company -- we're humans just like you. Everything we have achieved wouldn't have been possible without you.</span>
             </div>
-            <div class="p-4"></div> -->
-    <!-- <div style="height:600px;background:#414141;">p</div> -->
+            <div class="pb-4">
+                <span><b>Thank you,<br>Wysc Staff ☕</b></span>
+            </div>
+            <div class="pt-2">
+                <button type="button" class="btn btn-info btn-lg mt-2 mr-2 mb-2">See how you can help</button>
+                <button type="button" class="btn btn-info btn-lg mt-2 mr-2 mb-2">See Credits</button>
+            </div>
+        </div>
+
+        {% if page.contribs %}
+            <div class="dhcontribs dhcontribwidth">
+                {% assign cudelay = 0 %}
+                {% for cu in page.contribs %}
+                    <div class="col-lg-1 col-2 dhcontribcell">
+                        <img class="rounded-circle dhwobble" src="{{ cu.curl }}" style="animation-delay: {% assign cudelay = cudelay | plus: 0.5 %}{{ cudelay }}s" alt="{{ cu.cuser }} avatar">
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+    </div>
 
 {% include wyscfooter.html %}
 
