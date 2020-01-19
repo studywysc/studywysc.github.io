@@ -1,8 +1,8 @@
 ---
 layout: kbcoll
-title:  "Developer Hub"
+title:  "Contributor Hub"
 cat:
-  - ['info', 'Info', 'Tune into Developer Mode and dive behind the scenes of what&rsquo;s changed in Wysc.']
-  - ['api', 'APIs', 'Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!']
-
+  - ['info', 'Community', 'See Wysc&rsquo;s evolution and how Wysc has grown together, as a community.']
+  - ['api', 'APIs', 'Link up with the technology that powers Wysc, and even create your own Wysc client!']
+  - ['site', 'Website', 'Help keep the Wysc website up-to-date with the latest documentation!']
 ---

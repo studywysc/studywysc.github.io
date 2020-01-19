@@ -9,24 +9,19 @@ maincats:
     catdesc: Who we are, What we do, and How to contact us
 
   - catslug: discord
-    caticon: format_list_bulleted
+    caticon: videogame_asset
     cattitle: Wysc Discord
     catdesc: See what our Discord can do and how to participate!
 
   - catslug: bots
-    caticon: bubble_chart
+    caticon: memory
     cattitle: Bot Commands
     catdesc: Bot functionality you can use in Wysc
 
   - catslug: dev
     caticon: build
-    cattitle: Developers
-    catdesc: Wysc APIs, Changelog, and Github
-
-  - catslug: contrib
-    caticon: drafts
     cattitle: Contributor Hub
-    catdesc: Explore Wysc's path into the future!
+    catdesc: Developer APIs, contribution info, and new features
 
 freqask:
   - faslug: docs/discord/ranks/1

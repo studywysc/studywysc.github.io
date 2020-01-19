@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="description" content="
+">
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
@@ -24,12 +25,11 @@
                 visible: 'hover',
                 icon: '#'
             };
-            anchors.add('.docsjbccoll .row .card .card-body h5');
+            anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
         });
     </script>
-    <title>How to Use Wysc &ndash;&nbsp;Wysc Docs</title>
 </head>
-<body class="docscbody">
+<body class="docsjbody">
     
     <!-- accessibility menu -->
 
@@ -118,18 +118,18 @@
 
     <div class="docsjheadimg">
         <div>
-            <h1>How to Use Wysc</h1>
+            <h1>Updating the Website</h1>
         </div>
     </div>
     
-    <div id="statusapi"></div>
-    
-    <div class="docsjheadsearch">
+    <div id="statusapi">
+    </div>
+    <div id="wthemeheadsearch" class="docsjheadsearch">
         <div class="docsjhs1 docstextgray">
             <em>Search coming soon!</em>
         </div>
         <div class="docsjhs2 noselect">
-            <nav class="bg-transparent docstextlight bccss">
+            <nav id="wthemebccss" class="docstextlight bccss">
    <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
        
@@ -138,24 +138,38 @@
        
           
       
-         
-            <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-               <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
-                  <span property="name">Docs</span>
-               </a>
-                  <meta property="position" content="1" />
-            </li>
-            <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
-               <span property="name">Discord</span>
-               <meta property="position" content="2" />
-            </li>
-         
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs">
+            <span property="name">Docs</span>
+         </a>
+            <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="https://wysc.netlify.com/docs/dev">
+            <span property="name">Dev</span>
+         </a>
+            <meta property="position" content="2" />
+      </li>
+      <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+         <span property="name">Website</span>
+         <meta property="position" content="3" />
+      </li>
       
 
    </ol>
 </nav>
 
 <style>
+.bccss {
+   /*background-color: #0C3247;*/
+   max-width: 900px;
+}
+.bccss-light {
+   margin: -1em;
+   padding: 1em;
+   border-radius: 0.25em;
+   width: calc(100% - 165px);
+}
 .bccss ol {
    margin:0 !important;
    padding:0 !important;
@@ -165,6 +179,14 @@
 }
 .bccss a {
    text-decoration: none;
+}
+@media (max-width: 768px) { /* up to d-md */
+   .bccss-light {
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+   }
 }
 </style>
         </div>
@@ -176,107 +198,53 @@
         </div>
     </div>
     <div class="docsjbcontent">
-        <div class="docsjbccoll">
+        <div class="docsjbcsidebar">
+            <h2 class="d-none d-md-block">Website</h2>
+            
+            
+            
+            <ul class="nav flex-column nav-pills p-4 docscatb00" aria-orientation="vertical">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/site/1">Introduction</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/site/2">Getting Started</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/site/3">File Structure</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link active" id="docsjcatlist" href="/docs/dev/site/4">Updating the Website</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="docsjcatlist" href="/docs/dev/site/docs">Docs</a>
+                    </li>
+                
+            </ul>
 
-            <div class="p-4"></div>
-            <div class="row mx-auto">
+        </div>
+
+        <div class="docsjbcmain docscatb01"> <!-- docscatb00/01 influence animations on sm vs. md+ -->
+            <h2 class="d-md-none pb-2">Updating the Website</h2> <!-- add d-md-none after testing how it looks // hides title on md and up -->
+
+            <div class="docsjlastupdated">
+                <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
+                <div class="pl-2 pr-2">
+                    <p class="docstextgray pt-2">Wysc Staff</p>
+                    <p class="docstextgray pb-2">Last updated 18 Jan 2020</p>
+                </div>
+            </div>
+
+            <div class="docspbody docscatb00">
                 
                 
-                    <div class="docscsectitem col-lg-6 col-12 blogfadeb00">
-                        <h5 class="pt-2 pb-2">Content Policy</h5>
-                        <p>Wysc&#39;s server culture is a bit different. Learn more about how our server regulates content.</p>
-                        <ul class="list-group list-group-flush p-2">
-
-                            
-                            
-                                <a href="/docs/discord/content/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Rules and Culture</a>
-                            
-                                <a href="/docs/discord/content/2" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Prohibited Activities</a>
-                            
-                                <a href="/docs/discord/content/ads" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Advertising</a>
-                            
-                                <a href="/docs/discord/content/data" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Data Collection</a>
-                            
-
-                        </ul>
-                    </div>
-                
-                    <div class="docscsectitem col-lg-6 col-12 blogfadeb00">
-                        <h5 class="pt-2 pb-2">Ranking Up</h5>
-                        <p>Your path to citizenship in Wysc is determined by activity. Find out how our rank system works!</p>
-                        <ul class="list-group list-group-flush p-2">
-
-                            
-                            
-                                <a href="/docs/discord/ranks/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Introduction</a>
-                            
-
-                        </ul>
-                    </div>
-                
-                    <div class="docscsectitem col-lg-6 col-12 blogfadeb00">
-                        <h5 class="pt-2 pb-2">Wysc Library 📚</h5>
-                        <p>The Library is the center of Wysc, where students come together to ask questions, study together, and share resources!</p>
-                        <ul class="list-group list-group-flush p-2">
-
-                            
-                            
-                                <a href="/docs/discord/library/1" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Channels: Wysc Library 📚</a>
-                            
-                                <a href="/docs/discord/library/gstudy" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Group Study</a>
-                            
-
-                        </ul>
-                    </div>
-                
-                
-                <!-- <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
-                    <div class="card-body">
-                        <h5 class="card-title pt-2 pb-2"></h5>
-                        <p class="card-text"></p>
-                        <ul class="list-group list-group-flush p-2">
-
-                            
-                            
-                                <a href="/blog/2017/1005-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0101-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0106-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0209-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0512-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0615-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2018/0713-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2019/0319-update.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">WSC update</a>
-                            
-                                <a href="/blog/2019/june-2019-wysc-server-revamp.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">June 2019 Wysc Server Revamp</a>
-                            
-                                <a href="/blog/2019/misbehaving-users.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Misbehaving Users</a>
-                            
-                                <a href="/blog/2019/wysc-blog-release.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Wysc Blog Release</a>
-                            
-                                <a href="/blog/2019/wysc-events.html" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Launch of Wysc Events</a>
-                            
-                                <a href="/docs/about/index" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">About Wysc</a>
-                            
-                                <a href="/docs/bots/index" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Bot Commands</a>
-                            
-                                <a href="/docs/dev/index" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">Contributor Hub</a>
-                            
-                                <a href="/docs/discord/index" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">How to Use Wysc</a>
-                            
-
-                        </ul>
-                    </div>
-                </div> -->
 
             </div>
-            <div class="p-4"></div>
 
         </div>
     </div>
@@ -287,6 +255,10 @@
         <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
     </div>
 
+    <script src="/js/dark-mode-switch-1.0.0/dark-mode-switch.min.js"></script>
+    <link rel="stylesheet" href="/js/dark-mode-switch-1.0.0/dark-mode.css">
+
+
 <!-- js -->
 <!-- jquery in wyscheader -->
 <script src="/js/popper-1.14.7.min.js" defer></script>
@@ -296,8 +268,8 @@
 
 <!-- og: meta tags // title-type-img-url required -->
 
-    <title>How to Use Wysc – Wysc</title>
-    <meta property="og:title" content="Wysc – Virtual Study Cafe" />
+    <title>Updating the Website &ndash;&nbsp;Wysc Docs</title>
+    <meta property="og:title" content="Updating the Website – Wysc Docs" />
 
 
 <meta property="og:type" content="website" />
