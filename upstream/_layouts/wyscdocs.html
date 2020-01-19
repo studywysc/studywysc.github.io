@@ -59,7 +59,7 @@
             {% if page.freqask %}
                 <div class="dhcatfacoll list-group list-group-flush">
                     {% for item in page.freqask %}
-                        <a href="docs/{{ item.faslug }}" class="list-group-item bg-transparent border-0">
+                        <a href="{{ item.faslug }}" class="list-group-item bg-transparent border-0">
                             {{ item.fatitle }}
                         </a>
                     {% endfor %}

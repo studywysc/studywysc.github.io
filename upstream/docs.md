@@ -10,7 +10,7 @@ maincats:
 
   - catslug: discord
     caticon: format_list_bulleted
-    cattitle: Wysc Features
+    cattitle: Wysc Discord
     catdesc: See what our Discord can do and how to participate!
 
   - catslug: bots
@@ -29,16 +29,16 @@ maincats:
     catdesc: Explore Wysc's path into the future!
 
 freqask:
-  - faslug: ranks
+  - faslug: docs/discord/ranks/1
     fatitle: What is Seed, Sprout, Sapling, Tree?
     
-  - faslug: time
+  - faslug: 
     fatitle: How do I set my @☕ Café Bot ᵀᴱ time?
     
-  - faslug: bots
+  - faslug: docs/bots
     fatitle: How do I find bot commands?
     
-  - faslug: partner
+  - faslug: 
     fatitle: I'd like to partner with Wysc!
 
 contribs:
