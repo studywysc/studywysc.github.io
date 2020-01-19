@@ -52,9 +52,6 @@ collections:
   bots:
     output: true
     permalink: /docs/:collection/:path
-  contrib:
-    output: true
-    permalink: /docs/:collection/:path
   css:
     output: true
   dev:

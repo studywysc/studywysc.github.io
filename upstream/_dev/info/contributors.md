@@ -30,4 +30,4 @@ creditslist:
 
 If you have a role shown below but are not credited, please reach out to us at our Docs page and we will update the listing!
 
-Username sort order is determined by [Paradøx](credits#parad%C3%B8x-texit).
+Username sort order is determined by [Paradøx](../../about/legal/credits#parad%C3%B8x-texit).
