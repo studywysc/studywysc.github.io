@@ -2,7 +2,7 @@
 layout: kbdocs
 title:  "Advertising"
 category: "Content Policy"
-last_updated: 13 Jan 2020
+last_updated: 29 Jan 2020
 redirect_from:
   - ads
 ---
@@ -23,4 +23,4 @@ All Sapling and above users are allowed to engage in advertising behavior, serve
 
 ### Questions?
 
-Reach out to us in #support with any questions!
+Your messages may be deleted and your account may be subject to administrative action should they violate the policies above. Reach out to us in #support with any questions!
