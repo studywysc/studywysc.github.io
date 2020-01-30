@@ -32,20 +32,21 @@ creditslist:
         coimg: /media/logos/creditsnetlify.png
         courl: https://github.com/
 
-  - cat: Partnered Content
+  - cat: Wysc Properties
     catobj:
-      - coname: Logo
-        coline: ebru
+      - coname: Wysc Logo
+        coline: by ebru
         coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335600099000360/94fa056809e3d576005be48f43679ef0.png
         courl: https://github.com/coffeebank/wysc/blob/master/upstream/media/wysc/wysc_ebru.jpg
         rounded: circle
 
+  - cat: Partnered Content
+    catobj:
       - coname: PomoBot
-        coline: Conatum (developer), Puerøsøla (hosting)
+        coline: by Conatum (developer), Puerøsøla (hosting)
         coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335866118799380/e7b566017e31d3d6187ee8c19769a69a.png
         courl: https://github.com/Intery/PomoBot
         rounded: circle
-
 
   - cat: Discord Server
     catobj:
