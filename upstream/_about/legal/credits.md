@@ -35,14 +35,14 @@ creditslist:
   - cat: Partnered Content
     catobj:
       - coname: Logo
-        coline: Ebru
-        coimg: https://github.com/coffeebank/wysc/blob/master/upstream/media/wysc/wysc_ebru.jpg
+        coline: ebru
+        coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335600099000360/94fa056809e3d576005be48f43679ef0.png
         courl: https://github.com/coffeebank/wysc/blob/master/upstream/media/wysc/wysc_ebru.jpg
         rounded: circle
 
       - coname: PomoBot
         coline: Conatum (developer), Puerøsøla (hosting)
-        coimg: https://avatars2.githubusercontent.com/u/59671042?s=120&v=4
+        coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335866118799380/e7b566017e31d3d6187ee8c19769a69a.png
         courl: https://github.com/Intery/PomoBot
         rounded: circle
 
