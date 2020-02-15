@@ -67,7 +67,7 @@ collections:
   media:
     output: true
 
-destination: ../site
+destination: ../docs
 
 breadcrumbs:
   root:

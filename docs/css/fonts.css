@@ -1,0 +1,14 @@
+ /* gochi-hand-regular - latin */
+  @font-face {
+    font-family: 'Gochi Hand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/gochi-hand-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Gochi Hand'), local('GochiHand-Regular'),
+         url('/fonts/gochi-hand-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/gochi-hand-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/gochi-hand-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/gochi-hand-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/gochi-hand-v10-latin-regular.svg#GochiHand') format('svg'); /* Legacy iOS */
+  }
+  
