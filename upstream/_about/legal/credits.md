@@ -32,10 +32,20 @@ creditslist:
         coimg: /media/logos/creditsnetlify.png
         courl: https://github.com/
 
-      - coname: Puerøsøla
-        coline: Bot hosting
-        coimg: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
-        courl: https://cdn.discordapp.com/avatars/299175087389802496/96336e912b86b841583b7a756b5b76a4.png?size=128
+  - cat: Wysc Properties
+    catobj:
+      - coname: Wysc Logo
+        coline: by ebru
+        coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335600099000360/94fa056809e3d576005be48f43679ef0.png
+        courl: https://github.com/coffeebank/wysc/blob/master/upstream/media/wysc/wysc_ebru.jpg
+        rounded: circle
+
+  - cat: Partnered Content
+    catobj:
+      - coname: PomoBot
+        coline: by Conatum (developer), Puerøsøla (hosting)
+        coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335866118799380/e7b566017e31d3d6187ee8c19769a69a.png
+        courl: https://github.com/Intery/PomoBot
         rounded: circle
 
   - cat: Discord Server
@@ -73,12 +83,6 @@ creditslist:
         coline: Time, LaTeX, WolframAlpha, general functions
         coimg: /media/logos/discordparadox.png
         courl: https://top.gg/bot/510789298321096704
-        rounded: circle
-
-      - coname: PomodoroBot
-        coline: Pomodoro timer functions
-        coimg: https://raw.githubusercontent.com/VicenteRD/PomodoroBot/master/icon.jpg
-        courl: https://github.com/VicenteRD/PomodoroBot
         rounded: circle
 
       - coname: Red Discord Bot
@@ -125,10 +129,6 @@ creditslist:
           - cosname: Emote Collector
             cosline: Emotes for non-Nitro users
             cosurl: https://github.com/EmoteCollector/EmoteCollector
-
-          - cosname: KarmaBot
-            cosline: Upvote/thanking functionality
-            cosurl: https://karmabot.vlexar.pw/
 
           - cosname: KDBot
             cosline: TTS bot
@@ -326,6 +326,10 @@ creditslist:
             cosurl: https://bookmark.com/
           - cosname: dhooks
             cosurl: https://github.com/kyb3r/dhooks
+          - cosname: Karmabot
+            cosurl: https://karmabot.vlexar.pw/
+          - cosname: PomodoroBot
+            cosurl: https://github.com/VicenteRD/PomodoroBot
           - cosname: splash-screens
             cosurl: https://appsco.pe/developer/splash-screens
           - cosname: Weebly

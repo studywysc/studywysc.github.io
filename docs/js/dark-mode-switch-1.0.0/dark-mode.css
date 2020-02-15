@@ -1,0 +1,65 @@
+[data-theme="dark"].docsjbody {
+  background-color: #eee;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.02), rgba(0,0,0,0)),linear-gradient(134deg, rgba(1, 1, 1,0.02) 0%, rgba(1, 1, 1,0.02) 16%,transparent 16%, transparent 76%,rgba(58, 58, 58,0.02) 76%, rgba(58, 58, 58,0.02) 100%),linear-gradient(215deg, rgba(166, 166, 166,0.02) 0%, rgba(166, 166, 166,0.02) 33%,transparent 33%, transparent 79%,rgba(111, 111, 111,0.02) 79%, rgba(111, 111, 111,0.02) 100%),linear-gradient(303deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 7%,transparent 7%, transparent 90%,rgba(192, 192, 192,0.02) 90%, rgba(192, 192, 192,0.02) 100%),linear-gradient(302deg, rgba(113, 113, 113,0.02) 0%, rgba(113, 113, 113,0.02) 34%,transparent 34%, transparent 73%,rgba(65, 65, 65,0.02) 73%, rgba(65, 65, 65,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)) !important;
+  transition: background 0.2s;
+}
+
+
+/* Template */
+
+[data-theme="dark"] .docsjbcmain .docstextgray {
+  color: #343a40 !important;
+  font-style: italic;
+  transition: color 0.2s;
+}
+[data-theme="dark"] .docsjheadsearch {
+  background-color: rgba(12,50,71,0.85) !important;
+  transition: background-color 0.2s;
+}
+/* [data-theme="dark"] .custom-control-label {
+  color: #212121 !important;
+} */
+
+
+/* Sidebar */
+
+[data-theme="dark"] .docsjbcsidebar {
+  color: #222 !important;
+  transition: color 0.2s;
+}
+[data-theme="dark"] .docsjbcsidebar .nav-pills a {
+  color: #343a40 !important;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+[data-theme="dark"] .docsjbcsidebar .nav-pills .active {
+  color: #eee !important;
+  transition: color 0.2s;
+}
+
+
+/* Body */
+
+[data-theme="dark"] .docsjbcmain a {
+  color: #914C35 !important;
+  /* background-image: linear-gradient(to right, #82442F 30%, transparent 70%);
+  background-position: 0 1.35em;
+  background-repeat: repeat-x;
+  background-size: 2px 2px; dotted underline */
+  transition: color 0.2s;
+  font-weight: bold;
+}
+  [data-theme="dark"] .docsjbcmain a:hover {
+    color: #a76f5d !important;
+  }
+[data-theme="dark"] .docspbody {
+  color: rgba(0, 0, 0, 0.9);
+  transition: color 0.2s;
+}
+[data-theme="dark"] .docspbody h3 {
+  color: rgba(0, 0, 0, 0.98);
+  transition: color 0.2s;
+}
+
+
+

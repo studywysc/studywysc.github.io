@@ -1,34 +1,30 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+if (workbox) {
+    console.log('[ PWA Fire Bundle ] Hello from Workbox');
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts(
-  "/precache-manifest.21d0a3ec90dcfa9c801c917083b59af5.js"
-);
 
-workbox.core.setCacheNameDetails({prefix: "showcase"});
+    /* change strategy method to fit your pwa needs,
+      update RegExp dir/route and cache name */
+    workbox.routing.registerRoute(
+        new RegExp('/'),
+        new workbox.strategies.StaleWhileRevalidate({
+            cacheName: 'app',
+            plugins: [
+                new workbox.cacheableResponse.Plugin({
+                    statuses: [0, 200],
+                }),
+                new workbox.expiration.Plugin({
+                    maxAgeSeconds: 60 * 60 * 24 * 1,
+                }),
+            ],
+        })
+    );
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
 
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+    workbox.core.skipWaiting();
+    workbox.core.clientsClaim();
+} else {
+    console.log('Boo! Workbox failed to load 😬');
+}
