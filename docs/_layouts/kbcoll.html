@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
+    <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#9C5D49" />
+    <link rel="manifest" href="/app.webmanifest">
+    <script async src="/js/pwacompat-2.0.10.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/anchorjs/anchor.min.js"></script>
+    <script>
+        $(function() {
+            anchors.options = {
+                visible: 'hover',
+                icon: '#'
+            };
+            anchors.add('.docsjbccoll .row .card .card-body h5');
+        });
+    </script>
+    <title>{{ page.title }} &ndash;&nbsp;Wysc Docs</title>
+</head>
+<body class="docscbody">
+    
+    {% include wyscnav.html %}
+
+    <div class="docsjheadimg">
+        <div>
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+    
+    <div id="statusapi"></div>
+    
+    <div class="docsjheadsearch">
+        <div class="docsjhs1 docstextgray">
+            <em>Search coming soon!</em>
+        </div>
+        <div class="docsjhs2 noselect">
+            {% include nav-breadcrumbs-kbcoll.html %}
+        </div>
+        <div class="docsjhs3">
+            <!-- <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">Light Mode</label>
+            </div> -->
+        </div>
+    </div>
+    <div class="docsjbcontent">
+        <div class="docsjbccoll">
+
+            <div class="p-4"></div>
+            <div class="row mx-auto">
+                
+                {% for item in page.cat %}
+                    <div class="docscsectitem col-lg-6 col-12 blogfadeb00">
+                        <h5 class="pt-2 pb-2">{{ item[1] }}</h5>
+                        <p>{{ item[2] }}</p>
+                        <ul class="list-group list-group-flush p-2">
+
+                            {% assign item2 = site.documents | where:"category",item[1] %}
+                            {% for article in item2 %}
+                                <a href="{{ article.url | relative_url }}" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">{{ article.title }}</a>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                {% endfor %}
+                
+                <!-- <div class="card col-md-5 m-4 mb-0 docstextwyscbluelightbg shadow blogfadeb00">
+                    <div class="card-body">
+                        <h5 class="card-title pt-2 pb-2">{{ item[1] }}</h5>
+                        <p class="card-text">{{ item[2] }}</p>
+                        <ul class="list-group list-group-flush p-2">
+
+                            {% assign item2 = site.documents | where:"category",item[1] %}
+                            {% for article in item2 %}
+                                <a href="{{ article.url | relative_url }}" class="list-group-item docstextwysclight2 bg-transparent" style="border:0;">{{ article.title }}</a>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="p-4"></div>
+
+        </div>
+    </div>
+
+    
+    <div class="text-center">
+        <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+        <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+    </div>
+
+{% include wyscfooter.html %}
+{% include kbstatus.html %}
+
+</body>
+</html>

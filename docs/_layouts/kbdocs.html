@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 22 }}{% endif %}">
+    <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#9C5D49" />
+    <link rel="manifest" href="/app.webmanifest">
+    <script async src="/js/pwacompat-2.0.10.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/anchorjs/anchor.min.js"></script>
+    <script>
+        $(function() {
+            anchors.options = {
+                visible: 'hover',
+                icon: '#'
+            };
+            anchors.add('.docsjbcmain h1, .docsjbcmain h2, .docsjbcmain h3, .docsjbcmain h4, .docsjbcmain h5, .docsjbcmain h6');
+        });
+    </script>
+</head>
+<body class="docsjbody">
+    
+    {% include wyscnav.html %}
+
+    <div class="docsjheadimg">
+        <div>
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+    
+    <div id="statusapi">
+    </div>
+    <div id="wthemeheadsearch" class="docsjheadsearch">
+        <div class="docsjhs1 docstextgray">
+            <em>Search coming soon!</em>
+        </div>
+        <div class="docsjhs2 noselect">
+            {% include nav-breadcrumbs-kbdocs.html %}
+        </div>
+        <div class="docsjhs3">
+            <!-- <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">Light Mode</label>
+            </div> -->
+        </div>
+    </div>
+    <div class="docsjbcontent">
+        <div class="docsjbcsidebar">
+            
+            <h2 class="d-none d-md-block">{{ page.category }}</h2>
+                
+            {% assign items = site.documents | where:"category",page.category | sort: 'title' %}
+            
+            <ul class="nav flex-column nav-pills p-4 docscatb00" aria-orientation="vertical">
+                {% for article in items %}
+                    <li class="nav-item">
+                        <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+
+        <div class="docsjbcmain docscatb01"> <!-- docscatb00/01 influence animations on sm vs. md+ -->
+            <h2 class="d-md-none pb-2">{{ page.title }}</h2> <!-- add d-md-none after testing how it looks // hides title on md and up -->
+
+            <div class="docsjlastupdated">
+                <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
+                <div class="pl-2 pr-2">
+                    <p class="docstextgray pt-2"><a href="https://github.com/coffeebank/wysc/blob/dev/docs/_{{ page.url | slice: 1,page.url.size }}.md" target="_blank">Wysc Contributors &#9656;</a></p>
+                    <p class="docstextgray pb-2">Last updated {% if page.last_updated %}{{ page.last_updated }}{% else %}a long while ago...{% endif %}</p>
+                </div>
+            </div>
+
+            <div class="docspbody docscatb00">
+                {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+                {{ content }}
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="text-center">
+        <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+        <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+    </div>
+
+    <script src="/js/dark-mode-switch-1.0.0/dark-mode-switch.min.js"></script>
+    <link rel="stylesheet" href="/js/dark-mode-switch-1.0.0/dark-mode.css">
+
+
+{% include wyscfooter.html %}
+{% include kbstatus.html %}
+
+</body>
+</html>
