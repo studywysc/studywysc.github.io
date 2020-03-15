@@ -1,6 +1,10 @@
 // Karma configuration
 // Generated on Mon Apr 27 2015 14:01:20 GMT-0400 (EDT)
 
+/* eslint-env node */
+
+'use strict';
+
 module.exports = function(config) {
   config.set({
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -45,7 +49,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['ChromeHeadless'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
