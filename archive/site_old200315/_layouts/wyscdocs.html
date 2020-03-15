@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include wyscheader.html %}
+</head>
+<body class="docsbody">
+
+    {% include wyscnav.html %}
+
+    <div class="dhheader2">
+        <div class="d-none d-md-block" style="padding-top:100px;"></div>
+        <div class="blogfadeb00 sectiontextcolor">
+            <h1 style="padding-bottom:20px;font-family:'Gochi Hand';font-size:3.5em;">How can we help?</h1>
+        </div>
+        <div class="blogfadeb00">
+            <link href="/js/algoliasearch/app.css" rel=stylesheet />
+            <div class="aa-input-container rounded shadow" id="aa-input-container">
+                <input type="search" id="aa-search-input" class="aa-input-search" placeholder="Search coming soon..."
+                    name="search" autocomplete="off" />
+        
+                <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
+                    <path
+                        d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+                </svg>
+                
+                <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+                <script src="/js/algoliasearch/app.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="dhcatcontent blogfadeb01">
+        {% if page.maincats %}
+            <div class="dhcatcoll">
+                {% for item in page.maincats %}
+                    <a href="docs/{{ item.catslug }}" class="dhcatcollsect">
+                        <div class="dhcatcollcard shadow hoverscale">
+                            <div>
+                                <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                            </div>
+                            <div class="dhcatcollcard2">
+                                <div>
+                                    <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
+                                </div>
+                                <div>
+                                    <p class="card-text">{{ item.catdesc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="dhcatfreqask">
+            <h2>Frequently Asked Questions</h2>
+
+            {% if page.freqask %}
+                <div class="dhcatfacoll list-group list-group-flush">
+                    {% for item in page.freqask %}
+                        <a href="{{ item.faslug }}" class="list-group-item bg-transparent border-0">
+                            {{ item.fatitle }}
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+    </div>
+
+    <div class="dhleadbanner">
+        <div class="dhgradienttrans">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0C3247" fill-opacity="1" d="M0,192L30,202.7C60,213,120,235,180,208C240,181,300,107,360,112C420,117,480,203,540,224C600,245,660,203,720,165.3C780,128,840,96,900,80C960,64,1020,64,1080,96C1140,128,1200,192,1260,192C1320,192,1380,128,1410,96L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+            </svg>
+        </div>
+
+        <div class="dhcstaffset">
+            <div>
+                <img class="dhcstafficon rounded-circle dhwobble" src="/media/teamlp.png">
+            </div>
+            <div>
+                <img class="dhcstafficon rounded-circle dhwobble" src="/media/teamhn.png" style="animation-delay:1s;">
+            </div>
+        </div>
+
+        <div class="docscsectitem dhcontribwidth dhcontribset">
+            <h2 class="pb-2">A symphony, by you.</h2>
+            <div class="pb-2">
+                <span>Wysc isn't a company -- we're humans just like you. Everything we have achieved wouldn't have been possible without you.</span>
+            </div>
+            <div class="pb-4 wmpt-2">
+                <span><b>Thank you,<br>Wysc Staff ☕</b></span>
+            </div>
+            <div class="pt-2">
+                <a href="docs/contrib" class="btn btn-info btn-lg mt-2 mr-2 mb-2">See how you can help</a>
+                <a href="credits" class="btn btn-info btn-lg mt-2 mr-2 mb-2">See Credits</a>
+            </div>
+        </div>
+
+        <div style="padding-top:60px;"></div>
+
+    
+        <div class="row text-center">
+            <div class="col">
+                    <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+                    <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+            </div>
+        </div>
+    </div>
+
+
+{% include wyscfooter.html %}
+
+</body>
+</html>

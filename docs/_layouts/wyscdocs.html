@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include wyscheader.html %}
+</head>
+<body class="docsbody">
+
+    {% include wyscnav.html %}
+
+    <div class="dhheader2">
+        <div class="d-none d-md-block" style="padding-top:100px;"></div>
+        <div>
+            <div class="align-middle text-center">
+                <div style="margin-left:auto;margin-right:auto;">
+                    <div class="blogfadeb00 sectiontextcolor">
+                        <h1 style="padding-bottom:20px;font-family:'Gochi Hand';font-size:3.5em;">Need help?</h1>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-center">
+                        <div class="ml-2 mr-2 mt-2">
+                            <a href="/docs/about" style="color:rgba(255, 255, 255, 1);">
+                                <div class="btnfancylg btnfancyshadow btn-one homefadeb02 homeinvitebtn" style="margin-left:auto;margin-right:auto;">
+                                    About Us >
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ml-2 mr-2 mt-2">
+                            <a href="/docs/about/contact" style="color:rgba(255, 255, 255, 1);">
+                                <div class="btnfancylg btnfancyshadow btn-one homefadeb02 homeinvitebtn" style="margin-left:auto;margin-right:auto;">
+                                    Contact Us >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dhcatcontent blogfadeb01">
+        {% if page.maincats %}
+            <div class="dhcatcoll">
+                {% for item in page.maincats %}
+                    <a href="/docs/{{ item.catslug }}" class="dhcatcollsect">
+                        <div class="dhcatcollcard shadow hoverscale">
+                            <div>
+                                <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                            </div>
+                            <div class="dhcatcollcard2">
+                                <div>
+                                    <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
+                                </div>
+                                <div>
+                                    <p class="card-text">{{ item.catdesc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+    </div>
+
+    <div style="padding-top:60px;"></div>
+
+    
+    <div class="row text-center">
+        <div class="col">
+                <div style="color:#dedede;padding-top:40px;">&copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>,&nbsp;Wysc Services.</div>
+                <div class="text-center p-4 fontgochihand" style="color:#aaa;font-size:1.8em;"><span onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Wysc.</span></div>
+        </div>
+    </div>
+
+    </div>
+
+
+{% include wyscfooter.html %}
+
+</body>
+</html>
