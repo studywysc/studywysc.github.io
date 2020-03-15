@@ -1,0 +1,95 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Wysc
+email: wyscofficial@icloud.com
+description: For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience as the premier edu-social cafe based Discord server.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://wysc.us.to" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: wyscofficial
+github_username:  coffeebank
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-toc
+feed:
+  path: /blog/feed.xml
+permalink: /blog/:year/:title:output_ext
+
+algolia:
+  index_name: Wysc
+  application_id: 'HRA929IBAN'
+
+# Collections
+collections:
+  api:
+    output: true
+  css:
+    output: true
+  docs:
+    output: true
+    permalink: /docs/:path
+  joinwsc:
+    output: true
+  js:
+    output: true
+  media:
+    output: true
+
+destination: ../site
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+
+toc:
+  max_level: 2
+
+include:
+  - _headers
+
+exclude:
+  - events-upstream/
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
