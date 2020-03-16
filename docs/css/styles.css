@@ -8,7 +8,7 @@ body, html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Lato","Helvetica Neue",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Mada",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 .wlogo {
   font-size:3em;
@@ -30,7 +30,7 @@ body, html {
   animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 body .wnavglobal {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Lato","Helvetica Neue",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Mada","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 .wnavmb {
   background-color: #914c35; /* For browsers that do not support gradients */
@@ -212,7 +212,7 @@ body .wnavglobal {
   }
 .blogbody {
   background-color:#704529; /* fefefe */
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Lato","Helvetica Neue",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Mada","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 .blogfade {
   animation: blogfadein 0.68s;
@@ -371,6 +371,7 @@ body .wnavglobal {
   .bloghtitle h1 {
     font-size:1.68em;
     color: #313131;
+    font-weight: bold;
   }
   .bloghdate {
     color: #818181;
@@ -811,14 +812,18 @@ body .wnavglobal {
     }
     
   .docstextgray {
-    color: #9dadb5; /*https://www.color-hex.com/color/0c3247*/
+    color: hsl(200, 14%, 66%); /*https://www.color-hex.com/color/0c3247*/
+    transition: 0.2s;
   }
+    a.docstextgray:hover {
+      color: hsl(200, 14%, 76%);
+    }
 .docsjbcontent {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Source Sans Pro","Helvetica Neue",Roboto,"Lato",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;*/
+  /*font-family: -apple-system,BlinkMacSystemFont,"Mada","Source Sans Pro","Helvetica Neue",Roboto,"Lato",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;*/
 }
   .docsjbcontent p {
     line-height: 180%;

@@ -63,11 +63,7 @@
     </div>
     <div id="wthemeheadsearch" class="docsjheadsearch">
         <div class="docsjhs1 docstextgray d-none d-md-block">
-            <ul class="nav flex-column nav-pills" aria-orientation="vertical">
-                <li class="nav-item">
-                    <a class="nav-link active" id="docsjcatlist" href="index" style="background-color:#6c757d !important;font-weight:bold;">{{ page.category }}</a>
-                </li>
-            </ul>
+            <em><a href="/docs/dev/github" class="docstextgray" style="font-weight:bold;text-decoration:none;">Help edit Wysc Docs &#9656;</a></em>
         </div>
         <div class="docsjhs2 noselect">
             {% include nav-breadcrumbs-kbdocs.html %}
@@ -148,6 +144,14 @@
 
             <div class="docspbody docscatb00">
                 {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+                {% if page.catsub == "Index" %}
+                    {% for docsect in site.data.docscat %}
+                        {% if docsect.name == page.category %}
+                            <p class="d-md-none">{{ docsect.catdesc }}</p>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
                 {{ content }}
 
                 {% if page.catsub == "Index" %}

@@ -51,6 +51,8 @@ collections:
   docs:
     output: true
     permalink: /docs/:path
+  fonts:
+    output: true
   joinwsc:
     output: true
   js:
@@ -58,7 +60,7 @@ collections:
   media:
     output: true
 
-destination: ../site
+destination: _site
 
 breadcrumbs:
   root:
