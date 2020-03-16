@@ -51,6 +51,8 @@ collections:
   docs:
     output: true
     permalink: /docs/:path
+  fonts:
+    output: true
   joinwsc:
     output: true
   js:
