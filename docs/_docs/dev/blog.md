@@ -1,7 +1,8 @@
 ---
 layout: kbdocs
-title:  "APIs: Blog API"
+title:  "Blog API"
 category: "Contributor Hub"
+catsub: "APIs"
 summary: "The Wysc Blog API series provides API access to the data that populates Wysc Blog."
 last_updated: 17 Jan 2020
 ---

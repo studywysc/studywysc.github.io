@@ -33,19 +33,51 @@
     {% include wyscnav.html %}
 
     <div class="docsjheadimg">
-        <div>
-            <h1>{{ page.title }}</h1>
+        <div class="dhcatcontent">
+            {% if site.data.docscat %}
+                <div class="dhcatcoll2">
+                    {% for item in site.data.docscat %}
+                        <a href="/docs/{{ item.catslug }}" class="dhcatcollsect">
+                            <div class="{% if item.name == page.category %}dhcatcollactive {% else %}hoverscale {% endif %}d-flex d-hoverscale align-items-start rounded p-3 mt-2 mb-2" style="margin-left:10px;margin-right:10px;">
+                                <div>
+                                    <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                                </div>
+                                <div class="dhcatcollcard2">
+                                    <div>
+                                        <h5 class="card-title pt-2 pb-2">{{ item.name }}</h5>
+                                    </div>
+                                    <div>
+                                        <p class="card-text">{{ item.catdesc }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
         </div>
     </div>
     
     <div id="statusapi">
     </div>
     <div id="wthemeheadsearch" class="docsjheadsearch">
-        <div class="docsjhs1 docstextgray">
-            <em>Search coming soon!</em>
+        <div class="docsjhs1 docstextgray d-none d-md-block">
+            <ul class="nav flex-column nav-pills" aria-orientation="vertical">
+                <li class="nav-item">
+                    <a class="nav-link active" id="docsjcatlist" href="index" style="background-color:#6c757d !important;font-weight:bold;">{{ page.category }}</a>
+                </li>
+            </ul>
         </div>
         <div class="docsjhs2 noselect">
             {% include nav-breadcrumbs-kbdocs.html %}
+        </div>
+        <div class="docsjhs1 docstextgray d-md-none pt-0" style="padding-bottom:2em;">
+            <ul class="nav flex-column nav-pills" aria-orientation="vertical">
+                <li class="nav-item">
+                    <a class="nav-link active " data-toggle="collapse" href="#mobiletoc" role="button" aria-expanded="false" aria-controls="mobiletoc" style="background-color:#6c757d !important;font-weight:bold;">Table of Contents</a>
+                </li>
+            </ul>
         </div>
         <div class="docsjhs3">
             <!-- <div class="custom-control custom-switch">
@@ -55,20 +87,52 @@
         </div>
     </div>
     <div class="docsjbcontent">
-        <div class="docsjbcsidebar">
+        <div class="docsjbcsidebar d-none d-md-block">
             
-            <h2 class="d-none d-md-block">{{ page.category }}</h2>
-                
-            {% assign items = site.documents | where:"category",page.category | sort: 'title' %}
-            
-            <ul class="nav flex-column nav-pills p-4 docscatb00" aria-orientation="vertical">
-                {% for article in items %}
-                    <li class="nav-item">
-                        <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+            {% for docsect in site.data.docscat %}
+                {% if docsect.name == page.category %}
+                    {% for subcat in docsect.cats offset: 1 %}
 
+                        <h2 class="d-none d-md-block">{{ subcat }}</h2>
+
+                        {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
+                        <ul class="nav flex-column nav-pills pt-3 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                            {% for article in items %}
+                                <li class="nav-item">
+                                    <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                    {% endfor %}
+                {% else %}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+        <div class="docsjbcsidebar d-md-none collapse" id="mobiletoc">
+            
+            {% for docsect in site.data.docscat %}
+                {% if docsect.name == page.category %}
+                    {% for subcat in docsect.cats offset: 1 %}
+
+                        <h4>{{ subcat }}</h4>
+
+                        {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
+                        <ul class="nav flex-column nav-pills pt-2 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                            {% for article in items %}
+                                <li class="nav-item">
+                                    <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                    {% endfor %}
+                {% else %}
+                {% endif %}
+            {% endfor %}
+            
+            <hr style="margin-left:auto;margin-right:auto;width:70%;background-color:#666;margin-top:3em;margin-bottom:3em;">
         </div>
 
         <div class="docsjbcmain docscatb01"> <!-- docscatb00/01 influence animations on sm vs. md+ -->
@@ -77,7 +141,7 @@
             <div class="docsjlastupdated">
                 <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
                 <div class="pl-2 pr-2">
-                    <p class="docstextgray pt-2"><a href="https://github.com/coffeebank/wysc/blob/dev/docs/_{{ page.url | slice: 1,page.url.size }}.md" target="_blank">Wysc Contributors &#9656;</a></p>
+                    <p class="docstextgray pt-2"><a href="https://github.com/coffeebank/wysc/blob/dev/docs/_{{ page.url | slice: 1,page.url.size }}.md" target="_blank" rel="noopener noreferrer">Wysc Contributors &#9656;</a></p>
                     <p class="docstextgray pb-2">Last updated {% if page.last_updated %}{{ page.last_updated }}{% else %}a long while ago...{% endif %}</p>
                 </div>
             </div>
@@ -85,6 +149,36 @@
             <div class="docspbody docscatb00">
                 {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
                 {{ content }}
+
+                {% if page.catsub == "Index" %}
+            
+                    <hr class="d-md-none" style="margin-left:auto;margin-right:auto;width:70%;background-color:#666;margin-top:6em;margin-bottom:3em;">
+                    <div class="d-md-none">
+            
+                        {% for docsect in site.data.docscat %}
+                            {% if docsect.name == page.category %}
+                                {% for subcat in docsect.cats offset: 1 %}
+            
+                                    <h4>{{ subcat }}</h4>
+            
+                                    {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
+                                    <ul class="nav flex-column nav-pills pt-2 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                                        {% for article in items %}
+                                            <li class="nav-item">
+                                                <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+            
+                                {% endfor %}
+                            {% else %}
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                {% else %}
+                {% endif %}
+
             </div>
 
         </div>

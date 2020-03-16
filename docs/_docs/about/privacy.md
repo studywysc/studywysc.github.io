@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Privacy Policy"
 category: "About Wysc"
+catsub: "Legal"
 last_updated: 17 Jan 2020
 summary: "The privacy of your data — and it is your data, not ours! — is at your perusal. Here's how we'll try to protect your data from the wild Internet west."
 redirect_from:

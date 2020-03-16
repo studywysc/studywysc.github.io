@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Licenses"
 category: "About Wysc"
+catsub: "Legal"
 last_updated: 17 Jan 2020
 summary: "Wysc's stance on licensing of its property ranges from open to restricted based on your use case. Explore your options below."
 redirect_from:

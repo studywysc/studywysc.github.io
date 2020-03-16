@@ -20,9 +20,22 @@
             <meta property="position" content="1" />
       </li>
       <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
-         <span property="name">{{ page.category }}</span>
+         {% if page.catsub == "Index" %}
+            <span property="name">{{ page.category }}</span>
+         {% else %}
+            <a property="item" typeof="WebPage" href="index">
+               <span property="name">{{ page.category }}</span>
+            </a>
+         {% endif %}
          <meta property="position" content="2" />
       </li>
+         {% if page.catsub == "Index" %}
+         {% else %}
+         <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+            <span property="name">{{ page.catsub }}</span>
+            <meta property="position" content="3" />
+         </li>
+         {% endif %}
       {% continue %} {% endif %}
       {% endfor %}
 

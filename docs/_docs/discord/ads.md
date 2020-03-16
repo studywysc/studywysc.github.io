@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Culture: Advertising"
 category: "Wysc Discord"
+catsub: "Content Policy"
 last_updated: 29 Jan 2020
 redirect_from:
   - ads

@@ -1,7 +1,8 @@
 ---
 layout: kbdocs
-title:  "APIs: Status API"
+title:  "Status API"
 category: "Contributor Hub"
+catsub: "APIs"
 summary: "How's Wysc doing? Find out using the Status API!"
 last_updated: 17 Jan 2020
 ---
