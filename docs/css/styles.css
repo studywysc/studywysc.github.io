@@ -442,14 +442,17 @@ body .wnavglobal {
   margin-left: auto;
   margin-right: auto;
 }
-.dhcatcoll {
+.dhcatcoll, .dhcatcoll2 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
+  .dhcatcoll {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
   .dhcatcoll > a {
     text-decoration: none !important;
     color: #176088;
@@ -458,6 +461,31 @@ body .wnavglobal {
   .dhcatcoll > a:hover {
     color: #914C35;
   }
+  .dhcatcoll2 {
+    padding-top: 6em;
+    padding-bottom: 2em;
+  }
+  .dhcatcoll2 > a {
+    text-decoration: none !important;
+    color: #eee;
+    transition: 0.2s;
+  }
+  a .dhcatcollactive {
+    text-decoration: none !important;
+    color: #ccc;
+    transition: 0.2s;
+  }
+  .dhcatcoll2 > a:hover {
+    color: hsl(15,46.5%,65%);
+  }
+.dhcatcollactive {
+  background: linear-gradient(transparent 98%, #bbb 5%);
+  border-radius: 0.75em;
+  transition: 0.2s;
+}
+  /* .dhcatcollactive:hover {
+    background: linear-gradient(transparent 98%, hsl(15,46.5%,65%) 5%);
+  } */
 .dhcatcollcard {
   display: flex;
   align-items: flex-start;
@@ -953,18 +981,19 @@ body .wnavglobal {
   @keyframes dh-fade-slide-up { 0% { opacity: 0; transform: translateY(4rem); } 100% { opacity: 1; transform: none; } }
 
 .docsjheadimg {
-  height:225px;
+  height:auto;
+  width:100%;
   background: url('/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg') no-repeat top, #0c3247;
   background-size:cover;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-end; */
   /* animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards; */
 }
-  .docsjheadimg div {
+  /* .docsjheadimg div {
     width: 100%;
-  }
+  } */
   .docsjheadimg div h1 {
     font-size:4rem;
     font-family: 'Gochi Hand';

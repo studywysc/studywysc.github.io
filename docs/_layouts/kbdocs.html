@@ -33,8 +33,29 @@
     {% include wyscnav.html %}
 
     <div class="docsjheadimg">
-        <div>
-            <h1>{{ page.title }}</h1>
+        <div class="dhcatcontent">
+            {% if site.data.docscat %}
+                <div class="dhcatcoll2">
+                    {% for item in site.data.docscat %}
+                        <a href="/docs/{{ item.catslug }}" class="dhcatcollsect">
+                            <div class="{% if item.name == page.category %}dhcatcollactive {% else %}hoverscale {% endif %}d-flex d-hoverscale align-items-start rounded p-3 mt-2 mb-2" style="margin-left:10px;margin-right:10px;">
+                                <div>
+                                    <i class="material-icons p-3 md-36">{{ item.caticon }}</i>
+                                </div>
+                                <div class="dhcatcollcard2">
+                                    <div>
+                                        <h5 class="card-title pt-2 pb-2">{{ item.name }}</h5>
+                                    </div>
+                                    <div>
+                                        <p class="card-text">{{ item.catdesc }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
         </div>
     </div>
     
