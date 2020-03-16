@@ -811,8 +811,12 @@ body .wnavglobal {
     }
     
   .docstextgray {
-    color: #9dadb5; /*https://www.color-hex.com/color/0c3247*/
+    color: hsl(200, 14%, 66%); /*https://www.color-hex.com/color/0c3247*/
+    transition: 0.2s;
   }
+    a.docstextgray:hover {
+      color: hsl(200, 14%, 76%);
+    }
 .docsjbcontent {
   display: flex;
   align-items: flex-start;
