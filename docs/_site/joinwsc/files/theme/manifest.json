@@ -1,0 +1,53 @@
+{
+	"responsive": true,
+    "glyph-icons": true,
+	"enableEditorJS": true,
+    "description": "Birdseye gives your website an editorial, photo-first sense of style. With beautiful headline fade effects and navigation elements that transition as you scroll, Birdseye ensures that your content always looks stunning. Birdseye's simple color palette allows your photos and content to do the talking.",
+    "features": [
+        "responsive",
+        "css-buttons",
+        "social-icons",
+        "animation",
+        "navigation-fixed",
+        "full-width-header",
+        "navigation-top"
+    ],
+    "variations": [
+        {
+            "value": "light",
+            "sample": "#ffffff",
+            "is-dark": false
+        },
+        {
+            "value": "dark",
+            "sample": "#000000",
+            "is-dark": true
+        }
+    ],
+    "custom-options" : [
+        {
+            "name" : "full-width-body",
+            "title": "Full Width Body",
+            "type" : "toggle",
+            "default" : false,
+            "is-body-class" : true,
+            "is-less-var" : false
+        },
+        {
+            "name" : "header-overlay",
+            "title": "Header Gradient",
+            "type" : "toggle",
+            "default" : true,
+            "is-body-class" : true,
+            "is-less-var" : false
+        },
+        {
+            "name" : "alt-nav",
+            "title": "Contrast Navigation",
+            "type" : "toggle",
+            "default" : false,
+            "is-body-class" : true,
+            "is-less-var" : false
+        }
+    ]
+}
