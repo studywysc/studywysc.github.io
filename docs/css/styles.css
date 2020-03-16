@@ -447,7 +447,6 @@ body .wnavglobal {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
-  animation: dhfade-in 3s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
   .dhcatcoll {
     padding-top: 2em;
@@ -472,14 +471,14 @@ body .wnavglobal {
   }
   a .dhcatcollactive {
     text-decoration: none !important;
-    color: #ccc;
+    color: #adb5bd;
     transition: 0.2s;
   }
   .dhcatcoll2 > a:hover {
     color: hsl(15,46.5%,65%);
   }
 .dhcatcollactive {
-  background: linear-gradient(transparent 98%, #bbb 5%);
+  background: linear-gradient(transparent 98%, #adb5bd 5%);
   border-radius: 0.75em;
   transition: 0.2s;
 }
