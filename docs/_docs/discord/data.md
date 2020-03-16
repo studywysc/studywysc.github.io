@@ -3,14 +3,14 @@ layout: kbdocs
 title:  "Culture: Data Collection"
 category: "Wysc Discord"
 catsub: "Content Policy"
-last_updated: 13 Jan 2020
+last_updated: 15 Mar 2020
 redirect_from:
   - surveys
   - docs/discord/content/surveys
   - collectdata
 ---
 
-While Wysc appreciates your consideration, please be aware that we are not an advertising or recruitment platform. Do not join Wysc solely to collect data for a project, product, service, or any other topic. All surveys, similar to any other attempts at data collection, are subject to the data collection guidelines below, educational or otherwise. [Rules and Culture](1) regulations still apply.
+While Wysc appreciates your consideration, please be aware that we are not an advertising or recruitment platform. Do not join Wysc solely to collect data for a project, product, service, or any other topic. All surveys, similar to any other attempts at data collection, are subject to the data collection guidelines below, educational or otherwise. [Rules and Culture](culture) regulations still apply.
 
 ### Seed users
 
@@ -55,7 +55,7 @@ Fill in this form correctly in Discord to confirm you will follow GDPR standards
 
 ### Sapling and above users
 
-All Sapling and above users are free to engage in data collection (including surveys) within reasonable limits.
+All Sapling and above users are free to engage in data collection (including surveys) within reason.
 
 Other types of data collection may require special arrangements with Wysc Staff, who are reachable in #support.
 
