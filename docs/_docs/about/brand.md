@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Brand Guidelines"
 category: "About Wysc"
+catsub: "Brand & Design"
 last_updated: 24 Nov 2019
 summary: "Wysc maintains a strong brand identity and integrity. At the intersection of rigorous and relaxed, explorative yet casual, we balance two extremes to provide a flexible, laid-back experience where you can pursue your studies while also taking care of yourself."
 redirect_from:

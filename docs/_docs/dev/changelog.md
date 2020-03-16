@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Changelog"
 category: "Contributor Hub"
+catsub: "Info"
 summary: "Version Releases for the Wysc Website"
 redirect_from:
   - changelog

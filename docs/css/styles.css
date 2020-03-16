@@ -1059,6 +1059,9 @@ body .wnavglobal {
     margin-bottom: 1em;
     color: #e4ffff;
   }
+  .docspbody img {
+    max-width: 100%;
+  }
   .docspbody pre {
       background: #414141;
       color: #eceff1;

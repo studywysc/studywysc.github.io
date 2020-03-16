@@ -1,0 +1,29 @@
+- name: About Wysc
+  catslug: about
+  caticon: favorite
+  catdesc: Who we are, What we do, and How to contact us
+  cats:
+    - Index
+    - Organization
+    - Legal
+    - Brand & Design
+
+- name: Wysc Discord
+  catslug: discord
+  caticon: videogame_asset
+  catdesc: See what our Discord can do and how to participate!
+  cats:
+    - Index
+    - Content Policy
+    - Membership
+    - Features
+
+- name: Contributor Hub
+  catslug: dev
+  caticon: build
+  catdesc: Developer APIs, contribution info, and new features
+  cats:
+    - Index
+    - Info
+    - APIs
+    - GitHub

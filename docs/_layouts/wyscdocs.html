@@ -37,9 +37,9 @@
     </div>
 
     <div class="dhcatcontent blogfadeb01">
-        {% if page.maincats %}
+        {% if site.data.docscat %}
             <div class="dhcatcoll">
-                {% for item in page.maincats %}
+                {% for item in site.data.docscat %}
                     <a href="/docs/{{ item.catslug }}" class="dhcatcollsect">
                         <div class="dhcatcollcard shadow hoverscale">
                             <div>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="dhcatcollcard2">
                                 <div>
-                                    <h5 class="card-title pt-2 pb-2">{{ item.cattitle }}</h5>
+                                    <h5 class="card-title pt-2 pb-2">{{ item.name }}</h5>
                                 </div>
                                 <div>
                                     <p class="card-text">{{ item.catdesc }}</p>

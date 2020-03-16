@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Group Study"
 category: "Wysc Discord"
+catsub: "Features"
 last_updated: 23 Nov 2019
 redirect_from:
   - docs/discord/library/groupstudy

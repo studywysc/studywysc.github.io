@@ -2,14 +2,13 @@
 layout: kbdocs
 title:  "Contact Us"
 category: "About Wysc"
+catsub: "Organization"
 last_updated: 16 Jan 2020
 summary: "Reach out to Wysc for any inquiries you need! Select the subject matter below that best reflects the assistance you are looking for."
 redirect_from:
   - contact
   - support
   - docs/about/brand/contact
-  - docs/about/contact
-  - docs/about/contact/1
   - docs/contact
 ---
 

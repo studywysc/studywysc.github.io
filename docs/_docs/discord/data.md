@@ -2,6 +2,7 @@
 layout: kbdocs
 title:  "Culture: Data Collection"
 category: "Wysc Discord"
+catsub: "Content Policy"
 last_updated: 13 Jan 2020
 redirect_from:
   - surveys

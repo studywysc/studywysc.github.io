@@ -1,7 +1,7 @@
 ---
 layout: kbdocs
-title:  "About Wysc"
-category: "About Wysc"
+title:  "Contributor Hub"
+category: "Contributor Hub"
 catsub: "Index"
 last_updated: 15 Mar 2020
 ---

@@ -1,3 +1,18 @@
+<!-- 0.200315 -->
+
+<h2 class="d-none d-md-block">{{ page.category }}</h2>
+    
+{% assign items = site.documents | where:"category",page.category | sort: 'title' %}
+
+<ul class="nav flex-column nav-pills p-4 docscatb00" aria-orientation="vertical">
+    {% for article in items %}
+        <li class="nav-item">
+            <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+
 <!-- 0.200118 -->
 
 {% if page.contribs %}
