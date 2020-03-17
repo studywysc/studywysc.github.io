@@ -1096,7 +1096,7 @@ body .wnavglobal {
     max-width: 100%;
   }
   .docspbody img.docucreditlogos {
-    max-width: inherit;
+    max-width: 64px;
   }
   .docspbody pre {
       background: #414141;
