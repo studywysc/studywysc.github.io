@@ -132,8 +132,8 @@
         </div>
 
         <div class="docsjbcmain docscatb01"> <!-- docscatb00/01 influence animations on sm vs. md+ -->
-            <h2 class="d-md-none pb-2">{{ page.title }}</h2> <!-- add d-md-none after testing how it looks // hides title on md and up -->
-
+    
+            <h2 class="pb-2">{{ page.title }}</h2> <!-- add d-md-none after testing how it looks // hides title on md and up -->
             <div class="docsjlastupdated">
                 <img src="/media/wsc-square-sm.png" draggable="false" class="docsjlu1img rounded-circle p-2 noselect" alt="wysc logo">
                 <div class="pl-2 pr-2">
@@ -147,7 +147,7 @@
                 {% if page.catsub == "Index" %}
                     {% for docsect in site.data.docscat %}
                         {% if docsect.name == page.category %}
-                            <p class="d-md-none">{{ docsect.catdesc }}</p>
+                            <p class="d-md-none pb-4">{{ docsect.catdesc }}</p>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
@@ -156,8 +156,7 @@
 
                 {% if page.catsub == "Index" %}
             
-                    <hr class="d-md-none" style="margin-left:auto;margin-right:auto;width:70%;background-color:#666;margin-top:6em;margin-bottom:3em;">
-                    <div class="d-md-none">
+                    <div class="d-md-none pt-4">
             
                         {% for docsect in site.data.docscat %}
                             {% if docsect.name == page.category %}
