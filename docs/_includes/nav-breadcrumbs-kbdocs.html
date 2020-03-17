@@ -1,18 +1,6 @@
 <nav id="wthemebccss" class="docstextlight bccss">
    <ol class="list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
-      {% for crumb in breadcrumbs %} 
-         {% if forloop.first and site.breadcrumbs.root.image %}
-         <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-               <!-- <span class="icon" property="name">{% include nav-breadcrumb-icon.svg %}</span> -->
-               <span property="name">Docs</span>
-               <meta property="position" content="1" />
-            </a>
-         </li>
-         {% continue %} 
-      {% endif %} 
-      {% if forloop.last %}
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
          <a property="item" typeof="WebPage" href="{{ site.url }}/docs">
             <span property="name">Docs</span>
@@ -29,15 +17,13 @@
          {% endif %}
          <meta property="position" content="2" />
       </li>
-         {% if page.catsub == "Index" %}
-         {% else %}
-         <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
-            <span property="name">{{ page.catsub }}</span>
-            <meta property="position" content="3" />
-         </li>
-         {% endif %}
-      {% continue %} {% endif %}
-      {% endfor %}
+      {% if page.catsub == "Index" %}
+      {% else %}
+      <li class="breadcrumb-item docstextgray capitalizeall" property="itemListElement" typeof="ListItem">
+         <span property="name">{{ page.catsub }}</span>
+         <meta property="position" content="3" />
+      </li>
+      {% endif %}
 
    </ol>
 </nav>
