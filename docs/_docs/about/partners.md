@@ -7,6 +7,7 @@ last_updated: 29 Jan 2020
 redirect_from:
   - partners
   - partnership
+  - docs/about/brand/partnerships
 ---
 
 
