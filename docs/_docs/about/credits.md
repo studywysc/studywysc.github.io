@@ -9,6 +9,7 @@ summary: "This page contains a list of notable sources we have drawn upon to hel
 redirect_from:
   - credits
   - docs/about/credits
+  - docs/about/legal/credits
   - docs/about/brand/credits
   - docs/discord/credits
 
@@ -194,7 +195,7 @@ creditslist:
       - costitle: Development
         coslist:
           - cosname: Nightingale REST API Client
-            cosurl: https://www.microsoft.com/en-us/p/nightingale-rest-api-client/9n2t6f9f5zdn
+            cosurl: https://github.com/jenius-apps/nightingale-rest-api-client
 
           - cosname: Toggl
             cosurl: https://toggl.com/

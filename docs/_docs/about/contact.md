@@ -10,6 +10,8 @@ redirect_from:
   - support
   - docs/about/brand/contact
   - docs/contact
+  - docs/about/org/contact
+  - docs/org/contact
 ---
 
 ### Wysc Outages
@@ -37,7 +39,6 @@ Wysc relies on the following services to provide a consistent experience.
 
 
 ### Administrative Inquiries
-
 
 **Reaching out to Wysc Staff for non-legal administrative inquiries?**
 
