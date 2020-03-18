@@ -1099,18 +1099,14 @@ body .wnavglobal {
     max-width: 64px;
   }
   .docspbody pre {
-      background: #414141;
-      color: #eceff1;
-      border-radius: 5px;
-      padding:15px;
-      margin-bottom:2rem;
-    /*
     background: #414141;
-    color: #efefef;
-    border-radius:0.75em;
-    margin:1em;
-    padding:2em;
-    width:80%; */
+    color: #eceff1;
+    border-radius: 5px;
+    padding:15px;
+    margin-bottom:2rem;
+  }
+  .docspbody ul, .docspbody ol {
+    margin-bottom: 2rem;
   }
 /* .docspbodytext {
   padding-left: 3%;

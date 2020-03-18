@@ -2,7 +2,7 @@
 layout: kbdocs
 title:  "Partners"
 category: "About Wysc"
-catsub: "Legal"
+catsub: "Organization"
 last_updated: 29 Jan 2020
 summary: "Work in Progress"
 redirect_from:

@@ -4,7 +4,7 @@ title:  "Contact Us"
 category: "About Wysc"
 catsub: "Organization"
 last_updated: 16 Jan 2020
-summary: "Reach out to Wysc for any inquiries you need! Select the subject matter below that best reflects the assistance you are looking for."
+summary: "Find out how you can reach us if you have questions or administrative inquiries."
 redirect_from:
   - contact
   - support
@@ -12,31 +12,42 @@ redirect_from:
   - docs/contact
 ---
 
-### General Inquiries/Bug Reports
+### Wysc Outages
 
-Looking for help with a Wysc feature? Want more information about a role? Reach out to us through the following:
+Wysc relies on the following services to provide a consistent experience.
 
-<div class="card bg-dark m-2" markdown="1">
-<div class="card-body">
-<strong>Option 1</strong>
-<p>Reach out to our Live Support with the button below.</p>
-<p><button type="button" class="btn btn-outline-info" onclick="crate.toggle(true)">Live Support&ensp;&#9656;</button></p>
-<p>Responses typically occur within 24 hours for a Staff response. Community members are encouraged to respond when they can. Please allow up to 7 days for any unanswered inquiries.</p>
-</div>
-</div>
+**Before you contact us about a broken feature, please check if any of the following services are currently experiencing outages:**
 
-<div class="card bg-dark m-2" markdown="1">
-<div class="card-body">
-<strong>Option 2</strong>
-<p>Message us in the <kbd>#support</kbd> channel in our Discord chat.</p>
-<p>Responses typically occur within 24 hours for a Staff response. Community members are encouraged to respond when they can. Please allow up to 7 days for any unanswered inquiries.</p>
-</div>
-</div>
+- [Discord](https://status.discordapp.com/)
+- [GitHub](https://www.githubstatus.com/) - Webhooks and GitHub Pages
 
-### Official Inquiries
 
-For business-level inquiries, legal requests, and other administrative-level contact, reach us by email below.
+### Wysc Services
 
-If you are a developer who would like to reach out to us regarding our use of your creation, feel free to reach out to us in #support or by email below!
+**Questions about the service we provide?**
 
-<a href="mailto:wyscofficial@icloud.com" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-info">Email Wysc Staff&ensp;&#9656;</button></a>
+- Reach out to us in the `#support` channel on Wysc Discord
+- Community members can usually respond within 24-48 hours
+- When an official Wysc Staff response is necessary, please allow 5-10 business days
+
+**Reporting a broken link, feature, or service?**
+
+- Reach out to us in the `#support` channel on Wysc Discord
+- If you are [Sapling rank or above](/docs/discord/ranks), consider joining [Contributor Hub](/docs/dev) to help report bugs and improve Wysc!
+
+
+### Administrative Inquiries
+
+
+**Reaching out to Wysc Staff for non-legal administrative inquiries?**
+
+- Reach out to us in the `#support` channel on Wysc Discord
+- Please provide a short summary of the situation and to request a private audience if necessary
+- Due to the unique structure of our Discord, all correspondence will be shared as necessary with our community leaders
+- When an official Wysc Staff response is necessary, please allow 5-10 business days
+
+**Business-level inquiries, legal requests, and other administrative level contact?**
+
+- Reach us by email at [`wyscofficial@icloud.com`](mailto:wyscofficial@icloud.com)
+- Please be sure to view our [Credits](/docs/about/credits), [Licenses](/docs/about/licenses), and [Privacy Policy](/docs/about/privacy) pages before contacting us regarding attribution and sources
+- When an official Wysc Staff response is necessary, please allow 5-10 business days

@@ -8,8 +8,36 @@ summary: "Wysc maintains a strong brand identity and integrity. At the intersect
 redirect_from:
   - brand
   - design
-  - brand/index.html
 ---
+
+### Tagline
+
+**Wysc is not an acronym.**
+
+<div class="width100 text-center" style="padding-bottom:3em;">
+<span style="font-family:'Gochi Hand';font-size:4.5em;margin-bottom:0.15em;">Wysc.</span>
+<br>
+<span style="font-size:1.25em;margin-top:0.15em;">Virtual Study Cafe</span>
+</div>
+
+- Wysc should **always** be written with a capital W, followed by all lowercase letters
+  - "Wysc"
+- Wysc should **always** be accompanied with the tagline whenever the reader may be unsure what Wysc is
+  - "Wysc - Virtual Study Cafe"
+- Wysc should **always** be pronounced "whisk", rhyming with "disk"
+  - ["How to Pronounce Whisk" - Pronunciation Guide](https://www.youtube.com/watch?v=SWz09YVZ7Hk)
+
+While Wysc was inspired by our old server name, "Work Studying Chilling", the name "Wysc" itself is not an acronym. Please do not use any of the following deviations to portray our brand:
+
+- &#10060; **Do not** use the name "WYSC"
+- &#10060; **Do not** add color to the Wysc text logo representations
+- &#10060; **Do not** misrepresent the Wysc brand by using incorrect information
+
+Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs/about/credits#media).
+  - **Gochi Hand** is used to portray the Wysc Logo in text logo representations
+  - **Mada** is used to represent official Wysc communications
+  - Other fonts we use are attributed [in our Credits page](/docs/about/credits#media)
+
 
 ### Logo
 
@@ -20,6 +48,8 @@ redirect_from:
   </div>
 </div>
 <br>
+
+[Download Logo (128px) &#9656;](/media/wsc-square-sm.png)
 
 The Wysc Logo represents an adventurous, interesting, yet relaxed individual who constantly seeks to learn and help others along a journey while still practicing self-care and having fun every so often. There is always more around the corner to discover.
 
@@ -50,6 +80,15 @@ The Wysc Logo represents an adventurous, interesting, yet relaxed individual who
 
 The Wysc colors complement our branding and theme images with pride, striking a strong balance between a feverish red and an aesthetic blue.
 
+
+### Assets
+
+All official Wysc assets are used as licenses allow.
+
+- Wysc sources logo images from [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Wysc sources fonts from [Google Fonts](https://fonts.google.com)
+
+The [background image](https://unsplash.com/photos/9NhciG1wq10) has been sourced from [Liam Seskis](https://unsplash.com/@liamseskis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 
 <!-- ### Fonts
 
