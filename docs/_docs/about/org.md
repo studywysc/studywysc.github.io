@@ -3,12 +3,11 @@ layout: kbdocs
 title:  "About Us"
 category: "About Wysc"
 catsub: "Organization"
-last_updated: 16 Jan 2020
+last_updated: 17 Jan 2020
 redirect_from:
   - about
   - docs/about/1
   - docs/about/org
-  - docs/about/brand
 ---
 
 <p style="font-family:'Cookie';font-size:2em;">For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.</p>
@@ -22,7 +21,7 @@ Wysc is different. We're looking to create a home. We're the small coffee shop y
 
 While we do have studious and hardworking students grinding away in our study lounges, we're here first and foremost to help you cultivate a sense of community. We're not afraid of sacrificing server member count for a quality, close-knit experience with your fellow study mates.
 
-In these tumultuous times, an open server such as ours [can be a dangerous thing](blog/2019/misbehaving-users.html). But we're not afraid to stand our ground. Our rank system is meritocratic and community-led. As you rank up, you gain more permissions and more freedoms, culminating in the ability to help decide the future of Wysc for yourself in a community forum. [Accordingly, Wysc's Github is also open source, including this website!](/docs/about/licenses)
+In these tumultuous times, an open server such as ours [can be a dangerous thing](/blog/2019/misbehaving-users.html). But we're not afraid to stand our ground. Our rank system is meritocratic and community-led. As you rank up, you gain more permissions and more freedoms, culminating in the ability to help decide the future of Wysc for yourself in a community forum. [Accordingly, Wysc's Github is also open source, including this website!](/docs/about/licenses)
 
 
 ### Wysc Values

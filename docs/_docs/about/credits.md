@@ -4,11 +4,12 @@ superlayout: kbdocs
 title:  "Credits"
 category: "About Wysc"
 catsub: "Legal"
-last_updated: 17 Jan 2020
+last_updated: 17 Mar 2020
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible. The list may not be fully comprehensive. If you are a creator and have found that your work exists within Wysc but is not appropriately credited, please reach out to us at our Docs page and we will update the listing!"
 redirect_from:
   - credits
   - docs/about/credits
+  - docs/about/legal/credits
   - docs/about/brand/credits
   - docs/discord/credits
 
@@ -194,7 +195,7 @@ creditslist:
       - costitle: Development
         coslist:
           - cosname: Nightingale REST API Client
-            cosurl: https://www.microsoft.com/en-us/p/nightingale-rest-api-client/9n2t6f9f5zdn
+            cosurl: https://github.com/jenius-apps/nightingale-rest-api-client
 
           - cosname: Toggl
             cosurl: https://toggl.com/
@@ -274,13 +275,9 @@ creditslist:
             cosline: Copyright (c) 2011, Huerta Tipografica
             cosurl: https://fonts.google.com/specimen/Gochi%20Hand
 
-          - cosname: Font - Lato
-            cosline: Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic
-            cosurl: https://fonts.google.com/specimen/Lato
-
-          - cosname: Font - Source Sans Pro
-            cosline: Copyright 2010, 2012, 2014 Adobe Systems Incorporated
-            cosurl: https://fonts.google.com/specimen/Source%20Sans%20Pro
+          - cosname: Font - Mada
+            cosline: Copyright (c) 2015-2016, The Mada Project Authors, with Reserved Font Name "Source"
+            cosurl: https://github.com/alif-type/mada
 
           - cosname: Icons - Material Design Icons
             cosurl: https://github.com/google/material-design-icons
