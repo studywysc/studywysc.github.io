@@ -6,61 +6,56 @@ catsub: "GitHub"
 last_updated: 18 Jan 2020
 ---
 
+Wysc relies on contributors like you to help expand documentation for Wysc!
+
+To get started, you need the following:
+
+- [A GitHub account (free)](https://github.com/)
+- [A web browser (free)](https://www.mozilla.org/en-US/firefox/new/)
+
+
+### Introduction
+
+**What these words mean:**
+- Repo/Repository
+    - A git repository, or "repo", is the home of a project.
+    - Git is a technology that lets developers keep track of changes to their project easily, and GitHub makes Git nice and easy to use.
+- Fork a project
+    - You can't directly make changes to someone else's repo. What you do is make a copy of, or "fork", the repo and then start making changes in your personal copy.
+- Commit changes
+    - Every time you make a change to a file, "Commit changes" is your save button.
+    - When you're done making all the changes you want, you'll now have a list of "commits" that show what changes you've made and to which file.
+- Pull request
+    - When you're done making all the changes you want to your own copy, you want your changes to go back to the main repo/project.
+    - To do that, you start a "pull request", which lets the other person know you made changes!
+    - You set the options to point from your repo to the main repo, write a short explanation for what you changed, then click Submit
+    - When your pull request is approved, your changes will now show up in their code!
+- Markdown
+    - Markdown is a type of text file that is easy to edit. [See here for a guide on how to use Markdown!](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
+**The Wysc Repository**
+- The official Wysc repository lives at [https://github.com/coffeebank/wysc](https://github.com/coffeebank/wysc)
+- All changes should be made to the `dev` Branch
+    - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051009.jpg)
+- The Wysc Docs files live at [https://github.com/coffeebank/wysc/tree/dev/docs/_docs](https://github.com/coffeebank/wysc/tree/dev/docs/_docs)
+    - There are three folders for each section of the Wysc Docs:
+        - `about` - About Wysc
+        - `discord` - Wysc Discord
+        - `dev` - Contributor Hub
+- All assets (files, images, videos, etc.) should be stored under the `assets` folder
+- All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
+
+
 ### Getting Started
 
-First, [log into your Github account](https://github.com/login) and go to [https://github.com/coffeebank/wysc](https://github.com/coffeebank/wysc).
-
-Everything you edit will be in the `upstream` folder:
-```
-wysc/upstream/
-```
-
-Click `upstream` to go into the `upstream` folder.
-
-
-### Understanding the Folders
-
-Folders you need to know:
-```
-wysc/upstream/
-
-_about          https://wysc.netlify.com/docs/about/
-_bots           https://wysc.netlify.com/docs/bots/
-_dev            https://wysc.netlify.com/docs/dev/
-_discord        https://wysc.netlify.com/docs/discord
-```
-
-Conveniently, they are all located at the top of the page!
-
-Clicking into a folder, we see:
-```
-wysc/upstream/_about/
-
-brand           https://wysc.netlify.com/docs/about/brand/..
-legal           https://wysc.netlify.com/docs/about/legal/..
-org             https://wysc.netlify.com/docs/about/org/..
-staff           https://wysc.netlify.com/docs/about/staff/..
-index.md        Wysc Docs - About main page
-```
-
-These are the subcategories you see here on [the About page](https://wysc.netlify.com/docs/about/).
-
-### Category Structure
-
-Here we finally get to the files themselves:
-```
-wysc/upstream/_about/legal/
-
-1.md            https://wysc.netlify.com/docs/about/legal/1
-credits.md      https://wysc.netlify.com/docs/about/legal/credits
-privacy.md      https://wysc.netlify.com/docs/about/legal/privacy
-```
-
-You may have noticed that the category sidebar doesn't sort files by their titles. That's because they're actually sorted by their filename!
-
-![Screenshot of category sidebar, the page titles of 1.md, credits.md, and privacy.md respectively show as Licenses, Credits, and Privacy Policy](/media/docs/Annotation 2020-01-19 001721.jpg)
-
-Back in Github, let's click into a file and try to edit it.
+1. First, [log into your Github account](https://github.com/login).
+1. Next, [go to the Wysc Docs website](https://wysc.us.to/docs) and visit the page you want to edit.
+1. Click `Wysc Contributors`. It will bring you to the GitHub file for the page.
+    - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051908.jpg)
+1. To edit the page, click the pencil icon on the top right.
+    - ![Screenshot of Github, mouse is hovering over the edit button.](/media/docs/Annotation 2020-01-19 002324.jpg)
+1. When you're done making changes, 
 
 
 ### Viewing a File

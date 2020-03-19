@@ -13,12 +13,6 @@ In simple terms, you edit words in a text document and the changes will show up 
 In more advanced terms, Wysc Website runs on [Jekyll](../../about/legal/credits#website).
 
 
-### Prerequisites
-
-- [A Github account (free)](https://github.com/)
-- [A web browser (free)](https://chrome.google.com/)
-
-
 ### Front Matter
 
 At the top of every file, there's a section that's boxed in.
