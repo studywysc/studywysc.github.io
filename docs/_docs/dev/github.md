@@ -17,12 +17,11 @@ last_updated: 19 Mar 2020
         - `about` - About Wysc
         - `discord` - Wysc Discord
         - `dev` - Contributor Hub
-- All assets (files, images, videos, etc.) should be stored under the `assets` folder
-- All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
+    - All assets (files, images, videos, etc.) should be stored under the `assets` folder
 - To test how the website looks, a dev/staging website is available at [https://wyscdev.netlify.app](https://wyscdev.netlify.app).
 
 
-### Page Content
+### Front Matter
 
 At the top of each page, there is content that lets Jekyll know how the page should be processed.
 
@@ -59,3 +58,13 @@ redirect_from:
 - redirect_from
     - Redirects for short url's such as setting "wysc.us.to/licenses"
     - DO NOT INCLUDE THE "wysc.us.to/" PART OF THE URL HERE
+
+
+### Page Content
+
+- All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
+- Upload all assets (files, images, videos, etc.) to [https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets](https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets)
+    - In markdown, link to them as follows, replacing "Summary of the image here" and "yourfilename.jpg" as necessary:  
+    ```
+    ![Summary of the image here](/docs/assets/yourfilename.jpg)
+    ```
