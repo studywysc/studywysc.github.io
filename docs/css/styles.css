@@ -1108,6 +1108,39 @@ body .wnavglobal {
   .docspbody ul, .docspbody ol {
     margin-bottom: 2rem;
   }
+  .docspbody ul.section-nav {
+    list-style: none;
+    min-width: 200px;
+    width: 60%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #343a40;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  .docspbody ul.section-nav li.toc-entry.toc-h3 {
+    padding-left: 1em;
+    font-size: 1.1em;
+    padding-bottom: 0.15em;
+  }
+  .docspbody ul.section-nav li.toc-entry.toc-h3 a {
+    color: #dee2e6d1;
+    transition: color 0.2s;
+  }
+    .docspbody ul.section-nav li.toc-entry.toc-h3 a:hover {
+      color: #bd9385;
+    }
+  .docspbody ul.section-nav ul {
+    margin-bottom: 0.15rem;
+  }
+  
 /* .docspbodytext {
   padding-left: 3%;
   padding-right: 3%;

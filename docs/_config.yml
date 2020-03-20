@@ -68,7 +68,8 @@ breadcrumbs:
     image: false # Show image or title text
 
 toc:
-  max_level: 2
+  min_level: 3 # default: 1
+  max_level: 4 # default: 6
 
 include:
   - _headers
