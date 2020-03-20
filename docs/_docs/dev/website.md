@@ -15,10 +15,8 @@ summary: "Wysc relies on contributors like you to help expand documentation for 
     - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051908.jpg)
 1. To edit the page, click the pencil icon on the top right.
     - ![Screenshot of Github, mouse is hovering over the edit button](/docs/assets/2020-01-19 002324.jpg)
-1. When you're done editing the page, write a short message about what changes you made, then press `Propose file change` to save changes. 
+1. When you're done editing the page, write a short message about what changes you made, then press `Propose file change` to save your changes. Check to make sure that everything highlighted is properly addressed:
     - ![Propose file change button on GitHub](/docs/assets/2020-03-19 060033.jpg)
-1. Repeat steps 2 to 5 for each change you'd like to make on different files.
-1. When you're ready to make changes, start a pull request either after you click "Propose file change" or by [clicking "New pull request" here](https://github.com/coffeebank/wysc/pulls) and making sure the settings are as shown below:
     - ![Comparing changes / base repository: coffeebank/wysc, base: dev / head repository: your username/wysc, compare: patch-1](/docs/assets/2020-03-19 170808.jpg)
-1. Finalize your pull request by adding a summary of the changes you've made, then create pull request!
+1. Finalize your pull request by adding context to why you made the change, then pressing "Create pull request"
     - ![Add a summary of changes, then click "Create pull request"](/docs/assets/2020-03-19 180610.jpg)
