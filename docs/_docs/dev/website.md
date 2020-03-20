@@ -14,7 +14,7 @@ summary: "Wysc relies on contributors like you to help expand documentation for 
 1. Click `Wysc Contributors`. It will bring you to the GitHub file for the page.
     - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051908.jpg)
 1. To edit the page, click the pencil icon on the top right.
-    - ![Screenshot of Github, mouse is hovering over the edit button](/media/docs/Annotation 2020-01-19 002324.jpg)
+    - ![Screenshot of Github, mouse is hovering over the edit button](/docs/assets/2020-01-19 002324.jpg)
 1. When you're done editing the page, write a short message about what changes you made, then press `Propose file change` to save changes. 
     - ![Propose file change button on GitHub](/docs/assets/2020-03-19 060033.jpg)
 1. Repeat steps 2 to 5 for each change you'd like to make on different files.
