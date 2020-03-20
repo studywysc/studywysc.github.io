@@ -14,9 +14,10 @@
   catdesc: See what our Discord can do and how to participate!
   cats:
     - Index
-    - Content Policy
     - Membership
+    - Content Policy
     - Features
+    - Bot Commands
 
 - name: Contributor Hub
   catslug: dev

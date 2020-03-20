@@ -1,0 +1,40 @@
+---
+layout: kbdocs
+---
+
+{{ content }}
+
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+<script src="/js/bootstrap-4.3.1.min.js" defer></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+
+{% for bots in page.botslist %}
+    {% if bots.bottitle %}
+        <h3>{{ bots.bottitle }}</h3>
+    {% endif %}
+    <table
+        data-toggle="table"
+        data-search="true"
+        data-show-columns="true"
+        data-mobile-responsive="true"
+        class="docspbotslist table-dark">
+        <thead>
+            <tr>
+                {% for bcats in bots.botcats %}
+                    <th>{{ bcats }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for bcomms in bots.botcomms %}
+                <tr>
+                    <td>{{ bcomms.botcomm }}</td>
+                    <td>{{ bcomms.botdesc }}</td>
+                    <td>{{ bcomms.botperms }}</td>
+                    <td>{{ bcomms.botexam }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endfor %}

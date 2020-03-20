@@ -1105,6 +1105,9 @@ body .wnavglobal {
     padding:15px;
     margin-bottom:2rem;
   }
+  /* .docspbody table.docspbotslist {
+    color: #eee;
+  } */
   .docspbody ul, .docspbody ol {
     margin-bottom: 2rem;
   }
