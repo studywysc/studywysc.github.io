@@ -1,79 +1,70 @@
 ---
 layout: kbdocs
-title:  "Getting Started"
+title:  "Wysc GitHub"
 category: "Contributor Hub"
 catsub: "GitHub"
-last_updated: 18 Jan 2020
+last_updated: 19 Mar 2020
 ---
 
-### Getting Started
 
-First, [log into your Github account](https://github.com/login) and go to [https://github.com/coffeebank/wysc](https://github.com/coffeebank/wysc).
+### Introduction
+- The official Wysc repository lives at [https://github.com/coffeebank/wysc](https://github.com/coffeebank/wysc)
+- Wysc uses [Jekyll](https://jekyllrb.com/), which is built into GitHub *(or more specifically, GitHub Pages)*
+- All changes should be made to the `dev` Branch
+    - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051009.jpg)
+- The Wysc Docs files live at [https://github.com/coffeebank/wysc/tree/dev/docs/_docs](https://github.com/coffeebank/wysc/tree/dev/docs/_docs)
+    - There are three folders for each section of the Wysc Docs:
+        - `about` - About Wysc
+        - `discord` - Wysc Discord
+        - `dev` - Contributor Hub
+    - All assets (files, images, videos, etc.) should be stored under the `assets` folder
+- To test how the website looks, a dev/staging website is available at [https://wyscdev.netlify.app](https://wyscdev.netlify.app).
 
-Everything you edit will be in the `upstream` folder:
+
+### Front Matter
+
+At the top of each page, there is content that lets Jekyll know how the page should be processed.
+
 ```
-wysc/upstream/
-```
-
-Click `upstream` to go into the `upstream` folder.
-
-
-### Understanding the Folders
-
-Folders you need to know:
-```
-wysc/upstream/
-
-_about          https://wysc.netlify.com/docs/about/
-_bots           https://wysc.netlify.com/docs/bots/
-_dev            https://wysc.netlify.com/docs/dev/
-_discord        https://wysc.netlify.com/docs/discord
-```
-
-Conveniently, they are all located at the top of the page!
-
-Clicking into a folder, we see:
-```
-wysc/upstream/_about/
-
-brand           https://wysc.netlify.com/docs/about/brand/..
-legal           https://wysc.netlify.com/docs/about/legal/..
-org             https://wysc.netlify.com/docs/about/org/..
-staff           https://wysc.netlify.com/docs/about/staff/..
-index.md        Wysc Docs - About main page
+---
+layout: kbdocs
+title:  "Licenses"
+category: "About Wysc"
+catsub: "Legal"
+last_updated: 17 Jan 2020
+summary: "Wysc's stance on licensing of its property ranges from open to restricted based on your use case. Explore your options below."
+redirect_from:
+  - licenses
+  - docs/about/brand/licenses
+  - docs/about/legal/licenses
+---
 ```
 
-These are the subcategories you see here on [the About page](https://wysc.netlify.com/docs/about/).
-
-### Category Structure
-
-Here we finally get to the files themselves:
-```
-wysc/upstream/_about/legal/
-
-1.md            https://wysc.netlify.com/docs/about/legal/1
-credits.md      https://wysc.netlify.com/docs/about/legal/credits
-privacy.md      https://wysc.netlify.com/docs/about/legal/privacy
-```
-
-You may have noticed that the category sidebar doesn't sort files by their titles. That's because they're actually sorted by their filename!
-
-![Screenshot of category sidebar, the page titles of 1.md, credits.md, and privacy.md respectively show as Licenses, Credits, and Privacy Policy](/media/docs/Annotation 2020-01-19 001721.jpg)
-
-Back in Github, let's click into a file and try to edit it.
-
-
-### Viewing a File
-
-Viewing the file is simple! After opening it, click `Raw` near the top right corner of the page.
-
-![Screenshot of Github, mouse is hovering over the Raw button.](/media/docs/Annotation 2020-01-19 002623.jpg)
+- layout
+    - The Wysc Docs page layout is called `kbdocs`. Don't change this.
+- title
+    - This shows up as the name of the page on the browser tab, the sidebar, and in link embeds
+- category
+    - One of three categories - About Wysc, Wysc Discord, or Contributor Hub
+    - [See here for a list of current categories and sub-categories](https://github.com/coffeebank/wysc/blob/dev/docs/_data/docscat.yml)
+- catsub
+    - A sub-category that appears on the Wysc Docs sidebar
+    - [See here for a list of current categories and sub-categories](https://github.com/coffeebank/wysc/blob/dev/docs/_data/docscat.yml)
+- last_updated
+    - Please bump this up to the most recent date when you make substantial edits (typos don't need this to be updated)
+- summary
+    - Adds text at the top of the page underneath the "Wysc Contributors" section
+    - Overrides the link embed description for the page
+- redirect_from
+    - Redirects for short url's such as setting "wysc.us.to/licenses"
+    - DO NOT INCLUDE THE "wysc.us.to/" PART OF THE URL HERE
 
 
-### Editing a File
+### Page Content
 
-Editing a file is also easy! Click on the pencil icon near the top right corner of the page.
-
-![Screenshot of Github, mouse is hovering over the edit button.](/media/docs/Annotation 2020-01-19 002324.jpg)
-
-Github will automatically create a "fork" of Wysc. A "fork" is your own copy of Wysc saved under your Github account while you work on any changes you'd like.
+- All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
+- Upload all assets (files, images, videos, etc.) to [https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets](https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets)
+    - In markdown, link to them as follows, replacing "Summary of the image here" and "yourfilename.jpg" as necessary:  
+    ```
+    ![Summary of the image here](/docs/assets/yourfilename.jpg)
+    ```

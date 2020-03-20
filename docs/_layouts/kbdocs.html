@@ -152,6 +152,11 @@
                     {% endfor %}
                 {% endif %}
 
+                {% if page.toc == true %}
+                    <h3 class="no_toc">Table of Contents</h3>
+                    {% toc %}
+                {% endif %}
+
                 {{ content }}
 
                 {% if page.catsub == "Index" %}

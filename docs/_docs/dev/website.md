@@ -3,57 +3,20 @@ layout: kbdocs
 title:  "Wysc Website"
 category: "Contributor Hub"
 catsub: "GitHub"
-last_updated: 18 Jan 2020
+last_updated: 19 Mar 2020
+summary: "Wysc relies on contributors like you to help expand documentation for Wysc!"
 ---
 
-### How It Works
+### Editing
 
-In simple terms, you edit words in a text document and the changes will show up on the website!
-
-In more advanced terms, Wysc Website runs on [Jekyll](../../about/legal/credits#website).
-
-
-### Prerequisites
-
-- [A Github account (free)](https://github.com/)
-- [A web browser (free)](https://chrome.google.com/)
-
-
-### Front Matter
-
-At the top of every file, there's a section that's boxed in.
-```
----
-layout: kbdocs
-title:  "Licenses"
-category: "Legal"
-last_updated: 17 Jan 2020
-summary: "Wysc's stance on licensing of its property ranges from open to restricted based on your use case. Explore your options below."
-redirect_from:
-  - licenses
-  - docs/about/brand/licenses
-  - docs/about/legal/licenses
----
-```
-
-This is called "front matter". It lets you change information that influences how the page is shown. Let's break down the ones you need to know:
-```
----
-title:          The name of the page
-last_updated:   Date of last major update to the page
-summary:        Optional. Shows both in the page and in the Discord link embed.
-redirect_from:  Other links you can reach the page from
----
-```
-
-
-### Content
-
-Finally we're at the actual content of the webpage!
-
-From here on, everything's standard based on Markdown. [Here's a basic introduction to Markdown from Github!](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
-
-Wysc Docs has some quirks though:
-- All headings should be `###`, aka. Heading 3
-- Blockquotes and numbered lists don't work. Mayo has been lazy so it's not supported in Wysc Docs yet.
-- Sometimes images don't show up right. Mayo will fix this eventually...
+1. First, [log into your Github account](https://github.com/login).
+1. Next, [go to the Wysc Docs website](https://wysc.us.to/docs) and visit the page you want to edit.
+1. Click `Wysc Contributors`. It will bring you to the GitHub file for the page.
+    - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051908.jpg)
+1. To edit the page, click the pencil icon on the top right.
+    - ![Screenshot of Github, mouse is hovering over the edit button](/docs/assets/2020-01-19 002324.jpg)
+1. When you're done editing the page, write a short message about what changes you made, then press `Propose file change` to save your changes. Check to make sure that everything highlighted is properly addressed:
+    - ![Propose file change button on GitHub](/docs/assets/2020-03-19 060033.jpg)
+    - ![Comparing changes / base repository: coffeebank/wysc, base: dev / head repository: your username/wysc, compare: patch-1](/docs/assets/2020-03-19 170808.jpg)
+1. Finalize your pull request by adding context to why you made the change, then pressing "Create pull request"
+    - ![Add a summary of changes, then click "Create pull request"](/docs/assets/2020-03-19 180610.jpg)
