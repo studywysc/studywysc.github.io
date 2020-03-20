@@ -154,7 +154,7 @@
 
                 {% if page.toc == true %}
                     <h3 class="no_toc">Table of Contents</h3>
-                    {% toc %}
+                    {{ content | toc_only }}
                 {% endif %}
 
                 {{ content }}
