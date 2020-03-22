@@ -29,10 +29,33 @@ layout: kbdocs
         <tbody>
             {% for bcomms in bots.botcomms %}
                 <tr>
-                    <td>{{ bcomms.botcomm }}</td>
-                    <td>{{ bcomms.botdesc }}</td>
-                    <td>{{ bcomms.botperms }}</td>
-                    <td>{{ bcomms.botexam }}</td>
+                    {% if bcomms.botcomm %}
+                        <td>
+                            {% for botcommand in bcomms.botcomm %}
+                                <code>{{ botcommand }}</code><br>
+                            {% endfor %}
+                        </td>
+                    {% endif %}
+                    {% if bcomms.botdesc %}
+                        <td>
+                            {% for botdescript in bcomms.botdesc %}
+                                {{ botdescript }}<br>
+                            {% endfor %}
+                        </td>
+                    {% endif %}
+                    {% if bcomms.botperms %}
+                        <td>{{ bcomms.botperms }}</td>
+                    {% endif %}
+                    {% if bcomms.botname %}
+                        <td>{{ bcomms.botname }}</td>
+                    {% endif %}
+                    {% if bcomms.botexam %}
+                        <td>
+                            {% for botexample in bcomms.botexam %}
+                                {{ botexample }}<br>
+                            {% endfor %}
+                        </td>
+                    {% endif %}
                 </tr>
             {% endfor %}
         </tbody>

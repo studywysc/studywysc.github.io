@@ -255,6 +255,9 @@ creditslist:
         coslist:
           - cosname: AnchorJS
             cosurl: https://github.com/bryanbraun/anchorjs
+            
+          - cosname: bootstrap-table
+            cosurl: https://github.com/wenzhixin/bootstrap-table
 
           - cosname: dark-mode-switch
             cosurl: https://github.com/coliff/dark-mode-switch
