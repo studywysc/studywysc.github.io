@@ -44,6 +44,10 @@ redirect_from:
     - The Wysc Docs page layout is called `kbdocs`. Don't change this.
 - title
     - This shows up as the name of the page on the browser tab, the sidebar, and in link embeds
+    - To make the page appear at the top of the sidebar, add a zero-width space in front, ie.  
+```
+&#8203;Quick Start Guide
+```
 - category
     - One of three categories - About Wysc, Wysc Discord, or Contributor Hub
     - [See here for a list of current categories and sub-categories](https://github.com/coffeebank/wysc/blob/dev/docs/_data/docscat.yml)
@@ -65,6 +69,6 @@ redirect_from:
 - All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
 - Upload all assets (files, images, videos, etc.) to [https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets](https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets)
     - In markdown, link to them as follows, replacing "Summary of the image here" and "yourfilename.jpg" as necessary:  
-    ```
-    ![Summary of the image here](/docs/assets/yourfilename.jpg)
-    ```
+```
+![Summary of the image here](/docs/assets/yourfilename.jpg)
+```
