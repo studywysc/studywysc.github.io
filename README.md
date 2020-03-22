@@ -10,9 +10,7 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 ### Main Website:
 
-[https://wysc.netlify.com](https://wysc.netlify.com/)
-
-[https://wysc.us.to](https://wysc.us.to/) - Short URL
+[https://wysc.us.to](https://wysc.us.to/)
 
 [https://wysc.js.org](https://wysc.js.org/) - Showcase (Big thank you to [JS.ORG](https://js.org)!)
 
