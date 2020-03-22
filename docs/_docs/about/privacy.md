@@ -21,8 +21,8 @@ redirect_from:
 </style>
 
 Here's a human-readable summary (that is not legally binding):
-- Your data and information are collected, stored, and transmitted subject to [Discord's Privacy Policy](https://discordapp.com/privacy).
-- Wysc may collect, have access to, or process personally identifiable data Discord chooses to make public, found in their [Developer documentation](https://discordapp.com/developers/docs/intro).
+- Your data and information are collected, stored, and transmitted subject to the privacy policies and terms of use of [Discord](https://discordapp.com/privacy) and the other third party services we integrate into the Wysc experience
+- In the process, Wysc may have access to, process, and/or store any personally identifiable data [Discord](https://discordapp.com/developers/docs/intro) or any other third party (ie. GitHub) chooses to make public (ie. through an API)
 - Wysc may use third party processors to process some or all of your personal information, [most of which will be listed here](/docs/about/credits)
 - Wysc strives to ensure encryption, with most data being stored, processed, and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
 - We operate out of the United States
@@ -42,12 +42,12 @@ When you join Wysc through a Discord invite, you agree to entering a public spac
 
 Wysc uses data processors to collect log information on users for security and audit purposes, including but not limited to: user ID, username and discriminator, and avatar. All information collected solely consists of publicly available data [as outlined in Discord's Developer documentation](https://discordapp.com/developers/docs/intro). For identification of processors, please see our [Credits page](/docs/about/credits), under "Discord Server".
 
-Wysc uses third party services that may maintain a log of personally identifiable information in order to serve features to Wysc. This includes but is not limited to services such as: GitHub tracking contributors, music bots tracking users to process links, and mathematics rendering bots logging your queries. While Wysc does not actively seek to collect this information, we would like you to be aware that Wysc retains access to this information and that this information is made public by the services we use.
+Wysc uses third party services that may themselves maintain a log of personally identifiable information in order to serve features to Wysc and its users. This includes but is not limited to services such as: GitHub tracking contributors, music bots tracking users to process links, and mathematics rendering bots logging your queries. While Wysc does not actively seek to collect this information, we would like you to be aware that Wysc retains access to this information and that this information is made public by the services we use.
 
 The only times we’ll ever actively use and share your info to third parties without your permission is:
 
 - To provide products or services as part of the Wysc experience.
-- To process information that will generate aggregate statistics.
+- To process information that will generate statistics.
 - To investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our [Content Policy](/docs/discord/content), or as otherwise required by law.
 - If Wysc is acquired by or merged with another entity
 
