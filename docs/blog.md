@@ -2,6 +2,7 @@
 layout: wyscblog
 headername: Blog
 
-apidocsurl: /docs/about/dev/1
+apifeedurl: /api/feed.xml
+apidocsurl: /docs/dev/api
 
 ---

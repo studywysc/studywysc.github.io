@@ -35,7 +35,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-toc
 feed:
-  path: /blog/feed.xml
+  path: /api/feed.xml
 permalink: /blog/:year/:title:output_ext
 
 algolia:

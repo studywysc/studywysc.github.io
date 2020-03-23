@@ -21,14 +21,17 @@
                         <div class="card text-center mx-auto shadow-lg rounded-lg hoverscale border-0">
                             <div class="card-body text-dark border-0 p-4">
                                 <ul id="statuslist" class="list-group list-group-flush">
-                                    <p style="padding-top:1em;">Status not loading?</p>
-                                    <p><a href="/api/status.json" target="_blank">Open Wysc Status in a new window</a></p>
+                                    <li class="list-group-item rounded"><b>Wysc Service:</b>&emsp;<a href="/api/status.json" target="_blank">See Wysc Status</a></li>
+                                </ul>
+                                <ul id="statuslist2" class="list-group list-group-flush">
+                                    <li class="list-group-item rounded"><b>Wysc Discord:</b>&emsp;<a href="https://status.discordapp.com/" rel="noopener noreferrer" target="_blank">See Discord Status</a></li>
+                                    <li class="list-group-item rounded"><b>Wysc GitHub:</b>&emsp;<a href="https://www.githubstatus.com/" rel="noopener noreferrer" target="_blank">See GitHub Status</a></li>
                                 </ul>
                                 <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="{{ page.apidocsurl }}">read api documentation</a></div>
                             </div>
                         </div>
                         <br>
-                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="blog/feed.xml" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed</a></div>
+                        <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="{{ page.apifeedurl }}" target="_blank" rel="noopener" style="color:#bbb;">Subscribe to RSS feed</a></div>
                         <!-- <div class="text-black-50 pt-4" style="font-size:0.85em;"><a href="https://medium.com/wysc" target="_blank" rel="noopener" style="color:#bbb;">Visit our Medium</a></div> -->
 
                     </div>
@@ -122,8 +125,7 @@
         return parent.appendChild(el);
     }
     const ul = document.getElementById('statuslist');
-    const url = '/api/status.json';
-    fetch(url)
+    fetch("/api/status.json")
     .then((resp) => resp.json())
     .then(function(data) {
         let statuslist = data.wysc;
