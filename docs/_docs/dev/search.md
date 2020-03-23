@@ -4,7 +4,6 @@ title:  "Search API"
 category: "Contributor Hub"
 catsub: "APIs"
 summary: "The Search API helps make discovering information across Wysc easier, from blog posts to documentation."
-toc: true
 ---
 
 ### Wysc Discord
