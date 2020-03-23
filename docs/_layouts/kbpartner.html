@@ -1,0 +1,25 @@
+---
+layout: kbdocs
+---
+
+{{ content }}
+
+<h3>Current Partnership Agreements</h3>
+{% assign agreements = site.documents | where:"kbpstatus",true | reverse %}
+<ul>
+    {% for agreem in agreements %}
+        <li>
+            <a href="{{ agreem.url | relative_url }}">{{ agreem.title }} with {{ agreem.kbpname }}, effective {{ agreem.last_updated }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Archived Partnership Agreements</h3>
+{% assign agreements2 = site.documents | where:"kbpstatus",false | reverse %}
+<ul>
+    {% for agreem2 in agreements2 %}
+        <li>
+            <a href="{{ agreem2.url | relative_url }}">{{ agreem2.title }} with {{ agreem2.kbpname }}, effective {{ agreem2.last_updated }}</a>
+        </li>
+    {% endfor %}
+</ul>

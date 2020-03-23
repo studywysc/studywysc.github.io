@@ -20,3 +20,8 @@ summary: "Wysc relies on contributors like you to help expand documentation for 
     - ![Comparing changes / base repository: coffeebank/wysc, base: dev / head repository: your username/wysc, compare: patch-1](/docs/assets/2020-03-19 170808.jpg)
 1. Finalize your pull request by adding context to why you made the change, then pressing "Create pull request"
     - ![Add a summary of changes, then click "Create pull request"](/docs/assets/2020-03-19 180610.jpg)
+
+
+### Creating a New Page
+
+Please see [Wysc GitHub](/docs/dev/github) to see instructions on what to set up in your page/file, where to upload it to, and how to format the text.
