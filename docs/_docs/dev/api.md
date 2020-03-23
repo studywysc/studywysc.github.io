@@ -5,7 +5,6 @@ category: "Contributor Hub"
 catsub: "APIs"
 last_updated: 24 Nov 2019
 summary: "Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!"
-toc: true
 redirect_from:
   - dev
   - docs/about/dev/1
