@@ -1109,7 +1109,7 @@ body .wnavglobal {
     color: #eee;
   } */
   .docspbody ul, .docspbody ol {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
   }
   .docspbody ul.section-nav {
     list-style: none;

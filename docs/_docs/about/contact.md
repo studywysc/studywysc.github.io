@@ -14,14 +14,7 @@ redirect_from:
   - docs/org/contact
 ---
 
-### Wysc Outages
-
-Wysc relies on the following services to provide a consistent experience.
-
-**Before you contact us about a broken feature, please check if any of the following services are currently experiencing outages:**
-
-- [Discord](https://status.discordapp.com/)
-- [GitHub](https://www.githubstatus.com/) - Webhooks and GitHub Pages
+To check whether any services are experiencing outages, [see Wysc Blog](/blog).
 
 
 ### Wysc Services
