@@ -85,48 +85,82 @@
     <div class="docsjbcontent">
         <div class="docsjbcsidebar d-none d-md-block">
             
-            {% for docsect in site.data.docscat %}
-                {% if docsect.name == page.category %}
-                    {% for subcat in docsect.cats offset: 1 %}
+            {% if page.category %}
+                {% for docsect in site.data.docscat %}
+                    {% if docsect.name == page.category %}
+                        {% for subcat in docsect.cats offset: 1 %}
 
-                        <h2 class="d-none d-md-block">{{ subcat }}</h2>
+                            <h2 class="d-none d-md-block">{{ subcat }}</h2>
 
-                        {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
-                        <ul class="nav flex-column nav-pills pt-3 pl-4 pb-4 pr-4" aria-orientation="vertical">
-                            {% for article in items %}
-                                <li class="nav-item">
-                                    <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
+                            {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
+                            <ul class="nav flex-column nav-pills pt-3 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                                {% for article in items %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
 
+                        {% endfor %}
+                    {% else %}
+                    {% endif %}
+                {% endfor %}
+            {% elsif page.cattype == "Files" %}
+                <h4>{{ page.undercat }} - Files</h4>
+                {% assign assetitems = site.documents | where:"undercat",page.undercat | reverse %}
+                <ul class="nav flex-column nav-pills pt-3 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                    {% for assetarticle in assetitems %}
+                        <li class="nav-item">
+                            <a class="nav-link{% if assetarticle.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ assetarticle.url | relative_url }}">{{ assetarticle.last_updated }}, {{ assetarticle.title }}{% if assetarticle.kbpname %} with {{ assetarticle.kbpname }}{% endif %}</a>
+                        </li>
                     {% endfor %}
-                {% else %}
-                {% endif %}
-            {% endfor %}
+                </ul>
+            {% endif %}
 
         </div>
         <div class="docsjbcsidebar d-md-none collapse" id="mobiletoc">
             
-            {% for docsect in site.data.docscat %}
-                {% if docsect.name == page.category %}
-                    {% for subcat in docsect.cats offset: 1 %}
+            {% if page.category %}
+                {% for docsect in site.data.docscat %}
+                    {% if docsect.name == page.category %}
+                        {% for subcat in docsect.cats offset: 1 %}
 
-                        <h4>{{ subcat }}</h4>
+                            <h4>{{ subcat }}</h4>
 
-                        {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
-                        <ul class="nav flex-column nav-pills pt-2 pl-4 pb-4 pr-4" aria-orientation="vertical">
-                            {% for article in items %}
-                                <li class="nav-item">
-                                    <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
+                            {% assign items = site.documents | where:"catsub",subcat | sort: 'title' %}
+                            <ul class="nav flex-column nav-pills pt-2 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                                {% for article in items %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if article.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
 
-                    {% endfor %}
-                {% else %}
-                {% endif %}
-            {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% for docsect2 in site.data.docscat %}
+                    {% if docsect2.name == page.undercat %}
+                        {% for subcat2 in docsect2.cats offset: 1 %}
+
+                            <h4>{{ subcat2 }}</h4>
+
+                            {% assign items2 = site.documents | where:"catsub",subcat2 | sort: 'title' %}
+                            <ul class="nav flex-column nav-pills pt-2 pl-4 pb-4 pr-4" aria-orientation="vertical">
+                                {% for article2 in items2 %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if article2.title == page.title %} active{% endif %}" id="docsjcatlist" href="{{ article2.url | relative_url }}">{{ article2.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+
+                        {% endfor %}
+                    {% else %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
             
             <hr style="margin-left:auto;margin-right:auto;width:70%;background-color:#666;margin-top:3em;margin-bottom:3em;">
         </div>

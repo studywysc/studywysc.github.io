@@ -18,6 +18,7 @@ last_updated: 19 Mar 2020
         - `discord` - Wysc Discord
         - `dev` - Contributor Hub
     - All assets (files, images, videos, etc.) should be stored under the `assets` folder
+    - All documentation pages are in markdown (.md) file format
 - To test how the website looks, a dev/staging website is available at [https://wyscdev.netlify.app](https://wyscdev.netlify.app).
 
 
@@ -41,7 +42,7 @@ redirect_from:
 ```
 
 - layout
-    - The Wysc Docs page layout is called `kbdocs`. Don't change this.
+    - The Wysc Docs page layout is called `kbdocs`. See [Page Layouts](#page-layouts) below for more info.
 - title
     - This shows up as the name of the page on the browser tab, the sidebar, and in link embeds
     - To make the page appear at the top of the sidebar, add a zero-width space in front, ie.  
@@ -64,6 +65,48 @@ redirect_from:
     - DO NOT INCLUDE THE "wysc.us.to/" PART OF THE URL HERE
 
 
+### Page Layouts
+
+There may be special layout files for the following content:
+
+#### kbbots
+
+When you use kbbots, the layout automatically formats anything you type into the Front Matter into the following:
+
+```
+botslist:
+    - bottitle: Basics
+      botcats:
+        - Command
+        - Description
+        - Bot
+      botcomms:
+        - botcomm: ",rank"
+          botdesc: See your Wysc activity level
+          botname: Tatsumaki
+
+        - botcomm:
+            - ",ti"
+            - ",ti --set"
+            - ",ti @user"
+          botdesc:
+            - See your timezone (must set your time first)
+            - Set your timezone
+            - See another user's timezone
+          botname: Paradøx
+```
+![A table with a search bar, with all commands formatted fancily](/docs/assets/2020-03-22 214227.jpg)
+
+- **bottitle** - Heading 3 that should summarize the table of commands
+- **botcats** - The headings for the table of commands
+- Each **botcomms** is separated by a hyphen to indicate a separate row in the table of commands
+- Commands should always be inputted between quotation marks
+- **botdesc** should also be inputted between quotation marks if you have any of the following: commas, apostrophes, or any other special character
+
+The accepted variables under **botcomms** is: botcomm (commands), botdesc (description), botperms (permissions), botname (name of bot), and botexam (example commands). 
+
+
+
 ### Page Content
 
 - All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
@@ -72,3 +115,4 @@ redirect_from:
 ```
 ![Summary of the image here](/docs/assets/yourfilename.jpg)
 ```
+

@@ -18,9 +18,9 @@ Wysc's culture is one we strive to maintain and nurture. While we don't have a l
 
 <p class="p-4" style="font-size:36px">Don't be a dick.</p>
 
-This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** [See our Prohibited Activities](2) for specific activities we'll take strong action against.
+This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** [See our Prohibited Activities](#what-do-we-really-hate) for specific activities we'll take strong action against.
 
-<br><br>
+<br>
 
 ### What's our Culture like?
 
@@ -35,8 +35,6 @@ Wysc operates in a cooperative model, where the older members of our community g
 ### What do we really hate?
 
 Hate's a strong word. There really isn't a lot we require from you as a user, but here are specific things Wysc takes very seriously:
-
-<br>
 
 - [Advertising](ads)
 - [Data Collection (including surveys)](data)
