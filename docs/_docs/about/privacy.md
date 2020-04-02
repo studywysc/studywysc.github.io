@@ -21,10 +21,9 @@ redirect_from:
 </style>
 
 Here's a human-readable summary (that is not legally binding):
-- Your data and information are collected, stored, and transmitted subject to the privacy policies and terms of use of [Discord](https://discordapp.com/privacy) and the other third party services we integrate into the Wysc experience
-- In the process, Wysc may have access to, process, and/or store any personally identifiable data [Discord](https://discordapp.com/developers/docs/intro) or any other third party (ie. GitHub) chooses to make public (ie. through an API)
-- Wysc may use third party processors to process some or all of your personal information, [most of which will be listed here](/docs/about/credits)
-- Wysc strives to ensure encryption, with most data being stored, processed, and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
+- Wysc has access to, processes, and/or stores data [Discord](https://discordapp.com/developers/docs/intro) or any other third party (ie. GitHub) chooses to make public (ie. through an API)
+- Wysc uses third party processors to manage user data and provide Wysc services, [most of which will be listed here](/docs/about/credits). The data Wysc has allowed them access to may be managed with sketchy privacy practices, but the only data they collect is public data.
+- Wysc keeps records of a lot of public user data for purposes like archiving, moderation, and looking at usage data.
 - We operate out of the United States
 - [Contact us](/docs/about/contact) for any questions!
 
