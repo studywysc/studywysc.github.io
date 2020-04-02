@@ -32,8 +32,8 @@ Here's a human-readable summary (that is not legally binding):
 
 ### Privacy Policy
 
-Last updated: 22 Mar 2020
-- Letting users know that we collect logs for security purposes
+Last updated: 2 Apr 2020
+- Letting users know that we collect logs and how we do it
 - Bringing to attention how data may be stored by our data processors
 
 ### Identity & access
