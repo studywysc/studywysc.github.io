@@ -7,6 +7,7 @@ last_updated: 15 Mar 2020
 redirect_from:
   - surveys
   - docs/discord/content/surveys
+  - docs/discord/content/data
   - collectdata
 ---
 
