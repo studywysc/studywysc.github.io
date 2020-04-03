@@ -12,15 +12,15 @@ Advertising is defined as any activity that aims to encourage an external user t
 
 ### Seed users
 
-All Seed users are allowed to engage in advertising behavior **only in Wysc Cafe channels**, within reasonable limits.
+All Seed users are prohibited from engaging in any advertising behavior outside of `#bots-spam`. We do not believe new members are well acquainted enough with our community to advertise in Wysc.
 
 ### Sprout users
 
-All Sprout users are allowed to engage in advertising behavior in all appropriate channels **except for #lounge**, within reasonable limits.
+All Sprout users are allowed to engage in advertising behavior in relevant channels **except for #lounge**, within reason. Any advertising must be accompanied by relevant conversation, or the advertising is subject to deletion and administrative action.
 
 ### Sapling and above users
 
-All Sapling and above users are allowed to engage in advertising behavior, serverwide, within reasonable limits.
+All Sapling and above users are allowed to engage in advertising behavior, serverwide, within reason.
 
 ### Questions?
 
