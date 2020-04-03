@@ -12,7 +12,7 @@ Advertising is defined as any activity that aims to encourage an external user t
 
 ### Seed users
 
-All Seed users are prohibited from engaging in any advertising behavior outside of `#bots-spam`. We do not believe new members are well acquainted enough with our community to advertise in Wysc.
+All Seed users are **prohibited from engaging in any advertising behavior**. We do not believe new members are well acquainted enough with our community to advertise in Wysc. If you have content that falls under advertising but is relevant to a conversation, you may share it under `#bots-spam`, though Wysc members reserve deletion rights.
 
 ### Sprout users
 
