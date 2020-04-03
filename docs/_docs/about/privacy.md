@@ -3,7 +3,7 @@ layout: kbdocs
 title:  "Privacy Policy"
 category: "About Wysc"
 catsub: "Legal"
-last_updated: 22 Mar 2020
+last_updated: 2 Apr 2020
 summary: "The privacy of your data — and it is your data, not ours! — is at your perusal. Here's how we'll try to protect your data from the wild Internet west."
 redirect_from:
   - privacy-policy
@@ -21,10 +21,9 @@ redirect_from:
 </style>
 
 Here's a human-readable summary (that is not legally binding):
-- Your data and information are collected, stored, and transmitted subject to the privacy policies and terms of use of [Discord](https://discordapp.com/privacy) and the other third party services we integrate into the Wysc experience
-- In the process, Wysc may have access to, process, and/or store any personally identifiable data [Discord](https://discordapp.com/developers/docs/intro) or any other third party (ie. GitHub) chooses to make public (ie. through an API)
-- Wysc may use third party processors to process some or all of your personal information, [most of which will be listed here](/docs/about/credits)
-- Wysc strives to ensure encryption, with most data being stored, processed, and delivered by [Discord](https://discordapp.com/privacy), [Github](https://github.com/security), and [Netlify](https://www.netlify.com/security/).
+- Wysc has access to, processes, and/or stores data [Discord](https://discordapp.com/developers/docs/intro) or any other third party (ie. GitHub) chooses to make public (ie. through an API)
+- Wysc uses third party processors to manage user data and provide Wysc services, [most of which will be listed here](/docs/about/credits). The data Wysc has allowed them access to may be managed with sketchy privacy practices, but the only data they collect is public data.
+- Wysc keeps records of a lot of public user data for purposes like archiving, moderation, and looking at usage data.
 - We operate out of the United States
 - [Contact us](/docs/about/contact) for any questions!
 
@@ -32,24 +31,19 @@ Here's a human-readable summary (that is not legally binding):
 
 ### Privacy Policy
 
-Last updated: 22 Mar 2020
-- Letting users know that we collect logs for security purposes
+Last updated: 2 Apr 2020
+- Letting users know that we collect logs and how we do it
 - Bringing to attention how data may be stored by our data processors
 
 ### Identity & access
 
-When you join Wysc through a Discord invite, you agree to entering a public space where [all information Discord makes publicly available through their Developer documentation](https://discordapp.com/developers/docs/intro) will be made available to all members of Wysc, including but not limited to: Wysc Staff, [third-party services we use](/docs/about/credits), and malicious actors. We are not able to fully restrict attempts at data collection by outside users, and encourage you to read [Discord's Privacy Policy](https://discordapp.com/privacy) to fully understand how this public access to your data may affect you.
+When you join Wysc Discord through a Discord invite, you agree to entering a public space where [all information Discord makes publicly available through their Developer documentation](https://discordapp.com/developers/docs/intro) will be made available to all members of Wysc, including but not limited to: Wysc Staff, [third-party services we use](/docs/about/credits), and any malicious actors. We are not able to fully restrict attempts at data collection by outside users, and encourage you to read [Discord's Privacy Policy](https://discordapp.com/privacy) to fully understand how your public data being collected may affect you.
 
-Wysc uses data processors to collect log information on users for security and audit purposes, including but not limited to: user ID, username and discriminator, and avatar. All information collected solely consists of publicly available data [as outlined in Discord's Developer documentation](https://discordapp.com/developers/docs/intro). For identification of processors, please see our [Credits page](/docs/about/credits), under "Discord Server".
+Messages are retained for the lifetime of the service pursuant to [Discord's Privacy Policy](https://discordapp.com/privacy) in order to deliver the Wysc Discord service. You can delete your messages at any time through Discord.
 
-Wysc uses third party services that may themselves maintain a log of personally identifiable information in order to serve features to Wysc and its users. This includes but is not limited to services such as: GitHub tracking contributors, music bots tracking users to process links, and mathematics rendering bots logging your queries. While Wysc does not actively seek to collect this information, we would like you to be aware that Wysc retains access to this information and that this information is made public by the services we use.
+Some or all of the data about you, whether made public by Discord or by messages you sent, may be recorded by Wysc for archival, diagnostic, moderation, operational, and statistical purposes. The information that Wysc collects will be retained for the lifetime of the service and made available to select groups of Wysc users.
 
-The only times we’ll ever actively use and share your info to third parties without your permission is:
-
-- To provide products or services as part of the Wysc experience.
-- To process information that will generate statistics.
-- To investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our [Content Policy](/docs/discord/content), or as otherwise required by law.
-- If Wysc is acquired by or merged with another entity
+Wysc may also share the collected data to third parties for the purposes of: investigating, preventing, or taking action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of our [Content Policy](/docs/discord/content), or as otherwise required by law; or if Wysc is acquired by or merged with another entity.
 
 
 ### Your Rights With Respect to Your Information
@@ -59,7 +53,9 @@ You may have heard about the General Data Protection Regulation (“GDPR”) in 
 
 ### Processors we use
 
-As part of the services we provide, we may use certain third party processors to process some or all of your personal information. For identification of processors, please see our [Credits page](/docs/about/credits). Our Credits page is a work in progress and may be missing some processors. [Contact us](/docs/about/contact) if you notice us using a processor that isn't listed here!
+As part of the services we provide, we may use certain third party processors to process some or all of your personal information. These processors may maintain a log of your user data in order to serve features to Wysc and its users. This includes but is not limited to services such as: GitHub tracking contributors, music bots tracking users to process links, and utility bots logging your queries. All data collected solely consists of either publicly available data [as outlined in Discord's Developer documentation](https://discordapp.com/developers/docs/intro) or data that you willingly make public. Wysc has limited to no control over this data collection, though Wysc may maintain access to the data in some instances.
+
+For identification of processors we use, please see our [Credits page](/docs/about/credits). Our Credits page is a work in progress and may be missing some processors. [Contact us](/docs/about/contact) if you notice us using a processor that isn't listed here!
 
 
 ### Law enforcement
@@ -85,7 +81,7 @@ Even when you request for your data to be deleted from Wysc, please be aware tha
 
 ### Location of Site and Data
 
-This Site is operated in the United States. If you are located in the European Union or elsewhere outside of the United States, please be aware that any information you provide to us may be transferred to the United States. By using our Site, participating in any of our services and/or providing us with your information, you consent to this transfer.
+This service is operated in the United States. If you are located in the European Union or elsewhere outside of the United States, please be aware that any information you provide to us may be transferred to the United States. By using our service, participating in any of our services, and/or providing us with your information, you consent to this transfer.
 
 
 ### Changes & questions
