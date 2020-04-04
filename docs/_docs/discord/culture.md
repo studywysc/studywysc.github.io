@@ -12,6 +12,7 @@ redirect_from:
   - tutoring
   - docs/discord/content/prohibited
   - docs/discord/content/1
+  - docs/discord/1
 ---
 
 Wysc's culture is one we strive to maintain and nurture. While we don't have a laundry list of rules, our administrative policy towards user behavior is simple and direct.
