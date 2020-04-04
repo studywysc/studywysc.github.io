@@ -8,7 +8,7 @@ redirect_from:
   - ads
 ---
 
-Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. [Rules and Culture](1) regulations still apply.
+Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. [Rules and Culture](/docs/discord/culture) still apply.
 
 ### Seed users
 
