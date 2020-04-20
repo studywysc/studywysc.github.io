@@ -5,6 +5,7 @@ category: "Wysc Discord"
 catsub: "Membership"
 last_updated: 17 Mar 2020
 redirect_from:
+  - docs/discord/index
   - ranks
   - docs/discord/ranks
   - docs/discord/content/ranks

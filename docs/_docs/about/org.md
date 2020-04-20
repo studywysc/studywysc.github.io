@@ -5,6 +5,7 @@ category: "About Wysc"
 catsub: "Organization"
 last_updated: 17 Jan 2020
 redirect_from:
+  - docs/about/index
   - about
   - docs/about/1
   - docs/about/org
