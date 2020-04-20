@@ -31,6 +31,8 @@ To check whether any services are experiencing outages, [see Wysc Blog](/blog).
 - If you are [Sapling rank or above](/docs/discord/ranks), consider joining [Contributor Hub](/docs/dev) to help report bugs and improve Wysc!
 
 
+<div id="official-inquiries"></div>
+
 ### Administrative Inquiries
 
 **Reaching out to Wysc Staff for non-legal administrative inquiries?**

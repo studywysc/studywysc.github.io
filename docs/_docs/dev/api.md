@@ -63,20 +63,12 @@ Sample code:
 {
   "wysc":[
     {
-      "title": "Wysc Discord",
-      "isup": boolean,
-      "isupemoji": "Alert emoji",
+      "title": "Wysc Service",
+      "isup": true // false,
+      "isupemoji": "Alert emoji here",
       "howsevere": "low // medium // high",
-      "notes": "Notes for when Wysc Discord is not operating normally"
-      "readmore": "Link to webpage with more info"
-    },
-    {
-      "title": "Wysc Website",
-      "isup": boolean,
-      "isupemoji": "Alert emoji",
-      "howsevere": "low // medium // high",
-      "notes": "Notes for when Wysc Discord is not operating normally"
-      "readmore": "Link to webpage with more info"
+      "notes":"Notes for when Wysc Discord is not operating normally",
+      "readmore": "Link to webpage with more info",
     }
   ]
 }
