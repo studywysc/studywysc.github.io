@@ -1,3 +1,56 @@
+<!-- 0.200420 -->
+
+---
+layout: kbdocs
+title:  "Wysc Discord"
+category: "Wysc Discord"
+catsub: "Index"
+last_updated: 17 Mar 2020
+---
+
+Membership
+
+- [How do I rank up? Why am I missing permissions?](ranks)
+- [How do some users have so many roles? What do they mean?](roles)
+- [What do I get if I nitro boost?](roles)
+
+Content Policy
+
+- [What are Wysc's rules?](culture)
+- [I want to promote or advertise X.](ads)
+- [I want to post a survey for a school assignment.](data)
+
+Features
+
+- [What's a pomodoro?](study)
+
+
+---
+layout: kbdocs
+title:  "About Wysc"
+category: "About Wysc"
+catsub: "Index"
+last_updated: 17 Mar 2020
+---
+
+Organization
+
+- [Who are you?](org)
+- [How do I reach out to you?](contact)
+- [I want to form a partnership with Wysc.](partners)
+
+Legal
+
+- [What bot do you use for feature X?](credits)
+- [I want to copy Wysc or parts of Wysc. What can I use?](licenses)
+- [What do you do with my data?](privacy)
+
+Brand & Design
+
+- [I want to promote or provide attribution to Wysc. What are the brand guidelines?](brand)
+
+
+
 <!-- 0.200315 -->
 
 <hr class="d-md-none" style="margin-left:auto;margin-right:auto;width:70%;background-color:#666;margin-top:3em;margin-bottom:3em;">
