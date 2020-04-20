@@ -66,11 +66,11 @@
                 <li class="nav-item active p-3">
                     <a class="nav-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
-            {% else %}
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.url }}/dash">Dashboard</a>
-                </li>
             {% endif %}
+            
+            <li class="nav-item p-3">
+                <a class="nav-link" target="_blank" href="{{ site.url }}/invite">Join Wysc &#9656;</a>
+            </li>
             
         </ul>
     </nav>
@@ -110,12 +110,6 @@
                         {% endif %}>
                         <i class="material-icons">question_answer</i><br>
                         <div>Docs</div>
-                    </a>
-                </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Dashboard' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/dash"{% endif %}>
-                        <i class="material-icons">apps</i><br>
-                        <div>Apps</div>
                     </a>
                 </li>
             </ul>

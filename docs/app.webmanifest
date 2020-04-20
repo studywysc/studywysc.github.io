@@ -49,6 +49,6 @@
    "type": "image/png"
   }
 ],
-"start_url": "/dash?source=pwa",
+"start_url": "/docs?source=pwa",
 "scope": "/"
 }

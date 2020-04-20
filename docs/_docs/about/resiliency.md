@@ -28,7 +28,7 @@ Our implementation of user experience enhancing features may appear easy to impl
 
 ### Automation
 
-The Wysc experience is vastly complemented by automation, including but not limited to: group study, music feeds, and branded announcements. We do not use solely Discord bots to provide the Wysc experience. (For example, this website you're seeing runs on automated services! We also use local tools to create branded announcements.)
+The Wysc experience is vastly complemented by automation, including but not limited to: group study, music feeds, and branded announcements. We do not use solely Discord bots to provide the Wysc experience. (For example, this website you're seeing runs on automated services!)
 
 **We believe that the services automation help provide are a distinct part of the Wysc experience, that they are difficult to replicate without assistance, and that any attempt to fraudulently replicate Wysc without these features would be inferior.**
 
