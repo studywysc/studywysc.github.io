@@ -1,0 +1,40 @@
+:root {
+    --wysc-red: #914c35;
+    --wysc-blue: #aaa;
+    --wysc-dark0: #aaa;
+    --wysc-dark1: #111;
+    --wysc-dark2: #aaa;
+    --wysc-light0: #e9ecef;
+    --wysc-light1: hsl(200, 14%, 76%);
+    --wysc-light2: #aaa;
+}
+
+.bg-wysc-red {
+    background-color: var(--wysc-red);
+}
+.bg-wysc-light0 {
+    background-color: var(--wysc-light0);
+}
+.bg-wysc-light1 {
+    background-color: var(--wysc-light1);
+}
+
+
+html {
+    font-family: 'Source Sans Pro', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+h3 {
+    font-size: 1.65rem;
+    padding-top: 3.65rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+    color: var(--wysc-dark1);
+}
+p {
+    font-size: 1.05rem;
+}
+
+
+a > div {
+    transition: background-color 0.2s ease-in-out;
+}
