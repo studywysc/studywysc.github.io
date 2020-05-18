@@ -6,7 +6,7 @@ html, html[data-theme="light"] {
     --jtnav-text-h2: #2c7a7b;
     --body-base: hsl(0, 0%, 100%);
     --text-base: hsl(0, 0%, 12%);
-    --text-size: 1.05rem;
+    --text-size: 1.1rem;
     --text-title: hsl(15, 46%, 39%);
     --text-lead: hsl(0, 0%, 18%);
     --text-h1: hsl(0, 0%, 12%);
@@ -18,9 +18,9 @@ html, html[data-theme="light"] {
 }
 html[data-theme="dark"] {
     --sidebar-bg: hsl(0, 0%, 6%);
-    --sidebar-bg-border: hsl(0, 0%, 16%);
+    --sidebar-bg-border: hsl(0, 0%, 14%);
     --jtnav-text-h2: #81E6D9;
-    --body-base: hsl(0, 0%, 14%);
+    --body-base: hsl(0, 0%, 12%);
     --text-base: hsl(0, 0%, 92%);
     --text-size: 1.1rem;
     --text-title: hsl(15, 51%, 69%);
@@ -84,6 +84,7 @@ html {
     font-family: 'Source Sans Pro', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-base);
     background-color: var(--body-base);
+    transition: all 0.2s ease;
 }
 h1 {
     color: var(--text-h1);
@@ -125,6 +126,9 @@ a > div {
 .jtbody-divider {
     background-color: var(--text-divider);
 }
+.jtbody-topbar-md {
+    background: linear-gradient(180deg, var(--body-base) 0%, var(--body-base) 90%, rgba(0,0,0,0) 100%);
+}
 
 
 .border-r-wysc-light2 {
@@ -138,3 +142,149 @@ a > div {
     transform: scale(1.025);
     transition: transform 0.2s linear;
   }
+
+
+/* Micromodal js */
+
+.modal {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+  
+  .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal__container {
+    width: 350px;
+    max-width: 100%;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: auto;
+    border-radius: 0px 4px 0px 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #00449e;
+    box-sizing: border-box;
+  }
+  
+  .modal__close {
+    background: transparent;
+    border: 0;
+  }
+  
+  .modal__header .modal__close:before { content: "\2715"; }
+  
+  .modal__content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,.8);
+  }
+  
+  .modal__btn {
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #e6e6e6;
+    color: rgba(0,0,0,.8);
+    border-radius: .25rem;
+    border-style: none;
+    border-width: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+    margin: 0;
+    will-change: transform;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out,-webkit-transform 0.2s ease-out;
+  }
+  
+  .modal__btn:focus, .modal__btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  .modal__btn-primary {
+    background-color: #00449e;
+    color: #fff;
+  }
+  @keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateX(-15%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}

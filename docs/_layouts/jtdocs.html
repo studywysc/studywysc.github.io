@@ -4,6 +4,8 @@
 <body>
     <div class="flex no-wrap w-full h-screen overflow-hidden">
         <div class="bg-jtsidebar w-1/4 h-screen overflow-x-hidden overflow-y-auto hidden lg:block" style="min-width:300px;scrollbar-width:thin;">
+
+            <!-- jtsidebar -->
             <div class="pt-4 pb-2 float-right" style="width:300px;">
                 <div class="w-full flex justify-center">
                     <a href="/" rel="noopener" style="width:80px;">
@@ -35,8 +37,34 @@
         </div>
         <div class="flex-grow no-wrap h-screen overflow-y-auto">
             <div class="flex w-full overflow-x-hidden" style="min-height:100vh;">
+
+                <!-- jtbody -->
                 <div class="w-full xl:w-4/5 px-4 md:px-16" style="max-width:900px;">
-                    <h1 class="jtbody-text-title pt-4 md:pt-12 pb-2 text-4xl">{{ page.title }}</h1>
+
+                    <ul class="flex absolute top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar xl:hidden">
+                        <li class="inline-block lg:hidden p-2 px-4">
+                            <a class="cursor-pointer" title="Open Menu" data-micromodal-trigger="modal-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                            </a>
+                        </li>
+                        <li class="inline-block p-2 px-4">
+                            <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            </a>
+                        </li>
+                        <li class="inline-block p-2 px-4">
+                            <a href="#" title="Edit on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </li>
+                        <li class="inline-block p-2 px-4">
+                            <a href="#" title="Scroll Up">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h1 class="jtbody-text-title pt-32 xl:pt-12 pb-2 text-4xl">{{ page.title }}</h1>
                     {% if page.tagline %}
                         <p class="jtbody-text-lead text-xl font-bold tracking-wide">{{ page.tagline }}</p>
                     {% elsif page.summary %}
@@ -46,15 +74,92 @@
                     <div class="pb-8">
                         {{ content }}
                     </div>
+
+
+                    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                            <div class="modal__container bg-jtsidebar" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                                <div class="px-12 md:px-24 pt-12 pb-4 w-full cursor-pointer" title="Close Menu" data-micromodal-close>
+                                    <svg class="pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </div>
+                                <div class="px-1">
+                                    {% include jtnav.html %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- jtrightbar -->
                 <div class="hidden xl:block flex-grow">
-                    <div>
-                        Hi to the right
+                    <div class="absolute">
+                        <ul class="flex top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar">
+                            <li class="inline-block p-2 px-4">
+                                <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                </a>
+                            </li>
+                            <li class="inline-block p-2 px-4">
+                                <a href="#" title="Edit on GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+        <script>
+            let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+            let theme = sessionStorage.getItem('theme');
+
+            function prefersColorTest(systemInitiatedDark) {
+            if (systemInitiatedDark.matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                sessionStorage.setItem('theme', '');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                sessionStorage.setItem('theme', '');
+            }
+            }
+            systemInitiatedDark.addListener(prefersColorTest);
+
+            function modeSwitcher() {
+                let theme = sessionStorage.getItem('theme');
+                if (theme === "dark") {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    sessionStorage.setItem('theme', 'light');
+                }	else if (theme === "light") {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    sessionStorage.setItem('theme', 'dark');
+                } else if (systemInitiatedDark.matches) {	
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    sessionStorage.setItem('theme', 'light');
+                    //let theme = sessionStorage.getItem('theme');
+                    //console.log("this was triggered");
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    sessionStorage.setItem('theme', 'dark');
+                }
+            }
+
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                sessionStorage.setItem('theme', 'dark');
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                sessionStorage.setItem('theme', 'light');
+            }
+        </script>
+        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+        <script>
+            MicroModal.init({
+                awaitCloseAnimation: true
+            });
+        </script>
 </body>
 </html>
 
