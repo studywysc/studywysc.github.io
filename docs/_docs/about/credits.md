@@ -60,7 +60,7 @@ creditslist:
 
       - coname: Dyno
         coline: Server security, admin management
-        coimg: https://cdn.discordapp.com/avatars/155149108183695360/3ac2fbefebd4de9ffeefcb0f2cb15ecd.png?size=256
+        coimg: https://s.dyno.gg/web-assets/landing/logo.png
         courl: https://dyno.gg/
         rounded: circle
 
@@ -258,9 +258,6 @@ creditslist:
             
           - cosname: bootstrap-table
             cosurl: https://github.com/wenzhixin/bootstrap-table
-
-          - cosname: dark-mode-switch
-            cosurl: https://github.com/coliff/dark-mode-switch
             
           - cosname: LoadCSS
             cosurl: https://github.com/filamentgroup/loadCSS
@@ -317,6 +314,11 @@ creditslist:
           - cosname: Zapier
             cosurl: https://zapier.com/
 
+      - costitle: Inspiration
+        coslist:
+          - cosname: Dark Mode Revisited - derekkedziora.com
+            cosurl: https://derekkedziora.com/blog/dark-mode-revisited
+
   - cat: Other
     catobjsm:
       - costitle: Legacy
@@ -325,6 +327,8 @@ creditslist:
             cosurl: https://github.com/cubiq/add-to-homescreen
           - cosname: Bookmark
             cosurl: https://bookmark.com/
+          - cosname: dark-mode-switch
+            cosurl: https://github.com/coliff/dark-mode-switch
           - cosname: dhooks
             cosurl: https://github.com/kyb3r/dhooks
           - cosname: Karmabot
