@@ -81,7 +81,7 @@ html[data-theme="dark"] {
 
 
 html {
-    font-family: 'Source Sans Pro', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Mada",-apple-system,BlinkMacSystemFont,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
     color: var(--text-base);
     background-color: var(--body-base);
     transition: all 0.2s ease;
