@@ -1,14 +1,68 @@
-:root {
-    --wysc-red: #914c35;
+/* Dark theme */
+
+html, html[data-theme="light"] {
+    --sidebar-bg: hsl(0, 0%, 98%);
+    --sidebar-bg-border: hsl(0, 0%, 88%);
+    --jtnav-text-h2: #2c7a7b;
+    --body-base: hsl(0, 0%, 100%);
+    --text-base: hsl(0, 0%, 12%);
+    --text-size: 1.05rem;
+    --text-title: hsl(15, 46%, 39%);
+    --text-lead: hsl(0, 0%, 18%);
+    --text-h1: hsl(0, 0%, 12%);
+    --text-h2: hsl(0, 0%, 12%);
+    --text-h3: hsl(0, 0%, 12%);
+    --text-divider: hsl(0, 0%, 88%);
+    --wysc-gray: hsl(0, 0%, 92%);
+    --wysc-red: hsl(15, 46%, 39%);
+}
+html[data-theme="dark"] {
+    --sidebar-bg: hsl(0, 0%, 6%);
+    --sidebar-bg-border: hsl(0, 0%, 16%);
+    --jtnav-text-h2: #81E6D9;
+    --body-base: hsl(0, 0%, 14%);
+    --text-base: hsl(0, 0%, 92%);
+    --text-size: 1.1rem;
+    --text-title: hsl(15, 51%, 69%);
+    --text-lead: hsl(0, 0%, 90%);
+    --text-h1: hsl(0, 0%, 98%);
+    --text-h2: hsl(0, 0%, 96%);
+    --text-h3: hsl(0, 0%, 94%);
+    --text-divider: hsl(0, 0%, 48%);
+    --wysc-gray: hsl(0, 0%, 22%);
+    --wysc-red: hsl(15, 46%, 39%);
+}
+@media (prefers-color-scheme: dark) {
+	html, html[data-theme="dark"] {
+		--light-text-color: rgb(199, 199, 204);
+  		--link-color: rgb( 100, 210, 255);
+  		--main-background-color: rgb(28, 28, 30);
+  		--main-text-color: rgb(229, 229, 234);
+	}
+	html[data-theme="light"] { 
+	--light-text-color: rgb(72, 72, 74);
+  	--link-color: rgb(0, 112, 201);
+  	--main-background-color: rgb(255, 255, 255);
+  	--main-text-color: rgb(51, 51, 51);
+	}
+}
+
+/* 
+    --wysc-red-u1: hsl(15, 41%, 44%);
+    --wysc-red-u2: hsl(15, 36%, 49%);
+    --wysc-red-u4: hsl(15, 26%, 59%);
     --wysc-blue: #aaa;
     --wysc-dark0: #aaa;
     --wysc-dark1: #111;
-    --wysc-dark2: #aaa;
+    --wysc-dark2: hsl(120, 3%, 14%);
     --wysc-light0: #e9ecef;
-    --wysc-light1: hsl(200, 14%, 76%);
-    --wysc-light2: #aaa;
-}
+    --wysc-light1: hsl(120, 3%, 94%);
+    --wysc-light2: hsl(120, 3%, 84%);
+    --wysc-light3: hsl(200, 14%, 76%);
+*/
 
+
+/* Custom Colors */
 .bg-wysc-red {
     background-color: var(--wysc-red);
 }
@@ -18,23 +72,69 @@
 .bg-wysc-light1 {
     background-color: var(--wysc-light1);
 }
+.bg-wysc-light2 {
+    background-color: var(--wysc-light2);
+}
+.hover-wysc-gray:hover {
+    background-color: var(--wysc-gray);
+}
 
 
 html {
     font-family: 'Source Sans Pro', 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-base);
+    background-color: var(--body-base);
+}
+h1 {
+    color: var(--text-h1);
+}
+h2 {
+    color: var(--text-h2);
 }
 h3 {
     font-size: 1.65rem;
     padding-top: 3.65rem;
     padding-bottom: 0.75rem;
     font-weight: bold;
-    color: var(--wysc-dark1);
+    color: var(--text-h3);
 }
 p {
-    font-size: 1.05rem;
+    font-size: var(--text-size);
+    line-height: 1.75;
 }
-
-
 a > div {
     transition: background-color 0.2s ease-in-out;
 }
+
+
+.bg-jtsidebar {
+    background-image: linear-gradient(305deg, rgba(254, 254, 254,0.02) 0%, rgba(254, 254, 254,0.02) 1%,transparent 1%, transparent 50%,rgba(220, 220, 220,0.02) 50%, rgba(220, 220, 220,0.02) 64%,rgba(249, 249, 249,0.02) 64%, rgba(249, 249, 249,0.02) 100%),linear-gradient(38deg, rgba(70, 70, 70,0.02) 0%, rgba(70, 70, 70,0.02) 35%,transparent 35%, transparent 62%,rgba(152, 152, 152,0.02) 62%, rgba(152, 152, 152,0.02) 74%,rgba(99, 99, 99,0.02) 74%, rgba(99, 99, 99,0.02) 100%),linear-gradient(337deg, rgba(124, 124, 124,0.02) 0%, rgba(124, 124, 124,0.02) 45%,transparent 45%, transparent 55%,rgba(34, 34, 34,0.02) 55%, rgba(34, 34, 34,0.02) 72%,rgba(189, 189, 189,0.02) 72%, rgba(189, 189, 189,0.02) 100%),linear-gradient(92deg, rgba(239, 239, 239,0.02) 0%, rgba(239, 239, 239,0.02) 12%,transparent 12%, transparent 22%,rgba(204, 204, 204,0.02) 22%, rgba(204, 204, 204,0.02) 51%,rgba(70, 70, 70,0.02) 51%, rgba(70, 70, 70,0.02) 100%),linear-gradient(90deg, var(--sidebar-bg), var(--sidebar-bg));
+    border-right: 1px solid var(--sidebar-bg-border);
+}
+
+.jtnav-text-h2 {
+    color: var(--jtnav-text-h2);
+}
+.jtbody-text-title {
+    color: var(--text-title);
+}
+.jtbody-text-lead {
+    color: var(--text-lead);
+    line-height: 1.65;
+}
+.jtbody-divider {
+    background-color: var(--text-divider);
+}
+
+
+.border-r-wysc-light2 {
+    border-right: 1px solid var(--wysc-light2);
+}
+.hoverscale {
+    transform: scale(1);
+    transition: transform 0.2s linear;
+  }
+  .hoverscale:hover {
+    transform: scale(1.025);
+    transition: transform 0.2s linear;
+  }

@@ -1,11 +1,11 @@
 {% if site.data.jtnav %}
 <ul style="width:100%;">
     {% for navh1 in site.data.jtnav %}
-    <h2 class="uppercase text-sm font-bold text-teal-700 cursor-default pt-8 pb-2 px-2">{{ navh1.h1 }}</h2>
+    <h2 class="uppercase text-sm font-bold jtnav-text-h2 cursor-default pt-8 pb-2 px-4 xl:px-2">{{ navh1.h1 }}</h2>
         {% for navh2 in navh1.h2 %}
-        <li class="px-2 px-4 w-full">
+        <li class="px-4 w-full">
             <a href="{{ navh2.h2url | relative_url }}" rel="noopener">
-                <div class="rounded px-4 py-2 w-full{% if navh2.h2name == page.title %} bg-wysc-red text-gray-100{% else %} hover:bg-gray-300{% endif %}">
+                <div class="rounded px-4 py-2 w-full{% if navh2.h2name == page.title %} bg-wysc-red text-gray-100{% else %} hover-wysc-gray{% endif %}">
                 {{ navh2.h2name }}
                 </div>
             </a>
