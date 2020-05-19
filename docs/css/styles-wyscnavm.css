@@ -1,0 +1,78 @@
+@media (min-width: 768px) {
+    .sw-d-md-none {
+        display: none !important;
+    }
+}
+.sw-noselect { /* chrome/webkit  only */
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* safari mobile only */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+body .sw-wnavglobal {
+    font-family: -apple-system,BlinkMacSystemFont,"Mada","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+.sw-wnavglobal *, .sw-wnavglobal * ::after, .sw-wnavglobal * ::before {
+    box-sizing: border-box;
+}
+.sw-fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+.sw-rounded-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+}
+.sw-shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.sw-p-2 {
+    padding: .5rem!important;
+}
+.sw-wnavmb {
+    background-color: #914c35;
+    background-image: linear-gradient(to bottom right, #AA8477, #A56D5B);
+}
+.sw-text-center {
+    text-align: center!important;
+}
+.sw-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.sw-wnavglobal dl, .sw-wnavglobal ol, .sw-wnavglobal ul {
+    margin-top: 0;
+}
+.sw-nav-justified .sw-nav-item {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+.sw-align-middle {
+    vertical-align: middle!important;
+}
+.sw-wnavmblinks {
+    color: #bababa;
+    /* text-transform: uppercase; */
+    font-weight: 300;
+    font-size: 1em;
+    transition: font-weight 100ms linear;
+}
+.sw-pulsate-fwd:hover {
+	-webkit-animation: sw-pulsate-fwd 0.85s ease-in-out both;
+	        animation: sw-pulsate-fwd 0.85s ease-in-out both;
+}
+/*animation pulsate-fwd */
+@-webkit-keyframes sw-pulsate-fwd { 0% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } 100% { -webkit-transform: scale(1); transform: scale(1); } } @keyframes sw-pulsate-fwd { 0% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } 100% { -webkit-transform: scale(1); transform: scale(1); } }

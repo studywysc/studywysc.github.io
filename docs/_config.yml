@@ -33,7 +33,6 @@ plugins:
   - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-redirect-from
-  - jekyll-toc
 feed:
   path: /api/feed.xml
 permalink: /blog/:year/:title:output_ext
@@ -47,6 +46,8 @@ search_tokenizer_separator: /[\s/]+/
 # Collections
 collections:
   api:
+    output: true
+  assets:
     output: true
   css:
     output: true

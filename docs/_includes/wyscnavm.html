@@ -1,0 +1,43 @@
+<!-- mobile bottomnav -->
+<!-- patch in styles-wyscnavm.css -->
+
+<div class="sw-d-md-none sw-noselect sw-wnavglobal">
+    <nav class="sw-nav-extended sw-fixed-bottom sw-rounded-top sw-shadow-lg sw-p-2 sw-wnavmb">
+        <div class="sw-nav-content sw-text-center">
+            <ul class="sw-nav sw-nav-justified">
+                <li class="sw-nav-item sw-align-middle">
+                    <a class="sw-nav-link sw-pulsate-fwd {% if page.headername == 'Home' %}sw-wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/index"{% endif %}>
+                        <i class="material-icons">home</i><br>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li class="sw-nav-item sw-align-middle">
+                    <a class="sw-nav-link sw-pulsate-fwd 
+                        {% if page.headername == 'Blog' %}
+                        sw-wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+                        {% elsif page.layout == 'wyscblog-post' %}
+                        sw-wnavmblinkactive" href="/blog"
+                        {% else %}
+                        sw-wnavmblinks" href="/blog"
+                        {% endif %}>
+                        <i class="material-icons">class</i><br>
+                        <div>Blog</div>
+                    </a>
+                </li>
+                <li class="sw-nav-item sw-align-middle">
+                    <a class="sw-nav-link sw-pulsate-fwd 
+                        {% if page.headername == 'Docs' %}
+                        sw-wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+                        {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
+                        sw-wnavmblinkactive" href="/docs"
+                        {% else %}
+                        sw-wnavmblinks" href="/docs"
+                        {% endif %}>
+                        <i class="material-icons">question_answer</i><br>
+                        <div>Docs</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
