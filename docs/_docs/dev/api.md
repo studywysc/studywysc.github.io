@@ -43,6 +43,17 @@ Wysc’s RSS feed for blog posts is generated using Jekyll. With our custom blog
 Wysc no longer uses Medium for blog content.
 
 
+### Search API
+
+```
+/api/search.json
+```
+
+The Search API is automatically updated whenever there is an update to the website, and contains all the Wysc Docs contents in a lightweight file.
+
+Wysc no longer uses Algolia for search.
+
+
 ### Status API
 
 ```

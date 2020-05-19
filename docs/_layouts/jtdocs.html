@@ -54,7 +54,7 @@
                 <div class="w-full xl:w-4/5 px-4 md:px-16" style="max-width:900px;">
 
                     <!-- sm-md-lg top bar -->
-                    <ul class="flex absolute top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar xl:hidden jtbody-topbar">
+                    <ul class="flex absolute top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar xl:hidden jtbody-topbar list-none">
                         <li class="inline-block lg:hidden p-2 px-4">
                             <a class="cursor-pointer" title="Open Menu" data-micromodal-trigger="modal-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -101,7 +101,7 @@
                     {% endif %}
                     <div class="mt-8 mb-6 w-16 jtbody-divider" style="height:3px"></div>
 
-                    <div class="pb-8">
+                    <div class="pb-8 jtbodytext">
                         {{ content }}
                     </div>
 
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="md:hidden">
-                        <ul class="flex absolute bottom-0 right-0 mb-2 mr-4 p-4 rounded shadow-lg bg-jtsidebar jtbody-botbar" role="navigation" aria-label="Mobile version of navigation">
+                        <ul class="flex absolute bottom-0 right-0 mb-2 mr-4 p-4 rounded shadow-lg bg-jtsidebar jtbody-botbar list-none" role="navigation" aria-label="Mobile version of navigation">
                             <li class="inline-block pt-2 px-4">
                                 <a href="/" title="Home">
                                     <div class="flex flex-col items-center align-center justify-center">
@@ -156,7 +156,7 @@
                 <!-- jtrightbar -->
                 <div class="hidden xl:block flex-grow jtrightbar">
                     <div class="absolute">
-                        <ul class="flex top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar">
+                        <ul class="flex top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar list-none">
                             <li class="inline-block p-2 px-4">
                                 <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
