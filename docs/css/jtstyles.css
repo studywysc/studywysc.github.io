@@ -154,11 +154,11 @@ a > div {
     .jtbodycontent p {
         margin-bottom: 1.65rem;
     }
-    .jtbodycontent ol, .jtbodycontent ul {
+    .jtbodytext ol, .jtbodytext ul {
         margin-top: 0;
         margin-bottom: 1.25rem;
     }
-    .jtbodycontent .jtbodytext ul {
+    .jtbodytext ul {
         list-style-type: disc;
         padding-inline-start: 40px;
     }
