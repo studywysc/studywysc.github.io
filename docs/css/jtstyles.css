@@ -75,6 +75,9 @@ html[data-theme="dark"] {
 .text-stable-wysc-gray {
     color: var(--stable-wysc-gray);
 }
+.bg-sidebar-bg {
+    background-color: var(--sidebar-bg);
+}
 .bg-body-base {
     background-color: var(--body-base);
 }
@@ -113,7 +116,7 @@ h2 {
 }
 h3 {
     font-size: 1.65rem;
-    padding-top: 6.65rem;
+    padding-top: 5.65rem;
     margin-top: -3rem;
     padding-bottom: 0.75rem;
     font-weight: bold;
@@ -138,15 +141,18 @@ a > div {
 .jtbodycontent {
     scroll-behavior: smooth;
 }
-.jtbodycontent a {
-    color: var(--text-link);
-    transition: color 0.2s ease-in-out;
-}
-    .jtbodycontent a:hover {
-        color: var(--text-link-hover);
+    .jtbodycontent a {
+        color: var(--text-link);
+        transition: color 0.2s ease-in-out;
     }
-    .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover {
-        color: var(--text-base);
+        .jtbodycontent a:hover {
+            color: var(--text-link-hover);
+        }
+        .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover {
+            color: var(--text-base);
+        }
+    .jtbodycontent p {
+        margin-bottom: 1.65rem;
     }
 .jtbody-text-title {
     color: var(--text-title);
