@@ -7,21 +7,14 @@
 
             <!-- jtsidebar -->
             <div class="pt-6 pb-2 float-right" style="width:300px;">
-                <div class="w-full flex justify-center">
-                    <a href="/" rel="noopener" style="width:80px;">
-                        <img src="/media/wysc/wsc-square-sm.png" alt="Wysc logo" class="rounded-full shadow hoverscale" style="width:80px;height:80px;">
-                    </a>
-                </div>
-                <div class="pt-4 pb-2 px-2 grid text-center items-center overflow-hidden w-full" style="grid-template-columns: repeat(3, 1fr)">
-                    <a href="/">
-                        <div class="rounded px-4 py-2 w-full hover-wysc-gray">
-                            Home
-                        </div>
-                    </a>
+                <div class="pb-2 px-2 grid text-center items-center overflow-visible w-full" style="grid-template-columns: repeat(3, 1fr)">
                     <a href="/blog">
                         <div class="rounded px-4 py-2 w-full hover-wysc-gray">
                             Blog
                         </div>
+                    </a>
+                    <a href="/">
+                        <img src="/media/wysc/wsc-square-sm.png" alt="Wysc logo" class="rounded-full shadow hoverscale w-4/5 mx-auto">
                     </a>
                     <a href="/docs">
                         <div class="rounded px-4 py-2 w-full hover-wysc-gray">
@@ -40,7 +33,7 @@
                             <button class="menu-button fs-3 js-main-nav-trigger" type="button" style="display:none;">Search</button>
                             
                             <div class="search-input-wrap w-full px-3 my-2">
-                              <input type="text" class="js-search-input search-input w-full px-2 py-1 rounded bg-body-base text-text-base" tabindex="0" placeholder="Search {{ site.title }} Docs" aria-label="Search {{ site.title }} Docs" autocomplete="off">
+                              <input type="text" class="js-search-input search-input w-full px-2 py-1 rounded bg-body-base text-text-base" tabindex="0" placeholder="Search Docs" aria-label="Search Docs" autocomplete="off">
                             </div>
                             <div class="js-search-results search-results-wrap absolute"></div>
                           </div>
@@ -49,7 +42,7 @@
                     </div>
                 </div>
 
-                <div class="px-1">
+                <div class="px-1 pb-8">
                     {% include jtnav.html %}
                 </div>
             </div>
@@ -116,6 +109,7 @@
                                 <div class="px-12 md:px-24 pt-12 pb-4 w-full cursor-pointer" title="Close Menu" data-micromodal-close>
                                     <svg class="pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                 </div>
+
                                 <div class="px-1" style="padding-bottom:100px;">
                                     {% include jtnav.html %}
                                 </div>
