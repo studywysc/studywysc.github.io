@@ -7,14 +7,17 @@ html, html[data-theme="light"] {
     --body-base: hsl(0, 0%, 100%);
     --text-base: hsl(0, 0%, 12%);
     --text-size: 1.1rem;
-    --text-title: hsl(15, 46%, 39%);
+    --text-title: var(--wysc-red);
     --text-lead: hsl(0, 0%, 18%);
+    --text-link: var(--wysc-red);
+    --text-link-hover: hsl(15, 46%, 29%);
     --text-h1: hsl(0, 0%, 12%);
     --text-h2: hsl(0, 0%, 12%);
     --text-h3: hsl(0, 0%, 12%);
     --text-divider: hsl(0, 0%, 88%);
     --wysc-gray: hsl(0, 0%, 92%);
-    --wysc-red: hsl(15, 46%, 39%);
+    --wysc-red: var(--stable-wysc-red);
+    --stable-wysc-red: hsl(15, 46%, 39%);
 }
 html[data-theme="dark"] {
     --sidebar-bg: hsl(0, 0%, 6%);
@@ -23,14 +26,16 @@ html[data-theme="dark"] {
     --body-base: hsl(0, 0%, 12%);
     --text-base: hsl(0, 0%, 92%);
     --text-size: 1.1rem;
-    --text-title: hsl(15, 51%, 69%);
+    --text-title: var(--wysc-red);
     --text-lead: hsl(0, 0%, 90%);
+    --text-link: var(--wysc-red);
+    --text-link-hover: hsl(15, 51%, 74%);
     --text-h1: hsl(0, 0%, 98%);
     --text-h2: hsl(0, 0%, 96%);
     --text-h3: hsl(0, 0%, 94%);
     --text-divider: hsl(0, 0%, 48%);
     --wysc-gray: hsl(0, 0%, 22%);
-    --wysc-red: hsl(15, 46%, 39%);
+    --wysc-red: hsl(15, 51%, 69%);
 }
 @media (prefers-color-scheme: dark) {
 	html, html[data-theme="dark"] {
@@ -75,6 +80,9 @@ html[data-theme="dark"] {
 .bg-wysc-light2 {
     background-color: var(--wysc-light2);
 }
+.bg-stable-wysc-red {
+    background-color: var(--stable-wysc-red);
+}
 .hover-wysc-gray:hover {
     background-color: var(--wysc-gray);
 }
@@ -85,6 +93,7 @@ html {
     color: var(--text-base);
     background-color: var(--body-base);
     transition: all 0.2s ease;
+	scroll-behavior: smooth;
 }
 h1 {
     color: var(--text-h1);
@@ -94,7 +103,8 @@ h2 {
 }
 h3 {
     font-size: 1.65rem;
-    padding-top: 3.65rem;
+    padding-top: 6.65rem;
+    margin-top: -3rem;
     padding-bottom: 0.75rem;
     font-weight: bold;
     color: var(--text-h3);
@@ -112,10 +122,22 @@ a > div {
     background-image: linear-gradient(305deg, rgba(254, 254, 254,0.02) 0%, rgba(254, 254, 254,0.02) 1%,transparent 1%, transparent 50%,rgba(220, 220, 220,0.02) 50%, rgba(220, 220, 220,0.02) 64%,rgba(249, 249, 249,0.02) 64%, rgba(249, 249, 249,0.02) 100%),linear-gradient(38deg, rgba(70, 70, 70,0.02) 0%, rgba(70, 70, 70,0.02) 35%,transparent 35%, transparent 62%,rgba(152, 152, 152,0.02) 62%, rgba(152, 152, 152,0.02) 74%,rgba(99, 99, 99,0.02) 74%, rgba(99, 99, 99,0.02) 100%),linear-gradient(337deg, rgba(124, 124, 124,0.02) 0%, rgba(124, 124, 124,0.02) 45%,transparent 45%, transparent 55%,rgba(34, 34, 34,0.02) 55%, rgba(34, 34, 34,0.02) 72%,rgba(189, 189, 189,0.02) 72%, rgba(189, 189, 189,0.02) 100%),linear-gradient(92deg, rgba(239, 239, 239,0.02) 0%, rgba(239, 239, 239,0.02) 12%,transparent 12%, transparent 22%,rgba(204, 204, 204,0.02) 22%, rgba(204, 204, 204,0.02) 51%,rgba(70, 70, 70,0.02) 51%, rgba(70, 70, 70,0.02) 100%),linear-gradient(90deg, var(--sidebar-bg), var(--sidebar-bg));
     border-right: 1px solid var(--sidebar-bg-border);
 }
-
 .jtnav-text-h2 {
     color: var(--jtnav-text-h2);
 }
+.jtbodycontent {
+    scroll-behavior: smooth;
+}
+.jtbodycontent a {
+    color: var(--text-link);
+    transition: color 0.2s ease-in-out;
+}
+    .jtbodycontent a:hover {
+        color: var(--text-link-hover);
+    }
+    .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover {
+        color: var(--text-base);
+    }
 .jtbody-text-title {
     color: var(--text-title);
 }
@@ -129,6 +151,86 @@ a > div {
 .jtbody-topbar-md {
     background: linear-gradient(180deg, var(--body-base) 0%, var(--body-base) 90%, rgba(0,0,0,0) 100%);
 }
+.jtrightbar div.absolute {
+    width: 13%;
+    max-width: 20rem;
+}
+.jtrightbar div.absolute ul.flex {
+    width: max-content;
+}
+#markdown-toc { /* see jtbodycontent a */
+    border-radius: 0.25rem;
+    background-color: var(--sidebar-bg);
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 20rem;
+    max-width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+    #markdown-toc::before {
+        content: "Table of Contents";
+        font-size: 1.45rem;
+        font-weight: bold;
+        color: var(--text-h3);
+        line-height: 2;
+    }
+    #markdown-toc li {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        width: 100%;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s ease-in-out;
+    }
+    #markdown-toc li a {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        display: block;
+    }
+    #markdown-toc li:hover {
+        background-color: var(--wysc-gray);
+    }
+    @media only screen and (min-width: 1280px) {
+        #markdown-toc {
+          display: none;
+        }
+    }
+    .rightbarcontent * {
+        display: none;
+    }
+    .rightbarcontent #markdown-toc, .rightbarcontent #markdown-toc * {
+        display: block;
+    }
+    .rightbarcontent #markdown-toc::before {
+        content: "Table of Contents";
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--text-h3);
+        margin-left: 0.15rem;
+        line-height: 2.5;
+    }
+    .rightbarcontent #markdown-toc {
+        border-radius: 0rem;
+        background-color: transparent;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        box-shadow: none;
+    }
+    .rightbarcontent #markdown-toc li {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        width: 100%;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s ease-in-out;
+    }
 
 
 .border-r-wysc-light2 {

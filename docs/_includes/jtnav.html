@@ -5,7 +5,7 @@
         {% for navh2 in navh1.h2 %}
         <li class="px-4 w-full">
             <a href="{{ navh2.h2url | relative_url }}" rel="noopener">
-                <div class="rounded px-4 py-2 w-full{% if navh2.h2name == page.title %} bg-wysc-red text-gray-100{% else %} hover-wysc-gray{% endif %}">
+                <div class="rounded px-4 py-2 w-full{% if navh2.h2name == page.title %} bg-stable-wysc-red text-gray-100{% elsif navh2.h2name == page.title-sub %} bg-stable-wysc-red text-gray-100{% else %} hover-wysc-gray{% endif %}">
                 {{ navh2.h2name }}
                 </div>
             </a>

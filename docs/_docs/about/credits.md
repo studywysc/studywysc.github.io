@@ -218,11 +218,6 @@ creditslist:
 
   - cat: Website
     catobj:
-      - coname: Algolia
-        coline: Search
-        coimg: /media/logos/creditsalgolia.png
-        courl: https://algolia.com
-
       - coname: Bootstrap
         coline: HTML framework
         coimg: /media/logos/creditsbootstrap.svg
@@ -237,6 +232,11 @@ creditslist:
         coline: JS framework
         coimg: /media/logos/creditsjquery.svg
         courl: https://jquery.com/
+
+      - coname: Tailwind CSS
+        coline: HTML framework
+        coimg: /media/logos/creditsbootstrap.svg
+        courl: https://tailwindcss.com/
 
       - coname: Unsplash
         coline: Images
@@ -255,12 +255,27 @@ creditslist:
         coslist:
           - cosname: AnchorJS
             cosurl: https://github.com/bryanbraun/anchorjs
+
+          - cosname: Animista
+            cosurl: https://animista.net/
             
           - cosname: bootstrap-table
             cosurl: https://github.com/wenzhixin/bootstrap-table
             
+          - cosname: Feather Icons
+            cosurl: https://github.com/feathericons/feather
+
+          - cosname: Get Waves
+            cosurl: https://getwaves.io/
+            
+          - cosname: Just The Docs
+            cosurl: https://github.com/pmarsceill/just-the-docs
+            
           - cosname: LoadCSS
             cosurl: https://github.com/filamentgroup/loadCSS
+            
+          - cosname: Micromodal
+            cosurl: https://github.com/Ghosh/micromodal
 
           - cosname: PWACompat
             cosurl: https://github.com/GoogleChromeLabs/pwacompat
@@ -284,17 +299,9 @@ creditslist:
 
       - costitle: Services
         coslist:
-          - cosname: Animista
-            cosurl: https://animista.net/
 
           - cosname: FreeDNS
             cosurl: https://freedns.afraid.org
-
-          - cosname: Get Waves
-            cosurl: https://getwaves.io/
-
-          - cosname: Gitbook
-            cosurl: https://gitbook.com/
 
           - cosname: Google Analytics
             cosurl: https://www.google.com/analytics
@@ -307,17 +314,18 @@ creditslist:
             
           - cosname: OpenWeatherMap
             cosurl: https://openweathermap.org/
-            
-          - cosname: WebAIM&colon; Contrast Checker
-            cosurl: https://webaim.org/resources/contrastchecker/
 
           - cosname: Zapier
             cosurl: https://zapier.com/
 
       - costitle: Inspiration
         coslist:
+        
           - cosname: Dark Mode Revisited - derekkedziora.com
             cosurl: https://derekkedziora.com/blog/dark-mode-revisited
+            
+          - cosname: WebAIM&colon; Contrast Checker
+            cosurl: https://webaim.org/resources/contrastchecker/
 
   - cat: Other
     catobjsm:
@@ -325,12 +333,16 @@ creditslist:
         coslist:
           - cosname: add-to-homescreen
             cosurl: https://github.com/cubiq/add-to-homescreen
+          - cosname: Algolia
+            cosurl: https://algolia.com
           - cosname: Bookmark
             cosurl: https://bookmark.com/
           - cosname: dark-mode-switch
             cosurl: https://github.com/coliff/dark-mode-switch
           - cosname: dhooks
             cosurl: https://github.com/kyb3r/dhooks
+          - cosname: Gitbook
+            cosurl: https://gitbook.com/
           - cosname: Karmabot
             cosurl: https://karmabot.vlexar.pw/
           - cosname: PomodoroBot
