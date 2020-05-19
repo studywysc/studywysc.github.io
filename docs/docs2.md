@@ -10,7 +10,7 @@ summary: The standard chunk of Lorem Ipsum used since the 1500s is reproduced be
 * TOC
 {:toc}
 
-<br><br>
+<br>
 
 Pre-heading text here
 

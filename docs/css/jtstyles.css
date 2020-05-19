@@ -70,7 +70,7 @@ html[data-theme="dark"] {
 
 /* Custom Colors */
 .text-text-base {
-    color: var(--text-base);
+    color: var(--text-base) !important;
 }
 .text-stable-wysc-gray {
     color: var(--stable-wysc-gray);
@@ -260,6 +260,35 @@ a > div {
     transform: scale(1.025);
     transition: transform 0.2s linear;
   }
+
+
+/* just-the-docs search */
+.search-results-wrap { position: absolute; z-index: 100; display: none; width: 100%; max-height: 70vh; overflow: hidden ; background: var(--body-base); border-radius: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08); }
+.search-results-wrap.active { display: block; }
+@media (min-width: 50rem) { .search-results-wrap { width: 500px; } }
+
+.search-results-list { padding-left: 0; margin-top: 0.25rem; margin-bottom: 0.25rem; list-style: none; font-size: 14px !important; }
+@media (min-width: 31.25rem) { .search-results-list { font-size: 16px !important; } }
+@media (min-width: 50rem) { .search-results-list { font-size: 12px !important; } }
+@media (min-width: 50rem) and (min-width: 31.25rem) { .search-results-list { font-size: 14px !important; } }
+
+.search-results-list-item { padding: 0; margin: 0; }
+
+.search-result { display: block; padding-top: 0.25rem; padding-right: 0.75rem; padding-bottom: 0.25rem; padding-left: 0.75rem; }
+.search-result:hover, .search-result.active { background-color: var(--wysc-gray); }
+@media (min-width: 50rem) { .search-result { padding-right: 1rem; padding-left: 1rem; } }
+
+.search-result-title { display: block; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; }
+@media (min-width: 31.25rem) { .search-result-title { display: inline-block; width: 40%; word-wrap: break-word; vertical-align: top; } }
+
+.search-result-rel-url { display: block; overflow: hidden; color: #959396; text-overflow: ellipsis; white-space: nowrap; font-size: 9px !important; }
+@media (min-width: 31.25rem) { .search-result-rel-url { font-size: 10px !important; } }
+
+.search-result-preview { display: block; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; color: #959396; border-left: 1px solid; border-left-color: #eeebee; font-size: 11px !important; }
+@media (min-width: 31.25rem) { .search-result-preview { font-size: 12px !important; } }
+@media (min-width: 31.25rem) { .search-result-preview { display: inline-block; width: 60%; vertical-align: top; } }
+
+.search-result-highlight { font-weight: bold; color: #7253ed; }
 
 
 /* Micromodal js */
