@@ -6,13 +6,13 @@
         <div class="bg-jtsidebar w-1/4 h-screen overflow-x-hidden overflow-y-auto hidden lg:block" style="min-width:300px;scrollbar-width:thin;">
 
             <!-- jtsidebar -->
-            <div class="pt-4 pb-2 float-right" style="width:300px;">
+            <div class="pt-6 pb-2 float-right" style="width:300px;">
                 <div class="w-full flex justify-center">
                     <a href="/" rel="noopener" style="width:80px;">
                         <img src="/media/wysc/wsc-square-sm.png" alt="Wysc logo" class="rounded-full shadow hoverscale" style="width:80px;height:80px;">
                     </a>
                 </div>
-                <div class="py-4 px-2 grid text-center items-center overflow-hidden w-full" style="grid-template-columns: repeat(3, 1fr)">
+                <div class="pt-4 pb-2 px-2 grid text-center items-center overflow-hidden w-full" style="grid-template-columns: repeat(3, 1fr)">
                     <a href="/">
                         <div class="rounded px-4 py-2 w-full hover-wysc-gray">
                             Home
@@ -29,6 +29,26 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="page-wrap">
+                    <div class="main-content-wrap js-main-content" tabindex="0">
+                      <div class="main-content">
+                        <div class="page-header js-page-header">
+                          <div class="search">
+                            
+                            <!-- don't question why this is here, it makes the search work -->
+                            <button class="menu-button fs-3 js-main-nav-trigger" type="button" style="display:none;">Search</button>
+                            
+                            <div class="search-input-wrap w-full px-3 my-2">
+                              <input type="text" class="js-search-input search-input w-full px-2 py-1 rounded bg-body-base text-text-base" tabindex="0" placeholder="Search {{ site.title }} Docs" aria-label="Search {{ site.title }} Docs" autocomplete="off">
+                            </div>
+                            <div class="js-search-results search-results-wrap absolute"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
                 <div class="px-1">
                     {% include jtnav.html %}
                 </div>
@@ -85,15 +105,6 @@
                     {% endif %}
                     <div class="mt-8 mb-6 w-16 jtbody-divider" style="height:3px"></div>
 
-
-                <div class="search">
-                  <div class="search-input-wrap">
-                    <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
-                    <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
-                  </div>
-                  <div class="js-search-results search-results-wrap absolute bg-gray-300"></div>
-                </div>
-
                     <div class="pb-8">
                         {{ content }}
                     </div>
@@ -131,8 +142,9 @@
                         </ul>
                         <li class="w-full list-none pt-6 pb-2">
                             <a href="#content">
-                                <div class="rounded px-3 py-2 w-full hover-wysc-gray">
-                                    Scroll to Top
+                                <div class="rounded px-3 py-2 w-full hover-wysc-gray flex no-wrap items-center">
+                                    Scroll to Top&ensp; 
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="padding-bottom:0.1rem;" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
                                 </div>
                             </a>
                         </li>

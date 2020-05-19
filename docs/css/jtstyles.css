@@ -68,6 +68,12 @@ html[data-theme="dark"] {
 
 
 /* Custom Colors */
+.text-text-base {
+    color: var(--text-base);
+}
+.bg-body-base {
+    background-color: var(--body-base);
+}
 .bg-wysc-red {
     background-color: var(--wysc-red);
 }

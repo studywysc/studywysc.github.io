@@ -47,8 +47,6 @@ search_tokenizer_separator: /[\s/]+/
 collections:
   api:
     output: true
-  assets:
-    output: true
   css:
     output: true
   docs:
