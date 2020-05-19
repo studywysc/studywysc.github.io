@@ -90,7 +90,10 @@
                     </ul>
 
                     <div id="content"></div>
-                    <h1 class="jtbody-text-title pt-32 xl:pt-12 pb-2 text-4xl">{{ page.title }}</h1>
+                    <div class="pt-32 xl:pt-12"></div>
+                    <div id="statusapi">
+                    </div>
+                    <h1 class="jtbody-text-title pb-2 text-4xl">{{ page.title }}</h1>
                     {% if page.tagline %}
                         <p class="jtbody-text-lead text-xl font-bold tracking-wide">{{ page.tagline | escape }}</p>
                     {% elsif page.summary %}
@@ -200,6 +203,7 @@
         });
     </script>
     <script src="/js/smoothscroll-0.4.4.min.js"></script>
+    {% include jtstatus.html %}
     {% include wyscfooter.html %}
 </body>
 </html>

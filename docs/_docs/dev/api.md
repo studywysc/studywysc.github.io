@@ -66,7 +66,7 @@ Sample code:
       "title": "Wysc Service",
       "isup": true // false,
       "isupemoji": "Alert emoji here",
-      "howsevere": "low // medium // high",
+      "howsevere": ["low", "medium", "high"],
       "notes":"Notes for when Wysc Discord is not operating normally",
       "readmore": "Link to webpage with more info",
     }

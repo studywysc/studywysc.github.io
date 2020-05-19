@@ -15,8 +15,9 @@ html, html[data-theme="light"] {
     --text-h2: hsl(0, 0%, 12%);
     --text-h3: hsl(0, 0%, 12%);
     --text-divider: hsl(0, 0%, 88%);
-    --wysc-gray: hsl(0, 0%, 92%);
+    --wysc-gray: var(--stable-wysc-gray);
     --wysc-red: var(--stable-wysc-red);
+    --stable-wysc-gray: hsl(0, 0%, 92%);
     --stable-wysc-red: hsl(15, 46%, 39%);
 }
 html[data-theme="dark"] {
@@ -70,6 +71,9 @@ html[data-theme="dark"] {
 /* Custom Colors */
 .text-text-base {
     color: var(--text-base);
+}
+.text-stable-wysc-gray {
+    color: var(--stable-wysc-gray);
 }
 .bg-body-base {
     background-color: var(--body-base);
