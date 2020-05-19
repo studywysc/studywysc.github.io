@@ -148,7 +148,7 @@ a > div {
         .jtbodycontent a:hover {
             color: var(--text-link-hover);
         }
-        .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover {
+        .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
             color: var(--text-base);
         }
     .jtbodycontent p {

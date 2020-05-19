@@ -1,5 +1,5 @@
 {% if site.data.jtnav %}
-<ul style="width:100%;">
+<ul style="width:100%;" role="navigation" aria-label="Desktop version of navigation">
     {% for navh1 in site.data.jtnav %}
     <h2 class="uppercase text-sm font-bold jtnav-text-h2 cursor-default pt-8 pb-2 px-4 xl:px-2">{{ navh1.h1 }}</h2>
         {% for navh2 in navh1.h2 %}
