@@ -272,11 +272,11 @@ a > div {
 
 
 /* just-the-docs search */
-.search-results-wrap { position: absolute; z-index: 100; display: none; width: 100%; max-height: 70vh; overflow: hidden ; background: var(--body-base); border-radius: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08); }
+.search-results-wrap { position: absolute; z-index: 100; display: none; width: calc(100% - 2rem); max-height: calc(100vh - 450px); overflow: hidden ; background: var(--body-base); border-radius: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08); }
 .search-results-wrap.active { display: block; }
 @media (min-width: 50rem) { .search-results-wrap { width: 500px; } }
 
-.search-results-list { padding-left: 0; margin-top: 0.25rem; margin-bottom: 0.25rem; list-style: none; font-size: 14px !important; }
+.search-results-list { padding-left: 0; margin-top: 0.25rem; margin-bottom: 0.25rem; list-style: none !important; padding-inline-start: 0.5rem !important; font-size: 14px !important; }
 @media (min-width: 31.25rem) { .search-results-list { font-size: 16px !important; } }
 @media (min-width: 50rem) { .search-results-list { font-size: 12px !important; } }
 @media (min-width: 50rem) and (min-width: 31.25rem) { .search-results-list { font-size: 14px !important; } }

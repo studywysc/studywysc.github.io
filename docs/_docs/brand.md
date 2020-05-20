@@ -49,8 +49,7 @@ Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs
 
 <div class="flex justify-center align-center items-center" style="background-image:url('/media/ben-white-eeiAnugy2Hs-unsplash.jpg');width:100%;height:400px;background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:calc(35px/2);background-attachment:fixed;">
   <div style="width:15%;padding:15%;box-sizing:border-box;position:relative;">
-    <div class="flex justify-center align-center items-center" style="background-image:url('/media/wsc-sp-rounded.png');width:50%;padding:50%;top:0;left:0;background-repeat:no-repeat;background-size:cover;background-position:center;position:absolute;"></div>
-    <!-- <img src="/media/wsc-sp-rounded.png" width="100%" class="noselect" style="position:absolute;left:0;top:0;" alt="wysc logo" /> -->
+    <div class="flex justify-center align-center items-center" style="background-image:url('/media/wsc-sp-rounded.png');width:100%;height:100%;top:0;left:0;background-repeat:no-repeat;background-size:cover;background-position:center;position:absolute;"></div>
   </div>
 </div>
 <br>
