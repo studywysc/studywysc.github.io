@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 {% include jthead.html %}
 <body>
     <div class="flex no-wrap w-full h-screen overflow-hidden">
         <div class="bg-jtsidebar w-1/4 h-screen overflow-x-hidden overflow-y-auto hidden lg:block" style="min-width:300px;scrollbar-width:thin;">
 
             <!-- jtsidebar -->
-            <div class="pt-6 pb-2 float-right" style="width:300px;">
+            <div class="pt-6 pb-2 float-right jtsidebar" style="width:300px;">
                 <div class="pb-2 px-2 grid text-center items-center overflow-visible w-full" style="grid-template-columns: repeat(3, 1fr)">
                     <a href="/blog">
                         <div class="rounded px-4 py-2 w-full hover-wysc-gray">
@@ -14,7 +14,7 @@
                         </div>
                     </a>
                     <a href="/">
-                        <img src="/media/wysc/wsc-square-sm.png" alt="Wysc logo" class="rounded-full shadow hoverscale w-4/5 mx-auto">
+                        <img src="/media/wysc/wsc-square-sm.png" alt="Wysc logo" class="text-text-rounded shadow hoverscale w-4/5 mx-auto">
                     </a>
                     <a href="/docs">
                         <div class="rounded px-4 py-2 w-full hover-wysc-gray">
@@ -44,9 +44,9 @@
                     </div>
                     <h1 class="jtbody-text-title pb-2 text-4xl">{{ page.title }}</h1>
                     {% if page.tagline %}
-                        <p class="jtbody-text-lead text-xl font-bold tracking-wide">{{ page.tagline | escape }}</p>
+                        <p class="jtbody-text-lead text-xl font-bold">{{ page.tagline | escape }}</p>
                     {% elsif page.summary %}
-                        <p class="jtbody-text-lead text-xl font-bold tracking-wide">{{ page.summary | escape }}</p>
+                        <p class="jtbody-text-lead text-xl font-bold">{{ page.summary | escape }}</p>
                     {% endif %}
                     <div class="mt-8 mb-6 w-16 jtbody-divider" style="height:3px"></div>
 
@@ -82,7 +82,7 @@
                         </li>
 
                         <li class="inline-block p-2 px-4">
-                            <a href="https://github.com/coffeebank/wysc/blob/dev/docs/_{{ page.url | slice: 1,page.url.size }}.md" target="blank" rel="noopener" title="Edit on GitHub">
+                            <a href="https://github.com/coffeebank/wysc/blob/dev/docs/_{{ page.url | slice: 1,page.url.size }}.md" target="_blank" rel="noopener" title="Edit on GitHub">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             </a>
                         </li>

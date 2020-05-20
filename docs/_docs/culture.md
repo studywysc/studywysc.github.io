@@ -1,9 +1,7 @@
 ---
-layout: kbdocs
+layout: jtdocs
 title:  "Culture/Rules"
-category: "Wysc Discord"
-catsub: "Content Policy"
-last_updated: 15 Mar 2020
+summary: "Wysc's culture is one we strive to maintain and nurture. While we don't have a laundry list of rules, our administrative policy towards user behavior is simple and direct."
 redirect_from:
   - culture
   - rules
@@ -13,15 +11,18 @@ redirect_from:
   - docs/discord/content/prohibited
   - docs/discord/content/1
   - docs/discord/1
+  - docs/discord/culture
 ---
-
-Wysc's culture is one we strive to maintain and nurture. While we don't have a laundry list of rules, our administrative policy towards user behavior is simple and direct.
 
 <p class="p-4" style="font-size:36px">Don't be a dick.</p>
 
 This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** [See our Prohibited Activities](#what-do-we-really-hate) for specific activities we'll take strong action against.
 
 <br>
+
+* TOC
+{:toc}
+
 
 ### What's our Culture like?
 
@@ -32,6 +33,9 @@ Over time, Wysc has grown to be a relatively small, comfy, and peaceful study se
 ### How are we run?
 
 Wysc operates in a cooperative model, where the older members of our community gain the tools to be able to maintain the friendly environment they have grown up in. As such, Wysc Staff will not be the only users who can take action against malicious users. However, if you are quarantined, you will have a chance to appeal the decision to Wysc Staff.
+
+Wysc is all about community. There aren't "moderators" or "owners" in the traditional sense. Instead, the server is maintained by community members who earn moderation-level permissions by being active and [ranking up](/docs/ranks) in Wysc.
+
 
 ### What do we really hate?
 
@@ -45,8 +49,6 @@ Hate's a strong word. There really isn't a lot we require from you as a user, bu
 - DM'ing users without permission beforehand
 - Excessive drug related messages and paraphernalia
 - Explicit material (including porn)
-
-<br>
 
 This isn't an exhaustive list, and it shouldn't be. We shouldn't need to list out what is and isn't required of you to be a member of a community. Common sense and common decency should be the norm.
 

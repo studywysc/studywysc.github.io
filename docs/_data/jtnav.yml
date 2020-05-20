@@ -4,15 +4,13 @@
       h2url: /docs
     - h2name: About Us
       h2url: /docs/about
-    - h2name: Contact Us
-      h2url: /docs/contact
 
 - h1: Chatting
   h2:
     - h2name: Culture/Rules
       h2url: /docs/culture
-    - h2name: Ranking Up
-      h2url: /docs/ranks
+    - h2name: Roles
+      h2url: /docs/roles
     - h2name: Group Study
       h2url: /docs/pomodoro
     - h2name: Bots
@@ -24,7 +22,5 @@
       h2url: /docs/credits
     - h2name: Contributing
       h2url: /docs/dev
-    - h2name: APIs
-      h2url: /docs/api
     
       

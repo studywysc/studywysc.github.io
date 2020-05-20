@@ -1,42 +1,60 @@
 /* Dark theme */
 
 html, html[data-theme="light"] {
-    --sidebar-bg: hsl(0, 0%, 98%);
+    /* Values */
+    --text-size: 1.1rem;
+    --text-rounded: 1rem;
+    --text-mb: 1.65rem;
+
+    /* Base Colors */
+    --stable-wysc-light: hsl(0, 0%, 98%);
+    --stable-wysc-dark: hsl(0, 0%, 12%);
+    --stable-wysc-gray: hsl(0, 0%, 92%);
+    --stable-wysc-red: hsl(15, 46%, 39%);
+    --stable-wysc-red-2: hsl(15, 46%, 29%);
+    --wysc-light: var(--stable-wysc-light);
+    --wysc-dark: var(--stable-wysc-dark);
+    --wysc-gray: var(--stable-wysc-gray);
+    --wysc-red: var(--stable-wysc-red);
+    --wysc-red-2: var(--stable-wysc-red-2);
+
+    /* Theme Colors */
+    --sidebar-bg: var(--stable-wysc-light);
     --sidebar-bg-border: hsl(0, 0%, 88%);
     --jtnav-text-h2: #2c7a7b;
     --body-base: hsl(0, 0%, 100%);
-    --text-base: hsl(0, 0%, 12%);
-    --text-size: 1.1rem;
+    --text-base: var(--stable-wysc-dark);
     --text-title: var(--wysc-red);
     --text-lead: hsl(0, 0%, 18%);
     --text-link: var(--wysc-red);
-    --text-link-hover: hsl(15, 46%, 29%);
-    --text-h1: hsl(0, 0%, 12%);
-    --text-h2: hsl(0, 0%, 12%);
-    --text-h3: hsl(0, 0%, 12%);
+    --text-link-hover: var(--wysc-red-2);
+    --text-h1: var(--stable-wysc-dark);
+    --text-h2: var(--stable-wysc-dark);
+    --text-h3: var(--stable-wysc-dark);
     --text-divider: hsl(0, 0%, 88%);
-    --wysc-gray: var(--stable-wysc-gray);
-    --wysc-red: var(--stable-wysc-red);
-    --stable-wysc-gray: hsl(0, 0%, 92%);
-    --stable-wysc-red: hsl(15, 46%, 39%);
 }
 html[data-theme="dark"] {
+    /* Base Colors */
+    --wysc-light: hsl(0, 0%, 12%);
+    --wysc-dark: hsl(0, 0%, 92%);
+    --wysc-gray: hsl(0, 0%, 22%);
+    --wysc-red: hsl(15, 51%, 69%);
+    --wysc-red-2: hsl(15, 51%, 74%);
+
+    /* Theme Colors */
     --sidebar-bg: hsl(0, 0%, 6%);
     --sidebar-bg-border: hsl(0, 0%, 14%);
     --jtnav-text-h2: #81E6D9;
-    --body-base: hsl(0, 0%, 12%);
+    --body-base: var(--stable-wysc-dark);
     --text-base: hsl(0, 0%, 92%);
-    --text-size: 1.1rem;
     --text-title: var(--wysc-red);
     --text-lead: hsl(0, 0%, 90%);
     --text-link: var(--wysc-red);
-    --text-link-hover: hsl(15, 51%, 74%);
+    --text-link-hover: var(--wysc-red-2);
     --text-h1: hsl(0, 0%, 98%);
     --text-h2: hsl(0, 0%, 96%);
     --text-h3: hsl(0, 0%, 94%);
     --text-divider: hsl(0, 0%, 48%);
-    --wysc-gray: hsl(0, 0%, 22%);
-    --wysc-red: hsl(15, 51%, 69%);
 }
 @media (prefers-color-scheme: dark) {
 	html, html[data-theme="dark"] {
@@ -70,10 +88,22 @@ html[data-theme="dark"] {
 
 /* Custom Colors */
 .text-text-base {
-    color: var(--text-base) !important;
+    color: var(--text-base);
+}
+.text-text-rounded {
+    border-radius: var(--text-rounded);
+}
+.text-stable-wysc-light {
+    color: var(--stable-wysc-light);
+}
+.text-stable-wysc-dark {
+    color: var(--stable-wysc-dark);
 }
 .text-stable-wysc-gray {
     color: var(--stable-wysc-gray);
+}
+.text-stable-wysc-red {
+    color: var(--stable-wysc-red);
 }
 .bg-sidebar-bg {
     background-color: var(--sidebar-bg);
@@ -92,6 +122,12 @@ html[data-theme="dark"] {
 }
 .bg-wysc-light2 {
     background-color: var(--wysc-light2);
+}
+.bg-stable-wysc-dark {
+    background-color: var(--stable-wysc-dark);
+}
+.bg-stable-wysc-gray {
+    background-color: var(--stable-wysc-gray);
 }
 .bg-stable-wysc-red {
     background-color: var(--stable-wysc-red);
@@ -122,13 +158,87 @@ h3 {
     font-weight: bold;
     color: var(--text-h3);
 }
+h4 {
+    font-size: calc(var(--text-size) * 1.25);
+    padding-top: 4rem;
+    margin-top: -3rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: calc(var(--text-size) * 1.1);
+    padding-top: 3.5rem;
+    margin-top: -3rem;
+    padding-bottom: 0.75rem;
+}
 p {
     font-size: var(--text-size);
+    margin-bottom: var(--text-mb);
     line-height: 1.75;
 }
 a > div {
     transition: background-color 0.2s ease-in-out;
 }
+a {
+    color: var(--text-link);
+    transition: color 0.2s ease-in-out;
+}
+    a:hover {
+        color: var(--text-link-hover);
+    }
+    .jtsidebar a, .jtsidebar a:hover, .jtbody-topbar a, .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
+        color: var(--text-base);
+    }
+code { /* overridden by pre code */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.95em;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+}
+img {
+    border-radius: var(--text-rounded);
+}
+pre {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: var(--text-rounded);
+    margin-bottom: var(--text-mb);
+    overflow-x: auto;
+}
+    pre code {
+        margin: 0rem;
+        padding: 0rem;
+        background-color: transparent;
+        border-radius: 0rem;
+    }
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+    li {
+        font-size: calc(var(--text-size) * 0.95);
+    }
+    .jtsidebar ul, .modal__container ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .jtbodycontent .jtbodytext ol, .jtbodycontent .jtbodytext ul {
+        margin-top: 0;
+        margin-bottom: var(--text-mb);
+    }
+        .jtbodycontent .jtbodytext ol ol, .jtbodycontent .jtbodytext ul ol, .jtbodycontent .jtbodytext ol ul, .jtbodycontent .jtbodytext ul ul {
+            margin-top: 0;
+            margin-bottom: calc(var(--text-mb) * 0.25);
+        }
 
 
 .bg-jtsidebar {
@@ -141,33 +251,13 @@ a > div {
 .jtbodycontent {
     scroll-behavior: smooth;
 }
-    .jtbodycontent a {
-        color: var(--text-link);
-        transition: color 0.2s ease-in-out;
-    }
-        .jtbodycontent a:hover {
-            color: var(--text-link-hover);
-        }
-        .jtbodycontent .jtbody-topbar a, .jtbodycontent .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
-            color: var(--text-base);
-        }
-    .jtbodycontent p {
-        margin-bottom: 1.65rem;
-    }
-    .jtbodytext ol, .jtbodytext ul {
-        margin-top: 0;
-        margin-bottom: 1.25rem;
-    }
-    .jtbodytext ul {
-        list-style-type: disc;
-        padding-inline-start: 40px;
-    }
 .jtbody-text-title {
     color: var(--text-title);
 }
 .jtbody-text-lead {
     color: var(--text-lead);
     line-height: 1.65;
+    letter-spacing: 0.015rem;
 }
 .jtbody-divider {
     background-color: var(--text-divider);
@@ -182,6 +272,30 @@ a > div {
 .jtrightbar div.absolute ul.flex {
     width: max-content;
 }
+
+
+/* Components */
+
+.jtbutton {
+    background-color: var(--stable-wysc-red);
+    color: var(--stable-wysc-gray);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+    font-size: 1rem;
+}
+    .jtbutton:hover {
+        background-color: var(--stable-wysc-red-2);
+        color: var(--stable-wysc-gray);
+    }
+
+
+
+/* Styles */
+
 #markdown-toc { /* see jtbodycontent a */
     border-radius: 0.25rem;
     background-color: var(--sidebar-bg);
@@ -203,6 +317,22 @@ a > div {
         color: var(--text-h3);
         line-height: 2;
     }
+    #markdown-toc ul { 
+        padding-left: 1rem;
+        padding-bottom: 0.25rem !important;
+        margin-bottom: 0px !important;
+        list-style-type: none !important;
+    }
+        #markdown-toc ul li {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            width: 100%;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        #markdown-toc ul li:hover {
+            background-color: var(--wysc-light);
+        }
     #markdown-toc li {
         padding-top: 0.1rem;
         padding-bottom: 0.1rem;
@@ -276,7 +406,7 @@ a > div {
 .search-results-wrap.active { display: block; }
 @media (min-width: 50rem) { .search-results-wrap { width: 500px; } }
 
-.search-results-list { padding-left: 0; margin-top: 0.25rem; margin-bottom: 0.25rem; list-style: none !important; padding-inline-start: 0.5rem !important; font-size: 14px !important; }
+.search-results-list { padding-left: 0; margin-top: 0.25rem; margin-bottom: 0.25rem; list-style: none !important; font-size: 14px !important; }
 @media (min-width: 31.25rem) { .search-results-list { font-size: 16px !important; } }
 @media (min-width: 50rem) { .search-results-list { font-size: 12px !important; } }
 @media (min-width: 50rem) and (min-width: 31.25rem) { .search-results-list { font-size: 14px !important; } }
