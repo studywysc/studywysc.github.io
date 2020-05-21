@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+  
+    <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+  <div class="page-wrap">
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="main-content">
+        <div class="page-header js-page-header">
+
+        
+          <div class="search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
+              <button class="menu-button fs-3 js-main-nav-trigger" type="button">Search</button>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

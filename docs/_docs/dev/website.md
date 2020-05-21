@@ -1,9 +1,7 @@
 ---
-layout: kbdocs
+layout: jtdocs
 title:  "Wysc Website"
-category: "Contributor Hub"
-catsub: "GitHub"
-last_updated: 19 Mar 2020
+title-sub: "Contributing"
 summary: "Wysc relies on contributors like you to help expand documentation for Wysc!"
 ---
 

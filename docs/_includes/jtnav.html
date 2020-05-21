@@ -1,0 +1,16 @@
+{% if site.data.jtnav %}
+<ul style="width:100%;" role="navigation" aria-label="Desktop version of navigation">
+    {% for navh1 in site.data.jtnav %}
+    <h2 class="uppercase text-sm font-bold jtnav-text-h2 cursor-default pt-8 pb-2 px-4 xl:px-2">{{ navh1.h1 }}</h2>
+        {% for navh2 in navh1.h2 %}
+        <li class="px-4 w-full">
+            <a href="{{ navh2.h2url | relative_url }}" rel="noopener">
+                <div class="rounded px-4 py-2 w-full{% if navh2.h2name == page.title %} bg-stable-wysc-red text-gray-100{% elsif page.title-sub %}{% for eachtsub in page.title-sub %}{% if navh2.h2name == eachtsub %} bg-stable-wysc-red text-gray-100{% endif %}{% endfor %}{% else %} hover-wysc-gray{% endif %}">
+                {{ navh2.h2name }}
+                </div>
+            </a>
+        </li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+{% endif %}

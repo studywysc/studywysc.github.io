@@ -1,0 +1,26 @@
+- h1: Introduction
+  h2:
+    - h2name: Getting Started
+      h2url: /docs
+    - h2name: About Us
+      h2url: /docs/about
+
+- h1: Chatting
+  h2:
+    - h2name: Culture/Rules
+      h2url: /docs/culture
+    - h2name: Roles
+      h2url: /docs/roles
+    - h2name: Group Study
+      h2url: /docs/pomodoro
+    - h2name: Bots
+      h2url: /docs/bots
+
+- h1: Documents
+  h2:
+    - h2name: Licenses
+      h2url: /docs/licenses
+    - h2name: Contributing
+      h2url: /docs/dev
+    
+      
