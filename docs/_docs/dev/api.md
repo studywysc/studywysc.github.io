@@ -1,18 +1,18 @@
 ---
-layout: kbdocs
-title:  "&#8203;Wysc APIs"
-category: "Contributor Hub"
-catsub: "APIs"
-last_updated: 24 Nov 2019
+layout: jtdocs
+title:  "Wysc APIs"
+title-sub: "Contributing"
 summary: "Our documentation and API center for the technology that makes Wysc possible. Integrate Wysc into your product!"
 redirect_from:
-  - dev
-  - docs/about/dev/1
   - api
   - docs/about/api
   - docs/about/dev/api
   - docs/dev/blog
   - docs/dev/search
+  - changelog
+  - docs/about/changelog
+  - docs/about/dev/changelog
+  - docs/dev/changelog
 ---
 
 ### Introduction
@@ -43,15 +43,38 @@ Wysc’s RSS feed for blog posts is generated using Jekyll. With our custom blog
 Wysc no longer uses Medium for blog content.
 
 
+
+### Changelog API
+
+```
+https://api.github.com/repos/coffeebank/wysc/commits
+```
+
+Wysc Changelog API is supported by GitHub. [See Github Developer Guide for more information on how to use the GitHub REST API.](https://developer.github.com/v3/repos/commits/)
+
+All Wysc Website update notes are listed under the Git commits log on GitHub. [Click here to see the list of commits on Wysc GitHub visually.](https://github.com/coffeebank/wysc/commits/master)
+
+
 ### Search API
 
 ```
 /api/search.json
 ```
 
-The Search API is automatically updated whenever there is an update to the website, and contains all the Wysc Docs contents in a lightweight file.
+The Wysc Docs Search API is automatically updated whenever there is an update to the website, and contains all the Wysc Docs contents in a lightweight file.
 
 Wysc no longer uses Algolia for search.
+
+
+```
+https://discordapp.com/api/channels/{channel.id}/messages
+```
+
+The Wysc Discord Search API is supported by Discord. [See Discord Developer Portal for more information on how to use the Discord API.](https://discordapp.com/developers/docs/resources/channel#get-channel-messages)
+
+Channel IDs can be obtained by visiting Wysc [and following these directions](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
+
+
 
 
 ### Status API

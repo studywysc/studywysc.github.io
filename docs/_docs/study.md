@@ -15,6 +15,11 @@ Pomodoro is a popular study technique where you study and take breaks in a desig
 
 Wysc integrates [PomoBot](https://github.com/Intery/PomoBot){: target="_blank" rel="noopener"} to provide group study functionality for our members. Hosting is generously provided by [Puerøsøla](/docs/credits#PomoBot).
 
+
+* TOC
+{:toc}
+
+
 ### How to use the pomo bot
 
 The pomo bot was created to help you work progressively and focused on your studies and other productive activity. All credits go to Conatum, thank you very much for your efforts in programming this masterpiece!
@@ -92,7 +97,7 @@ More handy commands:
 ,pfocus           gives/removes the Focus role, which removes channels that would distract you from your study session
 ```
 
-**Notifications**
+### Notifications
 
 First, have a look at the different notification levels:
 ```

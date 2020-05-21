@@ -61,20 +61,20 @@
                                         <span property="name">Docs</span></a>
                                         <meta property="position" content="1">
                                     </li>
-                                    {% assign contentcount = 2 %}
+                                    {% assign countingit = 1 %}
                                     {% for eachtsub in page.title-sub %}
                                         {% assign searchtsub = site.documents | where:"title",eachtsub %}
                                         <li property="itemListElement" typeof="ListItem" class="mx-2">
                                             <a property="item" typeof="WebPage"
                                                 href="{% for stsurl in searchtsub %}{{ stsurl.url | relative_url }}{% endfor %}">
                                             <span property="name">{{ eachtsub }}</span></a>
-                                            <meta property="position" content="{% increment contentcount %}">
+                                            <meta property="position" content="{% assign countingit = countingit | plus:1 %}{{ countingit }}">
                                         </li>
                                         ›
                                     {% endfor %}
                                     <li property="itemListElement" typeof="ListItem" class="mx-2">
                                         <span property="name">{{ page.title }}</span>
-                                        <meta property="position" content="{% increment contentcount %}">
+                                        <meta property="position" content="{% assign countingit = countingit | plus:1 %}{{ countingit }}">
                                     </li>
                                 </ol>
                             </div>

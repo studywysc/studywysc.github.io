@@ -1,6 +1,7 @@
 ---
 layout: jtdocs
 title:  "Credits"
+title-sub: "Contributing"
 summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible."
 redirect_from:
   - credits

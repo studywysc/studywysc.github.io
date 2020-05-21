@@ -18,8 +18,8 @@
 
 - h1: Documents
   h2:
-    - h2name: Credits
-      h2url: /docs/credits
+    - h2name: Licenses
+      h2url: /docs/licenses
     - h2name: Contributing
       h2url: /docs/dev
     

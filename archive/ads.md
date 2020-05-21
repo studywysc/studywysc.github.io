@@ -1,14 +1,13 @@
 ---
-layout: kbdocs
-title:  "Culture: Advertising"
-category: "Wysc Discord"
-catsub: "Content Policy"
-last_updated: 3 Apr 2020
+layout: jtdocs
+title:  "Advertising"
+title-sub: "Culture/Rules"
+summary: "Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. Other Culture/Rules still apply."
 redirect_from:
   - ads
+  - docs/discord/ads
 ---
 
-Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. [Rules and Culture](/docs/discord/culture) still apply.
 
 ### Seed users
 

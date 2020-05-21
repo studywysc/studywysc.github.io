@@ -12,11 +12,20 @@ redirect_from:
   - docs/discord/content/1
   - docs/discord/1
   - docs/discord/culture
+  - ads
+  - docs/discord/ads
+  - surveys
+  - docs/discord/data
+  - docs/discord/content/surveys
+  - docs/discord/content/data
+  - collectdata
 ---
 
 <p class="p-4" style="font-size:36px">Don't be a dick.</p>
 
 This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** [See our Prohibited Activities](#what-do-we-really-hate) for specific activities we'll take strong action against.
+
+Be nice to everyone, be aware of the community, and everything will work out! 🌸
 
 <br>
 
@@ -39,17 +48,75 @@ Wysc is all about community. There aren't "moderators" or "owners" in the tradit
 
 ### What do we really hate?
 
-Hate's a strong word. There really isn't a lot we require from you as a user, but here are specific things Wysc takes very seriously:
+Because some users are adamant about behaving inappropriately, we have compiled a short list of things below that we take very seriously. Your messages may be deleted and your account may be subject to administrative action should they violate the policies below:
 
-- [Advertising](ads)
-- [Data Collection (including surveys)](data)
-- Requesting help from others disrespectfully
+- [Advertising](#advertising)
+- [Data Collection (including surveys)](#data-collection)
+- Requesting help, especially homework, from others disrespectfully
   - Especially when you're a new user and/or doing it repeatedly
   - Wysc is **not** a tutoring server. Do not demand help for your homework.
-- DM'ing users without permission beforehand
+- Unsolicited DMs (aka. sending unwanted DMs to other users)
 - Excessive drug related messages and paraphernalia
 - Explicit material (including porn)
 
 This isn't an exhaustive list, and it shouldn't be. We shouldn't need to list out what is and isn't required of you to be a member of a community. Common sense and common decency should be the norm.
 
-Just be nice to everyone, and everything will work out! 🌸
+
+
+#### Advertising
+
+Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. Rules/Culture still apply.
+
+- **Seed users**  
+  All Seed users are **prohibited from engaging in any advertising behavior, with any Wysc user, on any Wysc property**. We do not believe new members are well acquainted enough with our community to advertise in Wysc. If you have content that falls under advertising but is relevant to a conversation, you may share it under `#bots-spam`, though Wysc members reserve deletion rights and right to enact administrative action.  
+
+- **Sprout users**  
+  All Sprout users are allowed to engage in advertising behavior within reason in relevant channels, **except for #lounge**. All advertising must be accompanied by relevant conversation. Wysc members reserve deletion rights and right to enact administrative action.  
+
+- **Sapling and above users**  
+  All Sapling and above users are allowed to engage in advertising behavior, serverwide, within reason.
+
+
+#### Data Collection
+
+**Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, please be aware that we do not appreciate new members joining, not participating in our community in good faith, and then using us for your benefit.
+
+All surveys (educational or otherwise), similar to any other attempts at data collection, are subject to the data collection guidelines below.
+
+- **Seed users**  
+  All Seed users are **forbidden** from engaging in **any** data collection behavior.  
+
+- **Sprout users**  
+  All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/) with all data collection, as well as the following requirements:  
+    - All info relevant to the data collection must be posted together in #liberal-arts, no more than once
+    - Results must be published to Wysc
+    - Leaving the server means your messages are subject to deletion
+    
+  <br>
+  Fill in this form correctly in Discord to confirm you will follow GDPR standards:
+
+```
+---
+
+**GDPR Compliance  ---**
+
+**Subject Title:** 
+**Description:** 
+
+**I need your data because:** 
+**I will collect and store the data by using:** 
+**I will process the data by using:** 
+**I will keep your data for at most:** ___ days
+
+**All Wysc users have the right to:**
+-  Access their data at any time
+-  Withdraw their consent at any time, and have their data be deleted
+-  Ask questions about how their data is being used
+
+---
+```  
+
+- **Sapling and above users**  
+  All Sapling and above users are free to engage in data collection (including surveys) within reason.
+    
+  Other types of data collection may require special arrangements with Wysc Staff, who are reachable in `#support`.

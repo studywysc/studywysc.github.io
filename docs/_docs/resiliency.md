@@ -1,11 +1,12 @@
 ---
-layout: kbdocs
+layout: jtdocs
 title:  "Resiliency Report"
-category: "About Wysc"
-catsub: "Brand & Design"
-last_updated: 19 Apr 2020
+title-sub:
+  - "Licenses"
+  - "Brand Guidelines"
 summary: "Wysc takes intellectual property seriously. Our strategy for intellectual property resilience is simple."
 redirect_from:
+  - docs/about/resiliency
   - resilience
   - resiliency
 ---
@@ -19,7 +20,7 @@ For more information about what you're allowed to copy from Wysc, see our [Licen
 
 ### Channels and Purpose
 
-The easiest part of Wysc to copy is the channels we have. We aren't shy about our channels -- after all, most of the ideas for the channel names and purposes have come from our need of serving our community. Wysc's server setup, however, is substantially more complex and involves many features at work.
+The easiest part of Wysc to copy is the channels we have. We aren't shy about our channels -- after all, most of the ideas for the channel names and purposes have come from our need of serving our community. Wysc's server setup behind the scenes, however, is substantially more complex and involves many features that work in tandem.
 
 **We believe that the way members, roles, and channel permissions interact with each other in Wysc is a distinct part of the Wysc experience, that this experience is difficult to replicate without assistance, and that any attempt to fraudulently replicate Wysc without proper implementation of this experience would be inferior.**
 
