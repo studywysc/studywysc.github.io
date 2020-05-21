@@ -3,6 +3,7 @@ layout: jtdocs
 headername: Docs
 title: Welcome to Wysc Docs!
 title-sub: Getting Started
+breadcrumbs: false
 summary: Wysc Docs is the primary resource for all users, students, and visitors of Wysc.
 
 # see docs/_data/jtnav.yml for Docs sidebar
