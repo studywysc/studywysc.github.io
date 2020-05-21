@@ -39,42 +39,63 @@
                 <div class="w-full xl:w-4/5 px-4 md:px-16" style="max-width:900px;">
 
                     <div id="content"></div>
-                    <div class="pt-32 xl:pt-12"></div>
                     
                     {% if page.title-sub %}
-                        <div class="pb-4 xl:pb-6">
+                        <div class="pt-32 xl:pt-6">
                             <div id="statusapi"></div>
                         </div>
                     {% else %}
-                        <div class="pb-8 xl:pb-12">
+                        <div class="pt-32 xl:pt-6 xl:pb-4">
                             <div id="statusapi"></div>
                         </div>
                     {% endif %}
 
+                    <!-- breadcrumbs / SEO -->
                     {% if page.title-sub %}
-                        {% if breadcrumbs != false %}
-                            {% assign contentcount = 1 %}
-                            <div class="pb-8 xl:pb-10">
-                                <div class="rounded shadow bg-sidebar-bg px-6 py-4">
-                                    <ol vocab="https://schema.org/" typeof="BreadcrumbList" class="flex flex-wrap -ml-2 text-mono-52 select-none">
-                                        {% for eachtsub in page.title-sub %}
-                                            {% assign searchtsub = site.documents | where:"title",eachtsub %}
-                                            <li property="itemListElement" typeof="ListItem" class="mx-2">
-                                                <a property="item" typeof="WebPage"
-                                                    href="{% for stsurl in searchtsub %}{{ stsurl.url | relative_url }}{% endfor %}">
-                                                <span property="name">{{ eachtsub }}</span></a>
-                                                <meta property="position" content="{{ contentcount }}{% increment contentcount %}">
-                                            </li>
-                                            ›
-                                        {% endfor %}
+                        <div class="pb-10 {% if breadcrumbs == false %} hidden{% endif %}">
+                            <div class="rounded shadow bg-sidebar-bg px-6 py-4">
+                                <ol vocab="https://schema.org/" typeof="BreadcrumbList" class="flex flex-wrap -ml-2 text-mono-52 select-none">
+                                    <li property="itemListElement" typeof="ListItem" class="mx-2 hidden">
+                                        <a property="item" typeof="WebPage"
+                                        href="/docs">
+                                        <span property="name">Docs</span></a>
+                                        <meta property="position" content="1">
+                                    </li>
+                                    {% assign contentcount = 2 %}
+                                    {% for eachtsub in page.title-sub %}
+                                        {% assign searchtsub = site.documents | where:"title",eachtsub %}
                                         <li property="itemListElement" typeof="ListItem" class="mx-2">
-                                            <span property="name">{{ page.title }}</span>
-                                            <meta property="position" content="{{ contentcount }}">
+                                            <a property="item" typeof="WebPage"
+                                                href="{% for stsurl in searchtsub %}{{ stsurl.url | relative_url }}{% endfor %}">
+                                            <span property="name">{{ eachtsub }}</span></a>
+                                            <meta property="position" content="{% increment contentcount %}">
                                         </li>
-                                    </ol>
-                                </div>
+                                        ›
+                                    {% endfor %}
+                                    <li property="itemListElement" typeof="ListItem" class="mx-2">
+                                        <span property="name">{{ page.title }}</span>
+                                        <meta property="position" content="{% increment contentcount %}">
+                                    </li>
+                                </ol>
                             </div>
-                        {% endif %}
+                        </div>
+                    {% else %}
+                        <div class="hidden">
+                            <div class="rounded shadow bg-sidebar-bg px-6 py-4">
+                                <ol vocab="https://schema.org/" typeof="BreadcrumbList">
+                                    <li property="itemListElement" typeof="ListItem">
+                                        <a property="item" typeof="WebPage"
+                                        href="/docs">
+                                        <span property="name">Docs</span></a>
+                                        <meta property="position" content="1">
+                                    </li>
+                                    <li property="itemListElement" typeof="ListItem" class="mx-2">
+                                        <span property="name">{{ page.title }}</span>
+                                        <meta property="position" content="2">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
                     {% endif %}
 
                     <h1 class="jtbody-text-title pb-2 text-4xl">{{ page.title }}</h1>
