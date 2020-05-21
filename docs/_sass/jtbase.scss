@@ -1,0 +1,111 @@
+html {
+    font-family: "Mada",-apple-system,BlinkMacSystemFont,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    color: var(--text-base);
+    background-color: var(--body-base);
+    transition: all 0.2s ease;
+	scroll-behavior: smooth;
+}
+.text-text-base {
+    color: var(--text-base);
+}
+.bg-sidebar-bg {
+    background-color: var(--sidebar-bg);
+}
+.bg-body-base {
+    background-color: var(--body-base);
+}
+h1 {
+    color: var(--text-h1);
+}
+h2 {
+    color: var(--text-h2);
+}
+h3 {
+    font-size: 1.65rem;
+    padding-top: 5.65rem;
+    margin-top: -3rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+    color: var(--text-h3);
+}
+h4 {
+    font-size: calc(var(--text-size) * 1.25);
+    padding-top: 4rem;
+    margin-top: -3rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: calc(var(--text-size) * 1.1);
+    padding-top: 3.5rem;
+    margin-top: -3rem;
+    padding-bottom: 0.75rem;
+}
+p {
+    font-size: var(--text-size);
+    margin-bottom: var(--text-mb);
+    line-height: 1.75;
+}
+a > div {
+    transition: background-color 0.2s ease-in-out;
+}
+a {
+    color: var(--text-link);
+    transition: color 0.2s ease-in-out;
+}
+    a:hover {
+        color: var(--text-link-hover);
+    }
+    .jtsidebar a, .jtsidebar a:hover, .jtbody-topbar a, .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
+        color: var(--text-base);
+    }
+code { /* overridden by pre code */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.95em;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+}
+img {
+    border-radius: var(--text-rounded);
+}
+pre {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: var(--text-rounded);
+    margin-bottom: var(--text-mb);
+    overflow-x: auto;
+}
+pre code {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: transparent;
+    border-radius: 0rem;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+li {
+    font-size: calc(var(--text-size) * 0.95);
+}
+.jtsidebar ul, .modal__container ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.jtbodycontent .jtbodytext ol, .jtbodycontent .jtbodytext ul {
+    margin-top: 0;
+    margin-bottom: var(--text-mb);
+}
+.jtbodycontent .jtbodytext ol ol, .jtbodycontent .jtbodytext ul ol, .jtbodycontent .jtbodytext ol ul, .jtbodycontent .jtbodytext ul ul {
+    margin-top: 0;
+    margin-bottom: calc(var(--text-mb) * 0.25);
+}

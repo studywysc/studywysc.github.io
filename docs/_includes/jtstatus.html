@@ -15,14 +15,14 @@
         let div = createNode('div');
         if (status.isup == false){
             if (status.howsevere == 'high'){
-                div.className = 'pb-8 xl:pb-12';
-                div.innerHTML = `<div class="rounded shadow text-stable-wysc-gray bg-red-700 px-6 py-4"><b>${status.isupemoji}&ensp;${status.title} Issue</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a></div>`;
+                div.className = 'rounded shadow text-stable-wysc-gray bg-red-700 px-6 py-4';
+                div.innerHTML = `<b>${status.isupemoji}&ensp;${status.title} Issue</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a>`;
             } else if (status.howsevere == 'medium'){
-                div.className = 'pb-8 xl:pb-12';
-                div.innerHTML = `<div class="rounded shadow text-stable-wysc-gray bg-pink-700 px-6 py-4"><b>${status.isupemoji}&ensp;${status.title} Issue</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a></div>`;
+                div.className = 'rounded shadow text-stable-wysc-gray bg-pink-700 px-6 py-4';
+                div.innerHTML = `<b>${status.isupemoji}&ensp;${status.title} Issue</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a>`;
             } else if (status.howsevere == 'low'){
-                div.className = 'pb-8 xl:pb-12';
-                div.innerHTML = `<div class="rounded shadow text-stable-wysc-gray bg-green-800 px-6 py-4"><b>${status.isupemoji}&ensp;${status.title}</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a></div>`;
+                div.className = 'rounded shadow text-stable-wysc-gray bg-green-800 px-6 py-4';
+                div.innerHTML = `<b>${status.isupemoji}&ensp;${status.title}</b><br>${status.notes} <a href="${status.readmore}" class="underline" style="color:var(--stable-wysc-gray);">Read more</a>`;
             } else {}
         } else {}
         append(statusapi, div);

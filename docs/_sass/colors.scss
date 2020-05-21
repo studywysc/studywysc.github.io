@@ -1,0 +1,174 @@
+// base
+
+$rootautolight: (
+    wysc-light: hsl(0, 0%, 98%),
+    wysc-dark: hsl(0, 0%, 12%),
+    wysc-dark-2: hsl(0, 0%, 14%),
+    wysc-gray: hsl(0, 0%, 92%),
+    wysc-gray-2: hsl(0, 0%, 90%),
+    wysc-red: hsl(15, 46%, 39%),
+    wysc-red-2: hsl(15, 46%, 29%),
+);
+$rootautodark: (
+    wysc-light: hsl(0, 0%, 12%),
+    wysc-dark: hsl(0, 0%, 92%),
+    wysc-dark-2: hsl(0, 0%, 90%),
+    wysc-gray: hsl(0, 0%, 22%),
+    wysc-gray-2: hsl(0, 0%, 24%),
+    wysc-red: hsl(15, 51%, 69%),
+    wysc-red-2: hsl(15, 51%, 74%),
+);
+$mono-tones: (
+    mono-6: hsl(0, 0%, 6%),
+    mono-12: hsl(0, 0%, 12%),
+    mono-14: hsl(0, 0%, 14%),
+    mono-17: hsl(0, 0%, 17%),
+    mono-22: hsl(0, 0%, 22%),
+    mono-32: hsl(0, 0%, 32%),
+    mono-42: hsl(0, 0%, 42%),
+    mono-52: hsl(0, 0%, 52%),
+    mono-62: hsl(0, 0%, 62%),
+    mono-72: hsl(0, 0%, 72%),
+    mono-82: hsl(0, 0%, 82%),
+    mono-84: hsl(0, 0%, 84%),
+    mono-87: hsl(0, 0%, 87%),
+    mono-90: hsl(0, 0%, 90%),
+    mono-92: hsl(0, 0%, 92%),
+    mono-94: hsl(0, 0%, 94%),
+    mono-96: hsl(0, 0%, 96%),
+    mono-98: hsl(0, 0%, 98%),
+);
+
+// variables
+
+$rootlight: (
+    --sidebar-bg: var(--stable-wysc-light),
+    --sidebar-bg-border: hsl(0, 0%, 88%),
+    --jtnav-text-h2: #2c7a7b,
+    --body-base: hsl(0, 0%, 100%),
+    --text-base: var(--stable-wysc-dark),
+    --text-title: var(--wysc-red),
+    --text-lead: hsl(0, 0%, 18%),
+    --text-link: var(--wysc-red),
+    --text-link-hover: var(--wysc-red-2),
+    --text-h1: var(--stable-wysc-dark),
+    --text-h2: var(--stable-wysc-dark),
+    --text-h3: var(--stable-wysc-dark),
+    --text-divider: hsl(0, 0%, 88%),
+);
+$rootdark: (
+    --sidebar-bg: hsl(0, 0%, 6%),
+    --sidebar-bg-border: hsl(0, 0%, 14%),
+    --jtnav-text-h2: #81E6D9,
+    --body-base: var(--stable-wysc-dark),
+    --text-base: var(--wysc-dark),
+    --text-title: var(--wysc-red),
+    --text-lead: var(--wysc-dark-2),
+    --text-link: var(--wysc-red),
+    --text-link-hover: var(--wysc-red-2),
+    --text-h1: hsl(0, 0%, 98%),
+    --text-h2: hsl(0, 0%, 96%),
+    --text-h3: hsl(0, 0%, 94%),
+    --text-divider: hsl(0, 0%, 48%),
+);
+
+
+// the engine that runs it all
+
+
+// making the var css
+@mixin mono {
+    @each $name, $value in $mono-tones {
+        & {
+            --#{$name}: #{$value};
+        }
+    }
+}
+@mixin rootlight {
+    & {
+        @each $name, $value in $rootautolight {
+            --stable-#{$name}: #{$value};
+        }
+        @each $name, $value in $rootautolight {
+            --#{$name}: #{$value};
+        }
+        @each $name, $value in $rootlight {
+            #{$name}: #{$value};
+        }
+    }
+}
+@mixin rootdark {
+    & {
+        @each $name, $value in $rootautodark {
+            --#{$name}: #{$value};
+        }
+        @each $name, $value in $rootdark {
+            #{$name}: #{$value};
+        }
+    }
+}
+// making the class names
+@mixin mono-tones($attribute, $suffix: '') {
+    @each $name, $value in $mono-tones {
+        &-#{$name}#{$suffix} {
+            #{$attribute}: #{$value};
+        }
+    }
+}
+@mixin rootautolight($attribute, $suffix: '') {
+    @each $name, $value in $rootautolight {
+        &-#{$name}#{$suffix} {
+            #{$attribute}: #{$value};
+        }
+    }
+}
+@mixin rootautodark($attribute, $suffix: '') {
+    @each $name, $value in $rootautodark {
+        &-#{$name}#{$suffix} {
+            #{$attribute}: #{$value};
+        }
+    }
+}
+
+
+html, html[data-theme="light"] {
+    @include mono;
+    @include rootlight;
+    .text {
+        @include rootautolight($attribute: 'color');
+        @include mono-tones($attribute: 'color');
+    }
+    .bg {
+        @include rootautolight($attribute: 'background-color');
+        @include mono-tones($attribute: 'background-color');
+    }
+    .hover {
+        @include rootautolight($attribute: 'background-color', $suffix: ':hover');
+        @include mono-tones($attribute: 'background-color', $suffix: ':hover');
+    }
+}
+
+html[data-theme="dark"] {
+    @include rootdark;
+    .text {
+        @include rootautodark($attribute: 'color');
+        @include mono-tones($attribute: 'color', $suffix: '-dark');
+    }
+    .bg {
+        @include rootautodark($attribute: 'background-color');
+        @include mono-tones($attribute: 'background-color', $suffix: '-dark');
+    }
+    .hover {
+        @include rootautodark($attribute: 'background-color', $suffix: ':hover');
+        @include mono-tones($attribute: 'background-color', $suffix: '-dark:hover');
+    }
+}
+
+.text-stable {
+    @include rootautolight($attribute: 'color');
+    @include mono-tones($attribute: 'color');
+}
+.bg-stable {
+    @include rootautolight($attribute: 'background-color');
+    @include mono-tones($attribute: 'background-color');
+}
