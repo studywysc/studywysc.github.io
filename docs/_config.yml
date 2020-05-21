@@ -31,7 +31,6 @@ markdown: kramdown
 theme: "just-the-docs"
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
   - jekyll-redirect-from
 feed:
   path: /api/feed.xml
@@ -39,9 +38,6 @@ permalink: /blog/:year/:title:output_ext
 
 search_enabled: true
 search_tokenizer_separator: /[\s/]+/
-# algolia:
-#   index_name: Wysc
-#   application_id: 'HRA929IBAN'
 
 # Collections
 collections:
@@ -62,15 +58,6 @@ collections:
     output: true
 
 destination: _site
-
-breadcrumbs:
-  root:
-    hide: false  # show breadcrumbs on root/home page
-    image: false # Show image or title text
-
-toc:
-  min_level: 3 # default: 1
-  max_level: 4 # default: 6
 
 include:
   - _headers
