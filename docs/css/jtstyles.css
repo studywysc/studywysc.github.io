@@ -9,12 +9,16 @@ html, html[data-theme="light"] {
     /* Base Colors */
     --stable-wysc-light: hsl(0, 0%, 98%);
     --stable-wysc-dark: hsl(0, 0%, 12%);
+    --stable-wysc-dark-2: hsl(0, 0%, 14%);
     --stable-wysc-gray: hsl(0, 0%, 92%);
+    --stable-wysc-gray-2: hsl(0, 0%, 90%);
     --stable-wysc-red: hsl(15, 46%, 39%);
     --stable-wysc-red-2: hsl(15, 46%, 29%);
     --wysc-light: var(--stable-wysc-light);
     --wysc-dark: var(--stable-wysc-dark);
+    --wysc-dark-2: var(--stable-wysc-dark-2);
     --wysc-gray: var(--stable-wysc-gray);
+    --wysc-gray-2: var(--stable-wysc-gray-2);
     --wysc-red: var(--stable-wysc-red);
     --wysc-red-2: var(--stable-wysc-red-2);
 
@@ -37,7 +41,9 @@ html[data-theme="dark"] {
     /* Base Colors */
     --wysc-light: hsl(0, 0%, 12%);
     --wysc-dark: hsl(0, 0%, 92%);
+    --wysc-dark-2: hsl(0, 0%, 90%);
     --wysc-gray: hsl(0, 0%, 22%);
+    --wysc-gray-2: hsl(0, 0%, 24%);
     --wysc-red: hsl(15, 51%, 69%);
     --wysc-red-2: hsl(15, 51%, 74%);
 
@@ -46,9 +52,9 @@ html[data-theme="dark"] {
     --sidebar-bg-border: hsl(0, 0%, 14%);
     --jtnav-text-h2: #81E6D9;
     --body-base: var(--stable-wysc-dark);
-    --text-base: hsl(0, 0%, 92%);
+    --text-base: var(--wysc-dark);
     --text-title: var(--wysc-red);
-    --text-lead: hsl(0, 0%, 90%);
+    --text-lead: var(--wysc-dark-2);
     --text-link: var(--wysc-red);
     --text-link-hover: var(--wysc-red-2);
     --text-h1: hsl(0, 0%, 98%);
@@ -99,8 +105,20 @@ html[data-theme="dark"] {
 .text-stable-wysc-dark {
     color: var(--stable-wysc-dark);
 }
+.text-stable-wysc-dark-2 {
+    color: var(--stable-wysc-dark);
+}
 .text-stable-wysc-gray {
     color: var(--stable-wysc-gray);
+}
+.text-wysc-gray {
+    color: var(--wysc-gray);
+}
+.text-wysc-gray-2 {
+    color: var(--wysc-gray-2);
+}
+.text-stable-wysc-gray-2 {
+    color: var(--stable-wysc-gray-2);
 }
 .text-stable-wysc-red {
     color: var(--stable-wysc-red);

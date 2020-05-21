@@ -2,7 +2,7 @@
   "wysc":[
     {
       "title": "Wysc Services",
-      "isup": true,
+      "isup": false,
       "isupemoji": "🚧",
       "howsevere": "high",
       "notes":"Wysc Docs is currently undergoing a remodel. Some links, features, and areas of the user interface may be broken. We apologize for any inconveniences.",
