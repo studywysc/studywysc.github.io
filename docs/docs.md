@@ -31,10 +31,12 @@ Wysc has a host of features that help you interact with the community better. Ch
 Mobile users can see the Sidebar by clicking&ensp;&#9776;&ensp;in the top left corner.
 {: .lg:hidden}
 
-[See Group Study](/docs/study){: .jtbutton .my-1 .md:my-0 .md:mr-2}<br>{: md:hidden}
-[See Group Events](/docs/events){: .jtbutton .my-1 .md:my-0 .md:mr-2}<br>{: md:hidden}
-[See Bots](/docs/bots){: .jtbutton .my-1 .md:my-0 .md:mr-2}
+[See Group Study](/docs/study){: .jtbutton .sm:mr-2}
+<br class="sm:hidden"><br class="sm:hidden">
+[See Group Events](/docs/events){: .jtbutton .sm:mr-2}
+<br class="sm:hidden"><br class="sm:hidden">
+[See Bots](/docs/bots){: .jtbutton .sm:mr-2}
 
 ### Questions? We're here.
 
-You can reach us in our Discord's `#support` channel or from our [Contact Us page](/docs/contact) anytime.
+Reach us in our Discord's `#support` channel or from our [Contact Us page](/docs/contact) anytime!
