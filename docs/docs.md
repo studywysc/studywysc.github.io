@@ -31,9 +31,9 @@ Wysc has a host of features that help you interact with the community better. Ch
 Mobile users can see the Sidebar by clicking&ensp;&#9776;&ensp;in the top left corner.
 {: .lg:hidden}
 
-[See Group Study](/docs/study){: .jtbutton .mr-2}
-[See Group Events](/docs/events){: .jtbutton .mr-2}
-[See Bots](/docs/bots){: .jtbutton .mr-2}
+[See Group Study](/docs/study){: .jtbutton .w-full .md:w-auto .md:mr-2}
+[See Group Events](/docs/events){: .jtbutton .w-full .md:w-auto .md:mr-2}
+[See Bots](/docs/bots){: .jtbutton .w-full .md:w-auto .md:mr-2}
 
 ### Questions? We're here.
 
