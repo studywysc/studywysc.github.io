@@ -12,7 +12,7 @@
     - h2name: Roles
       h2url: /docs/roles
     - h2name: Group Study
-      h2url: /docs/pomodoro
+      h2url: /docs/study
     - h2name: Bots
       h2url: /docs/bots
 

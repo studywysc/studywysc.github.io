@@ -2,7 +2,7 @@ html {
     font-family: "Mada",-apple-system,BlinkMacSystemFont,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
     color: var(--text-base);
     background-color: var(--body-base);
-    transition: all 0.2s ease;
+    // transition: all 0.2s ease; data-theme was being bad :(
 	scroll-behavior: smooth;
 }
 .text-text-base {
@@ -46,13 +46,15 @@ p {
     margin-bottom: var(--text-mb);
     line-height: 1.75;
 }
-a > div {
-    transition: background-color 0.2s ease-in-out;
-}
 a {
     color: var(--text-link);
-    transition: color 0.2s ease-in-out;
 }
+    .jtbodytext a {
+        transition: color 0.2s ease-in-out;
+    }
+    a > div {
+        transition: background-color 0.2s ease-in-out;
+    }
     a:hover {
         color: var(--text-link-hover);
     }

@@ -1,5 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+<script>
+    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+    let theme = localStorage.getItem('theme');
+
+    // function prefersColorTest(systemInitiatedDark) {
+    // if (systemInitiatedDark.matches) {
+    //     document.documentElement.setAttribute('data-theme', 'dark');
+    //     localStorage.setItem('theme', '');
+    // } else {
+    //     document.documentElement.setAttribute('data-theme', 'light');
+    //     localStorage.setItem('theme', '');
+    // }
+    // }
+    // systemInitiatedDark.addListener(prefersColorTest);
+
+    function modeSwitcher() {
+        let theme = localStorage.getItem('theme');
+        if (theme === "dark") {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }	else if (theme === "light") {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        // } else if (systemInitiatedDark.matches) {	
+        //     document.documentElement.setAttribute('data-theme', 'light');
+        //     localStorage.setItem('theme', 'light');
+        //     //let theme = localStorage.getItem('theme');
+        //     //console.log("this was triggered");
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    if (theme === "dark") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else if (theme === "light") {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+</script>
+<link rel="stylesheet" href="/css/fontsdefer.css">
 {% include jthead.html %}
 <body>
     <div class="flex no-wrap w-full h-screen overflow-hidden">
@@ -114,14 +157,14 @@
                     {% include jtfooter.html %}
 
                     <!-- sm-md-lg top bar -->
-                    <ul class="flex absolute top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar xl:hidden jtbody-topbar list-none">
+                    <ul class="flex absolute top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar xl:hidden jtbody-topbar list-none overflow-x-auto" style="max-width:calc(100% - 2rem);">
                         <li class="inline-block lg:hidden p-2 px-4">
                             <a class="cursor-pointer" title="Open Menu" data-micromodal-trigger="modal-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                             </a>
                         </li>
 
-                        <!-- md menu (sm has bottom nav, lg has sidebar) -->
+                        <!-- md menu (lg has sidebar) -->
                         <li class="inline-block p-2 pl-6 hidden md:block lg:hidden">
                             <a href="/">Home</a>
                         </li>
@@ -131,6 +174,7 @@
                         <li class="inline-block p-2 px-6 hidden md:block lg:hidden">
                             <a href="/docs">Docs</a>
                         </li>
+
                         <li class="inline-block p-2 px-4">
                             <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -156,9 +200,21 @@
                                     <svg class="pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                 </div>
 
+                                <li class="inline-block p-2 pl-6 md:hidden">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="inline-block p-2 pl-6 md:hidden">
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                <li class="inline-block p-2 px-6 md:hidden">
+                                    <a href="/docs">Docs</a>
+                                </li>
+
                                 <div class="w-full px-3 mt-4">
-                                    <a href="/docs/m/search">                                            
-                                        <input type="disabled" class="w-full px-2 py-1 rounded bg-body-base text-text-base cursor-pointer" placeholder="Search Docs" aria-label="Go to the mobile Search Docs page" autocomplete="off">
+                                    <a href="/docs/m/search" class="w-full">              
+                                        <div class="w-full px-2 py-1 rounded bg-body-base text-text-base">                                            
+                                            Search Docs
+                                        </div>
                                     </a>
                                 </div>
 
@@ -167,35 +223,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="md:hidden">
-                        <ul class="flex absolute bottom-0 right-0 mb-2 mr-4 p-4 rounded shadow-lg bg-jtsidebar jtbody-botbar list-none select-none" role="navigation" aria-label="Mobile version of navigation">
-                            <li class="inline-block pt-2 px-4">
-                                <a href="/" title="Home">
-                                    <div class="flex flex-col items-center align-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                        <div>Home</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inline-block pt-2 px-4">
-                                <a href="/blog" title="Blog">
-                                    <div class="flex flex-col items-center align-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                                        <div>Blog</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inline-block pt-2 px-4">
-                                <a href="/docs" title="Docs">
-                                    <div class="flex flex-col items-center align-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                        <div>Docs</div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
@@ -231,49 +258,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
-        let theme = sessionStorage.getItem('theme');
-
-        function prefersColorTest(systemInitiatedDark) {
-        if (systemInitiatedDark.matches) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            sessionStorage.setItem('theme', '');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            sessionStorage.setItem('theme', '');
-        }
-        }
-        systemInitiatedDark.addListener(prefersColorTest);
-
-        function modeSwitcher() {
-            let theme = sessionStorage.getItem('theme');
-            if (theme === "dark") {
-                document.documentElement.setAttribute('data-theme', 'light');
-                sessionStorage.setItem('theme', 'light');
-            }	else if (theme === "light") {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                sessionStorage.setItem('theme', 'dark');
-            } else if (systemInitiatedDark.matches) {	
-                document.documentElement.setAttribute('data-theme', 'light');
-                sessionStorage.setItem('theme', 'light');
-                //let theme = sessionStorage.getItem('theme');
-                //console.log("this was triggered");
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                sessionStorage.setItem('theme', 'dark');
-            }
-        }
-
-        if (theme === "dark") {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            sessionStorage.setItem('theme', 'dark');
-        } else if (theme === "light") {
-            document.documentElement.setAttribute('data-theme', 'light');
-            sessionStorage.setItem('theme', 'light');
-        }
-    </script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script>
         MicroModal.init({

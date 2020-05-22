@@ -13,13 +13,12 @@ Wysc was founded in 2017 by two high school students looking for an open, friend
 Today, Wysc continues to focus on our community members, who help collectively keep our virtual study space warm and friendly. Together, Wysc has grown to be a great place for both studying and chilling. We hope you come to enjoy it as much as our community has.
 
 
-### Credits
+### Our Team
 
-Wysc is built on top of the contributions of many stellar creations, all of which are brought together to provide the Wysc experience.
+Wysc is built on top of the contributions of many community members, using a wide range of stellar creations. Wysc was a result of a team effort.
 
-To see the licenses and attributions of the many third party services that have made Wysc possible, see our Credits page. **Any services featured is not an indication of the service's endorsement of Wysc.**
+[See Contributors](/docs/dev/contributors){: .jtbutton}
 
-[See Credits](/docs/credits){: .jtbutton}
 
 ### Contact Us
 
@@ -32,11 +31,3 @@ Find us in the `#support` channel on Discord! You can also reach out to us below
 The life of a Discord server often ebbs and flows. However, we want to commit to core values no matter where we decide to forge ahead in the future.
 
 [See Values](/docs/values){: .jtbutton}
-
-
-### Licenses, Terms, and Privacy
-
-Looking for our page of legal resources? Find what you're looking for at our Licenses page.
-
-[See Licenses](/docs/licenses){: .jtbutton}
-

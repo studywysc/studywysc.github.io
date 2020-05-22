@@ -10,7 +10,7 @@ summary: Wysc Docs is the primary resource for all users, students, and visitors
 
 ---
 
-![Wysc Docs landing image](/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg){: .w-full .sm:w-1/2 .xl:w-2/3}
+<!-- ![Wysc Docs landing image](/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg){: .w-full .sm:w-1/2 .xl:w-2/3} -->
 
 ### 1. Culture/Rules
 
@@ -36,7 +36,3 @@ Mobile users can see the Sidebar by clicking&ensp;&#9776;&ensp;in the top left c
 ### Questions? We're here.
 
 You can reach us in our Discord's `#support` channel or from our [Contact Us page](/docs/contact) anytime.
-
-Learn more about us [at our About page](/docs/about).
-
-Not in our Discord yet? [Join our Discord here!](/invite)

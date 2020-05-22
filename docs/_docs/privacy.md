@@ -1,7 +1,7 @@
 ---
 layout: jtdocs
 title:  "Privacy Policy"
-category: "About Us"
+title-sub: "Licenses"
 summary: "Your data is valuable. Here's how we take care of it and what you can do with your data while it's in our hands."
 redirect_from:
   - privacy-policy
