@@ -49,18 +49,18 @@ p {
 a {
     color: var(--text-link);
 }
-    .jtbodytext a {
-        transition: color 0.2s ease-in-out;
-    }
-    a > div {
-        transition: background-color 0.2s ease-in-out;
-    }
-    a:hover {
-        color: var(--text-link-hover);
-    }
-    .jtsidebar a, .jtsidebar a:hover, .jtbody-topbar a, .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
-        color: var(--text-base);
-    }
+.jtbodytext a {
+    transition: color 0.2s ease-in-out;
+}
+a > div {
+    transition: background-color 0.2s ease-in-out;
+}
+a:hover {
+    color: var(--text-link-hover);
+}
+.jtsidebar a, .jtsidebar a:hover, .jtbody-topbar a, .jtbody-topbar a:hover, #markdown-toc a, #markdown-toc a:hover, .jtrightbar a, .jtrightbar a:hover, .modal__container a, .modal__container a:hover, .jtbody-botbar a, .jtbody-botbar a:hover {
+    color: var(--text-base);
+}
 code { /* overridden by pre code */
     margin-left: 0.25rem;
     margin-right: 0.25rem;

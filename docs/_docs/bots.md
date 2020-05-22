@@ -38,20 +38,14 @@ Wysc adds attribution for the bots we use [under the Discord Server section of o
 
 This document is currently a work in progress. Help contribute by pressing the GitHub logo to the top of the website!
 
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
-<script src="/js/bootstrap-4.3.1.min.js" defer></script>
-<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+<!-- <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"> -->
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
 
 {% for bots in page.botslist %}
 {% if bots.bottitle %}
 <h3>{{ bots.bottitle }}</h3>
 {% endif %}
-<table
-data-toggle="table"
-data-search="true"
-data-show-columns="true"
-data-mobile-responsive="true"
-class="docspbotslist table-dark">
+<table id="docspbotslist">
 <thead>
 <tr>
 {% for bcats in bots.botcats %}
@@ -94,3 +88,7 @@ class="docspbotslist table-dark">
 </tbody>
 </table>
 {% endfor %}
+
+<script>
+const dataTable = new window.simpleDatatables.DataTable("#docspbotslist");
+</script>

@@ -85,20 +85,20 @@
         color: var(--text-h3);
         line-height: 2;
     }
-    #markdown-toc ul { 
+    #markdown-toc ul, #markdown-toc ol { 
         padding-left: 1rem;
         padding-bottom: 0.25rem !important;
         margin-bottom: 0px !important;
         list-style-type: none !important;
     }
-        #markdown-toc ul li {
+        #markdown-toc ul li, #markdown-toc ol li {
             padding-top: 0px;
             padding-bottom: 0px;
             width: 100%;
             border-radius: 0.25rem;
             transition: background-color 0.2s ease-in-out;
         }
-        #markdown-toc ul li:hover {
+        #markdown-toc ul li:hover, #markdown-toc ol li ol li:hover {
             background-color: var(--wysc-light);
         }
     #markdown-toc li {
@@ -121,12 +121,6 @@
           display: none;
         }
     }
-    .rightbarcontent * {
-        display: none;
-    }
-    .rightbarcontent #markdown-toc, .rightbarcontent #markdown-toc * {
-        display: block;
-    }
     .rightbarcontent #markdown-toc::before {
         content: "Table of Contents";
         font-size: 1.25rem;
@@ -146,6 +140,10 @@
         margin-top: 0rem;
         margin-bottom: 0rem;
         box-shadow: none;
+        display: block !important;
+    }
+    .rightbarcontent #markdown-toc > ol {
+        padding-left: 0rem;
     }
     .rightbarcontent #markdown-toc li {
         padding-top: 0.25rem;
@@ -153,6 +151,10 @@
         width: 100%;
         border-radius: 0.25rem;
         transition: background-color 0.2s ease-in-out;
+    }
+    .rightbarcontent #markdown-toc > ol > li > ol li {
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
     }
 
 

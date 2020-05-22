@@ -257,11 +257,11 @@ creditslist:
           - cosname: Animista
             cosurl: https://animista.net/
             
-          - cosname: bootstrap-table
-            cosurl: https://github.com/wenzhixin/bootstrap-table
-            
           - cosname: Feather Icons
             cosurl: https://github.com/feathericons/feather
+
+          - cosname: Frappe DataTable
+            cosurl: https://github.com/frappe/datatable
 
           - cosname: Get Waves
             cosurl: https://getwaves.io/
@@ -277,6 +277,9 @@ creditslist:
 
           - cosname: PWACompat
             cosurl: https://github.com/GoogleChromeLabs/pwacompat
+
+          - cosname: Tocbot
+            cosurl: https://github.com/tscanlin/tocbot
             
       - costitle: Media
         coslist:
@@ -335,6 +338,8 @@ creditslist:
             cosurl: https://algolia.com
           - cosname: Bookmark
             cosurl: https://bookmark.com/
+          - cosname: bootstrap-table
+            cosurl: https://github.com/wenzhixin/bootstrap-table
           - cosname: dark-mode-switch
             cosurl: https://github.com/coliff/dark-mode-switch
           - cosname: dhooks

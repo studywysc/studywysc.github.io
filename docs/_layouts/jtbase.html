@@ -94,6 +94,7 @@
 
                     <!-- breadcrumbs / SEO -->
                     {% if page.title-sub %}
+                        {% if page.breadcrumbs == false %}<div class="xl:pb-4"></div>{% endif %}
                         <div class="pb-10 {% if page.breadcrumbs == false %} hidden{% endif %}">
                             <div class="rounded shadow bg-sidebar-bg px-6 py-4">
                                 <ol vocab="https://schema.org/" typeof="BreadcrumbList" class="flex flex-wrap -ml-2 text-mono-52 select-none">
@@ -228,7 +229,7 @@
 
                 <!-- jtrightbar -->
                 <div class="hidden xl:block flex-grow jtrightbar">
-                    <div class="absolute">
+                    <div class="absolute h-screen overflow-y-auto">
                         <ul class="flex top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar list-none">
                             <li class="inline-block p-2 px-4">
                                 <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
@@ -250,7 +251,26 @@
                             </a>
                         </li>
                         <div class="rightbarcontent">
-                            {{ content }}
+                            <div id="rightbartochere"></div>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+                            <script>
+                                var element = document.getElementById("markdown-toc");
+                                if(typeof(element) != 'undefined' && element != null) {
+                                    document.getElementById("rightbartochere").innerHTML = "<div class=\"rightbartoc block\" id=\"markdown-toc\"></div>";
+
+                                    tocbot.init({
+                                        // Where to render the table of contents.
+                                        tocSelector: '.rightbartoc',
+                                        // Where to grab the headings to build the table of contents.
+                                        contentSelector: '.jtbodytext',
+                                        // Which headings to grab inside of the contentSelector element.
+                                        headingSelector: 'h3, h4',
+                                        // For headings inside relative or absolute positioned containers within content.
+                                        hasInnerContainers: false,
+                                        scrollSmooth: false,
+                                    });
+                                } else {}
+                            </script>
                         </div>
                     </div>
                 </div>

@@ -25,12 +25,19 @@ The rank hierarchy is as follows:
 | Activity-based (automatic) | Contributor Hub (eligibility / *invitation only*) |
 | :---- | :---- |
 | [Seed](#seed) | \- |
-| [Sprout](#sprout) | *Droplet* |
-| [Sapling](#sapling) | Droplet, *Pond* |
-| [Treeling](#treeling) | Droplet, *Pond*, *Lake* |
-| [Tree](#tree) | Droplet, *Pond*, *Lake*, *Ecosystem Supporter* |
+| [Sprout](#sprout) - 100 XP | *Droplet* |
+| [Sapling](#sapling) - 2500 XP | Droplet, *Pond* |
+| [Treeling](#treeling) - 5000 XP | Droplet, *Pond*, *Lake* |
+| [Tree](#tree) - 10.000 XP | Droplet, *Pond*, *Lake*, *Ecosystem Supporter* |
 {: .w-full}
 
+<br>
+
+To check how much Server XP you have, type `,rank` in any channel!
+
+[See more bot commands here](/docs/bots){: .jtbutton}
+
+<br>
 
 #### Seed
 
@@ -113,14 +120,11 @@ Tree is our most senior rank and bestows the most benefits as a tenured member o
   - All text and voice channels are open!
 
 
-  Wysc has many optional roles available for your choosing!
-
-
 ### More Roles
 
-In addition to the base roles, 
+Wysc has many optional roles available for your choosing!
 
-These roles are available for everyone to add at any time.
+In addition to the base roles, these roles are available for everyone to add at any time:
 
 - **Wysc Library roles**
   - Group Study Role
@@ -131,6 +135,8 @@ These roles are available for everyone to add at any time.
   - Spotify Premium Role
   - Genre Roles - Lofi, Instrumental, Kpop
 
+
+There are also many other categories of roles available for different users:
 
 #### Feature Roles
 
@@ -150,6 +156,13 @@ Come hang out with everyone else! [See here for a list of current events](/docs/
 
 - **Recurring Events**
   - Yoga
+
+
+#### Color Roles
+
+Color roles are available to Tree users.
+
+You may also be able to access color roles as a Nitro Booster (see Nitro Booster roles section for more info).
 
 
 #### Contributor Roles

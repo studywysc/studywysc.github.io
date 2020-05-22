@@ -21,11 +21,15 @@ redirect_from:
   - collectdata
 ---
 
+Respect the community, respect the space.
+
 <p class="p-4" style="font-size:36px">Don't be a dick.</p>
 
-This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** [See our Prohibited Activities](#what-do-we-really-hate) for specific activities we'll take strong action against.
+This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** Be nice to everyone, be courteous in your participation, and everything will work out! 🌸
 
-Be nice to everyone, be aware of the community, and everything will work out! 🌸
+Still don't get it? [See a list of specific things we hate here.](#what-do-we-really-hate)
+
+
 
 <br>
 
@@ -48,7 +52,7 @@ Wysc is all about community. There aren't "moderators" or "owners" in the tradit
 
 ### What do we really hate?
 
-Because some users are adamant about behaving inappropriately, we have compiled a short list of things below that we take very seriously. Your messages may be deleted and your account may be subject to administrative action should they violate the policies below:
+Because some users are adamant about behaving inappropriately, we have compiled a short list of things below that we take very seriously. Your messages may be deleted and your account may be subject to administrative action should they engage in the following actions and/or violate the policies below:
 
 - [Advertising](#advertising)
 - [Data Collection (including surveys)](#data-collection)
@@ -87,7 +91,7 @@ All surveys (educational or otherwise), similar to any other attempts at data co
   All Seed users are **forbidden** from engaging in **any** data collection behavior.  
 
 - **Sprout users**  
-  All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/) with all data collection, as well as the following requirements:  
+  All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/){: target="_blank" rel="noopener"} with all data collection, as well as the following requirements:  
     - All info relevant to the data collection must be posted together in #liberal-arts, no more than once
     - Results must be published to Wysc
     - Leaving the server means your messages are subject to deletion
