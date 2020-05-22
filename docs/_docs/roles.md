@@ -43,7 +43,7 @@ When you first join Wysc, you're a Seed. Welcome to Wysc!
   - &#10060; You may need to indicate your interest in Wysc every 30-90 days; simply click the reaction to regain access
 - **Social 🥂 Channels:** You have text-only access
   - All voice channels are open!
-  - &#10060; `#serious` is hidden, use `#study-center` instead
+  - &#10060; `#serious` is hidden, consider using another channel
 - **Wysc Library 📚 Channels:** You have text and media access
   - All text channels are open!
   - &#10060; No speaking permissions in `🔊 || studyspace 📔`
@@ -127,7 +127,8 @@ These roles are available for everyone to add at any time.
   - Location Roles - North America, Europe, Asia/Oceania, and Global/Unlisted
   - Subject Roles - Arts, Engineering, Liberal arts, Math/Physics, Sciences
 - **Wysc Cafe roles**
-  - Music Sesh Role
+  - Group Events Role
+  - Spotify Premium Role
   - Genre Roles - Lofi, Instrumental, Kpop
 
 
@@ -141,6 +142,14 @@ These roles add new functionality for users.
 - **Wysc Cafe roles**
   - Music Platform Roles - Spotify Premium, YouTube, Soundcloud
     - Allows Seeds to show link embeds and send Spotify listen-alongs in Wysc Cafe
+
+
+#### Event Roles
+
+Come hang out with everyone else! [See here for a list of current events](/docs/events)
+
+- **Recurring Events**
+  - Yoga
 
 
 #### Contributor Roles

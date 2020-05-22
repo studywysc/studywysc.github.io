@@ -24,14 +24,16 @@ Can't send images? Links getting deleted? Don't worry, these are anti-raid limit
 
 [See Roles](/docs/roles){: .jtbutton}
 
-### 3. Features and Bot Commands
+### 3. Group Study and Group Events
 
-Wysc has a host of features that help you interact with the community better. Check out how to use features like [Group Study (Pomodoro)](/docs/study) and more from the left Sidebar!
+Wysc has a host of features that help you interact with the community better. Check out how to use features and join in the community fun from the left Sidebar!
 
 Mobile users can see the Sidebar by clicking&ensp;&#9776;&ensp;in the top left corner.
 {: .lg:hidden}
 
-[See Bots](/docs/bots){: .jtbutton}
+[See Group Study](/docs/study){: .jtbutton .mr-2}
+[See Group Events](/docs/events){: .jtbutton .mr-2}
+[See Bots](/docs/bots){: .jtbutton .mr-2}
 
 ### Questions? We're here.
 

@@ -29,14 +29,14 @@ creditslist:
       - coname: Netlify
         coline: Website deployment, security, and hosting
         coimg: /media/logos/creditsnetlify.png
-        courl: https://github.com/
+        courl: https://netlify.com/
 
   - cat: Wysc Properties
     catobj:
-      - coname: Wysc Logo
+      - coname: Wysc Server Icon
         coline: by ebru
         coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335600099000360/94fa056809e3d576005be48f43679ef0.png
-        courl: https://github.com/coffeebank/wysc/blob/master/upstream/media/wysc/wysc_ebru.jpg
+        courl: https://github.com/coffeebank/wysc/blob/master/docs/media/wysc/wysc_ebru.jpg
         rounded: circle
 
   - cat: Partnered Content

@@ -13,6 +13,8 @@
       h2url: /docs/roles
     - h2name: Group Study
       h2url: /docs/study
+    - h2name: Group Events
+      h2url: /docs/events
     - h2name: Bots
       h2url: /docs/bots
 
