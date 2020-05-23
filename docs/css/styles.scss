@@ -52,8 +52,10 @@
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     border-radius: 0.25rem;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease !important;
     font-size: 1rem;
+    white-space: nowrap;
+    line-height: 3rem;
 }
     .jtbutton:hover {
         background-color: var(--stable-wysc-red-2);
@@ -71,7 +73,7 @@
     padding-bottom: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 20rem;
+    width: 22rem;
     max-width: 100%;
     margin-top: 2.5rem;
     margin-bottom: 1rem;

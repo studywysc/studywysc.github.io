@@ -19,7 +19,7 @@ Let's preface this policy with an important notice.
 
 This Privacy Policy only covers Wysc's activities. Please bear in mind that anyone who has access to Wysc's many public services may choose to collect and store all public user data available for an indefinite period of time, including but not limited to: all messages you send in Wysc Discord; [all user data exposed to the public by Discord](https://discordapp.com/developers/docs/intro){: target="_blank" rel="noopener"}; and [user data exposed by making commits to Git](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address){: target="_blank" rel="noopener"}. Wysc is not held responsible for, nor able to control, access to public information.
 
-We're a fully online service that operates a space owned by and runs on Discord. We don't have any employees, we are not a legal entity, and everything that we have has been created from a community effort ([see here for licensing information](/docs/licenses)). That being said, we are committed to being transparent about how we handle data and would like to give you the tools necessary to manage your data when you interact with Wysc.
+We're a fully online service that operates a space owned by and runs on Discord. During this operation, we rely on third party processors to craft a cohesive experience. We are not a legal entity. That being said, we are committed to being transparent about how we handle the data we access during our operations and would like to give you the tools necessary to manage your data when you interact with Wysc.
 
 
 ### Summary
@@ -28,7 +28,7 @@ We're a fully online service that operates a space owned by and runs on Discord.
 Here's a human-readable summary (that is not legally binding):
 
 - Wysc has access to, processes, and/or stores public data that you, [Discord](https://discordapp.com/developers/docs/intro){: target="_blank" rel="noopener"}, or [a third party](/docs/credits) chooses to make public about you (ie. GitHub)
-- Wysc uses third party processors to manage this public data and provide Wysc services, [most of which will be listed here](/docs/credits).
+- Wysc uses third party processors to manage this public data and provide services to you, [most of which will be listed here](/docs/credits).
 - Wysc keeps records of some public user data for purposes like moderation, usage analytics, and backups.
 - We operate out of the United States
 - [Contact us](/docs/contact) for any questions!
@@ -41,24 +41,26 @@ Here's a human-readable summary (that is not legally binding):
 
 ### Privacy Policy
 
-Last updated: 20 May 2020
+Last updated: 22 May 2020
 - Clarifying language around the kind of user data we collect
 
 
 ### Identity & access
 
-Wysc does not identify its Discord users outside of Discord.
+Wysc does not sell data about you.
 
-Wysc may retain information about GitHub contributors via GitHub.
+Wysc may retain information about Wysc Discord users in other public spaces Wysc operates, including GitHub.
 
-When you join Wysc Discord with a Discord account, you agree to entering a public space where your public user data may be logged by Wysc, Discord, [third-party services we use](/docs/credits), and all other users. Wysc logs certain public user data such as (but not limited to): your username, avatar, user ID, account creation timestamp, and arrival/departure timestamps, for moderation and analytical purposes, for the lifetime of the service.
+When you join Wysc Discord with a Discord account, you agree to entering a public space where your public user data may be logged by Wysc, Discord, [third-party services we use](/docs/credits), and all other users.
+
+All messages sent by an end user is considered public user data due to the public nature of Wysc Discord. Messages sent in Wysc Discord are stored, processed, and distributed by Discord pursuant to [Discord's Privacy Policy](https://discordapp.com/privacy){: target="_blank" rel="noopener"}. Wysc reserves the right, but not the obligation, to remove messages from public spaces it operates at its sole discretion. Wysc most commonly exercises this right for: moderation purposes; and to remove personally identifiable information that is posted by users in a public space and brought to our attention.
+
+Wysc logs certain public user data such as (but not limited to): your username, avatar, user ID, account creation timestamp, arrival/departure timestamps, and edited/deleted messages. Wysc uses these logs for channel usage and moderation purposes. Logs for edited/deleted messages are removed after 10 days using an automated process, but we cannot guarantee its uptime. Wysc stores other logs for the lifetime of the service.
 
 
 ### Your Rights With Respect to Your Information
 
 Wysc does not sell your data.
-
-All messages sent by an end user is considered public user data due to the public nature of Wysc Discord. Messages sent in Wysc Discord are stored, processed, and distributed by Discord pursuant to [Discord's Privacy Policy](https://discordapp.com/privacy){: target="_blank" rel="noopener"}. Wysc reserves the right to remove messages from public spaces it operates at its sole discretion but is not obligated to exercise this right. Wysc most commonly exercises this right for: moderation purposes; and to remove personally identifiable information that is posted by users in a public space and brought to our attention.
 
 You may have heard about the [General Data Protection Regulation (“GDPR”)](https://gdpr.eu/tag/chapter-3/){:target="_blank" rel="noopener"} in Europe and [California Consumer Privacy Act (“CCPA”)](https://oag.ca.gov/privacy/ccpa){:target="_blank" rel="noopener"} in the United States. GDPR and CCPA give people under its protection certain rights with respect to their personal information collected by us.
 
@@ -66,6 +68,9 @@ Wysc does not collect personal information. However, you may have provided perso
 
 - [See here for how to exercise your rights with respect to the information you have provided to Discord](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
 - [See here for how to exercise your rights with respect to the information you have provided to GitHub](https://help.github.com/en/github/site-policy/github-privacy-statement){: target="_blank" rel="noopener"}
+
+
+Wysc will not add, modify, or delete Wysc Discord data on your behalf as you provide this data to Discord directly. Most Please consult [Discord's Privacy Policy](https://discordapp.com/privacy){: target="_blank" rel="noopener"} for data deletion connected to your Discord user account.
 
 If you have questions about exercising these rights or need assistance, please feel free to [contact us](/docs/contact).
 
@@ -100,8 +105,6 @@ We strive to use only services that offer [SSL/TLS](https://en.wikipedia.org/wik
 Wysc does not collect personal information. However, you may have provided personal information to some or all of the [third-party services we use](/docs/credits), including Discord and GitHub.
 
 When you delete your Discord account, any content related to your engagement with Wysc Discord may remain accessible, though anonymized. [See Discord's Privacy Policy](https://discordapp.com/privacy){: target="_blank" rel="noopener"} for more information on how data from deleted accounts are handled.
-
-Wysc will not delete Wysc Discord data on your behalf. Please consult [Discord's Privacy Policy](https://discordapp.com/privacy){: target="_blank" rel="noopener"} for data deletion connected to your Discord user account. When contacting Discord to delete data from Wysc Discord, it may be helpful to provide our Server ID: `319372945929666571`
 
 Even when you request for your data to be deleted, please be aware your data may still reside with Wysc, [third party services we use](/docs/credits), and other users due to the public nature of interacting with Wysc. For example, users may take screenshots of conversations; contributions to Wysc GitHub are logged in its Git history for the lifetime of the Git history; and anonymized data may remain since it can't be identified for deletion.
 

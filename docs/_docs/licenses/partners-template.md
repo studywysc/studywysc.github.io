@@ -1,12 +1,23 @@
 ---
-layout: kbdocs
-title:  "Wysc Intellectual Property License Agreement"
-undercat: "About Wysc"
-cattype: "Files"
-last_updated: 22 Mar 2020
----
+layout: jtdocs
+title-sub:
+    - "Licenses"
+    - "Partners"
+partnerlicense: false
 
-version 1.00
+
+holder-of-rights-name: "NAME"
+holder-discord-id: "DISCORD ID"
+
+title:  "Wysc Intellectual Property License Agreement"
+intellectual-property: "INTELLECTUAL PROPERTY"
+
+signature-date: "DATE"
+signature-url: "https://example.com"
+
+cancellation-date: false
+
+---
 
 Wysc Services, INTELLECTUAL PROPERTY LICENSE AGREEMENT
 
@@ -14,13 +25,15 @@ Client: Wysc Services
 
 Primary Contact: wyscofficial@icloud.com
 
-Holder of Rights: X
+Holder of Rights: {{ page.holder-of-rights-name }}
 
-This contract is an offer by Client to Holder of Rights made on DATE for Holder of Rights to provide creative Work as requested by Client.
+Signed, effective {{ page.signature-date }}
+
+This contract is an offer by Client to Holder of Rights made on {{ page.signature-date }} for Holder of Rights to provide creative Work as requested by Client.
 
 1. Intellectual Property
     - Client requests Holder of Rights to provide a license permitting Client access, use, and public distribution rights to Intellectual Property.
-    - Intellectual Property includes X
+    - Intellectual Property includes {{ page.intellectual-property }}
 1. Payment
     - There shall be no payments made by either party for any reason with respect to Intellectual Property.
 1. Grant of Rights
@@ -34,7 +47,9 @@ This contract is an offer by Client to Holder of Rights made on DATE for Holder 
 1. Limitation of Liability
     - Client agrees that Holder of Rights will not be liable for any incidental or consequential damages that arise from Client's use of Intellectual Property, regardless of whether the damages were intentional or negligent.
 1. Dispute Settled by Negotiation, and Governing Law
-    - Any dispute under or about this Agreement must be resolved by negotiation. Parties will bear their own costs. This Agreement will be governed by the laws of California, in the country of the United States of America.
+    - Any dispute under or about this Agreement must be resolved by negotiation.
+    - Parties will bear their own costs.
+    - This Agreement will be governed by the laws of California, in the country of the United States of America.
 1. General Provisions
     - Entire Agreement
         - This Agreement constitutes the entire agreement between the parties, and supersedes all prior agreements, representations and understandings of the parties, written or oral.
@@ -43,9 +58,16 @@ This contract is an offer by Client to Holder of Rights made on DATE for Holder 
     - Severability
         - The invalidity or unenforceability of any provisions of this Agreement shall not affect the validity or enforceability of any other provision of this Agreement, which shall remain in full force and effect.
     - Acceptance of Terms
-        - The action of the sending and receipt of this agreement via electronic method will hold both parties in acceptance of these terms. Client as sender and Holder of Rights as recipient will acknowledge acceptance of these terms either through an e-mail or a Discord message noting acceptance. Electronic signatures consisting of the user's Discord User ID shall be considered legal and binding.
+        - The action of the sending and receipt of this agreement via electronic method will hold both parties in acceptance of these terms.
+        - Client as sender and Holder of Rights as recipient will acknowledge acceptance of these terms either through an e-mail or a Discord message noting acceptance.
+        - Electronic signatures consisting of the user's Discord User ID shall be considered legal and binding.
+{: .list-decimal .pl-8}
 
+Client: Wysc, on {{ page.signature-date }}
 
-Client: DISCORD USER ID, on DATE
+Date of Signature: {{ page.signature-date }}
+
+Holder of Rights Signature: {{ page.signature-url }}
+
 
 This Agreement was adapted from [Cordaun O. Dudley](https://www.docracy.com/0yvf944j8pb/logo-design) and [Kingsley Martin](https://www.docracy.com/4756/severance-agreement).

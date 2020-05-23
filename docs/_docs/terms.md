@@ -14,7 +14,7 @@ You are responsible for all content posted and activity that occurs under your a
 
 Your use of Wysc is at your sole risk. We provide Wysc operated spaces on an “as is” and “as available” basis.
 
-We claim no intellectual property rights over the material you provide to the Services. All materials uploaded remain yours. However, 
+We claim no intellectual property rights over the material you provide to the Services. All materials uploaded remain yours. By making your data public in Wysc operated spaces, Wysc is granted permission to deal in the public user data without restriction in order to operate the space, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sublicense the public user data. [See our Privacy Policy](/docs/privacy) for how we use public user data.
 
 We do not pre-screen content, but reserve the right (but not the obligation) in our sole discretion to refuse or remove any content that is available in Wysc operated spaces.
 

@@ -1,9 +1,7 @@
 ---
 layout: jtdocs
 title:  "Resiliency Report"
-title-sub:
-  - "Licenses"
-  - "Brand Guidelines"
+title-sub: "Licenses"
 summary: "Wysc takes intellectual property seriously. Our strategy for intellectual property resilience is simple."
 redirect_from:
   - docs/about/resiliency

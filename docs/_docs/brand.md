@@ -1,11 +1,10 @@
 ---
 layout: jtdocs
-title:  "Brand Guidelines"
-title-sub: "Licenses"
+title:  "Brand Style Guide"
+title-sub: "About Us"
 summary: "Wysc maintains a strong brand identity and integrity. At the intersection of rigorous and relaxed, explorative yet casual, we balance two extremes to provide a flexible, laid-back experience where you can pursue your studies while also taking care of yourself."
 redirect_from:
   - brand
-  - design
   - docs/about/brand
 ---
 
@@ -13,61 +12,27 @@ redirect_from:
 {:toc}
 
 
-### Using Wysc Resources
+### Values
 
-Wysc believes in transparency of how we operate and to provide an open experience for our community members. However, Wysc takes intellectual property seriously.
+The life of a Discord server often ebbs and flows. However, we want to commit to core values no matter where we decide to forge ahead in the future.
 
-**If you would like to heavily replicate Wysc**, but for a different target audience or with a significant feature, we'd love to partner with you to provide enhanced support and integration that can benefit both you and Wysc! [Reach out to us](/docs/contact) to make it happen.
+- **Sustainable**{: .text-2xl}
+  {: .pb-2}
+- **Reliable**{: .text-2xl}
+  {: .pb-2}
+- **User-Driven**{: .text-2xl}
+{: .py-6}
 
-**If you have an idea to improve Wysc**, come join us in Contributor Hub! [See Contributor Hub for more details.](/docs/dev)
+By sustainable, we should be looking for ways to improve the experience for all in a way we can guarantee provision for, long-term. For example, Wysc Docs is open-source, Wysc leadership is communally organized, and bots used are public instances or derivatives -- so that even if admins disappear, the Wysc spirit can continue to live on.
 
-[Read our Resiliency Report](/docs/resiliency){: .jtbutton}
+By reliable, we should be constantly looking towards stability. We want to be predictable and stable in our service offerings. We offer a suite of study and social features for an online community, so we shouldn't be rotating to all different offerings every other week, or to sell out to someone else. We want to be here for you when you look for Wysc the study server, and still be around after you graduate. We want to still be here when you reminisce about your time with us, years into the future.
 
-<br>
+By user-driven, we should constantly uplift our community's ability to push the envelope. Wysc was founded by two individuals, but that doesn't mean Wysc has to be run by two individuals. The community has helped make Wysc what it is today, and should have an equal right to contribute changes, features, and pursue moderation in line with the Wysc philosophy. There shouldn't be a king at the top, Wysc is us, not me.
 
-#### Third Party Content
-
-**All third party content used in Wysc operated spaces, including partnered content, are subject to either mutual agreements or the creator's respective licenses.**
-
-Due to Wysc's approaches, including but not limited to the use of partnered content, implementation of code, and setup of infrastructure, it is currently against license agreements for others to make an exact duplicate of Wysc as-is. We assume [no legal liability](#terms-of-servnce) for your actions.
-
-The content that users share in Wysc operated spaces belong to the user who created the material. By making the data public through Wysc operated spaces, however, Wysc is granted a license to deal in the public user data without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sublicense the public user data in order to operate the space. [See our Privacy Policy](/docs/privacy) for how we use public user data.
-
+We have learned valuable lessons every time we crossed one of these lines in the past. To betray these values means to betray Wysc and its community as a whole. Because of our past experiences, we will fully commit ourselves to sticking with these principles moving forward so that we can rightfully earn your faith in us.
 
 
-#### Wysc on GitHub
-
-All Wysc assets produced by [@coffeebank](https://github.com/coffeebank/){: target="_blank" rel="noopener"} made available under the Wysc GitHub repository at [https://github.com/coffeebank/wysc](https://github.com/coffeebank/wysc){: target="_blank" rel="noopener"} fall under the following Creative Commons license:
-
-
-<div style="padding:20px;padding-top:40px;">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;border-radius:0px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-<br>
-<p style="font-style:italic;">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
-</div>
-
-While Wysc is open source, our intentions are for users to use our assets to inspire your own creations. Any work created using the resources on Wysc GitHub that may cause confusion for users between your product and Wysc's, and does not properly attribute, will be considered a breach of copyright.
-
-
-
-#### Wysc on Discord
-
-Wysc's server design, channel/category organization, and unique channel features are **open for others to replicate, as long as there is substantial remixing of features.**
-
-We are always happy to see other servers incorporating our ideas! For example, we have pioneered a cafe experience through channels such as #studygram, automated mixed-use content feeds, and liberal use of colored embeds. All these features are available for the public to use as well! We encourage users to [check out our Credits page](/docs/about/credits) to see how we do it and create their own server using the very tools that have helped make our server possible.
-
-However, **we do not tolerate a significantly replicated user experience** without prior arrangements or proper attribution. This includes (but is not limited to) copying many or all aspects of our server without a different target audience, using phrasing that is similar to our promotional material without noticeable variation, or providing an experience that may cause confusion between Wysc and your creation. Not only does this violate Wysc licenses, but depending on implementations, may also infringe on the licenses of content we use.
-
-
-#### Wysc Everywhere Else
-
-While Wysc is mostly open-source and always like seeing others create amazing new experiences with our offerings, all Wysc property without a license is copyrighted and All Rights Reserved. Whether Wysc will decide to prosecute for any abuse, misuse, or theft of our property is up to the sole discretion of Wysc, and precedent stances on prosecution is not a reliable indication of approval for behavior. [Reach out to us anytime for any inquiries regarding use of our property!](/docs/about/contact)
-
-
-
-### Brand Resources
-
-#### Tagline
+### Tagline
 
 **Wysc is not an acronym.**
 
@@ -103,7 +68,7 @@ Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs
 {: .pb-4}
 
 
-#### Logo
+### Logo
 
 <div class="mb-8 flex justify-center align-center items-center" style="background-image:url('/media/ben-white-eeiAnugy2Hs-unsplash.jpg');width:100%;height:400px;background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:calc(35px/2);background-attachment:fixed;">
 <div style="width:15%;padding:15%;box-sizing:border-box;position:relative;">
@@ -116,7 +81,7 @@ Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs
 The Wysc Logo represents an adventurous, interesting, yet relaxed individual who constantly seeks to learn and help others along a journey while still practicing self-care and having fun every so often. There is always more around the corner to discover.
 
 
-#### Color Palette
+### Color Palette
 
 <div class="flex justify-center align-start items-start" style="flex-wrap:wrap;z-index:5;">
 <div class="flex justify-center align-center items-end" style="background-image:url('/media/speqi/liam-seskis-9NhciG1wq10-unsplash.jpg');width:50%;height:275px;background-repeat:no-repeat;background-size:cover;background-position:center;border-top-left-radius:calc(35px/2);">
@@ -142,7 +107,7 @@ The Wysc Logo represents an adventurous, interesting, yet relaxed individual who
 The Wysc colors complement our branding and theme images with pride, striking a strong balance between a feverish red and an aesthetic blue.
 
 
-#### Assets
+### Assets
 
 All official Wysc assets are used as licenses allow.
 

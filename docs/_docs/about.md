@@ -26,8 +26,8 @@ Find us in the `#support` channel on Discord! You can also reach out to us below
 
 [See Contact Us](/docs/contact){: .jtbutton}
 
-### Wysc Values
+### Brand Style Guide
 
-The life of a Discord server often ebbs and flows. However, we want to commit to core values no matter where we decide to forge ahead in the future.
+We want to commit to core values and a cohesive brand image that represents Wysc's community as a whole.
 
-[See Values](/docs/values){: .jtbutton}
+[See Brand Style Guide](/docs/brand){: .jtbutton}

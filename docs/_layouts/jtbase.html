@@ -146,6 +146,11 @@
                         <p class="jtbody-text-lead text-xl font-bold">{{ page.tagline | escape }}</p>
                     {% elsif page.summary %}
                         <p class="jtbody-text-lead text-xl font-bold">{{ page.summary | escape }}</p>
+                    {% elsif page.partnerlicense == true %}
+                        <p class="jtbody-text-lead text-xl font-bold">Agreement with {{ page.holder-of-rights-name | escape }}, effective {{ page.signature-date }}</p>
+                        {% if page.cancellation-date != false %}
+                            <p class="jtbody-text-lead text-xl font-bold">Cancellation effective {{ page.cancellation-date }}</p>
+                        {% endif %}
                     {% endif %}
                     <div class="mt-8 mb-6 w-16 jtbody-divider" style="height:3px"></div>
 
@@ -229,7 +234,7 @@
 
                 <!-- jtrightbar -->
                 <div class="hidden xl:block flex-grow jtrightbar">
-                    <div class="absolute h-screen overflow-y-auto">
+                    <div class="absolute overflow-y-auto" style="max-height:100vh;">
                         <ul class="flex top-0 mt-6 p-4 rounded shadow-lg bg-jtsidebar list-none">
                             <li class="inline-block p-2 px-4">
                                 <a class="cursor-pointer" onclick="modeSwitcher()" title="Change Light/Dark Theme">
