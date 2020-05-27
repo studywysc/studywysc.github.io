@@ -1,3 +1,16 @@
+/* gochi-hand-regular - latin */
+@font-face {
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/gochi-hand-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Gochi Hand'), local('GochiHand-Regular'),
+        url('/fonts/gochi-hand-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/gochi-hand-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/gochi-hand-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('/fonts/gochi-hand-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/gochi-hand-v10-latin-regular.svg#GochiHand') format('svg'); /* Legacy iOS */
+}
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -38,59 +51,3 @@
   .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
   .material-icons.md-light { color: rgba(255, 255, 255, 1); } /* Rules for using icons as white on a dark background. */
   .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-
-/* mada-regular - latin */
-@font-face {
-  font-family: 'Mada';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/fonts/mada-v8-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Mada Regular'), local('Mada-Regular'),
-       url('/fonts/mada-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/mada-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/mada-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/mada-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/mada-v8-latin-regular.svg#Mada') format('svg'); /* Legacy iOS */
-}
-
-/* mada-300 - latin */
-@font-face {
-  font-family: 'Mada';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/fonts/mada-v8-latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Mada Light'), local('Mada-Light'),
-       url('/fonts/mada-v8-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/mada-v8-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/mada-v8-latin-300.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/mada-v8-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/mada-v8-latin-300.svg#Mada') format('svg'); /* Legacy iOS */
-}
-
-/* mada-700 - latin */
-@font-face {
-  font-family: 'Mada';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/mada-v8-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Mada Bold'), local('Mada-Bold'),
-       url('/fonts/mada-v8-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/mada-v8-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/mada-v8-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/mada-v8-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/mada-v8-latin-700.svg#Mada') format('svg'); /* Legacy iOS */
-}
-/* mada-900 - latin */
-@font-face {
-  font-family: 'Mada';
-  font-style: normal;
-  font-weight: 900;
-  src: url('/fonts/mada-v8-latin-900.eot'); /* IE9 Compat Modes */
-  src: local('Mada Black'), local('Mada-Black'),
-       url('/fonts/mada-v8-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/mada-v8-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/mada-v8-latin-900.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/mada-v8-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/mada-v8-latin-900.svg#Mada') format('svg'); /* Legacy iOS */
-}

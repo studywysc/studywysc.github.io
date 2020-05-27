@@ -1,12 +1,12 @@
 {
   "wysc":[
     {
-      "title": "Wysc Service",
+      "title": "Wysc Services",
       "isup": true,
-      "isupemoji": "⚠",
+      "isupemoji": "🚧",
       "howsevere": "high",
-      "notes":"",
-      "readmore": "https://wysc.netlify.com/blog"
+      "notes":"Wysc Docs is currently undergoing a remodel. Some links, features, and areas of the user interface may be broken. We apologize for any inconveniences.",
+      "readmore": "https://wysc.us.to/blog"
     }
   ]
 }
