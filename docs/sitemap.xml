@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://wysc.us.to/</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/index</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev/api</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2019/wysc-events.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2019/wysc-blog-release.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2019/misbehaving-users.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2019/june-2019-wysc-server-revamp.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2019/0319-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0713-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0615-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0512-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0209-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0106-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2018/0101-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/blog/2017/1005-update.html</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/about</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/culture</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/roles</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/study</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/events</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/bots</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/licenses</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/contact</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/credits</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/m/search</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev/contributors</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/brand</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/privacy</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/licenses/partners</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/licenses/wysc</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/resiliency</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev/github</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev/github-intro</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/dev/website</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/licenses/partners-template</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://wysc.us.to/docs/licenses/2020-01-29-server-icon</loc>
+  <lastmod>2020-06-17T08:42:29+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
