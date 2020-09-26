@@ -15,8 +15,21 @@
       h2url: /docs/study
     - h2name: Group Events
       h2url: /docs/events
-    - h2name: Bots
+
+- h1: Bots
+  h2:
+    - h2name: Cafe Bots
       h2url: /docs/bots
+    - h2name: TA (Tatsu)
+      h2url: /docs/bots/tatsu
+    - h2name: TE (Paradøx)
+      h2url: /docs/bots/paradox
+    - h2name: GM (Groovy)
+      h2url: /docs/bots/groovy
+    - h2name: Emotes (Emote Collector)
+      h2url: /docs/bots/emotes
+    - h2name: Simulator (CoreBot)
+      h2url: /docs/bots/corebot
 
 - h1: Documents
   h2:
