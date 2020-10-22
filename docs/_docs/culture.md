@@ -83,9 +83,9 @@ Advertising is defined as any activity that aims to encourage an external user t
 
 #### Data Collection
 
-**Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, please be aware that we do not appreciate new members joining, not participating in our community in good faith, and then using us for your benefit.
+**Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, please be aware that we are more than a study server. Our community members are dedicated to their studies and have developed strong bonds with each other. We ask that you respect the communal environment and our members' time and attention by only requesting data collection after you have become a member in good faith.
 
-All surveys (educational or otherwise), similar to any other attempts at data collection, are subject to the data collection guidelines below.
+All surveys (educational or otherwise) and GoFundMe/donation requests are also subject to the data collection guidelines below.
 
 - **Seed users**  
   All Seed users are **forbidden** from engaging in **any** data collection behavior.  
