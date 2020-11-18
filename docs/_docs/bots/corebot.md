@@ -1,8 +1,6 @@
 ---
 layout: jtdocs
 title:  "Simulator (CoreBot)"
-title-sub:
-  - "Bots"
 summary: "Cafe Simulator, WSC Simulator"
 redirect_from:
   - docs/bots/simulator

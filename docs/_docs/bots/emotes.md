@@ -1,8 +1,6 @@
 ---
 layout: jtdocs
 title:  "Emotes (Emote Collector)"
-title-sub:
-  - "Bots"
 summary: "Global emotes for all users"
 ---
 

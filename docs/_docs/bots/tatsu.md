@@ -1,8 +1,6 @@
 ---
 layout: jtdocs
 title:  "TA (Tatsu)"
-title-sub:
-  - "Bots"
 summary: "General commands, server assistant"
 ---
 
