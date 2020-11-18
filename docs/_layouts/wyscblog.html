@@ -116,7 +116,7 @@
         if (wdiscordData.status.indicator == "none"){
             wdiscordElem.innerHTML = `<b>Wysc Discord:</b>&emsp;<text class="text-success">✅</text>`;
         } else {
-            wdiscordElem.innerHTML = `<b>Wysc Discord:</b>&emsp;<text class="text-danger">⚠️</text><br><div class="text-danger pt-1" style="font-size:0.9em">${wdiscordData.status.description}</div>`;
+            wdiscordElem.innerHTML = `<b>Wysc Discord:</b>&emsp;<text class="text-danger">⚠️</text><br><a href="https://discordstatus.com" target="_blank" rel="noopener noreferrer" class="text-danger pt-1" style="font-size:0.9em">${wdiscordData.status.description}</a>`;
         }
         console.log(wdiscordData);
     });
@@ -130,7 +130,7 @@
         if (wgithubData.status.indicator == "none"){
             wgithubElem.innerHTML = `<b>Wysc Github:</b>&emsp;<text class="text-success">✅</text>`;
         } else {
-            wgithubElem.innerHTML = `<b>Wysc Github:</b>&emsp;<text class="text-danger">⚠️</text><br><div class="text-danger pt-1" style="font-size:0.9em">${wgithubData.status.description}</div>`;
+            wgithubElem.innerHTML = `<b>Wysc Github:</b>&emsp;<text class="text-danger">⚠️</text><br><a href="https://githubstatus.com" target="_blank" rel="noopener noreferrer" class="text-danger pt-1" style="font-size:0.9em">${wgithubData.status.description}</a>`;
         }
         console.log(wgithubData);
     });
