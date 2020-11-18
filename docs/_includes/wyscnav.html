@@ -18,7 +18,7 @@
         {% else %}
             <a class="navbar-brand hoverscale" href="/index">
                 <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
-                <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
+                <span class="d-inline-block align-middle fontgochihand wlogo">{% if page.headersub == true %}› {{ page.headername }}{% else %}Wysc.{% endif %}</span>
             </a>
         {% endif %}
 
