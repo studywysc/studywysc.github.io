@@ -2,15 +2,13 @@
   h2:
     - h2name: Getting Started
       h2url: /docs
-    - h2name: About Us
-      h2url: /docs/about
-
-- h1: Chatting
-  h2:
     - h2name: Culture/Rules
       h2url: /docs/culture
     - h2name: Roles
       h2url: /docs/roles
+
+- h1: Server
+  h2:
     - h2name: Group Study
       h2url: /docs/study
     - h2name: Group Events
@@ -31,8 +29,10 @@
     - h2name: Simulator (CoreBot)
       h2url: /docs/bots/corebot
 
-- h1: Documents
+- h1: Wysc Admin
   h2:
+    - h2name: About Us
+      h2url: /docs/about
     - h2name: Licenses
       h2url: /docs/licenses
     - h2name: Contributing

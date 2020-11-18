@@ -10,14 +10,9 @@ redirect_from:
 
 Wysc was founded in 2017 by two high school students looking for an open, friendly space to study with others online. Initially started as Work\|Studying\|Chilling (WSC), Wysc's goal was and continues to host an open platform for students to interact openly.
 
-Today, Wysc continues to focus on our community members, who help collectively keep our virtual study space warm and friendly. Together, Wysc has grown to be a great place for both studying and chilling. We hope you come to enjoy it as much as our community has.
+Today, Wysc continues to focus on our community members, who help collectively keep our virtual study space warm and friendly. Wysc operates in a cooperative model, where the older members of our community gain the tools to be able to maintain the friendly environment they have grown up in. Wysc is all about community. There aren't "moderators" or "owners" in the traditional sense. Instead, the server is maintained by community members who earn moderation-level permissions by being active and [ranking up](/docs/ranks) in Wysc.
 
-
-### Our Team
-
-Wysc is built on top of the contributions of many community members, using a wide range of stellar creations. Wysc was a result of a team effort.
-
-[See Contributors](/docs/dev/contributors){: .jtbutton}
+Together, Wysc has grown to be a great place for both studying and chilling. We hope you come to enjoy it as much as our community has.
 
 
 ### Contact Us
