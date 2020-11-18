@@ -1,7 +1,7 @@
 ---
 layout: jtdocs
 title:  "Culture/Rules"
-summary: "Wysc's culture is one we strive to maintain and nurture. While we don't have a laundry list of rules, our administrative policy towards user behavior is simple and direct."
+summary: "We aren't doing this to be a snowflake server. We just want to study and chill. Be nice to everyone, be courteous in your participation, and everything will work out! :)"
 redirect_from:
   - culture
   - rules
@@ -21,61 +21,60 @@ redirect_from:
   - collectdata
 ---
 
-Respect the community, respect the space.
+<p class="text-2xl md:text-3xl">Respect the community, respect the space.</p>
 
-<p class="p-4" style="font-size:36px">Don't be a dick.</p>
+Pretty easy, right? [We do have an Ads and Surveys policy](#special-rules-to-know), but otherwise, this is it!
 
-This applies to the broadest extent. And lean on the safe side just to be sure. **We aren't doing this to be a snowflake server. We just want to study and chill.** Be nice to everyone, be courteous in your participation, and everything will work out! 🌸
-
-Still don't get it? [See a list of specific things we hate here.](#what-do-we-really-hate)
-
-
-
-<br>
 
 * TOC
 {:toc}
 
 
-### What's our Culture like?
+### What are we like?
 
-Think of us like a neighborhood coffee shop. You'll probably go there to catch up with some friends, sip a latte, or grab a donut. It's a generally nice atmosphere overall, and usually it's not criminal to have *insert controversial opinion*. But when someone comes in and starts exerting themselves, whether by blatantly shouting out their point, spamming a conversation topic, or joining to push an agenda, it makes the environment uncomfortable. We're like that. 
+Think of us like a neighborhood coffee shop. It's a nice, comfy place on your way to work. It's okay to hold controversial opinions.
 
-Over time, Wysc has grown to be a relatively small, comfy, and peaceful study server. Despite our constantly growing size, our members consistently report a small-server feel, where everyone feels welcome and free. It's certainly jarring (both for us and for the new user) when new users join without being aware of how we're different, so we ask that you take caution at how your actions may be interpreted.
+It can make others uncomfortable though when one starts posting uncomfortable material, speaking in an uncomfortable way, or pushing their views onto others.
 
-### How are we run?
-
-Wysc operates in a cooperative model, where the older members of our community gain the tools to be able to maintain the friendly environment they have grown up in. As such, Wysc Staff will not be the only users who can take action against malicious users. However, if you are quarantined, you will have a chance to appeal the decision to Wysc Staff.
-
-Wysc is all about community. There aren't "moderators" or "owners" in the traditional sense. Instead, the server is maintained by community members who earn moderation-level permissions by being active and [ranking up](/docs/ranks) in Wysc.
+So, please consider a business-casual level of maturity when interacting with Wysc, and to keep the environment in mind before speaking your thoughts! We'd like to keep Wysc a relaxed, friendly place :)
 
 
-### What do we really hate?
+<div id="what-do-we-really-hate"></div>
 
-Because some users are adamant about behaving inappropriately, we have compiled a short list of things below that we take very seriously. Your messages may be deleted and your account may be subject to administrative action should they engage in the following actions and/or violate the policies below:
+### What's not okay?
+
+There are things that don't belong in any server, including at Wysc.
+
+**Do not try any of the following, or we will take action against your account:**
+- Excessive drug related messages and paraphernalia
+- Excessive violence
+- Explicit material (including porn)
+- Spam and Unsolicited DMs (including sending unwanted DMs to Wysc members)
+- Breaking Discord Terms of Service (including joining Wysc while being under 13 years old)
+
+This is obviously not an exhaustive list. Do not test Wysc's limit. We are here to chill and study, not be mischievous.
+
+
+### Special Rules to Know
+
+Our community does moderate against specific types of content that may not fit well with our atmosphere
 
 - [Advertising](#advertising)
 - [Data Collection (including surveys)](#data-collection)
-- Requesting help, especially homework, from others disrespectfully
-  - Especially when you're a new user and/or doing it repeatedly
-  - Wysc is **not** a tutoring server. Do not demand help for your homework.
-- Unsolicited DMs (aka. sending unwanted DMs to other users)
-- Excessive drug related messages and paraphernalia
-- Explicit material (including porn)
-
-This isn't an exhaustive list, and it shouldn't be. We shouldn't need to list out what is and isn't required of you to be a member of a community. Common sense and common decency should be the norm.
-
+- [Homework Help](#homework-help)
 
 
 #### Advertising
 
-Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from. Advertising is a restricted category on Wysc. Rules/Culture still apply.
+Advertising is defined as any activity that aims to encourage an external user to engage with a product or service you (1) own, (2) are affiliated with, or (3) derive some benefit from.
+
+If you have content that falls under advertising but is relevant to a conversation, you can share it under `#bots-spam`.
 
 - **Seed users**  
-  All Seed users are **prohibited from engaging in any advertising behavior, with any Wysc user, on any Wysc property**. We do not believe new members are well acquainted enough with our community to advertise in Wysc. If you have content that falls under advertising but is relevant to a conversation, you may share it under `#bots-spam`, though Wysc members reserve deletion rights and right to enact administrative action.  
+  All Seed users are **prohibited from engaging in any advertising behavior, with any Wysc user, on any Wysc property**. Our community members are here because they are dedicated to their studies, and have not consented to be advertised to. In addition, we do not believe new members are well acquainted enough with our community to advertise in Wysc.
 
 - **Sprout users**  
-  All Sprout users are allowed to engage in advertising behavior within reason in relevant channels, **except for #lounge**. All advertising must be accompanied by relevant conversation. Wysc members reserve deletion rights and right to enact administrative action.  
+  All Sprout users are **prohibited in #lounge** to engage in advertising behavior, and can engage server-wide within reason **only when accompanied by relevant conversation**. Wysc members reserve deletion rights and right to enact administrative action.
 
 - **Sapling and above users**  
   All Sapling and above users are allowed to engage in advertising behavior, serverwide, within reason.
@@ -83,21 +82,19 @@ Advertising is defined as any activity that aims to encourage an external user t
 
 #### Data Collection
 
-**Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, please be aware that we are more than a study server. Our community members are dedicated to their studies and have developed strong bonds with each other. We ask that you respect the communal environment and our members' time and attention by only requesting data collection after you have become a member in good faith.
+**Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, we ask that you respect our members' time, attention, and communal environment by only requesting data collection after you have become a member in good faith.
 
-All surveys (educational or otherwise) and GoFundMe/donation requests are also subject to the data collection guidelines below.
+All surveys (educational or otherwise) and GoFundMe/donation requests are subject to the data collection guidelines below.
 
 - **Seed users**  
   All Seed users are **forbidden** from engaging in **any** data collection behavior.  
 
 - **Sprout users**  
   All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/){: target="_blank" rel="noopener"} with all data collection, as well as the following requirements:  
-    - All info relevant to the data collection must be posted together in #liberal-arts, no more than once
-    - Results must be published to Wysc
-    - Leaving the server means your messages are subject to deletion
-    
-  <br>
-  Fill in this form correctly in Discord to confirm you will follow GDPR standards:
+    - Fill in the form below to confirm you will follow GDPR standards
+    - Make **one** post in **#liberal-arts** with the form and all your survey's information
+    - Results of your data processing must be published to Wysc
+    - Leaving the server means your messages may be deleted
 
 ```
 ---
@@ -121,6 +118,16 @@ All surveys (educational or otherwise) and GoFundMe/donation requests are also s
 ```  
 
 - **Sapling and above users**  
-  All Sapling and above users are free to engage in data collection (including surveys) within reason.
-    
+  All Sapling and above users are free to engage in data collection (including asking for survey respondents) within reason.
+  
   Other types of data collection may require special arrangements with Wysc Staff, who are reachable in `#support`.
+
+
+#### Homework Help
+
+Wysc is **not** a tutoring server. No one is obligated to help anyone else with homework.
+- Do not ask for help on an exam
+- Do not offer to do someone's homework for a price
+- Do not solely give answers to someone without attempting to explain the solution
+
+Wysc is a group study space. Our goal is to help each other study better! Please be nice to the community and respect each other :)
