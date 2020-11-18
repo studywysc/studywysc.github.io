@@ -358,7 +358,7 @@ body .wnavglobal {
   width:95%;
   margin-left:0px;
   margin-right:auto;
-  min-height: calc(100vh - 200px);
+  /* min-height: calc(100vh - 200px); */
   /*background: #bf7c50 !important;*/
 }
 .bloghpostlist {
@@ -383,10 +383,10 @@ body .wnavglobal {
   font-size:1.1em;
 }
 .bloghwyscblogwords {
-  font-size:4em;
+  font-size:3em;
   /*letter-spacing:0.06em;*/
   padding-top: 25px;
-  color: #e4c7b4;
+  color: #ddd;
   /*text-shadow: 0px 3px 20px rgba(0, 0, 0, 1);*/
 }
 .bloghlinks {

@@ -20,7 +20,7 @@ redirect_from:
 As we continue to improve the Wysc website experience, APIs will slowly be released to the public.
 
 ```
-https://wysc.us.to
+https://wysc.us.to/api
 ```
 
 Our API endpoint for content we host is the domain we're using.
@@ -33,7 +33,7 @@ Wysc also relies on many third parties for API access. You can see the other API
 ### Blog API
 
 ```
-/api/feed.xml
+/feed.xml
 ```
 
 The Wysc Blog API links to a blog feed that make pulling in data about recent Blog updates quick and easy.
@@ -58,7 +58,7 @@ All Wysc Website update notes are listed under the Git commits log on GitHub. [C
 ### Search API
 
 ```
-/api/search.json
+/search.json
 ```
 
 The Wysc Docs Search API is automatically updated whenever there is an update to the website, and contains all the Wysc Docs contents in a lightweight file.
@@ -80,7 +80,7 @@ Channel IDs can be obtained by visiting Wysc [and following these directions](ht
 ### Status API
 
 ```
-/api/status.json
+/status.json
 ```
 
 The Status API informs you of how Wysc is doing, whether anything is down for maintenance, or if there is important information that should be disseminnated.
