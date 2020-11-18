@@ -1,8 +1,6 @@
 ---
 layout: jtdocs
 title:  "TE (Paradøx)"
-title-sub:
-  - "Bots"
 summary: "LaTeX renderer, Wolfram Alpha, calculations - previously TeXit"
 redirect_from:
   - docs/bots/texit

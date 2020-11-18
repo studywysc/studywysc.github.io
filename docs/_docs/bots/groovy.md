@@ -1,8 +1,6 @@
 ---
 layout: jtdocs
 title:  "GM (Groovy)"
-title-sub:
-  - "Bots"
 summary: "Wysc Music, Music"
 redirect_from:
   - docs/bots/music
