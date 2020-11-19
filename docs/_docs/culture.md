@@ -1,7 +1,7 @@
 ---
 layout: jtdocs
 title:  "Culture/Rules"
-summary: "We aren't doing this to be a snowflake server. We just want to study and chill. Be nice to everyone, be courteous in your participation, and everything will work out! :)"
+summary: "We're all here to study and chill. Be nice to everyone, be courteous in your participation, and everything will work out! :)"
 redirect_from:
   - culture
   - rules
@@ -23,7 +23,7 @@ redirect_from:
 
 <p class="text-2xl md:text-3xl">Respect the community, respect the space.</p>
 
-Pretty easy, right? [We do have an Ads and Surveys policy](#special-rules-to-know), but otherwise, this is it!
+Pretty easy, right?
 
 
 * TOC
@@ -57,7 +57,7 @@ This is obviously not an exhaustive list. Do not test Wysc's limit. We are here 
 
 ### Special Rules to Know
 
-Our community does moderate against specific types of content that may not fit well with our atmosphere
+Our community does moderate against specific types of content that may not fit well with our atmosphere:
 
 - [Advertising](#advertising)
 - [Data Collection (including surveys)](#data-collection)

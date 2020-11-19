@@ -42,6 +42,7 @@ $mono-tones: (
 // variables
 
 $rootlight: (
+    --sidebar-wysc-text: var(--wysc-red),
     --sidebar-bg: var(--mono-96),
     --sidebar-bg-border: hsl(0, 0%, 88%),
     --jtnav-text-h2: #2c7a7b,
@@ -57,6 +58,7 @@ $rootlight: (
     --text-divider: hsl(0, 0%, 88%),
 );
 $rootdark: (
+    --sidebar-wysc-text: #aaa,
     --sidebar-bg: hsl(0, 0%, 6%),
     --sidebar-bg-border: hsl(0, 0%, 14%),
     --jtnav-text-h2: #81E6D9,
