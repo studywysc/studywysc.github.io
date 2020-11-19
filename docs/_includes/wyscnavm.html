@@ -1,18 +1,18 @@
 <!-- mobile bottomnav -->
 <!-- patch in styles-wyscnavm.css -->
 
-<div class="d-md-none noselect wnavglobal">
-    <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
-        <div class="nav-content text-center">
-            <ul class="nav nav-justified">
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/index"{% endif %}>
-                        <i class="material-icons">home</i><br>
-                        <div>Home</div>
+<div class="d-md-none md:hidden noselect select-none wnavglobal">
+    <nav class="nav-extended fixed-bottom fixed bottom-0 w-full rounded-top rounded-t shadow-lg wnavmb">
+        <div class="nav-content text-center w-full">
+            <ul class="nav nav-justified flex flex-no-wrap items-center justify-center w-full pl-0 list-none">
+                <li class="nav-item align-middle flex-grow">
+                    <a class="wnavmnlink nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/index"{% endif %}>
+                        <i class="material-icons md-18">home</i><br>
+                        <div style="margin-top:-5px">Home</div>
                     </a>
                 </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd 
+                <li class="nav-item align-middle flex-grow">
+                    <a class="wnavmnlink nav-link pulsate-fwd 
                         {% if page.headername == 'Blog' %}
                         wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
                         {% elsif page.layout == 'wyscblog-post' %}
@@ -20,12 +20,12 @@
                         {% else %}
                         wnavmblinks" href="/blog"
                         {% endif %}>
-                        <i class="material-icons">class</i><br>
-                        <div>Blog</div>
+                        <i class="material-icons md-18">class</i><br>
+                        <div style="margin-top:-5px">Blog</div>
                     </a>
                 </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd 
+                <li class="nav-item align-middle flex-grow">
+                    <a class="wnavmnlink nav-link pulsate-fwd 
                         {% if page.headername == 'Docs' %}
                         wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
                         {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
@@ -33,11 +33,48 @@
                         {% else %}
                         wnavmblinks" href="/docs"
                         {% endif %}>
-                        <i class="material-icons">question_answer</i><br>
-                        <div>Docs</div>
+                        <i class="material-icons md-18">question_answer</i><br>
+                        <div style="margin-top:-5px">Docs</div>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+
+<style>
+.wnavmb {
+  background-color: #914c35; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #AA8477, #A56D5B); /* Standard syntax (must be last) */
+  padding: 0.25rem 0.5rem;
+}
+.wnavmblinks {
+  color: #bababa;
+  /*text-transform: uppercase;*/
+  font-weight: 300;
+  font-size: 1em;
+  transition: font-weight 100ms linear;
+}
+  .wnavmblinkactive, .wnavmblinkactive:hover, .wnavmblinks:hover {
+    color: #efefef !important;
+    /*text-transform: uppercase;*/
+    font-weight: 400;
+    font-size: 1em;
+    transition: font-weight 100ms linear;
+  }
+  .wnavmblinks div, .wnavmblinkactive div {
+    line-height:0.95em;
+    padding:0em;
+    text-decoration: none;
+  }
+.wnavmnlink {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.pulsate-fwd:hover {
+	-webkit-animation: pulsate-fwd 0.85s ease-in-out both;
+	        animation: pulsate-fwd 0.85s ease-in-out both;
+}
+@-webkit-keyframes pulsate-fwd { 0% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } 100% { -webkit-transform: scale(1); transform: scale(1); } } @keyframes pulsate-fwd { 0% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } 100% { -webkit-transform: scale(1); transform: scale(1); } }
+</style>

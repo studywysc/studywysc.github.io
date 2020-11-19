@@ -72,7 +72,7 @@
             <div class="flex w-full overflow-x-hidden" style="min-height:100vh;">
 
                 <!-- jtbody -->
-                <div class="w-full xl:w-4/5 px-4 md:px-16" style="max-width:900px;">
+                <div class="w-full xl:w-4/5 px-4 pb-12 md:px-16 md:pb-0" style="max-width:900px;">
 
                     <div id="content"></div>
                     
@@ -192,22 +192,13 @@
                         </li>
                     </ul>
 
+                    <!-- jtsidebar mobile -->
                     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
                         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                             <div class="modal__container bg-jtsidebar" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                                 <div class="px-12 md:px-24 pt-12 pb-4 w-full cursor-pointer" title="Close Menu" data-micromodal-close>
                                     <svg class="pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                 </div>
-
-                                <li class="inline-block p-2 pl-6 md:hidden">
-                                    <a href="/">Home</a>
-                                </li>
-                                <li class="inline-block p-2 pl-6 md:hidden">
-                                    <a href="/blog">Blog</a>
-                                </li>
-                                <li class="inline-block p-2 px-6 md:hidden">
-                                    <a href="/docs">Docs</a>
-                                </li>
 
                                 <div class="w-full px-3 mt-4">
                                     <a href="/docs/m/search" class="w-full">              
@@ -308,6 +299,7 @@
     </script> -->
     {% include jtstatus.html %}
     {% include wyscfooter.html %}
+    {% include wyscnavm.html %}
 </body>
 </html>
 

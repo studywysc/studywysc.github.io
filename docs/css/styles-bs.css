@@ -32,28 +32,6 @@ body, html {
 body .wnavglobal {
   font-family: -apple-system,BlinkMacSystemFont,"Mada","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
-.wnavmb {
-  background-color: #914c35; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #AA8477, #A56D5B); /* Standard syntax (must be last) */
-}
-.wnavmblinks {
-  color: #bababa;
-  /*text-transform: uppercase;*/
-  font-weight: 300;
-  font-size: 1em;
-  transition: font-weight 100ms linear;
-}
-  .wnavmblinkactive, .wnavmblinkactive:hover, .wnavmblinks:hover {
-    color: #efefef !important;
-    /*text-transform: uppercase;*/
-    font-weight: 400;
-    font-size: 1em;
-    transition: font-weight 100ms linear;
-  }
-  .wnavmblinks div, .wnavmblinkactive div {
-    line-height:0.95em;
-    padding:0em;
-  }
 
 /* global css */
 
