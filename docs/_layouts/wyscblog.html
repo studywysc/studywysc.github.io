@@ -128,9 +128,9 @@
         let wgithubElem = document.getElementById("wgithub");
         wgithubElem.innerHTML = "Loading...";
         if (wgithubData.status.indicator == "none"){
-            wgithubElem.innerHTML = `<b>Wysc Github:</b>&emsp;<text class="text-success">✅</text>`;
+            wgithubElem.innerHTML = `<b>Wysc GitHub:</b>&emsp;<text class="text-success">✅</text>`;
         } else {
-            wgithubElem.innerHTML = `<b>Wysc Github:</b>&emsp;<text class="text-danger">⚠️</text><br><a href="https://githubstatus.com" target="_blank" rel="noopener noreferrer" class="text-danger pt-1" style="font-size:0.9em">${wgithubData.status.description}</a>`;
+            wgithubElem.innerHTML = `<b>Wysc GitHub:</b>&emsp;<text class="text-danger">⚠️</text><br><a href="https://githubstatus.com" target="_blank" rel="noopener noreferrer" class="text-danger pt-1" style="font-size:0.9em">${wgithubData.status.description}</a>`;
         }
         console.log(wgithubData);
     });
