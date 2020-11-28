@@ -1,6 +1,7 @@
 ---
 layout: jtdocs
 title:  "Contact Us"
+title-sub: "About Us"
 summary: "Find out how you can reach us if you have questions or administrative inquiries."
 redirect_from:
   - contact

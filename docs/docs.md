@@ -49,7 +49,7 @@ There's more than just studying! Here's a brief overview of what Wysc Cafe is ab
 - **#music-center** - Share music you like (or have made!) with others
 - **#petting-zoo** - Sometimes you just need a break 🐾
 - **#anime-kpop** - East asian media consumers welcome :)
-- **arts-media** - Do you draw? Found art that looks pretty? Show us!
+- **#arts-media** - Do you draw? Found art that looks pretty? Show us!
 
 There are also roles you can add in `#services` and bots you can play with!
 
