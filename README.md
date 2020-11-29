@@ -12,8 +12,6 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 [https://wysc.us.to](https://wysc.us.to/)
 
-[https://wysc.js.org](https://wysc.js.org/) - Showcase (Big thank you to [JS.ORG](https://js.org)!)
-
  
 
 ### Open Source License:
@@ -26,17 +24,25 @@ For students striving to be better, Wysc is the study Discord server that delive
 
 ### Contributions to Wysc:
 
-All users are welcome to contribute any code revisions they deem appropriate through a pull request. Wysc Staff will review the pull requests and, if approved, will also qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors).
+The working development branch is `dev`.
+
+All users are welcome to contribute minor bug fixes and typo errors at any time. For larger projects, it is recommended to [start an Issue first](https://github.com/coffeebank/wysc/issues) or [let us know in our Discord's `#support` channel](https://wysc.us.to/invite).
+
+If a pull request is approved, it will qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors) (work in progress).
 
  
 
 ### Credits:
 
-We do not believe in theft of other works. Using our open source code to contribute to your own works is okay, but wholesale theft for personal profit crosses a line at Wysc. As a result, we'd like to be friendly patrons of the open source community as well and \(attempt to\) list all resources we have come to rely on [in our credits page](https://wysc.us.to/credits). Are we missing something? [Let us know and we'll be glad to add you on our list!](https://wysc.us.to/contact#official-inquiries)
+Credits are [on our website at https://wysc.us.to/credits](https://wysc.us.to/credits).
+
+Are we missing someone? [Let us know](https://wysc.us.to/contact#official-inquiries) or [make a pull request](https://github.com/coffeebank/wysc/blob/dev/docs/_docs/credits.md)!
 
  
 
-### More Wysc Resources:
+### Archived Wysc Resources:
 
+* [Wysc Gitbook](https://gdocs.gitbook.io/wysc/)
+* [Wysc Showcase](https://wysc.js.org/) (Domain by [JS.ORG](https://js.org))
 * [Work\|Studying\|Chilling](https://wysc.us.to/joinwsc)
 
