@@ -9,7 +9,7 @@ github_username:  coffeebank
 
 # Build settings
 markdown: kramdown
-theme: "just-the-docs"
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
