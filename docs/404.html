@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +9,15 @@
     <meta name="keywords" content="study discord, study voice chat, wysc, productivity discord, homework discord, studying discord server, work study chilling, work studying chilling, music discord server, lofi discord, vaporwave discord, students discord" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#9C5D49" />
-    <link rel="manifest" href="/app.webmanifest">
-    <script async src="/js/pwacompat-2.0.10.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/media/wsc-square-sm.png">
-    <link rel="stylesheet" href="/css/styles-bs.css">
-    <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
+    <link rel="manifest" href="{{ site.baseurl }}/app.webmanifest">
+    <script async src="{{ site.baseurl }}/js/pwacompat-2.0.10.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/media/wsc-square-sm.png">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles-bs.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-4.3.1.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mada:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Wysc – A Study Discord Experience | University, College, High School Students</title>
     <meta property="og:title" content="Wysc – Virtual Study Cafe" />
     <style>
@@ -24,64 +26,9 @@
         }
     </style>
 </head>
-<body style="background-color:#0c3247;background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/media/geran-de-klerk-qzgN45hseN0-unsplash_min.jpg);background-position:center;background-size:cover;">
+<body style="background-color:#0c3247;background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url({{ site.baseurl }}/media/geran-de-klerk-qzgN45hseN0-unsplash_min.jpg);background-position:center;background-size:cover;">
 
-<!-- desktop topnav -->
-<div class="d-none d-md-block noselect">
-    <nav class="navbar fixed-top navbar-dark bg-transparent">
-        <a class="navbar-brand hoverscale" href="/index.html">
-            <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
-            <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
-        </a>
-        <ul class="navbar-nav navbar-expand ml-auto align-middle">
-            <li class="nav-item p-3">
-                <a class="nav-link" href="/index">Home</a>
-            </li>
-            <li class="nav-item p-3">
-                <a class="nav-link" href="/blog/">Blog</a>
-            </li>
-            <li class="nav-item p-3">
-                <a class="nav-link" href="/docs">Docs</a>
-            </li>
-            <li class="nav-item p-3">
-                <a class="nav-link" href="/dash">Dashboard</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-<!-- mobile bottomnav -->
-<div class="d-md-none noselect">
-    <nav class="nav-extended fixed-bottom rounded-top shadow-lg p-2 wnavmb">
-        <div class="nav-content text-center">
-            <ul class="nav nav-justified">
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/index">
-                        <i class="material-icons">home</i><br>
-                        <div>Home</div>
-                    </a>
-                </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/blog/">
-                        <i class="material-icons">class</i><br>
-                        <div>Blog</div>
-                    </a>
-                </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/docs">
-                        <i class="material-icons">vertical_split</i><br>
-                        <div>Docs</div>
-                    </a>
-                </li>
-                <li class="nav-item align-middle">
-                    <a class="nav-link pulsate-fwd wnavmblinks" href="/dash">
-                        <i class="material-icons">apps</i><br>
-                        <div>Apps</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+{% include wyscnav.html %}
 
     
     <div class="sectiontextcolor"> <!-- /gsyl/tr:w-100,f-jpg,pr-true/ -->
@@ -95,10 +42,11 @@
                     <h4 class="p-4" style="color:#ddd;">We might've forgotten to update a link somewhere...</h4>
                     <div class="d-none d-md-block" style="padding-bottom:1.5em;"></div>
                     <div class="text-center mx-auto docshcell noselect" style="width:80%;color:#914C35;">
-                        <a href="/index" class="cursornone card dhcards hoverscale">
+                        <a href="{{ site.baseurl }}/" class="cursornone card dhcards hoverscale">
                             <div>
                                 <div class="card-body p-4 dhcardcontent docstopcards">
-                                    <i class="material-icons p-3 md-36">arrow_back</i>
+                                    <!-- <i class="material-icons p-3 md-36">arrow_back</i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#914C35" width="56px" height="56px" style="font-weight: normal;font-style: normal;line-height: 1;letter-spacing: normal;text-transform: none;display: inline-block;white-space: nowrap;word-wrap: normal;direction: ltr;-webkit-font-smoothing: antialiased;padding:1rem"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
                                     <h5 class="card-title">Go back to homepage</h5>
                                 </div>
                             </div>
@@ -106,29 +54,12 @@
                     </div>
                     <div style="padding-bottom:3em;"></div>
                     <div class="text-center mx-auto docshcell noselect" style="width:80%;">
-                        <a class="cursornone card dhcardsmini hoverscale" onclick="crate.toggle(true)" style="cursor:pointer;background-color:#888;">
+                        <a class="cursornone card dhcardsmini hoverscale" href="{{ site.baseurl }}/contact" style="cursor:pointer;background-color:#888;">
                             <div class="card-body p-3">
                                 <h6 class="card-title">Tell us what happened!</h6>
                             </div>
                         </a>
                     </div>
-
-
-                    <!--
-                    <div class="blogfadeb03" style="padding-top:100px;">
-                        <h1 class="text-shadow-drop-bottom align-center fontgochihand pl-2 pr-2" style="font-size:3.5em;letter-spacing:0.06rem;margin-bottom:2.5vh;">Popular Articles</h1>
-                    </div>
-                    <div class="blogfadeb04 mx-auto" style="width:50%;">
-                        <div class="card">
-                            <div class="card-body text-dark">
-                                <p style="margin-top:1em;"><a href="discord/wysclibrary">Discord - Wysc Library</a></p>
-                                <p><a href="discord/culture">Discord - Culture</a></p>
-                                <p><a href="discord/bots">Discord - Bots</a></p>
-                                <p><a href="discord/server-ranks">Discord - Server Ranks</a></p>
-                                <p><a href="about/credits">Wysc Info - Credits</a></p>
-                            </div>
-                        </div>
-                    </div> -->
 
                     <div style="padding-bottom:80px;"></div>
             
@@ -143,40 +74,20 @@
 
 
 <!-- js -->
-<script src="/js/jquery-3.4.1.min.js"></script>
-<script src="/js/popper-1.14.7.min.js"></script>
-<script src="/js/bootstrap-4.3.1.min.js"></script>
-<script src="/js/cssrelpreload.js"></script>
-<link type="text/javascript" href="/js/script.js">
+<script src="{{ site.baseurl }}/js/jquery-3.4.1.min.js"></script>
+<script src="{{ site.baseurl }}/js/popper-1.14.7.min.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap-4.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/js/cssrelpreload.js"></script>
+<link type="text/javascript" href="{{ site.baseurl }}/js/script.js">
 <!-- og: meta tags // title-type-img-url required -->
 <meta property="og:type" content="website" />
-<meta property="og:image" content="media/wsc-sp-rounded.png" />
-<meta property="og:url" content="https://wysc.bookmark.com" />
+<meta property="og:image" content="{{ site.baseurl }}/media/wsc-square-sm.png" />
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}" />
 <meta property="og:site_name" content="Study Discord Server" />
 <meta property="og:description" content="For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience, as the first Discord server to present an edu-social cafe experience to an audience of hundreds.">
 <!-- apple -->
-<!-- removed webp fallback, no webp's -->
 <!-- google -->
 <meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" /> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122660061-2"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-122660061-2');</script>
-<!-- pwa -->
-<script>if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(){console.log('[ PWA Fire Bundle ] Service Worker Registered');});});}</script> <script type="module">import{Workbox}from'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';if('serviceWorker'in navigator){const wb=new Workbox('/service-worker.js');wb.register();}</script>
 
-<!-- page js -->
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700i&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" defer> // widgetbot 0.190720
-    new Crate({
-        server: '319372945929666571',
-        channel: '590703218049286163',
-        shard: 'https://disweb.dashflo.net',
-        location: ['bottom', 'right'],
-        notifications: false,
-        defer: true,
-    });
-    if (window.innerWidth < 768){
-        crate.setOptions({
-            location: [-90, 'right'],
-        })
-    } else {};
-</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 {% if page.supercanonical %}
     <link rel="canonical" href="{{ page.supercanonical }}" />
 {% else %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url | relative_url }}" />
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | relative_url }}" />
 {% endif %}
 
 {% if page.superdescription %}
@@ -22,18 +22,52 @@
 {% endif %}
 
 <meta name="robots" content="index, follow" />
-<link rel="manifest" href="/app.webmanifest">
-<script async src="/js/pwacompat-2.0.10.min.js"></script>
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/media/wsc-square-sm.png">
-<link rel="stylesheet" href="/css/fonts.css"> <!-- fontsdefer.css in wyscfooter -->
-<link rel="stylesheet" href="/css/styles-bs.css">
-<link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css">
-<script async src="/js/jquery-3.4.1.min.js"></script>
+<link rel="manifest" href="{{ site.baseurl }}/app.webmanifest">
+<script async src="{{ site.baseurl }}/js/pwacompat-2.0.10.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+
+<!-- css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/fonts.css"> <!-- fontsdefer.css in wyscfooter -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/styles-bs.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-4.3.1.min.css">
+<script async src="{{ site.baseurl }}/js/jquery-3.4.1.min.js"></script>
 <meta name="google-site-verification" content="O4q2l-bGuTif0jDA-x810IS7gYxau6pncI-XPQdJHT8" />
 
 <!-- jquery in wyscheader -->
-<script src="/js/popper-1.14.7.min.js" defer></script>
-<script src="/js/bootstrap-4.3.1.min.js" defer></script>
-<script src="/js/cssrelpreload.js" async></script>
-<link type="text/javascript" href="/js/script.js">
+<script src="{{ site.baseurl }}/js/popper-1.14.7.min.js" defer></script>
+<script src="{{ site.baseurl }}/js/bootstrap-4.3.1.min.js" defer></script>
+<script src="{{ site.baseurl }}/js/cssrelpreload.js" async></script>
+<link type="text/javascript" href="{{ site.baseurl }}/js/script.js">
+
+<!-- pwa -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/media/pwa/apple-icon-180.jpg">
+<link rel="apple-touch-icon" sizes="167x167" href="{{ site.baseurl }}/media/pwa/apple-icon-167.jpg">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/media/pwa/apple-icon-152.jpg">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/media/pwa/apple-icon-120.jpg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="{{ site.baseurl }}/media/pwa/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">

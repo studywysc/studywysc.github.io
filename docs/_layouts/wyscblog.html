@@ -11,6 +11,7 @@
     <div class="bloghheader2 position-fixed width100"></div>
     <div class="container-fluid sectiontextcolor bloghcontentpad">
         <div class="row">
+            <div class="col-12 col-md-1"></div>
             <div class="col-12 col-md-5">
                 <div class="bloghcard mx-auto">
                     <h1 class="fontgochihand blogfadeb00 hoverscale bloghwyscblogwords text-shadow-drop-bottom" style="cursor:pointer;">Status</h1>
@@ -33,37 +34,36 @@
                 </div>
                 <div style="padding-bottom:60px;"></div>
             </div>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-5">
                 <div class="blogfadeb01">
-                    {% for post in site.posts limit: 1 %}
-                    <div class="card px-4 py-2 hoverscale" style="width:85%;margin:0px auto;">
-                        <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
-                            <ul class="list-group list-group-flush pb-4 wyscposts" style="width:100%;">
-                                <li class="list-group-item p-4">
-                                    <div class="p-2"><span class="badge badge-info">New</span></div>
-                                        <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
-                                        <div class="bloghdate">
-                                            <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-                                            </h4>
-                                        </div>
-                                        <div class="bloghtext"><p id="blogptext">{{ post.content | markdownify | strip_html | truncatewords: 40 }}</p></div>
-                                        <img src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" height="100px" style="object-fit:cover;border-radius:0.25rem;" />
-                                </li>
-                            </ul>
-                        </a>
+                    <div class="hoverscale" style="width:90%;max-width:520px;margin:0px auto;padding:0px">
+                        <iframe src="https://e.widgetbot.io/channels/319372945929666571/589927189265383437" style="width:100%;height:30rem;border:0;" class="rounded-lg" title="Wysc Discord #announcements channel"></iframe>
                     </div>
-                    {% endfor %}
                 </div>
                 <div style="padding-bottom:60px;"></div>
             </div>
+            <div class="col-12 col-md-1"></div>
         </div>
         <div class="row">
             <div class="col">
                 <div class="blogfadeb02">
-                    <h1 class="fontgochihand hoverscale bloghwyscblogwords pt-0 pb-2" style="cursor:pointer;">Older Posts</h1>
+                    <h1 class="fontgochihand hoverscale bloghwyscblogwords pt-0 pb-2" style="cursor:pointer;">Blog Updates</h1>
                 </div>
-                <div class="card blogpwidth">
+                <div class="card blogpwidth blogfadeb03">
                     <ul class="list-group list-group-flush bloghpostlist pb-4 wyscposts">
+                        {% for post in site.posts limit: 1 %}
+                            <li class="list-group-item px-4 pt-2 pb-4">
+                                <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
+                                    <span class="badge badge-secondary" style="margin-bottom:0.75rem;">New</span>
+                                    <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
+                                    <div class="bloghdate">
+                                        <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                                        </h4>
+                                    </div>
+                                    <div class="bloghtext"><p id="blogptext">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p></div>
+                                </a>
+                            </li>
+                        {% endfor %}
                         {% for post in site.posts offset: 1 %}
                             <li class="list-group-item p-4">
                                 <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">

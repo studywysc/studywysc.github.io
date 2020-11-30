@@ -9,15 +9,15 @@
 
         {% if page.headername == 'Home' %}
             <a class="navbar-brand hoverscale" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor:pointer;">
-                <img src="media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow homefadeb00" alt="logo">
+                <img src="{{ site.baseurl }}/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow homefadeb00" alt="logo">
                 <span class="d-inline-block align-middle homefadeb01 fontgochihand wlogo">Wysc<span class="fade-in-fwd-a1">.</span></span>
             </a>
             <div class="navbar-nav navbar-expand mr-auto align-bottom homefadeb02">
                 <span class="nav-item d-inline-block align-bottom fade-in-fwd wlogosub">Virtual Study Cafe</span>
             </div>
         {% else %}
-            <a class="navbar-brand hoverscale" href="/index">
-                <img src="/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
+            <a class="navbar-brand hoverscale" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/media/wsc-square-sm.png" width="70" height="70" class="rounded-circle d-inline-block align-middle shadow" alt="logo">
                 <span class="d-inline-block align-middle fontgochihand wlogo">Wysc.</span>
                 <!-- <span class="d-inline-block align-middle fontgochihand wlogo">{% if page.headersub == true %}› {{ page.headername }}{% else %}Wysc.{% endif %}</span> -->
             </a>
@@ -31,7 +31,7 @@
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.url }}/index">Home</a>
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
                 </li>
             {% endif %}
 
@@ -41,11 +41,11 @@
                 </li>
             {% elsif page.layout == 'wyscblog-post' %}
                 <li class="nav-item active p-3">
-                    <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/blog">Blog</a>
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/blog">Blog</a>
                 </li>
             {% endif %}
             
@@ -55,11 +55,11 @@
                 </li>
             {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
                 <li class="nav-item active p-3">
-                    <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/docs">Docs</a>
                 </li>
             {% else %}
                 <li class="nav-item p-3">
-                    <a class="nav-link" href="{{ site.url }}/docs">Docs</a>
+                    <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/docs">Docs</a>
                 </li>
             {% endif %}
             
@@ -70,7 +70,7 @@
             {% endif %}
             
             <li class="nav-item p-3">
-                <a class="nav-link" target="_blank" href="{{ site.url }}/invite">Join Wysc&ensp;&#9656;</a>
+                <a class="nav-link" target="_blank" href="{{ site.url }}{{ site.baseurl }}/invite">Join Wysc&ensp;&#9656;</a>
             </li>
             
         </ul>
