@@ -6,7 +6,7 @@
         <div class="nav-content text-center w-full">
             <ul class="nav nav-justified flex flex-no-wrap items-center justify-center w-full pl-0 list-none">
                 <li class="nav-item align-middle flex-grow">
-                    <a class="wnavmnlink nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="/index"{% endif %}>
+                    <a class="wnavmnlink nav-link pulsate-fwd {% if page.headername == 'Home' %}wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"{% else %}wnavmblinks" href="{{ site.url }}{{ site.baseurl }}/"{% endif %}>
                         <i class="material-icons md-18">home</i><br>
                         <div style="margin-top:-5px">Home</div>
                     </a>
@@ -16,9 +16,9 @@
                         {% if page.headername == 'Blog' %}
                         wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
                         {% elsif page.layout == 'wyscblog-post' %}
-                        wnavmblinkactive" href="/blog"
+                        wnavmblinkactive" href="{{ site.url }}{{ site.baseurl }}/blog"
                         {% else %}
-                        wnavmblinks" href="/blog"
+                        wnavmblinks" href="{{ site.url }}{{ site.baseurl }}/blog"
                         {% endif %}>
                         <i class="material-icons md-18">class</i><br>
                         <div style="margin-top:-5px">Blog</div>
@@ -29,9 +29,9 @@
                         {% if page.headername == 'Docs' %}
                         wnavmblinkactive" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
                         {% elsif page.layout == 'kbcoll' or page.layout == 'kbdocs' or page.superlayout == 'kbdocs' %}
-                        wnavmblinkactive" href="/docs"
+                        wnavmblinkactive" href="{{ site.url }}{{ site.baseurl }}/docs"
                         {% else %}
-                        wnavmblinks" href="/docs"
+                        wnavmblinks" href="{{ site.url }}{{ site.baseurl }}/docs"
                         {% endif %}>
                         <i class="material-icons md-18">question_answer</i><br>
                         <div style="margin-top:-5px">Docs</div>

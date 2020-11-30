@@ -18,7 +18,7 @@ lead01text: >
 lead02icon: import_contacts
 lead02title: Study-focused
 lead02text: >
-    Do group study sessions, join voice calls, or just chat with like-minded students! Find companionship as comrades in school and higher education 📚
+    Do group study sessions and chat with like-minded students in a virtual library environment! Find companionship as comrades in school and higher education 📚
 
 lead03icon: music_note
 lead03title: Musical
