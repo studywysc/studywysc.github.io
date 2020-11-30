@@ -18,12 +18,12 @@ lead01text: >
 lead02icon: import_contacts
 lead02title: Study-focused
 lead02text: >
-    Ask for homework help, do group study sessions, or just chat with like-minded students! Find companionship as comrades in school and higher education 📚
+    Do group study sessions, join voice calls, or just chat with like-minded students! Find companionship as comrades in school and higher education 📚
 
 lead03icon: music_note
 lead03title: Musical
 lead03text: >
-    Lofi, vaporwave, and more -- working, studying or chilling in Discord has never been easier with fresh music delivered by curated feeds daily 🎧
+    Lofi, vaporwave, and more -- working, studying or chilling in Discord has never been easier with fresh music from a curated Lofi music feed and radio 🎧
 
 
 # Body Section
@@ -35,16 +35,16 @@ bodytext: >
 bodycard01icon: trending_up
 bodycard01title: Popular and Growing
 bodycard01text: >
-    Hitting over one thousand members and still growing, Wysc is one of the fastest growing online study environments on the Internet! Find your niche here, or take a leap of faith and start your own.
+    Reaching over 1600 members and growing, Wysc has a little of something for everyone. Find your next study buddy in one of the largest online study environments on Discord!
 
 bodycard02icon: public
 bodycard02title: Global in Nature
 bodycard02text: >
-    While we're based in USA, our members span across countries and continents, from Europe to Australia! Your nationality doesn't matter -- what does is your presence :)
+    While we're based in the USA, our members span across countries and continents, from Europe to Australia! Your nationality doesn't matter -- what does is your presence :)
 
 bodycard03icon: local_florist
 bodycard03title: Free. Forever.
 bodycard03text: >
-    A free service designed to last, from our channels to our bots. Our finances are rock-solid and Wysc is powered by open-source technology. <a href="credits">We're in this with you for the long haul.</a>
+    A free service designed to last. No ads, no data being sold, and no donations. Our finances are rock-solid and Wysc is powered by open-source technology. <a href="credits">We're in this with you for the long haul.</a>
 
 ---
