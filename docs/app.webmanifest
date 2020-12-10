@@ -11,26 +11,26 @@
 "lang": "en-US",
 "icons": [
   {
-    "src": "{{ site.baseurl }}/media/wsc-rounded-sm.png",
+    "src": "{{ site.baseurl }}/media/wysc/wsc-rounded-sm.png",
     "sizes": "128x128",
     "type": "image/png",
     "purpose": "any"
   },
   {
-    "src": "{{ site.baseurl }}/media/wsc-sp-rounded.png",
+    "src": "{{ site.baseurl }}/media/wysc/wsc-sp-rounded.png",
     "sizes": "512x512",
     "type": "image/png",
     "purpose": "any"
   },
   {
-    "src": "{{ site.baseurl }}/media/pwa/manifest-icon-192.png",
-    "sizes": "192x192",
+    "src": "{{ site.baseurl }}/media/wysc/wysc_maskable_icon.png",
+    "sizes": "152x152",
     "type": "image/png",
     "purpose": "maskable"
   },
   {
-    "src": "{{ site.baseurl }}/media/pwa/manifest-icon-512.png",
-    "sizes": "512x512",
+    "src": "{{ site.baseurl }}/media/wysc/wysc_maskable.png",
+    "sizes": "640x640",
     "type": "image/png",
     "purpose": "maskable"
   }

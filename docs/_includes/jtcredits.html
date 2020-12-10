@@ -1,0 +1,38 @@
+<!-- Table of Contents -->
+<ul id="markdown-toc">
+  {% for itemtoc in page.creditslist %}<li><a href="#{{ itemtoc.cat | downcase | replace: ' ', '-' }}">{{ itemtoc.cat }}</a></li>{% endfor %}
+</ul>
+
+<!-- Credits List -->
+{% for item in page.creditslist %}
+<h3 id="{{ item.cat | downcase | replace: ' ', '-' }}">{{ item.cat }}</h3>
+<!-- catobj, original size -->
+{% if item.catobj %}<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-2">
+  {% for itemobj in item.catobj %}<div class="grid grid-cols-2 gap-4" style="grid-template-columns:1fr 5fr;">
+    <img src="{{ itemobj.coimg }}" class="w-full p-2 docucreditlogos{% if itemobj.rounded == 'circle' %} rounded-full{% elsif itemobj.rounded == true %} rounded{% endif %}{% if itemobj.bglight == true %} bg-stable-wysc-light{% endif %}{% if itemobj.bgdark == true %} bg-stable-wysc-dark{% endif %}" alt="Logo">
+    <div>
+      <h5 class="mt-0 pt-1 pb-1 leading-5 font-bold">
+        <a href="{{ itemobj.courl }}" target="_blank" rel="noopener" class="text-decoration-none">{{ itemobj.coname }}</a>
+        {% if itemobj.cotype %}<span class="ml-2 cursor-default select-none text-xs rounded-lg px-1 text-white 
+          {% if itemobj.cotype == 'user' %}bg-green-600">User
+          {% elsif itemobj.cotype == 'partner' %}bg-pink-600">Partner
+          {% elsif itemobj.cotype == 'wysc' %}bg-blue-600">Hosted by Wysc
+          {% else %}bg-purple-600">{{ itemobj.cotype }}{% endif %}
+        </span>{% endif %}
+      </h5>
+      <p class="mb-0 pb-0 leading-5 text-base">{{ itemobj.coline }}</p>
+    </div>
+  </div>{% endfor %}
+</div>{% endif %}
+<!-- catobjsm, small/list size -->
+{% if item.catobjsm %}{% for itemobjsm in item.catobjsm %}
+<h4 class="mt-4 mb-2 py-0" id="{{ itemobjsm.costitle | downcase | replace: ' ', '-' }}">{{ itemobjsm.costitle }}</h4>
+{% if itemobjsm.coslist %}<ul style="margin-bottom:0;">
+{% for itemcos in itemobjsm.coslist %}<li>
+{% if itemcos.cosurl %}<a href="{{ itemcos.cosurl }}" target="_blank" rel="noopener"
+class="text-decoration-none">{{ itemcos.cosname }}</a>{% else %}{{ itemcos.cosname }}{% endif %}
+{% if itemcos.cosline %} - {{ itemcos.cosline }}{% endif %}
+</li>{% endfor %}</ul>{% endif %}
+{% endfor %}{% endif %}
+
+{% endfor %}
