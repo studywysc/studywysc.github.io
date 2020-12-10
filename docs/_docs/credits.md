@@ -170,8 +170,6 @@ creditslist:
             cosurl: https://animista.net/
           - cosname: Feather Icons
             cosurl: https://github.com/feathericons/feather
-          - cosname: Frappe DataTable
-            cosurl: https://github.com/frappe/datatable
           - cosname: Get Waves
             cosurl: https://getwaves.io/
           - cosname: jQuery
@@ -180,6 +178,8 @@ creditslist:
             cosurl: https://github.com/filamentgroup/loadCSS
           - cosname: PWACompat
             cosurl: https://github.com/GoogleChromeLabs/pwacompat
+          - cosname: Simple-DataTables
+            cosurl: https://github.com/fiduswriter/Simple-DataTables
           - cosname: Tocbot
             cosurl: https://github.com/tscanlin/tocbot
             
