@@ -2,7 +2,7 @@
 layout: jtdocs
 title:  "Credits"
 title-sub: "Contributing"
-summary: "This page contains a list of notable sources we have drawn upon to help make Wysc possible."
+summary: "The Wysc experience is a collection of public services we have integrated together. Without these public services, Wysc would not be possible."
 redirect_from:
   - credits
   - docs/about/credits
@@ -55,11 +55,6 @@ creditslist:
         courl: https://groovy.bot/
         rounded: circle
 
-      - coname: IFTTT
-        coline: Wysc Music Study Radio Feed
-        coimg: /media/logos/creditsifttt.png
-        courl: https://ifttt.com/
-
       - coname: Nadeko
         coline: Server security, voice channels
         coimg: https://nadeko.bot/static/media/nadeko-top.ad6cc06a.png
@@ -80,7 +75,7 @@ creditslist:
         rounded: circle
 
       - coname: Tatsu
-        coline: Server ranking
+        coline: Server ranking, Role backups
         coimg: https://avatars2.githubusercontent.com/u/20085526
         courl: https://tatsu.gg/
         rounded: circle
@@ -121,6 +116,15 @@ creditslist:
           - cosname: Yui
             cosline: Reaction roles
             cosurl: https://discordyui.net/
+
+      - costitle: Services
+        coslist:
+          - cosname: Feardog Music
+            cosline: Wysc Music Study Radio Feed
+            cosurl: https://www.youtube.com/channel/UChHXA_Hmsj4nYFoTY8pPdnA
+          - cosname: IFTTT
+            cosline: Wysc Music Study Radio Feed
+            cosurl: https://ifttt.com/
 
   - cat: Wysc Website
     catobj:
