@@ -1,26 +1,30 @@
 ---
 layout: jtdocs
-title:  "Cafe Bots"
-summary: "Bots help elevate your Wysc experience by providing convenient support and services!"
+title:  "Bots"
+summary: "The Wysc experience is powered by public bots that help provide services with a simple command!"
 redirect_from:
   - docs/discord/bots
   - bots
 
 # stlists: 3
-# stoptions:
-#   - "paging: false"
+stoptions:
+  - "paging: false"
 #   - "searchable: false"
-#   - "sortable: false"          
+#   - "sortable: false"
 
 ---
 
-To help streamline the Wysc experience, we've renamed some bots to "Cafe Bot".
+To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix.**
 
-**All "Cafe Bots" use the `,` prefix.**
+> ⚠️&ensp;***Any services featured is not an indication of the service's endorsement of Wysc.** Bots may collect information about your user account, usage data, and all messages you send. Wysc cannot control this. See our [Privacy Policy](/privacy) and [Credits page](/docs/credits#discord-server) for more info.*
+{:.border-yellow-400}
 
-⚠️ *Bots may collect information about your user account, usage data, and all messages you send. Wysc cannot control this. See our [Privacy Policy](/privacy) and [Credits page](/docs/credits#discord-server) for more info.*
 
-<br />
+* TOC
+{:toc}
+
+
+### General
 
 |Command|Description|Bot|
 |---|---|---|

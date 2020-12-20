@@ -1,9 +1,10 @@
 ---
 layout: jtdocs
-title:  "TE (Paradøx)"
+title:  "☕ Paradøx"
 summary: "LaTeX renderer, Wolfram Alpha, calculations. Paradøx contains all the features of TeXit."
 redirect_from:
   - docs/bots/texit
+  - docs/bots/paradøx
 
 # stlists: 3
 stoptions:

@@ -16,17 +16,13 @@
 
 - h1: Bots
   h2:
-    - h2name: Cafe Bots
+    - h2name: Bots
       h2url: /docs/bots
-    - h2name: TA (Tatsu)
-      h2url: /docs/bots/tatsu
-    - h2name: TE (Paradøx)
+    - h2name: ☕ Paradøx
       h2url: /docs/bots/paradox
-    - h2name: GM (Groovy)
-      h2url: /docs/bots/groovy
-    - h2name: Emotes (Emote Collector)
-      h2url: /docs/bots/emotes
-    - h2name: Simulator (CoreBot)
+    - h2name: ☕ Tatsu
+      h2url: /docs/bots/tatsu
+    - h2name: CoreBot
       h2url: /docs/bots/corebot
 
 - h1: Wysc Admin
