@@ -19,9 +19,9 @@ stoptions:
 Paradøx is a multi-purpose server automation bot written in discord.py.
 TeXit is a high quality LaTeX rendering bot coded in discord.py.
 
-|Prefix|Works in text channels|Works in voice channels|
+|Prefix|Works in categories|Works in channels|
 |---|---|---|
-|,|Social<br>Wysc Library<br>Wysc Cafe|#voice<br>#whiteboard<br>#bots|
+|,|Social<br>Wysc Library<br>Wysc Cafe|#voice<br>#whiteboard<br>#temporary-text<br>#bots-spam|
 {:#stlist1}
 
 
