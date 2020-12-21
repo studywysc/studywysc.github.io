@@ -57,14 +57,13 @@ To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix
 
 |Command|Description|Bot|
 |---|---|---|
+|$3x^{2+3x}$|Render LaTeX&ensp;&ndash;&ensp;[Learn more &#9656;](/docs/bots/paradox)|Paradox|
+|,ask|Ask WolframAlpha (`,ask 4x^2`)|Paradox|
+|,calc|Calculator (`,calc 1+2`)|Paradox|
+|,rotate|Rotate most recent image in the channel|Paradox|
 |,pfocus|Hide distracting channels and only show Study channels|PomoBot|
 |,pgroups|See a list of current Study Groups (`,ptimers`)|PomoBot|
-|,psub|Join a Study Group (`,pjoin`)|PomoBot|
-|,punsub|Leave a Study Group (`,pleave`)|PomoBot|
-|,phist|See your Pomodoro history|PomoBot|
-|,plb|See the Pomodoro leaderboard (day/week/month)|PomoBot|
-|,pnotify|Customize how you're notified ([Learn more](/docs/study#notifications))|PomoBot|
-|,ptimer|Show your current Study Group's timer (`,pstatus`)|PomoBot|
+|,psub<br>,punsub|Join/leave a Study Group (`,pjoin` `,pleave`)|PomoBot|
 |,2p *linkhere*|(Studyradio) Play a YouTube, Spotify, or Soundcloud link|Rythm|
 |,2q|(Studyradio) Queue|Rythm|
 |,2skip|(Studyradio) Skip to next song in queue|Rythm|
