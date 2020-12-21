@@ -1,25 +1,33 @@
 ---
 layout: jtdocs
-title:  "Simulator (CoreBot)"
-summary: "Cafe Simulator, WSC Simulator"
+title:  "CoreBot"
+summary: "A user-friendly bot with lots of games and fun utilities inc. Connect4, Hangman, GuessWord, Trivia, Bets, Lottery, RSS, Career, Welcomer"
 redirect_from:
   - docs/bots/simulator
+
+stlists: 10
+stoptions:
+  - "paging: false"
+  - "sortable: false"
+  - "searchable: false"
 ---
 
-![CoreBot Logo](https://images.discordapp.net/avatars/421245481859940363/2efb67b328eb5c6ef66de5b33fabaa84.png?size=512){: .w-1/2 .sm:w-1/4}
-
+![CoreBot Logo](https://images.discordapp.net/avatars/421245481859940363/2efb67b328eb5c6ef66de5b33fabaa84.png?size=512){: .w-24}
 [CoreBot - Top.gg](https://top.gg/bot/421245481859940363){: .jtbutton}
 
-### Basics
+|Prefix|Works in categories|Works in channels|
+|---|---|---|
+|.|None|#voice<br>#temporary-text<br>#bots-spam|
+{:#stlist1}
 
-Prefix: `.`
 
-* \#bots
+* TOC
+{:toc}
 
-### Commands
 
-Italics are phrases you can replace with your own input.
+### Cafe Simulator
 
+The Simulator experience is one of the most popular parts of CoreBot in Wysc. Climb your way up the career ladder!
 
 
 #### Start Game
@@ -31,6 +39,7 @@ Anyone can get started by typing `.work` to start earning in-game money.
 | .career | Displays user profile and progress |
 | .work | Earns in-game money. The most essential command of the game. Maxes out at 60 minutes.|
 | .deposit | Deposits in-game money into bank. Prevents people from stealing your money.|
+{:#stlist2}
 
 
 
@@ -45,111 +54,72 @@ To progress, the game includes a career ladder the player can climb. You can wor
 | .courses | Moving up the career paths sometimes require you to study and "graduate" a course. |
 | .education | Lists the education you've earned.|
 | .study | Lets you study. Maxes out at 60 minutes.|
+{:#stlist3}
 
 
 #### Items
 
 Buying items will help drastically enhance gameplay, providing ease-of-life and monetary improvements.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Command</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">.giftshop</td>
-      <td style="text-align:left">
-        <p>Buy items using in-game money to make your life easier.
-          <br />
-        </p>
-        <ul>
-          <li>Headphones: doing <code>.work</code> also does <code>.study</code> automatically
-            <br
-            />
-          </li>
-          <li>Debit Card: doing <code>.work</code> also does <code>.deposit</code> automatically
-            <br
-            />
-          </li>
-          <li>Bitcoin Machine: doing <code>.work</code> also does <code>.mine</code> automatically</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">.home</td>
-      <td style="text-align:left">Buy a place to live. No more &quot;You were robbed by a homeless person
-        on the street&quot;.
-        <br />
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">.vehicle</td>
-      <td style="text-align:left">Buy a vehicle. Some jobs require a car.
-        <br />
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Command | Description |
+| :--- | :--- |
+| .giftshop |Buy items using in-game money to make your life easier.<br>-&ensp;Headphones: doing <code>.work</code> also does <code>.study</code> automatically<br>-&ensp;Debit Card: doing <code>.work</code> also does <code>.deposit</code> automatically<br>-&ensp;Bitcoin Machine: doing <code>.work</code> also does <code>.mine</code> automatically|
+|.home|Buy a place to live. No more "You were robbed by a homeless person on the street".|
+|.vehicle|Buy a vehicle. Some jobs require a car.|
+{:#stlist4}
+
 
 #### Side Quests
 
-These side quests may enhance your gameplay, though are not required to succeed.
+These side quests may enhance your gameplay, though are not required to succeed:
+{:.mb-2}
 
-##### Bitcoins
-Bitcoins are a secondary currency in Corebot that can be sold for in-game money.
+- **Bitcoins** are a secondary currency in Corebot that can be sold for in-game money.
+- **Stealing** is unethical and you may occasionally be punished with community service (earn only €1 for 60 minutes).
+- **Gambling** is a luck-based feature that uses gems and in-game money.
+{:.pb-4}
 
-| Command | Description |
-| :--- | :--- |
-| .mine | Mine bitcoins |
-| .bitcoins | Lists your bitcoins |
-| .sellbitcoin | Sell a bitcoin |
+|Command|Category|Description|
+|---|---|---|
+| .mine | Bitcoins | Mine bitcoins |
+| .bitcoins | Bitcoins | Lists your bitcoins |
+| .sellbitcoin | Bitcoins | Sell a bitcoin |
+| .crime | Stealing | Free in-game money... sometimes. |
+| .steal *@user* | Stealing | Steals in-game money from *@user.*<br>Doesn't work if they deposited their money.|
+| .gamble |Gambling|Gamble using in-game money. Can't choose how much to gamble. |
+{:#stlist5}
 
-##### Gems
-Gems are a secondary currency in Corebot that is completely separate and is for cosmetic purposes only.
 
-| Command | Description |
-| :--- | :--- |
-| .timely, .claim | Mine gems. Maxes out at 24 hours.
- |
-| .itemshop | Buy items using gems. These items do nothing. |
-| .itemlist | List your gem items |
+### Commands
 
-##### Stealing
-Stealing is unethical and you may occasionally be punished with community service \(earn only €1 for 60 minutes\).
+CoreBot has many features outside of Simulator.
+{:.mb-2}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Command</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">.crime</td>
-      <td style="text-align:left">Free in-game money... sometimes.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">.steal <em>@user</em>
-      </td>
-      <td style="text-align:left">
-        <p>Steals in-game money from <em>@user</em>.</p>
-        <p>Doesn&apos;t work if they deposited their money.
-          <br />
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+- **Games** are interactive single-player games you can play against the bot.
+- **Gems** are a secondary currency in Corebot that is completely separate and is for cosmetic purposes only.
+- **Utils** Utilities
+{:.pb-4}
 
-### Full Commands
+|Command|Category|Description|
+|---|---|---|
+|.battleship|Games|Play Battleship|
+|.connect4|Games|Play Connect 4|
+|.hangman|Games|Play Hangman|
+|.claim<br>.timely | Gems | Mine gems. Maxes out at 24 hours.|
+|.itemshop|Gems|Buy items using gems. These items do nothing.|
+|.itemlist|Gems|List your gem items|
+|.facts|Utils|Displays a 'Did you know' fun fact|
+{:#stlist6}
 
-Type `.help` in \#bots
+<br>
+
+For the full commands, type `.help` or `.commands` in #bots
+
 
 <style>
-h4 {padding-top:6rem;}
-h5 {padding-top:5rem;}
+h4 {padding-top:4rem;}
+h5 {padding-top:4rem;}
 </style>
+
+
+{% include jttables.html %}

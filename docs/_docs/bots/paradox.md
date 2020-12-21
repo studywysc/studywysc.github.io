@@ -1,31 +1,29 @@
 ---
 layout: jtdocs
-title:  "TE (Paradøx)"
-summary: "LaTeX renderer, Wolfram Alpha, calculations. Paradøx contains all the features of TeXit."
+title:  "Paradøx"
+summary: "LaTeX renderer, Wolfram Alpha, calculations, and tools. (TeXit)"
 redirect_from:
   - docs/bots/texit
+  - docs/bots/paradøx
 
-# stlists: 3
+stlists: 3
 stoptions:
   - "paging: false"
   - "sortable: false"
 
 ---
 
-![TeXit Logo](https://images.discordapp.net/avatars/510789298321096704/f250cb1254053fd8dc670562dc636356.png?size=512){: .w-1/2 .sm:w-1/4}
-
+![TeXit Logo](https://images.discordapp.net/avatars/510789298321096704/f250cb1254053fd8dc670562dc636356.png?size=512){: .w-24}
 [TeXit - Top.gg](https://top.gg/bot/510789298321096704){: .jtbutton}
 
-### Basics
+Paradøx is a multi-purpose server automation bot written in discord.py.
+TeXit is a high quality LaTeX rendering bot coded in discord.py.
 
-Prefix: `,`
+|Prefix|Works in categories|Works in channels|
+|---|---|---|
+|,|Social<br>Wysc Library<br>Wysc Cafe|#voice<br>#whiteboard<br>#temporary-text<br>#bots-spam|
+{:#stlist1}
 
-* \#voice
-* \#whiteboard
-* \#bots
-* Works in all Social channels
-* Works in all Wysc Library channels
-* Works in all Wysc Cafe channels
 
 ### LaTeX
 
@@ -54,10 +52,10 @@ Italics are phrases you can replace with your own input.
 |,rotate|Rotate most recent image in the channel||
 |,ti|See your own timezone|`,ti --set` to set your timezone|
 |,ti *@user*|See a user's timezone||
-{:#stlist1}
+{:#stlist2}
 
 
-{% include jtbots.html %}
+{% include jttables.html %}
 
 
 ### Full Commands

@@ -1,6 +1,6 @@
 ---
 layout: jtdocs
-title:  "TA (Tatsu)"
+title:  "☕ Tatsu"
 summary: "General commands, server assistant"
 ---
 
