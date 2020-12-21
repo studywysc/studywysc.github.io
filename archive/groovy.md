@@ -2,9 +2,6 @@
 layout: jtdocs
 title:  "GM (Groovy)"
 summary: "Wysc Music, Music"
-redirect_from:
-  - docs/bots/music
-  - music
 ---
 
 ![Groovy Logo](https://groovy.bot/img/logos/rounded.svg){: .w-1/2 .sm:w-1/4}

@@ -1,0 +1,253 @@
+- cat: Primary
+  catobj:
+    - coname: Discord
+      coline: Chat and voice platform, user network
+      coimg: /media/logos/creditsdiscord.png
+      courl: https://discordapp.com/
+
+    - coname: Github
+      coline: Source hosting, website hosting, image hosting
+      coimg: /media/logos/creditsgithub.png
+      courl: https://github.com/
+      bglight: true
+      rounded: true
+
+    - coname: ebru
+      coline: Wysc Server Icon
+      coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335600099000360/94fa056809e3d576005be48f43679ef0.png
+      courl: https://github.com/coffeebank/wysc/blob/master/docs/media/wysc/wysc_ebru.jpg
+      cotype: user
+      rounded: circle
+
+    - coname: PomoBot
+      coline: Pomodoro timer, by Conatum (developer), Puerøsøla (hosting)
+      coimg: https://cdn.discordapp.com/attachments/665165509586845706/672335866118799380/e7b566017e31d3d6187ee8c19769a69a.png
+      courl: https://github.com/Intery/PomoBot
+      cotype: partner
+      rounded: circle
+
+- cat: Discord Server
+  catobj:
+
+    - coname: Carl
+      coline: Roles
+      coimg: https://carl.gg/img/brand/googleturtle.svg
+      courl: https://carl.gg/
+      admin: true
+      rounded: circle
+
+    - coname: Groovy
+      coline: Music streaming
+      coimg: https://groovy.bot/img/logos/rounded.svg
+      courl: https://groovy.bot/
+      cafe: true
+      rounded: circle
+
+    - coname: Nadeko
+      coline: Server security, voice channels
+      coimg: https://nadeko.bot/static/media/nadeko-top.ad6cc06a.png
+      courl: https://nadeko.bot/
+      admin: true
+      rounded: circle
+
+    - coname: Paradøx/TeXit
+      coline: Time, LaTeX, WolframAlpha, general functions
+      coimg: /media/logos/discordparadox.png
+      courl: https://top.gg/bot/510789298321096704
+      cafe: true
+      rounded: circle
+
+    - coname: Red Discord Bot
+      coline: Administrative
+      coimg: /media/logos/discordred.png
+      courl: https://github.com/Cog-Creators/Red-DiscordBot
+      cotype: wysc
+      admin: true
+      rounded: circle
+
+    - coname: Tatsu
+      coline: Server ranking, Role backups
+      coimg: https://avatars2.githubusercontent.com/u/20085526
+      courl: https://tatsu.gg/
+      cafe: true
+      rounded: circle
+
+    - coname: YAGPDB
+      coline: Server automation, Assistant
+      coimg: https://yagpdb.xyz/static/img/avatar.png
+      courl: https://yagpdb.xyz/
+      admin: true
+      rounded: circle
+
+  catobjsm:
+    - costitle: Secondary Bots
+      coslist:
+        - cosname: Apollo
+          cosline: Events
+          cosurl: https://top.gg/bot/475744554910351370
+        - cosname: Ayana
+          cosline: Entertainment
+          cosurl: https://ayana.io/
+        - cosname: CoreBot
+          cosline: WSC simulator
+          cosurl: https://top.gg/bot/421245481859940363
+        - cosname: Dyno
+          cosline: Server security, admin management, logs
+          cosurl: https://dyno.gg/
+          admin: true
+        - cosname: Emote Collector
+          cosline: Emotes for non-Nitro users
+          cosurl: https://github.com/EmoteCollector/EmoteCollector
+        - cosname: KDBot
+          cosline: TTS bot
+          cosurl: http://kunalsdatabase.com/kdbot/
+        - cosname: Rythm
+          cosline: Music streaming
+          cosurl: https://rythmbot.co/
+          cafe: true
+        - cosname: Smoogle Translate
+          cosline: Language translation
+          cosurl: https://docs.smoogle.gg/
+        - cosname: Yui
+          cosline: Reaction roles
+          cosurl: https://discordyui.net/
+
+    - costitle: Services
+      coslist:
+        - cosname: Feardog Music
+          cosline: Wysc Music Study Radio Feed
+          cosurl: https://www.youtube.com/channel/UChHXA_Hmsj4nYFoTY8pPdnA
+        - cosname: IFTTT
+          cosline: Wysc Music Study Radio Feed
+          cosurl: https://ifttt.com/
+
+- cat: Wysc Website
+  catobj:
+    - coname: Bootstrap
+      coline: HTML framework
+      coimg: /media/logos/creditsbootstrap.svg
+      courl: https://getbootstrap.com/
+
+    - coname: Jekyll
+      coline: Ruby framework
+      coimg: /media/logos/creditsjekyll.png
+      courl: https://jekyllrb.com/
+
+    - coname: Netlify
+      coline: Website deployment, security, and hosting
+      coimg: /media/logos/creditsnetlify.png
+      courl: https://netlify.com/
+
+    - coname: Tailwind CSS
+      coline: HTML framework
+      coimg: https://avatars3.githubusercontent.com/u/67109815
+      courl: https://tailwindcss.com/
+
+    - coname: Unsplash
+      coline: Images
+      coimg: /media/logos/creditsunsplash.png
+      courl: https://unsplash.com
+      bglight: true
+      rounded: true
+
+    - coname: Vue.js
+      coline: JS framework
+      coimg: /media/logos/creditsvue.png
+      courl: https://vuejs.org
+
+    - coname: WidgetBot
+      coline: Discord announcements widget
+      coimg: https://avatars1.githubusercontent.com/u/35195108
+      courl: https://widgetbot.io/
+
+  catobjsm:
+    - costitle: Assets
+      coslist:
+        - cosname: AnchorJS
+          cosurl: https://github.com/bryanbraun/anchorjs
+        - cosname: Animista
+          cosurl: https://animista.net/
+        - cosname: Feather Icons
+          cosurl: https://github.com/feathericons/feather
+        - cosname: Get Waves
+          cosurl: https://getwaves.io/
+        - cosname: jQuery
+          cosurl: https://jquery.com/
+        - cosname: LoadCSS
+          cosurl: https://github.com/filamentgroup/loadCSS
+        - cosname: PWACompat
+          cosurl: https://github.com/GoogleChromeLabs/pwacompat
+        - cosname: Simple-DataTables
+          cosurl: https://github.com/fiduswriter/Simple-DataTables
+        - cosname: Tocbot
+          cosurl: https://github.com/tscanlin/tocbot
+          
+    - costitle: Media
+      coslist:
+        - cosname: Font - Cookie
+          cosline: Copyright (c) 2011 by Ania Kruk
+          cosurl: https://fonts.google.com/specimen/Cookie
+        - cosname: Font - Gochi Hand
+          cosline: Copyright (c) 2011, Huerta Tipografica
+          cosurl: https://fonts.google.com/specimen/Gochi%20Hand
+        - cosname: Font - Mada
+          cosline: Copyright (c) 2015-2016, The Mada Project Authors, with Reserved Font Name "Source"
+          cosurl: https://github.com/alif-type/mada
+        - cosname: Icons - Material Design Icons
+          cosurl: https://github.com/google/material-design-icons
+
+    - costitle: Services
+      coslist:
+        - cosname: FreeDNS
+          cosurl: https://freedns.afraid.org
+        - cosname: Google Analytics
+          cosurl: https://www.google.com/analytics
+
+- cat: Wysc Admin
+  catobjsm:
+    - costitle: External
+      coslist:
+        - cosname: Disboard
+          cosurl: https://disboard.org/server/319372945929666571
+        - cosname: Discord.me
+          cosurl: https://discord.me/wysc
+        - cosname: DiscordServers
+          cosurl: https://discordservers.com/server/319372945929666571
+        - cosname: DiscordList
+          cosurl: https://discordlist.io/servers/Wysc-Virtual-Study-Cafe-1
+        - cosname: Disforge
+          cosurl: https://disforge.com/server/14344-wysc-virtual-study-caf-eacute
+        - cosname: Dyno Servers
+          cosurl: https://dyno.gg/server/319372945929666571/
+        - cosname: r/discordchannels
+          cosurl: https://reddit.com/r/discordchannels
+        - cosname: r/discordservers
+          cosurl: https://reddit.com/r/discordservers
+        - cosname: r/Wysc
+          cosurl: https://reddit.com/r/wysc
+        - cosname: Top.gg Servers
+          cosurl: https://top.gg/servers/319372945929666571
+        - cosname: Twitter
+          cosurl: https://twitter.com/wyscofficial
+    - costitle: Internal
+      coslist:
+        - cosname: Insomnia
+          cosurl: https://github.com/Kong/insomnia
+        - cosname: Toggl
+          cosurl: https://toggl.com/
+    - costitle: Recently Removed
+      coslist:
+        - cosname: Algolia
+          cosurl: https://algolia.com
+        - cosname: Bookmark
+          cosurl: https://bookmark.com/
+        - cosname: Gitbook
+          cosurl: https://gitbook.com/
+        - cosname: Pokecord (Deprecated)
+          cosurl: https://www.pokecord.com/
+        - cosname: PomodoroBot
+          cosurl: https://github.com/VicenteRD/PomodoroBot
+        - cosname: Statbot
+          cosurl: https://statbot.net/
+        - cosname: Watora (Deprecated)
+          cosurl: https://github.com/Zenrac/Watora

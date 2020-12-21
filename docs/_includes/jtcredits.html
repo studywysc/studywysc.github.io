@@ -1,10 +1,10 @@
 <!-- Table of Contents -->
 <ul id="markdown-toc">
-  {% for itemtoc in page.creditslist %}<li><a href="#{{ itemtoc.cat | downcase | replace: ' ', '-' }}">{{ itemtoc.cat }}</a></li>{% endfor %}
+  {% for itemtoc in site.data.credits %}<li><a href="#{{ itemtoc.cat | downcase | replace: ' ', '-' }}">{{ itemtoc.cat }}</a></li>{% endfor %}
 </ul>
 
 <!-- Credits List -->
-{% for item in page.creditslist %}
+{% for item in site.data.credits %}
 <h3 id="{{ item.cat | downcase | replace: ' ', '-' }}">{{ item.cat }}</h3>
 <!-- catobj, original size -->
 {% if item.catobj %}<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-2">

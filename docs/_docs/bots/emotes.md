@@ -4,6 +4,12 @@ title:  "Emotes (Emote Collector)"
 summary: "Global emotes for all users"
 ---
 
+> 📦 **This page is archived.** [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
+{: .border-red-600 .mb-6}
+
+> ⚠️ **Emote Collector is being shut down.** [See the developer announcement on Discord for more details.](https://discord.com/channels/410627685589450752/412008459253579777/787125939309510666) *(Send `ec/support` to join the Discord)*
+{: .border-red-600 .mb-6}
+
 ![Emote Collector Logo](https://avatars3.githubusercontent.com/u/64573773){: .w-1/2 .sm:w-1/4}
 
 [Emote Collector - GitHub](https://github.com/EmoteBot/EmoteCollector){: .jtbutton}

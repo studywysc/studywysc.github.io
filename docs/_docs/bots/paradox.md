@@ -1,6 +1,6 @@
 ---
 layout: jtdocs
-title:  "☕ Paradøx"
+title:  "Paradøx"
 summary: "LaTeX renderer, Wolfram Alpha, calculations. Paradøx contains all the features of TeXit."
 redirect_from:
   - docs/bots/texit
@@ -58,7 +58,7 @@ Italics are phrases you can replace with your own input.
 {:#stlist1}
 
 
-{% include jtbots.html %}
+{% include jttables.html %}
 
 
 ### Full Commands
