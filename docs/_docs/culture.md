@@ -48,20 +48,20 @@ There are things that don't belong in any server, including at Wysc.
 **Do not try any of the following, or we will take action against your account:**
 - Excessive drug related messages and paraphernalia
 - Excessive violence
-- Explicit material (including porn)
+- Porn/Inappropriate material (including in your username/profile)
 - Spam and Unsolicited DMs (including sending unwanted DMs to Wysc members)
+- Asking for homework/exam answers
 - Breaking Discord Terms of Service (including joining Wysc while being under 13 years old)
 
 This is obviously not an exhaustive list. Do not test Wysc's limit. We are here to chill and study, not be mischievous.
 
 
-### Special Rules to Know
+### Ranking Up in Wysc
 
-Our community does moderate against specific types of content that may not fit well with our atmosphere:
+In order to encourage good faith within the Wysc community, we allow some potentially sensitive behavior only after ranking up in Wysc so that we get to know each other better!
 
 - [Advertising](#advertising)
 - [Data Collection (including surveys)](#data-collection)
-- [Homework Help](#homework-help)
 
 
 #### Advertising
@@ -74,7 +74,7 @@ If you have content that falls under advertising but is relevant to a conversati
   All Seed users are **prohibited from engaging in any advertising behavior, with any Wysc user, on any Wysc property**. Our community members are here because they are dedicated to their studies, and have not consented to be advertised to. In addition, we do not believe new members are well acquainted enough with our community to advertise in Wysc.
 
 - **Sprout users**  
-  All Sprout users are **prohibited in #lounge** to engage in advertising behavior, and can engage server-wide within reason **only when accompanied by relevant conversation**. Wysc members reserve deletion rights and right to enact administrative action.
+  All Sprout users can engage server-wide **only when relevant by conversation**. All Wysc members reserve rights to delete if anyone is uncomfortable.
 
 - **Sapling and above users**  
   All Sapling and above users are allowed to engage in advertising behavior, serverwide, within reason.
@@ -84,50 +84,26 @@ If you have content that falls under advertising but is relevant to a conversati
 
 **Do not join Wysc solely to collect data for a project, product, service, or any other topic.** While Wysc appreciates your consideration, we ask that you respect our members' time, attention, and communal environment by only requesting data collection after you have become a member in good faith.
 
-All surveys (educational or otherwise) and GoFundMe/donation requests are subject to the data collection guidelines below.
+This includes all surveys (educational or otherwise) and GoFundMe/donation requests.
 
 - **Seed users**  
   All Seed users are **forbidden** from engaging in **any** data collection behavior.  
 
 - **Sprout users**  
-  All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/){: target="_blank" rel="noopener"} with all data collection, as well as the following requirements:  
-    - Fill in the form below to confirm you will follow GDPR standards
-    - Make **one** post in **#liberal-arts** with the form and all your survey's information
-    - Results of your data processing must be published to Wysc
-    - Leaving the server means your messages may be deleted
-
-```
----
-
-**GDPR Compliance  ---**
-
-**Subject Title:** 
-**Description:** 
-
-**I need your data because:** 
-**I will collect and store the data by using:** 
-**I will process the data by using:** 
-**I will keep your data for at most:** ___ days
-
-**All Wysc users have the right to:**
--  Access their data at any time
--  Withdraw their consent at any time, and have their data be deleted
--  Ask questions about how their data is being used
-
----
-```  
+  All Sprout users must meet [GDPR compliance](https://gdpr.eu/what-is-gdpr/){: target="_blank" rel="noopener"} with all data collection, to certify that you will treat Wysc members' time and data responsibly. This means clearly listing the following:
+    - What you will need the data for
+    - How you will be collecting the data (Google Forms? A bot?)
+    - How you will process the data (Python? Google Docs?)
+    - How long you will keep the data (maximum 3 months)  
+    
+  You also acknowledge that you will:
+  {:.mb-0}
+    - Only make **one** post in **#human-social** about your data collection request, along with all of the above data
+    - Wysc members can request editing or deletion of their responses at any time
+    - Send final (anonymous/aggregate) results to Wysc
+    {:.pb-6}
 
 - **Sapling and above users**  
   All Sapling and above users are free to engage in data collection (including asking for survey respondents) within reason.
   
-  Other types of data collection may require special arrangements with Wysc Staff, who are reachable in `#support`.
-
-
-#### Homework Help
-
-Wysc is **not** a tutoring server. No one is obligated to help anyone else with homework.
-- Do not ask for help on an exam
-- Do not offer to do someone's homework for a price
-- Do not solely give answers to someone without attempting to explain the solution
-
-Wysc is a group study space. Our goal is to help each other study better! Please be nice to the community and respect each other :)
+  Other types of mass data collection may require special arrangements with Wysc Staff, who are reachable in `#support`.

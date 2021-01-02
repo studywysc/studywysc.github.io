@@ -12,14 +12,11 @@ redirect_from:
   - docs/about/org/privacy
 ---
 
-### Preface
-{: .no_toc}
+> ⚠️&ensp;**This Privacy Policy only covers Wysc's activities.** The Wysc experience is inherently a public space, and supported by public bots/services. This means anyone can [access/log your messages, user info, and interactions](https://discordapp.com/developers/docs/intro){: target="_blank" rel="noopener"} at any time. For more info, [see third party services we use on our Credits page&ensp;▸](/docs/credits)
+{:.border-yellow-400 .mb-4}
 
-Let's preface this policy with an important notice.
-
-This Privacy Policy only covers Wysc's activities. Please bear in mind that anyone who has access to Wysc's many public services may choose to collect and store all public user data available for an indefinite period of time, including but not limited to: all messages you send in Wysc Discord; [all user data exposed to the public by Discord](https://discordapp.com/developers/docs/intro){: target="_blank" rel="noopener"}; and [user data exposed by making commits to Git](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address){: target="_blank" rel="noopener"}. Wysc is not held responsible for, nor able to control, access to public information.
-
-We're a fully online service that operates a space owned by and runs on Discord. During this operation, we rely on third party processors to craft a cohesive experience. We are not a legal entity. That being said, we are committed to being transparent about how we handle the data we access during our operations and would like to give you the tools necessary to manage your data when you interact with Wysc.
+> ⚠️&ensp;**This Privacy Policy is not legally binding.** Wysc is a fully online existence that operates a space owned by and runs on Discord. We are listing our general privacy practices here for transparency purposes. For more info, [see Discord's Privacy Policy&ensp;▸](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
+{:.border-yellow-400}
 
 
 ### Summary

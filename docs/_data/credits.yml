@@ -124,7 +124,7 @@
 - cat: Wysc Website
   catobj:
     - coname: Bootstrap
-      coline: HTML framework
+      coline: CSS framework
       coimg: /media/logos/creditsbootstrap.svg
       courl: https://getbootstrap.com/
 
@@ -139,7 +139,7 @@
       courl: https://netlify.com/
 
     - coname: Tailwind CSS
-      coline: HTML framework
+      coline: CSS framework
       coimg: https://avatars3.githubusercontent.com/u/67109815
       courl: https://tailwindcss.com/
 

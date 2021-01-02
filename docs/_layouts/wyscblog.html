@@ -54,7 +54,7 @@
                         {% for post in site.posts limit: 1 %}
                             <li class="list-group-item px-4 pt-2 pb-4">
                                 <a href="{{ site.url }}{{ post.url }}" class="text-decoration-none">
-                                    <span class="badge badge-secondary" style="margin-bottom:0.75rem;">New</span>
+                                    <span class="badge badge-info" style="margin-bottom:0.75rem;">New</span>
                                     <div class="bloghtitle"><h1 class="blogjtitle" id="blogptitle">{{ post.title }}</h1></div>
                                     <div class="bloghdate">
                                         <h4 id="blogpdate"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
