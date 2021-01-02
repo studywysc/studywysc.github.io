@@ -19,6 +19,11 @@ stoptions:
 
 To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix.**
 
+
+> ⚠️&ensp;**Any services featured is not an indication of the service's endorsement of Wysc.** Bots may collect information about your user account, usage data, and all messages you send. Wysc cannot control this. See our [Privacy Policy](/privacy) and links above for more info.
+{:.border-yellow-400 .mb-8}
+
+
 {% for i1 in site.data.credits %}{% if i1.cat == 'Discord Server' %}
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 pb-4">
 <h5 class="mt-0 pt-1 pb-1 leading-5 font-bold">
@@ -34,9 +39,6 @@ To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix
 {% endif %}{% endfor %}
 </div>
 {% endif %}{% endfor %}
-
-> ⚠️&ensp;**Any services featured is not an indication of the service's endorsement of Wysc.** Bots may collect information about your user account, usage data, and all messages you send. Wysc cannot control this. See our [Privacy Policy](/privacy) and links above for more info.
-{:.border-yellow-400}
 
 
 * TOC

@@ -16,7 +16,7 @@
         {% if itemobj.cotype %}<span class="ml-2 cursor-default select-none text-xs rounded-lg px-1 text-white 
           {% if itemobj.cotype == 'user' %}bg-green-600">User
           {% elsif itemobj.cotype == 'partner' %}bg-pink-600">Partner
-          {% elsif itemobj.cotype == 'wysc' %}bg-blue-600">Hosted by Wysc
+          {% elsif itemobj.cotype == 'wysc' %}bg-blue-600">Self-Hosted
           {% else %}bg-purple-600">{{ itemobj.cotype }}{% endif %}
         </span>{% endif %}
       </h5>
