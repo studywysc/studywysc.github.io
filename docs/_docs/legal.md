@@ -52,6 +52,8 @@ Your use of the Services is at your sole risk. We provide these Services on an �
 
 ***By participating in any of Wysc's processes, you expressly understand and agree that Wysc shall not be liable, in law or in equity, to you or to any third party for any direct, indirect, incidental, lost profits, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Wysc has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use Wysc operated spaces; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from Wysc operated spaces; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third party in Wysc operated spaces; (v) or any other matter relating to this Terms of Service or Wysc, whether as a breach of contract, tort (including negligence whether active or passive), or any other theory of liability.***
 
+If you have a question about any of the Terms of Service, please [contact us](/docs/contact).
+
 
 <div id="privacy"></div>
 
@@ -93,7 +95,15 @@ If Wysc is acquired by or merged with a company — we don’t plan on that, but
 
 #### Your rights with respect to your information
 
-At Wysc, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. Basecamp recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
+At Wysc, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US.
+
+<details markdown="1">
+
+<summary markdown="1" class="cursor-pointer">
+
+**Wysc recognizes all of the rights granted in these regulations, except as limited by applicable law. Click here to see your rights.**
+
+</summary>
 
 - **Right to Know.** You have the right to know what personal information is collected, used, shared or sold. We outline both the categories and specific bits of data we collect, as well as how they are used, in this privacy policy.
 - **Right of Access.** This includes your right to access the personal information we gather about you, and your right to obtain information about the sharing, storage, security and processing of that information.
@@ -105,8 +115,9 @@ At Wysc, we apply the same data rights to all customers, regardless of their loc
 - **Right to Portability.** You have the right to receive the personal information we have about you and the right to transmit it to another party.
 - **Right to not be subject to Automated Decision-Making.** You have the right to object and prevent any decision that could have a legal, or similarly significant, effect on you from being made solely based on automated processes. This right is limited, however, if the decision is necessary for performance of any contract between you and us, is allowed by applicable law, or is based on your explicit consent.
 - **Right to Non-Discrimination.** This right stems from the CCPA. We do not and will not charge you a different amount to use our products, offer you different discounts, or give you a lower level of customer service because you have exercised your data privacy rights. However, the exercise of certain rights (such as the right “to be forgotten”) may, by virtue of your exercising those rights, prevent you from using our Services.
+</details>
 
-**Wysc does not collect or process personal information, but many services that Wysc rely on do.**
+Wysc does not collect or process personal information, but many services that Wysc rely on do.
 {:.mb-2}
 - To exercise your Discord rights, [see the Discord Privacy Policy here](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
 - To exercise your GitHub rights, [See the GitHub Privacy Policy here](https://help.github.com/en/github/site-policy/github-privacy-statement){: target="_blank" rel="noopener"}
