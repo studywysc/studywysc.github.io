@@ -2,6 +2,7 @@
 layout: jtdocs
 title:  "☕ Tatsu"
 summary: "General commands, server assistant"
+doctype: bot
 ---
 
 ![Tatsu.gg Logo](https://tatsu.gg/static/Logo.png){: .bg-stable-wysc-dark .p-8 .sm:w-1/2}

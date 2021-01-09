@@ -13,9 +13,9 @@ redirect_from:
 ---
 
 > ⚠️&ensp;**This Privacy Policy only covers Wysc's activities.** The Wysc experience is inherently a public space, and supported by public bots/services. This means anyone can [access/log your messages, user info, and interactions](https://discordapp.com/developers/docs/intro){: target="_blank" rel="noopener"} at any time. For more info, [see third party services we use on our Credits page&ensp;▸](/docs/credits)
-{:.border-yellow-400 .mb-4}
+{:.border-yellow-400 .mb-2}
 
-> ⚠️&ensp;**This Privacy Policy is not legally binding.** Wysc is a fully online existence that operates a space owned by and runs on Discord. We are listing our general privacy practices here for transparency purposes. For more info, [see Discord's Privacy Policy&ensp;▸](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
+> ⚠️&ensp;**This Privacy Policy is incomplete.** Wysc is a fully online existence that operates a space owned by and runs on Discord. We are listing our general privacy practices here for transparency purposes. For more info, [see Discord's Privacy Policy&ensp;▸](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
 {:.border-yellow-400}
 
 

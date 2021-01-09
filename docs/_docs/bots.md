@@ -1,7 +1,7 @@
 ---
 layout: jtdocs
 title:  "Bots"
-summary: "The Wysc experience is powered by public bots that help provide services with a simple command!"
+summary: "Discord bots are powerful automation friends that can provide information back to you after entering a command."
 redirect_from:
   - docs/discord/bots
   - bots
@@ -17,15 +17,17 @@ stoptions:
 
 ---
 
-To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix.**
+> ⚠️&ensp;**Any services featured is not an indication of the service's endorsement of Wysc.** The documentation on this website has been made by and for Wysc members and may not be applicable to other servers with the bots below.
+{:.border-yellow-400 .mb-2}
 
+> ⚠️&ensp;**Bots may collect information about you.** This may include account info, usage data, and all messages you send. Wysc cannot control this. [See our Privacy Policy for more info.](/privacy)
+{:.border-yellow-400 .mb-2}
 
-> ⚠️&ensp;**Any services featured is not an indication of the service's endorsement of Wysc.** Bots may collect information about your user account, usage data, and all messages you send. Wysc cannot control this. See our [Privacy Policy](/privacy) and links above for more info.
-{:.border-yellow-400 .mb-8}
-
+Wysc uses public bots to provide services in chat. Below are some of the bots we use:
+{:.pt-6}
 
 {% for i1 in site.data.credits %}{% if i1.cat == 'Discord Server' %}
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 pb-4">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 pb-8">
 <h5 class="mt-0 pt-1 pb-1 leading-5 font-bold">
   <a href="https://github.com/Intery/PomoBot" target="_blank" rel="noopener" class="text-decoration-none break-all">☕ PomoBot</a>
 </h5>
@@ -39,6 +41,8 @@ To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix
 {% endif %}{% endfor %}
 </div>
 {% endif %}{% endfor %}
+
+***All bots with a ☕ use the prefix&ensp;`,` (comma)***
 
 
 * TOC
@@ -86,7 +90,7 @@ To help streamline the Wysc experience, **all bots with a ☕ use the `,` prefix
 
 ### Tatsu
 
-![Tatsu.gg Logo](https://tatsu.gg/static/Logo.png){: .bg-stable-wysc-dark .p-8 .w-48}
+![Tatsu.gg Logo](https://tatsu.gg/static/tatsu-logo.png){: .bg-stable-wysc-dark .p-8 .w-48}
 [Tatsu Website](https://tatsu.gg/){: .jtbutton target="_blank" rel="noopener"}
 [Tatsu Bot Commands](https://tatsu.fandom.com/){: .jtbutton target="_blank" rel="noopener"}
 [Tatsu: Tatsugotchi](https://tatsu.fandom.com/wiki/Tatsugotchi){: .jtbutton target="_blank" rel="noopener"}

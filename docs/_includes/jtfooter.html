@@ -1,3 +1,9 @@
+{% if page.doctype == "bot" %}
+<blockquote class="border-yellow-400 mb-8">
+  <p>🗒️ <strong>This website is not affiliated with {{ page.title }}.</strong> See our <a href="/docs/bots">Bots page for more info.</a></p>
+</blockquote>
+{% endif %}
+
 <div class="pb-6 grid grid-cols-2 sm:grid-cols-3">
     <div class="col-span-2 sm:col-span-1">
         <div class="flex flex-wrap items-center">

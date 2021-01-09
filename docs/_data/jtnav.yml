@@ -18,7 +18,7 @@
   h2:
     - h2name: Bots
       h2url: /docs/bots
-    - h2name: Paradøx
+    - h2name: Paradøx and TeXit
       h2url: /docs/bots/paradox
     - h2name: CoreBot
       h2url: /docs/bots/corebot

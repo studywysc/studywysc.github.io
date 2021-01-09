@@ -1,23 +1,29 @@
 ---
 layout: jtdocs
-title:  "Paradøx"
-summary: "LaTeX renderer, Wolfram Alpha, calculations, and tools. (TeXit)"
+title:  "Paradøx and TeXit"
+summary: "A high quality configurable LaTeX rendering and maths bot with heaps of utilities and a strong suite of moderation commands"
+doctype: bot
+
 redirect_from:
   - docs/bots/texit
   - docs/bots/paradøx
+  - texit
+  - paradox
+  - docs/texit
+  - docs/paradox
 
 stlists: 3
 stoptions:
   - "paging: false"
   - "sortable: false"
+  # - "searchable: false"
 
 ---
 
 ![TeXit Logo](https://images.discordapp.net/avatars/510789298321096704/f250cb1254053fd8dc670562dc636356.png?size=512){: .w-24}
-[TeXit - Top.gg](https://top.gg/bot/510789298321096704){: .jtbutton}
+[TeXit - Top.gg](https://top.gg/bot/510789298321096704){: .jtbutton target="_blank" rel="noopener"}
 
-Paradøx is a multi-purpose server automation bot written in discord.py.
-TeXit is a high quality LaTeX rendering bot coded in discord.py.
+Hi! My main purpose in life is to render high quality LaTeX for you! I also have heaps of utility commands, both mathematical and otherwise. *(Source: [Paradox and TeXit](https://top.gg/bot/510789298321096704){: target="_blank" rel="noopener"})*
 
 |Prefix|Works in categories|Works in channels|
 |---|---|---|
@@ -27,21 +33,20 @@ TeXit is a high quality LaTeX rendering bot coded in discord.py.
 
 ### LaTeX
 
-For special help and a tutorial on how to type equations, symbols, and other cool stuff in LaTeX, check out these fantastic resources:
+For special help and a tutorial on how to type math equations, symbols, and other formatting in LaTeX, check out these fantastic resources:
 
 
-[LaTeX Cheatsheet for TeXit](/docs/assets/texit_cheatsheet_1.pdf){: .jtbutton}<br>
-Source: Paradox & TeXit (Discord server), [View in browser](https://docs.google.com/viewerng/viewer?url=https://cdn.discordapp.com/attachments/554128715790155796/555351313836277781/texit_cheatsheet_1.pdf)
+[LaTeX Cheatsheet for TeXit](https://docs.google.com/viewerng/viewer?url=https://cdn.discordapp.com/attachments/554128715790155796/555351313836277781/texit_cheatsheet_1.pdf){: .jtbutton target="_blank" rel="noopener"}<br>
+Source: Paradox & TeXit (Discord server), [Download](/docs/assets/texit_cheatsheet_1.pdf)
 
-[The Great Big List of LaTeX Symbols](https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf){: .jtbutton}<br>
-Source: Rensselaer Polytechnic Institute, [View in browser](https://docs.google.com/viewerng/viewer?url=https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf)
+[List of LaTeX symbols](https://latex.wikia.org/wiki/List_of_LaTeX_symbols){: .jtbutton target="_blank" rel="noopener"}<br>
+Source: LaTeX Wiki (Wikia)
 
 
 
 ### Commands
 
-Italics are phrases you can replace with your own input.
-{:.mb-0}
+This bot commands list may be incomplete. Italics are phrases you can replace with your own input.
 
 |Command|Description|Info|
 |---|---|---|---|
@@ -60,4 +65,4 @@ Italics are phrases you can replace with your own input.
 
 ### Full Commands
 
-Type `,help` in #bots
+For the full bot commands list, type `,help` in #bots
