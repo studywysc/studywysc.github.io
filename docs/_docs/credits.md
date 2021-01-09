@@ -1,7 +1,7 @@
 ---
 layout: jtdocs
 title:  "Credits"
-title-sub: "Contributing"
+title-sub: "Licenses"
 pagetag: "credits"
 summary: "The Wysc experience is a collection of public services we have integrated together. Without these public services, Wysc would not be possible."
 redirect_from:

@@ -231,6 +231,10 @@
           cosurl: https://twitter.com/wyscofficial
     - costitle: Internal
       coslist:
+        - cosname: Apple Mail
+          cosurl: https://icloud.com/
+        - cosname: Google Mail (Gmail)
+          cosurl: https://mail.google.com/
         - cosname: Insomnia
           cosurl: https://github.com/Kong/insomnia
         - cosname: Toggl

@@ -22,19 +22,16 @@ Wysc believes in transparency of how we operate and to provide an open experienc
 [Read our Resiliency Report](/docs/resiliency){: .jtbutton}
 
 
-### Terms of Service
+### Credits
 
-All Wysc Discord services provided are wholly supported by Discord.
+Wysc relies on many public services to craft the Wysc experience. These include third party services, contributions from Wysc members, open-source assets, and more. See our Credits list below:
 
-***By participating in any of Wysc's processes, you expressly understand and agree that Wysc shall not be liable, in law or in equity, to you or to any third party for any direct, indirect, incidental, lost profits, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Wysc has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use Wysc operated spaces; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from Wysc operated spaces; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third party in Wysc operated spaces; (v) or any other matter relating to this Terms of Service or Wysc, whether as a breach of contract, tort (including negligence whether active or passive), or any other theory of liability.***
-
-This provision was adapted from the [Basecamp open-source policies](https://github.com/basecamp/policies){: target="_blank" rel="noopener"} / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){: target="_blank" rel="noopener"}
-
-[See Discord Terms of Service](https://discord.com/terms){: .jtbutton target="_blank" rel="noopener"}
+[See Credits](/docs/credits){: .jtbutton}
 
 
-### Privacy Policy
+### Terms and Privacy Policy
 
-Your data is valuable. Here's how we take care of it and what you can do with your data while it's in our hands.
+Wysc is committed to being transparent about our data practices and legal responsibilities.
 
-[See Privacy Policy](/docs/privacy){: .jtbutton}
+[See Terms of Service](/docs/legal#terms-of-service){: .jtbutton}
+[See Privacy Policy](/docs/legal#privacy-policy){: .jtbutton}
