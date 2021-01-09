@@ -10,6 +10,14 @@ redirect_from:
   - docs/discord/roles
   - docs/discord/ranks
   - docs/discord/content/ranks
+
+
+stlists: 10
+stoptions:
+  - "paging: false"
+  - "sortable: false"
+  - "searchable: false"
+
 ---
 
 
@@ -22,13 +30,13 @@ Wysc's rank system is meritocratic. The more you chat, the more permissions you 
 
 The rank hierarchy is as follows:
 
-| Activity-based (automatic) | Contributor Hub (eligibility / *invitation only*) |
+| Activity-based (automatic) | Contributor Hub (eligibility) |
 | :---- | :---- |
 | [Seed](#seed) | \- |
-| [Sprout](#sprout) - 100 XP | *Droplet* |
-| [Sapling](#sapling) - 2500 XP | Droplet, *Pond* |
-| [Treeling](#treeling) - 5000 XP | Droplet, *Pond*, *Lake* |
-| [Tree](#tree) - 10.000 XP | Droplet, *Pond*, *Lake*, *Ecosystem Supporter* |
+| [Sprout](#sprout) - 100 XP | \- |
+| [Sapling](#sapling) - 2500 XP | Yes |
+| [Treeling](#treeling) - 5000 XP | Yes |
+| [Tree](#tree) - 10.000 XP | Yes |
 {: .w-full}
 
 <br>
@@ -53,7 +61,7 @@ When you first join Wysc, you're a Seed. Welcome to Wysc!
   - &#10060; `#serious` is hidden, consider using another channel
 - **Wysc Library 📚 Channels:** You have text and media access
   - All text channels are open!
-  - &#10060; No speaking permissions in `🔊 || studyspace 📔`
+  - &#10060; No joining permissions in `🔊 || studyspace 📔` (use studyradio instead)
 - **Wysc Cafe ☕ Channels:** You have text-only access
   - To send link embeds and Spotify listen-alongs, add a Wysc Cafe role from `#services`
   - All channels are open!
@@ -71,7 +79,7 @@ Welcome to the primary member role of Wysc! Many of the Seed limitations are now
   - &#10004; Text and media access to `#serious`
 - **Wysc Library 📚 Channels:** You have text and media access
   - All text channels are open!
-  - &#10004; Speaking permissions in  `🔊 || studyspace 📔`
+  - &#10004; Joining permissions in  `🔊 || studyspace 📔`
 - **Wysc Cafe ☕ Channels:** You have text and media access
   - All text channels are open!
   - &#10004; Speaking permissions in `🔊 || cafe-jukebox 🎶`
@@ -194,3 +202,4 @@ Wysc strives to remain financially independent as part of its sustainability ini
 - **For Droplet rank and above** (See [Contributor Roles](#contributor-roles) for details)
   - Gain access to a shared emote pool of 80% of any additional emotes with other active Nitro boosters
     - Emotes subject to safe-for-work, non-seizure-inducing, and controversiality limitations as necessary
+

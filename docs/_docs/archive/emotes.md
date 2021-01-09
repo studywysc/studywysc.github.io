@@ -2,13 +2,22 @@
 layout: jtdocs
 title:  "Emotes (Emote Collector)"
 summary: "Global emotes for all users"
+doctype: bot
+
+redirect_from:
+  - docs/bots/emotes
 ---
 
-> 📦 **This page is archived.** [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
-{: .border-red-600 .mb-6}
+> 📦 **This page is archived.** Wysc may be removing Emote Collector in the near future. [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
+{: .border-red-600 .mb-2}
 
-> ⚠️ **Emote Collector is being shut down.** [See the developer announcement on Discord for more details.](https://discord.com/channels/410627685589450752/412008459253579777/787125939309510666) *(Send `ec/support` to join the Discord)*
-{: .border-red-600 .mb-6}
+> ⚠️ **This wiki is NOT endorsed by or affiliated with {{ page.title }}.** [See our Bots page for more info.](/docs/bots)
+{: .border-yellow-400 .mb-2}
+
+> ⚠️ **Emote Collector is being shut down.** [See the developer's announcement on Discord for more details.](https://discord.com/channels/410627685589450752/412008459253579777/787125939309510666) *(Send `ec/support` to join the Discord)*
+{: .border-red-600 .mb-2}
+
+<br />
 
 ![Emote Collector Logo](https://avatars3.githubusercontent.com/u/64573773){: .w-1/2 .sm:w-1/4}
 

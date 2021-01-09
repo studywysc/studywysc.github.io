@@ -2,6 +2,8 @@
 layout: jtdocs
 title:  "CoreBot"
 summary: "A user-friendly bot with lots of games and fun utilities inc. Connect4, Hangman, GuessWord, Trivia, Bets, Lottery, RSS, Career, Welcomer"
+doctype: bot
+
 redirect_from:
   - docs/bots/simulator
 

@@ -20,9 +20,9 @@ summary: "Wysc Docs is the primary resource for all users, students, and visitor
 
 ### 2. Ranking Up
 
-Can't send images? Links getting deleted? Don't worry -- just chat and socialize, and you'll rank up from Seed to Sprout in minutes!
+As a new user, there are many restrictions on the types of content you can send. As you rank up, these restrictions disappear.
 
-Wysc has a meritocratic rank system you may not be used to. See what perks ranking up can get you:
+All users start with the Seed rank. It only takes minutes to rank up to Sprout! See what perks ranking up can get you:
 
 [See Roles](/docs/roles){: .jtbutton}
 
