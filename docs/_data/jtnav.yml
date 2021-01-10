@@ -18,10 +18,12 @@
   h2:
     - h2name: Bots
       h2url: /docs/bots
-    - h2name: Paradøx and TeXit
-      h2url: /docs/bots/texit
     - h2name: CoreBot
       h2url: /docs/bots/corebot
+    - h2name: Paradøx and TeXit
+      h2url: /docs/bots/texit
+    - h2name: PomoBot
+      h2url: /docs/bots/pomobot
 
 - h1: Wysc Admin
   h2:

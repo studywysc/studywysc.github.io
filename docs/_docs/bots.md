@@ -5,6 +5,7 @@ summary: "Discord bots are powerful automation friends that can provide informat
 redirect_from:
   - docs/discord/bots
   - bots
+  - docs/bots/tatsu
   - docs/bots/groovy
   - docs/bots/music
   - music
