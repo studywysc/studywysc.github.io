@@ -1,7 +1,7 @@
 ---
 layout: wyschome
 headername: Home
-supertitle: Wysc – A Study Discord Experience | University, College, High School Students
+supertitle: Wysc – A comfy place for students to study on Discord ☕
 superdescription: >
     For students striving to be better, Wysc is the study Discord server that delivers a cohesive, global online studying experience as the premier edu-social cafe based Discord server -- whether you're in high school, university, or graduate.
 
