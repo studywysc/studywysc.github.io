@@ -57,8 +57,8 @@ We have learned valuable lessons every time we crossed one of these lines in the
 While Wysc was inspired by our old server name, "Work Studying Chilling", the name "Wysc" itself is not an acronym. Please do not use any of the following deviations to portray our brand:
 
 - &#10060; **Do not** use the name "WYSC"
-- &#10060; **Do not** add color to the Wysc text logo representations
-- &#10060; **Do not** misrepresent the Wysc brand by using incorrect information
+- &#10060; **Do not** use colors on the Wysc text logo that don't meet a 3:1 contrast ratio
+- &#10060; **Do not** distort the lettering with inadequate padding, reduced letter spacing, or italics
 {: .pb-4}
 
 Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs/about/credits#media).
@@ -78,7 +78,7 @@ Wysc's font choices are [Gochi Hand](/docs/about/credits#media) and [Mada](/docs
 
 [Download Logo (128px) &#9656;](/media/wsc-square-sm.png)
 
-The Wysc Logo represents an adventurous, interesting, yet relaxed individual who constantly seeks to learn and help others along a journey while still practicing self-care and having fun every so often. There is always more around the corner to discover.
+The Wysc Logo represents a relaxed space where friendly members are always welcome. Study without pressure, and relax with us afterwards! [Logo licenced from ebru.](/docs/licenses/2020-01-29-server-icon)
 
 
 ### Color Palette
@@ -111,6 +111,7 @@ The Wysc colors complement our branding and theme images with pride, striking a 
 
 All official Wysc assets are used as licenses allow.
 
+- Wysc Logo [licensed from ebru]((/docs/licenses/2020-01-29-server-icon))
 - Wysc sources logo images from [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - Wysc sources fonts from [Google Fonts](https://fonts.google.com)
 

@@ -15,7 +15,7 @@ stoptions:
 ---
 
 ![CoreBot Logo](https://images.discordapp.net/avatars/421245481859940363/2efb67b328eb5c6ef66de5b33fabaa84.png?size=512){: .w-24}
-[CoreBot - Top.gg](https://top.gg/bot/421245481859940363){: .jtbutton}
+[CoreBot - Top.gg](https://top.gg/bot/421245481859940363){: target="_blank" rel="noopener" .jtbutton}
 
 |Prefix|Works in categories|Works in channels|
 |---|---|---|

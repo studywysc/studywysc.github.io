@@ -23,7 +23,7 @@ stoptions:
 > ⚠️&ensp;**Bots may collect information about you.** This may include account info, usage data, and all messages you send. Wysc cannot control this. [See our Privacy Policy for more info.](/privacy)
 {:.border-yellow-400 .mb-2}
 
-Wysc uses public bots to provide services in chat. Below are some of the bots we use:
+Wysc uses public bots to provide services in chat. To make remembering bot commands easier, we've set some bots to have the same prefix.
 {:.pt-6}
 
 {% for i1 in site.data.credits %}{% if i1.cat == 'Discord Server' %}
@@ -56,6 +56,9 @@ Wysc uses public bots to provide services in chat. Below are some of the bots we
 |,rank|See your Wysc activity level|Tatsu|
 |,ti \-\-set|Set your timezone|Paradox|
 |,ti *@user*|See a user's timezone|Paradox|
+|,choose|Choose one out of a list of things (`,choose 1 | 2 | 3`)|Tatsu|
+|,coin |Flip a coin|Tatsu|
+|,remind|Have the bot send a reminder in DM (`,remind eat in 20m`)|Tatsu|
 {:#stlist1}
 
 
@@ -67,6 +70,7 @@ Wysc uses public bots to provide services in chat. Below are some of the bots we
 |,ask|Ask WolframAlpha (`,ask 4x^2`)|Paradox|
 |,calc|Calculator (`,calc 1+2`)|Paradox|
 |,rotate|Rotate most recent image in the channel|Paradox|
+|,wiki|Search Wikipedia (`,wiki dragon`)|Tatsu|
 |,pfocus|Hide distracting channels and only show Study channels|PomoBot|
 |,pgroups|See a list of current Study Groups (`,ptimers`)|PomoBot|
 |,psub<br>,punsub|Join/leave a Study Group (`,pjoin` `,pleave`)|PomoBot|
@@ -80,66 +84,35 @@ Wysc uses public bots to provide services in chat. Below are some of the bots we
 
 | Command | Description | Bot |
 | --- | --- | --- |
-| ,play *linkhere*| Play a YouTube, Spotify, Soundcloud, or Bandcamp link | Groovy |
-| ,search| Search YouTube|Groovy|
-| ,queue| Show queue (`,q`) |Groovy|
-| ,np | Show now playing |Groovy|
-| ,skip| Skip to next song (`,next`) |Groovy|
+|,profile|See your profile|Tatsu|
+|,user|See info about yourself (or a @user) (`,user @Tatsu`)|Tatsu|
+|,top|See Wysc activity leaderboard|Tatsu|
+|,daily|Get your daily Tatsu credits|Tatsu|
+|,quest|See your Tatsu quests (for more Tatsu credits)|Tatsu|
+|,rps|Rock Paper Scissors (`,rps rock`)|Tatsu|
+| ,play | Play a YouTube, Spotify, Soundcloud, or Bandcamp link (`,play https://youtu.be/dQw4w9WgXcQ`)|Groovy|
+| ,search| Search YouTube (`,search rick roll`)|Groovy|
+| ,queue| Show queue (`,q`)|Groovy|
+| ,np | Show now playing |
+| ,skip| Skip to next song (`,next`)|Groovy|
+| ,back | Go back to last song (`,prev`)|Groovy|
+| ,disconnect | Force disconnect bot from voice call (`,dc`)|Groovy|
+| ,fastforward| Fast forward a track by x seconds (`,ff 25`)|Groovy|
+| ,loop | Cycle through repeat options |
+| ,lyrics | Show lyrics for current song, or search for lyrics (`,lyrics Stayin Alive`)|Groovy|
+| ,pause | Pause music |Groovy|
+| ,resume | Resume music |Groovy|
+| ,seek | Jump to a time in the track |Groovy|
+| ,shuffle | Shuffles queue |Groovy|
 {:#stlist3}
 
+> For a guide on Cafe Simulator, see CoreBot<br>
+> [See CoreBot](/docs/bots/corebot){:.jtbutton}
+{:.border-purple-400 .mb-2}
 
-### Tatsu
-
-![Tatsu.gg Logo](https://tatsu.gg/static/tatsu-logo.png){: .bg-stable-wysc-dark .p-8 .w-48}
-[Tatsu Website](https://tatsu.gg/){: .jtbutton target="_blank" rel="noopener"}
-[Tatsu Bot Commands](https://tatsu.fandom.com/){: .jtbutton target="_blank" rel="noopener"}
-[Tatsu: Tatsugotchi](https://tatsu.fandom.com/wiki/Tatsugotchi){: .jtbutton target="_blank" rel="noopener"}
-
-|Command|Description|Example|
-|---|---|---|
-|,profile|See your profile|
-|,user|See info about yourself (or a @user)|`,user @Tatsu`|
-|,top|See Wysc activity leaderboard|
-|,daily|Get your daily Tatsu credits|
-|,quest|See your Tatsu quests (for more Tatsu credits)|
-|,pet|See your pet/home|[More info&ensp;&#9656;](https://tatsu.fandom.com/wiki/Tatsugotchi){: target="_blank" rel="noopener"}|
-|,avatar| Get the link to your profile picture (or a @user's)|`,avatar @Tatsu`|
-|,choose|Choose one out of a list of things|`,choose 1 | 2 | 3`|
-|,coin |Flip a coin|
-|,dice|Roll a [6 sided] dice [1] time|`,dice 1d6`
-|,remind|Have the bot send a reminder in DM|`,remind eat in 20m`|
-|,rps|Rock Paper Scissors|`,rps rock`|
-|,wiki|Search Wikipedia|`,wiki dragon`|
-{:#stlist4}
-
-> One of Tatsu's most notable features, Tatsugotchi, lets you raise your own virtual pet!  
-> In Wysc, **`t!tg`** is identical to **`,pet`**.  
-> [See Tatsu: Tatsugotchi for more info&ensp;&#9656;](https://tatsu.fandom.com/wiki/Tatsugotchi){: target="_blank" rel="noopener"}
-{:.border-purple-400}
-
-### Groovy
-
-![Groovy Logo](https://groovy.bot/img/logos/rounded.svg){: .p-2 .w-24}
-[Groovy Website](https://groovy.bot/){: .jtbutton target="_blank" rel="noopener"}
-[Groovy Bot Commands](https://groovy.bot/commands){: .jtbutton target="_blank" rel="noopener"}
-
-
-| Command | Description | Example |
-| --- | --- | --- |
-| ,play | Play a YouTube, Spotify, Soundcloud, or Bandcamp link | `,play https://youtu.be/dQw4w9WgXcQ` |
-| ,search| Search YouTube|`,search rick roll`|
-| ,queue| Show queue |`,q`|
-| ,np | Show now playing |
-| ,skip| Skip to next song |`,next`|
-| ,back | Go back to last song |`,prev`|
-| ,disconnect | Force disconnect bot from voice call |`,dc`|
-| ,fastforward| Fast forward a track by x seconds |`,ff 25`|
-| ,loop | Cycle through repeat options |
-| ,lyrics | Show lyrics for current song, or search for lyrics | `,lyrics Stayin Alive` |
-| ,pause | Pause music |
-| ,resume | Resume music |
-| ,seek | Jump to a time in the track |
-| ,shuffle | Shuffles queue |
-{:#stlist5}
+> For a guide on raising your own virtual pet, see Tatsugotchi  
+> In Wysc, **`t!tg`** is identical to **`,pet`**.<br>
+> [See Tatsu: Tatsugotchi](https://tatsu.fandom.com/wiki/Tatsugotchi){: target="_blank" rel="noopener" .jtbutton}
+{:.border-purple-400 .mb-2}
 
 {% include jttables.html %}
