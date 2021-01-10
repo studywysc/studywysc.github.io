@@ -4,7 +4,7 @@ headername: Docs
 title: Welcome to Wysc Docs!
 title-sub: Getting Started
 breadcrumbs: false
-summary: "Wysc Docs is the primary resource for all users, students, and visitors of Wysc. Get started in 5 easy steps:"
+summary: "Wysc Docs is the primary resource for all users, students, and visitors of Wysc. Get started in 3 easy steps:"
 
 # see docs/_data/jtnav.yml for Docs sidebar
 
@@ -12,54 +12,47 @@ summary: "Wysc Docs is the primary resource for all users, students, and visitor
 
 <!-- ![Wysc Docs landing image](/media/ben-white-eeiAnugy2Hs-unsplash_c3.jpg){: .w-full .sm:w-1/2 .xl:w-2/3} -->
 
-### 1. Culture/Rules
+### 1. How does Wysc work?
 
-**Respect the community, respect the space.** Nice and simple! For more, our community also moderates against certain content like advertising:
+As a new user, there are many restrictions like no sending links. Don't worry! As you chat more, these restrictions disappear.
+
+**Respect the community, respect the space.** This is the core of Wysc's philosophy. We are a place for relaxing and studying together.
+
+Wysc users start at Seed rank. The ranks go Seed, Sprout, Sapling, Treeling, and Tree.
 
 [See Culture/Rules](/docs/culture){: .jtbutton}
-
-### 2. Ranking Up
-
-As a new user, there are many restrictions on the types of content you can send. As you rank up, these restrictions disappear.
-
-All users start with the Seed rank. It only takes minutes to rank up to Sprout! See what perks ranking up can get you:
-
 [See Roles](/docs/roles){: .jtbutton}
 
-### 3. Wysc Library
 
-The goal of our Pomodoro bot is to provide a sense of company while you are studying -- similar to being in a virtual library!
+### 2. What are the channels?
 
-Students study independently along 1 of 4 customizable group Pomodoro timers. During break times, students can chat with each other, update their `#dailygoals`, and relax.
+Wysc is separated into 3 sections:
+- **Social 🥂**  
+Freely chat and socialize! **`#hangouts`** is for organizing games and other group events with friends.  
 
-Voice calls, cameras, and screenshares are available (but never required), including `#studyspace`, `#studyradio`, and a private Pomodoro voice channel.
+- **Wysc Library 📚**  
+Study with us! We study together in **`#study-groups`** (more info below).  
 
-Read our full guide for bot commands:
+- **Wysc Cafe ☕**  
+Have fun here! Share memes and videos in **`#cafe-center`**, as well as in other channels.
+
+[See Group Events](/docs/events){: .jtbutton}
+
+
+### 3. How do I study in Wysc?
+
+Our goal is to provide a sense of company while you are studying -- similar to being in a virtual library!
+
+Students study independently along 1 of 4 customizable group Pomodoro timers in **`#study-groups`**. These timers also come with private voice channels.
+
+Voice calls, cameras, and screenshares are also available in **`#studyspace`** and **`#studyradio`**, but we encourage you to start in **`#study-groups`** first!
 
 [See Group Study](/docs/study){: .jtbutton}
 
 
+### Questions? We're here.
 
-### 4. Wysc Cafe
-
-There's more than just studying! Here's a brief overview of what Wysc Cafe is about:
-
-- **#hangouts** - Play games and join [Group Events](/docs/events)!
-- **#cafe-center** - Send memes, chat about games, and more (off-topic channel)
-- **#music-center** - Share music you like (or have made!) with others
-- **#petting-zoo** - Sometimes you just need a break 🐾
-- **#anime-kpop** - East asian media consumers welcome :)
-- **#arts-media** - Do you draw? Found art that looks pretty? Show us!
-
-There are also roles you can add in `#services` and bots you can play with!
-
-[See Group Events](/docs/events){: .jtbutton}
-[See Bots](/docs/bots){: .jtbutton}
-
-
-### 5. Questions? We're here.
-
-Wysc is a community. If you ever have any questions or concerns, you can always reach us in our Discord's `#support` channel!
+Wysc is a community. If you ever have any questions or concerns, you can always reach us in our Discord's **`#support`** channel!
 
 Our full Documentation is also available in the Sidebar to the left.
 {: .hidden .lg:block}

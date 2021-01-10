@@ -5,7 +5,8 @@ summary: "A high quality configurable LaTeX rendering and maths bot with heaps o
 doctype: bot
 
 redirect_from:
-  - docs/bots/texit
+  # - docs/bots/texit
+  - docs/bots/paradox
   - docs/bots/paradøx
   - texit
   - paradox
@@ -23,7 +24,7 @@ stoptions:
 ![TeXit Logo](https://images.discordapp.net/avatars/510789298321096704/f250cb1254053fd8dc670562dc636356.png?size=512){: .w-24}
 [TeXit - Top.gg](https://top.gg/bot/510789298321096704){: .jtbutton target="_blank" rel="noopener"}
 
-Hi! My main purpose in life is to render high quality LaTeX for you! I also have heaps of utility commands, both mathematical and otherwise. *(Source: [Paradox and TeXit](https://top.gg/bot/510789298321096704){: target="_blank" rel="noopener"})*
+Hi! My main purpose in life is to render high quality LaTeX for you! I also have heaps of utility commands, both mathematical and otherwise. *(Source: [TeXit](https://top.gg/bot/510789298321096704){: target="_blank" rel="noopener"})*
 
 |Prefix|Works in categories|Works in channels|
 |---|---|---|
