@@ -16,19 +16,16 @@ redirect_from:
   width="100%"
   class="mb-4"
   style="height:130vw;max-height:900px;">
-<iframe
-  src="https://docs.google.com/viewerng/viewer?url=https://cdn.discordapp.com/attachments/554128715790155796/555351313836277781/texit_cheatsheet_1.pdf"
-  style="width:100%;height:130vw;max-height:900px;border:none;"
-  markdown="1">
+<canvas id="pdfviewer" markdown="1" style="width:100%;height:130vw;max-height:900px;">
 
-  Your browser isn't loading this pdf properly.
+Your browser doesn't support pdf's. Scroll down for download links.
 
-  [Download](/docs/assets/texit_cheatsheet_1.pdf){: .jtbutton}
-
-</iframe>
+</canvas>
 </object>
 
 [Open in Google PDF Viewer](https://docs.google.com/viewerng/viewer?url=https://cdn.discordapp.com/attachments/554128715790155796/555351313836277781/texit_cheatsheet_1.pdf){: .jtbutton target="_blank" rel="noopener"}
 [Download](/docs/assets/texit_cheatsheet_1.pdf){: .jtbutton}
 
 Source: Paradox & TeXit (Discord server)
+
+{% include jtpdf.html url="/docs/assets/texit_cheatsheet_1.pdf" %}

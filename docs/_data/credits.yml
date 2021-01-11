@@ -175,6 +175,8 @@
           cosurl: https://jquery.com/
         - cosname: LoadCSS
           cosurl: https://github.com/filamentgroup/loadCSS
+        - cosname: PDF.js
+          cosurl: https://github.com/mozilla/pdf.js
         - cosname: PWACompat
           cosurl: https://github.com/GoogleChromeLabs/pwacompat
         - cosname: Simple-DataTables
