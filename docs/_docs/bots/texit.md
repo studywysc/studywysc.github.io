@@ -5,7 +5,7 @@ summary: "A high quality configurable LaTeX rendering and maths bot with heaps o
 doctype: bot
 
 redirect_from:
-  # - docs/bots/texit
+  - docs/bots/texit
   - docs/bots/paradox
   - docs/bots/paradøx
   - texit
@@ -37,7 +37,7 @@ Hi! My main purpose in life is to render high quality LaTeX for you! I also have
 For special help and a tutorial on how to type math equations, symbols, and other formatting in LaTeX, check out these fantastic resources:
 
 
-[LaTeX Cheatsheet for TeXit](https://docs.google.com/viewerng/viewer?url=https://cdn.discordapp.com/attachments/554128715790155796/555351313836277781/texit_cheatsheet_1.pdf){: .jtbutton target="_blank" rel="noopener"}<br>
+[LaTeX Cheatsheet for TeXit](/docs/bots/texit/latex){: .jtbutton}<br>
 Source: Paradox & TeXit (Discord server), [Download](/docs/assets/texit_cheatsheet_1.pdf)
 
 [List of LaTeX symbols](https://latex.wikia.org/wiki/List_of_LaTeX_symbols){: .jtbutton target="_blank" rel="noopener"}<br>

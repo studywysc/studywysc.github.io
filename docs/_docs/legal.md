@@ -3,6 +3,9 @@ layout: jtdocs
 title:  "Terms and Privacy"
 title-sub: "Licenses"
 summary: "Wysc is committed to being transparent about our data practices and legal responsibilities."
+
+wyscbot: "Wysc Staff ☕#7290"
+
 redirect_from:
   - terms
   - docs/terms
@@ -26,9 +29,10 @@ redirect_from:
 
 ### Notes
 
-Last updated: 9 Jan 2021
-- Adding Terms of Service
-- Clarifying language around the kind of user data we collect
+Last updated: 11 Jan 2021
+- Reflect updated practices regarding logs
+- Add user controls for public information
+- Update links
 
 <div id="terms"></div>
 
@@ -68,9 +72,11 @@ Your identity in Wysc Discord is only connected to your public Discord user. We�
 
 You may provide personal information voluntarily, such as if you include information about yourself in `#introductions`. We will not treat them differently from any other public message you send. We don't extract personal information from your messages.
 
-We log [information about your public Discord user](https://discord.com/developers/docs/resources/guild#guild-member-object){: target="_blank" rel="noopener"} for moderation, statistics, and service purposes. This includes but is not limited to: remembering your public Discord user and the roles you have during your time in Wysc Discord; logging the number of messages you send for EXP; and finding out which channels are most popular.
+We log [information about your public Discord user](https://discord.com/developers/docs/resources/guild#guild-member-object){: target="_blank" rel="noopener"} for moderation, statistics, and service purposes. This includes but is not limited to: remembering your public Discord user and the roles you have during your time in Wysc Discord; logging the number of messages you send for EXP; and recording account creation timestamps. These logs are required to provide you services and keep Wysc safe, and will be kept as long as Wysc is alive.
 
-**Wysc Website uses Google Analytics: [How Google uses data when you use our partners' sites or apps](https://www.google.com/policies/privacy/partners/){: target="_blank" rel="noopener"}.** The website also uses certain cookies to store site preferences locally on your device (no data is sent to us), such as the theme you choose for Wysc Docs.
+We log edited and deleted messages in Wysc Discord for moderation purposes. These logs are deleted after 5 days on a rolling basis with an automated process. Some channels, such as `#bots-spam` and `#dailygoals`, are excluded from logs to help protect user privacy. A portion of Wysc contributors [in Contributor Hub](/docs/dev) have access to these logs.
+
+**Wysc Website uses Google Analytics. Learn more at ["How Google uses information from sites or apps that use our services"](https://policies.google.com/technologies/partner-sites){: target="_blank" rel="noopener"}.** The website also uses certain cookies to store site preferences locally on your device (no data is sent to us), such as the theme you choose for Wysc Docs.
 
 At this time, our sites and applications do not respond to Do Not Track beacons sent by browser plugins.
 
@@ -93,17 +99,11 @@ Wysc is based in the US and all data infrastructure are located in the US. We wi
 If Wysc is acquired by or merged with a company — we don’t plan on that, but if it happens — we’ll notify you before any info about you is transferred and becomes subject to a different privacy policy.
 
 
+<div id="rights"></div>
+
 #### Your rights with respect to your information
 
-At Wysc, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US.
-
-<details markdown="1">
-
-<summary markdown="1" class="cursor-pointer">
-
-**Wysc recognizes all of the rights granted in these regulations, except as limited by applicable law. Click here to see your rights.**
-
-</summary>
+At Wysc, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. Wysc recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
 
 - **Right to Know.** You have the right to know what personal information is collected, used, shared or sold. We outline both the categories and specific bits of data we collect, as well as how they are used, in this privacy policy.
 - **Right of Access.** This includes your right to access the personal information we gather about you, and your right to obtain information about the sharing, storage, security and processing of that information.
@@ -115,12 +115,24 @@ At Wysc, we apply the same data rights to all customers, regardless of their loc
 - **Right to Portability.** You have the right to receive the personal information we have about you and the right to transmit it to another party.
 - **Right to not be subject to Automated Decision-Making.** You have the right to object and prevent any decision that could have a legal, or similarly significant, effect on you from being made solely based on automated processes. This right is limited, however, if the decision is necessary for performance of any contract between you and us, is allowed by applicable law, or is based on your explicit consent.
 - **Right to Non-Discrimination.** This right stems from the CCPA. We do not and will not charge you a different amount to use our products, offer you different discounts, or give you a lower level of customer service because you have exercised your data privacy rights. However, the exercise of certain rights (such as the right “to be forgotten”) may, by virtue of your exercising those rights, prevent you from using our Services.
-</details>
 
-Wysc does not collect or process personal information, but many services that Wysc rely on do.
+
+**Wysc collects public user information using a bot ("{{ page.wyscbot }}"). Learn more at ["Red and End User Data"](https://docs.discord.red/en/stable/red_core_data_statement.html){: target="_blank" rel="noopener"}.**
 {:.mb-2}
-- To exercise your Discord rights, [see the Discord Privacy Policy here](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
-- To exercise your GitHub rights, [See the GitHub Privacy Policy here](https://help.github.com/en/github/site-policy/github-privacy-statement){: target="_blank" rel="noopener"}
+
+> [**If you are a Tree rank user**](/docs/ranks):  
+> You can see what data the bot collects by typing `,wyscmydata 3rdparty`  
+> You can delete your data by typing `,wyscmydata forgetme`
+{:.border-green-400 .mb-2}
+
+> **If you are any other user who has interacted with Wysc**:  
+> You can submit a request by [contacting us](/docs/contact), preferably in `#support`
+{:.border-green-400 .mb-8}
+
+**Wysc does not collect or process personal information**, but many services that Wysc rely on do.
+{:.mb-2}
+- To exercise your rights with Discord, [see the Discord Privacy Policy here](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
+- To exercise your rights with GitHub, [See the GitHub Privacy Policy here](https://help.github.com/en/github/site-policy/github-privacy-statement){: target="_blank" rel="noopener"}
 - To exercise your rights with other service providers, [see our Credits page](/docs/credits)
 
 If you have questions about exercising these rights or need assistance, please [contact us on Discord or via email](/docs/contact).
@@ -130,17 +142,14 @@ If you have questions about exercising these rights or need assistance, please [
 
 All data is encrypted via [SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security){: target="_blank" rel="noopener"} when transmitted from our servers to your browser.
 {:.mb-2}
-- Wysc Discord data is encrypted subject to [Discord's security practices](https://discord.com/safety){: target="_blank" rel="noopener"}
-- Wysc Website and GitHub data are encrypted subject to [GitHub's security practices](https://github.com/security){: target="_blank" rel="noopener"}
-- Other processors and their encryption practices can be found [on our Credits page](/docs/credits)
+- Wysc Discord data is stored and delivered subject to [Discord's security practices](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
+- Wysc Website and GitHub data are stored and delivered subject to [GitHub's security practices](https://github.com/security){: target="_blank" rel="noopener"}
+- Other processors and their practices can be found [on our Credits page](/docs/credits)
 
-Wysc doesn't collect personal information. We don't know you outside of your public Discord user or the public platform-specific method of identification of a processor.
-{:.mb-2}
-- To request data deletion from Discord, [see the Discord Privacy Policy here](https://discordapp.com/privacy){: target="_blank" rel="noopener"}
-- To request data deletion from GitHub, [See the GitHub Privacy Policy here](https://help.github.com/en/github/site-policy/github-privacy-statement){: target="_blank" rel="noopener"}
-- To request data deletion from other service providers, [see our Credits page](/docs/credits)
 
-If you delete your Discord account, your messages may still remain in Wysc in anonymized form. We can't delete all of these for you, but if you [contact us](/docs/contact), we may be able to remove a limited number of individual messages from deleted users on request.
+**Wysc does not collect personal information.** We don't know you outside of your public Discord user or the public platform-specific method of identification of a processor.
+
+**To delete your data**, see ["Your rights with respect to your information"](#rights). If you delete your Discord account, your messages may still remain in Wysc in anonymized form. We can't delete all of these for you, but if you [contact us](/docs/contact), we may be able to remove a limited number of individual messages from deleted users on request.
 
 Our services and other web properties are operated in the United States. If you are located in the European Union or elsewhere outside of the United States, please be aware that any information you provide to us will be transferred to and stored in the United States. By using our Site, participating in any of our services and/or providing us with your information, you consent to this transfer.
 
