@@ -2,11 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     activesupport (6.0.3.4)
-      concurrent-ruby (>= 1.0.2, ~> 1.0)
-      i18n (< 2, >= 0.7)
-      tzinfo (~> 1.1)
-      minitest (~> 5.1)
-      zeitwerk (>= 2.2.2, ~> 2.2)
+      concurrent-ruby (>= 1.0.2, >= 1.0)
+      minitest (>= 5.1)
+      tzinfo (>= 1.1)
+      zeitwerk (>= 2.2.2, >= 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2)
     coffee-script (2.4.1)
@@ -268,6 +267,9 @@ DEPENDENCIES
   tzinfo (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.0)
+
+RUBY VERSION
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
