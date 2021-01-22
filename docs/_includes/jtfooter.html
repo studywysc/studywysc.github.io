@@ -1,6 +1,6 @@
 {% if page.doctype == "bot" %}
 <blockquote class="border-yellow-400 mb-8">
-  <p>🗒️ <strong>This website is not affiliated with {{ page.title }}.</strong> See our <a href="/docs/bots">Bots page for more info.</a></p>
+  <p>🗒️ <strong>This website is not affiliated with {% if page.title-sub %}{{ page.title-sub }}{% else %}{{ page.title }}{% endif %}.</strong> See our <a href="/docs/bots">Bots page for more info.</a></p>
 </blockquote>
 {% endif %}
 

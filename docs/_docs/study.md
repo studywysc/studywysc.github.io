@@ -29,13 +29,8 @@ Wysc integrates [PomoBot](https://github.com/Intery/PomoBot){: target="_blank" r
 ### Get Started
 
 The pomo bot was created to help you work progressively and focused on your studies and other productive activity. All credits go to Conatum, thank you very much for your efforts in programming this masterpiece!
+
 Let’s have a look at the commands: they all start with the prefix **`,p`**
-
-You can ask the bot to list all possible commands with:
-
-```
-,phelp
-```
 
 You want to study in a group, at the same time as other people are studying? The pomodoro timer is one of our core tools.
 
@@ -43,10 +38,12 @@ First, go to **`#study-groups`**. Type the following:
 
 |Command|Description|
 |---|---|
-|,pgroups|shows you all group timers and their current status|
+|,pgroups<br>,pjoin|shows you all group timers and their current status (both commands do the same thing)|
 {:#stlist2}
 
-There are several ways to join a timer:
+Typing the command above shows you the three options to choose from. You then type 1 for Bubble Tea, 2 for Latte or 3 for Espresso.
+
+There are several ways to join a timer. You can also directly join a timer by typing:
 
 |Command|Description|
 |---|---|
@@ -55,15 +52,7 @@ There are several ways to join a timer:
 |,pjoin Espresso|     to join the timer Espresso|
 {:#stlist3}
 
-You can also just type:
-
-```
-,pjoin
-```
-
-that shows you the three options to choose from. You then type 1 for Bubble Tea, 2 for Latte or 3 for Espresso.
-
-Another way to subscribe to a timer is to directly go to **`#study-groups`** and react with a green check mark on a message from the Bot that mentions a particular pomo timer. You can see that it is addressed to @Bubble Tea @Latte or @Espresso.
+Another way to subscribe to a timer is to directly go to **`#study-groups`** and react with a green check mark (✅) on a message from the Bot that mentions a particular pomo timer. You can see that it is addressed to @Bubble Tea @Latte or @Espresso.
 
 With you joining a timer, you will see a vc-channel that is dedicated for your pomo timer on the left. You can go there and study together with others on the same timer, and then having a nice chat during your break.
 
@@ -73,7 +62,7 @@ If you want to hide distracting channels, you can enter Focus Mode. Type the com
 ,pfocus
 ```
 
-To leave the timer, type
+When you are done studying, you can leave the timer by typing:
 
 ```
 ,pleave
@@ -167,7 +156,12 @@ You can edit any of the three timers to an original pomodoro session by
 {:#stlist10}
 
 
-More handy commands:
+
+You can ask the bot to list all possible commands with:
+
+```
+,phelp
+```
 
 |Command|Description|
 |---|---|

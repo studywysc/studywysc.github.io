@@ -33,7 +33,7 @@ Our social media accounts are not maintained right now. If you're in Contributor
 
 ### Contributor Hub
 
-The most popular way for those Sapling rank and above to help contribute to Wysc is by suggesting feature updates, bug fixes, and commenting on new features before they release to the public!
+The most popular way for those Treeling rank and above to help contribute to Wysc is by suggesting feature updates, bug fixes, and commenting on new features before they release to the public!
 
 Some contributors may be invited to become a Pond and contribute to behind-the-scenes administrative Wysc decisions.
 
@@ -42,9 +42,10 @@ To join Contributor Hub, you need to be at least Sapling rank. `#ch-info` will t
 
 ### Developers
 
-If you know how GitHub and Jekyll work, feel free to directly help by making pull requests!
+If you know how [GitHub](https://github.com){: target="_blank" rel="noopener"} works, feel free to directly help by making pull requests! Our documentation is written in [Markdown](https://kramdown.gettalong.org/quickref.html){: target="_blank" rel="noopener"}.
 {:.mb-2}
 - Click the GitHub icon on any page to get started
+- Click "Edit" to start contributing changes to any page, [in Markdown format](https://kramdown.gettalong.org/quickref.html){: target="_blank" rel="noopener"}
 - The working GitHub branch is `dev`
 
 Here are some things we're always looking for help on:
