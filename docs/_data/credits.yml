@@ -101,6 +101,9 @@
         - cosname: KDBot
           cosline: TTS bot
           cosurl: http://kunalsdatabase.com/kdbot/
+        - cosname: Myuu
+          cosline: Pokemon bot
+          cosurl: https://myuu.xyz/
         - cosname: Rythm
           cosline: Music streaming
           cosurl: https://rythmbot.co/

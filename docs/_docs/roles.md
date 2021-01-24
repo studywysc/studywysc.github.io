@@ -63,8 +63,10 @@ When you first join Wysc, you're a Seed. Welcome to Wysc!
   - All text channels are open!
   - &#10060; No joining permissions in `🔊 || studyspace 📔` (use studyradio instead)
 - **Wysc Cafe ☕ Channels:** You have text-only access
-  - To send link embeds and Spotify listen-alongs, add a Wysc Cafe role from `#services`
-  - All channels are open!
+  - All voice channels are open!
+  - &#10060; `#socialgram` is hidden, consider using another channel
+  - &#10060; `#studygram` is hidden, consider using another channel
+  - &#10060; To send links and Spotify listen-alongs, add a Wysc Cafe role from `#services`
   - &#10060; No speaking permissions in `🔊 || cafe-jukebox 🎶`
 
 
@@ -78,10 +80,12 @@ Welcome to the primary member role of Wysc! Many of the Seed limitations are now
   - All text and voice channels are open!
   - &#10004; Text and media access to `#serious`
 - **Wysc Library 📚 Channels:** You have text and media access
-  - All text channels are open!
+  - All text and voice channels are open!
   - &#10004; Joining permissions in  `🔊 || studyspace 📔`
 - **Wysc Cafe ☕ Channels:** You have text and media access
-  - All text channels are open!
+  - All text and voice channels are open!
+  - &#10004; Text and media access to `#socialgram`
+  - &#10004; Text and media access to `#studygram`
   - &#10004; Speaking permissions in `🔊 || cafe-jukebox 🎶`
 
 
