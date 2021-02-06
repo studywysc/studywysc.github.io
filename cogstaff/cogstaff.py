@@ -22,7 +22,7 @@ class cogstaff(commands.Cog):
     @commands.command()
     @checks.admin_or_permissions(manage_guild=True)
     async def configtree(self, ctx, message):
-        await self.config.guild(ctx.guild).loveCannon.set(message)
+        await self.config.guild(ctx.guild).configtree.set(message)
         await ctx.send("Set treerole to " + message)
 
     
