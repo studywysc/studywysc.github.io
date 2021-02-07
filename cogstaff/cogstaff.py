@@ -37,8 +37,9 @@ class cogstaff(commands.Cog):
     @commands.command()
     @checks.mod()
     async def nsfw(self, ctx, *, user: discord.Member=None):
-
         if not user:
-            return ctx.send("no user specified")
-
-        await ctx.send("hello " + user)
+            await ctx.send("no user specified")
+        else:
+            role = discord.utils.get(member.server.roles, name="2")
+            await bot.add_roles(user, role)
+            await ctx.send("hello " + user.mention + ", you now have the role " + role.name)
