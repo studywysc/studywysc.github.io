@@ -20,11 +20,11 @@ Two-Factor Authentication is a second way to prove that you are who you really a
 - **Your First Device:** Username and Password on your computer
   - Anyone can steal your password, log in, and pretend to be you
 - **Your Second Device:** A 6-digit code generated on your phone
-  - The 6-digit code changes automatically every 30 seconds
   - The 6-digit code is a "second password" that you have physically
-  - If someone else has your password, they still can't log in without your phone
+  - The 6-digit code changes automatically every 30 seconds
+  - If someone else has your password, they still can't log in without the code from your phone
 
-By requiring two devices instead of one, Discord will know that anyone who logs into your account must have both your password **and** your phone. That means it is probably you and not a hacker.
+By requiring two devices instead of one, Discord will know that anyone who logs into your account must have both your password **and** your phone. That means it is probably you trying to sign in and not a hacker.
 
 
 
@@ -67,3 +67,7 @@ For Discord, you're in luck :) It's okay if you didn't backup your codes.
 Give this a try from a computer you're signed in on:
 
 [Discord: Lost Two-Factor Codes](https://support.discord.com/hc/en-us/articles/115001221072-Lost-Two-Factor-Codes){: .jtbutton target="_blank" rel="noopener"}
+
+**For your other accounts, you will need to have set up backup first.** Microsoft Authenticator lets you backup your codes using iCloud (on iPhone/iPad) or OneDrive (on Android). Once it is set up, you are done! The next time you install the app, restore from your backup and all your codes will be there waiting for you :)
+
+[Microsoft: Back up and recover account credentials using the Microsoft Authenticator app](https://docs.microsoft.com/en-us/azure/active-directory/user-help/user-help-auth-app-backup-recovery){: .jtbutton target="_blank" rel="noopener"}
