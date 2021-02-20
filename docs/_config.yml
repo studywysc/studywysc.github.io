@@ -43,9 +43,6 @@ destination: _site
 include:
   - _headers
 
-exclude:
-  - events-upstream/
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

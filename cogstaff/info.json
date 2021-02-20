@@ -1,0 +1,10 @@
+{
+  "author" : ["wysc.us.to"],
+  "install_msg" : "Thanks for installing. See our repo to make pull requests at https://github.com/coffeebank/wysc",
+  "name" : "cogstaff",
+  "short" : "wysc-cogs Wysc Staff",
+  "requirements" : ["dhooks"],
+  "description" : "A cog with commands for Wysc Staff",
+  "permissions" : [],
+  "tags" : []
+}

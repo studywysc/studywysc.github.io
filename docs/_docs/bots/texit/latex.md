@@ -11,7 +11,7 @@ redirect_from:
 ---
 
 <object
-  data="/docs/assets/texit_cheatsheet_1.pdf"
+  data="/docs/assets/texit_cheatsheet_1.pdf#toolbar=0"
   type="application/pdf"
   width="100%"
   class="mb-4"
