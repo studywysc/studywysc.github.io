@@ -38,7 +38,7 @@ First, go to **`#study-groups`**. Type the following:
 
 |Command|Description|
 |---|---|
-|,pgroups<br>,pjoin|shows you all group timers and their current status (both commands do the same thing)|
+|,pgroups<br>,ptimers|shows you all group timers and their current status (both commands do the same thing)|
 {:#stlist2}
 
 Typing the command above shows you the three options to choose from. You then type 1 for Bubble Tea, 2 for Latte or 3 for Espresso.
@@ -52,9 +52,9 @@ There are several ways to join a timer. You can also directly join a timer by ty
 |,pjoin Espresso|     to join the timer Espresso|
 {:#stlist3}
 
-Another way to subscribe to a timer is to directly go to **`#study-groups`** and react with a green check mark (✅) on a message from the Bot that mentions a particular pomo timer. You can see that it is addressed to @Bubble Tea @Latte or @Espresso.
+Another way to subscribe to a timer is by reacting with a green check mark (✅) on a message from the Bot that mentions a particular pomo timer. You can see that it is addressed to @Bubble Tea @Latte or @Espresso.
 
-With you joining a timer, you will see a vc-channel that is dedicated for your pomo timer on the left. You can go there and study together with others on the same timer, and then having a nice chat during your break.
+With you joining a timer, you will see a vc-channel that is dedicated for your pomo timer on the left. You can go there and study together with others on the same timer, and then enjoy a nice chat during your break.
 
 If you want to hide distracting channels, you can enter Focus Mode. Type the command again to leave Focus Mode.
 
@@ -68,7 +68,7 @@ When you are done studying, you can leave the timer by typing:
 ,pleave
 ```
 
-Now, have some fun out there and whenever a question or suggestion arises, don’t hesitate to put it in **`#support`** or you directly ask members in our channels – they will all gladly help you 😊 
+Now, have some fun out there and whenever a question or suggestion arises, don’t hesitate to put it in **`#support`** or to directly ask members in our channels – they will all gladly help you 😊 
 
 
 ### Notifications
