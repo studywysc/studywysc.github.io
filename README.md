@@ -28,7 +28,9 @@ The working development branch is `dev`.
 
 All users are welcome to contribute minor bug fixes and typo errors at any time. For larger projects, it is recommended to [start an Issue first](https://github.com/coffeebank/wysc/issues) or [let us know in our Discord's `#support` channel](https://wysc.us.to/invite).
 
-If a pull request is approved, it will qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors) (work in progress).
+Netlify builds all commits to the `dev` branch at <https://wyscdev.netlify.app>, if you would like to give your changes a live link before they are merged into the `master` branch :)
+
+All contributions will fall under the license listed in the License section of this README. If a pull request is approved, it will qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors) (work in progress).
 
  
 
