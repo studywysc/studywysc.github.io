@@ -1,0 +1,9 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/docs"
+  schedule:
+    interval: daily
+    time: "14:00"
+  open-pull-requests-limit: 10
+  target-branch: dev
