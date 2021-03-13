@@ -62,7 +62,7 @@ All contributions will fall under the license listed in the License section of t
 
 Credits are [on our website at https://wysc.us.to/credits](https://wysc.us.to/credits).
 
-Are we missing someone? [Let us know](https://wysc.us.to/contact#official-inquiries) or [make a pull request](https://github.com/coffeebank/wysc/blob/dev/docs/_docs/credits.md)!
+Are we missing someone? [Let us know](https://wysc.us.to/contact#official-inquiries) or [make a pull request](https://github.com/coffeebank/wysc/blob/dev/docs/_data/credits.yml)!
 
  
 
