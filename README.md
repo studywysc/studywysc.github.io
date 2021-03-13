@@ -1,7 +1,7 @@
 [![Wysc header image](https://raw.githubusercontent.com/coffeebank/wysc/master/docs/media/wysc_header01.jpg)](https://wysc.us.to)
 
 <h1 align="center">
-    Wysc -  Virtual Study Cafe
+    ☕ Wysc -  Virtual Study Cafe
 </h1>
 
 <h4 align="center">
