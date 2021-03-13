@@ -10,16 +10,16 @@
 
 <br>
 <div align="center">
-  <a href="https://wysc.us.to">
-    <img src="https://img.shields.io/badge/Website-▸-0C3247?style=for-the-badge&logo=safari&logoColor=white" />
-  </a>
   <a href="https://wysc.us.to/invite">
     <img src="https://img.shields.io/badge/Discord-▸-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://wysc.us.to">
+    <img src="https://img.shields.io/badge/Website-▸-0C3247?style=for-the-badge&logo=safari&logoColor=white" />
   </a>
   <a href="https://wysc.us.to/docs">
     <img src="https://img.shields.io/badge/Wysc%20Docs-▸-343A40?style=for-the-badge&logo=gitbook&logoColor=white" />
   </a>
-  <a href="./issues">
+  <a href="https://github.com/coffeebank/wysc/issues">
     <img src="https://img.shields.io/github/issues/coffeebank/wysc?style=for-the-badge&logo=github" />
   </a>
 </div>
@@ -43,11 +43,16 @@
 
 # Contributions
 
+<a href="https://wysc.us.to/docs/dev">
+  <img src="https://img.shields.io/badge/Contribution%20Guide-▸-343A40?style=for-the-badge&logo=gitbook&logoColor=white" />
+</a>
+<br>
+
 The working development branch is `dev`.
 
-All users are welcome to contribute minor bug fixes and typo errors at any time. For larger projects, it is recommended to [start an Issue first](https://github.com/coffeebank/wysc/issues) or [let us know in our Discord's `#support` channel](https://wysc.us.to/invite).
+All users are welcome to contribute minor bug fixes and typo errors at any time by making pull requests to the `dev` branch. Approved changes to the `dev` branch are [pushed live to our development site](https://wyscdev.netlify.app).
 
-Netlify builds all commits to the `dev` branch at <https://wyscdev.netlify.app>, if you would like to give your changes a live link before they are merged into the `master` branch :)
+For larger projects, it is recommended to [start an Issue first](https://github.com/coffeebank/wysc/issues) or [let us know in our Discord's `#support` channel](https://wysc.us.to/invite).
 
 All contributions will fall under the license listed in the License section of this README. If a pull request is approved, it will qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors) (work in progress).
 
