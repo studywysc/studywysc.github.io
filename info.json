@@ -1,8 +1,0 @@
-{
-  "author" : ["wysc.us.to"],
-  "install_msg" : "Hi, thanks for adding wysc-cogs! This might not be the repo you're looking for. The cogs built here have been specifically developed for Wysc. See https://wysc.us.to/ for more info about us!",
-  "name" : "wysc-cogs",
-  "short" : "Cogs for Wysc",
-  "description" : "A collection of Red-DiscordBot cogs built for Wysc",
-  "tags" : []
-}
