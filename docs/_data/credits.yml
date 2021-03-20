@@ -87,9 +87,6 @@
           cosline: Server security, admin management, logs
           cosurl: https://dyno.gg/
           admin: true
-        - cosname: Emote Collector
-          cosline: Emotes for non-Nitro users
-          cosurl: https://github.com/EmoteCollector/EmoteCollector
         - cosname: KDBot
           cosline: TTS bot
           cosurl: http://kunalsdatabase.com/kdbot/
@@ -99,6 +96,9 @@
         - cosname: Nadeko
           cosline: Server security, voice channels
           cosurl: https://nadeko.bot/
+        - cosname: Not Quite Nitro (NQN)
+          cosline: Emotes for non-Nitro users
+          cosurl: https://nqn.blue/
         - cosname: Rythm
           cosline: Music streaming
           cosurl: https://rythmbot.co/
@@ -245,6 +245,8 @@
           cosurl: https://algolia.com
         - cosname: Bookmark
           cosurl: https://bookmark.com/
+        - cosname: Emote Collector (Deprecated)
+          cosurl: https://github.com/EmoteCollector/EmoteCollector
         - cosname: Gitbook
           cosurl: https://gitbook.com/
         - cosname: Pokecord (Deprecated)
