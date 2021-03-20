@@ -17,10 +17,6 @@ creditslist:
       - coname: shimutan
       - coname: Mayo
 
-  - cat: Github Contributor
-    catobj:
-      - coname: Coming soon!
-
 ---
 
 If you have a role shown below but are not credited, please reach out to us at our Docs page and we will update the listing!
@@ -44,7 +40,6 @@ Username sort order is determined by [Paradøx](../../about/legal/credits#parad%
 <div class="media-body">
 <h4 class="mt-0 py-0"><a href="{{ itemobj.courl }}" target="_blank" rel="noopener"
 class="text-decoration-none">{{ itemobj.coname }}</a></h4>
-<p>{{ itemobj.coline }}</p>
 </div>
 </div>
 </div>
@@ -75,3 +70,30 @@ class="text-decoration-none">{{ itemcos.cosname }}</a>
 {% endif %}
 </div>
 {% endfor %}
+
+<div></div>
+
+<h3>GitHub Contributors</h3>
+<div class="container-fluid">
+<div class="row pt-3" id="githubContributors">
+<div class="col-12 col-md-6"><div class="media pt-2"><div class="media-body"><h4 class="mt-0 py-0"><a href="/github" target="_blank" rel="noopener" class="text-decoration-none">Loading...</a></h4></div></div></div>
+</div>
+</div>
+
+<script>
+fetch('https://api.github.com/repos/coffeebank/wysc/contributors')
+  .then(response => response.json())
+  .then(data => {
+    let contribHtml = document.getElementById("githubContributors")
+    let a = ""
+    contribHtml.innerHTML = ""
+    for (i = 0; i < data.length; i++) {
+      a = data[i].login
+      if (a.includes("[bot]") == true) {
+        console.log("excluded "+a+" for being a bot")
+      } else {
+        contribHtml.insertAdjacentHTML('beforeend', `<div class="col-12 col-md-6"><div class="media pt-2"><div class="media-body"><h4 class="mt-0 py-0"><a href="/github" target="_blank" rel="noopener" class="text-decoration-none">${a}</a></h4></div></div></div>`)
+      }
+    }
+  });
+</script>

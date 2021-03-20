@@ -30,20 +30,20 @@ Wysc uses public bots to provide services in chat. To make remembering bot comma
 {% for i1 in site.data.credits %}{% if i1.cat == 'Discord Server' %}
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 pb-8">
 <h5 class="mt-0 pt-1 pb-1 leading-5 font-bold">
-  <a href="https://github.com/Intery/PomoBot" target="_blank" rel="noopener" class="text-decoration-none break-all">☕ PomoBot</a>
+  <a href="https://github.com/Intery/PomoBot" target="_blank" rel="noopener" class="text-decoration-none break-all">🔹 PomoBot</a>
 </h5>
 {% for itemobj in i1.catobj %}{% if itemobj.admin != true %}
 <h5 class="mt-0 pt-1 pb-1 leading-5 font-bold">
-  <a href="{{ itemobj.courl }}" target="_blank" rel="noopener" class="text-decoration-none break-all">{% if itemobj.cafe == true %}☕ {% endif %}{{ itemobj.coname }}</a>
+  <a href="{{ itemobj.courl }}" target="_blank" rel="noopener" class="text-decoration-none break-all">{% if itemobj.cafe == true %}🔹 {% endif %}{{ itemobj.coname }}</a>
 </h5>
 {% endif %}{% endfor %}
 {% for itemobjsm in i1.catobjsm[0].coslist %}{% if itemobjsm.admin != true %}
-<a href="{{ itemobjsm.cosurl }}" target="_blank" rel="noopener" class="text-decoration-none break-all p-0 m-0">{% if itemobj.cafe == true %}☕ {% endif %}{{ itemobjsm.cosname }}</a>
+<a href="{{ itemobjsm.cosurl }}" target="_blank" rel="noopener" class="text-decoration-none break-all p-0 m-0">{% if itemobj.cafe == true %}🔹 {% endif %}{{ itemobjsm.cosname }}</a>
 {% endif %}{% endfor %}
 </div>
 {% endif %}{% endfor %}
 
-***All bots with a ☕ use the prefix&ensp;`,` (comma)***
+***All bots with a 🔹 above use the prefix&ensp;`,` (comma)***
 
 
 * TOC
