@@ -43,13 +43,6 @@
       cafe: true
       rounded: circle
 
-    - coname: Nadeko
-      coline: Server security, voice channels
-      coimg: https://nadeko.bot/static/media/nadeko-top.ad6cc06a.png
-      courl: https://nadeko.bot/
-      admin: true
-      rounded: circle
-
     - coname: Paradøx/TeXit
       coline: Time, LaTeX, WolframAlpha, general functions
       coimg: /media/logos/discordparadox.png
@@ -61,7 +54,6 @@
       coline: Administrative
       coimg: /media/logos/discordred.png
       courl: https://github.com/Cog-Creators/Red-DiscordBot
-      cotype: wysc
       admin: true
       rounded: circle
 
@@ -104,6 +96,9 @@
         - cosname: Myuu
           cosline: Pokemon bot
           cosurl: https://myuu.xyz/
+        - cosname: Nadeko
+          cosline: Server security, voice channels
+          cosurl: https://nadeko.bot/
         - cosname: Rythm
           cosline: Music streaming
           cosurl: https://rythmbot.co/
