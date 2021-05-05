@@ -6,6 +6,7 @@ doctype: bot
 
 redirect_from:
   - docs/bots/emotes
+  # - docs/archive/emotes
 ---
 
 > 📦 **This page is archived.** Wysc may be removing Emote Collector in the near future. [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
