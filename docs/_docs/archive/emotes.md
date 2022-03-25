@@ -9,7 +9,7 @@ redirect_from:
   # - docs/archive/emotes
 ---
 
-> 📦 **This page is archived.** Wysc may be removing Emote Collector in the near future. [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
+> 📦 **This page is archived.** Since 2021, Wysc has replaced Emote Collector with [NQN Emotes](https://nqn.blue) and [coffee-cogs Emotes](https://github.com/coffeebank/coffee-cogs) (selfhosted). [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
 {: .border-red-600 .mb-2}
 
 > ⚠️ **This wiki is NOT endorsed by or affiliated with {{ page.title }}.** [See our Bots page for more info.](/docs/bots)

@@ -36,13 +36,6 @@
       admin: true
       rounded: circle
 
-    - coname: Groovy
-      coline: Music streaming
-      coimg: https://groovy.bot/img/logos/rounded.svg
-      courl: https://groovy.bot/
-      cafe: true
-      rounded: circle
-
     - coname: Paradøx/TeXit
       coline: Time, LaTeX, WolframAlpha, general functions
       coimg: /media/logos/discordparadox.png
@@ -51,7 +44,7 @@
       rounded: circle
 
     - coname: Red Discord Bot
-      coline: Administrative
+      coline: Administrative, Music, Radio
       coimg: /media/logos/discordred.png
       courl: https://github.com/Cog-Creators/Red-DiscordBot
       admin: true
@@ -99,10 +92,6 @@
         - cosname: Not Quite Nitro (NQN)
           cosline: Emotes for non-Nitro users
           cosurl: https://nqn.blue/
-        - cosname: Rythm
-          cosline: Music streaming
-          cosurl: https://rythmbot.co/
-          cafe: true
         - cosname: Smoogle Translate
           cosline: Language translation
           cosurl: https://docs.smoogle.gg/
@@ -249,10 +238,14 @@
           cosurl: https://github.com/EmoteCollector/EmoteCollector
         - cosname: Gitbook
           cosurl: https://gitbook.com/
+        - cosname: Groovy (Deprecated)
+          cosurl: https://groovy.bot/
         - cosname: Pokecord (Deprecated)
           cosurl: https://www.pokecord.com/
         - cosname: PomodoroBot
           cosurl: https://github.com/VicenteRD/PomodoroBot
+        - cosname: Rythm (Deprecated)
+          cosurl: https://rythmbot.co/
         - cosname: Statbot
           cosurl: https://statbot.net/
         - cosname: Watora (Deprecated)
