@@ -1,4 +1,4 @@
-[![Wysc header image](https://raw.githubusercontent.com/coffeebank/wysc/master/docs/media/wysc_header01.jpg)](https://wysc.us.to)
+[![Wysc header image](https://raw.githubusercontent.com/studywysc/wysc/master/docs/media/wysc_header01.jpg)](https://wysc.us.to)
 
 <h1 align="center">
     ☕ Wysc -  Virtual Study Cafe
@@ -19,8 +19,8 @@
   <a href="https://wysc.us.to/docs">
     <img src="https://img.shields.io/badge/Wysc%20Docs-▸-343A40?style=for-the-badge&logo=gitbook&logoColor=white" />
   </a>
-  <a href="https://github.com/coffeebank/wysc/issues">
-    <img src="https://img.shields.io/github/issues/coffeebank/wysc?style=for-the-badge&logo=github" />
+  <a href="https://github.com/studywysc/wysc/issues">
+    <img src="https://img.shields.io/github/issues/studywysc/wysc?style=for-the-badge&logo=github" />
   </a>
 </div>
 <br>
@@ -29,8 +29,8 @@
 # What's in this Repo
 
 - **`master` branch:** [Wysc Website](https://wysc.us.to)
-- **`dev` branch:** [Wysc Website (beta)](https://wyscdev.netlify.app), static CMS
-- **`wysc-cogs` branch:** Cogs for Wysc Staff ☕ bot
+- **`dev` branch:** *make pull requests against `master`*
+- **`wysc-cogs` branch:** *moved to [`studywysc/wysc-cogs`](https://github.com/studywysc/wysc-cogs)*
 
 
 # License
@@ -48,11 +48,9 @@
 </a>
 <br>
 
-The working development branch is `dev`.
+If you have something you want to add to any of our docs, feel free to make a Pull Request! Minor bug fixes and typo errors are also always welcome. We will usually accept it :)
 
-All users are welcome to contribute minor bug fixes and typo errors at any time by making pull requests to the `dev` branch. Approved changes to the `dev` branch are [pushed live to our development site](https://wyscdev.netlify.app).
-
-For larger projects, it is recommended to [start an Issue first](https://github.com/coffeebank/wysc/issues) or [let us know in our Discord's `#support` channel](https://wysc.us.to/invite).
+If you're thinking about anything bigger like changing/overhauling the site design or adding a major feature, it is recommended to [let us know in our Discord's Contributor Hub](https://wysc.us.to/invite) first and/or [start an Issue](https://github.com/studywysc/wysc/issues).
 
 All contributions will fall under the license listed in the License section of this README. If a pull request is approved, it will qualify your username to be listed [on our Contributors page](https://wysc.us.to/contributors) (work in progress).
 
@@ -62,7 +60,7 @@ All contributions will fall under the license listed in the License section of t
 
 Credits are [on our website at https://wysc.us.to/credits](https://wysc.us.to/credits).
 
-Are we missing someone? [Let us know](https://wysc.us.to/contact#official-inquiries) or [make a pull request](https://github.com/coffeebank/wysc/blob/dev/docs/_data/credits.yml)!
+Are we missing someone? [Let us know](https://wysc.us.to/contact#official-inquiries) or [make a pull request](https://github.com/studywysc/wysc/blob/dev/docs/_data/credits.yml)!
 
  
 

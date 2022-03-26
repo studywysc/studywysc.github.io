@@ -46,11 +46,12 @@ If you know how [GitHub](https://github.com){: target="_blank" rel="noopener"} w
 {:.mb-2}
 - Click the GitHub icon on any page to get started
 - Click "Edit" to start contributing changes to any page, [in Markdown format](https://kramdown.gettalong.org/quickref.html){: target="_blank" rel="noopener"}
-- The working GitHub branch is `dev`
+- When you edit, it will ask you to make a Fork. Follow along with it, then when you are ready, it will ask you to merge your changes upstream.
 
 Here are some things we're always looking for help on:
 {:.mb-2}
-- Fixing typos
+- Expanding/improving documentation
+- Fixing typos/broken links
 - Adding/updating our Credits page ([List of Credits here](https://github.com/coffeebank/wysc/blob/dev/docs/_data/credits.yml){: target="_blank" rel="noopener"})
 - Adding/updating Bot Commands pages
 
