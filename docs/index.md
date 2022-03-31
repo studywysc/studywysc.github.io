@@ -35,12 +35,12 @@ bodytext: >
 bodycard01icon: trending_up
 bodycard01title: Popular and Growing
 bodycard01text: >
-    Reaching over 1600 members and growing, Wysc has a little of something for everyone. Find your next study buddy in one of the largest online study environments on Discord!
+    Reaching over 2600 members and growing, Wysc has a little of something for everyone. Find your next study buddy in one of the coziest online study environments on Discord!
 
 bodycard02icon: public
 bodycard02title: Global in Nature
 bodycard02text: >
-    While we're based in the USA, our members span across countries and continents, from Europe to Australia! Your nationality doesn't matter -- what does is your presence :)
+    We're based in the USA, but most of our members join from Europe to Asia and beyond! Your nationality doesn't matter -- what does is your presence :)
 
 bodycard03icon: local_florist
 bodycard03title: Free. Forever.
