@@ -9,14 +9,14 @@ redirect_from:
   # - docs/archive/emotes
 ---
 
-> 📦 **This page is archived.** Since 2021, Wysc has replaced Emote Collector with [NQN Emotes](https://nqn.blue) and [coffee-cogs Emotes](https://github.com/coffeebank/coffee-cogs) (selfhosted). [See the list of public bots currently used in Wysc here&ensp;&#9656;](/docs/bots)
+> 📦 **This page is archived.** Since 2021, Wysc has replaced Emote Collector with [NQN Emotes](https://nqn.blue) and [Cherry Emotes](https://thymedev.github.io/coffee/emotes/) (selfhosted).
+{: .border-red-600 .mb-2}
+
+> ⚠️ **Emote Collector is being shut down.** [See the developer's announcement on Discord for more details.](https://github.com/EmoteBot/EmoteCollector/issues/83)
 {: .border-red-600 .mb-2}
 
 > ⚠️ **This wiki is NOT endorsed by or affiliated with {{ page.title }}.** [See our Bots page for more info.](/docs/bots)
 {: .border-yellow-400 .mb-2}
-
-> ⚠️ **Emote Collector is being shut down.** [See the developer's announcement on Discord for more details.](https://discord.com/channels/410627685589450752/412008459253579777/787125939309510666) *(Send `ec/support` to join the Discord)*
-{: .border-red-600 .mb-2}
 
 <br />
 
