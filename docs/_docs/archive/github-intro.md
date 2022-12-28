@@ -10,7 +10,7 @@ title-sub: "Contributing"
 - Wysc uses [Jekyll](https://jekyllrb.com/), which is built into GitHub *(or more specifically, GitHub Pages)*
 - All changes should be made to the `dev` Branch
     - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051009.jpg)
-- The Wysc Docs files live at [https://github.com/coffeebank/wysc/tree/dev/docs/_docs](https://github.com/coffeebank/wysc/tree/dev/docs/_docs)
+- The Wysc Docs files live at [https://github.com/studywysc/wysc/tree/dev/docs/_docs](https://github.com/studywysc/wysc/tree/dev/docs/_docs)
     - There are three folders for each section of the Wysc Docs:
         - `about` - About Wysc
         - `discord` - Wysc Discord
@@ -49,10 +49,10 @@ redirect_from:
 ```
 - category
     - One of three categories - About Wysc, Wysc Discord, or Contributor Hub
-    - [See here for a list of current categories and sub-categories](https://github.com/coffeebank/wysc/blob/dev/docs/_data/docscat.yml)
+    - [See here for a list of current categories and sub-categories](https://github.com/studywysc/wysc/blob/dev/docs/_data/docscat.yml)
 - catsub
     - A sub-category that appears on the Wysc Docs sidebar
-    - [See here for a list of current categories and sub-categories](https://github.com/coffeebank/wysc/blob/dev/docs/_data/docscat.yml)
+    - [See here for a list of current categories and sub-categories](https://github.com/studywysc/wysc/blob/dev/docs/_data/docscat.yml)
 - last_updated
     - Please bump this up to the most recent date when you make substantial edits (typos don't need this to be updated)
 - summary
@@ -108,7 +108,7 @@ The accepted variables under **botcomms** is: botcomm (commands), botdesc (descr
 ### Page Content
 
 - All documentation headings should use Heading 3 (`### Heading 3`) or Heading 4 (`#### Heading 4`)
-- Upload all assets (files, images, videos, etc.) to [https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets](https://github.com/coffeebank/wysc/tree/dev/docs/_docs/assets)
+- Upload all assets (files, images, videos, etc.) to [https://github.com/studywysc/wysc/tree/dev/docs/_docs/assets](https://github.com/studywysc/wysc/tree/dev/docs/_docs/assets)
     - In markdown, link to them as follows, replacing "Summary of the image here" and "yourfilename.jpg" as necessary:  
 ```
 ![Summary of the image here](/docs/assets/yourfilename.jpg)

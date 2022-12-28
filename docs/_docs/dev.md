@@ -52,7 +52,7 @@ Here are some things we're always looking for help on:
 {:.mb-2}
 - Expanding/improving documentation
 - Fixing typos/broken links
-- Adding/updating our Credits page ([List of Credits here](https://github.com/coffeebank/wysc/blob/dev/docs/_data/credits.yml){: target="_blank" rel="noopener"})
+- Adding/updating our Credits page ([List of Credits here](https://github.com/studywysc/wysc/blob/dev/docs/_data/credits.yml){: target="_blank" rel="noopener"})
 - Adding/updating Bot Commands pages
 
 For bigger contributions, we recommend you [contact us](/docs/contact) first, either in Contributor Hub or `#support`. GitHub Issues are monitored, but may have a delayed response.
