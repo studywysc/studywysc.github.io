@@ -35,11 +35,10 @@
 
 # License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+This repo includes non-free material, [which may fall under different licenses](https://wysc.us.to/licenses). Therefore, wholesale duplication of this repo and Wysc materials will be breaking copyrights and trademarks.
 
-[Read more &gt;](https://wysc.us.to/licenses)
+See `LICENSE` for all other content inside this GitHub repo.
 
- 
 
 # Contributions
 
