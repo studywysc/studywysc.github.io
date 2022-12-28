@@ -15,6 +15,6 @@ redirect_from:
 
 **Any services featured is not an indication of the service's endorsement of Wysc.** Wherever possible, we rely on open source technology to craft the Wysc experience.
 
-This page may be incomplete. See something missing? Are you a creator? [Let us know](/docs/contact) or [start a GitHub pull request](https://github.com/studywysc/wysc/blob/dev/docs/_data/credits.yml) to update this page!
+This page may be incomplete. See something missing? Are you a creator? [Let us know](/docs/contact) or [start a GitHub pull request](https://github.com/studywysc/studywysc.github.io/blob/dev/docs/_data/credits.yml) to update this page!
 
 {% include jtcredits.html %}

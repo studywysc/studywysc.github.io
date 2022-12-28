@@ -48,7 +48,7 @@ When we say “You” or “your”, we are referring to the people or organizat
 
 #### Liabilities
 
-We may update these Terms of Service in the future. You can track all recent changes [on GitHub](https://github.com/studywysc/wysc/commits/master/docs/_docs/legal.md){: target="_blank" rel="noopener"}.
+We may update these Terms of Service in the future. You can track all recent changes [on GitHub](https://github.com/studywysc/studywysc.github.io/commits/master/docs/_docs/legal.md){: target="_blank" rel="noopener"}.
 
 When you use our Services, now or in the future, you are agreeing to the latest Terms of Service. That's true for any of our existing and future products and all features that we add to our Services over time. There may be times where we do not exercise or enforce any right or provision of the Terms of Service; in doing so, we are not waiving that right or provision. These terms do contain a limitation of our liability.
 
@@ -155,7 +155,7 @@ Our services and other web properties are operated in the United States. If you 
 
 #### Changes
 
-We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of recent changes to our policies [on GitHub](https://github.com/studywysc/wysc/commits/master/docs/_docs/legal.md){: target="_blank" rel="noopener"}.
+We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of recent changes to our policies [on GitHub](https://github.com/studywysc/studywysc.github.io/commits/master/docs/_docs/legal.md){: target="_blank" rel="noopener"}.
 
 Have any questions, comments, or concerns about this privacy policy, your data, or your rights with respect to your information? Please get in touch [from our Contact page](/docs/contact) and we’ll be happy to answer them!
 

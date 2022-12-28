@@ -81,7 +81,7 @@ class="text-decoration-none">{{ itemcos.cosname }}</a>
 </div>
 
 <script>
-fetch('https://api.github.com/repos/studywysc/wysc/contributors')
+fetch('https://api.github.com/repos/studywysc/studywysc.github.io/contributors')
   .then(response => response.json())
   .then(data => {
     let contribHtml = document.getElementById("githubContributors")

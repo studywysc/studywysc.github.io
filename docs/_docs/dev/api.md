@@ -47,12 +47,12 @@ Wysc is considering an API in the future for short-term updates currently being 
 ### Changelog API
 
 ```
-https://api.github.com/repos/studywysc/wysc/commits
+https://api.github.com/repos/studywysc/studywysc.github.io/commits
 ```
 
 Wysc Changelog API is supported by GitHub. [See Github Developer Guide for more information on how to use the GitHub REST API.](https://developer.github.com/v3/repos/commits/)
 
-All Wysc Website update notes are listed under the Git commits log on GitHub. [Click here to see the list of commits on Wysc GitHub visually.](https://github.com/studywysc/wysc/commits/master)
+All Wysc Website update notes are listed under the Git commits log on GitHub. [Click here to see the list of commits on Wysc GitHub visually.](https://github.com/studywysc/studywysc.github.io/commits/master)
 
 
 ### Search API
