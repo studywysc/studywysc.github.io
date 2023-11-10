@@ -59,8 +59,8 @@ redirect_from:
     - Adds text at the top of the page underneath the "Wysc Contributors" section
     - Overrides the link embed description for the page
 - redirect_from
-    - Redirects for short url's such as setting "wysc.us.to/licenses"
-    - DO NOT INCLUDE THE "wysc.us.to/" PART OF THE URL HERE
+    - Redirects for short url's such as setting "studywysc.github.io/licenses"
+    - DO NOT INCLUDE THE "studywysc.github.io/" PART OF THE URL HERE
 
 
 ### Page Layouts

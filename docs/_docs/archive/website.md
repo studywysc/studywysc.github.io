@@ -8,7 +8,7 @@ summary: "Wysc relies on contributors like you to help expand documentation for 
 ### Editing
 
 1. First, [log into your Github account](https://github.com/login).
-1. Next, [go to the Wysc Docs website](https://wysc.us.to/docs) and visit the page you want to edit.
+1. Next, [go to the Wysc Docs website](https://studywysc.github.io/docs) and visit the page you want to edit.
 1. Click `Wysc Contributors`. It will bring you to the GitHub file for the page.
     - ![GitHub screenshot - Branch listed is "dev"](/docs/assets/2020-03-19 051908.jpg)
 1. To edit the page, click the pencil icon on the top right.

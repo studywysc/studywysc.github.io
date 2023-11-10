@@ -20,7 +20,7 @@ redirect_from:
 As we continue to improve the Wysc website experience, APIs will slowly be released to the public.
 
 ```
-https://wysc.us.to/api/
+https://studywysc.github.io/api/
 ```
 
 Our API endpoint for content we host is on the same domain, in a subdirectory.
